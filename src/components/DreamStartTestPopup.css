@@ -1,0 +1,107 @@
+.choose-your-dream,
+.select-a-company {
+  position: relative;
+  letter-spacing: -0.02em;
+  line-height: 2.78vw;
+}
+.select-a-company {
+  font-size: var(--font-size-lg);
+  color: var(--icon-grey);
+  margin-top: -0.53vw;
+}
+.choose-your-dream-company-parent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.company-logo-icon30 {
+  position: relative;
+  width: 5.29vw;
+  height: 2.31vw;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.company-logo-wrapper1 {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-16xl) var(--padding-19xl);
+  background-color: var(--white);
+  border-radius: var(--br-base);
+  box-shadow: -0.13vw 0 0 rgba(0, 0, 0, 0.1), 0.13vw -0.10vw 0 rgba(0, 0, 0, 0.1),
+    0 0.20vw 0#605bff;
+  width: 11.77vw;
+  height: 6.94vw;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.dreamstarttestpopup-inner,
+.frame-parent238,
+.frame-parent239 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frame-parent239 {
+  flex-direction: row;
+  gap: var(--gap-5xl);
+}
+.dreamstarttestpopup-inner,
+.frame-parent238 {
+  flex-direction: column;
+}
+.frame-parent238 {
+  gap: var(--gap-5xl);
+}
+.dreamstarttestpopup-inner {
+  position: absolute;
+  top: calc(50% - 11.01vw);
+  left: calc(50% - 19.25vw);
+}
+.vector-icon38 {
+  position: absolute;
+  height: 34%;
+  width: 34.01%;
+  top: 32.99%;
+  right: 33%;
+  bottom: 33%;
+  left: 32.99%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.basilcross-outline15 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 1.85vw;
+  left: 39.35vw;
+  width: 2.12vw;
+  height: 2.12vw;
+  overflow: hidden;
+}
+.dreamstarttestpopup {
+  border-radius: var(--br-base);
+  background-color: var(--white);
+  width: 43.65vw;
+  height: 27.45vw;
+  overflow: hidden;
+  max-width: 100%;
+  max-height: 100%;
+  text-align: left;
+  font-size: var(--font-size-5xl);
+  color: var(--black);
+  font-family: var(--font-avenir-lt-std);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 1.56vw;
+ transform:translate(-50%,-50%);
+}

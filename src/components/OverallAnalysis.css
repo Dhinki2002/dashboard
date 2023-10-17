@@ -1,0 +1,205 @@
+.background-icon {
+    position: absolute;
+    height: 100.6%;
+    width: 100.86%;
+    top: -0.34%;
+    right: -0.43%;
+    bottom: -0.26%;
+    left: -0.43%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+  }
+  .div21 {
+    position: relative;
+    line-height: 1.19vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.32vw;
+    height: 0.88vw;
+    flex-shrink: 0;
+  }
+  .numbers {
+    position: absolute;
+    height: 49.78%;
+    width: 5%;
+    top: -0.72%;
+    right: 47.54%;
+    bottom: 50.95%;
+    left: 47.45%;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1.06vw;
+  }
+  .points-icon,
+  .radar-data-icon {
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+  }
+  .radar-data-icon {
+    position: absolute;
+    height: 54.42%;
+    width: 66.31%;
+    top: 32.67%;
+    right: 24.43%;
+    bottom: 12.91%;
+    left: 9.26%;
+  }
+  .points-icon {
+    height: 55.94%;
+    width: 68.02%;
+    top: 32.03%;
+    right: 23.6%;
+    bottom: 12.02%;
+    left: 8.38%;
+  }
+  .div28,
+  .div29,
+  .points-icon {
+    position: absolute;
+  }
+  .div28 {
+    height: 9.67%;
+    width: 13.18%;
+    top: 0;
+    left: 43.41%;
+    line-height: 1.32vw;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .div29 {
+    top: 35.86%;
+    left: 86.82%;
+  }
+  .div29,
+  .div30,
+  .div31,
+  .div32 {
+    height: 9.67%;
+    width: 13.18%;
+    line-height: 1.32vw;
+    display: flex;
+    align-items: center;
+  }
+  .div30 {
+    position: absolute;
+    top: 90.33%;
+    left: 73.42%;
+  }
+  .div31,
+  .div32 {
+    text-align: right;
+  }
+  .div31 {
+    position: absolute;
+    top: 90.33%;
+    left: 13.41%;
+  }
+  .div32 {
+    top: 35.86%;
+    left: 0;
+  }
+  .div20,
+  .div32,
+  .text2 {
+    position: absolute;
+  }
+  .text2 {
+    top: -1.79vw;
+    left: -3.99vw;
+    width: 23.49vw;
+    height: 17.79vw;
+    display: none;
+    text-align: left;
+    font-size: 0.79vw;
+    font-family: "PingFang SC";
+  }
+  .div20 {
+    top: 5.82vw;
+    left: calc(50% - 7.77vw);
+    background-color: #fff;
+    width: 15.54vw;
+    height: 14.81vw;
+    text-align: center;
+    font-family: "Helvetica Neue";
+  }
+  .overall-analysis {
+    position: absolute;
+    top: 1.32vw;
+    left: 1.32vw;
+    font-size: 1.59vw;
+    letter-spacing: -0.02em;
+    line-height: 2.78vw;
+    color: #353535;
+    margin-top:0.5vw;
+  }
+  .consistency {
+    position: absolute;
+    top: 94.61%;
+    left: 73.89%;
+  }
+  .communication,
+  .time-management {
+    position: absolute;
+    top: 6.35vw;
+    left: 0;
+  }
+  .communication {
+    top: 16.20vw;
+    left: 4.23vw;
+  }
+  .confidence,
+  .knowledge {
+    position: absolute;
+    top: 0;
+    left: 12.90vw;
+  }
+  .knowledge {
+    top: 6.55vw;
+    left: 23.61vw;
+  }
+  .consistency-parent {
+    position: absolute;
+    top: 4.50vw;
+    left: 2.12vw;
+    width: 27.71vw;
+    height: 17.18vw;
+    font-size: 0.79vw;
+    color: #212121;
+  }
+  .parent2 {
+    position: relative;
+    border-radius: 1.06vw;
+    background-color: #fff;
+    width: 34.5vw;
+    height: 24.88vw;
+    overflow: hidden;
+    flex-shrink: 0;
+    text-align: left;
+    font-size: 0.66vw;
+    color: #1d2129;
+    font-family: "Avenir LT Std";
+    margin-left:0.4vw;
+    
+  }
+  .pentagon-chart-container {
+    width: 40.32vw; /* Adjust the width as needed */
+    height: 25.88vw; 
+    align-items: center;/* Adjust the height as needed */
+    margin-top:45px;
+    margin-bottom: 35px;
+    margin-left:-2vw;
+
+    
+  }
+  
+  
+  
+  
+  

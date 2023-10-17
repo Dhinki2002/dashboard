@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Avenir+LT+Std:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PingFang+SC:wght@400&display=swap");
+body {
+  margin: 0;
+  line-height: normal;
+}
+:root {
+  /* fonts */
+  --font-avenir-lt-std: "Avenir LT Std";
+  --font-inherit: inherit;
+  --font-nunito: Nunito;
+  --cn-regular: "PingFang SC";
+  --en-regular: "Helvetica Neue";
+
+  /* font sizes */
+  --font-size-9xl: 1.85vw;
+  --font-size-xl: 1.32vw;
+  --font-size-5xl: 1.59vw;
+  --font-size-base: 1.06vw;
+  --font-size-15xl: 2.25vw;
+  --font-size-base-9: 1.05vw;
+  --font-size-sm: 0.93vw;
+  --cn-regular-size: 0.79vw;
+  --font-size-lg: 1.19vw;
+  --font-size-17xl: 2.38vw;
+  --en-regular-size: 0.66vw;
+  --font-size-sm-7: 0.91vw;
+  --font-size-2xs-3: 0.68vw;
+  --font-size-6xl: 1.65vw;
+  --font-size-3xs-1: 0.60vw;
+  --font-size-2xs-7: 0.71vw;
+  --font-size-5xs: 0.53vw;
+  --font-size-21xl: 2.65vw;
+
+  /* Colors */
+  --color-ghostwhite-100: #f5f6fa;
+  --color-ghostwhite-200: #f3f5fb;
+  --color-gray-100: #fcfcff;
+  --icon-grey: #8d8d8d;
+  --color-gray-200: #808080;
+  --text-5-: #1d2129;
+  --black: #212121;
+  --color-gray-300: #0e0e10;
+  --text: #030229;
+  --color-gray-400: rgba(255, 255, 255, 0.4);
+  --color-gray-500: rgba(33, 33, 33, 0.8);
+  --color-gray-600: rgba(255, 255, 255, 0.1);
+  --white: #fff;
+  --purple: #605bff;
+  --color-mediumslateblue-100: rgba(96, 91, 255, 0.1);
+  --color-mediumslateblue-200: rgba(96, 91, 255, 0.17);
+  --color-gainsboro-100: #e3e3e3;
+  --color-gainsboro-200: #dfdfdf;
+  --color-gainsboro-300: #d9d9d9;
+  --color-gainsboro-400: #dad7d5;
+  --color-gainsboro-500: rgba(218, 215, 213, 0.6);
+  --yellow: #ffd302;
+  --color-darkslategray-100: #494949;
+  --color-darkslategray-200: #353535;
+  --color-darkslategray-300: #313131;
+  --danger: #e63838;
+  --color-crimson-100: rgba(233, 70, 100, 0.1);
+  --color-crimson-200: rgba(230, 56, 56, 0.1);
+  --color-dimgray-100: #717171;
+  --color-dimgray-200: rgba(91, 91, 91, 0.5);
+  --color-lightgray-100: #d3d5db;
+  --light-base-chart-title: #000;
+  --color-mediumseagreen: #5bbd71;
+  --color-lightsalmon-100: #ff9a6c;
+  --incomplete: #ff8f6b;
+  --color-sandybrown-100: #ffaa5b;
+  --color-sandybrown-200: rgba(239, 146, 70, 0.1);
+  --color-darkorange: #ff9a3c;
+  --color-whitesmoke-100: #eaeaea;
+  --color-aliceblue: #eff2f9;
+  --color-darkgray-100: #b1b1b1;
+  --color-darkgray-200: #9e9e9e;
+  --color-darkgray-300: rgba(160, 160, 160, 0.5);
+  --color-lightcoral: #ff6979;
+  --color-dodgerblue: rgba(84, 142, 255, 0.1);
+  --color-royalblue-100: #0052cc;
+  --color-orange: #ffb627;
+  --color-lavender: #efefff;
+  --color-slateblue: #5959d3;
+  --color-tomato: #f25959;
+
+  /* Gaps */
+  --gap-9xl: 1.85vw;
+  --gap-5xs: 0.53vw;
+  --gap-5xl: 1.59vw;
+  --gap-227xl: 16.27vw;
+  --gap-13xl: 2.12vw;
+  --gap-xl: 1.32vw;
+  --gap-xs: 0.79vw;
+  --gap-lgi: 1.26vw;
+  --gap-base: 1.06vw;
+  --gap-12xs: 0.07vw;
+  --gap-9xs: 0.26vw;
+  --gap-118xl: 9.06vw;
+  --gap-lg: 1.19vw;
+  --gap-215xl: 15.48vw;
+  --gap-mid: 1.12vw;
+  --gap-3xs: 0.66vw;
+  --gap-11xs: 0.13vw;
+  --gap-17xl: 2.38vw;
+  --gap-7xs: 0.40vw;
+  --gap-21xl: 2.65vw;
+  --gap-11xl: 1.98vw;
+  --gap-31xl: 3.31vw;
+  --gap-mini: 0.99vw;
+  --gap-93xl: 7.41vw;
+  --gap-29xl: 3.17vw;
+  --gap-37xl: 3.70vw;
+  --gap-15xl: 2.25vw;
+  --gap-91xl: 7.28vw;
+  --gap-83xl: 6.75vw;
+  --gap-2xl: 1.39vw;
+  --gap-4xl: 1.52vw;
+  --gap-27xl: 3.04vw;
+  --gap-92xl: 7.34vw;
+  --gap-32xl: 3.37vw;
+  --gap-2xs: 0.73vw;
+  --gap-307xl: 21.56vw;
+  --gap-20xl: 2.58vw;
+
+  /* Paddings */
+  --padding-base: 1.06vw;
+  --padding-xl: 1.32vw;
+  --padding-5xl: 1.59vw;
+  --padding-xs: 0.79vw;
+  --padding-21xl: 2.65vw;
+  --padding-9xs: 0.26vw;
+  --padding-4xs: 0.60vw;
+  --padding-6xs: 0.46vw;
+  --padding-2xs: 0.73vw;
+  --padding-5xs: 0.53vw;
+  --padding-sm: 0.93vw;
+  --padding-3xs: 0.66vw;
+  --padding-98xl: 7.74vw;
+  --padding-11xs: 0.13vw;
+  --padding-29xl: 3.17vw;
+  --padding-16xl: 2.31vw;
+  --padding-19xl: 2.51vw;
+  --padding-101xl: 7.94vw;
+  --padding-mini: 0.99vw;
+  --padding-13xl: 2.12vw;
+
+  /* Border radiuses */
+  --br-base: 1.06vw;
+  --br-5xs: 0.53vw;
+  --br-xs: 0.79vw;
+  --br-16xl: 2.31vw;
+  --br-9xs: 0.26vw;
+  --br-5xl: 1.59vw;
+  --br-81xl: 6.61vw;
+  --br-8xs: 0.33vw;
+  --br-4xs: 0.60vw;
+  --br-3xs: 0.66vw;
+  --br-lgi: 1.26vw;
+  --br-7xs: 0.40vw;
+}

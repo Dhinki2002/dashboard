@@ -1,0 +1,225 @@
+.cantileverlogoblack-2-icon21 {
+  position: absolute;
+  top: 2.91vw;
+  left: calc(50% - 7.21vw);
+  width: 11.77vw;
+  height: 2.45vw;
+  object-fit: cover;
+}
+.phstar-icon15 {
+  position: relative;
+  width: 1.32vw;
+  height: 1.32vw;
+  overflow: hidden;
+  flex-shrink: 0;
+  
+}
+
+
+
+.my-go-score15 {
+  position: relative;
+  font-size: var(--font-size-xl);
+  font-family: var(--font-avenir-lt-std);
+  color: var(--purple);
+  text-align: left;
+}
+.phstar-parent13 {
+  position: absolute;
+  top: calc(50% - 0.79vw);
+  left: 2.91vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-base);
+}
+.frame-child251 {
+  position: absolute;
+  top: calc(50% - 1.69vw);
+  left: calc(50% - 8.80vw);
+  border-radius: var(--br-9xs);
+  width: 17.59vw;
+  height: 3.44vw;
+  opacity: 0.1;
+}
+.frame-parent366,
+.octiconpeople-2412 {
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.frame-parent366select,
+.octiconpeople-2412 {
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.frame-parent366 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  border-radius: 0 var(--br-5xs) var(--br-5xs) 0;
+  width: 19.18vw;
+  height: 4.03vw;
+}
+.frame-parent366select {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color:#efefff;
+  border-radius: 0 var(--br-5xs) var(--br-5xs) 0;
+  width: 19.18vw;
+  height: 4.03vw;
+}
+.octiconpeople-2412 {
+  width: 1.36vw;
+  height: 1.36vw;
+}
+.interviews16 {
+  position: relative;
+  font-size: var(--font-size-xl);
+  font-family: var(--font-avenir-lt-std);
+  color: var(--icon-grey);
+  text-align: left;
+}
+.frame-parent365 {
+  position: absolute;
+  top: 8.53vw;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frame-wrapper225 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  bottom: 2.65vw;
+  left: 0;
+  border-radius: 0 var(--br-5xs) var(--br-5xs) 0;
+  width: 19.18vw;
+  height: 4.03vw;
+  overflow: hidden;
+}
+.lauser-friends-icon {
+  position: relative;
+  width: 2.12vw;
+  height: 2.12vw;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.refer-and-earn {
+  position: relative;
+  font-size: var(--font-size-base);
+  letter-spacing: -0.02em;
+  line-height: 1.59vw;
+  font-family: var(--font-avenir-lt-std);
+  color: var(--color-darkslategray-100);
+  text-align: left;
+}
+.frame-wrapper226,
+.lauser-friends-parent,
+.refer-and-earn-parent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.lauser-friends-parent {
+  gap: var(--gap-3xs);
+}
+.frame-wrapper226 {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-base) var(--padding-sm);
+  background-color: var(--color-lavender);
+  border-radius: var(--br-xs);
+  width: 14.68vw;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.illustration-child13 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 14.68vw;
+  height: 10.65vw;
+}
+.upgrade-to-pro16 {
+  position: relative;
+}
+.get-exclusive-dashboard15 {
+  position: relative;
+  font-size: var(--font-size-sm);
+}
+.upgrade-to-pro-parent13 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-5xs);
+}
+.upgrade-now15 {
+  position: relative;
+  font-size: 1.05vw;
+  font-family: var(--font-avenir-lt-std);
+  color: var(--white);
+  text-align: left;
+}
+.upgrade-now-wrapper13 {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-xs) var(--padding-21xl);
+  background-color: var(--purple);
+  border-radius: var(--br-5xs);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.frame-parent368 {
+  position: absolute;
+  top: calc(50% - 3.67vw);
+  left: 1.32vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-lgi);
+}
+.illustration15 {
+  position: relative;
+  width: 14.68vw;
+  height: 10.52vw;
+}
+.frame-parent367 {
+  position: absolute;
+  top: 35.12vw;
+  left: 2.25vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-xl);
+}
+.cantileverlogoblack-2-parent19 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--white);
+  width: 19.18vw;
+  height: 64.95vw;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-xl);
+  color: var(--black);
+  font-family: var(--font-avenir-lt-std);
+}

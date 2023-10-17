@@ -1,0 +1,117 @@
+.active-tests {
+  position: relative;
+  letter-spacing: -0.02em;
+  line-height: 2.78vw;
+}
+.active-tests-wrapper {
+  position: absolute;
+  top: 1.59vw;
+  left: 1.59vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.vector-icon11 {
+  position: absolute;
+  height: 1.44%;
+  width: 5.5%;
+  top: 20.16%;
+  right: 7.94%;
+  bottom: 78.4%;
+  left: 86.56%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.company-logo-icon {
+  position: absolute;
+  top: 3.97vw;
+  left: calc(50% - 3.90vw);
+  width: 7.80vw;
+  height: 3.44vw;
+  overflow: hidden;
+}
+.frame-icon,
+.vector-group {
+  position: relative;
+  border-radius: var(--br-base);
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.vector-group {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: var(--white);
+  box-shadow: -0.13vw 0 0 rgba(0, 0, 0, 0.1), 0.13vw -0.10vw 0 rgba(0, 0, 0, 0.1),
+    0 0.20vw 0#605bff;
+  width: 23.02vw;
+  height: 12.04vw;
+}
+.frame-icon {
+  width: 23.28vw;
+  height: 12.37vw;
+}
+.frame-parent37 {
+  position: absolute;
+  top: 6.08vw;
+  left: 1.59vw;
+  width: 74.41vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-13xl);
+}
+.icbaseline-plus-icon1 {
+  position: relative;
+  width: 1.32vw;
+  height: 1.32vw;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.add-new-test1 {
+  position: relative;
+  font-size: 1.05vw;
+  font-family: var(--font-avenir-lt-std);
+  color: var(--white);
+  text-align: left;
+}
+.icbaseline-plus-group {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-xs) var(--padding-5xl);
+  background-color: var(--purple);
+  position: absolute;
+  top: 1.32vw;
+  left: 63.43vw;
+  border-radius: var(--br-5xs);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-7xs);
+}
+.frame-parent36 {
+  position: absolute;
+  top: 9.13vw;
+  left: 21.03vw;
+  border-radius: var(--br-base);
+  background-color: var(--white);
+  width: 76.59vw;
+  height: 53.70vw;
+}
+.admintest {
+  position: relative;
+  background-color: var(--color-ghostwhite-100);
+  width: 100%;
+  height: 64.95vw;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-9xl);
+  color: var(--black);
+  font-family: var(--font-avenir-lt-std);
+}

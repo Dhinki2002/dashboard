@@ -1,0 +1,149 @@
+.password {
+  position: relative;
+}
+.billing-wrapper,
+.frame-group,
+.password-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.password-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-16xl);
+  background-color: var(--color-mediumslateblue-200);
+  flex-direction: row;
+  padding: var(--padding-xs) var(--padding-base);
+}
+.billing-wrapper,
+.frame-group {
+  flex-direction: column;
+}
+.frame-group {
+  position: absolute;
+  top: 0.79vw;
+  left: 1.19vw;
+  gap: var(--gap-5xl);
+  color: var(--icon-grey);
+}
+.frame-parent {
+  position: absolute;
+  top: 6.88vw;
+  left: 2.51vw;
+  width: 8.00vw;
+  height: 5.56vw;
+  color: var(--purple);
+}
+.change-your-password {
+  position: absolute;
+  top: 2.12vw;
+  left: 19.18vw;
+  font-size: var(--font-size-5xl);
+  letter-spacing: -0.02em;
+  line-height: 2.78vw;
+}
+.frame-child,
+.password-container {
+  width: 36.11vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.frame-child {
+  border: 0.07vw solid var(--color-gainsboro-400);
+  background-color: transparent;
+  border-radius: var(--br-xs);
+  box-sizing: border-box;
+  height: 3.97vw;
+  justify-content: space-between;
+  padding: var(--padding-base) var(--padding-5xl);
+}
+.frame-div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-5xs);
+}
+.change-password,
+.frame-item {
+  font-size: var(--font-size-xl);
+  font-family: var(--font-avenir-lt-std);
+}
+.frame-item {
+  border: 0.07vw solid var(--color-gainsboro-400);
+  background-color: transparent;
+  border-radius: var(--br-xs);
+  box-sizing: border-box;
+  width: 36.11vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--padding-base) var(--padding-5xl);
+}
+.change-password {
+  position: relative;
+  color: var(--white);
+  text-align: left;
+}
+.change-password-wrapper {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-base) var(--padding-xl);
+  background-color: var(--purple);
+  border-radius: var(--br-5xs);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.frame-container {
+  position: absolute;
+  top: 7.01vw;
+  left: 19.18vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-9xl);
+}
+.my-profile {
+  position: absolute;
+  top: 3.97vw;
+  left: 3.70vw;
+  color: var(--icon-grey);
+}
+.rectangle-parent {
+  position: absolute;
+  top: 14.29vw;
+  left: 21.03vw;
+  border-radius: var(--br-base);
+  background-color: var(--white);
+  width: 76.59vw;
+  height: 48.54vw;
+  overflow: hidden;
+}
+.settings {
+  position: absolute;
+  top: 10.45vw;
+  left: 21.03vw;
+  font-size: var(--font-size-9xl);
+  letter-spacing: -0.02em;
+  line-height: 2.78vw;
+}
+.settings1 {
+  position: relative;
+  background-color: var(--color-ghostwhite-100);
+  width: 100%;
+  height: 64.95vw;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-xl);
+  color: var(--black);
+  font-family: var(--font-avenir-lt-std);
+}
