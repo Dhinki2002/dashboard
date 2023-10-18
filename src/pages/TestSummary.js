@@ -3,6 +3,7 @@ import Header from "../components/Header";
 import "./TestSummary.css";
 import MyGoScore from "../components/MyGoScore";
 import { TopicWiseAnalysis } from "../components/TopicWiseAnalysis";
+import GrowthAnalysis2 from "../components/GrowthAnalysis2";
 
 const TestSummary = () => {
   return (
@@ -14,9 +15,8 @@ const TestSummary = () => {
           <div className="amazon-test">Amazon Test</div>
         </div>
       </div>
-      <div className="parent">
+     
       <TopicWiseAnalysis/>
-      </div>
       <div className="frame-parent82">
         
         <div className="frame-parent86">
@@ -37,40 +37,8 @@ const TestSummary = () => {
         </div>
       </div>
       <div className="frame-parent91">
-        <div className="time-taken-analysis-parent">
-          <div className="your-score">Time taken Analysis</div>
-          <div className="number-group">
-            <div className="number1">
-              <div className="parent11">
-                <div className="div71">80</div>
-                <div className="div71">60</div>
-                <div className="div71">40</div>
-                <div className="div71">20</div>
-                <div className="div75">0</div>
-              </div>
-            </div>
-            <div className="line-parent4">
-              <img className="line-icon1" alt="" src="/line1.svg" />
-              <img className="vector-icon19" alt="" src="/vector15.svg" />
-              <img className="vector-icon20" alt="" src="/vector16.svg" />
-              <img className="elipes-icon1" alt="" src="/elipes1.svg" />
-              <div className="tool-tip1">
-                <img className="union-icon1" alt="" src="/union1.svg" />
-                <div className="marks-group">
-                  <div className="no-of-correct">Marks</div>
-                  <div className="div76">67</div>
-                </div>
-              </div>
-              <div className="frame-child60" />
-            </div>
-            <div className="feb-21-group">
-              <div className="feb-216">Feb 21</div>
-              <div className="feb-216">Feb 22</div>
-              <div className="feb-216">Feb 23</div>
-              <div className="feb-216">Feb 21</div>
-              <div className="feb-216">Feb 21</div>
-            </div>
-          </div>
+        <div className="root">
+        <GrowthAnalysis2/>
         </div>
         <div className="frame-parent92">
           <div className="strengths-parent">

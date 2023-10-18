@@ -482,7 +482,7 @@
 }
 .frame-parent91 {
   position: absolute;
-  top: 44.11vw;
+  top: 45.11vw;
   left: 21.03vw;
   display: flex;
   flex-direction: row;
@@ -510,4 +510,7 @@
   top: 4.3vw;
 
 
+}
+.root{
+  margin-top:1.8vw;
 }

@@ -202,7 +202,7 @@
 }
 .my-go-score {
   position: absolute;
-  top: 1.32vw;
+  top: -0.4vw;
   left: 1.32vw;
   letter-spacing: -0.02em;
   line-height: 2.78vw;
@@ -402,7 +402,7 @@
   top: 3.54vw;
   left: 1.19vw;
   width: 22.16vw;
-  height: 13.26vw;
+  height: 15.26vw;
   text-align: right;
   font-size: var(--font-size-3xs-1);
   color: var(--black);
@@ -412,7 +412,7 @@
   border-radius: var(--br-base);
   background-color: var(--white);
   width: 24.60vw;
-  height: 18.12vw;
+  height: 14.12vw;
   overflow: hidden;
   flex-shrink: 0;
   font-size: var(--font-size-5xl);
