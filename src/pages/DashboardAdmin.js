@@ -5,6 +5,8 @@ import AdminNavbar from "../components/AdminNavbar";
 import AdminHeader from "../components/AdminHeader";
 import "./DashboardAdmin.css";
 import GrowthAnalysis from "../components/GrowthAnalysis";
+import PieAnalysis from "../components/PieAnalysis";
+
 
 const DashboardAdmin = () => {
   const [isAddStudentsPopupOpen, setAddStudentsPopupOpen] = useState(false);
@@ -145,30 +147,8 @@ const DashboardAdmin = () => {
           </button>
           <div className="frame-parent45">
            <GrowthAnalysis/>
-            <div className="job-wise-analysis-parent">
-              <div className="students-average-growth">Job-wise analysis</div>
-              <div className="chart-2-parent">
-                <img className="chart-2-icon" alt="" src="/chart-2.svg" />
-                <div className="legend-label-2-parent">
-                  <div className="legend-label-2">
-                    <div className="legend-indicator-1" />
-                    <div className="product-design">SDE 1</div>
-                  </div>
-                  <div className="legend-label-2">
-                    <div className="legend-indicator-11" />
-                    <div className="product-design">Product design</div>
-                  </div>
-                  <div className="legend-label-2">
-                    <div className="legend-indicator-12" />
-                    <div className="product-design">Product design</div>
-                  </div>
-                  <div className="legend-label-2">
-                    <div className="legend-indicator-13" />
-                    <div className="product-design">Data Analyst</div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <PieAnalysis/>
+           
           </div>
           <button
             className="icbaseline-plus-container"

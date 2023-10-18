@@ -1,0 +1,489 @@
+.students-performance {
+    position: relative;
+    letter-spacing: -0.02em;
+    line-height: 2.78vw;
+  }
+  .container,
+  .priyanshu-gupta-parent,
+  .students-performance-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .students-performance-wrapper {
+    position: absolute;
+    top: 1.32vw;
+    left: 1.32vw;
+  }
+  .container,
+  .priyanshu-gupta-parent {
+    gap: var(--gap-11xs);
+  }
+  .priyanshu-gupta-parent {
+    gap: var(--gap-5xs);
+    color: var(--color-darkslategray-200);
+  }
+  .performance {
+    position: relative;
+    letter-spacing: -0.02em;
+    line-height: 2.78vw;
+    z-index: 0;
+  }
+  .bxsort-icon {
+    position: absolute;
+    margin: 0 !important;
+    top: 0.79vw;
+    left: 6.15vw;
+    width: 1.06vw;
+    height: 1.06vw;
+    overflow: hidden;
+    flex-shrink: 0;
+    z-index: 1;
+  }
+  .performance-parent {
+    width: 7.14vw;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+    gap: var(--gap-3xs);
+  }
+  .rectangle-div,
+  .rectangle-wrapper {
+    border-radius: var(--br-9xs);
+    height: 0.40vw;
+  }
+  .rectangle-div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--color-mediumseagreen);
+    width: 9.33vw;
+  }
+  .rectangle-wrapper {
+    position: relative;
+    background-color: var(--color-gainsboro-300);
+    width: 10.85vw;
+  }
+  .frame-child13,
+  .frame-child14,
+  .frame-child16,
+  .frame-child17 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: var(--br-9xs);
+    background-color: var(--color-mediumseagreen);
+    width: 8.99vw;
+    height: 0.40vw;
+  }
+  .frame-child14,
+  .frame-child16,
+  .frame-child17 {
+    background-color: var(--incomplete);
+    width: 7.14vw;
+  }
+  .frame-child16,
+  .frame-child17 {
+    width: 6.68vw;
+  }
+  .frame-child17 {
+    background-color: var(--danger);
+    width: 5.29vw;
+  }
+  .frame-parent40,
+  .frame-parent41 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .frame-parent41 {
+    gap: 2.98vw;
+  }
+  .frame-parent40 {
+    gap: var(--gap-mini);
+  }
+  .bxsort-icon1 {
+    position: relative;
+    width: 1.06vw;
+    height: 1.06vw;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .last-score-parent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: var(--gap-11xs);
+  }
+  .frame-child18 {
+    width: 4.70vw;
+    height: 2.78vw;
+  }
+  .frame-child18,
+  .remove {
+    position: relative;
+  }
+  .remove-wrapper {
+    border-radius: var(--br-5xs);
+    background-color: var(--color-crimson-200);
+    flex-direction: row;
+    padding: var(--padding-4xs) var(--padding-xs);
+  }
+  .frame-parent39,
+  .frame-parent43,
+  .remove-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .frame-parent43 {
+    flex-direction: column;
+    gap: var(--gap-11xs);
+    font-size: var(--font-size-sm);
+    color: var(--danger);
+  }
+  .frame-parent39 {
+    position: absolute;
+    top: 5.03vw;
+    left: calc(50% - 36.18vw);
+    flex-direction: row;
+    gap: 6.94vw;
+    font-size: var(--font-size-base);
+    color: var(--icon-grey);
+  }
+  .frame-child19 {
+    position: relative;
+    border-top: 0.07vw solid var(--icon-grey);
+    box-sizing: border-box;
+    width: 74.01vw;
+    height: 0.07vw;
+    opacity: 0.18;
+  }
+  .line-group {
+    position: absolute;
+    top: 7.61vw;
+    left: 1.32vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-31xl);
+  }
+  .view-more {
+    position: relative;
+    font-size: var(--font-size-sm);
+    letter-spacing: -0.02em;
+    line-height: 2.78vw;
+    font-family: var(--font-avenir-lt-std);
+    color: var(--icon-grey);
+    text-align: left;
+  }
+  .riarrow-drop-down-line-icon {
+    position: relative;
+    width: 1.32vw;
+    height: 1.32vw;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .view-more-parent {
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+    position: absolute;
+    top: 28.04vw;
+    left: calc(50% - 2.98vw);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: var(--gap-9xs);
+  }
+  .students-average-growth {
+    position: absolute;
+    top: 1.32vw;
+    left: 1.32vw;
+    letter-spacing: -0.02em;
+    line-height: 2.78vw;
+  }
+  .div24,
+  .div28 {
+    position: relative;
+    display: inline-block;
+    width: 0.86vw;
+    height: 0.93vw;
+    flex-shrink: 0;
+  }
+  .div28 {
+    width: 0.46vw;
+  }
+  .parent4 {
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    gap: var(--gap-11xl);
+  }
+  .line-icon,
+  .number,
+  .parent4 {
+    position: absolute;
+    left: 0;
+  }
+  .number {
+    top: 0;
+    width: 0.86vw;
+    height: 12.58vw;
+    opacity: 0.7;
+  }
+  .line-icon {
+    top: -0.06vw;
+    width: 36.15vw;
+    height: 12.19vw;
+  }
+  .vector-icon12,
+  .vector-icon13 {
+    position: absolute;
+    height: 91.02%;
+    width: 99.72%;
+    top: 8.98%;
+    right: 0;
+    bottom: 0;
+    left: 0.28%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+  }
+  .vector-icon13 {
+    height: 80.86%;
+    width: 101.59%;
+    top: 6.35%;
+    right: -0.94%;
+    bottom: 12.79%;
+    left: -0.66%;
+  }
+  .elipes-icon {
+    position: absolute;
+    top: 2.43vw;
+    left: 5.70vw;
+    width: 25.12vw;
+    height: 6.07vw;
+  }
+  .union-icon {
+    width: 5.82vw;
+    height: 4.42vw;
+  }
+  .div29,
+  .marks,
+  .union-icon {
+    position: relative;
+  }
+  .marks {
+    opacity: 0.8;
+  }
+  .div29 {
+    font-size: 0.91vw;
+  }
+  .marks-parent,
+  .tool-tip-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .marks-parent {
+    gap: var(--gap-9xs);
+  }
+  .tool-tip-inner {
+    position: absolute;
+    top: 0.52vw;
+    left: 1.59vw;
+  }
+  .frame-child26,
+  .tool-tip {
+    position: absolute;
+    top: 0.45vw;
+    left: 3.67vw;
+    width: 5.03vw;
+    height: 3.62vw;
+  }
+  .frame-child26 {
+    top: 4.91vw;
+    left: 6.29vw;
+    border-right: 0.06vw dashed var(--purple);
+    box-sizing: border-box;
+    width: 0.06vw;
+    height: 6.66vw;
+  }
+  .line-container {
+    position: absolute;
+    top: 0.03vw;
+    left: 2.15vw;
+    width: 36.15vw;
+    height: 12.16vw;
+    text-align: left;
+    font-size: 0.68vw;
+    color: var(--white);
+  }
+  .feb-21-parent {
+    position: absolute;
+    top: 12.37vw;
+    left: calc(50% - 16.57vw);
+    height: 0.79vw;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-21xl);
+  }
+  .number-parent {
+    position: absolute;
+    top: 6.61vw;
+    left: 1.32vw;
+    width: 38.29vw;
+    height: 13.16vw;
+    text-align: right;
+    font-size: var(--en-regular-size);
+    color: var(--black);
+  }
+  .students-average-growth-analys-parent {
+    position: relative;
+    border-radius: var(--br-base);
+    background-color: var(--white);
+    width: 40.94vw;
+    height: 21.63vw;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .chart-2-icon {
+    position: relative;
+    width: 11.90vw;
+    height: 11.90vw;
+  }
+  .legend-indicator-1 {
+    position: relative;
+    border-radius: var(--br-81xl);
+    background-color: var(--incomplete);
+    width: 0.86vw;
+    height: 0.86vw;
+  }
+  .legend-label-2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: var(--gap-5xs);
+  }
+  .legend-indicator-11 {
+    position: relative;
+    border-radius: var(--br-81xl);
+    background-color: var(--color-mediumseagreen);
+    width: 0.86vw;
+    height: 0.86vw;
+  }
+  .product-design {
+    position: relative;
+    letter-spacing: 0.01vw;
+    line-height: 1.06vw;
+  }
+  .legend-indicator-12,
+  .legend-indicator-13 {
+    position: relative;
+    border-radius: var(--br-81xl);
+    background-color: var(--yellow);
+    width: 0.86vw;
+    height: 0.86vw;
+  }
+  .legend-indicator-13 {
+    background-color: var(--purple);
+  }
+  .legend-label-2-parent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-xl);
+   
+  }
+  .chart-2-parent {
+    position: absolute;
+    top: 5.48vw;
+    left: calc(50% - 13.81vw);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 4.23vw;
+    font-size: var(--font-size-base);
+    color: var(--light-base-chart-title);
+    gap:0.5vw;
+  }
+  .job-wise-analysis-parent {
+    position: relative;
+    border-radius: var(--br-base);
+    background-color: var(--white);
+    width: 34.33vw;
+    height: 21.63vw;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .frame-parent45 {
+    position: absolute;
+    top: 31.54vw;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-xl);
+  }
+  .add-students3 {
+    position: relative;
+    font-size: 1.05vw;
+    font-family: var(--font-avenir-lt-std);
+    color: var(--white);
+    text-align: left;
+  }
+  .icbaseline-plus-container {
+    cursor: pointer;
+    border: 0;
+    padding: var(--padding-xs) var(--padding-5xl);
+    background-color: var(--purple);
+    position: absolute;
+    top: 1.32vw;
+    left: 62.37vw;
+    border-radius: var(--br-5xs);
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: var(--gap-7xs);
+  }
+  .frame-parent38 {
+    position: absolute;
+    top: 9.13vw;
+    left: 21.03vw;
+    border-radius: var(--br-base);
+    background-color: var(--white);
+    width: 76.59vw;
+    height: 31.55vw;
+  }
+  .dashboard-admin {
+    position: relative;
+    background-color: var(--color-ghostwhite-100);
+    width: 100%;
+    height: 64.95vw;
+    overflow: hidden;
+    text-align: left;
+    font-size: var(--font-size-5xl);
+    color: var(--color-darkslategray-200);
+    font-family: var(--font-avenir-lt-std);
+  }
+  
