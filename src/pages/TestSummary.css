@@ -146,6 +146,7 @@
   background-color: var(--white);
   width: 50.93vw;
   height: 29.10vw;
+  top: vw;
 }
 .your-score {
   position: absolute;
@@ -254,7 +255,6 @@
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-  gap: var(--gap-xl);
 }
 .frame-parent86 {
   flex-direction: column;
@@ -262,8 +262,8 @@
 }
 .frame-parent82 {
   position: absolute;
-  top: 13.82vw;
-  left: 21.03vw;
+  top: 13vw;
+  left:73.5vw;
   flex-direction: row;
 }
 .div71,
@@ -501,4 +501,13 @@
   font-size: var(--font-size-5xl);
   color: var(--icon-grey);
   font-family: var(--font-avenir-lt-std);
+}
+.parent{
+  position: relative;
+  border-radius: var(--br-base);
+  /* background-color: var(--white); */
+  color: var(--icon-grey);
+  top: 4.3vw;
+
+
 }

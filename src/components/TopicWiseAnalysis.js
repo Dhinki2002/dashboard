@@ -72,6 +72,7 @@ export const TopicWiseAnalysis = () => {
       <div className="frame-child153" />
       <div className="frame-child153" />
       <div className="frame-child153" />
+      <div className="frame-child153" />
     </div>
     <div className="view-more-parent4">
       <div className="topic-wise-analysis3">View more</div>

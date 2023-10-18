@@ -608,7 +608,7 @@
 }
 
 .graph-chart-container {
-  width: 40.32vw; /* Adjust the width as needed */
+  width: 40.32vw; 
   height: 22.88vw; 
   align-items: center;/* Adjust the height as needed */
   margin-top:65px;

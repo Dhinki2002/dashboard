@@ -125,9 +125,9 @@
   font-size: var(--font-size-sm);
 }
 .frame-parent202 {
-  position: absolute;
-  top: 9.13vw;
-  left: 21.03vw;
+  position: relative;
+  /* top: 9.13vw;
+  left: 21.03vw; */
   border-radius: var(--br-base);
   background-color: var(--white);
   width: 50.93vw;
