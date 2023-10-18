@@ -48,7 +48,7 @@ const GrowthAnalysis = () => {
   return (
    
     
-    <div className="rootdiv">
+   
     <div className="graph-chart-container">
 
           <div className="growth-analysis">Growth Analysis</div>
@@ -89,7 +89,7 @@ const GrowthAnalysis = () => {
            
             <Line data={data} options={options} />
           </div>
-          </div>
+          
     
   )
 }

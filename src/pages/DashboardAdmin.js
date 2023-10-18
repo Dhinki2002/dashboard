@@ -4,6 +4,7 @@ import PortalPopup from "../components/PortalPopup";
 import AdminNavbar from "../components/AdminNavbar";
 import AdminHeader from "../components/AdminHeader";
 import "./DashboardAdmin.css";
+import GrowthAnalysis from "../components/GrowthAnalysis";
 
 const DashboardAdmin = () => {
   const [isAddStudentsPopupOpen, setAddStudentsPopupOpen] = useState(false);
@@ -143,48 +144,7 @@ const DashboardAdmin = () => {
             />
           </button>
           <div className="frame-parent45">
-            <div className="students-average-growth-analys-parent">
-              <div className="students-average-growth">
-                Students Average Growth Analysis
-              </div>
-              <div className="number-parent">
-                <div className="number">
-                  <div className="parent4">
-                    <div className="div24">80</div>
-                    <div className="div24">60</div>
-                    <div className="div24">40</div>
-                    <div className="div24">20</div>
-                    <div className="div28">0</div>
-                  </div>
-                </div>
-                <div className="line-container">
-                  <img className="line-icon" alt="" src="/line.svg" />
-                  <img className="vector-icon12" alt="" src="/vector11.svg" />
-                  <img className="vector-icon13" alt="" src="/vector12.svg" />
-                  <img className="elipes-icon" alt="" src="/elipes.svg" />
-                  <div className="tool-tip">
-                    <img className="union-icon" alt="" src="/union.svg" />
-                    <div className="tool-tip-inner">
-                      <div className="marks-parent">
-                        <div className="marks">Marks</div>
-                        <div className="div29">67</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="frame-child26" />
-                </div>
-                <div className="feb-21-parent">
-                  <div className="remove">Feb 21</div>
-                  <div className="remove">Feb 22</div>
-                  <div className="remove">Feb 23</div>
-                  <div className="remove">Feb 21</div>
-                  <div className="remove">Feb 21</div>
-                  <div className="remove">Feb 21</div>
-                  <div className="remove">Feb 21</div>
-                  <div className="remove">Feb 21</div>
-                </div>
-              </div>
-            </div>
+           <GrowthAnalysis/>
             <div className="job-wise-analysis-parent">
               <div className="students-average-growth">Job-wise analysis</div>
               <div className="chart-2-parent">

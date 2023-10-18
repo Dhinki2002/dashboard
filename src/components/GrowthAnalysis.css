@@ -613,9 +613,10 @@
   align-items: center;/* Adjust the height as needed */
   margin-top:65px;
   margin-bottom: 35px;
+  
 }
-.rootdiv{
+/* .rootdiv{
   background-color: var(--white);
   height: 24.8vw;
   border-radius: 20px;
-}
+} */
