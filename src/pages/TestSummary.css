@@ -512,5 +512,11 @@
 
 }
 .root{
-  margin-top:1.8vw;
+  position: relative;
+  border-radius: var(--br-base);
+  background-color: var(--white);
+  color: var(--icon-grey);
+  top: 4.1vw;
+  left: -0.2vw;
+  width:2vw;
 }

@@ -53,7 +53,7 @@ const ResumePersonalInfo2 = () => {
               <div className="frame-child78" />
             </div>
           </div>
-          <div className="frame-parent114" style={{ overflow: "auto", maxHeight: "40vw" }}>
+          <div className="frame-parent114" style={{ overflow: "auto", height: "40vw" }}>
             <div className="personal-details-parent">
               <div className="resume">Personal details</div>
               <div className="frame-parent115">

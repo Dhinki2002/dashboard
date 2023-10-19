@@ -15,8 +15,9 @@ const TestSummary = () => {
           <div className="amazon-test">Amazon Test</div>
         </div>
       </div>
-     
+     <div className="root">
       <TopicWiseAnalysis/>
+      </div>
       <div className="frame-parent82">
         
         <div className="frame-parent86">
@@ -37,9 +38,9 @@ const TestSummary = () => {
         </div>
       </div>
       <div className="frame-parent91">
-        <div className="root">
+       
         <GrowthAnalysis2/>
-        </div>
+        
         <div className="frame-parent92">
           <div className="strengths-parent">
             <div className="your-score">Strengths</div>

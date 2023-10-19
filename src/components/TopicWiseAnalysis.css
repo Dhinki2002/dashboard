@@ -87,6 +87,7 @@
   flex-direction: row;
   gap: var(--gap-92xl);
   font-size: var(--font-size-base);
+ 
 }
 .frame-child153 {
   position: relative;
@@ -131,7 +132,10 @@
   border-radius: var(--br-base);
   background-color: var(--white);
   width: 50.93vw;
-  height: 29.10vw;
+  overflow:auto;
+  height: 29vw;
+
+
 
 }
 .div162,

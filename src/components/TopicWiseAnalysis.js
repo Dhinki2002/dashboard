@@ -2,7 +2,7 @@ import React from 'react'
 import "./TopicWiseAnalysis.css";
 
 export const TopicWiseAnalysis = () => {
-    const data = [72, 65, 22, 54, 56, 32]
+    const data = [72, 65, 22, 54, 56, 32, 80,98,11]
   return (
     <div className="frame-parent202">
     <div className="topic-wise-analysis-wrapper1">
@@ -18,6 +18,9 @@ export const TopicWiseAnalysis = () => {
           <div className="topic-wise-analysis3">05</div>
           <div className="topic-wise-analysis3">06</div>
           <div className="topic-wise-analysis3">07</div>
+          <div className="topic-wise-analysis3">07</div>
+          <div className="topic-wise-analysis3">07</div>
+          <div className="topic-wise-analysis3">07</div>
         </div>
       </div>
       <div className="parent22">
@@ -29,6 +32,9 @@ export const TopicWiseAnalysis = () => {
           <div className="topic-wise-analysis3">Debugging</div>
           <div className="topic-wise-analysis3">Coding languages</div>
           <div className="topic-wise-analysis3">Source Control</div>
+          <div className="topic-wise-analysis3">Source Control</div>
+          <div className="topic-wise-analysis3">Source Control</div>
+           <div className="topic-wise-analysis3">Source Control</div>
         </div>
       </div>
       <div className="proficiency-parent1">
@@ -74,14 +80,14 @@ export const TopicWiseAnalysis = () => {
       <div className="frame-child153" />
       <div className="frame-child153" />
     </div>
-    <div className="view-more-parent4">
+    {/* <div className="view-more-parent4">
       <div className="topic-wise-analysis3">View more</div>
       <img
         className="riarrow-drop-down-line-icon6"
         alt=""
         src="/riarrowdropdownline.svg"
       />
-    </div>
+    </div> */}
   </div>
   )
 }
