@@ -1,4 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Avenir+LT+Std:wght@400&display=swap");
+@font-face {
+  font-family: 'Avenir LT Std'; 
+  src: url('/Users/rajibbhattacharjee/Desktop/FINALL/src/fonts/Avenir LT Std 65 Medium.otf') format('opentype');
+  
+}
+@font-face {
+  font-family: 'PingFang SC'; 
+  src: url('/Users/rajibbhattacharjee/Desktop/FINALL/src/fonts/PingFang SC Regular.otf') format('opentype');
+  
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=PingFang+SC:wght@400&display=swap");
