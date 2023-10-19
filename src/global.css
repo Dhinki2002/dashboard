@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'Avenir LT Std'; 
-  src: url('/Users/rajibbhattacharjee/Desktop/FINALL/src/fonts/Avenir LT Std 65 Medium.otf') format('opentype');
+  src: url('/src/fonts/Avenir LT Std 65 Medium.otf') format('opentype');
   
 }
 @font-face {
   font-family: 'PingFang SC'; 
-  src: url('/Users/rajibbhattacharjee/Desktop/FINALL/src/fonts/PingFang SC Regular.otf') format('opentype');
+  src: url('/src/fonts/PingFang SC Regular.otf') format('opentype');
   
 }
 
