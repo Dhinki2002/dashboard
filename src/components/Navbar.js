@@ -134,7 +134,7 @@ const Navbar = ({ counter }) => {
               />
               <div className="refer-and-earn-parent">
                 <div className="refer-and-earn">Refer and earn</div>
-                <div className="refer-and-earn">Get upto 20% off for both</div>
+                <div className="refer-and-earn1">Get upto 20% off for both</div>
               </div>
             </div>
           </button>

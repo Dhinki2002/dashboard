@@ -2,6 +2,7 @@
   position: relative;
   letter-spacing: -0.02em;
   line-height: 2.78vw;
+  font-weight:bold;
 }
 .resume-container {
   position: absolute;
@@ -25,6 +26,7 @@
   font-family: var(--font-avenir-lt-std);
   color: var(--white);
   text-align: left;
+  font-weight:bold;
 }
 .icbaseline-plus-parent14 {
   cursor: pointer;
@@ -42,7 +44,15 @@
   justify-content: center;
   gap: var(--gap-7xs);
 }
-.created-on-23-04-23,
+.created-on-23-04-23{
+  position: relative;
+  font-size: var(--font-size-5xl);
+  letter-spacing: -0.02em;
+  line-height: 2.78vw;
+  font-family: var(--font-avenir-lt-std);
+  color: var(--black);
+  text-align: left;
+}
 .resume-sde1 {
   position: relative;
   font-size: var(--font-size-5xl);
@@ -51,6 +61,7 @@
   font-family: var(--font-avenir-lt-std);
   color: var(--black);
   text-align: left;
+  font-weight:bold;
 }
 .created-on-23-04-23 {
   font-size: var(--font-size-sm);

@@ -8,6 +8,8 @@
   font-size: var(--font-size-15xl);
   line-height: 2.78vw;
   color: var(--black);
+  
+
 }
 .hi-admin-container {
   display: flex;

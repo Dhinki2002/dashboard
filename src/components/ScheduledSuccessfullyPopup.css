@@ -2,9 +2,15 @@
   width: 5.95vw;
   height: 5.95vw;
 }
-.interview-scheduled-succesfull,
+.interview-scheduled-succesfull{
+  
+    position: relative;
+    font-weight:bold;
+  
+}
 .vector-icon35 {
   position: relative;
+
 }
 .interview-scheduled-succesfull-wrapper {
   display: flex;

@@ -35,7 +35,7 @@ const StartInterviewPopup = ({ onClose }) => {
                 src="/company-logo1.svg"
               />
               <div className="sde-1-interview-parent22">
-                <div className="sde-1-interview24">SDE-1 Interview</div>
+                <div className="sde-1-interview23">SDE-1 Interview</div>
                 <div className="saturday-august-29-group">
                   <div className="sde-1-interview24">Saturday, August 29</div>
                   <div className="sde-1-interview24">02:00 pm-3:00 pm</div>

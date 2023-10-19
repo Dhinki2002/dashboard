@@ -23,6 +23,7 @@
   font-family: var(--font-avenir-lt-std);
   color: var(--purple);
   text-align: left;
+  font-weight: bold;
 }
 .phstar-parent13 {
   position: absolute;
@@ -123,6 +124,7 @@
   font-family: var(--font-avenir-lt-std);
   color: var(--color-darkslategray-100);
   text-align: left;
+  font-weight:bold;
 }
 .frame-wrapper226,
 .lauser-friends-parent,
@@ -154,6 +156,7 @@
 }
 .upgrade-to-pro16 {
   position: relative;
+  font-weight:bold;
 }
 .get-exclusive-dashboard15 {
   position: relative;

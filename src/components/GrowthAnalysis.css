@@ -177,6 +177,7 @@
   line-height: 2.78vw;
   color: var(--color-darkslategray-200);
   text-align: left;
+  font-weight:bold;
 }
 .line-icon3 {
   position: absolute;

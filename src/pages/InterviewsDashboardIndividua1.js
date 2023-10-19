@@ -201,11 +201,11 @@ const InterviewsDashboardIndividua1 = () => {
             <div className="schedule-interview2">Schedule interview</div>
           </button>
           <div className="today-group">
-            <div className="tomorrow">Today</div>
+            <div className="tomorrow1">Today</div>
             <div className="frame-child140" />
           </div>
           <div className="tomorrow-parent">
-            <div className="tomorrow">Tomorrow</div>
+            <div className="tomorrow1">Tomorrow</div>
             <div className="frame-child141" />
           </div>
           <div className="rectangle-parent2">

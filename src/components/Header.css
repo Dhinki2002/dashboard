@@ -14,6 +14,7 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
+  font-weight: bold;
 }
 .carbonsearch-icon20 {
   position: relative;
@@ -24,6 +25,7 @@
 }
 .search-by-anything20 {
   position: relative;
+  font-weight:light;
 }
 .carbonsearch-parent18 {
   width: 25.26vw;

@@ -3,11 +3,13 @@
   position: relative;
   letter-spacing: -0.02em;
   line-height: 2.78vw;
+  font-weight: bold;
 }
 .answer-the-following {
   font-size: var(--font-size-lg);
   color: var(--icon-grey);
   margin-top: -0.53vw;
+  font-weight: normal;
 }
 .some-more-questions-parent {
   display: flex;
@@ -79,6 +81,7 @@
   font-family: var(--font-avenir-lt-std);
   color: var(--white);
   text-align: left;
+  font-weight: bold;
 }
 .solarplay-bold-icon5 {
   position: relative;

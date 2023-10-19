@@ -4,6 +4,7 @@
   font-family: var(--font-avenir-lt-std);
   color: var(--purple);
   text-align: left;
+  font-weight: bold;
 }
 .my-profile-wrapper1 {
   cursor: pointer;
@@ -59,6 +60,7 @@
   left: 19.18vw;
   letter-spacing: -0.02em;
   line-height: 2.78vw;
+  font-weight: bold;
 }
 .email-address-container {
   display: flex;
@@ -117,6 +119,9 @@
   letter-spacing: -0.02em;
   line-height: 2.78vw;
 }
+.college-name{
+  font-weight: bold;
+}
 .indian-institute-of {
   color: var(--icon-grey);
 }
@@ -133,6 +138,7 @@
   width: 7.21vw;
   height: 0.99vw;
   flex-shrink: 0;
+  font-weight: light;
 }
 .machine-learning-wrapper1 {
   border-radius: var(--br-5xl);
@@ -262,6 +268,7 @@
   font-size: var(--font-size-9xl);
   letter-spacing: -0.02em;
   line-height: 2.78vw;
+  font-weight: bold;
 }
 .settings5 {
   position: relative;

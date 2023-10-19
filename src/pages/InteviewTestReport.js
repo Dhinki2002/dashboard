@@ -14,9 +14,9 @@ const InteviewTestReport = () => {
       <Header />
       <div className="inteview-test-report-inner">
         <div className="interviews-parent">
-          <div className="interviews">Interviews</div>
+          <div className="interviews1">Interviews</div>
           <div className="div85">/</div>
-          <div className="interviews">Amazon-Report</div>
+          <div className="interviews1">Amazon-Report</div>
         </div>
       </div>
       <div className="remarks-group">

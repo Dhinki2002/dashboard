@@ -1,9 +1,16 @@
-.div85,
-.interviews {
+.div85
+{
   position: relative;
   letter-spacing: -0.02em;
   line-height: 2.78vw;
 }
+.interviews {
+  position: relative;
+  letter-spacing: -0.02em;
+  line-height: 2.78vw;
+  font-weight:bold;
+}
+
 .div85 {
   font-size: var(--font-size-9xl);
 }
@@ -356,5 +363,4 @@
   color: var(--icon-grey);
   font-family: var(--font-avenir-lt-std);
 }
-
 

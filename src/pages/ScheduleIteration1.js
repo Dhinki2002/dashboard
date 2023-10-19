@@ -43,8 +43,8 @@ const ScheduleIteration1 = () => {
             <div className="frame-parent97">
               <div className="frame-parent98">
                 <div className="tue-parent">
-                  <div className="schedule">Tue</div>
-                  <div className="schedule">16</div>
+                  <div className="schedule1">Tue</div>
+                  <div className="schedule1">16</div>
                 </div>
                 <div className="test-2-wrapper">
                   <div className="amazons-interview">Test-2</div>
@@ -52,8 +52,8 @@ const ScheduleIteration1 = () => {
               </div>
               <div className="frame-parent98">
                 <div className="tue-parent">
-                  <div className="schedule">Tue</div>
-                  <div className="schedule">16</div>
+                  <div className="schedule1">Tue</div>
+                  <div className="schedule1">16</div>
                 </div>
                 <div className="test-2-wrapper">
                   <div className="amazons-interview">Test-2</div>
@@ -61,8 +61,8 @@ const ScheduleIteration1 = () => {
               </div>
               <div className="frame-parent98">
                 <div className="tue-parent">
-                  <div className="schedule">Tue</div>
-                  <div className="schedule">16</div>
+                  <div className="schedule1">Tue</div>
+                  <div className="schedule1">16</div>
                 </div>
                 <div className="test-2-wrapper">
                   <div className="amazons-interview">Test-2</div>
@@ -82,8 +82,8 @@ const ScheduleIteration1 = () => {
             <div className="frame-parent97">
               <div className="frame-parent98">
                 <div className="tue-parent">
-                  <div className="schedule">Tue</div>
-                  <div className="schedule">16</div>
+                  <div className="schedule1">Tue</div>
+                  <div className="schedule1">16</div>
                 </div>
                 <div className="test-2-wrapper">
                   <div className="amazons-interview">Test-2</div>
@@ -91,8 +91,8 @@ const ScheduleIteration1 = () => {
               </div>
               <div className="frame-parent98">
                 <div className="tue-parent">
-                  <div className="schedule">Tue</div>
-                  <div className="schedule">16</div>
+                  <div className="schedule1">Tue</div>
+                  <div className="schedule1">16</div>
                 </div>
                 <div className="test-2-wrapper">
                   <div className="amazons-interview">Test-2</div>
@@ -100,8 +100,8 @@ const ScheduleIteration1 = () => {
               </div>
               <div className="frame-parent98">
                 <div className="tue-parent">
-                  <div className="schedule">Tue</div>
-                  <div className="schedule">16</div>
+                  <div className="schedule1">Tue</div>
+                  <div className="schedule1">16</div>
                 </div>
                 <div className="test-2-wrapper">
                   <div className="amazons-interview">Test-2</div>
@@ -119,8 +119,8 @@ const ScheduleIteration1 = () => {
           </div>
           <div className="frame-parent106">
             <div className="tue-parent">
-              <div className="schedule">Tue</div>
-              <div className="schedule">16</div>
+              <div className="schedule1">Tue</div>
+              <div className="schedule1">16</div>
             </div>
             <div className="amazons-interview-wrapper">
               <div className="amazons-interview">Amazon’s Interview</div>

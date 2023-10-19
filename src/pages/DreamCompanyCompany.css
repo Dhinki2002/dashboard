@@ -1,8 +1,20 @@
-.div104,
+.div104
+ {
+  position: relative;
+  letter-spacing: -0.02em;
+  line-height: 2.78vw;
+}
 .dream-company {
   position: relative;
   letter-spacing: -0.02em;
   line-height: 2.78vw;
+  /* font-weight:bold; */
+}
+.dream-company1 {
+  position: relative;
+  letter-spacing: -0.02em;
+  line-height: 2.78vw;
+  font-weight:bold;
 }
 .div104 {
   font-size: var(--font-size-9xl);
@@ -168,6 +180,7 @@
   font-family: var(--font-avenir-lt-std);
   color: var(--purple);
   text-align: left;
+  font-weight:bold;
 }
 .attempt-now-wrapper {
   cursor: pointer;
@@ -513,6 +526,7 @@
   letter-spacing: -0.02em;
   line-height: 2.78vw;
   color: var(--color-darkslategray-200);
+  font-weight:bold;
 }
 .phclock-parent,
 .upcoming-interview-parent {
@@ -533,6 +547,7 @@
   font-family: var(--font-avenir-lt-std);
   color: var(--white);
   text-align: left;
+  font-weight:bold;
 }
 .icbaseline-plus-parent12 {
   cursor: pointer;

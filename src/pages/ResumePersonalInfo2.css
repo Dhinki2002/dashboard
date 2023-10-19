@@ -89,6 +89,7 @@
   position: relative;
   letter-spacing: -0.02em;
   line-height: 2.78vw;
+  font-weight: bold;
 }
 .resume-wrapper {
   position: absolute;

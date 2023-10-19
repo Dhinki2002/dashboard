@@ -2,6 +2,7 @@
   position: relative;
   letter-spacing: -0.02em;
   line-height: 2.78vw;
+  font-weight: bold;
 }
 .amazon-test-wrapper,
 .test-summary-inner {
@@ -154,6 +155,7 @@
   left: 1.32vw;
   letter-spacing: -0.02em;
   line-height: 2.78vw;
+  font-weight: bold;
 }
 .ellipse-div,
 .frame-child59 {
@@ -214,6 +216,8 @@
 }
 .div69 {
   font-size: var(--font-size-5xl);
+  font-weight: bold;
+
 }
 .frame-parent90,
 .no-of-correct-answers-parent {

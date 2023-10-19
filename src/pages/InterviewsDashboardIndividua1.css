@@ -39,6 +39,7 @@
   font-family: var(--font-avenir-lt-std);
   color: var(--purple);
   text-align: left;
+  font-weight:bold;
 }
 .upcoming-wrapper1 {
   cursor: pointer;
@@ -107,6 +108,7 @@
   font-family: var(--font-avenir-lt-std);
   color: var(--black);
   text-align: left;
+  font-weight:bold;
 }
 .div137 {
   font-size: var(--font-size-sm);
@@ -217,6 +219,7 @@
   font-family: var(--font-avenir-lt-std);
   color: var(--white);
   text-align: left;
+  font-weight:bold;
 }
 .icbaseline-plus-parent16 {
   cursor: pointer;
@@ -256,7 +259,14 @@
   position: relative;
   letter-spacing: -0.02em;
   line-height: 2.78vw;
+  font-weight:bold;
 }
+.tomorrow1 {
+  position: relative;
+  letter-spacing: -0.02em;
+  line-height: 2.78vw;
+}
+
 .frame-child141 {
   position: relative;
   border-top: 0.07vw solid var(--icon-grey);

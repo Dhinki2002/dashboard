@@ -32,7 +32,7 @@ const MyGoScore = () => {
           <div className="accuracy">Completion:</div>
           <div className="accuracy">Consistency:</div>
         </div>
-        <div className="accuracy-parent">
+        <div className="accuracy-parent1">
           <div className="accuracy">60%</div>
           <div className="accuracy">43%</div>
           <div className="accuracy">65%</div>

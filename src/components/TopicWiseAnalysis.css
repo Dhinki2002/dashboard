@@ -2,12 +2,14 @@
   position: relative;
   letter-spacing: -0.02em;
   line-height: 2.78vw;
+ 
 }
 .topic-wise-analysis-wrapper1 {
   position: absolute;
   top: 1.32vw;
   left: 1.32vw;
   color: var(--color-darkslategray-200);
+  font-weight:bold;
 }
 .parent22,
 .parent23,

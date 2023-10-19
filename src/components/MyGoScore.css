@@ -44,6 +44,8 @@
     align-items: flex-start;
     justify-content: flex-start;
     gap: 0.07vw;
+    font-weight:bold;
+
   }
   .frame-parent17 {
     position: absolute;
@@ -66,4 +68,9 @@
     color: #fff;
     font-family: "Avenir LT Std";
   }
+
+  .accuracy-parent1{
+    font-weight: normal;
+  }
+
   

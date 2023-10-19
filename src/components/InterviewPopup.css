@@ -3,6 +3,7 @@
   position: relative;
   letter-spacing: -0.02em;
   line-height: 2.78vw;
+  font-weight:bold;
 }
 .fill-in-the1 {
   font-size: var(--font-size-lg);
@@ -76,6 +77,7 @@
   font-family: var(--font-avenir-lt-std);
   color: var(--white);
   text-align: left;
+  font-weight:bold;
 }
 .solarplay-bold-icon1 {
   position: relative;

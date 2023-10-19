@@ -43,6 +43,7 @@
   font-size: var(--font-size-5xl);
   letter-spacing: -0.02em;
   line-height: 2.78vw;
+  font-weight: bold;
 }
 .frame-child,
 .password-container {
@@ -89,6 +90,7 @@
   position: relative;
   color: var(--white);
   text-align: left;
+  font-weight: bold;
 }
 .change-password-wrapper {
   cursor: pointer;

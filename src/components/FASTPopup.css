@@ -1,4 +1,9 @@
-.fulcrum-assessment-test,
+.fulcrum-assessment-test{
+  font-weight:bold;
+  position: relative;
+  letter-spacing: -0.02em;
+  line-height: 2.78vw;
+}
 .instructions {
   position: relative;
   letter-spacing: -0.02em;
@@ -46,6 +51,7 @@
   position: relative;
   letter-spacing: -0.02em;
   line-height: 2.38vw;
+  font-weight:light;
 }
 .frame-parent235 {
   display: flex;
@@ -76,6 +82,7 @@
   align-items: center;
   justify-content: flex-start;
   gap: var(--gap-2xs);
+  font-weight:light;
 }
 .start-now2 {
   position: relative;
@@ -86,6 +93,7 @@
   display: inline-block;
   width: 6.35vw;
   flex-shrink: 0;
+  font-weight:bold;
 }
 .solarplay-bold-icon4 {
   position: relative;

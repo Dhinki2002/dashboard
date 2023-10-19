@@ -1,8 +1,14 @@
-.fill-in-the3,
+.fill-in-the3
+ {
+  position: relative;
+  letter-spacing: -0.02em;
+  line-height: 2.78vw;
+}
 .schedule-an-interview1 {
   position: relative;
   letter-spacing: -0.02em;
   line-height: 2.78vw;
+  font-weight:bold;
 }
 .fill-in-the3 {
   font-size: var(--font-size-lg);
@@ -64,6 +70,7 @@
   font-family: var(--font-avenir-lt-std);
   color: var(--white);
   text-align: left;
+  font-weight:bold;
 }
 .solarplay-bold-icon3 {
   position: relative;

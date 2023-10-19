@@ -97,7 +97,7 @@ const DreamCompanyCompany = () => {
               </div>
             </div>
             <div className="schedule-parent">
-              <div className="dream-company">Schedule</div>
+              <div className="dream-company1">Schedule</div>
               <Link className="view-schedule" to="/schedule-iteration-1">
                 View schedule
               </Link>

@@ -2,6 +2,7 @@
   position: relative;
   letter-spacing: -0.02em;
   line-height: 2.78vw;
+  font-weight: bold;
 }
 .schedule-wrapper {
   position: absolute;
@@ -263,6 +264,7 @@
   left: 1.32vw;
   letter-spacing: -0.02em;
   line-height: 2.78vw;
+  font-weight: bold;
 }
 .they-were-able1 {
   position: relative;

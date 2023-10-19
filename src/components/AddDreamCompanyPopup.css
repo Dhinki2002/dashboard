@@ -7,7 +7,12 @@
   overflow: hidden;
   cursor: pointer;
 }
-.add-your-dream,
+.add-your-dream{
+  position: relative;
+  letter-spacing: -0.02em;
+  line-height: 2.78vw;
+  font-weight:bold;
+}
 .fill-in-the2 {
   position: relative;
   letter-spacing: -0.02em;
@@ -85,6 +90,7 @@
   font-family: var(--font-avenir-lt-std);
   color: var(--white);
   text-align: left;
+  font-weight:bold;
 }
 .pay-for-company-wrapper {
   border-radius: var(--br-5xs);

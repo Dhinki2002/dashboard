@@ -6,9 +6,10 @@ import { TopicWiseAnalysis } from "../components/TopicWiseAnalysis";
 import GrowthAnalysis2 from "../components/GrowthAnalysis2";
 
 const TestSummary = () => {
+  const counter =1
   return (
     <div className="test-summary">
-      <Navbar />
+      <Navbar counter={counter}/>
       <Header />
       <div className="test-summary-inner">
         <div className="amazon-test-wrapper">
