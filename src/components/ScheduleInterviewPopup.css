@@ -3,6 +3,9 @@
   position: relative;
   letter-spacing: -0.02em;
   line-height: 2.78vw;
+  font-size: var(--font-size-lg);
+  color: var(--icon-grey);
+  margin-top: -0.53vw;
 }
 .schedule-an-interview1 {
   position: relative;
@@ -10,11 +13,7 @@
   line-height: 2.78vw;
   font-weight:bold;
 }
-.fill-in-the3 {
-  font-size: var(--font-size-lg);
-  color: var(--icon-grey);
-  margin-top: -0.53vw;
-}
+
 .schedule-an-interview-group {
   display: flex;
   flex-direction: column;

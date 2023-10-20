@@ -52,6 +52,11 @@
   font-family: var(--font-avenir-lt-std);
   color: var(--black);
   text-align: left;
+ 
+    font-size: var(--font-size-sm);
+    color: var(--icon-grey);
+    margin-top: -1.06vw;
+  
 }
 .resume-sde1 {
   position: relative;
@@ -63,11 +68,7 @@
   text-align: left;
   font-weight:bold;
 }
-.created-on-23-04-23 {
-  font-size: var(--font-size-sm);
-  color: var(--icon-grey);
-  margin-top: -1.06vw;
-}
+
 .resume-sde1-parent {
   position: absolute;
   top: 9.72vw;

@@ -3,6 +3,7 @@
   position: relative;
   letter-spacing: -0.02em;
   line-height: 2.78vw;
+  font-size: var(--font-size-9xl);
 }
 .dream-company {
   position: relative;
@@ -16,9 +17,7 @@
   line-height: 2.78vw;
   font-weight:bold;
 }
-.div104 {
-  font-size: var(--font-size-9xl);
-}
+
 .dream-company-parent {
   width: 19.31vw;
   display: flex;

@@ -14,15 +14,14 @@
   font-weight:bold;
 }
 .fill-in-the2 {
-  position: relative;
-  letter-spacing: -0.02em;
-  line-height: 2.78vw;
+  position: relative; /* from the first set */
+  letter-spacing: -0.02em; /* from the first set */
+  line-height: 2.78vw; /* from the first set */
+  font-size: var(--font-size-lg); /* from the second set */
+  color: var(--icon-grey); /* from the second set */
+  margin-top: -0.53vw; /* from the second set */
 }
-.fill-in-the2 {
-  font-size: var(--font-size-lg);
-  color: var(--icon-grey);
-  margin-top: -0.53vw;
-}
+
 .add-your-dream-company-parent,
 .frame-child170 {
   display: flex;

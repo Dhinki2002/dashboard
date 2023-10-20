@@ -3,6 +3,7 @@
   position: relative;
   letter-spacing: -0.02em;
   line-height: 2.78vw;
+  font-size: var(--font-size-9xl);
 }
 .interviews {
   position: relative;
@@ -11,9 +12,7 @@
   font-weight:bold;
 }
 
-.div85 {
-  font-size: var(--font-size-9xl);
-}
+
 .interviews-parent,
 .inteview-test-report-inner {
   display: flex;
