@@ -36,7 +36,7 @@ const FASTPopup = ({ onClose }) => {
                   This test is best taken on a laptop or PC.
                 </li>
                 <li className="please-ensure-that">Enable screensharing</li>
-                <li>Give access to mic</li>
+                <li className="please-ensure-that">Give access to mic</li>
               </ul>
             </div>
           </div>

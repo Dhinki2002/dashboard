@@ -126,6 +126,17 @@
   text-align: left;
   font-weight:bold;
 }
+
+.refer-and-earn1 {
+  position: relative;
+  font-size: var(--font-size-base);
+  letter-spacing: -0.02em;
+  line-height: 1.59vw;
+  font-family: var(--font-avenir-lt-std);
+  color: var(--color-darkslategray-100);
+  text-align: left;
+}
+
 .frame-wrapper226,
 .lauser-friends-parent,
 .refer-and-earn-parent {
