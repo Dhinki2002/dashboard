@@ -1,251 +1,287 @@
 .my-profile1 {
-  position: relative;
+    position: relative;
 }
+
 .my-profile-wrapper {
-  position: absolute;
-  top: 0;
-  left: 0;
-  border-radius: var(--br-16xl);
-  background-color: var(--color-mediumslateblue-200);
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding: var(--padding-xs) var(--padding-base);
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: var(--br-16xl);
+    background-color: var(--color-mediumslateblue-200);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: var(--padding-xs) var(--padding-base);
 }
+
 .frame-child1,
 .frame-parent5 {
-  position: absolute;
-  top: 4.50vw;
-  left: 1.06vw;
+    position: absolute;
+    top: 4.50vw;
+    left: 1.06vw;
 }
+
 .frame-parent5 {
-  top: 3.17vw;
-  left: 2.65vw;
-  width: 8.47vw;
-  height: 6.08vw;
-  color: var(--purple);
+    top: 3.17vw;
+    left: 2.65vw;
+    width: 8.47vw;
+    height: 6.08vw;
+    color: var(--purple);
 }
+
 .my-profile2,
 .name,
 .priyanshu-gupta {
-  letter-spacing: -0.02em;
-  line-height: 2.78vw;
+    letter-spacing: -0.02em;
+    line-height: 2.78vw;
 }
+
 .my-profile2 {
-  position: absolute;
-  top: 2.12vw;
-  left: 19.18vw;
-  font-size: var(--font-size-5xl);
+    position: absolute;
+    top: 2.12vw;
+    left: 19.18vw;
+    font-size: var(--font-size-5xl);
 }
+
 .name,
 .priyanshu-gupta {
-  position: relative;
+    position: relative;
 }
+
 .priyanshu-gupta {
-  color: var(--icon-grey);
+    color: var(--icon-grey);
 }
+
 .name-parent {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
+
 .change-password1 {
-  position: relative;
-  font-size: var(--font-size-sm);
-  text-decoration: underline;
-  letter-spacing: -0.02em;
-  line-height: 2.78vw;
-  color: var(--icon-grey);
+    position: relative;
+    font-size: var(--font-size-sm);
+    text-decoration: underline;
+    letter-spacing: -0.02em;
+    line-height: 2.78vw;
+    color: var(--icon-grey);
 }
+
 .password-parent {
-  width: 20.04vw;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: space-between;
+    width: 20.04vw;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
 }
+
 .div1 {
-  position: absolute;
-  top: -0.26vw;
-  left: 0;
-  letter-spacing: -0.02em;
-  line-height: 2.78vw;
+    position: absolute;
+    top: -0.26vw;
+    left: 0;
+    letter-spacing: -0.02em;
+    line-height: 2.78vw;
 }
+
 .carbonview-off-icon {
-  position: absolute;
-  top: 0.73vw;
-  left: 18.19vw;
-  width: 1.32vw;
-  height: 1.32vw;
-  overflow: hidden;
+    position: absolute;
+    top: 0.73vw;
+    left: 18.19vw;
+    width: 1.32vw;
+    height: 1.32vw;
+    overflow: hidden;
 }
+
 .parent {
-  position: relative;
-  width: 20.04vw;
-  height: 2.78vw;
-  margin-top: -0.26vw;
-  font-size: var(--font-size-17xl);
-  color: var(--icon-grey);
+    position: relative;
+    width: 20.04vw;
+    height: 2.78vw;
+    margin-top: -0.26vw;
+    font-size: var(--font-size-17xl);
+    color: var(--icon-grey);
 }
+
 .frame-parent7,
 .frame-parent8 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
+
 .frame-parent8 {
-  width: 20.04vw;
+    width: 20.04vw;
 }
+
 .frame-parent7 {
-  gap: var(--gap-lg);
+    gap: var(--gap-lg);
 }
+
 .machine-learning {
-  position: relative;
-  display: inline-block;
-  width: 7.21vw;
-  height: 0.99vw;
-  flex-shrink: 0;
+    position: relative;
+    display: inline-block;
+    width: 7.21vw;
+    height: 0.99vw;
+    flex-shrink: 0;
 }
+
 .machine-learning-wrapper {
-  border-radius: var(--br-5xl);
-  border: 0.07vw solid var(--purple);
-  overflow: hidden;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  justify-content: center;
-  padding: var(--padding-6xs) var(--padding-2xs);
+    border-radius: var(--br-5xl);
+    border: 0.07vw solid var(--purple);
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    padding: var(--padding-6xs) var(--padding-2xs);
 }
+
 .frame-parent10,
 .skills-parent {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
+
 .frame-parent10 {
-  width: 20.24vw;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: var(--gap-xs);
-  font-size: var(--font-size-sm);
-  color: var(--purple);
+    width: 20.24vw;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--gap-xs);
+    font-size: var(--font-size-sm);
+    color: var(--purple);
 }
+
 .skills-parent {
-  flex-direction: column;
-  gap: var(--gap-9xs);
+    flex-direction: column;
+    gap: var(--gap-9xs);
 }
+
 .delete-account,
 .this-will-permanently {
-  position: relative;
-  font-size: var(--font-size-base);
+    position: relative;
+    font-size: var(--font-size-base);
 }
+
 .this-will-permanently {
-  letter-spacing: -0.02em;
-  line-height: 2.78vw;
-  color: var(--icon-grey);
-  margin-top: -0.26vw;
+    letter-spacing: -0.02em;
+    line-height: 2.78vw;
+    color: var(--icon-grey);
+    margin-top: -0.26vw;
 }
+
 .delete-account {
-  font-family: var(--font-avenir-lt-std);
-  color: var(--danger);
-  text-align: left;
+    font-family: var(--font-avenir-lt-std);
+    color: var(--danger);
+    text-align: left;
 }
+
 .delete-account-wrapper {
-  cursor: pointer;
-  border: 0;
-  padding: var(--padding-4xs) var(--padding-xs);
-  background-color: var(--color-crimson-200);
-  border-radius: var(--br-5xs);
-  flex-direction: row;
+    cursor: pointer;
+    border: 0;
+    padding: var(--padding-4xs) var(--padding-xs);
+    background-color: var(--color-crimson-200);
+    border-radius: var(--br-5xs);
+    flex-direction: row;
 }
+
 .delete-account-wrapper,
 .frame-parent11,
 .frame-parent6 {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
+
 .frame-parent11 {
-  width: 20.24vw;
-  flex-direction: column;
-  gap: var(--gap-5xs);
+    width: 20.24vw;
+    flex-direction: column;
+    gap: var(--gap-5xs);
 }
+
 .frame-parent6 {
-  position: absolute;
-  top: 7.01vw;
-  left: 19.71vw;
-  flex-direction: row;
-  gap: var(--gap-118xl);
-  font-size: var(--font-size-lg);
+    position: absolute;
+    top: 7.01vw;
+    left: 19.71vw;
+    flex-direction: row;
+    gap: var(--gap-118xl);
+    font-size: var(--font-size-lg);
 }
+
 .tableredit-icon {
-  position: relative;
-  width: 1.06vw;
-  height: 1.06vw;
-  overflow: hidden;
-  flex-shrink: 0;
+    position: relative;
+    width: 1.06vw;
+    height: 1.06vw;
+    overflow: hidden;
+    flex-shrink: 0;
 }
+
 .edit {
-  position: relative;
-  font-size: var(--font-size-base);
-  letter-spacing: -0.02em;
-  line-height: 2.78vw;
-  font-family: var(--font-avenir-lt-std);
-  color: var(--icon-grey);
-  text-align: left;
+    position: relative;
+    font-size: var(--font-size-base);
+    letter-spacing: -0.02em;
+    line-height: 2.78vw;
+    font-family: var(--font-avenir-lt-std);
+    color: var(--icon-grey);
+    text-align: left;
 }
+
 .tableredit-parent {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  gap: var(--gap-5xs);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: var(--gap-5xs);
 }
+
 .frame-wrapper7,
 .rectangle-group {
-  position: absolute;
-  background-color: var(--white);
+    position: absolute;
+    background-color: var(--white);
 }
+
 .frame-wrapper7 {
-  cursor: pointer;
-  border: 0;
-  padding: var(--padding-9xs) var(--padding-base);
-  top: 1.85vw;
-  left: 68.85vw;
-  border-radius: var(--br-xs);
-  box-shadow: -0.13vw -0.13vw 0.13vw rgba(0, 0, 0, 0.08), 0.13vw 0.13vw 0.13vw rgba(0, 0, 0, 0.08);
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
+    cursor: pointer;
+    border: 0;
+    padding: var(--padding-9xs) var(--padding-base);
+    top: 1.85vw;
+    left: 68.85vw;
+    border-radius: var(--br-xs);
+    box-shadow: -0.13vw -0.13vw 0.13vw rgba(0, 0, 0, 0.08), 0.13vw 0.13vw 0.13vw rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
+
 .rectangle-group {
-  top: 14.29vw;
-  left: 21.03vw;
-  border-radius: var(--br-base);
-  width: 76.59vw;
-  height: 48.54vw;
-  overflow: hidden;
+    top: 14.29vw;
+    left: 21.03vw;
+    border-radius: var(--br-base);
+    width: 76.59vw;
+    height: 48.54vw;
+    overflow: hidden;
 }
+
 .settings2 {
-  position: absolute;
-  top: 10.45vw;
-  left: 21.03vw;
-  font-size: var(--font-size-9xl);
-  letter-spacing: -0.02em;
-  line-height: 2.78vw;
+    position: absolute;
+    top: 10.45vw;
+    left: 21.03vw;
+    font-size: var(--font-size-9xl);
+    letter-spacing: -0.02em;
+    line-height: 2.78vw;
 }
+
 .settingsinterviewer {
-  position: relative;
-  background-color: var(--color-ghostwhite-100);
-  width: 100%;
-  height: 64.95vw;
-  overflow: hidden;
-  text-align: left;
-  font-size: var(--font-size-xl);
-  color: var(--black);
-  font-family: var(--font-avenir-lt-std);
+    position: relative;
+    background-color: var(--color-ghostwhite-100);
+    width: 100%;
+    height: 64.95vw;
+    overflow: hidden;
+    text-align: left;
+    font-size: var(--font-size-xl);
+    color: var(--black);
+    font-family: var(--font-avenir-lt-std);
 }

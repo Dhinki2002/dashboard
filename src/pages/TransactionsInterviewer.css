@@ -1,214 +1,246 @@
 .transactions {
-  position: relative;
-  letter-spacing: -0.02em;
-  line-height: 2.78vw;
+    position: relative;
+    letter-spacing: -0.02em;
+    line-height: 2.78vw;
 }
+
 .transactions-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
+
 .report-a-problem {
-  position: relative;
-  font-size: var(--font-size-sm);
-  font-family: var(--font-avenir-lt-std);
-  color: var(--danger);
-  text-align: left;
+    position: relative;
+    font-size: var(--font-size-sm);
+    font-family: var(--font-avenir-lt-std);
+    color: var(--danger);
+    text-align: left;
 }
+
 .frame-parent57,
 .report-a-problem-wrapper {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
+
 .report-a-problem-wrapper {
-  cursor: pointer;
-  border: 0.07vw solid var(--danger);
-  padding: var(--padding-5xs) var(--padding-base);
-  background-color: var(--color-crimson-200);
-  border-radius: var(--br-9xs);
-  overflow: hidden;
-  justify-content: center;
+    cursor: pointer;
+    border: 0.07vw solid var(--danger);
+    padding: var(--padding-5xs) var(--padding-base);
+    background-color: var(--color-crimson-200);
+    border-radius: var(--br-9xs);
+    overflow: hidden;
+    justify-content: center;
 }
+
 .frame-parent57 {
-  justify-content: flex-start;
-  gap: 57.74vw;
+    justify-content: flex-start;
+    gap: 57.74vw;
 }
+
 .next-payment-date,
 .october-2023 {
-  position: relative;
-  opacity: 0.8;
+    position: relative;
+    opacity: 0.8;
 }
+
 .october-2023 {
-  font-size: var(--font-size-5xl);
+    font-size: var(--font-size-5xl);
 }
+
 .next-payment-date-parent {
-  position: absolute;
-  top: 1.32vw;
-  left: 1.59vw;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: var(--gap-5xs);
+    position: absolute;
+    top: 1.32vw;
+    left: 1.59vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-5xs);
 }
+
 .frame-wrapper30 {
-  position: relative;
-  border-radius: var(--br-base);
-  background-color: var(--white);
-  width: 22.35vw;
-  height: 6.75vw;
-  overflow: hidden;
-  flex-shrink: 0;
+    position: relative;
+    border-radius: var(--br-base);
+    background-color: var(--white);
+    width: 22.35vw;
+    height: 6.75vw;
+    overflow: hidden;
+    flex-shrink: 0;
 }
+
 .date-parent,
 .frame-parent59 {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: var(--gap-xl);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-xl);
 }
+
 .date-parent {
-  flex-direction: column;
-  gap: var(--gap-11xs);
+    flex-direction: column;
+    gap: var(--gap-11xs);
 }
+
 .legend-indicator-14 {
-  position: relative;
-  border-radius: var(--br-81xl);
-  background-color: var(--color-mediumseagreen);
-  width: 0.86vw;
-  height: 0.86vw;
+    position: relative;
+    border-radius: var(--br-81xl);
+    background-color: var(--color-mediumseagreen);
+    width: 0.86vw;
+    height: 0.86vw;
 }
+
 .complete {
-  position: relative;
-  letter-spacing: 0.01vw;
-  line-height: 1.06vw;
+    position: relative;
+    letter-spacing: 0.01vw;
+    line-height: 1.06vw;
 }
+
 .legend-label-31 {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  gap: var(--gap-5xs);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: var(--gap-5xs);
 }
+
 .legend-indicator-16,
 .legend-indicator-17 {
-  position: relative;
-  border-radius: var(--br-81xl);
-  background-color: var(--incomplete);
-  width: 0.86vw;
-  height: 0.86vw;
+    position: relative;
+    border-radius: var(--br-81xl);
+    background-color: var(--incomplete);
+    width: 0.86vw;
+    height: 0.86vw;
 }
+
 .legend-indicator-17 {
-  background-color: var(--danger);
+    background-color: var(--danger);
 }
+
 .legend-label-3-parent {
-  flex-direction: column;
-  align-items: flex-start;
-  gap: var(--gap-15xl);
-  color: var(--light-base-chart-title);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--gap-15xl);
+    color: var(--light-base-chart-title);
 }
+
 .invoice-wrapper,
 .legend-label-3-parent,
 .status-parent {
-  display: flex;
-  justify-content: flex-start;
+    display: flex;
+    justify-content: flex-start;
 }
+
 .status-parent {
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 0.86vw;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.86vw;
 }
+
 .invoice-wrapper {
-  flex-direction: row;
-  align-items: center;
+    flex-direction: row;
+    align-items: center;
 }
+
 .download {
-  position: relative;
-  text-decoration: underline;
-  letter-spacing: -0.02em;
-  line-height: 2.78vw;
+    position: relative;
+    text-decoration: underline;
+    letter-spacing: -0.02em;
+    line-height: 2.78vw;
 }
+
 .download-parent,
 .frame-parent61 {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
+
 .download-parent {
-  flex-direction: column;
-  gap: var(--gap-5xs);
-  color: var(--color-darkslategray-200);
+    flex-direction: column;
+    gap: var(--gap-5xs);
+    color: var(--color-darkslategray-200);
 }
+
 .frame-parent61 {
-  position: absolute;
-  top: 0;
-  left: calc(50% - 36.21vw);
-  flex-direction: row;
-  gap: 14.88vw;
+    position: absolute;
+    top: 0;
+    left: calc(50% - 36.21vw);
+    flex-direction: row;
+    gap: 14.88vw;
 }
+
 .frame-child37 {
-  position: relative;
-  border-top: 0.07vw solid var(--icon-grey);
-  box-sizing: border-box;
-  width: 74.01vw;
-  height: 0.07vw;
-  opacity: 0.18;
+    position: relative;
+    border-top: 0.07vw solid var(--icon-grey);
+    box-sizing: border-box;
+    width: 74.01vw;
+    height: 0.07vw;
+    opacity: 0.18;
 }
+
 .line-parent2 {
-  position: absolute;
-  top: 2.51vw;
-  left: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: var(--gap-31xl);
+    position: absolute;
+    top: 2.51vw;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-31xl);
 }
+
 .frame-parent60 {
-  position: absolute;
-  top: 1.06vw;
-  left: 1.32vw;
-  width: 73.94vw;
-  height: 28.84vw;
+    position: absolute;
+    top: 1.06vw;
+    left: 1.32vw;
+    width: 73.94vw;
+    height: 28.84vw;
 }
+
 .frame-wrapper32 {
-  position: relative;
-  border-radius: var(--br-base);
-  background-color: var(--white);
-  width: 76.59vw;
-  height: 31.15vw;
-  font-size: var(--font-size-base);
-  color: var(--icon-grey);
+    position: relative;
+    border-radius: var(--br-base);
+    background-color: var(--white);
+    width: 76.59vw;
+    height: 31.15vw;
+    font-size: var(--font-size-base);
+    color: var(--icon-grey);
 }
+
 .frame-parent56,
 .frame-parent58 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
+
 .frame-parent58 {
-  gap: var(--gap-5xl);
-  font-size: var(--font-size-lg);
-  color: var(--text);
+    gap: var(--gap-5xl);
+    font-size: var(--font-size-lg);
+    color: var(--text);
 }
+
 .frame-parent56 {
-  position: absolute;
-  top: 10.12vw;
-  left: 21.30vw;
-  gap: var(--gap-lgi);
+    position: absolute;
+    top: 10.12vw;
+    left: 21.30vw;
+    gap: var(--gap-lgi);
 }
+
 .transactions-interviewer {
-  position: relative;
-  background-color: var(--color-ghostwhite-100);
-  width: 100%;
-  height: 64.95vw;
-  overflow: hidden;
-  text-align: left;
-  font-size: var(--font-size-5xl);
-  color: var(--color-darkslategray-200);
-  font-family: var(--font-avenir-lt-std);
+    position: relative;
+    background-color: var(--color-ghostwhite-100);
+    width: 100%;
+    height: 64.95vw;
+    overflow: hidden;
+    text-align: left;
+    font-size: var(--font-size-5xl);
+    color: var(--color-darkslategray-200);
+    font-family: var(--font-avenir-lt-std);
 }

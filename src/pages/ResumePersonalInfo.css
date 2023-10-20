@@ -1,148 +1,165 @@
 .choose-your-resume {
-  position: relative;
-  letter-spacing: -0.02em;
-  line-height: 2.78vw;
-  font-weight:bold;
+    position: relative;
+    letter-spacing: -0.02em;
+    line-height: 2.78vw;
+    font-weight: bold;
 }
+
 .choose-your-resume-template-wrapper {
-  position: absolute;
-  top: 1.59vw;
-  left: 1.59vw;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
+    position: absolute;
+    top: 1.59vw;
+    left: 1.59vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
+
 .phdots-three {
-  position: absolute;
-  top: 5.67vw;
-  left: 10.22vw;
-  width: 0.95vw;
-  height: 0.95vw;
-  overflow: hidden;
+    position: absolute;
+    top: 5.67vw;
+    left: 10.22vw;
+    width: 0.95vw;
+    height: 0.95vw;
+    overflow: hidden;
 }
+
 .icbaseline-plus-icon3 {
-  position: relative;
-  width: 2.38vw;
-  height: 2.38vw;
-  overflow: hidden;
-  flex-shrink: 0;
+    position: relative;
+    width: 2.38vw;
+    height: 2.38vw;
+    overflow: hidden;
+    flex-shrink: 0;
 }
+
 .create-blank {
-  position: relative;
-  font-size: var(--font-size-xl);
-  letter-spacing: -0.02em;
-  line-height: 2.78vw;
-  font-family: var(--font-avenir-lt-std);
-  color: var(--icon-grey);
-  text-align: left;
-  font-weight:bold;
+    position: relative;
+    font-size: var(--font-size-xl);
+    letter-spacing: -0.02em;
+    line-height: 2.78vw;
+    font-family: var(--font-avenir-lt-std);
+    color: var(--icon-grey);
+    text-align: left;
+    font-weight: bold;
 }
+
 .icbaseline-plus-parent1 {
-  position: absolute;
-  top: calc(50% - 2.55vw);
-  left: 2.65vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
+    position: absolute;
+    top: calc(50% - 2.55vw);
+    left: 2.65vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
 }
+
 .frame-child72,
 .phdots-three-parent9 {
-  position: relative;
-  overflow: hidden;
-  flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
 }
+
 .phdots-three-parent9 {
-  cursor: pointer;
-  border: 0;
-  padding: 0;
-  background-color: #efefef;
-  border-radius: 0.54vw;
-  box-shadow: -0.07vw 0 0 rgba(0, 0, 0, 0.1),
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    background-color: #efefef;
+    border-radius: 0.54vw;
+    box-shadow: -0.07vw 0 0 rgba(0, 0, 0, 0.1),
     0.07vw -0.07vw 0 rgba(0, 0, 0, 0.1),
     0 0.10vw 0#605bff;
-  width: 12.50vw;
-  height: 17.66vw;
+    width: 12.50vw;
+    height: 17.66vw;
 }
+
 .frame-child72 {
-  background-image: url(/public/frame1267@2x.png);
+    background-image: url(/public/frame1267@2x.png);
 }
+
 .frame-child72,
 .phdots-three-frame,
 .phdots-three-wrapper {
-  cursor: pointer;
-  border: 0;
-  padding: 0;
-  background-color: transparent;
-  width: 12.50vw;
-  height: 17.66vw;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top;
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+    width: 12.50vw;
+    height: 17.66vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
 }
+
 .phdots-three-wrapper {
-  position: relative;
-  overflow: hidden;
-  flex-shrink: 0;
-  background-image: url(/public/frame1268.svg);
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+    background-image: url(/public/frame1268.svg);
 }
+
 .phdots-three-frame {
-  background-image: url(/public/frame1269.svg);
+    background-image: url(/public/frame1269.svg);
 }
+
 .frame-child73,
 .phdots-three-frame,
 .phdots-three-wrapper1 {
-  position: relative;
-  overflow: hidden;
-  flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
 }
+
 .phdots-three-wrapper1 {
-  cursor: pointer;
-  border: 0;
-  padding: 0;
-  background-color: transparent;
-  width: 12.50vw;
-  height: 17.66vw;
-  background-image: url(/public/frame1270.svg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top;
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+    width: 12.50vw;
+    height: 17.66vw;
+    background-image: url(/public/frame1270.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
 }
+
 .frame-child73 {
-  width: 12.64vw;
-  height: 17.83vw;
+    width: 12.64vw;
+    height: 17.83vw;
 }
+
 .frame-parent109 {
-  position: absolute;
-  top: 6.08vw;
-  left: 1.59vw;
-  width: 72.62vw;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: 2.51vw;
+    position: absolute;
+    top: 6.08vw;
+    left: 1.59vw;
+    width: 72.62vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 2.51vw;
 }
+
 .frame-parent108 {
-  position: absolute;
-  top: 9.13vw;
-  left: 21.03vw;
-  border-radius: var(--br-base);
-  background-color: var(--white);
-  width: 76.59vw;
-  height: 53.70vw;
-  overflow: hidden;
+    position: absolute;
+    top: 9.13vw;
+    left: 21.03vw;
+    border-radius: var(--br-base);
+    background-color: var(--white);
+    width: 76.59vw;
+    height: 53.70vw;
+    overflow: hidden;
 }
+
 .resume-personal-info {
-  position: relative;
-  background-color: var(--color-ghostwhite-100);
-  width: 100%;
-  height: 64.95vw;
-  overflow: hidden;
-  text-align: left;
-  font-size: var(--font-size-9xl);
-  color: var(--black);
-  font-family: var(--font-avenir-lt-std);
+    position: relative;
+    background-color: var(--color-ghostwhite-100);
+    width: 100%;
+    height: 64.95vw;
+    overflow: hidden;
+    text-align: left;
+    font-size: var(--font-size-9xl);
+    color: var(--black);
+    font-family: var(--font-avenir-lt-std);
 }

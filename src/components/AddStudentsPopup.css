@@ -1,210 +1,238 @@
 .add-students2,
 .upload-list-of2 {
-  position: relative;
-  letter-spacing: -0.02em;
-  line-height: 2.78vw;
+    position: relative;
+    letter-spacing: -0.02em;
+    line-height: 2.78vw;
 }
+
 .upload-list-of2 {
-  font-size: var(--font-size-lg);
-  color: var(--icon-grey);
-  margin-top: -0.53vw;
+    font-size: var(--font-size-lg);
+    color: var(--icon-grey);
+    margin-top: -0.53vw;
 }
+
 .add-students-container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
+
 .upload-list-of3 {
-  position: relative;
-  font-size: var(--font-size-xl);
-  text-decoration: underline;
-  font-family: var(--font-avenir-lt-std);
-  color: var(--color-dimgray-100);
-  text-align: left;
+    position: relative;
+    font-size: var(--font-size-xl);
+    text-decoration: underline;
+    font-family: var(--font-avenir-lt-std);
+    color: var(--color-dimgray-100);
+    text-align: left;
 }
+
 .biupload-icon {
-  position: relative;
-  width: 1.12vw;
-  height: 1.12vw;
-  overflow: hidden;
-  flex-shrink: 0;
+    position: relative;
+    width: 1.12vw;
+    height: 1.12vw;
+    overflow: hidden;
+    flex-shrink: 0;
 }
+
 .upload-list-of-students-parent {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: var(--gap-xs);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-xs);
 }
+
 .csv-xlsx-json {
-  position: relative;
-  font-size: var(--font-size-sm);
-  font-family: var(--font-avenir-lt-std);
-  color: var(--color-dimgray-100);
-  text-align: left;
+    position: relative;
+    font-size: var(--font-size-sm);
+    font-family: var(--font-avenir-lt-std);
+    color: var(--color-dimgray-100);
+    text-align: left;
 }
+
 .csv-xlsx-json-file-are-allow-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
 }
+
 .frame-parent28,
 .frame-wrapper18,
 .frame-wrapper19 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 .frame-parent28 {
-  flex-direction: column;
-  gap: var(--gap-5xs);
+    flex-direction: column;
+    gap: var(--gap-5xs);
 }
+
 .frame-wrapper18,
 .frame-wrapper19 {
-  width: 41.01vw;
+    width: 41.01vw;
 }
+
 .frame-wrapper19 {
-  border-radius: var(--br-xs);
-  border: 0.07vw dashed var(--color-dimgray-100);
-  box-sizing: border-box;
-  height: 7.67vw;
-  flex-direction: row;
-  padding: var(--padding-base) var(--padding-5xl);
+    border-radius: var(--br-xs);
+    border: 0.07vw dashed var(--color-dimgray-100);
+    box-sizing: border-box;
+    height: 7.67vw;
+    flex-direction: row;
+    padding: var(--padding-base) var(--padding-5xl);
 }
+
 .frame-wrapper18 {
-  flex-direction: column;
+    flex-direction: column;
 }
+
 .frame-wrapper17 {
-  cursor: pointer;
-  border: 0;
-  padding: 0;
-  background-color: transparent;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
+
 .line-div {
-  border-top: 0.03vw solid var(--color-dimgray-200);
-  box-sizing: border-box;
-  width: 14.72vw;
-  height: 0.03vw;
+    border-top: 0.03vw solid var(--color-dimgray-200);
+    box-sizing: border-box;
+    width: 14.72vw;
+    height: 0.03vw;
 }
+
 .line-div,
 .or {
-  position: relative;
+    position: relative;
 }
+
 .line-parent {
-  border-radius: var(--br-xs);
-  width: 41.01vw;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  padding: var(--padding-base) var(--padding-5xl);
-  box-sizing: border-box;
-  gap: var(--gap-xl);
+    border-radius: var(--br-xs);
+    width: 41.01vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: var(--padding-base) var(--padding-5xl);
+    box-sizing: border-box;
+    gap: var(--gap-xl);
 }
+
 .icbaseline-plus-icon {
-  position: relative;
-  width: 1.32vw;
-  height: 1.32vw;
-  overflow: hidden;
-  flex-shrink: 0;
+    position: relative;
+    width: 1.32vw;
+    height: 1.32vw;
+    overflow: hidden;
+    flex-shrink: 0;
 }
+
 .add-manually {
-  position: relative;
-  font-size: var(--font-size-xl);
-  font-family: var(--font-avenir-lt-std);
-  color: var(--icon-grey);
-  text-align: left;
+    position: relative;
+    font-size: var(--font-size-xl);
+    font-family: var(--font-avenir-lt-std);
+    color: var(--icon-grey);
+    text-align: left;
 }
+
 .add-manually-wrapper,
 .frame-wrapper21,
 .icbaseline-plus-parent {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  justify-content: center;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
 }
+
 .frame-wrapper21,
 .icbaseline-plus-parent {
-  align-items: center;
+    align-items: center;
 }
+
 .icbaseline-plus-parent {
-  gap: var(--gap-xs);
+    gap: var(--gap-xs);
 }
+
 .frame-wrapper21 {
-  cursor: pointer;
-  border: 0.04vw solid var(--icon-grey);
-  padding: var(--padding-base) var(--padding-5xl);
-  background-color: transparent;
-  border-radius: var(--br-xs);
-  box-sizing: border-box;
-  width: 41.01vw;
+    cursor: pointer;
+    border: 0.04vw solid var(--icon-grey);
+    padding: var(--padding-base) var(--padding-5xl);
+    background-color: transparent;
+    border-radius: var(--br-xs);
+    box-sizing: border-box;
+    width: 41.01vw;
 }
+
 .frame-parent27 {
-  gap: var(--gap-3xs);
-  font-size: var(--font-size-sm);
-  color: #ccc;
+    gap: var(--gap-3xs);
+    font-size: var(--font-size-sm);
+    color: #ccc;
 }
+
 .addstudentspopup-inner,
 .frame-parent26,
 .frame-parent27 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
+
 .frame-parent26 {
-  gap: var(--gap-lg);
+    gap: var(--gap-lg);
 }
+
 .addstudentspopup-inner {
-  position: absolute;
-  top: 2.25vw;
-  left: calc(50% - 20.50vw);
+    position: absolute;
+    top: 2.25vw;
+    left: calc(50% - 20.50vw);
 }
+
 .vector-icon7 {
-  position: absolute;
-  height: 34%;
-  width: 34.01%;
-  top: 32.99%;
-  right: 32.99%;
-  bottom: 33%;
-  left: 33%;
-  max-width: 100%;
-  overflow: hidden;
-  max-height: 100%;
+    position: absolute;
+    height: 34%;
+    width: 34.01%;
+    top: 32.99%;
+    right: 32.99%;
+    bottom: 33%;
+    left: 33%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
 }
+
 .basilcross-outline5 {
-  cursor: pointer;
-  border: 0;
-  padding: 0;
-  background-color: transparent;
-  position: absolute;
-  top: 2.12vw;
-  left: 40.34vw;
-  width: 2.12vw;
-  height: 2.12vw;
-  overflow: hidden;
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+    position: absolute;
+    top: 2.12vw;
+    left: 40.34vw;
+    width: 2.12vw;
+    height: 2.12vw;
+    overflow: hidden;
 }
+
 .addstudentspopup {
-  border-radius: var(--br-base);
-  background-color: var(--white);
-  width: 44.31vw;
-  height: 28.11vw;
-  overflow: hidden;
-  max-width: 100%;
-  max-height: 100%;
-  text-align: left;
-  font-size: var(--font-size-5xl);
-  color: var(--black);
-  font-family: var(--font-avenir-lt-std);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  font-size: 1.56vw;
- transform:translate(-50%,-50%);
+    border-radius: var(--br-base);
+    background-color: var(--white);
+    width: 44.31vw;
+    height: 28.11vw;
+    overflow: hidden;
+    max-width: 100%;
+    max-height: 100%;
+    text-align: left;
+    font-size: 1.56vw;
+    color: var(--black);
+    font-family: var(--font-avenir-lt-std);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }

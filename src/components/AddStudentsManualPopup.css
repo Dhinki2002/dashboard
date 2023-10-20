@@ -1,141 +1,159 @@
 .add-students1,
 .upload-list-of1 {
-  position: relative;
-  letter-spacing: -0.02em;
-  line-height: 2.78vw;
+    position: relative;
+    letter-spacing: -0.02em;
+    line-height: 2.78vw;
 }
+
 .upload-list-of1 {
-  font-size: var(--font-size-lg);
-  color: var(--icon-grey);
-  margin-top: -0.53vw;
+    font-size: var(--font-size-lg);
+    color: var(--icon-grey);
+    margin-top: -0.53vw;
 }
+
 .add-students-group {
-  flex-direction: column;
-  align-items: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
 }
+
 .add-students-group,
 .frame-input,
 .name-group {
-  display: flex;
-  justify-content: flex-start;
+    display: flex;
+    justify-content: flex-start;
 }
+
 .frame-input {
-  border: 0.07vw solid var(--color-gainsboro-400);
-  font-family: var(--font-avenir-lt-std);
-  font-size: var(--font-size-xl);
-  background-color: transparent;
-  border-radius: var(--br-xs);
-  box-sizing: border-box;
-  width: 20.11vw;
-  flex-direction: row;
-  align-items: center;
-  padding: var(--padding-base) var(--padding-5xl);
+    border: 0.07vw solid var(--color-gainsboro-400);
+    font-family: var(--font-avenir-lt-std);
+    font-size: var(--font-size-xl);
+    background-color: transparent;
+    border-radius: var(--br-xs);
+    box-sizing: border-box;
+    width: 20.11vw;
+    flex-direction: row;
+    align-items: center;
+    padding: var(--padding-base) var(--padding-5xl);
 }
+
 .name-group {
-  flex-direction: column;
-  align-items: flex-start;
-  gap: var(--gap-xs);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--gap-xs);
 }
+
 .email {
-  position: relative;
+    position: relative;
 }
+
 .frame-parent24,
 .frame-parent25,
 .frame-wrapper14 {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
+
 .frame-parent25 {
-  flex-direction: row;
-  gap: var(--gap-xs);
+    flex-direction: row;
+    gap: var(--gap-xs);
 }
+
 .frame-parent24,
 .frame-wrapper14 {
-  flex-direction: column;
+    flex-direction: column;
 }
+
 .frame-wrapper14 {
-  font-size: var(--font-size-lg);
+    font-size: var(--font-size-lg);
 }
+
 .frame-parent24 {
-  gap: var(--gap-lg);
+    gap: var(--gap-lg);
 }
+
 .send-invite {
-  position: relative;
-  font-size: var(--font-size-xl);
-  font-family: var(--font-avenir-lt-std);
-  color: var(--white);
-  text-align: left;
+    position: relative;
+    font-size: var(--font-size-xl);
+    font-family: var(--font-avenir-lt-std);
+    color: var(--white);
+    text-align: left;
 }
+
 .send-invite-wrapper {
-  border-radius: var(--br-5xs);
-  background-color: var(--purple);
-  overflow: hidden;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  padding: var(--padding-base) var(--padding-xl);
+    border-radius: var(--br-5xs);
+    background-color: var(--purple);
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: var(--padding-base) var(--padding-xl);
 }
+
 .frame-parent23,
 .frame-wrapper15 {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
+
 .frame-wrapper15 {
-  cursor: pointer;
-  border: 0;
-  padding: 0;
-  background-color: transparent;
-  flex-direction: row;
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+    flex-direction: row;
 }
+
 .frame-parent23 {
-  position: absolute;
-  top: 2.25vw;
-  left: calc(50% - 20.50vw);
-  flex-direction: column;
-  gap: var(--gap-13xl);
+    position: absolute;
+    top: 2.25vw;
+    left: calc(50% - 20.50vw);
+    flex-direction: column;
+    gap: var(--gap-13xl);
 }
+
 .vector-icon6 {
-  position: absolute;
-  height: 34%;
-  width: 34.01%;
-  top: 32.99%;
-  right: 33%;
-  bottom: 33%;
-  left: 32.99%;
-  max-width: 100%;
-  overflow: hidden;
-  max-height: 100%;
+    position: absolute;
+    height: 34%;
+    width: 34.01%;
+    top: 32.99%;
+    right: 33%;
+    bottom: 33%;
+    left: 32.99%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
 }
+
 .basilcross-outline4 {
-  cursor: pointer;
-  border: 0;
-  padding: 0;
-  background-color: transparent;
-  position: absolute;
-  top: 2.12vw;
-  left: 40.34vw;
-  width: 2.12vw;
-  height: 2.12vw;
-  overflow: hidden;
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+    position: absolute;
+    top: 2.12vw;
+    left: 40.34vw;
+    width: 2.12vw;
+    height: 2.12vw;
+    overflow: hidden;
 }
+
 .addstudentsmanualpopup {
-  border-radius: var(--br-base);
-  background-color: var(--white);
-  width: 44.31vw;
-  height: 22.69vw;
-  overflow: hidden;
-  max-width: 100%;
-  max-height: 100%;
-  text-align: left;
-  font-size: var(--font-size-5xl);
-  color: var(--black);
-  font-family: var(--font-avenir-lt-std);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  font-size: 1.56vw;
- transform:translate(-50%,-50%);
+    border-radius: var(--br-base);
+    background-color: var(--white);
+    width: 44.31vw;
+    height: 22.69vw;
+    overflow: hidden;
+    max-width: 100%;
+    max-height: 100%;
+    text-align: left;
+    font-size: 1.56vw;
+    color: var(--black);
+    font-family: var(--font-avenir-lt-std);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }

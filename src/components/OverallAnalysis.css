@@ -9,8 +9,9 @@
     max-width: 100%;
     overflow: hidden;
     max-height: 100%;
-  }
-  .div21 {
+}
+
+.div21 {
     position: relative;
     line-height: 1.19vw;
     display: flex;
@@ -19,8 +20,9 @@
     width: 1.32vw;
     height: 0.88vw;
     flex-shrink: 0;
-  }
-  .numbers {
+}
+
+.numbers {
     position: absolute;
     height: 49.78%;
     width: 5%;
@@ -33,14 +35,16 @@
     align-items: flex-start;
     justify-content: flex-start;
     gap: 1.06vw;
-  }
-  .points-icon,
+}
+
+.points-icon,
   .radar-data-icon {
     max-width: 100%;
     overflow: hidden;
     max-height: 100%;
-  }
-  .radar-data-icon {
+}
+
+.radar-data-icon {
     position: absolute;
     height: 54.42%;
     width: 66.31%;
@@ -48,21 +52,24 @@
     right: 24.43%;
     bottom: 12.91%;
     left: 9.26%;
-  }
-  .points-icon {
+}
+
+.points-icon {
     height: 55.94%;
     width: 68.02%;
     top: 32.03%;
     right: 23.6%;
     bottom: 12.02%;
     left: 8.38%;
-  }
-  .div28,
+}
+
+.div28,
   .div29,
   .points-icon {
     position: absolute;
-  }
-  .div28 {
+}
+
+.div28 {
     height: 9.67%;
     width: 13.18%;
     top: 0;
@@ -72,12 +79,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  .div29 {
+}
+
+.div29 {
     top: 35.86%;
     left: 86.82%;
-  }
-  .div29,
+}
+
+.div29,
   .div30,
   .div31,
   .div32 {
@@ -86,31 +95,37 @@
     line-height: 1.32vw;
     display: flex;
     align-items: center;
-  }
-  .div30 {
+}
+
+.div30 {
     position: absolute;
     top: 90.33%;
     left: 73.42%;
-  }
-  .div31,
+}
+
+.div31,
   .div32 {
     text-align: right;
-  }
-  .div31 {
+}
+
+.div31 {
     position: absolute;
     top: 90.33%;
     left: 13.41%;
-  }
-  .div32 {
+}
+
+.div32 {
     top: 35.86%;
     left: 0;
-  }
-  .div20,
+}
+
+.div20,
   .div32,
   .text2 {
     position: absolute;
-  }
-  .text2 {
+}
+
+.text2 {
     top: -1.79vw;
     left: -3.99vw;
     width: 23.49vw;
@@ -119,8 +134,9 @@
     text-align: left;
     font-size: 0.79vw;
     font-family: "PingFang SC";
-  }
-  .div20 {
+}
+
+.div20 {
     top: 5.82vw;
     left: calc(50% - 7.77vw);
     background-color: #fff;
@@ -128,8 +144,9 @@
     height: 14.81vw;
     text-align: center;
     font-family: "Helvetica Neue";
-  }
-  .overall-analysis {
+}
+
+.overall-analysis {
     position: absolute;
     top: 1.32vw;
     left: 1.32vw;
@@ -137,35 +154,41 @@
     letter-spacing: -0.02em;
     line-height: 2.78vw;
     color: #353535;
-    margin-top:0.5vw;
-    font-weight:bold;
-  }
-  .consistency {
+    margin-top: 0.5vw;
+    font-weight: bold;
+}
+
+.consistency {
     position: absolute;
     top: 94.61%;
     left: 73.89%;
-  }
-  .communication,
+}
+
+.communication,
   .time-management {
     position: absolute;
     top: 6.35vw;
     left: 0;
-  }
-  .communication {
+}
+
+.communication {
     top: 16.20vw;
     left: 4.23vw;
-  }
-  .confidence,
+}
+
+.confidence,
   .knowledge {
     position: absolute;
     top: 0;
     left: 12.90vw;
-  }
-  .knowledge {
+}
+
+.knowledge {
     top: 6.55vw;
     left: 23.61vw;
-  }
-  .consistency-parent {
+}
+
+.consistency-parent {
     position: absolute;
     top: 4.50vw;
     left: 2.12vw;
@@ -173,8 +196,9 @@
     height: 17.18vw;
     font-size: 0.79vw;
     color: #212121;
-  }
-  .parent2 {
+}
+
+.parent2 {
     position: relative;
     border-radius: 1.06vw;
     background-color: #fff;
@@ -186,21 +210,14 @@
     font-size: 0.66vw;
     color: #1d2129;
     font-family: "Avenir LT Std";
-    margin-left:0.4vw;
-    
-  }
-  .pentagon-chart-container {
-    width: 40.32vw; /* Adjust the width as needed */
-    height: 25.88vw; 
-    align-items: center;/* Adjust the height as needed */
-    margin-top:45px;
-    margin-bottom: 35px;
-    margin-left:-2vw;
+    margin-left: 0.4vw;
+}
 
-    
-  }
-  
-  
-  
-  
-  
+.pentagon-chart-container {
+    width: 40.32vw;
+    height: 25.88vw;
+    align-items: center;
+    margin-top: 45px;
+    margin-bottom: 35px;
+    margin-left: -2vw;
+}

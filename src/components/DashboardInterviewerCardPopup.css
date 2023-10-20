@@ -1,214 +1,236 @@
 .company-logo-icon1 {
-  position: relative;
-  width: 6.22vw;
-  height: 2.71vw;
-  overflow: hidden;
-  flex-shrink: 0;
+    position: relative;
+    width: 6.22vw;
+    height: 2.71vw;
+    overflow: hidden;
+    flex-shrink: 0;
 }
+
 .sde-1-interview {
-  position: relative;
-  letter-spacing: -0.02em;
-  line-height: 2.78vw;
+    position: relative;
+    letter-spacing: -0.02em;
+    line-height: 2.78vw;
 }
+
 .saturday-august-29-parent {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: var(--gap-xl);
-  font-size: var(--font-size-lg);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-xl);
+    font-size: var(--font-size-lg);
 }
+
 .company-logo-parent,
 .sde-1-interview-parent {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
+
 .company-logo-parent {
-  gap: var(--gap-xs);
+    gap: var(--gap-xs);
 }
+
 .dos {
-  cursor: pointer;
-  border: 0;
-  padding: 0;
-  background-color: transparent;
-  position: relative;
-  font-size: var(--font-size-lg);
-  letter-spacing: -0.02em;
-  line-height: 2.78vw;
-  font-family: var(--font-avenir-lt-std);
-  color: var(--black);
-  text-align: left;
-  display: inline-block;
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+    position: relative;
+    font-size: var(--font-size-lg);
+    letter-spacing: -0.02em;
+    line-height: 2.78vw;
+    font-family: var(--font-avenir-lt-std);
+    color: var(--black);
+    text-align: left;
+    display: inline-block;
 }
+
 .dos-parent {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: var(--gap-37xl);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-37xl);
 }
+
 .group-icon {
-  position: relative;
-  width: 34.19vw;
-  height: 0.20vw;
+    position: relative;
+    width: 34.19vw;
+    height: 0.20vw;
 }
+
 .dress-professionally-to {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
+
 .dress-professionally-to-make-a {
-  margin: 0;
-  padding-left: var(--padding-5xl);
+    margin: 0;
+    padding-left: var(--padding-5xl);
 }
+
 .dress-professionally-to-container {
-  position: relative;
-  letter-spacing: -0.02em;
-  line-height: 2.38vw;
+    position: relative;
+    letter-spacing: -0.02em;
+    line-height: 2.38vw;
 }
+
 .dress-professionally-to-make-a-wrapper,
 .frame-parent53 {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
+
 .frame-parent53 {
-  flex-direction: column;
-  gap: var(--gap-xs);
-  font-size: var(--font-inherit);
-  color: var(--icon-grey);
-  font-family: var(--font-inherit);
+    flex-direction: column;
+    gap: var(--gap-xs);
+    font-size: var(--font-inherit);
+    color: var(--icon-grey);
+    font-family: var(--font-inherit);
 }
+
 .start-now {
-  position: relative;
-  font-size: var(--font-size-xl);
-  font-family: var(--font-avenir-lt-std);
-  color: var(--white);
-  text-align: left;
+    position: relative;
+    font-size: var(--font-size-xl);
+    font-family: var(--font-avenir-lt-std);
+    color: var(--white);
+    text-align: left;
 }
+
 .solarplay-bold-icon {
-  position: relative;
-  width: 1.06vw;
-  height: 1.06vw;
-  overflow: hidden;
-  flex-shrink: 0;
+    position: relative;
+    width: 1.06vw;
+    height: 1.06vw;
+    overflow: hidden;
+    flex-shrink: 0;
 }
+
 .start-now-parent {
-  cursor: pointer;
-  border: 0;
-  padding: var(--padding-base) var(--padding-xl);
-  background-color: var(--color-mediumseagreen);
-  border-radius: var(--br-5xs);
-  width: 10.52vw;
-  overflow: hidden;
-  flex-shrink: 0;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  box-sizing: border-box;
-  gap: var(--gap-3xs);
+    cursor: pointer;
+    border: 0;
+    padding: var(--padding-base) var(--padding-xl);
+    background-color: var(--color-mediumseagreen);
+    border-radius: var(--br-5xs);
+    width: 10.52vw;
+    overflow: hidden;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    gap: var(--gap-3xs);
 }
+
 .reschedule {
-  position: relative;
-  font-size: var(--font-size-xl);
-  font-family: var(--font-avenir-lt-std);
-  color: var(--incomplete);
-  text-align: left;
+    position: relative;
+    font-size: var(--font-size-xl);
+    font-family: var(--font-avenir-lt-std);
+    color: var(--incomplete);
+    text-align: left;
 }
+
 .reschedule-wrapper {
-  cursor: pointer;
-  border: 0.07vw solid var(--incomplete);
-  padding: var(--padding-base) var(--padding-xl);
-  background-color: var(--color-sandybrown-200);
-  border-radius: var(--br-5xs);
-  box-sizing: border-box;
-  width: 10.52vw;
-  overflow: hidden;
-  flex-shrink: 0;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+    cursor: pointer;
+    border: 0.07vw solid var(--incomplete);
+    padding: var(--padding-base) var(--padding-xl);
+    background-color: var(--color-sandybrown-200);
+    border-radius: var(--br-5xs);
+    box-sizing: border-box;
+    width: 10.52vw;
+    overflow: hidden;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
+
 .cancel1 {
-  position: relative;
-  font-size: var(--font-size-xl);
-  font-family: var(--font-avenir-lt-std);
-  color: var(--danger);
-  text-align: left;
+    position: relative;
+    font-size: var(--font-size-xl);
+    font-family: var(--font-avenir-lt-std);
+    color: var(--danger);
+    text-align: left;
 }
+
 .cancel-container {
-  cursor: pointer;
-  border: 0.07vw solid var(--danger);
-  padding: var(--padding-base) var(--padding-xl);
-  background-color: var(--color-crimson-100);
-  border-radius: var(--br-5xs);
-  box-sizing: border-box;
-  width: 10.52vw;
-  overflow: hidden;
-  flex-shrink: 0;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+    cursor: pointer;
+    border: 0.07vw solid var(--danger);
+    padding: var(--padding-base) var(--padding-xl);
+    background-color: var(--color-crimson-100);
+    border-radius: var(--br-5xs);
+    box-sizing: border-box;
+    width: 10.52vw;
+    overflow: hidden;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
+
 .frame-parent51,
 .frame-parent55 {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: var(--gap-xl);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-xl);
 }
+
 .frame-parent51 {
-  position: absolute;
-  top: calc(50% - 13.72vw);
-  left: 2.12vw;
-  flex-direction: column;
-  gap: var(--gap-29xl);
+    position: absolute;
+    top: calc(50% - 13.72vw);
+    left: 2.12vw;
+    flex-direction: column;
+    gap: var(--gap-29xl);
 }
+
 .vector-icon16 {
-  position: absolute;
-  height: 34%;
-  width: 34.01%;
-  top: 32.99%;
-  right: 32.99%;
-  bottom: 33%;
-  left: 32.99%;
-  max-width: 100%;
-  overflow: hidden;
-  max-height: 100%;
+    position: absolute;
+    height: 34%;
+    width: 34.01%;
+    top: 32.99%;
+    right: 32.99%;
+    bottom: 33%;
+    left: 32.99%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
 }
+
 .basilcross-outline8 {
-  cursor: pointer;
-  border: 0;
-  padding: 0;
-  background-color: transparent;
-  position: absolute;
-  top: 1.59vw;
-  left: 34.72vw;
-  width: 2.12vw;
-  height: 2.12vw;
-  overflow: hidden;
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+    position: absolute;
+    top: 1.59vw;
+    left: 34.72vw;
+    width: 2.12vw;
+    height: 2.12vw;
+    overflow: hidden;
 }
+
 .dashboardinterviewercardpopup {
-  border-radius: var(--br-base);
-  background-color: var(--white);
-  width: 38.43vw;
-  height: 31.55vw;
-  overflow: hidden;
-  max-width: 100%;
-  max-height: 100%;
-  text-align: left;
-  font-size: var(--font-size-5xl);
-  color: var(--black);
-  font-family: var(--font-avenir-lt-std);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  font-size: 1.56vw;
- transform:translate(-50%,-50%);
-  
+    border-radius: var(--br-base);
+    background-color: var(--white);
+    width: 38.43vw;
+    height: 31.55vw;
+    overflow: hidden;
+    max-width: 100%;
+    max-height: 100%;
+    text-align: left;
+    font-size: 1.56vw;
+    color: var(--black);
+    font-family: var(--font-avenir-lt-std);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }

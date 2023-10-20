@@ -1,175 +1,196 @@
 .vector-icon31 {
-  position: absolute;
-  height: 34%;
-  width: 34.01%;
-  top: 32.99%;
-  right: 32.99%;
-  bottom: 33%;
-  left: 33%;
-  max-width: 100%;
-  overflow: hidden;
-  max-height: 100%;
+    position: absolute;
+    height: 34%;
+    width: 34.01%;
+    top: 32.99%;
+    right: 32.99%;
+    bottom: 33%;
+    left: 33%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
 }
+
 .basilcross-outline9 {
-  cursor: pointer;
-  border: 0;
-  padding: 0;
-  background-color: transparent;
-  position: absolute;
-  top: 2.12vw;
-  left: 40.34vw;
-  width: 2.12vw;
-  height: 2.12vw;
-  overflow: hidden;
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+    position: absolute;
+    top: 2.12vw;
+    left: 40.34vw;
+    width: 2.12vw;
+    height: 2.12vw;
+    overflow: hidden;
 }
+
 .invitation,
 .share-this-invite {
-  position: relative;
-  letter-spacing: -0.02em;
-  line-height: 2.78vw;
+    position: relative;
+    letter-spacing: -0.02em;
+    line-height: 2.78vw;
 }
+
 .share-this-invite {
-  font-size: var(--font-size-lg);
-  color: var(--icon-grey);
-  margin-top: -0.53vw;
+    font-size: var(--font-size-lg);
+    color: var(--icon-grey);
+    margin-top: -0.53vw;
 }
+
 .invitation-parent {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
+
 .invite-linkdontknowhow {
-  position: relative;
+    position: relative;
 }
+
 .invite-linkdontknowhow-wrapper {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  justify-content: center;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
 }
+
 .material-symbolsfile-copy-out-icon {
-  position: relative;
-  width: 1.59vw;
-  height: 1.59vw;
-  overflow: hidden;
-  flex-shrink: 0;
+    position: relative;
+    width: 1.59vw;
+    height: 1.59vw;
+    overflow: hidden;
+    flex-shrink: 0;
 }
+
 .frame-parent212 {
-  border-radius: var(--br-xs);
-  border: 0.07vw solid var(--color-gainsboro-400);
-  box-sizing: border-box;
-  width: 38.62vw;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  padding: var(--padding-base) var(--padding-5xl);
+    border-radius: var(--br-xs);
+    border: 0.07vw solid var(--color-gainsboro-400);
+    box-sizing: border-box;
+    width: 38.62vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--padding-base) var(--padding-5xl);
 }
+
 .frame-wrapper82 {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
+
 .frame-child163 {
-  position: relative;
-  border-top: 0.07vw solid var(--color-gainsboro-500);
-  box-sizing: border-box;
-  width: 17.20vw;
-  height: 0.07vw;
+    position: relative;
+    border-top: 0.07vw solid var(--color-gainsboro-500);
+    box-sizing: border-box;
+    width: 17.20vw;
+    height: 0.07vw;
 }
+
 .frame-parent213,
 .line-parent11 {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  gap: var(--gap-7xs);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: var(--gap-7xs);
 }
+
 .frame-parent213 {
-  align-items: flex-start;
-  justify-content: center;
-  font-size: var(--font-size-base);
-  color: #8f8f8f;
+    align-items: flex-start;
+    justify-content: center;
+    font-size: var(--font-size-base);
+    color: #8f8f8f;
 }
+
 .ak {
-  position: relative;
-  color: var(--icon-grey);
+    position: relative;
+    color: var(--icon-grey);
 }
+
 .coupon-code-parent {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  justify-content: center;
-  gap: var(--gap-mini);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    gap: var(--gap-mini);
 }
+
 .frame-wrapper84 {
-  align-items: flex-start;
-  color: var(--black);
+    align-items: flex-start;
+    color: var(--black);
 }
+
 .frame-parent210,
 .frame-parent211,
 .frame-wrapper84 {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
+
 .frame-parent211 {
-  align-items: center;
-  gap: var(--gap-xl);
-  font-size: var(--font-size-xl);
-  color: var(--icon-grey);
+    align-items: center;
+    gap: var(--gap-xl);
+    font-size: var(--font-size-xl);
+    color: var(--icon-grey);
 }
+
 .frame-parent210 {
-  align-items: flex-start;
-  gap: var(--gap-5xl);
+    align-items: flex-start;
+    gap: var(--gap-5xl);
 }
+
 .share-invite-link {
-  position: relative;
-  font-size: var(--font-size-xl);
-  font-family: var(--font-avenir-lt-std);
-  color: var(--white);
-  text-align: left;
+    position: relative;
+    font-size: var(--font-size-xl);
+    font-family: var(--font-avenir-lt-std);
+    color: var(--white);
+    text-align: left;
 }
+
 .share-invite-link-parent {
-  cursor: pointer;
-  border: 0;
-  padding: var(--padding-base) var(--padding-xl);
-  background-color: var(--purple);
-  border-radius: var(--br-5xs);
-  overflow: hidden;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: var(--gap-3xs);
+    cursor: pointer;
+    border: 0;
+    padding: var(--padding-base) var(--padding-xl);
+    background-color: var(--purple);
+    border-radius: var(--br-5xs);
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: var(--gap-3xs);
 }
+
 .frame-parent209 {
-  position: absolute;
-  top: 2.38vw;
-  left: calc(50% - 19.31vw);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  gap: var(--gap-29xl);
+    position: absolute;
+    top: 2.38vw;
+    left: calc(50% - 19.31vw);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: var(--gap-29xl);
 }
+
 .referpopup {
-  border-radius: var(--br-base);
-  background-color: var(--white);
-  width: 44.31vw;
-  height: 29.37vw;
-  overflow: hidden;
-  max-width: 100%;
-  max-height: 100%;
-  text-align: left;
-  font-size: var(--font-size-5xl);
-  color: var(--black);
-  font-family: var(--font-avenir-lt-std);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  font-size: 1.56vw;
- transform:translate(-50%,-50%);
+    border-radius: var(--br-base);
+    background-color: var(--white);
+    width: 44.31vw;
+    height: 29.37vw;
+    overflow: hidden;
+    max-width: 100%;
+    max-height: 100%;
+    text-align: left;
+    font-size: 1.56vw;
+    color: var(--black);
+    font-family: var(--font-avenir-lt-std);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
