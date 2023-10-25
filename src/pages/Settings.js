@@ -7,13 +7,17 @@ import "./Settings.css";
 import { useState } from "react";
 
 const Settings = () => {
+  const navigate = useNavigate();
+
   const counter = 4;
   const settingsCounter = 0;
 
   const [name, setName] = useState("Priyanshu Gupta");
   const [email, setEmail] = useState("87priyanshugupta@gmail.com");
   const [phoneNumber, setPhoneNumber] = useState("7727042145");
-  const [collegeName, setcollegeName] = useState("Indian Institute of Technology");
+  const [collegeName, setcollegeName] = useState(
+    "Indian Institute of Technology"
+  );
   const [year, setYear] = useState("2025");
   const [targetRoles, setTargetRoles] = useState("SDE-1");
   const [editMode, setEditMode] = useState(false);
@@ -70,7 +74,16 @@ const Settings = () => {
             <div className="frame-parent198">
               <div className="password-parent1">
                 <div className="college-name">Password</div>
-                <a className="change-password3">Change Password</a>
+                <a
+                  className="change-password3"
+                  href="/"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    navigate("/");
+                  }}
+                >
+                  Change Password
+                </a>
               </div>
               <div className="parent21">
                 <div className="div147">..............</div>
@@ -109,8 +122,8 @@ const Settings = () => {
             </div>
             <div className="skills-container">
               <div className="college-name">Skills</div>
-              <div className="frame-parent200"> 
-                <div className="machine-learning-wrapper1"> 
+              <div className="frame-parent200">
+                <div className="machine-learning-wrapper1">
                   <div className="machine-learning5">Machine learning</div>
                 </div>
                 <div className="machine-learning-wrapper1">
