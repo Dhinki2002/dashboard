@@ -3,65 +3,36 @@
     top: 1.32vw;
     left: 1.32vw;
     letter-spacing: -0.02em;
-    line-height: 2.78vw;
-}
-
-.ellipse-div,
-  .frame-child13 {
-    position: absolute;
-    top: calc(50% - 4.70vw);
-    left: calc(50% - 4.73vw);
-    border-radius: 50%;
-    background: linear-gradient(180deg, #fff 30.52%, rgba(255, 255, 255, 0.81));
-    width: 9.33vw;
-    height: 9.39vw;
-}
-
-.frame-child13 {
-    left: calc(50% - 4.66vw);
-    width: 9.39vw;
-    opacity: 0.2;
-}
-
-.div33 {
-    position: absolute;
-    top: 3.73vw;
-    left: calc(50% - 0.96vw);
-}
-
+    line-height: 2.78vw
+    }
 .ellipse-group {
     position: absolute;
     top: 5.69vw;
     left: 2.38vw;
     width: 9.45vw;
-    height: 9.39vw;
-}
-
+    height: 9.39vw
+    }
 .accuracy {
     position: relative;
     letter-spacing: -0.02em;
-    line-height: 2.78vw;
-}
-
-.accuracy-parent,
-  .frame-parent17 {
+    line-height: 2.78vw
+    }
+.accuracy-parent, .frame-parent17 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
     gap: 0.07vw;
-    font-weight: bold;
-}
-
+    font-weight: bold
+    }
 .frame-parent17 {
     position: absolute;
     top: 6.15vw;
     left: 13.36vw;
     flex-direction: row;
     gap: 0.53vw;
-    font-size: 1.06vw;
-}
-
+    font-size: 1.06vw
+    }
 .my-go-score-parent {
     position: relative;
     border-radius: 1.06vw;
@@ -73,9 +44,8 @@
     text-align: left;
     font-size: 1.59vw;
     color: #fff;
-    font-family: "Avenir LT Std";
-}
-
+    font-family: "Avenir LT Std"
+    }
 .accuracy-parent1 {
-    font-weight: normal;
-}
+    font-weight: normal
+    }

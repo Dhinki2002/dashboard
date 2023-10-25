@@ -1,29 +1,24 @@
-.answer-the-following,
-.some-more-questions {
+.answer-the-following, .some-more-questions {
     position: relative;
     letter-spacing: -0.02em;
     line-height: 2.78vw;
-    font-weight: bold;
-}
-
+    font-weight: bold
+    }
 .answer-the-following {
     font-size: var(--font-size-lg);
     color: var(--icon-grey);
     margin-top: -0.53vw;
-    font-weight: normal;
-}
-
+    font-weight: normal
+    }
 .some-more-questions-parent {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: flex-start;
-}
-
+    justify-content: flex-start
+    }
 .language {
-    position: relative;
-}
-
+    position: relative
+    }
 .frame-select {
     border-radius: var(--br-xs);
     border: 0.07vw solid var(--color-gainsboro-400);
@@ -33,21 +28,17 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: var(--padding-base) var(--padding-5xl);
-}
-
-.frame-child177,
-.language-parent {
+    padding: var(--padding-base) var(--padding-5xl)
+    }
+.frame-child177, .language-parent {
     display: flex;
-    justify-content: flex-start;
-}
-
+    justify-content: flex-start
+    }
 .language-parent {
     flex-direction: column;
     align-items: flex-start;
-    gap: var(--gap-xs);
-}
-
+    gap: var(--gap-xs)
+    }
 .frame-child177 {
     border: 0.07vw solid var(--color-gainsboro-400);
     font-family: var(--font-avenir-lt-std);
@@ -58,53 +49,42 @@
     width: 20.11vw;
     flex-direction: row;
     align-items: center;
-    padding: var(--padding-base) var(--padding-5xl);
-}
-
-.frame-parent242,
-.frame-parent243,
-.frame-parent244 {
+    padding: var(--padding-base) var(--padding-5xl)
+    }
+.frame-parent242, .frame-parent243, .frame-parent244 {
     display: flex;
     align-items: flex-start;
-    justify-content: flex-start;
-}
-
+    justify-content: flex-start
+    }
 .frame-parent244 {
     flex-direction: row;
-    gap: var(--gap-xs);
-}
-
-.frame-parent242,
-.frame-parent243 {
-    flex-direction: column;
-}
-
+    gap: var(--gap-xs)
+    }
+.frame-parent242, .frame-parent243 {
+    flex-direction: column
+    }
 .frame-parent243 {
     gap: var(--gap-17xl);
-    font-size: var(--font-size-lg);
-}
-
+    font-size: var(--font-size-lg)
+    }
 .frame-parent242 {
-    gap: var(--gap-5xl);
-}
-
+    gap: var(--gap-5xl)
+    }
 .start-test {
     position: relative;
     font-size: var(--font-size-xl);
     font-family: var(--font-avenir-lt-std);
     color: var(--white);
     text-align: left;
-    font-weight: bold;
-}
-
+    font-weight: bold
+    }
 .solarplay-bold-icon5 {
     position: relative;
     width: 1.06vw;
     height: 1.06vw;
     overflow: hidden;
-    flex-shrink: 0;
-}
-
+    flex-shrink: 0
+    }
 .start-test-parent {
     border-radius: var(--br-5xs);
     background-color: var(--color-mediumseagreen);
@@ -114,32 +94,27 @@
     align-items: center;
     justify-content: center;
     padding: var(--padding-base) var(--padding-xl);
-    gap: var(--gap-3xs);
-}
-
-.frame-parent241,
-.frame-wrapper92 {
+    gap: var(--gap-3xs)
+    }
+.frame-parent241, .frame-wrapper92 {
     display: flex;
     align-items: flex-start;
-    justify-content: flex-start;
-}
-
+    justify-content: flex-start
+    }
 .frame-wrapper92 {
     cursor: pointer;
     border: 0;
     padding: 0;
     background-color: transparent;
-    flex-direction: row;
-}
-
+    flex-direction: row
+    }
 .frame-parent241 {
     position: absolute;
     top: 2.38vw;
-    left: calc(50% - 20.50vw);
+    left: calc(50% - 20.5vw);
     flex-direction: column;
-    gap: var(--gap-5xl);
-}
-
+    gap: var(--gap-5xl)
+    }
 .vector-icon39 {
     position: absolute;
     height: 34%;
@@ -150,9 +125,8 @@
     left: 32.99%;
     max-width: 100%;
     overflow: hidden;
-    max-height: 100%;
-}
-
+    max-height: 100%
+    }
 .basilcross-outline16 {
     cursor: pointer;
     border: 0;
@@ -163,9 +137,8 @@
     left: 40.34vw;
     width: 2.12vw;
     height: 2.12vw;
-    overflow: hidden;
-}
-
+    overflow: hidden
+    }
 .dreamstarttest2popup {
     border-radius: var(--br-base);
     background-color: var(--white);
@@ -181,5 +154,5 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
-}
+    transform: translate(-50%, -50%)
+    }

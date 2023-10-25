@@ -4,17 +4,15 @@
     left: calc(50% - 7.21vw);
     width: 11.77vw;
     height: 2.45vw;
-    object-fit: cover;
-}
-
+    object-fit: cover
+    }
 .home2 {
     position: relative;
     font-size: var(--font-size-xl);
     font-family: var(--font-avenir-lt-std);
     color: var(--icon-grey);
-    text-align: left;
-}
-
+    text-align: left
+    }
 .phstar-container {
     position: absolute;
     top: calc(50% - 0.79vw);
@@ -23,9 +21,8 @@
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    gap: var(--gap-base);
-}
-
+    gap: var(--gap-base)
+    }
 .frame-wrapper114 {
     cursor: pointer;
     border: 0;
@@ -36,36 +33,32 @@
     width: 19.18vw;
     height: 4.03vw;
     overflow: hidden;
-    flex-shrink: 0;
-}
-
+    flex-shrink: 0
+    }
 .healthiconsi-exam-multiple-ch {
     position: relative;
     width: 1.32vw;
     height: 1.32vw;
     overflow: hidden;
-    flex-shrink: 0;
-}
-
+    flex-shrink: 0
+    }
 .tests1 {
     position: relative;
     font-size: var(--font-size-xl);
     font-family: var(--font-avenir-lt-std);
     color: var(--purple);
-    text-align: left;
-}
-
+    text-align: left
+    }
 .frame-child207 {
     position: absolute;
     top: calc(50% - 1.69vw);
-    left: calc(50% - 8.80vw);
+    left: calc(50% - 8.8vw);
     border-radius: var(--br-9xs);
     background-color: var(--purple);
     width: 17.59vw;
     height: 3.44vw;
-    opacity: 0.1;
-}
-
+    opacity: 0.1
+    }
 .frame-parent277 {
     position: absolute;
     top: 8.53vw;
@@ -73,9 +66,8 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: flex-start;
-}
-
+    justify-content: flex-start
+    }
 .frame-wrapper116 {
     cursor: pointer;
     border: 0;
@@ -87,42 +79,36 @@
     border-radius: 0 var(--br-5xs) var(--br-5xs) 0;
     width: 19.18vw;
     height: 4.03vw;
-    overflow: hidden;
-}
-
+    overflow: hidden
+    }
 .illustration-item {
     position: absolute;
     top: 0;
     left: 0;
     width: 14.68vw;
-    height: 10.65vw;
-}
-
+    height: 10.65vw
+    }
 .upgrade-to-pro2 {
-    position: relative;
-}
-
+    position: relative
+    }
 .get-exclusive-dashboard1 {
     position: relative;
-    font-size: var(--font-size-sm);
-}
-
+    font-size: var(--font-size-sm)
+    }
 .upgrade-to-pro-group {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    gap: var(--gap-5xs);
-}
-
+    gap: var(--gap-5xs)
+    }
 .upgrade-now1 {
     position: relative;
     font-size: 1.05vw;
     font-family: var(--font-avenir-lt-std);
     color: var(--white);
-    text-align: left;
-}
-
+    text-align: left
+    }
 .upgrade-now-container {
     cursor: pointer;
     border: 0;
@@ -133,9 +119,8 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
-}
-
+    justify-content: center
+    }
 .frame-parent279 {
     position: absolute;
     top: calc(50% - 3.67vw);
@@ -144,17 +129,15 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    gap: var(--gap-lgi);
-}
-
+    gap: var(--gap-lgi)
+    }
 .illustration1 {
     position: absolute;
     top: 44.58vw;
     left: 2.25vw;
     width: 14.68vw;
-    height: 10.52vw;
-}
-
+    height: 10.52vw
+    }
 .cantileverlogoblack-2-parent1 {
     position: absolute;
     top: 0;
@@ -166,5 +149,5 @@
     text-align: left;
     font-size: var(--font-size-xl);
     color: var(--color-gray-500);
-    font-family: var(--font-avenir-lt-std);
-}
+    font-family: var(--font-avenir-lt-std)
+    }

@@ -1,53 +1,41 @@
-.frame-parent255,
-.statement-container {
+.frame-parent255, .statement-container {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: flex-start;
-}
-
+    justify-content: flex-start
+    }
 .frame-parent255 {
     position: absolute;
     top: 1.59vw;
     left: 2.38vw;
     flex-direction: row;
-    gap: var(--gap-20xl);
-}
-
-.code-snippet,
-.div187 {
+    gap: var(--gap-20xl)
+    }
+.code-snippet, .div187 {
     position: relative;
     letter-spacing: -0.02em;
-    line-height: 2.78vw;
-}
-
+    line-height: 2.78vw
+    }
 .div187 {
-    color: var(--color-tomato);
-}
-
+    color: var(--color-tomato)
+    }
 .time-spent-parent {
     justify-content: flex-start;
     gap: var(--gap-xs);
-    font-size: var(--font-size-5xl);
-}
-
-.code-snippet-parent,
-.frame-child189,
-.time-spent-parent {
+    font-size: var(--font-size-5xl)
+    }
+.code-snippet-parent, .frame-child189, .time-spent-parent {
     display: flex;
     flex-direction: row;
-    align-items: center;
-}
-
+    align-items: center
+    }
 .code-snippet-parent {
-    width: 45.90vw;
-    justify-content: space-between;
-}
-
+    width: 45.9vw;
+    justify-content: space-between
+    }
 .frame-child189 {
-    justify-content: flex-start;
-}
-
+    justify-content: flex-start
+    }
 .vector-icon40 {
     position: absolute;
     height: 66.67%;
@@ -58,9 +46,8 @@
     left: 16.71%;
     max-width: 100%;
     overflow: hidden;
-    max-height: 100%;
-}
-
+    max-height: 100%
+    }
 .icoutline-refresh {
     cursor: pointer;
     border: 0;
@@ -70,9 +57,8 @@
     width: 1.59vw;
     height: 1.59vw;
     overflow: hidden;
-    flex-shrink: 0;
-}
-
+    flex-shrink: 0
+    }
 .vector-icon41 {
     position: absolute;
     height: 87.49%;
@@ -83,32 +69,26 @@
     left: 8.57%;
     max-width: 100%;
     overflow: hidden;
-    max-height: 100%;
-}
-
-.frame-parent258,
-.icoutline-refresh-parent {
+    max-height: 100%
+    }
+.frame-parent258, .icoutline-refresh-parent {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-}
-
+    justify-content: flex-start
+    }
 .icoutline-refresh-parent {
     align-items: flex-start;
-    gap: var(--gap-xl);
-}
-
+    gap: var(--gap-xl)
+    }
 .frame-parent258 {
     align-items: center;
-    gap: 34.33vw;
-}
-
+    gap: 34.33vw
+    }
 .write-your-code {
     position: absolute;
     top: 1.59vw;
-    left: 1.59vw;
-}
-
+    left: 1.59vw
+    }
 .write-your-code-here-wrapper {
     position: relative;
     border-radius: var(--br-5xs);
@@ -120,73 +100,58 @@
     overflow: hidden;
     flex-shrink: 0;
     font-size: var(--font-size-lg);
-    color: var(--light-base-chart-title);
-}
-
+    color: var(--light-base-chart-title)
+    }
 .sub-task {
     position: absolute;
     top: 1.06vw;
     left: 4.89vw;
     letter-spacing: -0.02em;
-    line-height: 2.78vw;
-}
-
+    line-height: 2.78vw
+    }
 .p {
-    margin: 0;
-}
-
+    margin: 0
+    }
 .div188 {
     top: 5.16vw;
-    left: 6.68vw;
-}
-
-.div188,
-.div189,
-.result,
-.task {
+    left: 6.68vw
+    }
+.div188, .div189, .result, .task {
     position: absolute;
     letter-spacing: -0.02em;
-    line-height: 2.78vw;
-}
-
+    line-height: 2.78vw
+    }
 .div189 {
     top: 5.16vw;
-    left: calc(50% - 0.33vw);
-}
-
-.result,
+    left: calc(50% - 0.33vw)
+    }
+.result, .task {
+    top: 1.06vw
+    }
 .task {
-    top: 1.06vw;
-}
-
-.task {
-    left: calc(50% - 0.99vw);
-}
-
+    left: calc(50% - 0.99vw)
+    }
 .result {
-    left: 37.40vw;
-}
-
+    left: 37.4vw
+    }
 .frame-child190 {
     position: relative;
     border-right: 0.07vw solid var(--color-lightgray-100);
     box-sizing: border-box;
     width: 0.07vw;
-    height: 19.84vw;
-}
-
+    height: 19.84vw
+    }
 .line-parent12 {
     position: absolute;
     top: calc(50% - 10.12vw);
     left: calc(50% - 8.93vw);
-    height: 20.30vw;
+    height: 20.3vw;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     justify-content: flex-start;
-    gap: 17.92vw;
-}
-
+    gap: 17.92vw
+    }
 .sub-task-parent {
     position: relative;
     border-radius: var(--br-5xs);
@@ -197,22 +162,18 @@
     height: 22.22vw;
     overflow: hidden;
     flex-shrink: 0;
-    font-size: var(--font-size-base);
-}
-
-.frame-parent257,
-.test-cases-parent {
+    font-size: var(--font-size-base)
+    }
+.frame-parent257, .test-cases-parent {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: flex-start;
-}
-
+    justify-content: flex-start
+    }
 .test-cases-parent {
     gap: var(--gap-base);
-    font-size: var(--font-size-5xl);
-}
-
+    font-size: var(--font-size-5xl)
+    }
 .frame-parent257 {
     position: absolute;
     top: 2.98vw;
@@ -223,17 +184,15 @@
     overflow: hidden;
     padding: 1.92vw var(--padding-base);
     box-sizing: border-box;
-    gap: var(--gap-9xl);
-}
-
+    gap: var(--gap-9xl)
+    }
 .run-code {
     position: relative;
     font-size: var(--font-size-lg);
     font-family: var(--font-avenir-lt-std);
     color: var(--white);
-    text-align: left;
-}
-
+    text-align: left
+    }
 .run-code-wrapper {
     border-radius: var(--br-5xs);
     background-color: var(--purple);
@@ -247,24 +206,20 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding: var(--padding-xl) var(--padding-101xl);
-}
-
+    padding: var(--padding-xl) var(--padding-101xl)
+    }
 .next1 {
     position: relative;
     font-size: var(--font-size-lg);
     font-family: var(--font-avenir-lt-std);
     color: var(--purple);
-    text-align: left;
-}
-
-.frame-parent259,
-.next-container {
+    text-align: left
+    }
+.frame-parent259, .next-container {
     cursor: pointer;
     display: flex;
-    flex-direction: row;
-}
-
+    flex-direction: row
+    }
 .next-container {
     border: 0.07vw solid var(--purple);
     padding: var(--padding-xl) var(--padding-101xl);
@@ -276,9 +231,8 @@
     overflow: hidden;
     flex-shrink: 0;
     align-items: center;
-    justify-content: center;
-}
-
+    justify-content: center
+    }
 .frame-parent259 {
     border: 0;
     padding: 0;
@@ -288,9 +242,8 @@
     left: 2.38vw;
     align-items: flex-start;
     justify-content: flex-start;
-    gap: var(--gap-base);
-}
-
+    gap: var(--gap-base)
+    }
 .frame-parent256 {
     position: absolute;
     top: 0;
@@ -298,97 +251,83 @@
     background-color: var(--white);
     box-shadow: -0.07vw 0 0.13vw rgba(0, 0, 0, 0.15);
     width: 50.66vw;
-    height: 53.70vw;
+    height: 53.7vw;
     overflow: hidden;
-    font-size: var(--font-size-9xl);
-}
-
+    font-size: var(--font-size-9xl)
+    }
 .q1-problem-statement1 {
     position: absolute;
-    top: 7.80vw;
+    top: 7.8vw;
     left: 2.38vw;
     letter-spacing: -0.02em;
-    line-height: 2.78vw;
-}
-
+    line-height: 2.78vw
+    }
 .frame-parent254 {
     position: absolute;
     top: 9.39vw;
     left: calc(50% - 48.15vw);
     border-radius: var(--br-base);
     background-color: var(--white);
-    width: 96.30vw;
-    height: 53.70vw;
-    overflow: hidden;
-}
-
+    width: 96.3vw;
+    height: 53.7vw;
+    overflow: hidden
+    }
 .test-screen-code-child {
     position: absolute;
     top: 14.62vw;
     left: 1.79vw;
-    width: 45.70vw;
-    height: 0.20vw;
-}
-
-.hi-priyanshu1,
-.welcome-to-fulcrum1 {
+    width: 45.7vw;
+    height: 0.2vw
+    }
+.hi-priyanshu1, .welcome-to-fulcrum1 {
     position: relative;
     letter-spacing: -0.02em;
-    line-height: 1.59vw;
-}
-
+    line-height: 1.59vw
+    }
 .welcome-to-fulcrum1 {
     font-size: var(--font-size-15xl);
     line-height: 2.78vw;
-    color: var(--black);
-}
-
+    color: var(--black)
+    }
 .frame-wrapper98 {
     width: 21.56vw;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-start;
-}
-
+    justify-content: flex-start
+    }
 .oouinext-ltr-icon4 {
     position: relative;
     width: 1.06vw;
     height: 1.06vw;
     overflow: hidden;
-    flex-shrink: 0;
-}
-
+    flex-shrink: 0
+    }
 .oouinext-ltr-container {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    gap: var(--gap-5xs);
-}
-
-.frame-child192,
-.frame-child193 {
+    gap: var(--gap-5xs)
+    }
+.frame-child192, .frame-child193 {
     position: relative;
     background-color: var(--color-slateblue);
     width: 4.63vw;
     height: 0.53vw;
     overflow: hidden;
-    flex-shrink: 0;
-}
-
+    flex-shrink: 0
+    }
 .frame-child193 {
-    background-color: var(--color-gainsboro-100);
-}
-
+    background-color: var(--color-gainsboro-100)
+    }
 .frame-parent262 {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     justify-content: flex-start;
-    gap: var(--gap-5xs);
-}
-
+    gap: var(--gap-5xs)
+    }
 .next-problem1 {
     position: relative;
     font-size: var(--font-size-xl);
@@ -396,42 +335,34 @@
     line-height: 2.78vw;
     font-family: var(--font-avenir-lt-std);
     color: var(--purple);
-    text-align: left;
-}
-
-.frame-parent260,
-.frame-parent261,
-.next-problem-group {
+    text-align: left
+    }
+.frame-parent260, .frame-parent261, .next-problem-group {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-start;
-}
-
+    justify-content: flex-start
+    }
 .next-problem-group {
     cursor: pointer;
     border: 0;
     padding: 0;
     background-color: transparent;
-    gap: var(--gap-5xs);
-}
-
-.frame-parent260,
-.frame-parent261 {
+    gap: var(--gap-5xs)
+    }
+.frame-parent260, .frame-parent261 {
     gap: var(--gap-xl);
     font-size: var(--font-size-xl);
-    color: var(--icon-grey);
-}
-
+    color: var(--icon-grey)
+    }
 .frame-parent260 {
     position: absolute;
     top: 2.91vw;
     left: calc(50% - 47.62vw);
     gap: var(--gap-307xl);
     font-size: var(--font-size-base);
-    color: var(--color-darkslategray-200);
-}
-
+    color: var(--color-darkslategray-200)
+    }
 .test-screen-code {
     position: relative;
     background-color: var(--color-ghostwhite-100);
@@ -441,5 +372,5 @@
     text-align: left;
     font-size: var(--font-size-5xl);
     color: var(--black);
-    font-family: var(--font-avenir-lt-std);
-}
+    font-family: var(--font-avenir-lt-std)
+    }

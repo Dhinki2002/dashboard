@@ -1,25 +1,20 @@
-.fill-in-the1,
-.schedule-an-interview {
+.fill-in-the1, .schedule-an-interview {
     position: relative;
     letter-spacing: -0.02em;
     line-height: 2.78vw;
-    font-weight: bold;
-}
-
+    font-weight: bold
+    }
 .fill-in-the1 {
     font-size: var(--font-size-lg);
     color: var(--icon-grey);
-    margin-top: -0.53vw;
-}
-
-.frame-child165,
-.schedule-an-interview-parent {
+    margin-top: -0.53vw
+    }
+.frame-child165, .schedule-an-interview-parent {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: flex-start;
-}
-
+    justify-content: flex-start
+    }
 .frame-child165 {
     border: 0.07vw solid var(--color-gainsboro-400);
     font-family: var(--font-avenir-lt-std);
@@ -30,26 +25,21 @@
     width: 20.11vw;
     flex-direction: row;
     align-items: center;
-    padding: var(--padding-base) var(--padding-5xl);
-}
-
-.frame-parent218,
-.job-profile-group {
+    padding: var(--padding-base) var(--padding-5xl)
+    }
+.frame-parent218, .job-profile-group {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    gap: var(--gap-xs);
-}
-
+    gap: var(--gap-xs)
+    }
 .frame-parent218 {
-    flex-direction: row;
-}
-
+    flex-direction: row
+    }
 .select-interview-date {
-    position: relative;
-}
-
+    position: relative
+    }
 .frame-child167 {
     border: 0.07vw solid var(--color-gainsboro-400);
     font-family: var(--font-avenir-lt-std);
@@ -62,43 +52,36 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: var(--padding-base) var(--padding-5xl);
-}
-
-.frame-parent216,
-.frame-parent217 {
+    padding: var(--padding-base) var(--padding-5xl)
+    }
+.frame-parent216, .frame-parent217 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: flex-start;
-}
-
+    justify-content: flex-start
+    }
 .frame-parent217 {
     gap: var(--gap-17xl);
-    font-size: var(--font-size-lg);
-}
-
+    font-size: var(--font-size-lg)
+    }
 .frame-parent216 {
-    gap: var(--gap-5xl);
-}
-
+    gap: var(--gap-5xl)
+    }
 .schedule-interview3 {
     position: relative;
     font-size: var(--font-size-xl);
     font-family: var(--font-avenir-lt-std);
     color: var(--white);
     text-align: left;
-    font-weight: bold;
-}
-
+    font-weight: bold
+    }
 .solarplay-bold-icon1 {
     position: relative;
     width: 1.06vw;
     height: 1.06vw;
     overflow: hidden;
-    flex-shrink: 0;
-}
-
+    flex-shrink: 0
+    }
 .schedule-interview-parent {
     border-radius: var(--br-5xs);
     background-color: var(--color-mediumseagreen);
@@ -109,32 +92,27 @@
     justify-content: center;
     padding: var(--padding-base) var(--padding-xl);
     gap: var(--gap-3xs);
-    cursor: pointer;
-}
-
-.frame-parent215,
-.frame-wrapper88 {
+    cursor: pointer
+    }
+.frame-parent215, .frame-wrapper88 {
     display: flex;
     align-items: flex-start;
-    justify-content: flex-start;
-}
-
+    justify-content: flex-start
+    }
 .frame-wrapper88 {
     cursor: pointer;
     border: 0;
     padding: 0;
     background-color: transparent;
-    flex-direction: row;
-}
-
+    flex-direction: row
+    }
 .frame-parent215 {
     position: absolute;
     top: 2.38vw;
-    left: calc(50% - 20.50vw);
+    left: calc(50% - 20.5vw);
     flex-direction: column;
-    gap: var(--gap-29xl);
-}
-
+    gap: var(--gap-29xl)
+    }
 .vector-icon32 {
     position: absolute;
     height: 34%;
@@ -145,9 +123,8 @@
     left: 33%;
     max-width: 100%;
     overflow: hidden;
-    max-height: 100%;
-}
-
+    max-height: 100%
+    }
 .basilcross-outline10 {
     cursor: pointer;
     border: 0;
@@ -158,9 +135,8 @@
     left: 40.34vw;
     width: 2.12vw;
     height: 2.12vw;
-    overflow: hidden;
-}
-
+    overflow: hidden
+    }
 .interviewpopup {
     border-radius: var(--br-base);
     background-color: var(--white);
@@ -176,5 +152,5 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
-}
+    transform: translate(-50%, -50%)
+    }

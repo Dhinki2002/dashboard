@@ -3,9 +3,8 @@
     font-size: var(--font-size-xl);
     font-family: var(--font-avenir-lt-std);
     color: var(--purple);
-    text-align: left;
-}
-
+    text-align: left
+    }
 .my-profile-container {
     cursor: pointer;
     border: 0;
@@ -18,180 +17,152 @@
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    justify-content: flex-start;
-}
-
+    justify-content: flex-start
+    }
 .billing1 {
     position: relative;
     font-size: var(--font-size-xl);
     font-family: var(--font-avenir-lt-std);
     color: var(--icon-grey);
-    text-align: left;
-}
-
+    text-align: left
+    }
 .billing-container {
     cursor: pointer;
     border: 0;
     padding: 0;
     background-color: transparent;
     position: absolute;
-    top: 4.50vw;
+    top: 4.5vw;
     left: 1.06vw;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: flex-start;
-}
-
+    justify-content: flex-start
+    }
 .frame-parent12 {
     position: absolute;
     top: 3.17vw;
     left: 2.65vw;
     width: 8.47vw;
-    height: 6.08vw;
-}
-
+    height: 6.08vw
+    }
 .my-profile4 {
     position: absolute;
     top: 2.12vw;
     left: 19.18vw;
     letter-spacing: -0.02em;
-    line-height: 2.78vw;
-}
-
-.iit-roorkee,
-.name-of-insititute {
+    line-height: 2.78vw
+    }
+.iit-roorkee, .name-of-insititute {
     position: relative;
     letter-spacing: -0.02em;
-    line-height: 2.78vw;
-}
-
+    line-height: 2.78vw
+    }
 .iit-roorkee {
-    color: var(--icon-grey);
-}
-
-.frame-parent14,
-.name-of-insititute-parent {
+    color: var(--icon-grey)
+    }
+.frame-parent14, .name-of-insititute-parent {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: flex-start;
-}
-
+    justify-content: flex-start
+    }
 .frame-parent14 {
-    gap: var(--gap-xl);
-}
-
+    gap: var(--gap-xl)
+    }
 .change-password2 {
     position: relative;
     font-size: var(--font-size-sm);
     text-decoration: underline;
     letter-spacing: -0.02em;
     line-height: 2.78vw;
-    color: var(--icon-grey);
-}
-
+    color: var(--icon-grey)
+    }
 .password-group {
     width: 20.04vw;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    justify-content: space-between;
-}
-
+    justify-content: space-between
+    }
 .div4 {
     position: absolute;
     top: -0.26vw;
     left: 0;
     letter-spacing: -0.02em;
-    line-height: 2.78vw;
-}
-
+    line-height: 2.78vw
+    }
 .carbonview-off-icon1 {
     position: absolute;
     top: 0.73vw;
     left: 18.19vw;
     width: 1.32vw;
     height: 1.32vw;
-    overflow: hidden;
-}
-
+    overflow: hidden
+    }
 .group {
     position: relative;
     width: 20.04vw;
     height: 2.78vw;
     margin-top: -0.26vw;
     font-size: var(--font-size-17xl);
-    color: var(--icon-grey);
-}
-
+    color: var(--icon-grey)
+    }
 .frame-parent16 {
     width: 20.04vw;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: flex-start;
-}
-
-.delete-account1,
-.this-will-permanently1 {
+    justify-content: flex-start
+    }
+.delete-account1, .this-will-permanently1 {
     position: relative;
-    font-size: var(--font-size-base);
-}
-
+    font-size: var(--font-size-base)
+    }
 .this-will-permanently1 {
     letter-spacing: -0.02em;
     line-height: 2.78vw;
     color: var(--icon-grey);
-    margin-top: -0.26vw;
-}
-
+    margin-top: -0.26vw
+    }
 .delete-account1 {
     font-family: var(--font-avenir-lt-std);
     color: var(--danger);
-    text-align: left;
-}
-
+    text-align: left
+    }
 .delete-account-container {
     cursor: pointer;
     border: 0;
     padding: var(--padding-4xs) var(--padding-xs);
     background-color: var(--color-crimson-200);
     border-radius: var(--br-5xs);
-    flex-direction: row;
-}
-
-.delete-account-container,
-.frame-parent13,
-.frame-parent17 {
+    flex-direction: row
+    }
+.delete-account-container, .frame-parent13, .frame-parent17 {
     display: flex;
     align-items: flex-start;
-    justify-content: flex-start;
-}
-
+    justify-content: flex-start
+    }
 .frame-parent17 {
     width: 20.24vw;
     flex-direction: column;
-    gap: var(--gap-5xs);
-}
-
+    gap: var(--gap-5xs)
+    }
 .frame-parent13 {
     position: absolute;
     top: 7.01vw;
     left: 19.71vw;
     flex-direction: row;
     gap: var(--gap-118xl);
-    font-size: var(--font-size-lg);
-}
-
+    font-size: var(--font-size-lg)
+    }
 .tableredit-icon1 {
     position: relative;
     width: 1.06vw;
     height: 1.06vw;
     overflow: hidden;
-    flex-shrink: 0;
-}
-
+    flex-shrink: 0
+    }
 .edit1 {
     position: relative;
     font-size: var(--font-size-base);
@@ -199,21 +170,17 @@
     line-height: 2.78vw;
     font-family: var(--font-avenir-lt-std);
     color: var(--icon-grey);
-    text-align: left;
-}
-
-.frame-wrapper8,
-.tableredit-group {
+    text-align: left
+    }
+.frame-wrapper8, .tableredit-group {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-}
-
+    justify-content: flex-start
+    }
 .tableredit-group {
     align-items: center;
-    gap: var(--gap-5xs);
-}
-
+    gap: var(--gap-5xs)
+    }
 .frame-wrapper8 {
     cursor: pointer;
     border: 0;
@@ -224,9 +191,8 @@
     left: 68.85vw;
     border-radius: var(--br-xs);
     box-shadow: -0.13vw -0.13vw 0.13vw rgba(0, 0, 0, 0.08), 0.13vw 0.13vw 0.13vw rgba(0, 0, 0, 0.08);
-    align-items: flex-start;
-}
-
+    align-items: flex-start
+    }
 .rectangle-container {
     position: relative;
     border-radius: var(--br-base);
@@ -235,9 +201,8 @@
     height: 48.54vw;
     overflow: hidden;
     flex-shrink: 0;
-    font-size: var(--font-size-5xl);
-}
-
+    font-size: var(--font-size-5xl)
+    }
 .settings-parent {
     position: absolute;
     top: 10.45vw;
@@ -246,9 +211,8 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    gap: var(--gap-base);
-}
-
+    gap: var(--gap-base)
+    }
 .adminsettings {
     position: relative;
     background-color: var(--color-ghostwhite-100);
@@ -258,5 +222,5 @@
     text-align: left;
     font-size: var(--font-size-9xl);
     color: var(--black);
-    font-family: var(--font-avenir-lt-std);
-}
+    font-family: var(--font-avenir-lt-std)
+    }

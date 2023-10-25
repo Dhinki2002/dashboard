@@ -2,7 +2,7 @@ import os
 import re
 import cssutils
 # Directory path where your React.js files are located
-directory_path = "src/components"
+directory_path = "src/pages"
 # Regular expression to match className values (including spaces as separate keys)
 class_name_regex = r'["\']([\w\s-]+)["\']'
 # Function to process a single React.js file

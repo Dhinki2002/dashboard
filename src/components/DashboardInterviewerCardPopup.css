@@ -3,36 +3,30 @@
     width: 6.22vw;
     height: 2.71vw;
     overflow: hidden;
-    flex-shrink: 0;
-}
-
+    flex-shrink: 0
+    }
 .sde-1-interview {
     position: relative;
     letter-spacing: -0.02em;
-    line-height: 2.78vw;
-}
-
+    line-height: 2.78vw
+    }
 .saturday-august-29-parent {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     justify-content: flex-start;
     gap: var(--gap-xl);
-    font-size: var(--font-size-lg);
-}
-
-.company-logo-parent,
-.sde-1-interview-parent {
+    font-size: var(--font-size-lg)
+    }
+.company-logo-parent, .sde-1-interview-parent {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: flex-start;
-}
-
+    justify-content: flex-start
+    }
 .company-logo-parent {
-    gap: var(--gap-xs);
-}
-
+    gap: var(--gap-xs)
+    }
 .dos {
     cursor: pointer;
     border: 0;
@@ -45,70 +39,59 @@
     font-family: var(--font-avenir-lt-std);
     color: var(--black);
     text-align: left;
-    display: inline-block;
-}
-
+    display: inline-block
+    }
 .dos-parent {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     justify-content: flex-start;
-    gap: var(--gap-37xl);
-}
-
+    gap: var(--gap-37xl)
+    }
 .group-icon {
     position: relative;
     width: 34.19vw;
-    height: 0.20vw;
-}
-
+    height: 0.2vw
+    }
 .dress-professionally-to {
-    margin-bottom: 0;
-}
-
+    margin-bottom: 0
+    }
 .dress-professionally-to-make-a {
     margin: 0;
-    padding-left: var(--padding-5xl);
-}
-
+    padding-left: var(--padding-5xl)
+    }
 .dress-professionally-to-container {
     position: relative;
     letter-spacing: -0.02em;
-    line-height: 2.38vw;
-}
-
-.dress-professionally-to-make-a-wrapper,
-.frame-parent53 {
+    line-height: 2.38vw
+    }
+.dress-professionally-to-make-a-wrapper, .frame-parent53 {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    justify-content: flex-start;
-}
-
+    justify-content: flex-start
+    }
 .frame-parent53 {
     flex-direction: column;
     gap: var(--gap-xs);
     font-size: var(--font-inherit);
     color: var(--icon-grey);
-    font-family: var(--font-inherit);
-}
-
+    font-family: var(--font-inherit)
+    }
 .start-now {
     position: relative;
     font-size: var(--font-size-xl);
     font-family: var(--font-avenir-lt-std);
     color: var(--white);
-    text-align: left;
-}
-
+    text-align: left
+    }
 .solarplay-bold-icon {
     position: relative;
     width: 1.06vw;
     height: 1.06vw;
     overflow: hidden;
-    flex-shrink: 0;
-}
-
+    flex-shrink: 0
+    }
 .start-now-parent {
     cursor: pointer;
     border: 0;
@@ -123,17 +106,15 @@
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-    gap: var(--gap-3xs);
-}
-
+    gap: var(--gap-3xs)
+    }
 .reschedule {
     position: relative;
     font-size: var(--font-size-xl);
     font-family: var(--font-avenir-lt-std);
     color: var(--incomplete);
-    text-align: left;
-}
-
+    text-align: left
+    }
 .reschedule-wrapper {
     cursor: pointer;
     border: 0.07vw solid var(--incomplete);
@@ -147,17 +128,15 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
-}
-
+    justify-content: center
+    }
 .cancel1 {
     position: relative;
     font-size: var(--font-size-xl);
     font-family: var(--font-avenir-lt-std);
     color: var(--danger);
-    text-align: left;
-}
-
+    text-align: left
+    }
 .cancel-container {
     cursor: pointer;
     border: 0.07vw solid var(--danger);
@@ -171,26 +150,22 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
-}
-
-.frame-parent51,
-.frame-parent55 {
+    justify-content: center
+    }
+.frame-parent51, .frame-parent55 {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     justify-content: flex-start;
-    gap: var(--gap-xl);
-}
-
+    gap: var(--gap-xl)
+    }
 .frame-parent51 {
     position: absolute;
     top: calc(50% - 13.72vw);
     left: 2.12vw;
     flex-direction: column;
-    gap: var(--gap-29xl);
-}
-
+    gap: var(--gap-29xl)
+    }
 .vector-icon16 {
     position: absolute;
     height: 34%;
@@ -201,9 +176,8 @@
     left: 32.99%;
     max-width: 100%;
     overflow: hidden;
-    max-height: 100%;
-}
-
+    max-height: 100%
+    }
 .basilcross-outline8 {
     cursor: pointer;
     border: 0;
@@ -214,9 +188,8 @@
     left: 34.72vw;
     width: 2.12vw;
     height: 2.12vw;
-    overflow: hidden;
-}
-
+    overflow: hidden
+    }
 .dashboardinterviewercardpopup {
     border-radius: var(--br-base);
     background-color: var(--white);
@@ -232,5 +205,5 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
-}
+    transform: translate(-50%, -50%)
+    }

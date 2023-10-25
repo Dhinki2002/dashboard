@@ -1,26 +1,13 @@
-.billing2,
-.current-plan,
-.free {
+.current-plan, .free {
     letter-spacing: -0.02em;
-    line-height: 2.78vw;
-}
-
-.billing2 {
-    position: absolute;
-    top: 2.12vw;
-    left: 19.18vw;
-    font-size: var(--font-size-5xl);
-}
-
-.current-plan,
+    line-height: 2.78vw
+    }
+.current-plan, .free {
+    position: relative
+    }
 .free {
-    position: relative;
-}
-
-.free {
-    color: var(--color-lightsalmon-100);
-}
-
+    color: var(--color-lightsalmon-100)
+    }
 .current-plan-parent {
     position: absolute;
     top: 7.01vw;
@@ -30,15 +17,13 @@
     align-items: flex-start;
     justify-content: flex-start;
     gap: var(--gap-5xs);
-    font-size: var(--font-size-lg);
-}
-
+    font-size: var(--font-size-lg)
+    }
 .frame-child144 {
     position: relative;
     width: 1.59vw;
-    height: 1.59vw;
-}
-
+    height: 1.59vw
+    }
 .group-container {
     position: absolute;
     top: 1.32vw;
@@ -47,9 +32,8 @@
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    gap: var(--gap-2xs);
-}
-
+    gap: var(--gap-2xs)
+    }
 .div143 {
     position: absolute;
     top: 5.42vw;
@@ -57,37 +41,30 @@
     font-size: var(--font-size-21xl);
     letter-spacing: -0.02em;
     line-height: 2.78vw;
-    color: var(--color-darkslategray-300);
-}
-
+    color: var(--color-darkslategray-300)
+    }
 .charmtick-icon {
     position: relative;
     width: 1.06vw;
     height: 1.06vw;
     overflow: hidden;
-    flex-shrink: 0;
-}
-
+    flex-shrink: 0
+    }
 .charmtick-parent {
     flex-direction: row;
     align-items: center;
-    gap: var(--gap-3xs);
-}
-
-.charmtick-group,
-.charmtick-parent,
-.frame-parent188 {
+    gap: var(--gap-3xs)
+    }
+.charmtick-group, .charmtick-parent, .frame-parent188 {
     display: flex;
-    justify-content: flex-start;
-}
-
+    justify-content: flex-start
+    }
 .charmtick-group {
     flex-direction: row;
     align-items: center;
     gap: var(--gap-3xs);
-    margin-top: -0.53vw;
-}
-
+    margin-top: -0.53vw
+    }
 .frame-parent188 {
     position: absolute;
     top: 9.26vw;
@@ -95,9 +72,8 @@
     flex-direction: column;
     align-items: flex-start;
     font-size: var(--font-size-lg);
-    color: var(--black);
-}
-
+    color: var(--black)
+    }
 .upgrade-to-basic {
     position: relative;
     font-size: var(--font-size-lg);
@@ -105,9 +81,8 @@
     line-height: 2.78vw;
     font-family: var(--font-avenir-lt-std);
     color: var(--white);
-    text-align: left;
-}
-
+    text-align: left
+    }
 .upgrade-to-basic-wrapper {
     cursor: pointer;
     border: 0;
@@ -115,26 +90,24 @@
     background-color: #3c7eff;
     position: absolute;
     top: 17.53vw;
-    left: calc(50% - 7.80vw);
+    left: calc(50% - 7.8vw);
     border-radius: var(--br-7xs);
     overflow: hidden;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
-}
-
+    justify-content: center
+    }
 .frame-parent187 {
     position: relative;
     border-radius: var(--br-3xs);
     background-color: var(--white);
-    box-shadow: 0 0.13vw 0.13vw rgba(0, 0, 0, 0.15), 0-0.07vw 0.13vw rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0.13vw 0.13vw rgba(0, 0, 0, 0.15), 0 -0.07vw 0.13vw rgba(0, 0, 0, 0.15);
     width: 17.46vw;
     height: 21.36vw;
     overflow: hidden;
-    flex-shrink: 0;
-}
-
+    flex-shrink: 0
+    }
 .current-plan-wrapper {
     cursor: pointer;
     border: 0;
@@ -142,7 +115,7 @@
     background-color: var(--color-lightsalmon-100);
     position: absolute;
     top: 17.53vw;
-    left: calc(50% - 7.80vw);
+    left: calc(50% - 7.8vw);
     border-radius: var(--br-7xs);
     width: 15.34vw;
     overflow: hidden;
@@ -150,23 +123,21 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    box-sizing: border-box;
-}
-
+    box-sizing: border-box
+    }
 .frame-parent189 {
     position: relative;
     border-radius: var(--br-3xs);
     background-color: var(--white);
-    box-shadow: 0 0.13vw 0.13vw rgba(0, 0, 0, 0.15), 0-0.07vw 0.13vw rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0.13vw 0.13vw rgba(0, 0, 0, 0.15), 0 -0.07vw 0.13vw rgba(0, 0, 0, 0.15);
     border: 0.13vw solid var(--color-lightsalmon-100);
     box-sizing: border-box;
     width: 17.72vw;
     height: 21.63vw;
     overflow: hidden;
     flex-shrink: 0;
-    color: var(--color-lightsalmon-100);
-}
-
+    color: var(--color-lightsalmon-100)
+    }
 .upgrade-to-pro-wrapper {
     cursor: pointer;
     border: 0;
@@ -182,88 +153,30 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    box-sizing: border-box;
-}
-
+    box-sizing: border-box
+    }
 .frame-parent191 {
     position: relative;
     border-radius: var(--br-3xs);
     background-color: var(--white);
-    box-shadow: 0 0.13vw 0.13vw rgba(0, 0, 0, 0.15), 0-0.07vw 0.13vw rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0.13vw 0.13vw rgba(0, 0, 0, 0.15), 0 -0.07vw 0.13vw rgba(0, 0, 0, 0.15);
     width: 17.46vw;
     height: 21.36vw;
     overflow: hidden;
     flex-shrink: 0;
-    color: var(--color-orange);
-}
-
+    color: var(--color-orange)
+    }
 .frame-parent186 {
     position: absolute;
-    top: 11.90vw;
+    top: 11.9vw;
     left: 19.44vw;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     justify-content: flex-start;
     gap: var(--gap-xl);
-    color: var(--purple);
-}
-
-.my-profile5 {
-    position: relative;
-}
-
-.my-profile-frame {
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-radius: var(--br-16xl);
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
-    padding: var(--padding-xs) var(--padding-base);
-}
-
-.password-frame {
-    position: absolute;
-    top: 4.50vw;
-    left: 1.06vw;
-    flex-direction: column;
-}
-
-.billing-frame,
-.frame-wrapper79,
-.password-frame {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-}
-
-.billing-frame {
-    border-radius: 2.18vw;
-    background-color: var(--color-mediumslateblue-200);
-    flex-direction: row;
-    padding: var(--padding-xs) var(--padding-base);
-}
-
-.frame-wrapper79 {
-    position: absolute;
-    top: 7.41vw;
-    left: 0;
-    flex-direction: column;
-    color: var(--purple);
-}
-
-.frame-parent193 {
-    position: absolute;
-    top: 3.17vw;
-    left: 2.65vw;
-    width: 8.20vw;
-    height: 10.58vw;
-    color: var(--icon-grey);
-}
-
+    color: var(--purple)
+    }
 .rectangle-parent3 {
     position: absolute;
     top: 14.29vw;
@@ -272,18 +185,16 @@
     background-color: var(--white);
     width: 76.59vw;
     height: 48.54vw;
-    overflow: hidden;
-}
-
+    overflow: hidden
+    }
 .settings4 {
     position: absolute;
     top: 10.45vw;
     left: 21.03vw;
     font-size: var(--font-size-9xl);
     letter-spacing: -0.02em;
-    line-height: 2.78vw;
-}
-
+    line-height: 2.78vw
+    }
 .settings21 {
     position: relative;
     background-color: var(--color-ghostwhite-100);
@@ -293,14 +204,13 @@
     text-align: left;
     font-size: var(--font-size-xl);
     color: var(--black);
-    font-family: var(--font-avenir-lt-std);
-}
-
+    font-family: var(--font-avenir-lt-std)
+    }
 .change-your-password {
     position: absolute;
     top: 2.12vw;
     left: 19.18vw;
     font-size: var(--font-size-5xl);
     letter-spacing: -0.02em;
-    line-height: 2.78vw;
-}
+    line-height: 2.78vw
+    }
