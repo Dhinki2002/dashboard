@@ -25,7 +25,7 @@ const GoScoreDashboardIndividual = () => {
   const data = [72, 65, 22, 54, 56, 32]
 
   return (
-    <div className="rootdiv">
+    <div>
       <div className="go-score-dashboard-individual">
         <Navbar counter={counter} />
         <Header />
