@@ -2,49 +2,59 @@
     position: relative;
     letter-spacing: -0.02em;
     line-height: 2.78vw
-    }
+}
+
 .topic-wise-analysis-wrapper1 {
     position: absolute;
     top: 1.32vw;
     left: 1.32vw;
     color: var(--color-darkslategray-200);
     font-weight: bold
-    }
-.parent22, .parent23, .topic-wise-analysis-wrapper1 {
+}
+
+.parent22,
+.parent23,
+.topic-wise-analysis-wrapper1 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start
-    }
+}
+
 .parent23 {
     gap: var(--gap-9xs);
     color: var(--color-darkslategray-200)
-    }
+}
+
 .parent22 {
     gap: var(--gap-12xs)
-    }
-    .frame-child147,
-    .rectangle-wrapper30 {
-        border-radius: var(--br-9xs);
-        height: 0.40vw;
-    }
-    
-    .frame-child147 {
-        position: absolute;
-        top: 0;
-        left: 0;
-        background-color: var(--incomplete);
-    }
-    .rectangle-wrapper30 {
+}
+
+.frame-child147,
+.rectangle-wrapper30 {
+    border-radius: var(--br-9xs);
+    height: 0.40vw;
+}
+
+.frame-child147 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--incomplete);
+}
+
+.rectangle-wrapper30 {
     border-radius: var(--br-9xs);
     height: 0.4vw
-    }
+}
+
 .rectangle-wrapper30 {
     position: relative;
     background-color: var(--color-gainsboro-300);
     width: 10.85vw
-    }
-    .frame-child148,
+}
+
+.frame-child148,
 .frame-child149,
 .frame-child150,
 .frame-child151 {
@@ -74,16 +84,22 @@
     background-color: var(--color-mediumseagreen);
     width: 8.99vw;
 }
-.frame-parent203, .frame-parent204, .proficiency-parent1 {
+
+.frame-parent203,
+.frame-parent204,
+.proficiency-parent1 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
     gap: var(--gap-21xl)
-    }
-.frame-parent203, .proficiency-parent1 {
+}
+
+.frame-parent203,
+.proficiency-parent1 {
     gap: var(--gap-mini)
-    }
+}
+
 .frame-parent203 {
     position: absolute;
     top: 4.43vw;
@@ -91,7 +107,8 @@
     flex-direction: row;
     gap: var(--gap-92xl);
     font-size: var(--font-size-base)
-    }
+}
+
 .frame-child153 {
     position: relative;
     border-top: 0.07vw solid var(--icon-grey);
@@ -99,7 +116,8 @@
     width: 47.82vw;
     height: 0.07vw;
     opacity: 0.18
-    }
+}
+
 .line-parent9 {
     position: absolute;
     top: 6.94vw;
@@ -109,13 +127,15 @@
     align-items: flex-start;
     justify-content: flex-start;
     gap: var(--gap-27xl)
-    }
+}
+
 .frame-parent202 {
     position: relative;
     border-radius: var(--br-base);
     background-color: var(--white);
     width: 50.93vw;
     overflow: auto;
-    height: 29vw
-    }
-
+    height: 29vw;
+    top:9.2vw;
+    left:21vw
+}
