@@ -91,19 +91,6 @@ const Settings2 = () => {
             </div>
           </div>
         </div>
-        {/* <div className="frame-parent193">
-          <div className="my-profile-frame">
-            <div className="my-profile5">My Profile</div>
-          </div>
-          <div className="password-frame">
-            <div className="my-profile5">Password</div>
-          </div>
-          <div className="frame-wrapper79">
-            <div className="billing-frame">
-              <div className="my-profile5">Billing</div>
-            </div>
-          </div>
-        </div> */}
       </div>
       <div className="settings4">Settings</div>
     </div>

@@ -42,7 +42,6 @@ const Settings1 = () => {
             <div className="change-password">Change password</div>
           </button>
         </div>
-        {/* <div className="my-profile">My Profile</div> */}
       </div>
       <div className="settings">Settings</div>
     </div>
