@@ -1,9 +1,28 @@
+import React, { useState } from "react";
 import Navbar from "../components/Navbar";
 import Header from "../components/Header";
 import SettingsPane from "../components/SettingsPane";
 import "./Settings1.css";
 
 const Settings1 = () => {
+  const [newPassword, setNewPassword] = useState("");
+  const [confirmNewPassword, setConfirmNewPassword] = useState("");
+  const [passwordMatch, setPasswordMatch] = useState(true);
+
+  const handleClick = () => {
+    if (newPassword === confirmNewPassword) {
+      // Passwords match, perform the desired action
+      setPasswordMatch(true);
+      // Add your logic here for handling the matching passwords
+    } else {
+      // Passwords do not match
+      setPasswordMatch(false);
+      alert("New passwords do not match!");
+      // Add your logic here for handling the non-matching passwords
+    }
+  };
+
+
   const counter=4;
   const settingsCounter=1;
   return (
@@ -26,8 +45,10 @@ const Settings1 = () => {
             <div className="password">New Password</div>
             <input
               className="frame-item"
-              placeholder="Confirm your password"
+              placeholder="Enter your new password"
               type="password"
+              value={newPassword}
+              onChange={(e) => setNewPassword(e.target.value)}
             />
           </div>
           <div className="frame-div">
@@ -36,9 +57,11 @@ const Settings1 = () => {
               className="frame-item"
               placeholder="Confirm your password"
               type="password"
+              value={confirmNewPassword}
+              onChange={(e) => setConfirmNewPassword(e.target.value)}
             />
           </div>
-          <button className="change-password-wrapper">
+          <button className="change-password-wrapper" onClick={handleClick}>
             <div className="change-password">Change password</div>
           </button>
         </div>
