@@ -4,7 +4,8 @@
     left: 1.32vw;
     letter-spacing: -0.02em;
     line-height: 2.78vw;
-    font-weight: bold
+    font-weight: bold;
+    margin-top:1.7vw;
     }
 .number-container {
     position: absolute;
@@ -22,8 +23,9 @@
     border-radius: var(--br-base);
     background-color: var(--white);
     width: 24.6vw;
-    height: 14.12vw;
+    height: 18.12vw;
     overflow: hidden;
     flex-shrink: 0;
     font-size: var(--font-size-5xl)
+
     }
