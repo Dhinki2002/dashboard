@@ -5,15 +5,6 @@ import GaugeChart from 'react-gauge-chart'
 const ConfidenceMeter = () => {
     return (
         <div className="confidence-meter-parent">
-            {/* <div className="my-interview-score">Confidence Meter</div>
-           
-              <img className="circle-icon" alt="" src="/circle.svg" />
-              <img className="mask-group-child" alt="" src="/ellipse-59.svg" />
-              <div className="unit-score-parent">
-                <div className="unit-score">Unit Score</div>
-                <div className="div90">92</div>
-              </div>
-            </div> */}
             <div className="my-interview-score">Confidence Meter</div>
             <div className="mask-group">
             <GaugeChart id="gauge-chart5"

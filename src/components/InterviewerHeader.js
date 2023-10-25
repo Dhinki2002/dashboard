@@ -49,7 +49,6 @@ const InterviewerHeader = () => {
             >
               <img className="vector-icon45" alt="" src="/vector8.svg" />
               <img className="vector-icon46" alt="" src="/vector9.svg" />
-              {/* <img className="vector-icon47" alt="" src="/vector10.svg" /> */}
             </button>
             <div className="icround-star-parent2">
               <img

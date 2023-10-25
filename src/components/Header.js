@@ -49,7 +49,6 @@ const Header = () => {
             >
               <img className="vector-icon48" alt="" src="/vector8.svg" />
               <img className="vector-icon49" alt="" src="/vector20.svg" />
-              {/* <img className="vector-icon50" alt="" src="/vector10.svg" /> */}
             </button>
             <button className="fluentinfo-24-regular">
               <img className="vector-icon51" alt="" src="/vector21.svg" />

@@ -9,7 +9,7 @@ const PieAnalysis = () => {
                 data: [10, 15, 20,10],
                 backgroundColor: ['#E38627', '#C13C37', '#6A2135','#C13C37'],
                 hoverBackgroundColor: ['#FFA726', '#FF6384', '#36A2EB','#C13C37'],
-                borderWidth: 0, // Set the border width to 0 for a donut chart
+                borderWidth: 0, 
             },
         ],
     };
@@ -17,13 +17,13 @@ const PieAnalysis = () => {
     const options = {
         cutout: '70%',
         legend: {
-            display: false, // Hide the legend
+            display: false, 
           },
           plugins: {
             datalabels: {
-              display: false, // Hide the labels on the chart
+              display: false, 
             },
-          }, // Adjust this value to control the size of the hole in the donut
+          }, 
     };
 
     return (

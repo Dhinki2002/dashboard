@@ -15,7 +15,7 @@ const MyGoScore = () => {
         value={progress}
         text={`${progress}`}
         styles={buildStyles({
-          // Customize the colors, sizes, and other styles here
+          
           pathColor: `#ffffff`,
           textColor: '#ffffff',
           trailColor: '#807CFF',

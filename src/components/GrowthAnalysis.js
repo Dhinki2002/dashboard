@@ -29,7 +29,7 @@ const GrowthAnalysis = () => {
     ],
   };
 
-  // Customize chart options (optional)
+  
   const options = {
     scales: {
       ticks: {display: false,maxTicksLimit:5, },
@@ -39,7 +39,7 @@ const GrowthAnalysis = () => {
       },
     },
     legend: {
-      display: false, // Set this to false to hide the legend
+      display: false, 
     },
   };
 
@@ -50,40 +50,6 @@ const GrowthAnalysis = () => {
     <div className='root-div'>
     <div className="graph-chart-container">
           <div className="growth-analysis">Growth Analysis</div>
-            {/* <div className="number3">
-              <div className="parent25">
-                <div className="div162">100</div>
-                <div className="div163">80</div>
-                <div className="div163">60</div>
-                <div className="div163">40</div>
-                <div className="div163">20</div>
-                <div className="div167">0</div>
-              </div>
-            </div>
-            <div className="line-parent10">
-              <img className="line-icon3" alt="" src="/line3.svg" />
-              <img className="vector-icon29" alt="" src="/vector22.svg" />
-              <img className="vector-icon30" alt="" src="/vector23.svg" />
-              <img className="elipes-icon3" alt="" src="/elipes3.svg" />
-              <div className="tool-tip3">
-                <img className="union-icon3" alt="" src="/union3.svg" />
-                <div className="marks-parent1">
-                  <div className="marks3">Marks</div>
-                  <div className="div168">67</div>
-                </div>
-              </div>
-              <div className="frame-child160" />
-            </div>
-            <div className="feb-21-parent1">
-              <div className="feb-2112">Feb 21</div>
-              <div className="feb-2112">Feb 22</div>
-              <div className="feb-2112">Feb 23</div>
-              <div className="feb-2112">Feb 21</div>
-              <div className="feb-2112">Feb 21</div>
-              <div className="feb-2112">Feb 21</div>
-              <div className="feb-2112">Feb 21</div>
-              <div className="feb-2112">Feb 21</div>
-            </div> */}
            
             <Line data={data} options={options} />
           </div>

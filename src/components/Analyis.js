@@ -106,15 +106,6 @@ const Analyis2 = () => {
                 </div>
               </div>
             </div>
-            {/* <div className="line-group">
-              <div className="frame-child19" />
-              <div className="frame-child19" />
-              <div className="frame-child19" />
-              <div className="frame-child19" />
-              <div className="frame-child19" />
-              <div className="frame-child19" />
-              <div className="frame-child19" />
-            </div> */}
             </div>
          
   )
