@@ -4,7 +4,7 @@ import cssutils
 # Directory path where your React.js files are located
 directory_path = "src/components"
 # Regular expression to match className values (including spaces as separate keys)
-class_name_regex = r'className=["\']([\w\s-]+)["\']'
+class_name_regex = r'["\']([\w\s-]+)["\']'
 # Function to process a single React.js file
 def process_react_file(file_path):
     # Set to store className values
