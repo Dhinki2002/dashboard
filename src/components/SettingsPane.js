@@ -1,7 +1,7 @@
 import { useCallback } from "react";
 
 import { useNavigate } from "react-router-dom";
-import "../pages/Settings.css";
+
 import "./SettingsPane.css"
 
 
