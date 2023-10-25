@@ -6,7 +6,7 @@ import AdminHeader from "../components/AdminHeader";
 import "./DashboardAdmin.css";
 import GrowthAnalysis from "../components/GrowthAnalysis";
 import PieAnalysis from "../components/PieAnalysis";
-import Analyis2 from "../components/Analyis2";
+import Analyis from "../components/Analyis";
 
 
 const DashboardAdmin = () => {
@@ -28,7 +28,7 @@ const DashboardAdmin = () => {
         <AdminNavbar counter={counter} />
         <AdminHeader />
         <div className="frame-parent38">
-         <Analyis2/>
+         <Analyis/>
           <button className="view-more-parent">
             <div className="view-more">View more</div>
             <img
