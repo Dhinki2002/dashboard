@@ -4,11 +4,17 @@ import "./TestSummary.css";
 import MyGoScore from "../components/MyGoScore";
 import { TopicWiseAnalysis } from "../components/TopicWiseAnalysis";
 import GrowthAnalysis2 from "../components/GrowthAnalysis2";
+import { Helmet } from "react-helmet";
 
 const TestSummary = () => {
   const counter =1
   return (
     <div className="test-summary">
+      <Helmet>
+      <title>Test Summary</title>
+      <meta name="desc"
+        content="Test Summary"/>
+      </Helmet>
       <Navbar counter={counter}/>
       <Header />
       <div className="test-summary-inner">

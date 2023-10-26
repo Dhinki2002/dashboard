@@ -5,6 +5,7 @@ import Navbar from "../components/Navbar";
 import Header from "../components/Header";
 import { useNavigate } from "react-router-dom";
 import "./DreamCompanyDashboardIndivi.css";
+import { Helmet } from "react-helmet";
 
 const DreamCompanyDashboardIndivi = () => {
   const [isAddDreamCompanyPopupOpen, setAddDreamCompanyPopupOpen] =
@@ -28,6 +29,11 @@ const DreamCompanyDashboardIndivi = () => {
   return (
     <>
       <div className="dream-company-dashboard-indivi">
+      <Helmet>
+      <title>Dream Company Dashboard</title>
+      <meta name="desc"
+        content="Dream Company Dashboard Indvidual"/>
+      </Helmet>
         <Navbar counter={counter}/>
         <Header />
         <div className="frame-parent157">

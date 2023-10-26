@@ -1,6 +1,7 @@
 import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import "./TestScreenObjective.css";
+import { Helmet } from "react-helmet";
 
 const TestScreenObjective = () => {
   const navigate = useNavigate();
@@ -19,6 +20,11 @@ const TestScreenObjective = () => {
 
   return (
     <div className="test-screen-objective">
+      <Helmet>
+      <title>Test Screen</title>
+      <meta name="desc"
+        content="Test Screen"/>
+      </Helmet>
       <div className="frame-parent246">
         <div className="frame-parent247">
           <button className="statement-wrapper">

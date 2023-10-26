@@ -9,6 +9,7 @@ import "./DreamCompanyCompany.css";
 import MyGoScore from "../components/MyGoScore";
 import { TopicWiseAnalysis } from "../components/TopicWiseAnalysis";
 import GrowthAnalysis2 from "../components/GrowthAnalysis2";
+import { Helmet } from "react-helmet";
 
 const DreamCompanyCompany = () => {
   const [isDreamStartTestPopupOpen, setDreamStartTestPopupOpen] =
@@ -37,6 +38,11 @@ const DreamCompanyCompany = () => {
   return (
     <>
       <div className="dream-company-company">
+      <Helmet>
+      <title>Dream Company Companies</title>
+      <meta name="desc"
+        content="companies list"/>
+      </Helmet>
         <Navbar counter={counter} />
         <Header />
         <div className="frame-parent144">

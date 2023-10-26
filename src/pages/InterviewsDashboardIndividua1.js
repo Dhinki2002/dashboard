@@ -6,6 +6,7 @@ import Navbar from "../components/Navbar";
 import Header from "../components/Header";
 import { useNavigate } from "react-router-dom";
 import "./InterviewsDashboardIndividua1.css";
+import { Helmet } from "react-helmet";
 
 const InterviewsDashboardIndividua1 = () => {
   const [isStartInterviewPopupOpen, setStartInterviewPopupOpen] =
@@ -38,6 +39,11 @@ const InterviewsDashboardIndividua1 = () => {
   return (
     <>
       <div className="interviews-dashboard-individua1">
+      <Helmet>
+      <title>Interview Individual Tab</title>
+      <meta name="desc"
+        content="Interview Individual Tab"/>
+      </Helmet>
         <Navbar counter={counter}/>
         <Header />
         <div className="frame-parent176">

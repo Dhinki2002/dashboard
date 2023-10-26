@@ -3,6 +3,7 @@ import InterviewerNavbar from "../components/InterviewerNavbar";
 import InterviewerHeader from "../components/InterviewerHeader";
 import { useNavigate } from "react-router-dom";
 import "./DashboardInterviewer2.css";
+import { Helmet } from "react-helmet";
 
 const DashboardInterviewer2 = () => {
   const navigate = useNavigate();
@@ -13,6 +14,11 @@ const DashboardInterviewer2 = () => {
 
   return (
     <div className="dashboard-interviewer2">
+      <Helmet>
+      <title>Dashboard Interviewer Schedule</title>
+      <meta name="desc"
+        content="Dashboard Interviewer Schedule tab"/>
+      </Helmet>
       <InterviewerNavbar />
       <InterviewerHeader />
       <div className="dashboard-interviewer2-inner">

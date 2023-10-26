@@ -4,6 +4,7 @@ import PortalPopup from "../components/PortalPopup";
 import AdminNavbar from "../components/AdminNavbar";
 import AdminHeader from "../components/AdminHeader";
 import "./AdminTest.css";
+import { Helmet } from "react-helmet";
 
 const AdminTest = () => {
   const [isScheduleTestPopupOpen, setScheduleTestPopupOpen] = useState(false);
@@ -20,6 +21,11 @@ const AdminTest = () => {
 
   return (
     <>
+      <Helmet>
+      <title>Admin Test</title>
+      <meta name="desc"
+        content="Admin Test"/>
+      </Helmet>
       <div className="admintest">
         <AdminNavbar counter={counter}/>
         <AdminHeader />

@@ -1,11 +1,17 @@
 import Navbar from "../components/Navbar";
 import Header from "../components/Header";
 import "./ScheduleIteration1.css";
+import { Helmet } from "react-helmet";
 
 const ScheduleIteration1 = () => {
   const counter=3;
   return (
     <div className="schedule-iteration-1">
+      <Helmet>
+      <title>Schedule Individual</title>
+      <meta name="desc"
+        content="Schedule Individual"/>
+      </Helmet>
       <Navbar counter={counter}/>
       <Header />
       <div className="frame-parent93">

@@ -5,6 +5,7 @@ import SettingsPane from "../components/SettingsPane";
 import { useNavigate } from "react-router-dom";
 import "./Settings.css";
 import { useState } from "react";
+import { Helmet } from "react-helmet";
 
 const Settings = () => {
   const counter = 4;
@@ -24,6 +25,11 @@ const Settings = () => {
 
   return (
     <div className="settings5">
+      <Helmet>
+      <title>Settings Individual</title>
+      <meta name="desc"
+        content="Settings Individual"/>
+      </Helmet>
       <Navbar counter={counter} />
       <Header />
       <div className="rectangle-parent4">

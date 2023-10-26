@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import Header from "../components/Header";
 import { useNavigate } from "react-router-dom";
 import "./ResumePersonalInfo.css";
+import { Helmet } from "react-helmet";
 
 const ResumePersonalInfo = () => {
   const navigate = useNavigate();
@@ -19,6 +20,11 @@ const ResumePersonalInfo = () => {
 
   return (
     <div className="resume-personal-info">
+       <Helmet>
+      <title>Resume Personal Info</title>
+      <meta name="desc"
+        content="Resume Personal Info"/>
+      </Helmet>
       <Navbar counter={counter}/>
       <Header />
       <div className="frame-parent108">

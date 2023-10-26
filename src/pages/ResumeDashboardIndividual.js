@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import Header from "../components/Header";
 import { useNavigate } from "react-router-dom";
 import "./ResumeDashboardIndividual.css";
+import { Helmet } from "react-helmet";
 
 const ResumeDashboardIndividual = () => {
   const navigate = useNavigate();
@@ -19,6 +20,11 @@ const ResumeDashboardIndividual = () => {
 
   return (
     <div className="resume-dashboard-individual">
+       <Helmet>
+      <title>Resume Dashboard</title>
+      <meta name="desc"
+        content="Resume Dashboard"/>
+      </Helmet>
       <Navbar counter={counter}/>
       <Header />
       <div className="frame-parent159">

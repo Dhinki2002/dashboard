@@ -5,6 +5,7 @@ import Navbar from "../components/Navbar";
 import Header from "../components/Header";
 import { useNavigate } from "react-router-dom";
 import "./InterviewsDashboardIndividua.css";
+import { Helmet } from "react-helmet";
 
 const InterviewsDashboardIndividua = () => {
   const [isInterviewPopupOpen, setInterviewPopupOpen] = useState(false);
@@ -31,6 +32,11 @@ const InterviewsDashboardIndividua = () => {
   return (
     <>
       <div className="interviews-dashboard-individua">
+      <Helmet>
+      <title>Dashboard Interviews</title>
+      <meta name="desc"
+        content="Dashboard Indvidual Interviews"/>
+      </Helmet>
         <Navbar counter={counter}/>
         <Header />
         <div className="frame-parent167">

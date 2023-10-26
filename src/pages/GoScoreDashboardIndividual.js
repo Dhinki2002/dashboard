@@ -8,6 +8,7 @@ import MyGoScore from "../components/MyGoScore";
 import GrowthAnalysis from "../components/GrowthAnalysis";
 import OverallAnalysis from "../components/OverallAnalysis";
 import { TopicWiseAnalysis } from "../components/TopicWiseAnalysis";
+import { Helmet } from "react-helmet";
 
 const GoScoreDashboardIndividual = () => {
   const [isFASTPopupOpen, setFASTPopupOpen] = useState(false);
@@ -27,6 +28,11 @@ const GoScoreDashboardIndividual = () => {
   return (
     <div>
       <div className="go-score-dashboard-individual">
+      <Helmet>
+      <title>Go Score Dashboard</title>
+      <meta name="desc"
+        content="Go Score Dashboard Indvidual"/>
+      </Helmet>
         <Navbar counter={counter} />
         <Header />
         <TopicWiseAnalysis/>

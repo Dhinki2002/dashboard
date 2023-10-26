@@ -5,6 +5,7 @@ import InterviewerNavbar from "../components/InterviewerNavbar";
 import InterviewerHeader from "../components/InterviewerHeader";
 import { useNavigate } from "react-router-dom";
 import "./DashboardInterviewer.css";
+import { Helmet } from "react-helmet";
 
 const DashboardInterviewer = () => {
   const [
@@ -33,7 +34,13 @@ const DashboardInterviewer = () => {
 
   return (
     <>
+      
       <div className="dashboard-interviewer">
+      <Helmet>
+      <title>Dashboard Interviewer</title>
+      <meta name="desc"
+        content="Interviewer dashboard"/>
+      </Helmet>
         <InterviewerNavbar counter={counter}/>
         <InterviewerHeader />
         <div className="dashboard-interviewer-inner">

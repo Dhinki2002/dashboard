@@ -7,6 +7,8 @@ import "./DashboardAdmin.css";
 import GrowthAnalysis from "../components/GrowthAnalysis";
 import PieAnalysis from "../components/PieAnalysis";
 import Analyis from "../components/Analyis";
+import { Helmet } from "react-helmet";
+
 
 
 const DashboardAdmin = () => {
@@ -24,6 +26,11 @@ const DashboardAdmin = () => {
 
   return (
     <>
+    <Helmet>
+      <title>Admin Dashboard</title>
+      <meta name="desc"
+        content="Admin dashboard"/>
+      </Helmet>
       <div className="dashboard-admin">
         <AdminNavbar counter={counter} />
         <AdminHeader />

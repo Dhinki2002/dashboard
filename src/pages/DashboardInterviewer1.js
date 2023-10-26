@@ -5,6 +5,7 @@ import InterviewerNavbar from "../components/InterviewerNavbar";
 import InterviewerHeader from "../components/InterviewerHeader";
 import { useNavigate } from "react-router-dom";
 import "./DashboardInterviewer1.css";
+import { Helmet } from "react-helmet";
 
 const DashboardInterviewer1 = () => {
   const [isTestRemarksPopUpOpen, setTestRemarksPopUpOpen] = useState(false);
@@ -29,6 +30,11 @@ const DashboardInterviewer1 = () => {
 
   return (
     <>
+    <Helmet>
+      <title>Dashboard Interviewer Completed</title>
+      <meta name="desc"
+        content="Dashboard Interviewer Completed tab"/>
+      </Helmet>
       <div className="dashboard-interviewer1">
         <InterviewerNavbar counter={counter}/>
         <InterviewerHeader/>

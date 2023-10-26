@@ -2,11 +2,17 @@ import InterviewerNavbar from "../components/InterviewerNavbar";
 import InterviewerHeader from "../components/InterviewerHeader";
 import InterviewerSettingsPane from "../components/InterviewerSettingsPane";
 import "./SettingsInterviewer.css";
+import { Helmet } from "react-helmet";
 
 const SettingsInterviewer = () => {
   const counter=2;
   return (
     <div className="settingsinterviewer">
+      <Helmet>
+      <title>Settings Interviewer</title>
+      <meta name="desc"
+        content="Settings Interviewer"/>
+      </Helmet>
       <InterviewerNavbar counter={counter}/>
       <InterviewerHeader />
       <div className="rectangle-group">

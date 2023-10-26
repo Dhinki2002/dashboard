@@ -1,11 +1,17 @@
 import InterviewerNavbar from "../components/InterviewerNavbar";
 import InterviewerHeader from "../components/InterviewerHeader";
 import "./TransactionsInterviewer.css";
+import { Helmet } from "react-helmet";
 
 const TransactionsInterviewer = () => {
   const counter=1;
   return (
     <div className="transactions-interviewer">
+      <Helmet>
+      <title>Transaction Interviewer</title>
+      <meta name="desc"
+        content="Transaction Interviewer"/>
+      </Helmet>
       <InterviewerNavbar counter={counter}/>
       <InterviewerHeader />
       <div className="frame-parent56">

@@ -4,12 +4,18 @@ import "./InteviewTestReport.css";
 import MyGoScore from "../components/MyGoScore";
 import { TopicWiseAnalysis } from "../components/TopicWiseAnalysis";
 import ConfidenceMeter from "../components/ConfidenceMeter";
+import { Helmet } from "react-helmet";
 
 
 const InteviewTestReport = () => {
   const counter=1;
   return (
     <div className="inteview-test-report">
+       <Helmet>
+      <title>Test Report</title>
+      <meta name="desc"
+        content="Test Report"/>
+      </Helmet>
       <Navbar counter={counter}/>
       <Header />
       <div className="inteview-test-report-inner">

@@ -2,12 +2,18 @@ import Navbar from "../components/Navbar";
 import Header from "../components/Header";
 import SettingsPane from "../components/SettingsPane";
 import "./Settings2.css";
+import { Helmet } from "react-helmet";
 
 const Settings2 = () => {
   const counter=4;
   const settingsCounter=2;
   return (
     <div className="settings21">
+      <Helmet>
+      <title>Settings Individual2</title>
+      <meta name="desc"
+        content="Settings Individual2"/>
+      </Helmet>
       <Navbar counter={counter}/>
       <Header />
       <div className="rectangle-parent3">

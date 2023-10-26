@@ -29,6 +29,7 @@ import Settings from "./pages/Settings";
 import GoScoreDashboardIndividual from "./pages/GoScoreDashboardIndividual";
 import TestScreenObjective from "./pages/TestScreenObjective";
 import TestScreenCode from "./pages/TestScreenCode";
+import { Helmet } from "react-helmet";
 
 function App() {
   const action = useNavigationType();
@@ -41,125 +42,16 @@ function App() {
     }
   }, [action, pathname]);
 
-  useEffect(() => {
-    let title = "";
-    let metaDescription = "";
-
-    switch (pathname) {
-      case "/":
-        title = "";
-        metaDescription = "";
-        break;
-      case "/settingsinterviewer":
-        title = "";
-        metaDescription = "";
-        break;
-      case "/adminsettings":
-        title = "";
-        metaDescription = "";
-        break;
-      case "/admintest":
-        title = "";
-        metaDescription = "";
-        break;
-      case "/dashboardadmin":
-        title = "";
-        metaDescription = "";
-        break;
-      case "/dashboardinterviewer2":
-        title = "";
-        metaDescription = "";
-        break;
-      case "/transactionsinterviewer":
-        title = "";
-        metaDescription = "";
-        break;
-      case "/dashboardinterviewer1":
-        title = "";
-        metaDescription = "";
-        break;
-      case "/dashboardinterviewer":
-        title = "";
-        metaDescription = "";
-        break;
-      case "/test-summary":
-        title = "";
-        metaDescription = "";
-        break;
-      case "/schedule-iteration-1":
-        title = "";
-        metaDescription = "";
-        break;
-      case "/resume-personal-info":
-        title = "";
-        metaDescription = "";
-        break;
-      case "/resume-personal-info2":
-        title = "";
-        metaDescription = "";
-        break;
-      case "/inteview-test-report":
-        title = "";
-        metaDescription = "";
-        break;
-      case "/dream-company-company":
-        title = "";
-        metaDescription = "";
-        break;
-      case "/dream-company-dashboardindividual":
-        title = "";
-        metaDescription = "";
-        break;
-      case "/resume-dashboardindividual":
-        title = "";
-        metaDescription = "";
-        break;
-      case "/interviews-dashboardindividual1":
-        title = "";
-        metaDescription = "";
-        break;
-      case "/interviews-dashboardindividual":
-        title = "";
-        metaDescription = "";
-        break;
-      case "/settings2":
-        title = "";
-        metaDescription = "";
-        break;
-      case "/settings":
-        title = "";
-        metaDescription = "";
-        break;
-      case "/go-score-dashboardindividual":
-        title = "";
-        metaDescription = "";
-        break;
-      case "/test-screen-objective":
-        title = "";
-        metaDescription = "";
-        break;
-      case "/test-screen-code":
-        title = "";
-        metaDescription = "";
-        break;
-    }
-
-    if (title) {
-      document.title = title;
-    }
-
-    if (metaDescription) {
-      const metaDescriptionTag = document.querySelector(
-        'head > meta[name="description"]'
-      );
-      if (metaDescriptionTag) {
-        metaDescriptionTag.content = metaDescription;
-      }
-    }
-  }, [pathname]);
-
-  return (
+return (
+    <div>
+    <Helmet>
+      <title>Settings</title>
+      <meta name="desc"
+        content="user settings"/>
+      </Helmet>
+   
     <Routes>
+       
       <Route path="/" element={<Settings1 />} />
       <Route path="/settingsinterviewer" element={<SettingsInterviewer />} />
       <Route path="/adminsettings" element={<AdminSettings />} />
@@ -209,6 +101,7 @@ function App() {
       <Route path="/test-screen-objective" element={<TestScreenObjective />} />
       <Route path="/test-screen-code" element={<TestScreenCode />} />
     </Routes>
+    </div>
   );
 }
 export default App;

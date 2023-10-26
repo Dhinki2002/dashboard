@@ -2,11 +2,18 @@ import AdminNavbar from "../components/AdminNavbar";
 import AdminHeader from "../components/AdminHeader";
 import AdminSettingsPane from "../components/AdminSettingsPane";
 import "./AdminSettings.css";
+import { Helmet } from "react-helmet";
 
 const AdminSettings = () => {
   const counter=2;
   return (
+
     <div className="adminsettings">
+      <Helmet>
+      <title>Admin Settings</title>
+      <meta name="desc"
+        content="Admin settings"/>
+      </Helmet>
       <AdminNavbar counter={counter}/>
       <AdminHeader />
       <div className="settings-parent">
