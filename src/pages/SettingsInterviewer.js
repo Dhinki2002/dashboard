@@ -3,9 +3,24 @@ import InterviewerHeader from "../components/InterviewerHeader";
 import InterviewerSettingsPane from "../components/InterviewerSettingsPane";
 import "./SettingsInterviewer.css";
 import { Helmet } from "react-helmet";
+import { useState } from "react";
 
 const SettingsInterviewer = () => {
   const counter=2;
+
+   const [name, setName] = useState("Priyanshu Gupta");
+   const [email, setEmail] = useState("87priyanshugupta@gmail.com");
+   const [phoneNumber, setPhoneNumber] = useState("7727042145");
+   const [Qualification, setQualification] = useState("Bachelor of Technology");
+   const [graduationYear, setGraduationYear] = useState("2025");
+   const [jobRole, setJobRole] = useState("SDE-2");
+   const [company, setCompany] = useState("Amazon");
+   const [editMode, setEditMode] = useState(false);
+
+  const handleEditClick = () => {
+  setEditMode(!editMode);
+  }
+
   return (
     <div className="settingsinterviewer">
       <Helmet>
@@ -28,15 +43,39 @@ const SettingsInterviewer = () => {
           <div className="frame-parent7">
             <div className="name-parent">
               <div className="name">Name</div>
-              <div className="priyanshu-gupta">Priyanshu Gupta</div>
+              {editMode ? (
+                <input
+                  className="priyanshu-gupta"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                />
+              ) : (
+                <div className="priyanshu-gupta">{name}</div>
+              )}
             </div>
             <div className="name-parent">
               <div className="name">Email address</div>
-              <div className="priyanshu-gupta">87priyanshugupta@gmail.com</div>
+              {editMode ? (
+                <input
+                  className="priyanshu-gupta"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                />
+              ) : (
+                <div className="priyanshu-gupta">{email}</div>
+              )}
             </div>
             <div className="name-parent">
               <div className="name">Phone number</div>
-              <div className="priyanshu-gupta">7727042145</div>
+              {editMode ? (
+                <input
+                  className="priyanshu-gupta"
+                  value={phoneNumber}
+                  onChange={(e) => setPhoneNumber(e.target.value)}
+                />
+              ) : (
+                <div className="priyanshu-gupta">{phoneNumber}</div>
+              )}
             </div>
             <div className="frame-parent8">
               <div className="password-parent">
@@ -54,11 +93,27 @@ const SettingsInterviewer = () => {
             </div>
             <div className="name-parent">
               <div className="name">Qualification</div>
-              <div className="priyanshu-gupta">Bachelor of technology</div>
+              {editMode ? (
+                <input
+                  className="priyanshu-gupta"
+                  value={Qualification}
+                  onChange={(e) => setQualification(e.target.value)}
+                />
+              ) : (
+                <div className="priyanshu-gupta">{Qualification}</div>
+              )}
             </div>
             <div className="name-parent">
               <div className="name">Graduation year</div>
-              <div className="priyanshu-gupta">2025</div>
+              {editMode ? (
+                <input
+                  className="priyanshu-gupta"
+                  value={graduationYear}
+                  onChange={(e) => setGraduationYear(e.target.value)}
+                />
+              ) : (
+                <div className="priyanshu-gupta">{graduationYear}</div>
+              )}
             </div>
           </div>
           <div className="frame-parent7">
@@ -78,11 +133,27 @@ const SettingsInterviewer = () => {
             </div>
             <div className="name-parent">
               <div className="name">Job Role</div>
-              <div className="priyanshu-gupta">SDE-II</div>
+              {editMode ? (
+                <input
+                  className="priyanshu-gupta"
+                  value={jobRole}
+                  onChange={(e) => setJobRole(e.target.value)}
+                />
+              ) : (
+                <div className="priyanshu-gupta">{jobRole}</div>
+              )}
             </div>
             <div className="name-parent">
               <div className="name">Company</div>
-              <div className="priyanshu-gupta">Amazon</div>
+              {editMode ? (
+                <input
+                  className="priyanshu-gupta"
+                  value={company}
+                  onChange={(e) => setCompany(e.target.value)}
+                />
+              ) : (
+                <div className="priyanshu-gupta">{company}</div>
+              )}
             </div>
             <div className="frame-parent11">
               <div className="name-parent">
@@ -97,7 +168,7 @@ const SettingsInterviewer = () => {
             </div>
           </div>
         </div>
-        <button className="frame-wrapper7">
+        <button className="frame-wrapper7" onClick={handleEditClick}>
           <div className="tableredit-parent">
             <img className="tableredit-icon" alt="" src="/tableredit.svg" />
             <div className="edit">Edit</div>
