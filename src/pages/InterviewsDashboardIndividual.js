@@ -5,7 +5,7 @@ import InterviewPopup from "../components/InterviewPopup";
 import Navbar from "../components/Navbar";
 import Header from "../components/Header";
 import { useNavigate } from "react-router-dom";
-import "./InterviewsDashboardIndividua1.css";
+import "./InterviewsDashboardIndividual.css";
 import { Helmet } from "react-helmet";
 
 const InterviewsDashboardIndividua1 = () => {

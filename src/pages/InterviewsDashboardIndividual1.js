@@ -4,7 +4,7 @@ import PortalPopup from "../components/PortalPopup";
 import Navbar from "../components/Navbar";
 import Header from "../components/Header";
 import { useNavigate } from "react-router-dom";
-import "./InterviewsDashboardIndividua.css";
+import "./InterviewsDashboardIndividual1.css";
 import { Helmet } from "react-helmet";
 
 const InterviewsDashboardIndividua = () => {
@@ -28,6 +28,8 @@ const InterviewsDashboardIndividua = () => {
   }, []);
 
   const counter=1;
+
+  
 
   return (
     <>

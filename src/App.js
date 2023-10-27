@@ -22,8 +22,8 @@ import InteviewTestReport from "./pages/InteviewTestReport";
 import DreamCompanyCompany from "./pages/DreamCompanyCompany";
 import DreamCompanyDashboardIndivi from "./pages/DreamCompanyDashboardIndivi";
 import ResumeDashboardIndividual from "./pages/ResumeDashboardIndividual";
-import InterviewsDashboardIndividua from "./pages/InterviewsDashboardIndividua";
-import InterviewsDashboardIndividua1 from "./pages/InterviewsDashboardIndividua1";
+import InterviewsDashboardIndividual1 from "./pages/InterviewsDashboardIndividual1";
+import InterviewsDashboardIndividual from "./pages/InterviewsDashboardIndividual";
 import Settings2 from "./pages/Settings2";
 import Settings from "./pages/Settings";
 import GoScoreDashboardIndividual from "./pages/GoScoreDashboardIndividual";
@@ -86,11 +86,11 @@ return (
       />
       <Route
         path="/interviews-dashboardindividual1"
-        element={<InterviewsDashboardIndividua />}
+        element={<InterviewsDashboardIndividual1 />}
       />
       <Route
         path="/interviews-dashboardindividual"
-        element={<InterviewsDashboardIndividua1 />}
+        element={<InterviewsDashboardIndividual />}
       />
       <Route path="/settings2" element={<Settings2 />} />
       <Route path="/settings" element={<Settings />} />
