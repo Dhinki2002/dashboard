@@ -50,11 +50,11 @@ const DashboardInterviewer1 = () => {
                     className="today-wrapper"
                     onClick={onFrameButtonClick}
                   >
-                    <div className="today">Today</div>
+                    <div className="today">Upcoming</div>
                   </button>
-                  <div className="upcoming-wrapper">
+                  {/* <div className="upcoming-wrapper">
                     <div className="upcoming">Upcoming</div>
-                  </div>
+                  </div> */}
                   <div className="completed-wrapper">
                     <div className="completed">Completed</div>
                   </div>

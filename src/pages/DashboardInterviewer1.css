@@ -10,13 +10,13 @@
 .today {
     position: absolute;
     top: -0.07vw;
-    left: calc(50% - 1.42vw);
+    left: 1.2vw;
     font-size: var(--font-size-base);
     letter-spacing: -0.02em;
     line-height: 2.78vw;
     font-family: var(--font-avenir-lt-std);
     color: var(--black);
-    text-align: left
+   
     }
 .today-wrapper {
     cursor: pointer;

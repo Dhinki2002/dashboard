@@ -44,9 +44,9 @@ const InterviewsDashboardIndividua = () => {
             <div className="interviews1">Interviews</div>
           </div>
           <div className="frame-parent168">
-            <button className="today-frame">
+            {/* <button className="today-frame">
               <div className="today3">Today</div>
-            </button>
+            </button> */}
             <button className="upcoming-frame" onClick={onFrameButton1Click}>
               <div className="upcoming2">Upcoming</div>
             </button>
@@ -217,10 +217,10 @@ const InterviewsDashboardIndividua = () => {
             />
             <div className="schedule-interview1">Schedule interview</div>
           </button>
-          <div className="rectangle-parent1">
+          {/* <div className="rectangle-parent1">
             <div className="frame-child134" />
             <div className="frame-child135" />
-          </div>
+          </div> */}
         </div>
       </div>
       {isInterviewPopupOpen && (
