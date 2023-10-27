@@ -5,10 +5,10 @@ import InterviewPopup from "../components/InterviewPopup";
 import Navbar from "../components/Navbar";
 import Header from "../components/Header";
 import { useNavigate } from "react-router-dom";
-import "./InterviewsDashboardIndividual.css";
+import "./InterviewsDashboardIndividual2.css";
 import { Helmet } from "react-helmet";
 
-const InterviewsDashboardIndividual = () => {
+const InterviewsDashboardIndividual2 = () => {
   const [isStartInterviewPopupOpen, setStartInterviewPopupOpen] =
     useState(false);
   const [isInterviewPopupOpen, setInterviewPopupOpen] = useState(false);
@@ -18,10 +18,9 @@ const InterviewsDashboardIndividual = () => {
     navigate("/interviews-dashboardindividual1");
   }, [navigate]);
 
-  const onFrameButton1Click = useCallback(() => {
-    navigate("/interviews-dashboardindividual2");
+  const onFrameButtonClick = useCallback(() => {
+    navigate("/interviews-dashboardindividual");
   }, [navigate]);
-
 
   const openStartInterviewPopup = useCallback(() => {
     setStartInterviewPopupOpen(true);
@@ -73,9 +72,9 @@ const InterviewsDashboardIndividual = () => {
     <>
       <div className="interviews-dashboard-individua1">
         <Helmet>
-          <title>Interview Individual Tab</title>
+          <title>Interview Individual Tab2</title>
           <meta name="desc"
-            content="Interview Individual Tab" />
+            content="Interview Individual Tab2" />
         </Helmet>
         <Navbar counter={counter} />
         <Header />
@@ -84,11 +83,11 @@ const InterviewsDashboardIndividual = () => {
             <div className="tomorrow">Interviews</div>
           </div>
           <div className="frame-parent177">
-            <button className="today-wrapper1" onClick={onFrameButton1Click}>
-              <div className="today4">Today</div>
-            </button>
             <button className="upcoming-wrapper1">
-              <div className="upcoming3">Upcoming</div>
+              <div className="upcoming3">Today</div>
+            </button>
+            <button className="completed-wrapper1" onClick={onFrameButtonClick}>
+              <div className="completed3">Upcoming</div>
             </button>
             <button
               className="completed-wrapper1"
@@ -280,4 +279,4 @@ const InterviewsDashboardIndividual = () => {
   );
 };
 
-export default InterviewsDashboardIndividual;
+export default InterviewsDashboardIndividual2;

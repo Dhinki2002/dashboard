@@ -24,6 +24,7 @@ import DreamCompanyDashboardIndivi from "./pages/DreamCompanyDashboardIndivi";
 import ResumeDashboardIndividual from "./pages/ResumeDashboardIndividual";
 import InterviewsDashboardIndividual1 from "./pages/InterviewsDashboardIndividual1";
 import InterviewsDashboardIndividual from "./pages/InterviewsDashboardIndividual";
+import InterviewsDashboardIndividual2 from "./pages/InterviewsDashboardIndividual2";
 import Settings2 from "./pages/Settings2";
 import Settings from "./pages/Settings";
 import GoScoreDashboardIndividual from "./pages/GoScoreDashboardIndividual";
@@ -91,6 +92,10 @@ return (
       <Route
         path="/interviews-dashboardindividual"
         element={<InterviewsDashboardIndividual />}
+      />
+      <Route
+        path="/interviews-dashboardindividual2"
+        element={<InterviewsDashboardIndividual2/>}
       />
       <Route path="/settings2" element={<Settings2 />} />
       <Route path="/settings" element={<Settings />} />

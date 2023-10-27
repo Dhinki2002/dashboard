@@ -18,6 +18,10 @@ const InterviewsDashboardIndividua = () => {
   const onFrameButton3Click = useCallback(() => {
     navigate("/inteview-test-report");
   }, [navigate]);
+  const onFrameButton2Click = useCallback(() => {
+    navigate("/interviews-dashboardindividual2");
+  }, [navigate]);
+  
 
   const openInterviewPopup = useCallback(() => {
     setInterviewPopupOpen(true);
@@ -46,9 +50,9 @@ const InterviewsDashboardIndividua = () => {
             <div className="interviews1">Interviews</div>
           </div>
           <div className="frame-parent168">
-            {/* <button className="today-frame">
+            <button className="today-frame"onClick={onFrameButton2Click}>
               <div className="today3">Today</div>
-            </button> */}
+            </button>
             <button className="upcoming-frame" onClick={onFrameButton1Click}>
               <div className="upcoming2">Upcoming</div>
             </button>
