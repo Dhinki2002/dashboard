@@ -153,7 +153,8 @@
     width: 23.21vw;
     height: 12.04vw;
     overflow: hidden;
-    flex-shrink: 0
+    flex-shrink: 0;
+    margin-bottom: 0.18vw;
     }
 .div138 {
     position: relative;
@@ -194,6 +195,8 @@
     gap: var(--gap-5xl);
     
     flex-wrap:wrap;
+    overflow:auto;
+    max-height:42.5vw;  
     
     }
 

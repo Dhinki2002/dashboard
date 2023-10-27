@@ -29,6 +29,60 @@ const DreamCompanyDashboardIndivi = () => {
   // Array of button data
   const buttonData = [
     {
+      id: 1,
+      vectorIcon: "/vector19.svg",
+      companyLogo: "/company-logo6.svg",
+    },
+    {
+      id: 2,
+      vectorIcon: "/vector19.svg",
+      companyLogo: "/company-logo7.svg",
+    },
+    // Add more objects for additional buttons
+    {
+      id: 3,
+      vectorIcon: "/vector19.svg",
+      companyLogo: "/company-logo7.svg",
+    },
+    {
+      vectorIcon: "/vector19.svg",
+      companyLogo: "/company-logo7.svg",
+    },
+    {
+      vectorIcon: "/vector19.svg",
+      companyLogo: "/company-logo6.svg",
+    },
+    {
+      vectorIcon: "/vector19.svg",
+      companyLogo: "/company-logo7.svg",
+    },
+    // Add more objects for additional buttons
+    {
+      vectorIcon: "/vector19.svg",
+      companyLogo: "/company-logo7.svg",
+    },
+    {
+      vectorIcon: "/vector19.svg",
+      companyLogo: "/company-logo7.svg",
+    },
+    {
+      vectorIcon: "/vector19.svg",
+      companyLogo: "/company-logo6.svg",
+    },
+    {
+      vectorIcon: "/vector19.svg",
+      companyLogo: "/company-logo7.svg",
+    },
+    // Add more objects for additional buttons
+    {
+      vectorIcon: "/vector19.svg",
+      companyLogo: "/company-logo7.svg",
+    },
+    {
+      vectorIcon: "/vector19.svg",
+      companyLogo: "/company-logo7.svg",
+    },
+    {
       vectorIcon: "/vector19.svg",
       companyLogo: "/company-logo6.svg",
     },
@@ -62,8 +116,8 @@ const DreamCompanyDashboardIndivi = () => {
           </div>
           <div className="frame-parent158">
             {/* Map over the button data and generate buttons */}
-            {buttonData.map((button, index) => (
-              <button className="vector-parent1" key={index}>
+            {buttonData.map((button) => (
+              <button className="vector-parent1" key={button.id}>
                 <img className="vector-icon23" alt="" src={button.vectorIcon} />
                 <img
                   className="company-logo-icon15"

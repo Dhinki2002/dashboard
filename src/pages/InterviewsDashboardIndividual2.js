@@ -65,6 +65,78 @@ const InterviewsDashboardIndividual2 = () => {
       date: "30-03-2023",
       logo: "/company-logo11.svg",
     },
+    {
+      id: 1,
+      title: "SDE-1 Interview",
+      date: "29-03-2023",
+      logo: "/company-logo11.svg",
+    },
+    {
+      id: 2,
+      title: "SDE-1 Interview",
+      date: "30-03-2023",
+      logo: "/company-logo11.svg",
+    },
+    {
+      id: 3,
+      title: "SDE-1 Interview",
+      date: "30-03-2023",
+      logo: "/company-logo11.svg",
+    },
+    {
+      id: 4,
+      title: "SDE-1 Interview",
+      date: "30-03-2023",
+      logo: "/company-logo11.svg",
+    },
+    {
+      id: 1,
+      title: "SDE-1 Interview",
+      date: "29-03-2023",
+      logo: "/company-logo11.svg",
+    },
+    {
+      id: 2,
+      title: "SDE-1 Interview",
+      date: "30-03-2023",
+      logo: "/company-logo11.svg",
+    },
+    {
+      id: 3,
+      title: "SDE-1 Interview",
+      date: "30-03-2023",
+      logo: "/company-logo11.svg",
+    },
+    {
+      id: 4,
+      title: "SDE-1 Interview",
+      date: "30-03-2023",
+      logo: "/company-logo11.svg",
+    },
+    {
+      id: 1,
+      title: "SDE-1 Interview",
+      date: "29-03-2023",
+      logo: "/company-logo11.svg",
+    },
+    {
+      id: 2,
+      title: "SDE-1 Interview",
+      date: "30-03-2023",
+      logo: "/company-logo11.svg",
+    },
+    {
+      id: 3,
+      title: "SDE-1 Interview",
+      date: "30-03-2023",
+      logo: "/company-logo11.svg",
+    },
+    {
+      id: 4,
+      title: "SDE-1 Interview",
+      date: "30-03-2023",
+      logo: "/company-logo11.svg",
+    },
     // Add more interview objects as needed
   ];
 
