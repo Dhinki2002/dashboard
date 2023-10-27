@@ -88,7 +88,7 @@ const InterviewsDashboardIndividual = () => {
               <div className="today4">Today</div>
             </button>
             <button className="upcoming-wrapper1">
-              <div className="upcoming3">Upcoming</div>
+              <div className="upcoming33">Upcoming</div>
             </button>
             <button
               className="completed-wrapper1"

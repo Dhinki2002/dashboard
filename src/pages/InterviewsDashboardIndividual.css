@@ -29,16 +29,17 @@
     width: 7.08vw;
     height: 2.51vw
     }
-.upcoming3 {
+.upcoming33 {
     position: absolute;
     top: 0;
-    left: calc(50% - 2.48vw);
+    left: 1vw;
+
     font-size: var(--font-size-base);
     letter-spacing: -0.02em;
     line-height: 2.78vw;
     font-family: var(--font-avenir-lt-std);
     color: var(--purple);
-    text-align: left;
+    text-align: center;
     font-weight: bold
     }
 .upcoming-wrapper1 {
