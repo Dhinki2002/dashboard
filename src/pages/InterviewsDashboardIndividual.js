@@ -46,7 +46,7 @@ const InterviewsDashboardIndividual = () => {
       id: 1,
       title: "SDE-1 Interview",
       date: "29-03-2023",
-      logo: "/company-logo11.svg",
+      logo: "/company-logo7.svg",
     },
     {
       id: 2,
