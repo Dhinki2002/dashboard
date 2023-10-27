@@ -7,7 +7,7 @@ import { useNavigate } from "react-router-dom";
 import "./InterviewsDashboardIndividual1.css";
 import { Helmet } from "react-helmet";
 
-const InterviewsDashboardIndividua = () => {
+const InterviewsDashboardIndividual1 = () => {
   const [isInterviewPopupOpen, setInterviewPopupOpen] = useState(false);
   const navigate = useNavigate();
 
@@ -242,4 +242,4 @@ const InterviewsDashboardIndividua = () => {
   );
 };
 
-export default InterviewsDashboardIndividua;
+export default InterviewsDashboardIndividual1;
