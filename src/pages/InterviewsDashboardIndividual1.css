@@ -152,7 +152,7 @@
     align-items: center;
     justify-content: center;
     padding: var(--padding-5xs) var(--padding-base);
-    width: 5.2vw;
+    width: 5.5vw;
     font-weight: bold
     }
 .company-logo-parent11, .frame-parent170 {
@@ -188,7 +188,8 @@
     width: 23.21vw;
     height: 12.04vw;
     overflow: hidden;
-    flex-shrink: 0
+    flex-shrink: 0;
+    margin-bottom:1.8vw;
     }
 .div132 {
     position: relative;
@@ -295,7 +296,10 @@
     flex-wrap: wrap;
     align-items: flex-start;
     gap: var(--gap-5xl);
-    font-size: var(--font-size-5xl)
+    font-size: var(--font-size-5xl);
+    overflow:auto;
+    max-height:42.5vw;
+
     }
 .icbaseline-plus-icon17 {
     position: relative;

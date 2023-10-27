@@ -18,10 +18,10 @@ const InterviewsDashboardIndividual1 = () => {
   const onFrameButton3Click = useCallback(() => {
     navigate("/inteview-test-report");
   }, [navigate]);
+
   const onFrameButton2Click = useCallback(() => {
     navigate("/interviews-dashboardindividual2");
   }, [navigate]);
-  
 
   const openInterviewPopup = useCallback(() => {
     setInterviewPopupOpen(true);
@@ -31,26 +31,166 @@ const InterviewsDashboardIndividual1 = () => {
     setInterviewPopupOpen(false);
   }, []);
 
-  const counter=1;
+  const counter = 1;
 
-  
+  const interviewsData = [
+    {
+      id:1,
+      interviewTitle: "SDE-1 Interview",
+      interviewDate: "29-03-2023",
+      companyLogo: "/company-logo2.svg",
+    },
+    {
+      id: 2,
+      interviewTitle: "SDE-1 Interview",
+      interviewDate: "29-03-2023",
+      companyLogo: "/company-logo2.svg",
+    },
+    {
+      id:1,
+      interviewTitle: "SDE-1 Interview",
+      interviewDate: "29-03-2023",
+      companyLogo: "/company-logo2.svg",
+    },
+    {
+      id: 2,
+      interviewTitle: "SDE-1 Interview",
+      interviewDate: "29-03-2023",
+      companyLogo: "/company-logo2.svg",
+    },
+    {
+      id:1,
+      interviewTitle: "SDE-1 Interview",
+      interviewDate: "29-03-2023",
+      companyLogo: "/company-logo2.svg",
+    },
+    {
+      id: 2,
+      interviewTitle: "SDE-1 Interview",
+      interviewDate: "29-03-2023",
+      companyLogo: "/company-logo2.svg",
+    },
+    {
+      id:1,
+      interviewTitle: "SDE-1 Interview",
+      interviewDate: "29-03-2023",
+      companyLogo: "/company-logo2.svg",
+    },
+    {
+      id: 2,
+      interviewTitle: "SDE-1 Interview",
+      interviewDate: "29-03-2023",
+      companyLogo: "/company-logo2.svg",
+    },
+    {
+      id:1,
+      interviewTitle: "SDE-1 Interview",
+      interviewDate: "29-03-2023",
+      companyLogo: "/company-logo2.svg",
+    },
+    {
+      id: 2,
+      interviewTitle: "SDE-1 Interview",
+      interviewDate: "29-03-2023",
+      companyLogo: "/company-logo2.svg",
+    },
+    {
+      id:1,
+      interviewTitle: "SDE-1 Interview",
+      interviewDate: "29-03-2023",
+      companyLogo: "/company-logo2.svg",
+    },
+    {
+      id: 2,
+      interviewTitle: "SDE-1 Interview",
+      interviewDate: "29-03-2023",
+      companyLogo: "/company-logo2.svg",
+    },
+    {
+      id:1,
+      interviewTitle: "SDE-1 Interview",
+      interviewDate: "29-03-2023",
+      companyLogo: "/company-logo2.svg",
+    },
+    {
+      id: 2,
+      interviewTitle: "SDE-1 Interview",
+      interviewDate: "29-03-2023",
+      companyLogo: "/company-logo2.svg",
+    },
+    {
+      id:1,
+      interviewTitle: "SDE-1 Interview",
+      interviewDate: "29-03-2023",
+      companyLogo: "/company-logo2.svg",
+    },
+    {
+      id: 2,
+      interviewTitle: "SDE-1 Interview",
+      interviewDate: "29-03-2023",
+      companyLogo: "/company-logo2.svg",
+    },
+    {
+      id:1,
+      interviewTitle: "SDE-1 Interview",
+      interviewDate: "29-03-2023",
+      companyLogo: "/company-logo2.svg",
+    },
+    {
+      id: 2,
+      interviewTitle: "SDE-1 Interview",
+      interviewDate: "29-03-2023",
+      companyLogo: "/company-logo2.svg",
+    },
+    {
+      id:1,
+      interviewTitle: "SDE-1 Interview",
+      interviewDate: "29-03-2023",
+      companyLogo: "/company-logo2.svg",
+    },
+    {
+      id: 2,
+      interviewTitle: "SDE-1 Interview",
+      interviewDate: "29-03-2023",
+      companyLogo: "/company-logo2.svg",
+    },
+    {
+      id:1,
+      interviewTitle: "SDE-1 Interview",
+      interviewDate: "29-03-2023",
+      companyLogo: "/company-logo2.svg",
+    },
+    {
+      id: 2,
+      interviewTitle: "SDE-1 Interview",
+      interviewDate: "29-03-2023",
+      companyLogo: "/company-logo2.svg",
+    },
+    {
+      id: 2,
+      interviewTitle: "SDE-1 Interview",
+      interviewDate: "29-03-2023",
+      companyLogo: "/company-logo2.svg",
+    },
+    
+    // Add more objects for additional elements
+  ];
 
   return (
     <>
       <div className="interviews-dashboard-individua">
-      <Helmet>
-      <title>Dashboard Interviews</title>
-      <meta name="desc"
-        content="Dashboard Indvidual Interviews"/>
-      </Helmet>
-        <Navbar counter={counter}/>
+        <Helmet>
+          <title>Dashboard Interviews</title>
+          <meta name="desc" content="Dashboard Individual Interviews" />
+        </Helmet>
+        <Navbar counter={counter} />
         <Header />
         <div className="frame-parent167">
           <div className="interviews-wrapper">
             <div className="interviews1">Interviews</div>
           </div>
           <div className="frame-parent168">
-            <button className="today-frame"onClick={onFrameButton2Click}>
+            <button className="today-frame" onClick={onFrameButton2Click}>
               <div className="today3">Today</div>
             </button>
             <button className="upcoming-frame" onClick={onFrameButton1Click}>
@@ -61,156 +201,35 @@ const InterviewsDashboardIndividual1 = () => {
             </button>
           </div>
           <div className="frame-parent169">
-            <button className="frame-wrapper67" onClick={onFrameButton3Click}>
-              <div className="phdots-three-parent10">
-                <img
-                  className="phdots-three-icon20"
-                  alt=""
-                  src="/phdotsthree.svg"
-                />
-                <div className="frame-parent170">
-                  <div className="sde-1-interview-parent10">
-                    <div className="sde-1-interview12">SDE-1 Interview</div>
-                    <div className="div131">29-03-2023</div>
-                  </div>
-                  <div className="company-logo-parent11">
-                    <img
-                      className="company-logo-icon21"
-                      alt=""
-                      src="/company-logo2.svg"
-                    />
-                    <div className="view-report-wrapper">
-                      <div className="view-report">View Report</div>
+            {interviewsData.map((interview) => (
+              <button className="frame-wrapper67" key={interview.id} onClick={onFrameButton3Click}>
+                <div className="phdots-three-parent10">
+                  <img
+                    className="phdots-three-icon20"
+                    alt=""
+                    src="/phdotsthree.svg"
+                  />
+                  <div className="frame-parent170">
+                    <div className="sde-1-interview-parent10">
+                      <div className="sde-1-interview12">
+                        {interview.interviewTitle}
+                      </div>
+                      <div className="div131">{interview.interviewDate}</div>
+                    </div>
+                    <div className="company-logo-parent11">
+                      <img
+                        className="company-logo-icon21"
+                        alt=""
+                        src={interview.companyLogo}
+                      />
+                      <div className="view-report-wrapper">
+                        <div className="view-report">View Report</div>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </button>
-            <div className="frame-wrapper68">
-              <div className="phdots-three-parent11">
-                <img
-                  className="phdots-three-icon20"
-                  alt=""
-                  src="/phdotsthree.svg"
-                />
-                <div className="frame-parent170">
-                  <div className="sde-1-interview-parent10">
-                    <div className="interviews1">SDE-1 Interview</div>
-                    <div className="div132">29-03-2023</div>
-                  </div>
-                  <div className="company-logo-parent12">
-                    <img
-                      className="company-logo-icon22"
-                      alt=""
-                      src="/company-logo3.svg"
-                    />
-                    <div className="view-report-container">
-                      <div className="view-report1">View Report</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="frame-wrapper68">
-              <div className="phdots-three-parent10">
-                <img
-                  className="phdots-three-icon20"
-                  alt=""
-                  src="/phdotsthree.svg"
-                />
-                <div className="frame-parent170">
-                  <div className="sde-1-interview-parent10">
-                    <div className="interviews1">SDE-1 Interview</div>
-                    <div className="div132">29-03-2023</div>
-                  </div>
-                  <div className="company-logo-parent13">
-                    <img
-                      className="company-logo-icon23"
-                      alt=""
-                      src="/company-logo10.svg"
-                    />
-                    <div className="view-report-frame">
-                      <div className="view-report1">View Report</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="frame-wrapper68">
-              <div className="phdots-three-parent10">
-                <img
-                  className="phdots-three-icon20"
-                  alt=""
-                  src="/phdotsthree.svg"
-                />
-                <div className="frame-parent170">
-                  <div className="sde-1-interview-parent10">
-                    <div className="interviews1">SDE-1 Interview</div>
-                    <div className="div132">29-03-2023</div>
-                  </div>
-                  <div className="company-logo-parent14">
-                    <img
-                      className="company-logo-icon21"
-                      alt=""
-                      src="/company-logo2.svg"
-                    />
-                    <div className="view-report-wrapper">
-                      <div className="view-report1">View Report</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="frame-wrapper68">
-              <div className="phdots-three-parent10">
-                <img
-                  className="phdots-three-icon20"
-                  alt=""
-                  src="/phdotsthree.svg"
-                />
-                <div className="frame-parent170">
-                  <div className="sde-1-interview-parent10">
-                    <div className="interviews1">SDE-1 Interview</div>
-                    <div className="div132">29-03-2023</div>
-                  </div>
-                  <div className="company-logo-parent14">
-                    <img
-                      className="company-logo-icon21"
-                      alt=""
-                      src="/company-logo2.svg"
-                    />
-                    <div className="view-report-wrapper">
-                      <div className="view-report1">View Report</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="frame-wrapper68">
-              <div className="phdots-three-parent10">
-                <img
-                  className="phdots-three-icon20"
-                  alt=""
-                  src="/phdotsthree.svg"
-                />
-                <div className="frame-parent170">
-                  <div className="sde-1-interview-parent10">
-                    <div className="interviews1">SDE-1 Interview</div>
-                    <div className="div132">29-03-2023</div>
-                  </div>
-                  <div className="company-logo-parent14">
-                    <img
-                      className="company-logo-icon21"
-                      alt=""
-                      src="/company-logo2.svg"
-                    />
-                    <div className="view-report-wrapper">
-                      <div className="view-report1">View Report</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+              </button>
+            ))}
           </div>
           <button
             className="icbaseline-plus-parent15"
@@ -223,23 +242,19 @@ const InterviewsDashboardIndividual1 = () => {
             />
             <div className="schedule-interview1">Schedule interview</div>
           </button>
-          {/* <div className="rectangle-parent1">
-            <div className="frame-child134" />
-            <div className="frame-child135" />
-          </div> */}
         </div>
       </div>
       {isInterviewPopupOpen && (
-        <PortalPopup
-          overlayColor="rgba(113, 113, 113, 0.3)"
-          placement="Centered"
-          onOutsideClick={closeInterviewPopup}
-        >
-          <InterviewPopup onClose={closeInterviewPopup} />
-        </PortalPopup>
-      )}
-    </>
-  );
+          <PortalPopup
+            overlayColor="rgba(113, 113, 113, 0.3)"
+            placement="Centered"
+            onOutsideClick={closeInterviewPopup}
+          >
+            <InterviewPopup onClose={closeInterviewPopup} />
+          </PortalPopup>
+        )}
+      </>
+    );
 };
 
 export default InterviewsDashboardIndividual1;
