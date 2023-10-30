@@ -117,7 +117,7 @@ const DreamCompanyDashboardIndivi = () => {
           <div className="frame-parent158">
             {/* Map over the button data and generate buttons */}
             {buttonData.map((button) => (
-              <button className="vector-parent1" key={button.id}>
+              <button className="vector-parent1" key={button.id} onClick={onFrameButtonClick}>
                 <img className="vector-icon23" alt="" src={button.vectorIcon} />
                 <img
                   className="company-logo-icon15"
