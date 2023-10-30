@@ -1,6 +1,10 @@
 import "./ReferPopup.css";
+import { useState } from "react";
+import { CopyToClipboard } from 'react-copy-to-clipboard';
 
 const ReferPopup = ({ onClose }) => {
+  const [inviteLink, setInviteLink] = useState("invite-link.dontknowhow");
+
   return (
     <div className="referpopup">
       <button className="basilcross-outline9" onClick={onClose}>
@@ -20,15 +24,15 @@ const ReferPopup = ({ onClose }) => {
                 <div className="invitation-parent">
                   <div className="frame-parent212">
                     <div className="invite-linkdontknowhow-wrapper">
-                      <div className="invite-linkdontknowhow">
-                        invite-link.dontknowhow
-                      </div>
+                      <div className="invite-linkdontknowhow">{inviteLink}</div>
                     </div>
-                    <img
-                      className="material-symbolsfile-copy-out-icon"
-                      alt=""
-                      src="/materialsymbolsfilecopyoutline.svg"
-                    />
+                    <CopyToClipboard text={inviteLink}>
+                      <img
+                        className="material-symbolsfile-copy-out-icon"
+                        alt=""
+                        src="/materialsymbolsfilecopyoutline.svg"
+                      />
+                    </CopyToClipboard>
                   </div>
                 </div>
               </div>
