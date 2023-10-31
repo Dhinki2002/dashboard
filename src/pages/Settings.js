@@ -30,6 +30,12 @@ const Settings = () => {
     setNewSkill("");
   };
 
+  const handleDeleteSkill = (index) => {
+    const updatedSkills = [...skills];
+    updatedSkills.splice(index, 1);
+    setSkills(updatedSkills);
+  };
+
   const handleEditClick = () => {
     setEditMode(!editMode);
   };
@@ -135,18 +141,29 @@ const Settings = () => {
                 {skills.map((skill, index) => (
                   <div key={index} className="machine-learning-wrapper1">
                     <div className="machine-learning5">{skill}</div>
+                    {editMode && (
+                      <img
+                        className="close-button"
+                        alt=""
+                        src="/vector100.svg"
+                        onClick={() => handleDeleteSkill(index)}
+                      />
+                    )}
                   </div>
                 ))}
-                <input
-                  value={newSkill}
-                  onChange={(e) => setNewSkill(e.target.value)}
-                  onKeyDown={(e) => {
-                    if (e.key === "Enter") {
-                      handleAddSkill();
-                    }
-                  }}
-                />
-               
+                {editMode && (
+                  <input
+                    className="indian-institute-of"
+                    value={newSkill}
+                    onChange={(e) => setNewSkill(e.target.value)}
+                    onKeyDown={(e) => {
+                      if (e.key === "Enter") {
+                        handleAddSkill();
+                      }
+                    }}
+                    placeholder="Enter Skill then press Enter"
+                  />
+                )}
               </div>
             </div>
             <div className="email-address-container">
