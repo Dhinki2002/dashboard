@@ -1,8 +1,15 @@
-.add-students, .upload-list-of {
+.add-students {
     position: relative;
     letter-spacing: -0.02em;
-    line-height: 2.78vw
+    line-height: 2.78vw;
+    font-weight: bold;
     }
+
+.upload-list-of {
+        position: relative;
+        letter-spacing: -0.02em;
+        line-height: 2.78vw
+        }    
 .upload-list-of {
     font-size: var(--font-size-lg);
     color: var(--icon-grey);
@@ -86,7 +93,8 @@
     font-size: var(--font-size-xl);
     font-family: var(--font-avenir-lt-std);
     color: var(--white);
-    text-align: left
+    text-align: left;
+    font-weight: bold;
     }
 .pay-for1200-students-wrapper {
     cursor: pointer;

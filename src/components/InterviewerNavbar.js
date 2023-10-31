@@ -74,7 +74,7 @@ const InterviewerNavbar = ({ counter }) => {
               alt=""
               src="/mdilogout.svg"
             />
-            <div className={counter === 0 ? "home7" : "transaction5"}>Log out</div>
+            <div className="transaction5">Log out</div>
           </div>
         </button>
       </div>

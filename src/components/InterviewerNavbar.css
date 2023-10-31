@@ -28,7 +28,8 @@
     font-size: var(--font-size-xl);
     font-family: var(--font-avenir-lt-std);
     color: var(--purple);
-    text-align: left
+    text-align: left;
+    font-weight: bold;
     }
 .transaction5 {
     position: relative;

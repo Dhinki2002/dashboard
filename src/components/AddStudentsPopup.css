@@ -1,8 +1,15 @@
-.add-students2, .upload-list-of2 {
+.add-students2{
     position: relative;
     letter-spacing: -0.02em;
-    line-height: 2.78vw
+    line-height: 2.78vw;
+    font-weight: bold;
     }
+
+.upload-list-of2 {
+        position: relative;
+        letter-spacing: -0.02em;
+        line-height: 2.78vw;
+    }    
 .upload-list-of2 {
     font-size: var(--font-size-lg);
     color: var(--icon-grey);

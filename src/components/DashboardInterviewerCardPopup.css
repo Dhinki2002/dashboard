@@ -8,8 +8,14 @@
 .sde-1-interview {
     position: relative;
     letter-spacing: -0.02em;
-    line-height: 2.78vw
+    line-height: 2.78vw;
+    font-weight: bold;
     }
+.sde-2-interview {
+        position: relative;
+        letter-spacing: -0.02em;
+        line-height: 2.78vw;
+        }    
 .saturday-august-29-parent {
     display: flex;
     flex-direction: row;
@@ -83,7 +89,8 @@
     font-size: var(--font-size-xl);
     font-family: var(--font-avenir-lt-std);
     color: var(--white);
-    text-align: left
+    text-align: left;
+    font-weight: bold;
     }
 .solarplay-bold-icon {
     position: relative;

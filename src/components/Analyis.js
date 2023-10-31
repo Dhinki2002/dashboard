@@ -5,7 +5,7 @@ const Analyis2 = () => {
   return (
             <div>
             <div className="students-performance-wrapper">
-              <div className="students-performance">Students Performance</div>
+              <div className="students-performance1">Students Performance</div>
             </div>
             <div className="frame-parent39">
               <div className="container">

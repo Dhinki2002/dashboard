@@ -3,7 +3,8 @@
     top: 1.32vw;
     left: 1.32vw;
     letter-spacing: -0.02em;
-    line-height: 2.78vw
+    line-height: 2.78vw;
+    font-weight: bold;
     }
 .legend-indicator-1 {
     position: relative;

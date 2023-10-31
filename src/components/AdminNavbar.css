@@ -47,7 +47,8 @@
     font-size: var(--font-size-xl);
     font-family: var(--font-avenir-lt-std);
     color: var(--purple);
-    text-align: left
+    text-align: left;
+    font-weight: bold;
     }
 .frame-child207 {
     position: absolute;
@@ -89,7 +90,8 @@
     height: 10.65vw
     }
 .upgrade-to-pro2 {
-    position: relative
+    position: relative;
+    font-weight: bold;
     }
 .get-exclusive-dashboard1 {
     position: relative;

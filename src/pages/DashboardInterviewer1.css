@@ -31,7 +31,8 @@
 .upcoming {
     position: relative;
     letter-spacing: -0.02em;
-    line-height: 2.78vw
+    line-height: 2.78vw;
+    font-weight: bold;
     }
 .upcoming-wrapper {
     border-radius: var(--br-4xs);
@@ -48,7 +49,8 @@
     top: -0.07vw;
     left: calc(50% - 2.68vw);
     letter-spacing: -0.02em;
-    line-height: 2.78vw
+    line-height: 2.78vw;
+    font-weight: bold;
     }
 .completed-wrapper, .frame-parent65 {
     border-radius: var(--br-4xs);
@@ -80,15 +82,25 @@
     height: 1.85vw;
     overflow: hidden
     }
-.div46, .sde-1-interview1 {
+.div46{
     position: relative;
     font-size: var(--font-size-5xl);
     letter-spacing: -0.02em;
     line-height: 2.78vw;
     font-family: var(--font-avenir-lt-std);
     color: var(--black);
-    text-align: left
+    text-align: left;
     }
+    .sde-1-interview1 {
+        position: relative;
+        font-size: var(--font-size-5xl);
+        letter-spacing: -0.02em;
+        line-height: 2.78vw;
+        font-family: var(--font-avenir-lt-std);
+        color: var(--black);
+        text-align: left;
+        font-weight: bold;
+        }    
 .div46 {
     font-size: var(--font-size-sm)
     }
@@ -111,7 +123,8 @@
     font-size: var(--font-size-sm);
     font-family: var(--font-avenir-lt-std);
     color: var(--purple);
-    text-align: left
+    text-align: left;
+    font-weight: bold;
     }
 .view-analysis-wrapper {
     border-radius: var(--br-9xs);
@@ -123,7 +136,7 @@
     align-items: center;
     justify-content: center;
     padding: var(--padding-5xs) var(--padding-base);
-    width: 5.6vw
+    width: 6vw
     }
 .company-logo-group, .frame-parent67 {
     display: flex;

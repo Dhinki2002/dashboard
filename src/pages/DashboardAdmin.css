@@ -43,7 +43,8 @@
     font-size: 1.05vw;
     font-family: var(--font-avenir-lt-std);
     color: var(--white);
-    text-align: left
+    text-align: left;
+    font-weight: bold;
     }
 .icbaseline-plus-container {
     cursor: pointer;

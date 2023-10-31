@@ -3,6 +3,12 @@
     letter-spacing: -0.02em;
     line-height: 2.78vw
     }
+.students-performance1 {
+        position: relative;
+        letter-spacing: -0.02em;
+        line-height: 2.78vw;
+        font-weight: bold;
+        }    
 .container, .priyanshu-gupta-parent, .students-performance-wrapper {
     display: flex;
     flex-direction: column;

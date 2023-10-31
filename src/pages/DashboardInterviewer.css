@@ -1,7 +1,7 @@
 .scheduled-interviews2 {
     position: relative;
     letter-spacing: -0.02em;
-    line-height: 2.78vw
+    line-height: 2.78vw;
     }
 .scheduled-interviews-frame {
     position: absolute;
@@ -10,7 +10,8 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: flex-start
+    justify-content: flex-start;
+    font-weight: bold;
     }
 .today1 {
     position: absolute;
@@ -21,6 +22,7 @@
     line-height: 2.78vw;
     font-family: var(--font-avenir-lt-std);
     color: var(--purple);
+    font-weight: bold;
    
     }
 .today-container {
@@ -115,7 +117,8 @@
     line-height: 2.78vw;
     font-family: var(--font-avenir-lt-std);
     color: var(--black);
-    text-align: left
+    text-align: left;
+    font-weight: bold;
     }
 .carbontime-icon {
     position: relative;
@@ -159,7 +162,8 @@
     font-size: var(--font-size-sm);
     font-family: var(--font-avenir-lt-std);
     color: var(--purple);
-    text-align: left
+    text-align: left;
+    font-weight: bold;
     }
 .view-resume-wrapper {
     border-radius: var(--br-9xs);
@@ -170,7 +174,8 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding: var(--padding-5xs) var(--padding-base)
+    padding: var(--padding-5xs) var(--padding-base);
+    width:5.9vw
     }
 .company-logo-parent5, .frame-parent77 {
     display: flex;

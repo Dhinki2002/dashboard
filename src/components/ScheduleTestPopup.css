@@ -1,8 +1,15 @@
-.add-new-test, .fill-in-the {
+.add-new-test{
     position: relative;
     letter-spacing: -0.02em;
-    line-height: 2.78vw
+    line-height: 2.78vw;
+    font-weight: bold;
     }
+
+.fill-in-the {
+        position: relative;
+        letter-spacing: -0.02em;
+        line-height: 2.78vw
+        }    
 .fill-in-the {
     font-size: var(--font-size-lg);
     color: var(--icon-grey);
@@ -75,7 +82,8 @@
     display: inline-block;
     width: 7.21vw;
     height: 0.99vw;
-    flex-shrink: 0
+    flex-shrink: 0;
+    font-weight: light;
     }
 .vector-icon8 {
     position: absolute;
@@ -137,7 +145,8 @@
     font-size: var(--font-size-xl);
     font-family: var(--font-avenir-lt-std);
     color: var(--white);
-    text-align: left
+    text-align: left;
+    font-weight: bold;
     }
 .add-test-wrapper {
     border-radius: var(--br-5xs);

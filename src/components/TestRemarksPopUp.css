@@ -3,6 +3,12 @@
     letter-spacing: -0.02em;
     line-height: 2.78vw
     }
+.remarks {
+    position: relative;
+    letter-spacing: -0.02em;
+    line-height: 2.78vw;
+    font-weight: bold;
+    }    
 .kindly-give-remarks {
     font-size: var(--font-size-lg);
     color: var(--icon-grey);
@@ -56,7 +62,8 @@
     font-size: var(--font-size-xl);
     font-family: var(--font-avenir-lt-std);
     color: var(--white);
-    text-align: left
+    text-align: left;
+    font-weight: bold;
     }
 .submit-remarks-wrapper {
     cursor: pointer;

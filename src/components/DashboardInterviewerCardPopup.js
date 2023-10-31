@@ -14,8 +14,8 @@ const DashboardInterviewerCardPopup = ({ onClose }) => {
             <div className="sde-1-interview-parent">
               <div className="sde-1-interview">SDE-1 Interview</div>
               <div className="saturday-august-29-parent">
-                <div className="sde-1-interview">Saturday, August 29</div>
-                <div className="sde-1-interview">02:00 pm-3:00 pm</div>
+                <div className="sde-2-interview">Saturday, August 29</div>
+                <div className="sde-2-interview">02:00 pm-3:00 pm</div>
               </div>
             </div>
           </div>
