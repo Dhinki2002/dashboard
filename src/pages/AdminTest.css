@@ -44,8 +44,13 @@
     padding: 0;
     background-color: var(--white);
     box-shadow: -0.13vw 0 0 rgba(0, 0, 0, 0.1), 0.13vw -0.1vw 0 rgba(0, 0, 0, 0.1), 0 0.2vw 0 #605bff;
-    width: 23.02vw;
-    height: 12.04vw
+    width: 22.2vw;
+    height: 12.04vw;
+    overflow: hidden;
+    flex-shrink: 0;
+    top: 0.08vw;
+    margin-bottom: 1vw;
+    margin-left: 0.08vw;
     }
 .frame-icon {
     width: 23.28vw;
@@ -61,7 +66,9 @@
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: flex-start;
-    gap: var(--gap-13xl)
+    gap: var(--gap-13xl);
+    overflow:auto;
+    max-height:50vw;
     }
 .icbaseline-plus-icon1 {
     position: relative;
@@ -100,7 +107,8 @@
     border-radius: var(--br-base);
     background-color: var(--white);
     width: 76.59vw;
-    height: 53.7vw
+    height: 53.7vw;
+    max-height:50vw;
     }
 .admintest {
     position: relative;

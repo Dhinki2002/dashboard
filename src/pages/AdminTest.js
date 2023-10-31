@@ -18,6 +18,19 @@ const AdminTest = () => {
   }, []);
 
   const counter=1;
+  const logos = [
+    { src: "/company-logo1.svg" },
+    { src: "/company-logo2.svg" },
+    { src: "/company-logo3.svg" },
+    { src: "/company-logo3.svg" },
+    { src: "/company-logo3.svg" },
+    { src: "/company-logo3.svg" },
+    { src: "/company-logo3.svg" },
+    { src: "/company-logo3.svg" },
+    { src: "/company-logo3.svg" },
+    { src: "/company-logo3.svg" },
+    // more logos...
+  ];
 
   return (
     <>
@@ -34,19 +47,13 @@ const AdminTest = () => {
             <div className="active-tests">Active tests</div>
           </div>
           <div className="frame-parent37">
-            <button className="vector-group">
-              <img className="vector-icon11" alt="" src="/vector7.svg" />
-              <img
-                className="company-logo-icon"
-                alt=""
-                src="/company-logo.svg"
-              />
-            </button>
-            <img className="frame-icon" alt="" src="/frame-1182.svg" />
-            <img className="frame-icon" alt="" src="/frame-1183.svg" />
-            <img className="frame-icon" alt="" src="/frame-1182.svg" />
-            <img className="frame-icon" alt="" src="/frame-1189.svg" />
-            <img className="frame-icon" alt="" src="/frame-1183.svg" />
+          {logos.map((logo, index) => (
+      <button key={index} className="vector-group">
+        <img className="vector-icon11" alt="" src="/vector7.svg" />
+        <img className="company-logo-icon" alt="" src={logo.src} />
+      </button>
+    ))}
+            
           </div>
           <button
             className="icbaseline-plus-group"
