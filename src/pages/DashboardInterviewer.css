@@ -203,10 +203,13 @@
     position: relative;
     border-radius: var(--br-base);
     box-shadow: -0.13vw 0 0 rgba(0, 0, 0, 0.1), 0.13vw -0.13vw 0 rgba(0, 0, 0, 0.1), 0 0.2vw 0 #605bff;
-    width: 23.21vw;
-    height: 10.85vw;
+    width: 22.2vw;
+    height: 12.04vw;
     overflow: hidden;
-    flex-shrink: 0
+    flex-shrink: 0;
+    top: 0.08vw;
+    margin-bottom: 0.25vw;
+    margin-left: 0.08vw;
     }
 .carbontime-group {
     display: flex;
@@ -243,14 +246,21 @@
 .frame-parent74, .frame-parent76, .frame-wrapper40 {
     display: flex;
     align-items: flex-start;
-    justify-content: flex-start
+    justify-content: flex-start;
+   
+    }
+    .frame-parent74{
+        max-height:46vw;
     }
 .frame-parent76 {
     width: 72.82vw;
     flex-direction: row;
     flex-wrap: wrap;
     gap: var(--gap-5xl);
-    font-size: var(--font-size-xl)
+    font-size: var(--font-size-xl);
+    max-height:49vw;
+    overflow:auto;
+
     }
 .frame-parent74, .frame-wrapper40 {
     flex-direction: column

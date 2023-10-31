@@ -26,18 +26,71 @@ const DashboardInterviewer1 = () => {
   const onUiwdateClick = useCallback(() => {
     navigate("/dashboardinterviewer2");
   }, [navigate]);
-  const counter=0;
+  const counter = 0;
+  const interviews = [
+    {
+      title: "SDE-1 Interview",
+      date: "29-03-2023",
+      companyLogo: "/company-logo2.svg",
+    },
+    {
+      title: "SDE-1 Interview",
+      date: "29-03-2023",
+      companyLogo: "/company-logo2.svg",
+    },
+    {
+      title: "SDE-1 Interview",
+      date: "29-03-2023",
+      companyLogo: "/company-logo2.svg",
+    },
+    {
+      title: "SDE-1 Interview",
+      date: "29-03-2023",
+      companyLogo: "/company-logo2.svg",
+    },
+    {
+      title: "SDE-1 Interview",
+      date: "29-03-2023",
+      companyLogo: "/company-logo2.svg",
+    },
+    {
+      title: "SDE-1 Interview",
+      date: "29-03-2023",
+      companyLogo: "/company-logo2.svg",
+    },
+    {
+      title: "SDE-1 Interview",
+      date: "29-03-2023",
+      companyLogo: "/company-logo2.svg",
+    },
+    {
+      title: "SDE-1 Interview",
+      date: "29-03-2023",
+      companyLogo: "/company-logo2.svg",
+    },
+    {
+      title: "SDE-1 Interview",
+      date: "29-03-2023",
+      companyLogo: "/company-logo2.svg",
+    },
+    {
+      title: "SDE-1 Interview",
+      date: "29-03-2023",
+      companyLogo: "/company-logo2.svg",
+    },
+    // more interviews...
+  ];
 
   return (
     <>
-    <Helmet>
-      <title>Dashboard Interviewer Completed</title>
-      <meta name="desc"
-        content="Dashboard Interviewer Completed tab"/>
+      <Helmet>
+        <title>Dashboard Interviewer Completed</title>
+        <meta name="desc"
+          content="Dashboard Interviewer Completed tab" />
       </Helmet>
       <div className="dashboard-interviewer1">
-        <InterviewerNavbar counter={counter}/>
-        <InterviewerHeader/>
+        <InterviewerNavbar counter={counter} />
+        <InterviewerHeader />
         <div className="dashboard-interviewer1-inner">
           <div className="frame-parent63">
             <div className="scheduled-interviews-container">
@@ -52,167 +105,45 @@ const DashboardInterviewer1 = () => {
                   >
                     <div className="today">Upcoming</div>
                   </button>
-                  
+
                   <div className="completed-wrapper">
                     <div className="completed">Completed</div>
                   </div>
                 </div>
                 <div className="frame-parent66">
-                  <button
-                    className="frame-wrapper34"
-                    onClick={openTestRemarksPopUp}
-                  >
-                    <div className="phdots-three-parent">
-                      <img
-                        className="phdots-three-icon"
-                        alt=""
-                        src="/phdotsthree.svg"
-                      />
-                      <div className="frame-parent67">
-                        <div className="sde-1-interview-group">
-                          <div className="sde-1-interview1">
-                            SDE-1 Interview
+                  {interviews.map((interview, index) => (
+                    <button
+                      key={index}
+                      className="frame-wrapper34"
+                      onClick={openTestRemarksPopUp}
+                    >
+                      <div className="phdots-three-parent">
+                        <img
+                          className="phdots-three-icon"
+                          alt=""
+                          src="/phdotsthree.svg"
+                        />
+                        <div className="frame-parent67">
+                          <div className="sde-1-interview-group">
+                            <div className="sde-1-interview1">
+                              {interview.title}
+                            </div>
+                            <div className="div46">{interview.date}</div>
                           </div>
-                          <div className="div46">29-03-2023</div>
-                        </div>
-                        <div className="company-logo-group">
-                          <img
-                            className="company-logo-icon2"
-                            alt=""
-                            src="/company-logo2.svg"
-                          />
-                          <div className="view-analysis-wrapper">
-                            <div className="view-analysis">View Analysis</div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </button>
-                  <div className="frame-wrapper35">
-                    <div className="phdots-three-group">
-                      <img
-                        className="phdots-three-icon"
-                        alt=""
-                        src="/phdotsthree.svg"
-                      />
-                      <div className="frame-parent67">
-                        <div className="sde-1-interview-group">
-                          <div className="upcoming">SDE-1 Interview</div>
-                          <div className="div47">29-03-2023</div>
-                        </div>
-                        <div className="company-logo-container">
-                          <img
-                            className="company-logo-icon3"
-                            alt=""
-                            src="/company-logo3.svg"
-                          />
-                          <div className="view-analysis-container">
-                            <div className="view-analysis1">View Analysis</div>
+                          <div className="company-logo-group">
+                            <img
+                              className="company-logo-icon2"
+                              alt=""
+                              src={interview.companyLogo}
+                            />
+                            <div className="view-analysis-wrapper">
+                              <div className="view-analysis">View Analysis</div>
+                            </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                  </div>
-                  <div className="frame-wrapper35">
-                    <div className="phdots-three-group">
-                      <img
-                        className="phdots-three-icon"
-                        alt=""
-                        src="/phdotsthree.svg"
-                      />
-                      <div className="frame-parent67">
-                        <div className="sde-1-interview-group">
-                          <div className="upcoming">SDE-1 Interview</div>
-                          <div className="div47">29-03-2023</div>
-                        </div>
-                        <div className="company-logo-container">
-                          <img
-                            className="company-logo-icon3"
-                            alt=""
-                            src="/company-logo3.svg"
-                          />
-                          <div className="view-analysis-container">
-                            <div className="view-analysis1">View Analysis</div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="frame-wrapper35">
-                    <div className="phdots-three-parent">
-                      <img
-                        className="phdots-three-icon"
-                        alt=""
-                        src="/phdotsthree.svg"
-                      />
-                      <div className="frame-parent67">
-                        <div className="sde-1-interview-group">
-                          <div className="upcoming">SDE-1 Interview</div>
-                          <div className="div47">29-03-2023</div>
-                        </div>
-                        <div className="company-logo-parent2">
-                          <img
-                            className="company-logo-icon2"
-                            alt=""
-                            src="/company-logo2.svg"
-                          />
-                          <div className="view-analysis-wrapper">
-                            <div className="view-analysis1">View Analysis</div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="frame-wrapper35">
-                    <div className="phdots-three-parent">
-                      <img
-                        className="phdots-three-icon"
-                        alt=""
-                        src="/phdotsthree.svg"
-                      />
-                      <div className="frame-parent67">
-                        <div className="sde-1-interview-group">
-                          <div className="upcoming">SDE-1 Interview</div>
-                          <div className="div47">29-03-2023</div>
-                        </div>
-                        <div className="company-logo-parent2">
-                          <img
-                            className="company-logo-icon2"
-                            alt=""
-                            src="/company-logo2.svg"
-                          />
-                          <div className="view-analysis-wrapper">
-                            <div className="view-analysis1">View Analysis</div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="frame-wrapper35">
-                    <div className="phdots-three-group">
-                      <img
-                        className="phdots-three-icon"
-                        alt=""
-                        src="/phdotsthree.svg"
-                      />
-                      <div className="frame-parent67">
-                        <div className="sde-1-interview-group">
-                          <div className="upcoming">SDE-1 Interview</div>
-                          <div className="div47">29-03-2023</div>
-                        </div>
-                        <div className="company-logo-container">
-                          <img
-                            className="company-logo-icon3"
-                            alt=""
-                            src="/company-logo3.svg"
-                          />
-                          <div className="view-analysis-container">
-                            <div className="view-analysis1">View Analysis</div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                    </button>
+                  ))}
                 </div>
               </div>
             </div>

@@ -30,18 +30,88 @@ const DashboardInterviewer = () => {
     navigate("/dashboardinterviewer2");
   }, [navigate]);
 
-  const counter=0;
+  const interviews = [
+    {
+      id:1,
+      title: "SDE-1 Interview",
+      time: "4:00 pm",
+      companyLogo: "/company-logo2.svg",
+    },
+    {
+      id:1,
+      title: "SDE-1 Interview",
+      time: "4:00 pm",
+      companyLogo: "/company-logo2.svg",
+    },
+    {
+      id:1,
+      title: "SDE-1 Interview",
+      time: "4:00 pm",
+      companyLogo: "/company-logo2.svg",
+    },
+    {
+      id:1,
+      title: "SDE-1 Interview",
+      time: "4:00 pm",
+      companyLogo: "/company-logo2.svg",
+    },
+    {
+      id:1,
+      title: "SDE-1 Interview",
+      time: "4:00 pm",
+      companyLogo: "/company-logo2.svg",
+    },
+    {
+      id:1,
+      title: "SDE-1 Interview",
+      time: "4:00 pm",
+      companyLogo: "/company-logo2.svg",
+    },
+    {
+      id:1,
+      title: "SDE-1 Interview",
+      time: "4:00 pm",
+      companyLogo: "/company-logo2.svg",
+    },
+    {
+      id:1,
+      title: "SDE-1 Interview",
+      time: "4:00 pm",
+      companyLogo: "/company-logo2.svg",
+    },
+    {
+      id:1,
+      title: "SDE-1 Interview",
+      time: "4:00 pm",
+      companyLogo: "/company-logo2.svg",
+    },
+    {
+      id:1,
+      title: "SDE-1 Interview",
+      time: "4:00 pm",
+      companyLogo: "/company-logo2.svg",
+    },
+    {
+      id:1,
+      title: "SDE-1 Interview",
+      time: "4:00 pm",
+      companyLogo: "/company-logo2.svg",
+    },
+    // more interviews...
+  ];
+
+  const counter = 0;
 
   return (
     <>
-      
+
       <div className="dashboard-interviewer">
-      <Helmet>
-      <title>Dashboard Interviewer</title>
-      <meta name="desc"
-        content="Interviewer dashboard"/>
-      </Helmet>
-        <InterviewerNavbar counter={counter}/>
+        <Helmet>
+          <title>Dashboard Interviewer</title>
+          <meta name="desc"
+            content="Interviewer dashboard" />
+        </Helmet>
+        <InterviewerNavbar counter={counter} />
         <InterviewerHeader />
         <div className="dashboard-interviewer-inner">
           <div className="frame-parent73">
@@ -69,179 +139,48 @@ const DashboardInterviewer = () => {
                   <div className="frame-child45" />
                 </div>
                 <div className="frame-parent76">
-                  <button
-                    className="frame-wrapper41"
-                    onClick={openDashboardInterviewerCardPopup}
-                  >
-                    <div className="phdots-three-parent4">
-                      <img
-                        className="phdots-three-icon6"
-                        alt=""
-                        src="/phdotsthree.svg"
-                      />
-                      <div className="frame-parent77">
-                        <div className="sde-1-interview-parent5">
-                          <div className="sde-1-interview7">
-                            SDE-1 Interview
+                  {interviews.map((interview) => (
+                    <button
+                      key={interview.id}
+                      className="frame-wrapper41"
+                      onClick={openDashboardInterviewerCardPopup}
+                    >
+                      <div className="phdots-three-parent4">
+                        <img
+                          className="phdots-three-icon6"
+                          alt=""
+                          src="/phdotsthree.svg"
+                        />
+                        <div className="frame-parent77">
+                          <div className="sde-1-interview-parent5">
+                            <div className="sde-1-interview7">
+                              {interview.title}
+                            </div>
+                            <div className="carbontime-parent">
+                              <img
+                                className="carbontime-icon"
+                                alt=""
+                                src="/carbontime.svg"
+                              />
+                              <div className="pm">{interview.time}</div>
+                            </div>
                           </div>
-                          <div className="carbontime-parent">
+                          <div className="company-logo-parent5">
                             <img
-                              className="carbontime-icon"
+                              className="company-logo-icon8"
                               alt=""
-                              src="/carbontime.svg"
+                              src={interview.companyLogo}
                             />
-                            <div className="pm">4:00 pm</div>
-                          </div>
-                        </div>
-                        <div className="company-logo-parent5">
-                          <img
-                            className="company-logo-icon8"
-                            alt=""
-                            src="/company-logo2.svg"
-                          />
-                          <div className="view-resume-wrapper">
-                            <div className="view-resume">View Resume</div>
+                            <div className="view-resume-wrapper">
+                              <div className="view-resume">View Resume</div>
+                            </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                  </button>
-                  <div className="frame-wrapper42">
-                    <div className="phdots-three-parent4">
-                      <img
-                        className="phdots-three-icon6"
-                        alt=""
-                        src="/phdotsthree.svg"
-                      />
-                      <div className="frame-parent77">
-                        <div className="sde-1-interview-parent5">
-                          <div className="scheduled-interviews2">
-                            SDE-1 Interview
-                          </div>
-                          <div className="carbontime-group">
-                            <img
-                              className="carbontime-icon"
-                              alt=""
-                              src="/carbontime.svg"
-                            />
-                            <div className="scheduled-interviews2">4:00 pm</div>
-                          </div>
-                        </div>
-                        <div className="company-logo-parent6">
-                          <img
-                            className="company-logo-icon8"
-                            alt=""
-                            src="/company-logo2.svg"
-                          />
-                          <div className="view-resume-wrapper">
-                            <div className="view-resume1">View Resume</div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="frame-wrapper42">
-                    <div className="phdots-three-parent4">
-                      <img
-                        className="phdots-three-icon6"
-                        alt=""
-                        src="/phdotsthree.svg"
-                      />
-                      <div className="frame-parent77">
-                        <div className="sde-1-interview-parent5">
-                          <div className="scheduled-interviews2">
-                            SDE-1 Interview
-                          </div>
-                          <div className="carbontime-group">
-                            <img
-                              className="carbontime-icon"
-                              alt=""
-                              src="/carbontime.svg"
-                            />
-                            <div className="scheduled-interviews2">4:00 pm</div>
-                          </div>
-                        </div>
-                        <div className="company-logo-parent6">
-                          <img
-                            className="company-logo-icon8"
-                            alt=""
-                            src="/company-logo2.svg"
-                          />
-                          <div className="view-resume-wrapper">
-                            <div className="view-resume1">View Resume</div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="frame-wrapper42">
-                    <div className="phdots-three-parent4">
-                      <img
-                        className="phdots-three-icon6"
-                        alt=""
-                        src="/phdotsthree.svg"
-                      />
-                      <div className="frame-parent77">
-                        <div className="sde-1-interview-parent5">
-                          <div className="scheduled-interviews2">
-                            SDE-1 Interview
-                          </div>
-                          <div className="carbontime-group">
-                            <img
-                              className="carbontime-icon"
-                              alt=""
-                              src="/carbontime.svg"
-                            />
-                            <div className="scheduled-interviews2">4:00 pm</div>
-                          </div>
-                        </div>
-                        <div className="company-logo-parent6">
-                          <img
-                            className="company-logo-icon8"
-                            alt=""
-                            src="/company-logo2.svg"
-                          />
-                          <div className="view-resume-wrapper">
-                            <div className="view-resume1">View Resume</div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="frame-wrapper42">
-                    <div className="phdots-three-parent4">
-                      <img
-                        className="phdots-three-icon6"
-                        alt=""
-                        src="/phdotsthree.svg"
-                      />
-                      <div className="frame-parent77">
-                        <div className="sde-1-interview-parent5">
-                          <div className="scheduled-interviews2">
-                            SDE-1 Interview
-                          </div>
-                          <div className="carbontime-group">
-                            <img
-                              className="carbontime-icon"
-                              alt=""
-                              src="/carbontime.svg"
-                            />
-                            <div className="scheduled-interviews2">4:00 pm</div>
-                          </div>
-                        </div>
-                        <div className="company-logo-parent6">
-                          <img
-                            className="company-logo-icon8"
-                            alt=""
-                            src="/company-logo2.svg"
-                          />
-                          <div className="view-resume-wrapper">
-                            <div className="view-resume1">View Resume</div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                    </button>
+                  ))}
+
+                 
                 </div>
               </div>
             </div>
