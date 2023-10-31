@@ -7,7 +7,7 @@ import { Helmet } from "react-helmet";
 import { Calendar, momentLocalizer } from 'react-big-calendar'
 import moment from 'moment'
 import "react-big-calendar/lib/css/react-big-calendar.css";
-import { fontSize } from "@syncfusion/ej2-richtexteditor/src/rich-text-editor/models/items";
+
 // import 'react-big-calendar/lib/sass/styles.scss';
 
 const localizer = momentLocalizer(moment)
