@@ -16,7 +16,7 @@
     line-height: 2.78vw;
     font-family: var(--font-avenir-lt-std);
     color: var(--black);
-   
+    left:0.5vw
     }
 .today-wrapper {
     cursor: pointer;

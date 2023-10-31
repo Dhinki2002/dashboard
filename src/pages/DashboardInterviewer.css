@@ -14,7 +14,7 @@
     }
 .today1 {
     position: absolute;
-    top: 0;
+    top: -0.1vw;
     left: 0.5vw;
     font-size: var(--font-size-base);
     letter-spacing: -0.02em;
