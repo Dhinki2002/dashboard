@@ -52,9 +52,7 @@ const DashboardInterviewer1 = () => {
                   >
                     <div className="today">Upcoming</div>
                   </button>
-                  {/* <div className="upcoming-wrapper">
-                    <div className="upcoming">Upcoming</div>
-                  </div> */}
+                  
                   <div className="completed-wrapper">
                     <div className="completed">Completed</div>
                   </div>
