@@ -1,10 +1,4 @@
 @font-face {
-  font-family: 'Avenir LT Std'; 
-  src: url('/src/fonts/Avenir LT Std 65 Medium.otf') format('opentype');
-  font-weight:normal;
-  
-}
-@font-face {
   font-family: 'PingFang SC'; 
   src: url('/src/fonts/PingFang SC Regular.otf') format('opentype');
   
@@ -14,6 +8,11 @@
   src: url('/src/fonts/Avenir LT Std 55 Roman.otf') format('opentype');
   font-weight: light;
   
+}
+@font-face {
+  font-family: 'Avenir LT Std'; 
+  src: url('/src/fonts/Avenir LT Std 65 Medium.otf') format('opentype');
+  font-weight:normal;
 }
 @font-face {
   font-family: 'Avenir LT Std'; 
