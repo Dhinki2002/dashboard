@@ -27,6 +27,12 @@ import InterviewsDashboardIndividual from "./pages/InterviewsDashboardIndividual
 import InterviewsDashboardIndividual2 from "./pages/InterviewsDashboardIndividual2";
 import Settings2 from "./pages/Settings2";
 import Settings from "./pages/Settings";
+import InterviewerSettings from "./pages/SettingsInterviewer";
+import InterviewerSettings1 from "./pages/SettingsInterviewer1";
+import InterviewerSettings2 from "./pages/SettingsInterviewer2";
+// import AdminSettings from "./pages/AdminSettings";
+import AdminSettings1 from "./pages/AdminSettings1";
+import AdminSettings2 from "./pages/AdminSettings2";
 import GoScoreDashboardIndividual from "./pages/GoScoreDashboardIndividual";
 import TestScreenObjective from "./pages/TestScreenObjective";
 import TestScreenCode from "./pages/TestScreenCode";
@@ -99,6 +105,12 @@ return (
       />
       <Route path="/settings2" element={<Settings2 />} />
       <Route path="/settings" element={<Settings />} />
+      <Route path="/Interviewersettings" element={<InterviewerSettings />} />
+      <Route path="/Interviewersettings1" element={<InterviewerSettings1 />} />
+      <Route path="/Interviewersettings2" element={<InterviewerSettings2 />} />
+      <Route path="/Adminsettings" element={<AdminSettings />} />
+      <Route path="/Adminsettings1" element={<AdminSettings1 />} />
+      <Route path="/Adminsettings2" element={<AdminSettings2 />} />
       <Route
         path="/go-score-dashboardindividual"
         element={<GoScoreDashboardIndividual />}

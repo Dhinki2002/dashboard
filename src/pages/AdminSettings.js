@@ -1,93 +1,165 @@
+import { useCallback } from "react";
 import AdminNavbar from "../components/AdminNavbar";
-import AdminHeader from "../components/AdminHeader";
+import Header from "../components/Header";
 import AdminSettingsPane from "../components/AdminSettingsPane";
-import "./AdminSettings.css";
+import { useNavigate } from "react-router-dom";
+import "./Settings.css";
+import { useState } from "react";
 import { Helmet } from "react-helmet";
 
 const AdminSettings = () => {
-  const counter=2;
-  return (
+  const counter = 0;
+  const settingsCounter = 0;
 
-    <div className="adminsettings">
+  const [name, setName] = useState("Priyanshu Gupta");
+  const [email, setEmail] = useState("87priyanshugupta@gmail.com");
+  const [phoneNumber, setPhoneNumber] = useState("7727042145");
+  const [collegeName, setcollegeName] = useState("Indian Institute of Technology");
+  const [year, setYear] = useState("2025");
+  const [targetRoles, setTargetRoles] = useState("SDE-1");
+  const [editMode, setEditMode] = useState(false);
+
+  const handleEditClick = () => {
+    setEditMode(!editMode);
+  };
+
+  return (
+    <div className="settings5">
       <Helmet>
-      <title>Admin Settings</title>
+      <title>Settings Individual</title>
       <meta name="desc"
-        content="Admin settings"/>
+        content="Settings Individual"/>
       </Helmet>
-      <AdminNavbar counter={counter}/>
-      <AdminHeader />
-      <div className="settings-parent">
-        <div className="name-of-insititute">Settings</div>
-        <div className="rectangle-container">
-          <AdminSettingsPane />
-          <div className="frame-parent12">
-            <button className="my-profile-container">
-              <div className="my-profile3">My Profile</div>
-            </button>
-            <button className="billing-container">
-              <div className="billing1">Billing</div>
-            </button>
+      <AdminNavbar counter={counter} />
+      <Header />
+      <div className="rectangle-parent4">
+        <AdminSettingsPane settingsCounter={settingsCounter} />
+        <div className="my-profile7">My Profile</div>
+        <div className="frame-parent196">
+          <div className="frame-parent197">
+            <div className="email-address-container">
+              <div className="college-name">Name</div>
+              {editMode ? (
+                <input
+                  className="indian-institute-of"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                />
+              ) : (
+                <div className="indian-institute-of">{name}</div>
+              )}
+            </div>
+            <div className="email-address-container">
+              <div className="college-name">Email address</div>
+              {editMode ? (
+                <input
+                  className="indian-institute-of"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                />
+              ) : (
+                <div className="indian-institute-of">{email}</div>
+              )}
+            </div>
+            <div className="email-address-container">
+              <div className="college-name">Phone number</div>
+              {editMode ? (
+                <input
+                  className="indian-institute-of"
+                  value={phoneNumber}
+                  onChange={(e) => setPhoneNumber(e.target.value)}
+                />
+              ) : (
+                <div className="indian-institute-of">{phoneNumber}</div>
+              )}
+            </div>
+            <div className="frame-parent198">
+              <div className="password-parent1">
+                <div className="college-name">Password</div>
+                <a className="change-password3">Change Password</a>
+              </div>
+              <div className="parent21">
+                <div className="div147">..............</div>
+                <img
+                  className="carbonview-off-icon2"
+                  alt=""
+                  src="/carbonviewoff.svg"
+                />
+              </div>
+            </div>
+            <div className="email-address-container">
+              <div className="college-name">College Name</div>
+              {editMode ? (
+                <input
+                  className="indian-institute-of"
+                  value={collegeName}
+                  onChange={(e) => setcollegeName(e.target.value)}
+                />
+              ) : (
+                <div className="indian-institute-of">{collegeName}</div>
+              )}
+            </div>
           </div>
-          <div className="my-profile4">My Profile</div>
-          <div className="frame-parent13">
-            <div className="frame-parent14">
-              <div className="name-of-insititute-parent">
-                <div className="name-of-insititute">Name of Insititute</div>
-                <div className="iit-roorkee">IIT Roorkee</div>
-              </div>
-              <div className="name-of-insititute-parent">
-                <div className="name-of-insititute">Type</div>
-                <div className="iit-roorkee">Government college</div>
-              </div>
-              <div className="name-of-insititute-parent">
-                <div className="name-of-insititute">Email address</div>
-                <div className="iit-roorkee">iit@iitr.ac.in</div>
-              </div>
-              <div className="name-of-insititute-parent">
-                <div className="name-of-insititute">Phone number</div>
-                <div className="iit-roorkee">7727042145</div>
-              </div>
-              <div className="name-of-insititute-parent">
-                <div className="name-of-insititute">Insitute address</div>
-                <div className="iit-roorkee">{`Near Roorkee bus stand, Roorkee `}</div>
+          <div className="frame-parent197">
+            <div className="email-address-container">
+              <div className="college-name">Graduation year</div>
+              {editMode ? (
+                <input
+                  className="indian-institute-of"
+                  value={year}
+                  onChange={(e) => setYear(e.target.value)}
+                />
+              ) : (
+                <div className="indian-institute-of">{year}</div>
+              )}
+            </div>
+            <div className="skills-container">
+              <div className="college-name">Skills</div>
+              <div className="frame-parent200"> 
+                <div className="machine-learning-wrapper1"> 
+                  <div className="machine-learning5">Machine learning</div>
+                </div>
+                <div className="machine-learning-wrapper1">
+                  <div className="machine-learning5">Machine learning</div>
+                </div>
+                <div className="machine-learning-wrapper1">
+                  <div className="machine-learning5">Machine learning</div>
+                </div>
               </div>
             </div>
-            <div className="frame-parent14">
-              <div className="frame-parent16">
-                <div className="password-group">
-                  <div className="name-of-insititute">Password</div>
-                  <div className="change-password2">Change Password</div>
-                </div>
-                <div className="group">
-                  <div className="div4">..............</div>
-                  <img
-                    className="carbonview-off-icon1"
-                    alt=""
-                    src="/carbonviewoff1.svg"
-                  />
+            <div className="email-address-container">
+              <div className="college-name">Target Role</div>
+              {editMode ? (
+                <input
+                  className="indian-institute-of"
+                  value={targetRoles}
+                  onChange={(e) => setTargetRoles(e.target.value)}
+                />
+              ) : (
+                <div className="indian-institute-of">{targetRoles}</div>
+              )}
+            </div>
+            <div className="frame-parent201">
+              <div className="email-address-container">
+                <div className="college-name">Delete your acccount</div>
+                <div className="this-will-permanently2">
+                  This will permanently delete your account.
                 </div>
               </div>
-              <div className="frame-parent17">
-                <div className="name-of-insititute-parent">
-                  <div className="name-of-insititute">Delete your acccount</div>
-                  <div className="this-will-permanently1">
-                    This will permanently delete your account.
-                  </div>
-                </div>
-                <button className="delete-account-container">
-                  <div className="delete-account1">Delete Account</div>
-                </button>
-              </div>
+              <button className="delete-account-frame">
+                <div className="delete-account2">Delete Account</div>
+              </button>
             </div>
           </div>
-          <button className="frame-wrapper8">
-            <div className="tableredit-group">
-              <img className="tableredit-icon1" alt="" src="/tableredit1.svg" />
-              <div className="edit1">Edit</div>
-            </div>
-          </button>
         </div>
+        <button className="frame-wrapper80" onClick={handleEditClick}>
+          <div className="tableredit-container">
+            <img className="tableredit-icon2" alt="" src="/tableredit1.svg" />
+            <div className="edit2">Edit</div>
+          </div>
+        </button>
       </div>
+      <div className="settings6">Settings</div>
     </div>
   );
 };

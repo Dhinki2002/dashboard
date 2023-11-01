@@ -1,112 +1,167 @@
+import { useCallback } from "react";
 import InterviewerNavbar from "../components/InterviewerNavbar";
-import InterviewerHeader from "../components/InterviewerHeader";
+import Header from "../components/Header";
 import InterviewerSettingsPane from "../components/InterviewerSettingsPane";
-import "./SettingsInterviewer.css";
+import { useNavigate } from "react-router-dom";
+import "./Settings.css";
+import { useState } from "react";
 import { Helmet } from "react-helmet";
 
-const SettingsInterviewer = () => {
-  const counter=2;
+const InterviewerSettings = () => {
+  const counter = 2;
+  const settingsCounter = 0;
+
+  const [name, setName] = useState("Priyanshu Gupta");
+  const [email, setEmail] = useState("87priyanshugupta@gmail.com");
+  const [phoneNumber, setPhoneNumber] = useState("7727042145");
+  const [collegeName, setcollegeName] = useState("Indian Institute of Technology");
+  const [year, setYear] = useState("2025");
+  const [targetRoles, setTargetRoles] = useState("SDE-1");
+  const [editMode, setEditMode] = useState(false);
+
+  const handleEditClick = () => {
+    setEditMode(!editMode);
+  };
+
   return (
-    <div className="settingsinterviewer">
+    <div className="settings5">
       <Helmet>
-      <title>Settings Interviewer</title>
+      <title>Settings Individual</title>
       <meta name="desc"
-        content="Settings Interviewer"/>
+        content="Settings Individual"/>
       </Helmet>
-      <InterviewerNavbar counter={counter}/>
-      <InterviewerHeader />
-      <div className="rectangle-group">
-        <InterviewerSettingsPane />
-        <div className="frame-parent5">
-          <div className="my-profile-wrapper">
-            <div className="my-profile1">My Profile</div>
-          </div>
-          <div className="frame-child1" />
-        </div>
-        <div className="my-profile2">My Profile</div>
-        <div className="frame-parent6">
-          <div className="frame-parent7">
-            <div className="name-parent">
-              <div className="name">Name</div>
-              <div className="priyanshu-gupta">Priyanshu Gupta</div>
+      <InterviewerNavbar counter={counter} />
+      <Header />
+      <div className="rectangle-parent4">
+        <InterviewerSettingsPane settingsCounter={settingsCounter} />
+        <div className="my-profile7">My Profile</div>
+        <div className="frame-parent196">
+          <div className="frame-parent197">
+            <div className="email-address-container">
+              <div className="college-name">Name</div>
+              {editMode ? (
+                <input
+                  className="indian-institute-of"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                />
+              ) : (
+                <div className="indian-institute-of">{name}</div>
+              )}
             </div>
-            <div className="name-parent">
-              <div className="name">Email address</div>
-              <div className="priyanshu-gupta">87priyanshugupta@gmail.com</div>
+            <div className="email-address-container">
+              <div className="college-name">Email address</div>
+              {editMode ? (
+                <input
+                  className="indian-institute-of"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                />
+              ) : (
+                <div className="indian-institute-of">{email}</div>
+              )}
             </div>
-            <div className="name-parent">
-              <div className="name">Phone number</div>
-              <div className="priyanshu-gupta">7727042145</div>
+            <div className="email-address-container">
+              <div className="college-name">Phone number</div>
+              {editMode ? (
+                <input
+                  className="indian-institute-of"
+                  value={phoneNumber}
+                  onChange={(e) => setPhoneNumber(e.target.value)}
+                />
+              ) : (
+                <div className="indian-institute-of">{phoneNumber}</div>
+              )}
             </div>
-            <div className="frame-parent8">
-              <div className="password-parent">
-                <div className="name">Password</div>
-                <div className="change-password1">Change Password</div>
+            <div className="frame-parent198">
+              <div className="password-parent1">
+                <div className="college-name">Password</div>
+                <a className="change-password3">Change Password</a>
               </div>
-              <div className="parent">
-                <div className="div1">..............</div>
+              <div className="parent21">
+                <div className="div147">..............</div>
                 <img
-                  className="carbonview-off-icon"
+                  className="carbonview-off-icon2"
                   alt=""
                   src="/carbonviewoff.svg"
                 />
               </div>
             </div>
-            <div className="name-parent">
-              <div className="name">Qualification</div>
-              <div className="priyanshu-gupta">Bachelor of technology</div>
-            </div>
-            <div className="name-parent">
-              <div className="name">Graduation year</div>
-              <div className="priyanshu-gupta">2025</div>
+            <div className="email-address-container">
+              <div className="college-name">College Name</div>
+              {editMode ? (
+                <input
+                  className="indian-institute-of"
+                  value={collegeName}
+                  onChange={(e) => setcollegeName(e.target.value)}
+                />
+              ) : (
+                <div className="indian-institute-of">{collegeName}</div>
+              )}
             </div>
           </div>
-          <div className="frame-parent7">
-            <div className="skills-parent">
-              <div className="name">Skills</div>
-              <div className="frame-parent10">
-                <div className="machine-learning-wrapper">
-                  <div className="machine-learning">Machine learning</div>
+          <div className="frame-parent197">
+            <div className="email-address-container">
+              <div className="college-name">Graduation year</div>
+              {editMode ? (
+                <input
+                  className="indian-institute-of"
+                  value={year}
+                  onChange={(e) => setYear(e.target.value)}
+                />
+              ) : (
+                <div className="indian-institute-of">{year}</div>
+              )}
+            </div>
+            <div className="skills-container">
+              <div className="college-name">Skills</div>
+              <div className="frame-parent200"> 
+                <div className="machine-learning-wrapper1"> 
+                  <div className="machine-learning5">Machine learning</div>
                 </div>
-                <div className="machine-learning-wrapper">
-                  <div className="machine-learning">Machine learning</div>
+                <div className="machine-learning-wrapper1">
+                  <div className="machine-learning5">Machine learning</div>
                 </div>
-                <div className="machine-learning-wrapper">
-                  <div className="machine-learning">Machine learning</div>
+                <div className="machine-learning-wrapper1">
+                  <div className="machine-learning5">Machine learning</div>
                 </div>
               </div>
             </div>
-            <div className="name-parent">
-              <div className="name">Job Role</div>
-              <div className="priyanshu-gupta">SDE-II</div>
+            <div className="email-address-container">
+              <div className="college-name">Target Role</div>
+              {editMode ? (
+                <input
+                  className="indian-institute-of"
+                  value={targetRoles}
+                  onChange={(e) => setTargetRoles(e.target.value)}
+                />
+              ) : (
+                <div className="indian-institute-of">{targetRoles}</div>
+              )}
             </div>
-            <div className="name-parent">
-              <div className="name">Company</div>
-              <div className="priyanshu-gupta">Amazon</div>
-            </div>
-            <div className="frame-parent11">
-              <div className="name-parent">
-                <div className="name">Delete your acccount</div>
-                <div className="this-will-permanently">
+            <div className="frame-parent201">
+              <div className="email-address-container">
+                <div className="college-name">Delete your acccount</div>
+                <div className="this-will-permanently2">
                   This will permanently delete your account.
                 </div>
               </div>
-              <button className="delete-account-wrapper">
-                <div className="delete-account">Delete Account</div>
+              <button className="delete-account-frame">
+                <div className="delete-account2">Delete Account</div>
               </button>
             </div>
           </div>
         </div>
-        <button className="frame-wrapper7">
-          <div className="tableredit-parent">
-            <img className="tableredit-icon" alt="" src="/tableredit.svg" />
-            <div className="edit">Edit</div>
+        <button className="frame-wrapper80" onClick={handleEditClick}>
+          <div className="tableredit-container">
+            <img className="tableredit-icon2" alt="" src="/tableredit1.svg" />
+            <div className="edit2">Edit</div>
           </div>
         </button>
       </div>
-      <div className="settings2">Settings</div>
+      <div className="settings6">Settings</div>
     </div>
   );
 };
 
-export default SettingsInterviewer;
+export default InterviewerSettings;
