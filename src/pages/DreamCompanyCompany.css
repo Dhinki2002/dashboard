@@ -7,7 +7,7 @@
 .dream-company {
     position: relative;
     letter-spacing: -0.02em;
-    line-height: 2.78vw
+    line-height: 2.78vw;
     }
 .dream-company1 {
     position: relative;
@@ -27,8 +27,16 @@
     width: 1.59vw;
     height: 1.59vw;
     overflow: hidden;
-    flex-shrink: 0
+    flex-shrink: 0;
     }
+    .uiwdate-icon1 {
+        position: relative;
+        width: 1.59vw;
+        height: 1.59vw;
+        overflow: hidden;
+        flex-shrink: 0;
+        margin-left:-6.8vw;
+        }
 .frame-parent144 {
     position: absolute;
     top: 9.39vw;
@@ -199,15 +207,24 @@
     letter-spacing: -0.02em;
     line-height: 2.78vw;
     color: var(--color-darkslategray-200);
-    font-weight: bold
+    font-weight: bold;
+   
     }
 .phclock-parent, .upcoming-interview-parent {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    gap: var(--gap-xs)
+    gap: var(--gap-xs);
+    
+
     }
+    .phclock-parent1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: var(--gap-xs);}
 .upcoming-interview-parent {
     flex-direction: column;
     align-items: flex-start;
@@ -253,7 +270,8 @@
     width: 24.6vw;
     height: 18.19vw;
     overflow: hidden;
-    flex-shrink: 0
+    flex-shrink: 0;
+    
     }
 .frame-parent151, .frame-wrapper65 {
     display: flex;
@@ -286,3 +304,4 @@
     color: var(--icon-grey);
     font-family: var(--font-avenir-lt-std)
     }
+    

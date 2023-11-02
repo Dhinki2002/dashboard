@@ -40,15 +40,19 @@ const DreamCompanyCompany = () => {
     { day: "Thu", date: "17", event: "Interview-1" },
     // more schedule items...
   ];
+  const upcomingInterviews = [
+    { time: "4:00 pm", date: "24 September 2023" },
+    // Add more upcoming interviews as needed
+  ];
 
   return (
     <>
       <div className="dream-company-company">
-      <Helmet>
-      <title>Dream Company Companies</title>
-      <meta name="desc"
-        content="companies list"/>
-      </Helmet>
+        <Helmet>
+          <title>Dream Company Companies</title>
+          <meta name="desc"
+            content="companies list" />
+        </Helmet>
         <Navbar counter={counter} />
         <Header />
         <div className="frame-parent144">
@@ -79,25 +83,25 @@ const DreamCompanyCompany = () => {
           <MyGoScore />
         </div>
         <div className="frame-parent151">
-          <GrowthAnalysis2/>
+          <GrowthAnalysis2 />
           <div className="frame-parent152">
-          <div className="frame-parent153">
-      <div className="frame-parent154">
-        {scheduleItems.map((item, index) => (
-          <div key={index} className="frame-parent154">
-            <div className="dream-company">{item.day}</div>
-            <div className="div128">{item.date}</div>
-          </div>
-        ))}
-      </div>
-      <div className="frame-parent155">
-        {scheduleItems.map((item, index) => (
-          <div key={index} className={item.event.includes("Test") ? "test-1-wrapper" : "interview-1-wrapper"}>
-            <div className="test-1">{item.event}</div>
-          </div>
-        ))}
-      </div>
-    </div>
+            <div className="frame-parent153">
+              <div className="frame-parent154">
+                {scheduleItems.map((item, index) => (
+                  <div key={index} className="frame-parent154">
+                    <div className="dream-company">{item.day}</div>
+                    <div className="div128">{item.date}</div>
+                  </div>
+                ))}
+              </div>
+              <div className="frame-parent155">
+                {scheduleItems.map((item, index) => (
+                  <div key={index} className={item.event.includes("Test") ? "test-1-wrapper" : "interview-1-wrapper"}>
+                    <div className="test-1">{item.event}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
             <div className="schedule-parent">
               <div className="dream-company1">Schedule</div>
               <Link className="view-schedule" to="/schedule-iteration-1">
@@ -108,21 +112,29 @@ const DreamCompanyCompany = () => {
           <div className="frame-wrapper65">
             <div className="frame-wrapper66">
               <div className="frame-parent156">
-                <div className="upcoming-interview-parent">
-                  <div className="upcoming-interview">Upcoming Interview:</div>
-                  <div className="phclock-parent">
-                    <img className="uiwdate-icon" alt="" src="/phclock.svg" />
-                    <div className="dream-company">4:00 pm</div>
-                  </div>
-                  <div className="phclock-parent">
-                    <img
-                      className="uiwdate-icon"
-                      alt=""
-                      src="/solarcalendarlineduotone.svg"
-                    />
-                    <div className="dream-company">24 September 2023</div>
-                  </div>
-                </div>
+              <div className="upcoming-interview-parent">
+      <div className="upcoming-interview">Upcoming Interview:</div>
+      {upcomingInterviews.map((interview, index) => (
+        <div key={index} className="phclock-parent1">
+          <div className="interview-detail">
+            <div className="phclock-parent">
+              <img className="uiwdate-icon1" alt="" src="/phclock.svg" />
+              <div className="dream-company">{interview.time}</div>
+            </div>
+          </div>
+          <div className="interview-detail">
+            <div className="phclock-parent">
+              <img
+                className="uiwdate-icon"
+                alt=""
+                src="/solarcalendarlineduotone.svg"
+              />
+              <div className="dream-company">{interview.date}</div>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
                 <button
                   className="icbaseline-plus-parent12"
                   onClick={openScheduleInterviewPopup}
