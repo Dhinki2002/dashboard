@@ -20,6 +20,15 @@ const ScheduleIteration1 = () => {
     // { day: "Wed", date: "17", interview: "Google Interview" },
     // { day: "Thu", date: "18", interview: "Facebook Interview" },
   ];
+  const mentorRemarks = [
+    {
+      title: "Mentor Remarks:",
+      content:
+        "They were able to choose appropriate data structures for various problems and implemented algorithms efficiently. They were able to choose appropriate data structures for various problems and implemented algorithms efficiently.",
+    },
+    // Add more items as needed
+  ];
+  
   return (
     <div className="schedule-iteration-1">
       <Helmet>
@@ -128,26 +137,20 @@ const ScheduleIteration1 = () => {
         <div className="tips">Tips:</div>
         <div className="frame-parent107">
           <div className="frame-wrapper48">
-            <div className="mentor-remarks-parent">
-              <div className="schedule">Mentor Remarks:</div>
-              <div className="they-were-able1">
-                They were able to choose appropriate data structures for various
-                problems and implemented algorithms efficiently.They were able
-                to choose appropriate data structures for various problems and
-                implemented algorithms efficiently.
-              </div>
-            </div>
+          {mentorRemarks.map((item, index) => (
+      <div key={index} className="mentor-remarks-parent">
+        <div className="schedule">{item.title}</div>
+        <div className="they-were-able1">{item.content}</div>
+      </div>
+    ))}
           </div>
           <div className="frame-wrapper48">
-            <div className="mentor-remarks-parent">
-              <div className="schedule">Technical Proficiency:</div>
-              <div className="they-were-able1">
-                They were able to choose appropriate data structures for various
-                problems and implemented algorithms efficiently.They were able
-                to choose appropriate data structures for various problems and
-                implemented algorithms efficiently.
-              </div>
-            </div>
+          {mentorRemarks.map((item, index) => (
+      <div key={index} className="mentor-remarks-parent">
+        <div className="schedule">{item.title}</div>
+        <div className="they-were-able1">{item.content}</div>
+      </div>
+    ))}
           </div>
           <div className="frame-wrapper48">
             <div className="technical-proficiency-group">
