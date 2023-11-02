@@ -136,7 +136,8 @@
 .frame-parent97 {
     flex-direction: column;
     align-items: flex-start;
-    gap: var(--gap-base)
+    gap: var(--gap-base);
+    
     }
 .view-more2 {
     position: relative;
