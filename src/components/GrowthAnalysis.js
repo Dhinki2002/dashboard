@@ -9,7 +9,7 @@ const GrowthAnalysis = () => {
        
         fill: true,
         lineTension: 0.4,
-        backgroundColor: 'rgba(96, 91, 255, 0.2)',
+        backgroundColor: 'rgba(96 , 91, 255, 0.2)',
         borderColor: 'rgba(96, 91, 255, 0.9)',
         borderCapStyle: 'butt',
         borderDash: [],
@@ -32,6 +32,22 @@ const GrowthAnalysis = () => {
   
   const options = {
     scales: {
+      scales: {
+        x: {
+          ticks: {
+            font: {
+              size: '12vw', // Set the desired font size here
+            },
+          },
+        },
+        y: {
+          ticks: {
+            font: {
+              size: '12vw', // Set the desired font size here
+            },
+          },
+        },
+      },
       ticks: {display: false,maxTicksLimit:5, },
       y: {
         display:false,
@@ -41,6 +57,10 @@ const GrowthAnalysis = () => {
     legend: {
       display: false, 
     },
+    responsive:true,
+    
+   
+   
   };
 
 
@@ -50,8 +70,9 @@ const GrowthAnalysis = () => {
     <div className='root-div'>
     <div className="graph-chart-container">
           <div className="growth-analysis">Growth Analysis</div>
-           
+          
             <Line data={data} options={options} />
+          
           </div>
           </div>
           

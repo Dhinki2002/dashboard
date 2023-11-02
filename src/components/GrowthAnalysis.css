@@ -15,11 +15,12 @@
     width: 40.32vw;
     height: 22.88vw;
     align-items: center;
-    margin-top: 65px;
-    margin-bottom: 35px
+    margin-top: 5vw;
+    margin-bottom: 2vw;
     }
 .root-div {
     background-color: var(--white);
     height: 24.8vw;
     border-radius: 20px
     }
+    
