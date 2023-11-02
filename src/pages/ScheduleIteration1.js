@@ -5,6 +5,21 @@ import { Helmet } from "react-helmet";
 
 const ScheduleIteration1 = () => {
   const counter=3;
+  const test2Items = [
+    { day: "Tue", date: "16" },
+    { day: "Tue", date: "16" },
+    { day: "Tue", date: "16" },
+  ];
+  const test3Items = [
+    { day: "Tue", date: "16" },
+    { day: "Tue", date: "16" },
+    { day: "Tue", date: "16" },
+  ];
+  const interviewItems = [
+    { day: "Tue", date: "16", interview: "Amazons Interview" },
+    // { day: "Wed", date: "17", interview: "Google Interview" },
+    // { day: "Thu", date: "18", interview: "Facebook Interview" },
+  ];
   return (
     <div className="schedule-iteration-1">
       <Helmet>
@@ -46,35 +61,19 @@ const ScheduleIteration1 = () => {
             <div className="schedule">Final Interview</div>
           </div>
           <div className="frame-parent96">
-            <div className="frame-parent97">
-              <div className="frame-parent98">
-                <div className="tue-parent">
-                  <div className="schedule1">Tue</div>
-                  <div className="schedule1">16</div>
-                </div>
-                <div className="test-2-wrapper">
-                  <div className="amazons-interview">Test-2</div>
-                </div>
-              </div>
-              <div className="frame-parent98">
-                <div className="tue-parent">
-                  <div className="schedule1">Tue</div>
-                  <div className="schedule1">16</div>
-                </div>
-                <div className="test-2-wrapper">
-                  <div className="amazons-interview">Test-2</div>
-                </div>
-              </div>
-              <div className="frame-parent98">
-                <div className="tue-parent">
-                  <div className="schedule1">Tue</div>
-                  <div className="schedule1">16</div>
-                </div>
-                <div className="test-2-wrapper">
-                  <div className="amazons-interview">Test-2</div>
-                </div>
-              </div>
-            </div>
+          <div className="frame-parent97">
+      {test2Items.map((item, index) => (
+        <div key={index} className="frame-parent98">
+          <div className="tue-parent">
+            <div className="schedule1">{item.day}</div>
+            <div className="schedule1">{item.date}</div>
+          </div>
+          <div className="test-2-wrapper">
+            <div className="amazons-interview">Test-2</div>
+          </div>
+        </div>
+      ))}
+    </div>
             <button className="view-more-container">
               <div className="view-more2">View more</div>
               <img
@@ -85,35 +84,19 @@ const ScheduleIteration1 = () => {
             </button>
           </div>
           <div className="frame-parent101">
-            <div className="frame-parent97">
-              <div className="frame-parent98">
-                <div className="tue-parent">
-                  <div className="schedule1">Tue</div>
-                  <div className="schedule1">16</div>
-                </div>
-                <div className="test-2-wrapper">
-                  <div className="amazons-interview">Test-2</div>
-                </div>
-              </div>
-              <div className="frame-parent98">
-                <div className="tue-parent">
-                  <div className="schedule1">Tue</div>
-                  <div className="schedule1">16</div>
-                </div>
-                <div className="test-2-wrapper">
-                  <div className="amazons-interview">Test-2</div>
-                </div>
-              </div>
-              <div className="frame-parent98">
-                <div className="tue-parent">
-                  <div className="schedule1">Tue</div>
-                  <div className="schedule1">16</div>
-                </div>
-                <div className="test-2-wrapper">
-                  <div className="amazons-interview">Test-2</div>
-                </div>
-              </div>
-            </div>
+          <div className="frame-parent97">
+      {test3Items.map((item, index) => (
+        <div key={index} className="frame-parent98">
+          <div className="tue-parent">
+            <div className="schedule1">{item.day}</div>
+            <div className="schedule1">{item.date}</div>
+          </div>
+          <div className="test-2-wrapper">
+            <div className="amazons-interview">Test-2</div>
+          </div>
+        </div>
+      ))}
+    </div>
             <button className="view-more-container">
               <div className="view-more2">View more</div>
               <img
@@ -123,15 +106,17 @@ const ScheduleIteration1 = () => {
               />
             </button>
           </div>
-          <div className="frame-parent106">
-            <div className="tue-parent">
-              <div className="schedule1">Tue</div>
-              <div className="schedule1">16</div>
-            </div>
-            <div className="amazons-interview-wrapper">
-              <div className="amazons-interview">Amazon’s Interview</div>
-            </div>
-          </div>
+          {interviewItems.map((item, index) => (
+      <div key={index} className="frame-parent106">
+        <div className="tue-parent">
+          <div className="schedule1">{item.day}</div>
+          <div className="schedule1">{item.date}</div>
+        </div>
+        <div className="amazons-interview-wrapper">
+          <div className="amazons-interview">{item.interview}</div>
+        </div>
+      </div>
+    ))}
         </div>
       </div>
       <div className="schedule-iteration-1-inner">

@@ -205,7 +205,8 @@
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    gap: var(--gap-9xl)
+    gap: var(--gap-9xl);
+    overflow:hidden;
     }
 .frame-parent94 {
     position: absolute;

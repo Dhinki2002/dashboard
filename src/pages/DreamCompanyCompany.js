@@ -34,6 +34,12 @@ const DreamCompanyCompany = () => {
   }, []);
 
   const counter = 3;
+  const scheduleItems = [
+    { day: "Tue", date: "16", event: "Test-1" },
+    { day: "Wed", date: "17", event: "Test-2" },
+    { day: "Thu", date: "17", event: "Interview-1" },
+    // more schedule items...
+  ];
 
   return (
     <>
@@ -75,33 +81,23 @@ const DreamCompanyCompany = () => {
         <div className="frame-parent151">
           <GrowthAnalysis2/>
           <div className="frame-parent152">
-            <div className="frame-parent153">
-              <div className="frame-parent154">
-                <div className="frame-parent154">
-                  <div className="dream-company">Tue</div>
-                  <div className="div128">16</div>
-                </div>
-                <div className="wed-parent">
-                  <div className="dream-company">Wed</div>
-                  <div className="div128">17</div>
-                </div>
-                <div className="wed-parent">
-                  <div className="dream-company">Thu</div>
-                  <div className="div128">17</div>
-                </div>
-              </div>
-              <div className="frame-parent155">
-                <div className="test-1-wrapper">
-                  <div className="test-1">Test-1</div>
-                </div>
-                <div className="interview-1-wrapper">
-                  <div className="test-1">Test-2</div>
-                </div>
-                <div className="interview-1-wrapper">
-                  <div className="test-1">Interview-1</div>
-                </div>
-              </div>
-            </div>
+          <div className="frame-parent153">
+      <div className="frame-parent154">
+        {scheduleItems.map((item, index) => (
+          <div key={index} className="frame-parent154">
+            <div className="dream-company">{item.day}</div>
+            <div className="div128">{item.date}</div>
+          </div>
+        ))}
+      </div>
+      <div className="frame-parent155">
+        {scheduleItems.map((item, index) => (
+          <div key={index} className={item.event.includes("Test") ? "test-1-wrapper" : "interview-1-wrapper"}>
+            <div className="test-1">{item.event}</div>
+          </div>
+        ))}
+      </div>
+    </div>
             <div className="schedule-parent">
               <div className="dream-company1">Schedule</div>
               <Link className="view-schedule" to="/schedule-iteration-1">
