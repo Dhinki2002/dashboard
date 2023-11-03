@@ -17,8 +17,8 @@ const DreamCompanyDashboardIndivi = () => {
   }, [navigate]);
 
   const openAddDreamCompanyPopup = useCallback(() => {
-    setAddDreamCompanyPopupOpen(true);
-  }, []);
+    navigate("/add-dream-company");
+  }, [navigate]);
 
   const closeAddDreamCompanyPopup = useCallback(() => {
     setAddDreamCompanyPopupOpen(false);

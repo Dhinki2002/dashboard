@@ -36,6 +36,7 @@ import AdminSettings2 from "./pages/AdminSettings2";
 import GoScoreDashboardIndividual from "./pages/GoScoreDashboardIndividual";
 import TestScreenObjective from "./pages/TestScreenObjective";
 import TestScreenCode from "./pages/TestScreenCode";
+import AddDreamCompany from "./pages/AddDreamComapany";
 import { Helmet } from "react-helmet";
 
 function App() {
@@ -114,6 +115,10 @@ return (
       <Route
         path="/go-score-dashboardindividual"
         element={<GoScoreDashboardIndividual />}
+      />
+      <Route
+        path="/add-dream-company"
+        element={<AddDreamCompany />}
       />
       <Route path="/test-screen-objective" element={<TestScreenObjective />} />
       <Route path="/test-screen-code" element={<TestScreenCode />} />
