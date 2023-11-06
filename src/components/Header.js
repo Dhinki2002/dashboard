@@ -30,16 +30,16 @@ const Header = () => {
         </div>
         <div className="frame-parent364">
           <div className="frame-wrapper219">
-            <div className="frame-wrapper220">
-              <div className="carbonsearch-parent18">
+            {/* <div className="frame-wrapper220"> */}
+              {/* <div className="carbonsearch-parent18">
                 <img
                   className="carbonsearch-icon20"
                   alt=""
                   src="/carbonsearch.svg"
                 />
                 <div className="search-by-anything20">Search by anything</div>
-              </div>
-            </div>
+              </div> */}
+            {/* </div> */}
           </div>
           <div className="claritynotification-line-parent18">
             <button

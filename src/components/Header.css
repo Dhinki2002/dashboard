@@ -84,7 +84,8 @@
     width: 2.12vw;
     height: 2.12vw;
     overflow: hidden;
-    flex-shrink: 0
+    flex-shrink: 0;
+    left:20vw;
     }
 .frame-child249 {
     position: absolute;
@@ -112,7 +113,8 @@
     background-color: transparent;
     position: relative;
     width: 2.38vw;
-    height: 2.38vw
+    height: 2.38vw;
+    left:20vw;
     }
 .claritynotification-line-parent18, .frame-parent363, .frame-parent364 {
     display: flex;
