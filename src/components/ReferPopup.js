@@ -1,6 +1,21 @@
 import "./ReferPopup.css";
+import { useState } from "react";
+import { CopyToClipboard } from 'react-copy-to-clipboard';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const ReferPopup = ({ onClose }) => {
+  const [inviteLink, setInviteLink] = useState("invite-link.dontknowhow");
+  const [couponCode, setCouponCode] = useState("2307AK");
+
+  const handleCopy = (text) => {
+    toast.success("Copied to clipboard!", {
+      autoClose: 300, // Duration in milliseconds
+      hideProgressBar: true, // Hide the progress bar
+    });
+};
+    
   return (
     <div className="referpopup">
       <button className="basilcross-outline9" onClick={onClose}>
@@ -20,15 +35,15 @@ const ReferPopup = ({ onClose }) => {
                 <div className="invitation-parent">
                   <div className="frame-parent212">
                     <div className="invite-linkdontknowhow-wrapper">
-                      <div className="invite-linkdontknowhow">
-                        invite-link.dontknowhow
-                      </div>
+                      <div className="invite-linkdontknowhow">{inviteLink}</div>
                     </div>
-                    <img
-                      className="material-symbolsfile-copy-out-icon"
-                      alt=""
-                      src="/materialsymbolsfilecopyoutline.svg"
-                    />
+                    <CopyToClipboard text={inviteLink} onCopy={handleCopy}>
+                      <img
+                        className="material-symbolsfile-copy-out-icon"
+                        alt=""
+                        src="/materialsymbolsfilecopyoutline.svg"
+                      />
+                    </CopyToClipboard>
                   </div>
                 </div>
               </div>
@@ -46,13 +61,15 @@ const ReferPopup = ({ onClose }) => {
                   <div className="frame-parent212">
                     <div className="coupon-code-parent">
                       <div className="invite-linkdontknowhow">Coupon code:</div>
-                      <div className="ak">2307AK</div>
+                      <div className="ak">{couponCode}</div>
                     </div>
-                    <img
-                      className="material-symbolsfile-copy-out-icon"
-                      alt=""
-                      src="/materialsymbolsfilecopyoutline.svg"
-                    />
+                    <CopyToClipboard text={couponCode} onCopy={handleCopy}>
+                      <img
+                        className="material-symbolsfile-copy-out-icon"
+                        alt=""
+                        src="/materialsymbolsfilecopyoutline.svg"
+                      />
+                    </CopyToClipboard>
                   </div>
                 </div>
               </div>
@@ -70,6 +87,7 @@ const ReferPopup = ({ onClose }) => {
           </button>
         </div>
       </div>
+      <ToastContainer />
     </div>
   );
 };
