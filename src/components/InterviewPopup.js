@@ -63,7 +63,7 @@ const InterviewPopup = ({ onClose }) => {
                   <input
                     className="frame-child167"
                     placeholder="Select time"
-                    type="datetime-local"
+                    type="time"
                   />
                 </div>
               </div>
