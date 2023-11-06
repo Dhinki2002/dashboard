@@ -48,7 +48,7 @@ const ScheduleInterviewPopup = ({ onClose }) => {
                   <input
                     className="frame-child174"
                     placeholder="Select time"
-                    type="datetime-local"
+                    type="time"
                   />
                 </div>
               </div>
