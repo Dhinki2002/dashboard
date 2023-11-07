@@ -1,0 +1,110 @@
+.technical-login {
+    text-transform: lowercase
+    }
+.crack-any-technical-interview-login {
+    margin: 0
+    }
+.crack-any-technical-container-login {
+    position: relative
+    }
+.fulcrum-assignment-skill-login {
+    margin: 0;
+    padding-left: var(--padding-5xl-login)
+    }
+.crack-any-technical-interview-parent-login, .mock-interviews-parent-login {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start
+    }
+.mock-interviews-parent-login {
+    gap: var(--gap-xs-login);
+    font-size: var(--font-inherit-login);
+    font-family: var(--font-inherit-login)
+    }
+.crack-any-technical-interview-parent-login {
+    position: absolute;
+    top: 6.17vw;
+    left: 4.53vw;
+    gap: var(--gap-17xl-login);
+    font-size: var(--font-size-11xl-login);
+    color: var(--color-white-login)
+    }
+.company-logo-icon-login, .company-logo-icon1-login, .company-logo-icon2-login {
+    position: relative;
+    width: 6.44vw;
+    height: 2.4vw;
+    overflow: hidden;
+    flex-shrink: 0;
+    opacity: 0.2
+    }
+.company-logo-icon1-login, .company-logo-icon2-login {
+    width: 5.53vw
+    }
+.company-logo-icon2-login {
+    width: 7.73vw
+    }
+.company-logo-icon3-login, .company-logo-icon4-login, .company-logo-icon5-login {
+    position: relative;
+    width: 4.01vw;
+    height: 2.4vw;
+    overflow: hidden;
+    flex-shrink: 0;
+    opacity: 0.2
+    }
+.company-logo-icon4-login, .company-logo-icon5-login {
+    width: 7.19vw
+    }
+.company-logo-icon5-login {
+    width: 5.67vw
+    }
+.company-logo-parent-login {
+    position: absolute;
+    top: 46.9vw;
+    left: calc(50% - 31.25vw);
+    width: 178.82vw;
+    height: 2.49vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: flex-start;
+    gap: var(--gap-37xl-login)
+    }
+.interviews-remarks-parent-login {
+    position: absolute;
+    top: calc(50% - 24.75vw);
+    right: 1.98vw;
+    border-radius: var(--br-17xl-login);
+    background-color: var(--purple-login);
+    border: 0.62vw solid var(--color-lightsteelblue-login);
+    box-sizing: border-box;
+    width: 45.5vw;
+    height: 49.98vw;
+    overflow: hidden;
+    text-align: left;
+    font-size: 0.32vw;
+    color: var(--color-gray-300-login);
+    font-family: var(--h1-heavy-login)
+    }
+.image-parent-login {
+    margin-top: 23.54vw;
+    margin-left: 4.76vw
+    }
+.image-1-login {
+    height: 19.34vw;
+    width: 29.52vw;
+    top: 23.54vw;
+    left: 4.76vw
+    }
+.image-2-login {
+    position: absolute;
+    height: 11.38vw;
+    width: 16.72vw;
+    top: 34.4vw;
+    left: 20.83vw
+    }
+.interviews-remarks-parent-login {
+    margin-top: -1.3vw;
+    height: 52.3vw
+    }

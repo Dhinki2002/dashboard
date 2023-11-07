@@ -18,7 +18,7 @@ const Header = () => {
   }, []);
 
   const onFrameButtonClick = useCallback(() => {
-    navigate("/");
+    navigate("/settings");
   }, [navigate]);
 
   return (

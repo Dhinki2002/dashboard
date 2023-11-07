@@ -1,0 +1,143 @@
+.cantileverlogoblack-2-parent-login {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-41xl-login);
+}
+.sign-up-login {
+  position: relative;
+}
+.tdesigninstitution-icon-login {
+  position: relative;
+  width: 1.83vw;
+  height: 1.83vw;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.tdesigninstitution-wrapper-login {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0.29vw;
+}
+.as-an-institution-login {
+  position: relative;
+  font-size: var(--font-size-5xl-login);
+  font-family: var(--h1-heavy-login);
+  color: var(--black-login);
+  text-align: left;
+}
+.frame-div-login {
+  position: absolute;
+  top: 1.55vw;
+  left: 1.37vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-base-login);
+}
+.frame-button-login, .frame-child-login {
+  border: 0.06vw solid var(--color-gainsboro-300-login);
+  box-sizing: border-box;
+}
+.frame-child-login {
+  position: absolute;
+  top: 0.91vw;
+  left: 12.39vw;
+  border-radius: 50%;
+  width: 1.60vw;
+  height: 1.60vw;
+}
+.frame-button-login {
+  cursor: pointer;
+  padding: 0;
+  background-color: transparent;
+  position: relative;
+  border-radius: var(--br-xs-login);
+  width: 14.91vw;
+  height: 8.40vw;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.frame-container-login, .sign-up-parent-login {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frame-container-login {
+  flex-direction: row;
+  gap: 1.42vw;
+}
+.sign-up-parent-login {
+  flex-direction: column;
+  gap: var(--gap-base-login);
+}
+.continue-as-individual-login {
+  position: relative;
+  font-size: var(--body-heavy-size-login);
+  font-family: var(--h1-heavy-login);
+  color: var(--color-white-login);
+  text-align: left;
+}
+.continue-as-individual-wrapper-login, .frame-wrapper-login {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+}
+.frame-wrapper-login {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-xl-login) var(--padding-5xl-login);
+  background-color: var(--purple-login);
+  border-radius: var(--br-xs-login);
+  width: 31.20vw;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.sign-in-login {
+  color: var(--purple-login);
+}
+.already-have-an-container-login {
+  cursor: pointer;
+  text-decoration: none;
+  position: relative;
+  color: inherit;
+}
+.frame-group-login, .frame-parent-login, .frame-parent1-login {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.frame-parent1-login {
+  align-items: center;
+  gap: var(--gap-33xl-login);
+  font-size: var(--font-size-base-login);
+}
+.frame-group-login, .frame-parent-login {
+  align-items: flex-start;
+}
+.frame-group-login {
+  gap: 13.37vw;
+}
+.frame-parent-login {
+  position: absolute;
+  top: 5.38vw;
+  left: 4.80vw;
+  gap: var(--gap-41xl-login);
+}
+.sign-up-as-login {
+  position: relative;
+  background-color: var(--color-white-login);
+  width: 100%;
+  height: 56.12vw;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-5xl-login);
+  color: var(--black-login);
+  font-family: var(--h1-heavy-login);
+}

@@ -48,7 +48,7 @@ const Navbar = ({ counter }) => {
   }, []);
 
   const onFrameButton7Click = useCallback(() => {
-    navigate("/settings");
+    navigate("/settings2");
   }, [navigate]);
 
   return (

@@ -1,0 +1,91 @@
+.vector-icon1-login {
+    width: 5.15vw;
+    height: 5.15vw
+    }
+.and-you-are-login, .vector-icon1-login {
+    position: relative
+    }
+.and-you-are-all-set-wrapper-login {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start
+    }
+.lets-us-help-login {
+    position: relative;
+    font-size: var(--font-size-5xl-login)
+    }
+.frame-parent51-login {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-9xs-login)
+    }
+.teenyiconstick-circle-solid1-login {
+    position: relative;
+    width: 4.06vw;
+    height: 4.06vw;
+    overflow: hidden;
+    flex-shrink: 0
+    }
+.vector-group-login {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-32xl-login)
+    }
+.proceed-to-dashboard-login {
+    position: relative;
+    font-size: var(--body-heavy-size-login);
+    font-family: var(--h1-heavy-login);
+    color: var(--color-white-login);
+    text-align: left
+    }
+.frame-wrapper38-login, .proceed-to-dashboard-wrapper-login {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center
+    }
+.frame-wrapper38-login {
+    border-radius: var(--br-xs-login);
+    background-color: var(--purple-login);
+    width: 31.2vw;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--padding-xl-login) var(--padding-5xl-login);
+    box-sizing: border-box;
+    cursor: pointer
+    }
+.frame-parent50-login, .frame-wrapper37-login {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start
+    }
+.frame-wrapper37-login {
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+    align-items: center
+    }
+.frame-parent50-login {
+    position: absolute;
+    top: 16.57vw;
+    left: 4.8vw;
+    align-items: flex-start;
+    gap: var(--gap-53xl-login)
+    }
+.sign-up-as-institution4-login {
+    position: relative;
+    background-color: var(--color-white-login);
+    width: 100%;
+    height: 56.12vw;
+    overflow: hidden;
+    text-align: left;
+    font-size: var(--h1-heavy-size-login);
+    color: var(--color-gray-400-login);
+    font-family: var(--h1-heavy-login)
+    }

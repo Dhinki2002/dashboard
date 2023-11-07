@@ -1,0 +1,18 @@
+.welcome-to-fulcrum-login, .your-path-to-login {
+    position: relative;
+    text-transform: capitalize
+    }
+.your-path-to-login {
+    font-size: var(--font-size-5xl-login)
+    }
+.welcome-to-fulcrum-parent-login {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-9xs-login);
+    text-align: left;
+    font-size: var(--h1-heavy-size-login);
+    color: var(--black-login);
+    font-family: var(--h1-heavy-login)
+    }

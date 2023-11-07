@@ -1,10 +1,16 @@
-import { useEffect } from "react";
 import {
   Routes,
   Route,
   useNavigationType,
   useLocation,
 } from "react-router-dom";
+import SignUpAs from "./pages/SignUpAs";
+import ResetPassword from "./pages/ResetPassword";
+import Login from "./pages/Login";
+import ForgotReset from "./pages/ForgotReset";
+import { useEffect } from "react";
+import SignUpIndividual from "./pages/SignUpIndividual";
+import SignUpInstitute from "./pages/SignUpInstitute";
 import Settings1 from "./pages/Settings1";
 import SettingsInterviewer from "./pages/SettingsInterviewer";
 import AdminSettings from "./pages/AdminSettings";
@@ -30,7 +36,6 @@ import Settings from "./pages/Settings";
 import InterviewerSettings from "./pages/SettingsInterviewer";
 import InterviewerSettings1 from "./pages/SettingsInterviewer1";
 import InterviewerSettings2 from "./pages/SettingsInterviewer2";
-// import AdminSettings from "./pages/AdminSettings";
 import AdminSettings1 from "./pages/AdminSettings1";
 import AdminSettings2 from "./pages/AdminSettings2";
 import GoScoreDashboardIndividual from "./pages/GoScoreDashboardIndividual";
@@ -50,17 +55,24 @@ function App() {
     }
   }, [action, pathname]);
 
-return (
+
+  return (
     <div>
     <Helmet>
       <title>Settings</title>
       <meta name="desc"
         content="user settings"/>
       </Helmet>
-   
     <Routes>
-       
-      <Route path="/" element={<Settings1 />} />
+      <Route path="/" element={<SignUpAs />} />
+      <Route path="/login" element={<Login />} />
+
+      <Route path="/reset-password" element={<ResetPassword />} />
+      <Route path="/forgot-reset" element={<ForgotReset />} />
+      <Route path="/sign-up-institute" element={<SignUpInstitute />} />
+
+      <Route path="/sign-up-individual" element={<SignUpIndividual />} />
+      <Route path="/settings1" element={<Settings1 />} />
       <Route path="/settingsinterviewer" element={<SettingsInterviewer />} />
       <Route path="/adminsettings" element={<AdminSettings />} />
       <Route path="/admintest" element={<AdminTest />} />

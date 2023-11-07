@@ -6,7 +6,7 @@ def find_regular_expressions_in_file(file_path):
     with open(file_path, "r") as file:
         content = file.read()
         # Use a regular expression pattern to find "some_variable"
-        pattern = r"/([\w-]+)\.svg"
+        pattern = r"/([\w@-]+)\.png"
         matches = re.findall(pattern, content)
         regular_expressions.update(matches)
     return regular_expressions
@@ -36,7 +36,7 @@ all_files = os.listdir(directory_path)
 svg_files_to_remove = [
     file
     for file in all_files
-    if file.endswith(".svg") and file[:-4] not in all_regular_expressions
+    if file.endswith(".png") and file[:-4] not in all_regular_expressions
 ]
 # Delete the .svg files that are not in the set
 for file_to_remove in svg_files_to_remove:

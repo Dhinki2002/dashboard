@@ -29,7 +29,7 @@ const AdminNavbar = ({counter}) => {
   }, []);
 
   const onFrameButton4Click = useCallback(() => {
-    navigate("/adminsettings");
+    navigate("/adminsettings2");
   }, [navigate]);
 
   return (

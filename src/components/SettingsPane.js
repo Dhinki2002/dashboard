@@ -13,7 +13,7 @@ const SettingsPane = ({settingsCounter}) => {
   }, [navigate]);
 
   const onFrameButton1Click = useCallback(() => {
-    navigate("/");
+    navigate("/settings1");
   }, [navigate]);
 
   const onFrameButton2Click = useCallback(() => {

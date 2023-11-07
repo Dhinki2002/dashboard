@@ -2,7 +2,7 @@ import { useCallback } from "react";
 import InterviewerNavbar from "../components/InterviewerNavbar";
 import Header from "../components/Header";
 import InterviewerSettingsPane from "../components/InterviewerSettingsPane";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import "./Settings.css";
 import { useState } from "react";
 import { Helmet } from "react-helmet";
@@ -10,6 +10,8 @@ import { Helmet } from "react-helmet";
 const InterviewerSettings = () => {
   const counter = 2;
   const settingsCounter = 0;
+
+  const navigate = useNavigate();
 
   const [name, setName] = useState("Priyanshu Gupta");
   const [email, setEmail] = useState("87priyanshugupta@gmail.com");
@@ -76,7 +78,12 @@ const InterviewerSettings = () => {
             <div className="frame-parent198">
               <div className="password-parent1">
                 <div className="college-name">Password</div>
-                <a className="change-password3">Change Password</a>
+                <Link
+                  to="/Interviewersettings1"
+                  onClick={() => navigate("/Interviewersettings1")}
+                >
+                Change Password
+                </Link>
               </div>
               <div className="parent21">
                 <div className="div147">..............</div>

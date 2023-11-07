@@ -1,0 +1,45 @@
+.material-symbolsperson-outlin-icon-login {
+    position: relative;
+    width: 2.52vw;
+    height: 2.52vw;
+    overflow: hidden;
+    flex-shrink: 0
+    }
+.as-an-individual-login {
+    position: relative;
+    font-size: var(--font-size-5xl-login);
+    font-family: var(--h1-heavy-login);
+    color: var(--color-white-login);
+    text-align: left
+    }
+.material-symbolsperson-outlin-parent-login {
+    position: absolute;
+    top: 1.66vw;
+    left: 1.2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-base-login)
+    }
+.teenyiconstick-circle-solid2-login {
+    position: absolute;
+    top: 0.91vw;
+    left: 12.39vw;
+    width: 1.6vw;
+    height: 1.6vw;
+    overflow: hidden
+    }
+.frame-parent52-login {
+    cursor: pointer;
+    border: 0.12vw solid var(--purple-login);
+    padding: 0;
+    background-color: var(--purple-login);
+    position: relative;
+    border-radius: var(--br-xs-login);
+    box-sizing: border-box;
+    width: 14.91vw;
+    height: 8.4vw;
+    overflow: hidden;
+    flex-shrink: 0
+    }

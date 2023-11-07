@@ -1,0 +1,194 @@
+.login-with-google1-login {
+    position: relative;
+    font-size: var(--body-heavy-size-login);
+    font-family: var(--h1-heavy-login);
+    color: var(--black-login);
+    text-align: left
+    }
+.flat-color-iconsgoogle-container-login, .frame-wrapper19-login {
+    display: flex;
+    flex-direction: row;
+    justify-content: center
+    }
+.flat-color-iconsgoogle-container-login {
+    align-items: flex-end;
+    gap: var(--gap-mini-login)
+    }
+.frame-wrapper19-login {
+    cursor: pointer;
+    border: 0.06vw solid var(--color-gainsboro-300-login);
+    padding: var(--padding-base-login) var(--padding-5xl-login);
+    background-color: transparent;
+    border-radius: var(--br-xs-login);
+    align-items: center
+    }
+.mingcutecoupon-line-icon-login {
+    position: relative;
+    width: 1.6vw;
+    height: 1.6vw;
+    overflow: hidden;
+    flex-shrink: 0
+    }
+.frame-wrapper20-login {
+    cursor: pointer;
+    border: 0.06vw solid var(--color-gainsboro-300-login);
+    padding: var(--padding-base-login) var(--padding-5xl-login);
+    background-color: transparent;
+    border-radius: var(--br-xs-login);
+    box-sizing: border-box;
+    width: 14.8vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center
+    }
+.frame-parent31-login {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-9xl-login)
+    }
+.frame-child14-login {
+    border-top: 0.06vw solid var(--color-gainsboro-400-login);
+    box-sizing: border-box;
+    width: 14.86vw;
+    height: 0.06vw
+    }
+.frame-child14-login, .or2-login {
+    position: relative
+    }
+.line-container-login {
+    flex-direction: row;
+    align-items: center;
+    gap: var(--gap-7xs-login)
+    }
+.email-group-login, .frame-child16-login, .line-container-login {
+    display: flex;
+    justify-content: flex-start
+    }
+.frame-child16-login {
+    border: 0.06vw solid var(--color-gainsboro-300-login);
+    font-family: var(--h1-heavy-login);
+    font-size: var(--body-heavy-size-login);
+    background-color: transparent;
+    border-radius: var(--br-xs-login);
+    box-sizing: border-box;
+    width: 31.2vw;
+    flex-direction: row;
+    align-items: center;
+    padding: var(--padding-base-login) var(--padding-5xl-login)
+    }
+.email-group-login {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--gap-5xs-login)
+    }
+.frame-child17-login {
+    border: 0.06vw solid var(--color-gainsboro-300-login);
+    font-family: var(--h1-heavy-login);
+    font-size: var(--body-heavy-size-login);
+    background-color: transparent;
+    border-radius: var(--br-xs-login);
+    box-sizing: border-box;
+    width: 31.2vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--padding-base-login) var(--padding-5xl-login)
+    }
+.forgot-password-login {
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+    font-size: var(--font-size-base-login);
+    color: var(--purple-login)
+    }
+.frame-parent34-login, .frame-parent35-login {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-base-login)
+    }
+.frame-parent34-login {
+    gap: var(--gap-7xl-login)
+    }
+.login1-login {
+    position: relative;
+    font-size: var(--body-heavy-size-login);
+    font-family: var(--h1-heavy-login);
+    color: var(--color-white-login);
+    text-align: left
+    }
+.frame-wrapper21-login, .login-container-login {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center
+    }
+.frame-wrapper21-login {
+    cursor: pointer;
+    border: 0;
+    padding: var(--padding-xl-login) var(--padding-5xl-login);
+    background-color: var(--purple-login);
+    border-radius: var(--br-xs-login);
+    width: 31.2vw;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box
+    }
+.frame-parent29-login, .frame-parent33-login {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start
+    }
+.frame-parent33-login {
+    gap: 2.28vw;
+    font-size: var(--body-heavy-size-login);
+    color: var(--black-login)
+    }
+.frame-parent29-login {
+    gap: var(--gap-13xl-login)
+    }
+.sign-up-for2-login {
+    color: var(--purple-login)
+    }
+.new-to-fulcrum-container2-login {
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    width: 14.5vw;
+    color: var(--black-login)
+    }
+.cantileverlogoblack-2-container-login, .frame-parent27-login, .frame-parent28-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: var(--gap-37xl-login)
+    }
+.cantileverlogoblack-2-container-login, .frame-parent27-login {
+    align-items: flex-start;
+    gap: var(--gap-36xl-login)
+    }
+.cantileverlogoblack-2-container-login {
+    position: absolute;
+    top: 5.38vw;
+    left: 4.8vw;
+    gap: var(--gap-41xl-login)
+    }
+.login-with-email1-login {
+    position: relative;
+    background-color: var(--color-white-login);
+    width: 100%;
+    height: 56.12vw;
+    overflow: hidden;
+    text-align: left;
+    font-size: var(--font-size-base-login);
+    color: var(--color-gray-100-login);
+    font-family: var(--h1-heavy-login)
+    }

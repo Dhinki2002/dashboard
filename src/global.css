@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Avenir+LT+Std:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap");
 @font-face {
   font-family: 'PingFang SC'; 
   src: url('/src/fonts/PingFang SC Regular.otf') format('opentype');
@@ -32,6 +34,9 @@ body {
 }
 :root {
   /* fonts */
+  --h1-heavy-login: "Avenir LT Std";
+  --font-inherit-login: inherit;
+  --font-baloo-2-login: "Baloo 2";
   --font-avenir-lt-std: "Avenir LT Std";
   --font-inherit: inherit;
   --font-nunito: Nunito;
@@ -39,6 +44,32 @@ body {
   --en-regular: "Helvetica Neue";
 
   /* font sizes */
+  --font-size-base-login: 0.91vw;
+  --body-heavy-size-login: 1.14vw;
+  --font-size-5xl-login: 1.37vw;
+  --h1-heavy-size-login: 1.83vw;
+  --font-size-lg-login: 1.03vw;
+  --font-size-11xl-login: 1.71vw;
+  --font-size-9xs-8-login: 0.22vw;
+  --font-size-9xs-6-login: 0.21vw;
+  --font-size-9xs-1-login: 0.18vw;
+  --font-size-8xs-1-login: 0.23vw;
+  --font-size-8xs-3-login: 0.24vw;
+  --font-size-9xs-2-login: 0.18vw;
+  --font-size-10xs-7-login: 0.15vw;
+  --font-size-10xs-9-login: 0.16vw;
+  --font-size-10xs-5-login: 0.14vw;
+  --font-size-9xs-4-login: 0.19vw;
+  --font-size-6xs-7-login: 0.38vw;
+  --font-size-6xs-4-login: 0.36vw;
+  --font-size-7xs-4-login: 0.31vw;
+  --font-size-5xs-3-login: 0.41vw;
+  --font-size-5xs-6-login: 0.43vw;
+  --font-size-7xs-7-login: 0.33vw;
+  --font-size-8xs-8-login: 0.28vw;
+  --font-size-7xs-1-login: 0.30vw;
+  --font-size-8xs-5-login: 0.26vw;
+  --font-size-7xs-login: 0.35vw;
   --font-size-9xl: 1.85vw;
   --font-size-xl: 1.32vw;
   --font-size-5xl: 1.59vw;
@@ -59,6 +90,33 @@ body {
   --font-size-21xl: 2.65vw;
 
   /* Colors */
+  --color-white-login: #fff;
+  --purple-login: #605bff;
+  --color-gray-100-login: #8f8f8f;
+  --icon-grey-login: #8d8d8d;
+  --color-gray-200-login: #858585;
+  --black-login: #212121;
+  --color-gray-300-login: #171717;
+  --color-gray-400-login: #0e0e10;
+  --color-gray-500-login: rgba(255, 255, 255, 0.3);
+  --color-gray-600-login: rgba(255, 255, 255, 0.2);
+  --color-gainsboro-100-login: #dedede;
+  --color-gainsboro-200-login: #dbdbdb;
+  --color-gainsboro-300-login: #dad7d5;
+  --color-gainsboro-400-login: rgba(218, 215, 213, 0.6);
+  --color-lightsteelblue-login: rgba(186, 195, 246, 0.4);
+  --color-black-login: #000;
+  --color-whitesmoke-100-login: #f9faf5;
+  --color-whitesmoke-200-login: #f3f6f9;
+  --color-whitesmoke-300-login: #ededed;
+  --color-whitesmoke-400-login: #eaefe8;
+  --color-cadetblue-login: #81a79e;
+  --color-darkslategray-login: #343434;
+  --color-darkseagreen-login: #7ca36d;
+  --color-crimson-login: #e94664;
+  --color-dimgray-login: #5c5c5c;
+  --color-lightgray-login: #d3d3d3;
+  --color-silver-login: #c8c8c8;
   --color-ghostwhite-100: #f5f6fa;
   --color-ghostwhite-200: #f3f5fb;
   --color-gray-100: #fcfcff;
@@ -111,6 +169,22 @@ body {
   --color-tomato: #f25959;
 
   /* Gaps */
+  --gap-41xl-login: 3.43vw;
+  --gap-33xl-login: 2.98vw;
+  --gap-base-login: 0.91vw;
+  --gap-9xs-login: 0.22vw;
+  --gap-37xl-login: 3.20vw;
+  --gap-17xl-login: 2.05vw;
+  --gap-xs-login: 0.68vw;
+  --gap-36xl-login: 3.15vw;
+  --gap-13xl-login: 1.83vw;
+  --gap-7xs-login: 0.35vw;
+  --gap-9xl-login: 1.60vw;
+  --gap-mini-login: 0.85vw;
+  --gap-5xs-login: 0.46vw;
+  --gap-53xl-login: 4.11vw;
+  --gap-32xl-login: 2.91vw;
+  --gap-7xl-login: 1.49vw;
   --gap-9xl: 1.85vw;
   --gap-5xs: 0.53vw;
   --gap-5xl: 1.59vw;
@@ -149,7 +223,11 @@ body {
   --gap-307xl: 21.56vw;
   --gap-20xl: 2.58vw;
 
+
   /* Paddings */
+  --padding-xl-login: 1.14vw;
+  --padding-5xl-login: 1.37vw;
+  --padding-base-login: 0.91vw;
   --padding-base: 1.06vw;
   --padding-xl: 1.32vw;
   --padding-5xl: 1.59vw;
@@ -172,6 +250,21 @@ body {
   --padding-13xl: 2.12vw;
 
   /* Border radiuses */
+  --br-xs-login: 0.68vw;
+  --br-17xl-login: 2.05vw;
+  --br-7xs-login: 0.35vw;
+  --br-11xs-3-login: 0.08vw;
+  --br-10xs-5-login: 0.14vw;
+  --br-11xs-8-login: 0.11vw;
+  --br-lg-login: 1.03vw;
+  --br-12xs-7-login: 0.05vw;
+  --br-11xs-4-login: 0.08vw;
+  --br-8xs-5-login: 0.26vw;
+  --br-2xs-6-login: 0.60vw;
+  --br-10xs-2-login: 0.13vw;
+  --br-9xs-2-login: 0.18vw;
+  --br-12xl-8-login: 1.81vw;
+  --br-5xs-login: 0.46vw;
   --br-base: 1.06vw;
   --br-5xs: 0.53vw;
   --br-xs: 0.79vw;

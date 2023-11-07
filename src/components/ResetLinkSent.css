@@ -1,0 +1,107 @@
+.vector-icon-login {
+    width: 5.15vw;
+    height: 5.15vw
+    }
+.reset-link-sent1-login, .vector-icon-login {
+    position: relative
+    }
+.reset-link-sent-wrapper-login {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start
+    }
+.check-your-mail-login {
+    position: relative;
+    font-size: var(--font-size-5xl-login)
+    }
+.frame-parent14-login {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-9xs-login)
+    }
+.teenyiconstick-circle-solid-login {
+    position: relative;
+    width: 4.06vw;
+    height: 4.06vw;
+    overflow: hidden;
+    flex-shrink: 0
+    }
+.vector-parent-login {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-32xl-login)
+    }
+.proceed-to-login-login {
+    position: relative;
+    font-size: var(--body-heavy-size-login);
+    font-family: var(--h1-heavy-login);
+    color: var(--color-white-login);
+    text-align: left
+    }
+.frame-wrapper9-login, .proceed-to-login-wrapper-login {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center
+    }
+.frame-wrapper9-login {
+    border-radius: var(--br-xs-login);
+    background-color: var(--purple-login);
+    width: 31.2vw;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--padding-xl-login) var(--padding-5xl-login);
+    box-sizing: border-box
+    }
+.frame-wrapper8-login {
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start
+    }
+.sign-up-for1-login {
+    color: var(--purple-login)
+    }
+.new-to-fulcrum-container1-login {
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+    color: inherit
+    }
+.frame-parent13-login, .frame-parent15-login {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: var(--gap-53xl-login)
+    }
+.frame-parent15-login {
+    align-items: center;
+    font-size: var(--font-size-base-login);
+    color: var(--black-login)
+    }
+.frame-parent13-login {
+    position: absolute;
+    top: 16.57vw;
+    left: 4.8vw;
+    align-items: flex-start
+    }
+.reset-link-sent-login {
+    position: relative;
+    background-color: var(--color-white-login);
+    width: 100%;
+    height: 56.12vw;
+    overflow: hidden;
+    text-align: left;
+    font-size: var(--h1-heavy-size-login);
+    color: var(--color-gray-400-login);
+    font-family: var(--h1-heavy-login)
+    }

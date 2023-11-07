@@ -2,14 +2,16 @@ import { useCallback } from "react";
 import AdminNavbar from "../components/AdminNavbar";
 import Header from "../components/Header";
 import AdminSettingsPane from "../components/AdminSettingsPane";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import "./Settings.css";
-import { useState } from "react";
+import { useState} from "react";
 import { Helmet } from "react-helmet";
 
 const AdminSettings = () => {
   const counter = 0;
   const settingsCounter = 0;
+
+  const navigate = useNavigate();
 
   const [name, setName] = useState("Priyanshu Gupta");
   const [email, setEmail] = useState("87priyanshugupta@gmail.com");
@@ -76,7 +78,14 @@ const AdminSettings = () => {
             <div className="frame-parent198">
               <div className="password-parent1">
                 <div className="college-name">Password</div>
-                <a className="change-password3">Change Password</a>
+                <Link
+                  className="forgot-password-admin"
+                  to="/adminsettings1"
+                  onClick={() => navigate("/adminsettings1")}
+                >
+                  Change Password
+                </Link>
+
               </div>
               <div className="parent21">
                 <div className="div147">..............</div>

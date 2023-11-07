@@ -224,3 +224,12 @@
     color: var(--black);
     font-family: var(--font-avenir-lt-std)
     }
+
+.forgot-password-admin{
+        text-decoration: underline;
+        position: relative;
+        font-size: var(--font-size-sm);
+        letter-spacing: -0.02em;
+        line-height: 2.78vw;
+        color: var(--icon-grey)
+}    

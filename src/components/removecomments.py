@@ -20,7 +20,7 @@ def remove_comments_in_directory(directory_path):
                 remove_comments_from_file(file_path)
                 print(f"Removed comments from {file_path}")
 if __name__ == '__main__':
-    directory_path = 'src/pages'  # Replace with the directory containing your .js files
+    directory_path = 'src/components'  # Replace with the directory containing your .js files
     remove_comments_in_directory(directory_path)
 
 
