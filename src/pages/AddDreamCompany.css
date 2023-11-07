@@ -1,81 +1,86 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  .hero {
-    display: flex;
-    height: 100vh;
-    position: relative;
-    overflow: hidden;
-    /* background-color: black; */
-    background-size: cover;
-    background-position: center center;
-    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
-    transition: background 1s ease;
-  }
-  
-  .content {
-    /* border: 1px purple solid; */
-    display: flex;
-    flex-direction: column;
-    max-width: 1200px;
-    width: 100%;
-    color: white;
-    margin-inline: auto;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .content h1 {
-    font-size: 56px;
-    font-weight: bolder;
-  }
-  
-  .content p {
-    font-size: 22px;
-    margin: 15px 0;
-    max-width: 550px;
-    letter-spacing: 2px;
-  }
-  
-  .content a {
-    color: inherit;
-    text-decoration: none;
-    background-color: purple;
-    padding: 12px 24px;
-    font-size: 22px;
-    border-radius: 10px;
-  }
-  .header {
-    font-size: 4vw;
-    color: black;
-    background: #fff;
-    mix-blend-mode: screen;
-    padding: 1px 4px;
-    margin-top: 1vw;
-    margin-bottom: 10vw;
-    border-radius: 10px;
-    /* Add transition for smooth background change */
-  }
-  .back-arrow {
-    width: 4vw; /* Adjust the width to match the desired size */
-    height: 4vw; /* Adjust the height to match the desired size */
-    margin-top: 1vw;
-    margin-bottom:-0.5vw;
-    transform: rotate(180deg); /* Add margin to create spacing between the arrow and text */
-  }
-  .forward-arrow {
-    width: 4vw; /* Adjust the width to match the desired size */
-    height: 4vw; /* Adjust the height to match the desired size */
-    margin-top: 1vw;
-    margin-bottom:-0.6vw;
-    /* Add margin to create spacing between the arrow and text */
-  }
-  .back-button,
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero {
+  display: flex;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  /* background-color: black; */
+  background-size: cover;
+  background-position: center center;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+  transition: background 1s ease;
+}
+
+.content {
+  /* border: 1px purple solid; */
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  width: 100%;
+  color: white;
+  margin-inline: auto;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.content h1 {
+  font-size: 56px;
+  font-weight: bolder;
+}
+
+.content p {
+  font-size: 22px;
+  margin: 15px 0;
+  max-width: 550px;
+  letter-spacing: 2px;
+}
+
+.content a {
+  color: inherit;
+  text-decoration: none;
+  background-color: purple;
+  padding: 12px 24px;
+  font-size: 22px;
+  border-radius: 10px;
+}
+
+.header {
+  font-size: 4vw;
+  color: white; /* Make the font white */
+  background: transparent; /* Make the background transparent */
+  mix-blend-mode: screen;
+  padding: 1px 4px;
+  margin-top: 1vw;
+  margin-bottom: 10vw;
+  border-radius: 10px;
+  font-style: italic; /* Make the text italic */
+}
+/* Add transition for smooth background change */
+
+.back-arrow {
+  width: 4vw; /* Adjust the width to match the desired size */
+  height: 4vw; /* Adjust the height to match the desired size */
+  margin-top: 1vw;
+  margin-bottom: -0.5vw;
+  transform: rotate(
+    180deg
+  ); /* Add margin to create spacing between the arrow and text */
+}
+.forward-arrow {
+  width: 4vw; /* Adjust the width to match the desired size */
+  height: 4vw; /* Adjust the height to match the desired size */
+  margin-top: 1vw;
+  margin-bottom: -0.6vw;
+  /* Add margin to create spacing between the arrow and text */
+}
+.back-button,
 .forward-button {
   border: none;
   background: none;
@@ -84,8 +89,8 @@
 .suggestion-item {
   font-size: 14px;
   display: block;
-  padding-left:-50px;
-   /* Adjust the font size as needed */
+  padding-left: -50px;
+  /* Adjust the font size as needed */
 }
 .suggestion-item {
   display: block;

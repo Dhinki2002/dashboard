@@ -2,8 +2,34 @@ import { useState, useCallback } from "react";
 import ScheduledSuccessfullyPopup from "./ScheduledSuccessfullyPopup";
 import PortalPopup from "./PortalPopup";
 import "./InterviewPopup.css";
+import axios from "axios";
 
 const InterviewPopup = ({ onClose }) => {
+  const [date, setDate] = useState(null);
+  const [time, setTime] = useState(null);
+
+  const dateTime = new Date(`${date}T${time}`);
+  const unixTimestamp = Math.floor(dateTime.getTime() / 1000);
+
+  const [jobProfile, setJobProfile] = useState("");
+  const [dreamCompany, setDreamCompany] = useState("");
+
+  const appointmentId = "your_appointment_id_here"; // replace with your actual appointment id
+  const url = `http://localhost:8000/interview/book-interview-slot/${appointmentId}`;
+
+  axios
+    .post(url, {
+      start_time: unixTimestamp,
+      job_profile: jobProfile,
+      dream_company: dreamCompany,
+    })
+    .then((response) => {
+      console.log(response.data);
+    })
+    .catch((error) => {
+      console.error(error);
+    });
+
   const [isScheduledSuccessfullyPopupOpen, setScheduledSuccessfullyPopupOpen] =
     useState(false);
 
@@ -34,6 +60,8 @@ const InterviewPopup = ({ onClose }) => {
                     className="frame-child165"
                     placeholder="Enter the job"
                     type="text"
+                    value={jobProfile}
+                    onChange={(e) => setJobProfile(e.target.value)}
                   />
                 </div>
                 <div className="job-profile-group">
@@ -42,6 +70,8 @@ const InterviewPopup = ({ onClose }) => {
                     className="frame-child165"
                     placeholder="Enter your dream company"
                     type="text"
+                    value={dreamCompany}
+                    onChange={(e) => setDreamCompany(e.target.value)}
                   />
                 </div>
               </div>
@@ -54,6 +84,7 @@ const InterviewPopup = ({ onClose }) => {
                     className="frame-child167"
                     placeholder="Select date"
                     type="date"
+                    onChange={(e) => setDate(e.target.value)}
                   />
                 </div>
                 <div className="job-profile-group">
@@ -64,6 +95,7 @@ const InterviewPopup = ({ onClose }) => {
                     className="frame-child167"
                     placeholder="Select time"
                     type="datetime-local"
+                    onChange={(e) => setTime(e.target.value)}
                   />
                 </div>
               </div>

@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom";
 import "./Settings.css";
 import { useState } from "react";
 import { Helmet } from "react-helmet";
+import axios from "axios";
 
 const Settings = () => {
   const counter = 4;
@@ -14,21 +15,41 @@ const Settings = () => {
   const [name, setName] = useState("Priyanshu Gupta");
   const [email, setEmail] = useState("87priyanshugupta@gmail.com");
   const [phoneNumber, setPhoneNumber] = useState("7727042145");
-  const [collegeName, setcollegeName] = useState("Indian Institute of Technology");
+  const [collegeName, setcollegeName] = useState(
+    "Indian Institute of Technology"
+  );
   const [year, setYear] = useState("2025");
   const [targetRoles, setTargetRoles] = useState("SDE-1");
   const [editMode, setEditMode] = useState(false);
 
   const handleEditClick = () => {
     setEditMode(!editMode);
+    if (editMode) {
+      axios
+        .put("http://localhost:8000/user/update-profile", {
+          full_name: name,
+          email: email,
+          phone_number: phoneNumber,
+          college_name: collegeName,
+          year_of_study: year,
+          //skills: skills, // Assuming you have a state variable for skills
+          //dream_companies: dreamCompanies, // Assuming you have a state variable for dream companies
+          //target_roles: targetRoles,
+        })
+        .then((response) => {
+          console.log(response);
+        })
+        .catch((error) => {
+          console.error(error);
+        });
+    }
   };
 
   return (
     <div className="settings5">
       <Helmet>
-      <title>Settings Individual</title>
-      <meta name="desc"
-        content="Settings Individual"/>
+        <title>Settings Individual</title>
+        <meta name="desc" content="Settings Individual" />
       </Helmet>
       <Navbar counter={counter} />
       <Header />
@@ -115,8 +136,8 @@ const Settings = () => {
             </div>
             <div className="skills-container">
               <div className="college-name">Skills</div>
-              <div className="frame-parent200"> 
-                <div className="machine-learning-wrapper1"> 
+              <div className="frame-parent200">
+                <div className="machine-learning-wrapper1">
                   <div className="machine-learning5">Machine learning</div>
                 </div>
                 <div className="machine-learning-wrapper1">
