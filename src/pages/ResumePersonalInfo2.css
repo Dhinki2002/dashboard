@@ -133,7 +133,8 @@
     }
 .rectangle-wrapper11 {
     position: relative;
-    background-color: var(--color-aliceblue);
+    /* background-color: var(--color-aliceblue); */
+    background-color: var(--color-lightcoral);
     width: 37.57vw;
     height: 0.4vw;
     overflow: hidden;
@@ -210,7 +211,8 @@
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    gap: 4.17vw
+    gap: 4.17vw;
+    width:39vw
     }
 .first-name {
     position: relative
@@ -267,7 +269,7 @@
     }
 .frame-parent115 {
     gap: var(--gap-17xl);
-    font-size: var(--font-size-lg)
+    font-size: var(--font-size-lg);
     }
 .personal-details-parent {
     gap: var(--gap-base)
