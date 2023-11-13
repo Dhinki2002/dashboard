@@ -7,6 +7,7 @@ import "./SignUpAsIndividual3.css";
 import Select from "react-select";
 import { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
+import axios from "axios";
 
 const skillOptions = [
   { value: "skill1", label: "Skill 1" },
@@ -32,8 +33,17 @@ const SignUpAsIndividual3 = () => {
   const dispatch = useDispatch();
   const data = useSelector((state) => state.userData);
 
+  function transformToJson(input) {
+    const transformed = {
+      email: input.email || "",
+      password: input.password || "",
+      full_name: input.name || "",
+    };
+
+    return transformed;
+  }
+
   const onFrameButtonClick = useCallback(() => {
-    
     const payload = {
       selectedSkill: selectedSkill,
       selectedRoles: selectedRoles,
@@ -45,9 +55,23 @@ const SignUpAsIndividual3 = () => {
     console.log(payload);
   }, [selectedSkill, selectedRoles, selectedDream]);
 
+  const transformed = transformToJson(data);
+  console.log(transformed);
+
+  axios
+    .post("http://localhost:8000/auth/register", transformed)
+    .then((response) => {
+      // Handle the response from the backend
+      console.log(response.data);
+    })
+    .catch((error) => {
+      // Handle any errors that occur during the request
+      console.error(error.response.data);
+    }, [selectedSkill, selectedRoles, selectedDream]); // Add a comma here
+
   const handleSkillChange = (selectedOptions) => {
     setSkills(selectedOptions);
-  };
+  } ;
 
   const handleRoleChange = (selectedOptions) => {
     setRoles(selectedOptions);
@@ -60,20 +84,20 @@ const SignUpAsIndividual3 = () => {
   const customStyles = {
     control: (provided) => ({
       ...provided,
-      display: "none", 
+      display: "none",
     }),
     multiValue: (provided) => ({
       ...provided,
-      backgroundColor: "#3366ff", 
-      color: "#fff", 
-      borderRadius: "4px", 
+      backgroundColor: "#3366ff",
+      color: "#fff",
+      borderRadius: "4px",
     }),
     multiValueLabel: (provided) => ({
       ...provided,
     }),
     multiValueRemove: (provided) => ({
       ...provided,
-      display: "none", 
+      display: "none",
     }),
   };
   return (
@@ -85,7 +109,9 @@ const SignUpAsIndividual3 = () => {
         cantileverlogoblack2IconLeft="84px"
       />
       <div className="your-profile-is-almost-ready-group-login">
-        <div className="enter-your-skills-login">Your profile is almost ready!</div>
+        <div className="enter-your-skills-login">
+          Your profile is almost ready!
+        </div>
         <div className="just-a-few1-login">
           Just a few more questions, and we are good to go.
         </div>
@@ -101,7 +127,6 @@ const SignUpAsIndividual3 = () => {
                 options={skillOptions}
                 value={selectedSkill}
                 onChange={handleSkillChange}
-                
               />
 
               <div
@@ -139,7 +164,9 @@ const SignUpAsIndividual3 = () => {
         </div>
         <div className="frame-wrapper33-login">
           <div className="enter-your-skills-parent-login">
-            <div className="enter-your-skills-login">Choose your target role</div>
+            <div className="enter-your-skills-login">
+              Choose your target role
+            </div>
             <div>
               <Select
                 className="frame-select1-login"
@@ -184,7 +211,9 @@ const SignUpAsIndividual3 = () => {
         </div>
         <div className="frame-wrapper33-login">
           <div className="enter-your-skills-parent-login">
-            <div className="enter-your-skills-login">Choose your dream companies</div>
+            <div className="enter-your-skills-login">
+              Choose your dream companies
+            </div>
             <div>
               <Select
                 className="frame-select1-login"
