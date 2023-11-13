@@ -1,0 +1,263 @@
+* {
+    box-sizing: border-box;
+  }
+  .rela-block {
+    display: block;
+    position: relative;
+    margin: auto;
+  }
+  .rela-inline {
+    display: inline-block;
+    position: relative;
+    margin: auto;
+  }
+  .floated {
+    display: inline-block;
+    position: relative;
+    margin: false;
+    float: left;
+  }
+  .abs-center {
+    display: false;
+    position: absolute;
+    margin: false;
+    top: 50%;
+    left: 50%;
+    right: false;
+    bottom: false;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 88%;
+  }
+  body {
+    font-family: 'Open Sans';
+    font-size: 0.48vw;
+    letter-spacing: 0.00vw;
+    font-weight: 400;
+    line-height: 0.74vw;
+    background: url("http://kingofwallpapers.com/leaves/leaves-016.jpg") right no-repeat;
+    background-size: cover;
+  }
+  body:before {
+    content: "";
+    display: false;
+    position: fixed;
+    margin: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255,255,255,0.92);
+  }
+  .caps {
+    text-transform: uppercase;
+  }
+  .justified {
+    text-align: justify;
+  }
+  p.light {
+    color: #777;
+  }
+  h2 {
+    font-family: 'Open Sans';
+    font-size: 0.79vw;
+    letter-spacing: 0.13vw;
+    font-weight: 600;
+    line-height: 1.06vw;
+    color: #000;
+  }
+  h3 {
+    font-family: 'Open Sans';
+    font-size: 0.56vw;
+    letter-spacing: 0.03vw;
+    font-weight: 600;
+    line-height: 0.74vw;
+    color: #000;
+  }
+  .page {
+    width: 90%;
+    max-width: 31.74vw;
+    margin: 2.12vw auto;
+    background-color: #fff;
+    box-shadow: 0.16vw 0.26vw 0.74vw 0.00vw rgba(0,0,0,0.4);
+  }
+  .top-bar {
+    height: 5.82vw;
+    background-color: #848484;
+    color: #fff;
+  }
+  .name {
+    display: false;
+    position: absolute;
+    margin: false;
+    top: false;
+    left: calc(9.26vw + 5%);
+    right: 0;
+    bottom: 0;
+    height: 3.17vw;
+    text-align: center;
+    font-family: 'Raleway';
+    font-size: 1.53vw;
+    letter-spacing: 0.21vw;
+    font-weight: 100;
+    line-height: 1.59vw;
+  }
+  .name div {
+    width: 94%;
+  }
+  .side-bar {
+    display: false;
+    position: absolute;
+    margin: false;
+    top: 1.59vw;
+    left: 5%;
+    right: false;
+    bottom: 0;
+    width: 9.26vw;
+    background-color: #f7e0c1;
+    padding: 8.46vw 0.79vw 1.32vw;
+    font-size: 0.5vw;
+  }
+  .mugshot {
+    display: false;
+    position: absolute;
+    margin: false;
+    top: 1.32vw;
+    left: 1.85vw;
+    right: false;
+    bottom: false;
+    height: 5.55vw;
+    width: 5.55vw;
+  }
+  .mugshot .logo {
+    margin: -0.61vw;
+  }
+  .logo {
+    display: false;
+    position: absolute;
+    margin: false;
+    top: 0;
+    left: 0;
+    right: false;
+    bottom: false;
+    z-index: 100;
+    margin: 0;
+    color: #000;
+    height: 6.61vw;
+    width: 6.61vw;
+  }
+  .logo .logo-svg {
+    height: 100%;
+    width: 100%;
+    stroke: #000;
+    cursor: pointer;
+  }
+  .logo .logo-text {
+    display: false;
+    position: absolute;
+    margin: false;
+    top: 58%;
+    right: 16%;
+    cursor: pointer;
+    font-family: "Montserrat";
+    font-size: 1.45vw;
+    letter-spacing: 0.00vw;
+    font-weight: 400;
+    line-height: 1.54vw;
+  }
+  .social {
+    padding-left: 1.59vw;
+    margin-bottom: 0.53vw;
+    cursor: pointer;
+  }
+  .social:before {
+    content: "";
+    display: false;
+    position: absolute;
+    margin: false;
+    top: -0.11vw;
+    left: 0.26vw;
+    right: false;
+    bottom: false;
+    height: 0.93vw;
+    width: 0.93vw;
+    background-size: cover !important;
+  }
+  .social.twitter:before {
+    background: url("https://cdn3.iconfinder.com/data/icons/social-media-2026/60/Socialmedia_icons_Twitter-07-128.png") center no-repeat;
+    width: 0.5vw; /* Set the width in viewport width units */
+    height:0.5vw;
+    stroke-width: 3.5vw;
+}
+  .social.pinterest:before {
+    background: url("https://cdn3.iconfinder.com/data/icons/social-media-2026/60/Socialmedia_icons_Pinterest-23-128.png") center no-repeat;
+    width: 0.5vw; /* Set the width in viewport width units */
+    height:0.5vw;
+    stroke-width: 3.5vw;
+}
+  .social.linked-in:before {
+    background: url("https://cdn3.iconfinder.com/data/icons/social-media-2026/60/Socialmedia_icons_LinkedIn-128.png") center no-repeat;
+    width: 0.5vw; /* Set the width in viewport width units */
+    height:0.5vw;
+    stroke-width: 3.5vw;
+}
+  .side-header {
+    font-family: 'Open Sans';
+    font-size: 0.48vw;
+    letter-spacing: 0.11vw;
+    font-weight: 600;
+    line-height: 0.74vw;
+    margin: 1.59vw auto 0.26vw;
+    padding-bottom: 0.13vw;
+    border-bottom: 0.03vw solid #888;
+  }
+  .list-thing {
+    padding-left: 0.66vw;
+    margin-bottom: 0.26vw;
+  }
+  .content-container {
+    margin-right: 0;
+    width: calc(95% - 9.26vw);
+    padding: 0.66vw 1.06vw 1.32vw;
+    font-size: 0.55vw;
+  }
+  .content-container > * {
+    margin: 0 auto 0.66vw;
+  }
+  .content-container > h3 {
+    margin: 0 auto 0.13vw;
+  }
+  .content-container > p.long-margin {
+    margin: 0 auto 1.32vw;
+  }
+  .title {
+    width: 80%;
+    text-align: center;
+  }
+  .separator {
+    width: 6.35vw;
+    height: 0.05vw;
+    background-color: #999;
+  }
+  .greyed {
+    background-color: #ddd;
+    width: 100%;
+    max-width: 15.34vw;
+    text-align: center;
+    font-family: 'Open Sans';
+    font-size: 0.48vw;
+    letter-spacing: 0.16vw;
+    font-weight: 600;
+    line-height: 0.74vw;
+  }
+  @media screen and (max-width: 30.42vw) {
+    .name {
+      color: #fff;
+      font-family: 'Raleway';
+      font-size: 1.01vw;
+      letter-spacing: 0.16vw;
+      font-weight: 100;
+      line-height: 1.27vw;
+    }
+  }
+  

@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 import "./ResumePersonalInfo2.css";
 import { Helmet } from "react-helmet";
 import { useDropzone } from "react-dropzone";
+import Resume from "../components/Resume";
 
 const ResumePersonalInfo2 = () => {
   const navigate = useNavigate();
@@ -31,7 +32,7 @@ const ResumePersonalInfo2 = () => {
   const [i, setI] = useState(-1)
 
   const handleInputChange = (event, index) => {
-    setI((prev)=>prev+1)
+    setI((prev) => prev + 1)
     const { value } = event.target;
     const updatedValues = [...inputValues];
     updatedValues[index] = value;
@@ -41,35 +42,35 @@ const ResumePersonalInfo2 = () => {
   const handleEducationChange = () => {
     if (noEducation <= 3) {
       setNoEducation((prev) => prev + 1);
-      setTotalFields((prev)=>prev+5)
+      setTotalFields((prev) => prev + 5)
     }
   };
 
   const handleWorkChange = () => {
     if (noWork <= 3) {
       setNoWork((prev) => prev + 1);
-      setTotalFields((prev)=>prev+5)
+      setTotalFields((prev) => prev + 5)
     }
   };
 
   const handleWebsiteChange = () => {
     if (noWebsites <= 3) {
       setNoWebsites((prev) => prev + 1);
-      setTotalFields((prev)=>prev+2)
+      setTotalFields((prev) => prev + 2)
     }
 
   };
   const handleSkillsChange = () => {
     if (noSkills <= 4) {
       setNoSkills((prev) => prev + 1);
-      setTotalFields((prev)=>prev+2)
+      setTotalFields((prev) => prev + 2)
 
     }
   };
 
 
   const filledFields = inputValues.filter(value => value !== "").length;
-  const [totalFields, setTotalFields ]= useState(19);
+  const [totalFields, setTotalFields] = useState(19);
 
   useEffect(() => {
     // Update percentage every time i changes
@@ -103,7 +104,9 @@ const ResumePersonalInfo2 = () => {
       <Header />
       <div className="resume-personal-info2-child" />
       <div className="image-102-parent">
-        <img className="image-102-icon" alt="" src="/image-102@2x.png" />
+        <div className="image-102-icon">
+          <Resume />
+        </div>
         <div className="frame-parent110">
           <button
             className="lucidelayout-template-parent"
@@ -158,7 +161,7 @@ const ResumePersonalInfo2 = () => {
                       className="frame-child80"
                       placeholder="Enter your first name"
                       type="text"
-                      onChange={(e) => handleInputChange(e, i+1)}
+                      onChange={(e) => handleInputChange(e, i + 1)}
                     />
                   </div>
                   <div className="first-name-parent">
@@ -167,7 +170,7 @@ const ResumePersonalInfo2 = () => {
                       className="frame-child80"
                       placeholder="Enter your last name"
                       type="text"
-                      onChange={(e) => handleInputChange(e, i+1)}
+                      onChange={(e) => handleInputChange(e, i + 1)}
                     />
                   </div>
                 </div>
@@ -177,7 +180,7 @@ const ResumePersonalInfo2 = () => {
                     className="frame-child82"
                     placeholder="Enter Institute’s email id"
                     type="email"
-                    onChange={(e) => handleInputChange(e, i+1)}
+                    onChange={(e) => handleInputChange(e, i + 1)}
                   />
                 </div>
                 <div className="first-name-parent">
@@ -186,7 +189,7 @@ const ResumePersonalInfo2 = () => {
                     className="frame-child83"
                     placeholder="Enter your contact no."
                     type="tel"
-                    onChange={(e) => handleInputChange(e, i+1)}
+                    onChange={(e) => handleInputChange(e, i + 1)}
                   />
                 </div>
               </div>
@@ -201,7 +204,7 @@ const ResumePersonalInfo2 = () => {
               <textarea
                 className="frame-child84"
                 placeholder="e.g. Creative designer"
-                onChange={(e) => handleInputChange(e, i+1)}
+                onChange={(e) => handleInputChange(e, i + 1)}
               />
             </div>
             <div className="personal-details-parent">
@@ -220,7 +223,7 @@ const ResumePersonalInfo2 = () => {
                         className="frame-child85"
                         placeholder="Enter your school"
                         type="text"
-                        onChange={(e) => handleInputChange(e, i+1)}
+                        onChange={(e) => handleInputChange(e, i + 1)}
                       />
                     </div>
                     <div className="first-name-parent">
@@ -229,7 +232,7 @@ const ResumePersonalInfo2 = () => {
                         className="frame-child85"
                         placeholder="Enter your degree"
                         type="text"
-                        onChange={(e) => handleInputChange(e, i+1)}
+                        onChange={(e) => handleInputChange(e, i + 1)}
                       />
                     </div>
                   </div>
@@ -240,7 +243,7 @@ const ResumePersonalInfo2 = () => {
                         className="frame-child85"
                         placeholder="Enter your school"
                         type="date"
-                        onChange={(e) => handleInputChange(e, i+1)}
+                        onChange={(e) => handleInputChange(e, i + 1)}
                       />
                     </div>
                     <div className="first-name-parent">
@@ -249,7 +252,7 @@ const ResumePersonalInfo2 = () => {
                         className="frame-child85"
                         placeholder="Enter your school"
                         type="date"
-                        onChange={(e) => handleInputChange(e, i+1)}
+                        onChange={(e) => handleInputChange(e, i + 1)}
                       />
                     </div>
                   </div>
@@ -259,7 +262,7 @@ const ResumePersonalInfo2 = () => {
                       <textarea
                         className="frame-child89"
                         placeholder="e.g. Enter description"
-                        onChange={(e) => handleInputChange(e, i+1)}
+                        onChange={(e) => handleInputChange(e, i + 1)}
                       />
                     </div>
 
@@ -292,7 +295,7 @@ const ResumePersonalInfo2 = () => {
                         className="frame-child85"
                         placeholder="Enter job profile"
                         type="text"
-                        onChange={(e) => handleInputChange(e, i+1)}
+                        onChange={(e) => handleInputChange(e, i + 1)}
                       />
                     </div>
                     <div className="first-name-parent">
@@ -301,7 +304,7 @@ const ResumePersonalInfo2 = () => {
                         className="frame-child85"
                         placeholder="Enter company"
                         type="text"
-                        onChange={(e) => handleInputChange(e, i+1)}
+                        onChange={(e) => handleInputChange(e, i + 1)}
                       />
                     </div>
                   </div>
@@ -312,7 +315,7 @@ const ResumePersonalInfo2 = () => {
                         className="frame-child85"
                         placeholder="Enter your school"
                         type="date"
-                        onChange={(e) => handleInputChange(e, i+1)}
+                        onChange={(e) => handleInputChange(e, i + 1)}
                       />
                     </div>
                     <div className="first-name-parent">
@@ -321,7 +324,7 @@ const ResumePersonalInfo2 = () => {
                         className="frame-child85"
                         placeholder="Enter your school"
                         type="date"
-                        onChange={(e) => handleInputChange(e, i+1)}
+                        onChange={(e) => handleInputChange(e, i + 1)}
                       />
                     </div>
                   </div>
@@ -331,7 +334,7 @@ const ResumePersonalInfo2 = () => {
                       <textarea
                         className="frame-child89"
                         placeholder="e.g. Enter description"
-                        onChange={(e) => handleInputChange(e, i+1)}
+                        onChange={(e) => handleInputChange(e, i + 1)}
                       />
                     </div>
                   </div>
@@ -364,7 +367,7 @@ const ResumePersonalInfo2 = () => {
                           className="frame-child85"
                           placeholder="Enter label"
                           type="text"
-                          onChange={(e) => handleInputChange(e, i+1)}
+                          onChange={(e) => handleInputChange(e, i + 1)}
                         />
                       </div>
                       <div className="first-name-parent">
@@ -373,7 +376,7 @@ const ResumePersonalInfo2 = () => {
                           className="frame-child85"
                           placeholder="Enter link"
                           type="text"
-                          onChange={(e) => handleInputChange(e, i+1)}
+                          onChange={(e) => handleInputChange(e, i + 1)}
                         />
                       </div>
                     </div>
@@ -406,7 +409,7 @@ const ResumePersonalInfo2 = () => {
                           className="frame-child85"
                           placeholder="Enter your skill"
                           type="text"
-                          onChange={(e) => handleInputChange(e, i+1)}
+                          onChange={(e) => handleInputChange(e, i + 1)}
                         />
                       </div>
                       <div className="first-name-parent">
@@ -415,7 +418,7 @@ const ResumePersonalInfo2 = () => {
                           className="frame-child85"
                           placeholder="Enter your skill"
                           type="text"
-                          onChange={(e) => handleInputChange(e, i+1)}
+                          onChange={(e) => handleInputChange(e, i + 1)}
                         />
                       </div>
                     </div>
