@@ -75,9 +75,10 @@ const ResumePersonalInfo2 = () => {
     let count = 0;
     inputValues.forEach(innerArray => {
       innerArray.forEach(value => {
-        if (value !== "") {
+        if (value.trim() !== "") {
           count++;
-        }
+      }
+      
       });
     });
     setFilledFields(count);
