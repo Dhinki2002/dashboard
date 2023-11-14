@@ -60,7 +60,7 @@ const ResumePersonalInfo2 = () => {
   const handleSkillsChange = () => {
     if (noSkills <= 4) {
       setNoSkills((prev) => prev + 1);
-      setTotalFields((prev) => prev + 2)
+      setTotalFields((prev) => prev + 5)
     }
   };
 
