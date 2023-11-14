@@ -51,7 +51,7 @@ const SignUpAsIndividual3 = () => {
     };
     dispatch({ type: "UPDATE_INSTITUTE1", payload: payload });
     dispatch({ type: "INC_COUNTER2" });
-    console.log(data);
+   
     console.log(payload);
   }, [selectedSkill, selectedRoles, selectedDream]);
 
@@ -62,11 +62,11 @@ const SignUpAsIndividual3 = () => {
     .post("http://localhost:8000/auth/register", transformed)
     .then((response) => {
       // Handle the response from the backend
-      console.log(response.data);
+      
     })
     .catch((error) => {
       // Handle any errors that occur during the request
-      console.error(error.response.data);
+      // console.error(error.response.data);
     }, [selectedSkill, selectedRoles, selectedDream]); // Add a comma here
 
   const handleSkillChange = (selectedOptions) => {
