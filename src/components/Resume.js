@@ -1,11 +1,14 @@
 import React from 'react'
 import './Resume.css'
 
-const Resume = () => {
+const Resume = ({values}) => {
   return (
 <div class="rela-block page">
     <div class="rela-block top-bar">
-        <div class="caps name"><div class="abs-center">Kyle J Shanks</div></div>
+        <div className='caps name'>
+        <div className="abs-center">{values[0][0]} {values[1][0]}</div>
+
+      </div>
     </div>
     <div class="side-bar">
         <div class="mugshot">

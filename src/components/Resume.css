@@ -250,7 +250,7 @@
     font-weight: 600;
     line-height: 0.74vw;
   }
-  @media screen and (max-width: 30.42vw) {
+  @media screen and (max-width: 40.42vw) {
     .name {
       color: #fff;
       font-family: 'Raleway';

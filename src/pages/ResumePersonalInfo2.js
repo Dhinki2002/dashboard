@@ -15,28 +15,25 @@ const ResumePersonalInfo2 = () => {
   }, [navigate]);
 
   const counter = 2;
-  const [width, setWidth] = useState(400); // Set an initial width or use your variable
 
-  const handleWidthChange = (newWidth) => {
-    setWidth(newWidth);
-  };
-  const [inputValues, setInputValues] = useState([]);
+
+  const [inputValues, setInputValues] = useState(Array.from({ length: 19 }, () => []));
+
 
   const [noEducation, setNoEducation] = useState(1)
   const [noWork, setNoWork] = useState(1)
   const [noWebsites, setNoWebsites] = useState(1)
   const [noSkills, setNoSkills] = useState(1)
-  const [percentage, setPercentage] = useState(0)
+  // const [percentage, setPercentage] = useState(0)
 
 
-  const [i, setI] = useState(-1)
 
-  const handleInputChange = (event, index) => {
-    setI((prev) => prev + 1)
+  const handleInputChange = (event, index, val) => {
     const { value } = event.target;
     const updatedValues = [...inputValues];
-    updatedValues[index] = value;
+    updatedValues[val][index] = value;
     setInputValues(updatedValues);
+    // console.log(updatedValues)
   };
 
   const handleEducationChange = () => {
@@ -64,20 +61,36 @@ const ResumePersonalInfo2 = () => {
     if (noSkills <= 4) {
       setNoSkills((prev) => prev + 1);
       setTotalFields((prev) => prev + 2)
-
     }
   };
 
-
-  const filledFields = inputValues.filter(value => value !== "").length;
   const [totalFields, setTotalFields] = useState(19);
+
+  const [filledFields, setFilledFields] = useState(0);
+
+  const [percentage, setPercentage] = useState(0);
+
+
+  useEffect(() => {
+    let count = 0;
+    inputValues.forEach(innerArray => {
+      innerArray.forEach(value => {
+        if (value !== "") {
+          count++;
+        }
+      });
+    });
+    setFilledFields(count);
+  }, [inputValues]);
+
 
   useEffect(() => {
     // Update percentage every time i changes
-    setPercentage(Math.floor(((i + 1) / totalFields) * 100));
-  }, [i, totalFields]);
+    setPercentage(Math.floor((filledFields / totalFields) * 100));
+  }, [filledFields, totalFields]);
 
   const [imageSrc, setImageSrc] = useState("/images-51@2x.png");
+
 
   const onDrop = useCallback((acceptedFiles) => {
     // Assuming only one file is dropped, you can modify this based on your needs
@@ -105,7 +118,7 @@ const ResumePersonalInfo2 = () => {
       <div className="resume-personal-info2-child" />
       <div className="image-102-parent">
         <div className="image-102-icon">
-          <Resume />
+          <Resume values={inputValues}/>
         </div>
         <div className="frame-parent110">
           <button
@@ -161,7 +174,7 @@ const ResumePersonalInfo2 = () => {
                       className="frame-child80"
                       placeholder="Enter your first name"
                       type="text"
-                      onChange={(e) => handleInputChange(e, i + 1)}
+                      onChange={(e) => handleInputChange(e, 0, 0)}
                     />
                   </div>
                   <div className="first-name-parent">
@@ -170,7 +183,7 @@ const ResumePersonalInfo2 = () => {
                       className="frame-child80"
                       placeholder="Enter your last name"
                       type="text"
-                      onChange={(e) => handleInputChange(e, i + 1)}
+                      onChange={(e) => handleInputChange(e, 0, 1)}
                     />
                   </div>
                 </div>
@@ -180,7 +193,7 @@ const ResumePersonalInfo2 = () => {
                     className="frame-child82"
                     placeholder="Enter Institute’s email id"
                     type="email"
-                    onChange={(e) => handleInputChange(e, i + 1)}
+                    onChange={(e) => handleInputChange(e, 0, 2)}
                   />
                 </div>
                 <div className="first-name-parent">
@@ -189,7 +202,7 @@ const ResumePersonalInfo2 = () => {
                     className="frame-child83"
                     placeholder="Enter your contact no."
                     type="tel"
-                    onChange={(e) => handleInputChange(e, i + 1)}
+                    onChange={(e) => handleInputChange(e, 0, 3)}
                   />
                 </div>
               </div>
@@ -204,7 +217,7 @@ const ResumePersonalInfo2 = () => {
               <textarea
                 className="frame-child84"
                 placeholder="e.g. Creative designer"
-                onChange={(e) => handleInputChange(e, i + 1)}
+                onChange={(e) => handleInputChange(e, 0, 4)}
               />
             </div>
             <div className="personal-details-parent">
@@ -214,7 +227,7 @@ const ResumePersonalInfo2 = () => {
                   Mention your work experience
                 </div>
               </div>
-              {Array.from({ length: noEducation }).map((index) => (
+              {Array.from({ length: noEducation }).map((_, index) => (
                 <div className="frame-parent115" key={index}>
                   <div className="frame-parent121">
                     <div className="first-name-parent">
@@ -223,7 +236,7 @@ const ResumePersonalInfo2 = () => {
                         className="frame-child85"
                         placeholder="Enter your school"
                         type="text"
-                        onChange={(e) => handleInputChange(e, i + 1)}
+                        onChange={(e) => handleInputChange(e, index, 5)}
                       />
                     </div>
                     <div className="first-name-parent">
@@ -232,7 +245,7 @@ const ResumePersonalInfo2 = () => {
                         className="frame-child85"
                         placeholder="Enter your degree"
                         type="text"
-                        onChange={(e) => handleInputChange(e, i + 1)}
+                        onChange={(e) => handleInputChange(e, index, 6)}
                       />
                     </div>
                   </div>
@@ -243,7 +256,7 @@ const ResumePersonalInfo2 = () => {
                         className="frame-child85"
                         placeholder="Enter your school"
                         type="date"
-                        onChange={(e) => handleInputChange(e, i + 1)}
+                        onChange={(e) => handleInputChange(e, index, 7)}
                       />
                     </div>
                     <div className="first-name-parent">
@@ -252,7 +265,7 @@ const ResumePersonalInfo2 = () => {
                         className="frame-child85"
                         placeholder="Enter your school"
                         type="date"
-                        onChange={(e) => handleInputChange(e, i + 1)}
+                        onChange={(e) => handleInputChange(e, index, 8)}
                       />
                     </div>
                   </div>
@@ -262,7 +275,7 @@ const ResumePersonalInfo2 = () => {
                       <textarea
                         className="frame-child89"
                         placeholder="e.g. Enter description"
-                        onChange={(e) => handleInputChange(e, i + 1)}
+                        onChange={(e) => handleInputChange(e, index, 9)}
                       />
                     </div>
 
@@ -286,7 +299,7 @@ const ResumePersonalInfo2 = () => {
                   Mention your work experience
                 </div>
               </div>
-              {Array.from({ length: noWork }).map((index) => (
+              {Array.from({ length: noWork }).map((_, index) => (
                 <div className="frame-parent115 " key={index}>
                   <div className="frame-parent121">
                     <div className="first-name-parent">
@@ -295,7 +308,7 @@ const ResumePersonalInfo2 = () => {
                         className="frame-child85"
                         placeholder="Enter job profile"
                         type="text"
-                        onChange={(e) => handleInputChange(e, i + 1)}
+                        onChange={(e) => handleInputChange(e, index, 10)}
                       />
                     </div>
                     <div className="first-name-parent">
@@ -304,7 +317,7 @@ const ResumePersonalInfo2 = () => {
                         className="frame-child85"
                         placeholder="Enter company"
                         type="text"
-                        onChange={(e) => handleInputChange(e, i + 1)}
+                        onChange={(e) => handleInputChange(e, index, 11)}
                       />
                     </div>
                   </div>
@@ -315,7 +328,7 @@ const ResumePersonalInfo2 = () => {
                         className="frame-child85"
                         placeholder="Enter your school"
                         type="date"
-                        onChange={(e) => handleInputChange(e, i + 1)}
+                        onChange={(e) => handleInputChange(e, index, 12)}
                       />
                     </div>
                     <div className="first-name-parent">
@@ -324,7 +337,7 @@ const ResumePersonalInfo2 = () => {
                         className="frame-child85"
                         placeholder="Enter your school"
                         type="date"
-                        onChange={(e) => handleInputChange(e, i + 1)}
+                        onChange={(e) => handleInputChange(e, index, 13)}
                       />
                     </div>
                   </div>
@@ -334,7 +347,7 @@ const ResumePersonalInfo2 = () => {
                       <textarea
                         className="frame-child89"
                         placeholder="e.g. Enter description"
-                        onChange={(e) => handleInputChange(e, i + 1)}
+                        onChange={(e) => handleInputChange(e, index, 14)}
                       />
                     </div>
                   </div>
@@ -357,7 +370,7 @@ const ResumePersonalInfo2 = () => {
                   You can add your portfolio links
                 </div>
               </div>
-              {Array.from({ length: noWebsites }).map((index) => (
+              {Array.from({ length: noWebsites }).map((_, index) => (
                 <div className="frame-wrapper53" key={index}>
                   <div className="frame-parent123">
                     <div className="frame-parent121">
@@ -367,7 +380,7 @@ const ResumePersonalInfo2 = () => {
                           className="frame-child85"
                           placeholder="Enter label"
                           type="text"
-                          onChange={(e) => handleInputChange(e, i + 1)}
+                          onChange={(e) => handleInputChange(e, index, 15)}
                         />
                       </div>
                       <div className="first-name-parent">
@@ -376,7 +389,7 @@ const ResumePersonalInfo2 = () => {
                           className="frame-child85"
                           placeholder="Enter link"
                           type="text"
-                          onChange={(e) => handleInputChange(e, i + 1)}
+                          onChange={(e) => handleInputChange(e, index, 16)}
                         />
                       </div>
                     </div>
@@ -399,7 +412,7 @@ const ResumePersonalInfo2 = () => {
                   You can add your skills here
                 </div>
               </div>
-              {Array.from({ length: noSkills }).map((index) => (
+              {Array.from({ length: noSkills }).map((_, index) => (
                 <div className="frame-wrapper53" key={index}>
                   <div className="frame-parent123">
                     <div className="frame-parent121">
@@ -409,7 +422,7 @@ const ResumePersonalInfo2 = () => {
                           className="frame-child85"
                           placeholder="Enter your skill"
                           type="text"
-                          onChange={(e) => handleInputChange(e, i + 1)}
+                          onChange={(e) => handleInputChange(e, index, 17)}
                         />
                       </div>
                       <div className="first-name-parent">
@@ -418,7 +431,7 @@ const ResumePersonalInfo2 = () => {
                           className="frame-child85"
                           placeholder="Enter your skill"
                           type="text"
-                          onChange={(e) => handleInputChange(e, i + 1)}
+                          onChange={(e) => handleInputChange(e, index, 18)}
                         />
                       </div>
                     </div>

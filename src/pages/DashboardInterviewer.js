@@ -172,7 +172,7 @@ const DashboardInterviewer = () => {
                               src={interview.companyLogo}
                             />
                             <div className="view-resume-wrapper">
-                              <div className="view-resume">View Resume</div>
+                              <div className="view-resume">View Test</div>
                             </div>
                           </div>
                         </div>

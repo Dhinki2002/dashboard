@@ -137,7 +137,7 @@ const DashboardInterviewer1 = () => {
                               src={interview.companyLogo}
                             />
                             <div className="view-analysis-wrapper">
-                              <div className="view-analysis">View Analysis</div>
+                              <div className="view-analysis">Add Remarks</div>
                             </div>
                           </div>
                         </div>
