@@ -40,6 +40,7 @@
 .frame-parent48-login, .next1-login {
     font-size: var(--body-heavy-size-login)
     }
+
 .frame-parent48-login {
     position: absolute;
     top: 18.91vw;
@@ -80,11 +81,12 @@
     cursor: pointer;
     text-decoration: none;
     position: relative;
-    color: inherit
+    color: inherit;
+    margin-top: -2vw;
     }
 .frame-parent49-login {
     position: absolute;
-    top: 43.26vw;
+    top: 48.8vw;
     left: 4.8vw;
     display: flex;
     flex-direction: column;
