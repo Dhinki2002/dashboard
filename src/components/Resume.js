@@ -18,19 +18,31 @@ const Resume = ({ values }) => {
                         </svg>
                     </div>
                 </div>
-                <p>123 My Place Drive</p>
-                <p>Astoria, New York 11105</p>
                 <p>{values[3][0]}</p>
                 <p>{values[2][0]}</p><br />
-                <p class="rela-block social twitter">Twitter stuff</p>
-                <p class="rela-block social pinterest">Pinterest things</p>
-                <p class="rela-block social linked-in">Linked-in man</p>
+                {values[15].map((_, index) => (
+                    <p class="rela-block social twitter">{values[15][index]}: {values[16][index]}</p>
+                ))}
                 <p class="rela-block caps side-header">Expertise</p>
-                <p class="rela-block list-thing">HTML</p>
-                <p class="rela-block list-thing">CSS (Stylus)</p>
-                <p class="rela-block list-thing">JavaScript & jQuery</p>
-                <p class="rela-block list-thing">Killer Taste</p>
+                <ul>
+                    {values[17].map((_, index) => (
+                        <div>
+                            <li style={{ marginLeft: '1vw' }}>
+                                <div className="rela-block">
+                                    <p className="list-thing">{values[17][index]}</p>
+                                </div>
+                            </li>
+                            <li style={{ marginLeft: '1vw' }}>
+                                <div className="rela-block">
+                                    <p className="list-thing">{values[18][index]}</p>
+                                </div>
+                            </li>
+                        </div>
+                    ))}
+                </ul>
+
                 <p class="rela-block caps side-header">Education</p>
+
 
                 {values[5].map((_, index) => (
                     <div>
@@ -55,25 +67,31 @@ const Resume = ({ values }) => {
                 ))}
             </div>
             <div class="rela-block content-container">
-                <h2 class="rela-block caps title">Jr Front-End Developer</h2>
-                <div class="rela-block separator"></div>
+                {/* <h2 class="rela-block caps title">Jr Front-End Developer</h2>
+                <div class="rela-block separator"></div> */}
                 <div class="rela-block caps greyed">Profile</div>
                 <p class="long-margin">
                     {values[4][0]}
                 </p>
                 <div class="rela-block caps greyed">Experience</div>
 
-                <h3>Job #1</h3>
-                <p class="light">First job description</p>
-                <p class="justified">Plaid gentrify put a bird on it, pickled XOXO farm-to-table irony raw denim messenger bag leggings. Hoodie PBR&B photo booth, vegan chillwave meh paleo freegan ramps. Letterpress shabby chic fixie semiotics. Meditation sriracha banjo pour-over. Gochujang pickled hashtag mixtape cred chambray. Freegan microdosing VHS, 90's bicycle rights aesthetic hella PBR&B. </p>
+                {values[10].map((_, index) => (
+                    <div>
+                        <h3>{values[11][index]}</h3>
+                        <b class="light degree-year">
+                            <span>{values[10][index]}</span>
+                            {
+                                values[12][index] && values[13][index] && (
+                                    <span class="light">
+                                        {values[12][index].slice(0, 4)}-{values[13][index].slice(0, 4)}
+                                    </span>
+                                )
+                            }
 
-                <h3>Job #2</h3>
-                <p class="light">Second Job Description</p>
-                <p class="justified">Beard before they sold out photo booth distillery health goth. Hammock franzen green juice meggings, ethical sriracha tattooed schlitz mixtape man bun stumptown swag whatever distillery blog. Affogato iPhone normcore, meggings actually direct trade lomo plaid franzen shoreditch. Photo booth pug paleo austin, pour-over banh mi scenester vice food truck slow-carb. Street art kogi normcore, vice everyday carry crucifix thundercats man bun raw denim echo park pork belly helvetica vinyl. </p>
-
-                <h3>Job #3</h3>
-                <p class="light">Third Job Description</p>
-                <p class="justified">Next level roof party lo-fi fingerstache skateboard, kogi tumblr. Shabby chic put a bird on it chambray, 3 wolf moon swag beard brooklyn post-ironic taxidermy art party microdosing keffiyeh marfa. Put a bird on it 3 wolf moon cliche helvetica knausgaard. Mumblecore fingerstache lomo, artisan freegan keffiyeh paleo kinfolk kale chips street art blog flannel.</p>
+                        </b>
+                        <p class="justified">{values[14][index]}</p>
+                    </div>
+                ))}
             </div>
         </div>
     )

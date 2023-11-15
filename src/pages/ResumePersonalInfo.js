@@ -32,7 +32,7 @@ const ResumePersonalInfo = () => {
           <div className="choose-your-resume">Choose your resume template</div>
         </div>
         <div className="frame-parent109">
-          <button className="phdots-three-parent9" onClick={onFrameButtonClick}>
+          {/* <button className="phdots-three-parent9" onClick={onFrameButtonClick}>
             <div className="phdots-three" />
             <div className="icbaseline-plus-parent1">
               <img
@@ -42,7 +42,7 @@ const ResumePersonalInfo = () => {
               />
               <div className="create-blank">Create blank</div>
             </div>
-          </button>
+          </button> */}
           <button className="frame-child72" onClick={onFrameButton1Click} />
           <button className="phdots-three-wrapper">
             <img className="phdots-three" alt="" src="/phdotsthree1.svg" />
