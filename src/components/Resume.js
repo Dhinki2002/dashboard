@@ -1,9 +1,8 @@
 import React from 'react'
 import './Resume.css'
 
-const Resume = ({ values, img }) => {
-    return (
-        <div class="rela-block page">
+const Resume = ({ values, img, template }) => {
+    return (<div class="rela-block page">
             <div class="rela-block top-bar">
                 <div className='caps name'>
                     <div className="abs-center">{values[0][0]} {values[1][0]}</div>

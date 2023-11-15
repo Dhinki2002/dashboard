@@ -7,8 +7,12 @@ import { Helmet } from "react-helmet";
 import { useDropzone } from "react-dropzone";
 import Resume from "../components/Resume";
 
+
 const ResumePersonalInfo2 = () => {
   const navigate = useNavigate();
+
+  const params = new URLSearchParams(location.search);
+  const id = params.get('id');
 
   const onFrameButtonClick = useCallback(() => {
     navigate("/resume-personal-info");
@@ -119,7 +123,7 @@ const ResumePersonalInfo2 = () => {
       <div className="resume-personal-info2-child" />
       <div className="image-102-parent">
         <div className="image-102-icon">
-          <Resume values={inputValues} img={imageSrc}/>
+          <Resume template={id} values={inputValues} img={imageSrc}/>
         </div>
         <div className="frame-parent110">
           <button
