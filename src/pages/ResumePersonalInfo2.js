@@ -232,21 +232,21 @@ const ResumePersonalInfo2 = () => {
                 <div className="frame-parent115" key={index}>
                   <div className="frame-parent121">
                     <div className="first-name-parent">
-                      <div className="first-name">School</div>
-                      <input
-                        className="frame-child85"
-                        placeholder="Enter your school"
-                        type="text"
-                        onChange={(e) => handleInputChange(e, index, 5)}
-                      />
-                    </div>
-                    <div className="first-name-parent">
                       <div className="first-name">Degree</div>
                       <input
                         className="frame-child85"
                         placeholder="Enter your degree"
                         type="text"
                         onChange={(e) => handleInputChange(e, index, 6)}
+                      />
+                    </div>
+                    <div className="first-name-parent">
+                      <div className="first-name">School</div>
+                      <input
+                        className="frame-child85"
+                        placeholder="Enter your school"
+                        type="text"
+                        onChange={(e) => handleInputChange(e, index, 5)}
                       />
                     </div>
                   </div>
@@ -276,6 +276,7 @@ const ResumePersonalInfo2 = () => {
                       <textarea
                         className="frame-child89"
                         placeholder="e.g. Enter description"
+                        
                         onChange={(e) => handleInputChange(e, index, 9)}
                       />
                     </div>

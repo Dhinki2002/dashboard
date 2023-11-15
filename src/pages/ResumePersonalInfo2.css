@@ -292,7 +292,8 @@
     width: 36.97vw;
     height: 13.36vw;
     overflow: hidden;
-    flex-shrink: 0
+    flex-shrink: 0;
+    word-wrap: break-word;
     }
 .frame-child85, .frame-parent121 {
     display: flex;
@@ -328,7 +329,8 @@
     width: 37.57vw;
     height: 13.36vw;
     overflow: hidden;
-    flex-shrink: 0
+    flex-shrink: 0;
+    
     }
 .add-education {
     font-size: 1.05vw;

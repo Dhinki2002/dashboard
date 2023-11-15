@@ -5,6 +5,7 @@
     display: block;
     position: relative;
     margin: auto;
+    overflow:clip;
   }
   .rela-inline {
     display: inline-block;
@@ -229,6 +230,7 @@
   }
   .content-container > p.long-margin {
     margin: 0 auto 1.32vw;
+    word-wrap: break-word;
   }
   .title {
     width: 80%;
@@ -249,6 +251,10 @@
     letter-spacing: 0.16vw;
     font-weight: 600;
     line-height: 0.74vw;
+  }
+  .degree-year{
+    display: flex;
+    justify-content: space-between;
   }
   @media screen and (max-width: 40.42vw) {
     .name {
