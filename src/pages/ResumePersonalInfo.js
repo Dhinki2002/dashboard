@@ -8,56 +8,46 @@ import { Helmet } from "react-helmet";
 const ResumePersonalInfo = () => {
   const navigate = useNavigate();
 
-  const onFrameButtonClick = useCallback(() => {
-    navigate("/resume-personal-info2");
+  const onFrameButton1Click = useCallback((id) => {
+    navigate(`/resume-personal-info2?id=${id}`);
   }, [navigate]);
 
-  const onFrameButton1Click = useCallback(() => {
-    navigate("/resume-personal-info2");
-  }, [navigate]);
+  const buttonData = [
+    {
+      id:1,
+      src: "/frame1268.svg",
+    },
+    {
+      id:2,
+      src: "/frame1268.svg",
+    },
+    {
+      id:3,
+      src: "/frame1268.svg",
+    }
+  ];
 
-  const counter=2;
+  const counter = 2;
 
   return (
     <div className="resume-personal-info">
-       <Helmet>
-      <title>Resume Personal Info</title>
-      <meta name="desc"
-        content="Resume Personal Info"/>
+      <Helmet>
+        <title>Resume Personal Info</title>
+        <meta name="desc"
+          content="Resume Personal Info" />
       </Helmet>
-      <Navbar counter={counter}/>
+      <Navbar counter={counter} />
       <Header />
       <div className="frame-parent108">
         <div className="choose-your-resume-template-wrapper">
           <div className="choose-your-resume">Choose your resume template</div>
         </div>
         <div className="frame-parent109">
-          {/* <button className="phdots-three-parent9" onClick={onFrameButtonClick}>
-            <div className="phdots-three" />
-            <div className="icbaseline-plus-parent1">
-              <img
-                className="icbaseline-plus-icon3"
-                alt=""
-                src="/icbaselineplus2.svg"
-              />
-              <div className="create-blank">Create blank</div>
-            </div>
-          </button> */}
-          <button className="frame-child72" onClick={onFrameButton1Click} />
-          <button className="phdots-three-wrapper">
-            <img className="phdots-three" alt="" src="/phdotsthree1.svg" />
-          </button>
-          <button className="phdots-three-frame">
-            <img className="phdots-three" alt="" src="/phdotsthree2.svg" />
-          </button>
-          <button className="phdots-three-wrapper1">
-            <img className="phdots-three" alt="" src="/phdotsthree3.svg" />
-          </button>
-          <img className="frame-child73" alt="" src="/frame-1271.svg" />
-          <img className="frame-child73" alt="" src="/frame-1272.svg" />
-          <img className="frame-child73" alt="" src="/frame-1273.svg" />
-          <img className="frame-child73" alt="" src="/frame-1274.svg" />
-          <img className="frame-child73" alt="" src="/frame-1275.svg" />
+          {buttonData.map((button) => (
+            <button className="phdots-three-wrapper" onClick={()=>onFrameButton1Click(button.id)} key={button.id}>
+              <img className="phdots-three-wrapper" alt="" src={button.src} />
+            </button>
+          ))}
         </div>
       </div>
     </div>

@@ -13,14 +13,7 @@
     align-items: flex-start;
     justify-content: flex-start
     }
-.phdots-three {
-    position: absolute;
-    top: 5.67vw;
-    left: 10.22vw;
-    width: 0.95vw;
-    height: 0.95vw;
-    overflow: hidden
-    }
+
 .icbaseline-plus-icon3 {
     position: relative;
     width: 2.38vw;
@@ -62,10 +55,7 @@
     width: 12.5vw;
     height: 17.66vw
     }
-.frame-child72 {
-    background-image: url(/public/frame1267@2x.png)
-    }
-.frame-child72, .phdots-three-frame, .phdots-three-wrapper {
+.frame-child72, .phdots-three-wrapper {
     cursor: pointer;
     border: 0;
     padding: 0;
@@ -80,27 +70,12 @@
     position: relative;
     overflow: hidden;
     flex-shrink: 0;
-    background-image: url(/public/frame1268.svg)
     }
-.phdots-three-frame {
-    background-image: url(/public/frame1269.svg)
-    }
-.frame-child73, .phdots-three-frame, .phdots-three-wrapper1 {
+
+.frame-child73{
     position: relative;
     overflow: hidden;
     flex-shrink: 0
-    }
-.phdots-three-wrapper1 {
-    cursor: pointer;
-    border: 0;
-    padding: 0;
-    background-color: transparent;
-    width: 12.5vw;
-    height: 17.66vw;
-    background-image: url(/public/frame1270.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top
     }
 .frame-child73 {
     width: 12.64vw;
