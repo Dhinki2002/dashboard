@@ -305,21 +305,21 @@ const ResumePersonalInfo2 = () => {
                 <div className="frame-parent115 " key={index}>
                   <div className="frame-parent121">
                     <div className="first-name-parent">
-                      <div className="first-name">Job Profile</div>
-                      <input
-                        className="frame-child85"
-                        placeholder="Enter job profile"
-                        type="text"
-                        onChange={(e) => handleInputChange(e, index, 10)}
-                      />
-                    </div>
-                    <div className="first-name-parent">
                       <div className="first-name">Company</div>
                       <input
                         className="frame-child85"
                         placeholder="Enter company"
                         type="text"
                         onChange={(e) => handleInputChange(e, index, 11)}
+                      />
+                    </div>
+                    <div className="first-name-parent">
+                      <div className="first-name">Job Profile</div>
+                      <input
+                        className="frame-child85"
+                        placeholder="Enter job profile"
+                        type="text"
+                        onChange={(e) => handleInputChange(e, index, 10)}
                       />
                     </div>
                   </div>

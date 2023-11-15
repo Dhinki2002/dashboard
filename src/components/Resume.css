@@ -55,6 +55,7 @@
   }
   .justified {
     text-align: justify;
+    word-wrap: break-word;
   }
   p.light {
     color: #777;
@@ -81,6 +82,7 @@
     margin: 2.12vw auto;
     background-color: #fff;
     box-shadow: 0.16vw 0.26vw 0.74vw 0.00vw rgba(0,0,0,0.4);
+    height: 40vw;
   }
   .top-bar {
     height: 5.82vw;
