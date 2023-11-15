@@ -119,7 +119,7 @@ const ResumePersonalInfo2 = () => {
       <div className="resume-personal-info2-child" />
       <div className="image-102-parent">
         <div className="image-102-icon">
-          <Resume values={inputValues}/>
+          <Resume values={inputValues} img={imageSrc}/>
         </div>
         <div className="frame-parent110">
           <button

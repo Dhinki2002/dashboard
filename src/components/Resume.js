@@ -1,7 +1,7 @@
 import React from 'react'
 import './Resume.css'
 
-const Resume = ({ values }) => {
+const Resume = ({ values, img }) => {
     return (
         <div class="rela-block page">
             <div class="rela-block top-bar">
@@ -13,9 +13,7 @@ const Resume = ({ values }) => {
             <div class="side-bar">
                 <div class="mugshot">
                     <div class="logo">
-                        <svg viewbox="0 0 80 80" class="rela-block logo-svg">
-                            <path d="M 10 10 L 52 10 L 72 30 L 72 70 L 30 70 L 10 50 Z" stroke-width="2.5" fill="none" />
-                        </svg>
+                    <img className="rela-block logo-svg" alt="" src={img} />
                     </div>
                 </div>
                 <p>{values[3][0]}</p>

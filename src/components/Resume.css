@@ -150,10 +150,11 @@
     width: 6.61vw;
   }
   .logo .logo-svg {
-    height: 100%;
-    width: 100%;
+    height: 80%;
+    width: 80%;
     stroke: #000;
     cursor: pointer;
+    border-radius: 4.91vw;
   }
   .logo .logo-text {
     display: false;
@@ -169,41 +170,11 @@
     line-height: 1.54vw;
   }
   .social {
-    padding-left: 1.59vw;
+    padding-left: 0;
     margin-bottom: 0.53vw;
-    cursor: pointer;
   }
-  .social:before {
-    content: "";
-    display: false;
-    position: absolute;
-    margin: false;
-    top: -0.11vw;
-    left: 0.26vw;
-    right: false;
-    bottom: false;
-    height: 0.93vw;
-    width: 0.93vw;
-    background-size: cover !important;
-  }
-  .social.twitter:before {
-    background: url("https://cdn3.iconfinder.com/data/icons/social-media-2026/60/Socialmedia_icons_Twitter-07-128.png") center no-repeat;
-    width: 0.5vw; /* Set the width in viewport width units */
-    height:0.5vw;
-    stroke-width: 3.5vw;
-}
-  .social.pinterest:before {
-    background: url("https://cdn3.iconfinder.com/data/icons/social-media-2026/60/Socialmedia_icons_Pinterest-23-128.png") center no-repeat;
-    width: 0.5vw; /* Set the width in viewport width units */
-    height:0.5vw;
-    stroke-width: 3.5vw;
-}
-  .social.linked-in:before {
-    background: url("https://cdn3.iconfinder.com/data/icons/social-media-2026/60/Socialmedia_icons_LinkedIn-128.png") center no-repeat;
-    width: 0.5vw; /* Set the width in viewport width units */
-    height:0.5vw;
-    stroke-width: 3.5vw;
-}
+
+
   .side-header {
     font-family: 'Open Sans';
     font-size: 0.48vw;
