@@ -93,9 +93,9 @@ const Settings = () => {
               <div className="password-parent1">
                 <div className="college-name">Password</div>
                 <Link
-                  to="/settings1"
+                  to="/"
                   className="change-password3"
-                  onClick={() => navigate("/settings1")}
+                  onClick={() => navigate("/")}
                 >
                   Change Password
                 </Link>
