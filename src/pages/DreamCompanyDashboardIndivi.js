@@ -45,60 +45,11 @@ const DreamCompanyDashboardIndivi = () => {
       companyLogo: "/company-logo7.svg",
     },
     {
+      id: 4,
       vectorIcon: "/vector19.svg",
       companyLogo: "/company-logo7.svg",
-    },
-    {
-      vectorIcon: "/vector19.svg",
-      companyLogo: "/company-logo6.svg",
-    },
-    {
-      vectorIcon: "/vector19.svg",
-      companyLogo: "/company-logo7.svg",
-    },
-    // Add more objects for additional buttons
-    {
-      vectorIcon: "/vector19.svg",
-      companyLogo: "/company-logo7.svg",
-    },
-    {
-      vectorIcon: "/vector19.svg",
-      companyLogo: "/company-logo7.svg",
-    },
-    {
-      vectorIcon: "/vector19.svg",
-      companyLogo: "/company-logo6.svg",
-    },
-    {
-      vectorIcon: "/vector19.svg",
-      companyLogo: "/company-logo7.svg",
-    },
-    // Add more objects for additional buttons
-    {
-      vectorIcon: "/vector19.svg",
-      companyLogo: "/company-logo7.svg",
-    },
-    {
-      vectorIcon: "/vector19.svg",
-      companyLogo: "/company-logo7.svg",
-    },
-    {
-      vectorIcon: "/vector19.svg",
-      companyLogo: "/company-logo6.svg",
-    },
-    {
-      vectorIcon: "/vector19.svg",
-      companyLogo: "/company-logo7.svg",
-    },
-    // Add more objects for additional buttons
-    {
-      vectorIcon: "/vector19.svg",
-      companyLogo: "/company-logo7.svg",
-    },
-    {
-      vectorIcon: "/vector19.svg",
-      companyLogo: "/company-logo7.svg",
-    },
+    }
+    
   ];
 
   return (

@@ -38,65 +38,25 @@ const DashboardInterviewer = () => {
       companyLogo: "/company-logo2.svg",
     },
     {
-      id:1,
+      id:2,
       title: "SDE-1 Interview",
       time: "4:00 pm",
       companyLogo: "/company-logo2.svg",
     },
     {
-      id:1,
+      id:3,
       title: "SDE-1 Interview",
       time: "4:00 pm",
       companyLogo: "/company-logo2.svg",
     },
     {
-      id:1,
+      id:4,
       title: "SDE-1 Interview",
       time: "4:00 pm",
       companyLogo: "/company-logo2.svg",
     },
-    {
-      id:1,
-      title: "SDE-1 Interview",
-      time: "4:00 pm",
-      companyLogo: "/company-logo2.svg",
-    },
-    {
-      id:1,
-      title: "SDE-1 Interview",
-      time: "4:00 pm",
-      companyLogo: "/company-logo2.svg",
-    },
-    {
-      id:1,
-      title: "SDE-1 Interview",
-      time: "4:00 pm",
-      companyLogo: "/company-logo2.svg",
-    },
-    {
-      id:1,
-      title: "SDE-1 Interview",
-      time: "4:00 pm",
-      companyLogo: "/company-logo2.svg",
-    },
-    {
-      id:1,
-      title: "SDE-1 Interview",
-      time: "4:00 pm",
-      companyLogo: "/company-logo2.svg",
-    },
-    {
-      id:1,
-      title: "SDE-1 Interview",
-      time: "4:00 pm",
-      companyLogo: "/company-logo2.svg",
-    },
-    {
-      id:1,
-      title: "SDE-1 Interview",
-      time: "4:00 pm",
-      companyLogo: "/company-logo2.svg",
-    },
+
+   
     // more interviews...
   ];
 

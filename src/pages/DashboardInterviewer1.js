@@ -29,55 +29,30 @@ const DashboardInterviewer1 = () => {
   const counter = 0;
   const interviews = [
     {
+      id:1,
       title: "SDE-1 Interview",
       date: "29-03-2023",
       companyLogo: "/company-logo2.svg",
     },
     {
+      id:2,
       title: "SDE-1 Interview",
       date: "29-03-2023",
       companyLogo: "/company-logo2.svg",
     },
     {
+      id:3,
       title: "SDE-1 Interview",
       date: "29-03-2023",
       companyLogo: "/company-logo2.svg",
     },
     {
+      id:4,
       title: "SDE-1 Interview",
       date: "29-03-2023",
       companyLogo: "/company-logo2.svg",
     },
-    {
-      title: "SDE-1 Interview",
-      date: "29-03-2023",
-      companyLogo: "/company-logo2.svg",
-    },
-    {
-      title: "SDE-1 Interview",
-      date: "29-03-2023",
-      companyLogo: "/company-logo2.svg",
-    },
-    {
-      title: "SDE-1 Interview",
-      date: "29-03-2023",
-      companyLogo: "/company-logo2.svg",
-    },
-    {
-      title: "SDE-1 Interview",
-      date: "29-03-2023",
-      companyLogo: "/company-logo2.svg",
-    },
-    {
-      title: "SDE-1 Interview",
-      date: "29-03-2023",
-      companyLogo: "/company-logo2.svg",
-    },
-    {
-      title: "SDE-1 Interview",
-      date: "29-03-2023",
-      companyLogo: "/company-logo2.svg",
-    },
+
     // more interviews...
   ];
 
@@ -111,9 +86,9 @@ const DashboardInterviewer1 = () => {
                   </div>
                 </div>
                 <div className="frame-parent66">
-                  {interviews.map((interview, index) => (
+                  {interviews.map((interview) => (
                     <button
-                      key={index}
+                      key={interview.id}
                       className="frame-wrapper34"
                       onClick={openTestRemarksPopUp}
                     >

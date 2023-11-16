@@ -8,41 +8,49 @@ const TransactionsInterviewer = () => {
 
   const transactions = [
     {
+      id:1,
       Date: "17-09-23",
       TransactionNumber: "2414352364346664",
       Status: "Complete",
     },
     {
+      id:2,
       Date: "17-09-23",
       TransactionNumber: "2414352364346664",
       Status: "Complete",
     },
     {
+      id:3,
       Date: "17-09-23",
       TransactionNumber: "2414352364346664",
       Status: "Processing",
     },
     {
+      id:4,
       Date: "17-09-23",
       TransactionNumber: "2414352364346664",
       Status: "Failed",
     },
     {
+      id:5,
       Date: "17-09-23",
       TransactionNumber: "2414352364352353",
       Status: "Complete",
     },
     {
+      id:6,
       Date: "17-09-23",
       TransactionNumber: "2414352364352353",
       Status: "Complete",
     },
     {
+      id:7,
       Date: "17-09-23",
       TransactionNumber: "2414352364352353",
       Status: "Complete",
     },
     {
+      id:8,
       Date: "17-09-23",
       TransactionNumber: "2414352364352353",
       Status: "Complete",
@@ -102,8 +110,8 @@ const TransactionsInterviewer = () => {
                 <div className="date-parent">
                   <div className="transactions">Date</div>
                   <div className="download-parent">
-                    {transactions.map((transaction, index) => (
-                      <div className="transactions" key={index}>
+                    {transactions.map((transaction) => (
+                      <div className="transactions" key={transaction.id}>
                         {transaction.Date}
                       </div>
                     ))}
@@ -112,8 +120,8 @@ const TransactionsInterviewer = () => {
                 <div className="date-parent">
                   <div className="transactions">Transaction Id</div>
                   <div className="download-parent">
-                    {transactions.map((transaction, index) => (
-                      <div className="transactions" key={index}>
+                    {transactions.map((transaction) => (
+                      <div className="transactions" key={transaction.id}>
                         {transaction.TransactionNumber}
                       </div>
                     ))}
@@ -122,8 +130,8 @@ const TransactionsInterviewer = () => {
                 <div className="status-parent">
                   <div className="transactions">Status</div>
                   <div className="legend-label-3-parent">
-                    {transactions.map((text, index) => (
-                      <div className="legend-label-31" key={index}>
+                    {transactions.map((text) => (
+                      <div className="legend-label-31" key={text.id}>
                         <div className={`${getTextClass(text.Status)}`} />
                         <div className="complete">{text.Status}</div>
                       </div>
@@ -135,8 +143,8 @@ const TransactionsInterviewer = () => {
                     <div className="transactions">Invoice</div>
                   </div>
                   <div className="download-parent">
-                    {transactions.map((_, index) => (
-                      <div className="download" key={index}>
+                    {transactions.map((transaction) => (
+                      <div className="download" key={transaction.id}>
                         Download
                       </div>
                     ))}
@@ -144,8 +152,8 @@ const TransactionsInterviewer = () => {
                 </div>
               </div>
               <div className="line-parent2">
-                {transactions.map((_, index) => (
-                  <div className="frame-child37" key={index} />
+                {transactions.map((transaction) => (
+                  <div className="frame-child37" key={transaction.id} />
                 ))}
               </div>
             </div>

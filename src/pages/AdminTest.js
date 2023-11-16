@@ -19,16 +19,22 @@ const AdminTest = () => {
 
   const counter=1;
   const logos = [
-    { src: "/company-logo1.svg" },
-    { src: "/company-logo2.svg" },
-    { src: "/company-logo3.svg" },
-    { src: "/company-logo3.svg" },
-    { src: "/company-logo3.svg" },
-    { src: "/company-logo3.svg" },
-    { src: "/company-logo3.svg" },
-    { src: "/company-logo3.svg" },
-    { src: "/company-logo3.svg" },
-    { src: "/company-logo3.svg" },
+    { 
+      id:1,
+      src: "/company-logo1.svg" 
+    },
+    { 
+      id:2,
+      src: "/company-logo2.svg" 
+    },
+    { 
+      id:3,
+      src: "/company-logo3.svg" 
+    },
+    { id:4,
+      src: "/company-logo3.svg" 
+    },
+
     // more logos...
   ];
 
@@ -47,8 +53,8 @@ const AdminTest = () => {
             <div className="active-tests">Active tests</div>
           </div>
           <div className="frame-parent37">
-          {logos.map((logo, index) => (
-      <button key={index} className="vector-group">
+          {logos.map((logo) => (
+      <button key={logo.id} className="vector-group">
         <img className="vector-icon11" alt="" src="/vector7.svg" />
         <img className="company-logo-icon" alt="" src={logo.src} />
       </button>
