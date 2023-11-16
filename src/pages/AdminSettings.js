@@ -8,7 +8,7 @@ import { useState} from "react";
 import { Helmet } from "react-helmet";
 
 const AdminSettings = () => {
-  const counter = 0;
+  const counter = 2;
   const settingsCounter = 0;
 
   const navigate = useNavigate();
