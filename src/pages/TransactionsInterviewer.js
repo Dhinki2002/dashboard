@@ -4,15 +4,73 @@ import "./TransactionsInterviewer.css";
 import { Helmet } from "react-helmet";
 
 const TransactionsInterviewer = () => {
-  const counter=1;
+  const counter = 1;
+
+  const transactions = [
+    {
+      Date: "17-09-23",
+      TransactionNumber: "2414352364346664",
+      Status: "Complete",
+    },
+    {
+      Date: "17-09-23",
+      TransactionNumber: "2414352364346664",
+      Status: "Complete",
+    },
+    {
+      Date: "17-09-23",
+      TransactionNumber: "2414352364346664",
+      Status: "Processing",
+    },
+    {
+      Date: "17-09-23",
+      TransactionNumber: "2414352364346664",
+      Status: "Failed",
+    },
+    {
+      Date: "17-09-23",
+      TransactionNumber: "2414352364352353",
+      Status: "Complete",
+    },
+    {
+      Date: "17-09-23",
+      TransactionNumber: "2414352364352353",
+      Status: "Complete",
+    },
+    {
+      Date: "17-09-23",
+      TransactionNumber: "2414352364352353",
+      Status: "Complete",
+    },
+    {
+      Date: "17-09-23",
+      TransactionNumber: "2414352364352353",
+      Status: "Complete",
+    },
+  ];
+  
+
+  const getTextClass = (text) => {
+    switch (text) {
+      case "Complete":
+        return "legend-indicator-14";
+      case "Processing":
+        return "legend-indicator-16";
+      case "Failed":
+        return "legend-indicator-17";
+      default:
+        return ""; // default class if needed
+    }
+  };
+
   return (
     <div className="transactions-interviewer">
       <Helmet>
-      <title>Transaction Interviewer</title>
-      <meta name="desc"
-        content="Transaction Interviewer"/>
+        <title>Transaction Interviewer</title>
+        <meta name="desc"
+          content="Transaction Interviewer" />
       </Helmet>
-      <InterviewerNavbar counter={counter}/>
+      <InterviewerNavbar counter={counter} />
       <InterviewerHeader />
       <div className="frame-parent56">
         <div className="frame-parent57">
@@ -44,64 +102,32 @@ const TransactionsInterviewer = () => {
                 <div className="date-parent">
                   <div className="transactions">Date</div>
                   <div className="download-parent">
-                    <div className="transactions">17-09-23</div>
-                    <div className="transactions">17-09-23</div>
-                    <div className="transactions">17-09-23</div>
-                    <div className="transactions">17-09-23</div>
-                    <div className="transactions">17-09-23</div>
-                    <div className="transactions">17-09-23</div>
-                    <div className="transactions">17-09-23</div>
-                    <div className="transactions">17-09-23</div>
+                    {transactions.map((transaction, index) => (
+                      <div className="transactions" key={index}>
+                        {transaction.Date}
+                      </div>
+                    ))}
                   </div>
                 </div>
                 <div className="date-parent">
                   <div className="transactions">Transaction Id</div>
                   <div className="download-parent">
-                    <div className="transactions">2414352364346664</div>
-                    <div className="transactions">2414352364346664</div>
-                    <div className="transactions">2414352364346664</div>
-                    <div className="transactions">2414352364346664</div>
-                    <div className="transactions">2414352364352353</div>
-                    <div className="transactions">2414352364352353</div>
-                    <div className="transactions">2414352364352353</div>
-                    <div className="transactions">2414352364352353</div>
+                    {transactions.map((transaction, index) => (
+                      <div className="transactions" key={index}>
+                        {transaction.TransactionNumber}
+                      </div>
+                    ))}
                   </div>
                 </div>
                 <div className="status-parent">
                   <div className="transactions">Status</div>
                   <div className="legend-label-3-parent">
-                    <div className="legend-label-31">
-                      <div className="legend-indicator-14" />
-                      <div className="complete">Complete</div>
-                    </div>
-                    <div className="legend-label-31">
-                      <div className="legend-indicator-14" />
-                      <div className="complete">Complete</div>
-                    </div>
-                    <div className="legend-label-31">
-                      <div className="legend-indicator-16" />
-                      <div className="complete">Processing</div>
-                    </div>
-                    <div className="legend-label-31">
-                      <div className="legend-indicator-17" />
-                      <div className="complete">Failed</div>
-                    </div>
-                    <div className="legend-label-31">
-                      <div className="legend-indicator-14" />
-                      <div className="complete">Complete</div>
-                    </div>
-                    <div className="legend-label-31">
-                      <div className="legend-indicator-14" />
-                      <div className="complete">Complete</div>
-                    </div>
-                    <div className="legend-label-31">
-                      <div className="legend-indicator-14" />
-                      <div className="complete">Complete</div>
-                    </div>
-                    <div className="legend-label-31">
-                      <div className="legend-indicator-14" />
-                      <div className="complete">Complete</div>
-                    </div>
+                    {transactions.map((text, index) => (
+                      <div className="legend-label-31" key={index}>
+                        <div className={`${getTextClass(text.Status)}`} />
+                        <div className="complete">{text.Status}</div>
+                      </div>
+                    ))}
                   </div>
                 </div>
                 <div className="date-parent">
@@ -109,26 +135,18 @@ const TransactionsInterviewer = () => {
                     <div className="transactions">Invoice</div>
                   </div>
                   <div className="download-parent">
-                    <div className="download">Download</div>
-                    <div className="download">Download</div>
-                    <div className="download">Download</div>
-                    <div className="download">Download</div>
-                    <div className="download">Download</div>
-                    <div className="download">Download</div>
-                    <div className="download">Download</div>
-                    <div className="download">Download</div>
+                    {transactions.map((_, index) => (
+                      <div className="download" key={index}>
+                        Download
+                      </div>
+                    ))}
                   </div>
                 </div>
               </div>
               <div className="line-parent2">
-                <div className="frame-child37" />
-                <div className="frame-child37" />
-                <div className="frame-child37" />
-                <div className="frame-child37" />
-                <div className="frame-child37" />
-                <div className="frame-child37" />
-                <div className="frame-child37" />
-                <div className="frame-child37" />
+                {transactions.map((_, index) => (
+                  <div className="frame-child37" key={index} />
+                ))}
               </div>
             </div>
           </div>
