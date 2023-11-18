@@ -1,0 +1,20 @@
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 2vw;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 10%;
+  background-color: #f3f3f3; /* Your preferred color */
+}
+
+footer a,
+footer .Link {
+  font-size: 3em;
+  flex: 1;
+  text-align: center;
+  margin: 0 2vw; /* Adjust as needed */
+  text-decoration: none;
+  color: #000000; /* Your preferred color */
+}
