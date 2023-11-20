@@ -31,14 +31,6 @@ const AdminHeader = () => {
         <div className="frame-parent285">
           <div className="frame-wrapper121">
             <div className="frame-wrapper122">
-              <div className="carbonsearch-parent2">
-                <img
-                  className="carbonsearch-icon4"
-                  alt=""
-                  src="/carbonsearch.svg"
-                />
-                <div className="search-by-anything4">Search by anything</div>
-              </div>
             </div>
           </div>
           <div className="claritynotification-line-parent2">

@@ -24,6 +24,7 @@ const GoScoreDashboardIndividual = () => {
   const counter = 0;
 
   const data = [72, 65, 22, 54, 56, 32]
+  
 
   return (
     <div>

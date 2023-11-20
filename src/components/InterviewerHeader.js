@@ -30,16 +30,7 @@ const InterviewerHeader = () => {
         </div>
         <div className="frame-parent298">
           <div className="frame-wrapper141">
-            <div className="frame-wrapper142">
-              <div className="carbonsearch-parent6">
-                <img
-                  className="carbonsearch-icon8"
-                  alt=""
-                  src="/carbonsearch.svg"
-                />
-                <div className="search-by-anything8">Search by anything</div>
-              </div>
-            </div>
+
           </div>
           <div className="claritynotification-line-parent6">
             <button
