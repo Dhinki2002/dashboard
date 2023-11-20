@@ -7,7 +7,7 @@ import GrowthAnalysis2 from "../components/GrowthAnalysis2";
 import { Helmet } from "react-helmet";
 
 const TestSummary = () => {
-  const counter =1
+  const counter =3
   return (
     <div className="test-summary">
       <Helmet>

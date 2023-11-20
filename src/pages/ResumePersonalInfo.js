@@ -15,15 +15,15 @@ const ResumePersonalInfo = () => {
   const buttonData = [
     {
       id:1,
-      src: "/frame1268.svg",
+      src: "/resume_template1.png",
     },
     {
       id:2,
-      src: "/frame1268.svg",
+      src: "/resume_template2.png",
     },
     {
       id:3,
-      src: "/frame1268.svg",
+      src: "/resume_template3.png",
     }
   ];
 

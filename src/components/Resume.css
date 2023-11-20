@@ -121,6 +121,33 @@
     padding: 8.46vw 0.79vw 1.32vw;
     font-size: 0.5vw;
   }
+  .side-bar1 {
+    display: false;
+    position: absolute;
+    margin: false;
+    top: 1.59vw;
+    left: 5%;
+    right: false;
+    bottom: 0;
+    width: 9.26vw;
+    background-color: rgb(181, 206, 206);
+    padding: 8.46vw 0.79vw 1.32vw;
+    font-size: 0.5vw;
+  }
+  .side-bar2 {
+    display: false;
+    position: absolute;
+    margin: false;
+    top: 1.59vw;
+    left: 5%;
+    right: false;
+    bottom: 0;
+    width: 9.26vw;
+    background-color: #b2b3ff;
+    padding: 8.46vw 0.79vw 1.32vw;
+    font-size: 0.5vw;
+    color:black
+  }
   .mugshot {
     display: false;
     position: absolute;

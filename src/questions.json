@@ -1,0 +1,236 @@
+{
+    "1": {
+        "question": "How many litres of a 90% of concentrated acid needs to be \nmixed with a 75% solution of concentrated acid to get a 30 \nlitre solution of 78% concentrated acid?",
+        "answers": [
+            {
+                "answer": "8",
+                "percentage": "19.26%"
+            },
+            {
+                "answer": "9",
+                "percentage": "30.25%"
+            },
+            {
+                "answer": "7",
+                "percentage": "17.57%"
+            },
+            {
+                "answer": "6",
+                "percentage": "32.92%"
+            }
+        ],
+        "correct_answer": 4,
+        "explanation": "the concentration is given which is wrt 100, hence we can take x lt of 90% and (30-x)of 75% x*90 + (30-x)*75 = 30*78 hence the ans is 6 liters."
+    },
+    "2": {
+        "question": "Average marks of a,b,c is 48. When d joins average becomes 47. \nE has 3 more marks than d. Average marks of b,c,d,e is 48. \nWhat is the marks of a?",
+        "answers": [
+            {
+                "answer": "46",
+                "percentage": "20.79%"
+            },
+            {
+                "answer": "43",
+                "percentage": "52.45%"
+            },
+            {
+                "answer": "49",
+                "percentage": "15.75%"
+            },
+            {
+                "answer": "52",
+                "percentage": "11.02%"
+            }
+        ],
+        "correct_answer": 2,
+        "explanation": "a+b+c=48*3=144 a+b+c+d=47*4=188 b+c+d+e=48*4=192 d=188-144=44 e=3+44=47 b+c+d=192-47=145 a=188-145=43 Video solution:"
+    },
+    "3": {
+        "question": "On a certain assembly line, the rejection rate for Hyundai i10s production was 4 percent, for Hyundai i20s production 8 percent and for the 2 cars combined 7 percent. What was the ratio of Hyundais i10 production?",
+        "answers": [
+            {
+                "answer": "3/1",
+                "percentage": "47.58%"
+            },
+            {
+                "answer": "2/1",
+                "percentage": "24.4%"
+            },
+            {
+                "answer": "1/1",
+                "percentage": "8.91%"
+            },
+            {
+                "answer": "1/2",
+                "percentage": "19.11%"
+            }
+        ],
+        "correct_answer": 1,
+        "explanation": "let the no of i10 cars be x and i20 be y now th rejcted i10 cars are 4x/100 and i20 cars are 8y/100 and it is given that 4x/100 +8y/100 = 7(x+y)/100 so we get y = 3x so the ratio is 3:1"
+    },
+    "4": {
+        "question": "For a car there are 5 tyres including one spare tyre(4+1). \nAll tyres are equally used. If the total distance travelled \nby the car is 40000km then what is the average distance \ntravelled by each tyre?",
+        "answers": [
+            {
+                "answer": "10000",
+                "percentage": "14.05%"
+            },
+            {
+                "answer": "40000",
+                "percentage": "14.64%"
+            },
+            {
+                "answer": "32000",
+                "percentage": "23.67%"
+            },
+            {
+                "answer": "8000",
+                "percentage": "47.64%"
+            }
+        ],
+        "correct_answer": 3,
+        "explanation": "total distance travelled by the car=40000km so total distance travelled by 4 wheels=4*40000=160000 as all tyres(4+1) are equally used so average distance travelled by the each tyre=160000/5=32000 Video solution:"
+    },
+    "5": {
+        "question": "Two alloys A and B are composed of two basic elements. \nThe ratios of the compositions of the two basic elements \nin the two alloys are 5:3 and 1:2, respectively. A new alloy \nX is formed by mixing the two alloys A and B in the ratio 4:3. \nWhat is the ratio of the composition of the two basic elements \nin alloy X?",
+        "answers": [
+            {
+                "answer": "1:1",
+                "percentage": "22.27%"
+            },
+            {
+                "answer": "2:3",
+                "percentage": "22.57%"
+            },
+            {
+                "answer": "5:2",
+                "percentage": "26.36%"
+            },
+            {
+                "answer": "4:3",
+                "percentage": "17.16%"
+            },
+            {
+                "answer": "7:9",
+                "percentage": "11.63%"
+            }
+        ],
+        "correct_answer": 1,
+        "explanation": "Let the actual amount of A be 4x and actual amount of B be 3x since A and B are in the ratio 4/3 amount of first basic element in the new alloy T (5/8)*4x + (1/3)*3x = (7x)/2 amount of second basic element in the new alloy T (3/8)*4x + (2/3)*3x= (7x)/2 so ratio of first basic element to second basic element: [(7x)/2 ] / [ 7x/2] = 1/1 = 1:1 ( Answer A)"
+    },
+    "6": {
+        "question": "In a barrel 729ml of oil. N amount of oil is replaced by water. \nIf the process continues for the 6times and find the amount \nof oil will be?",
+        "answers": [
+            {
+                "answer": "729(1-n/729)^6",
+                "percentage": "65.08%"
+            },
+            {
+                "answer": "(729-n/729)^6",
+                "percentage": "21.3%"
+            },
+            {
+                "answer": "729(1-n/729)^4",
+                "percentage": "7.36%"
+            },
+            {
+                "answer": "729(1-(n/729)^2)^3",
+                "percentage": "6.26%"
+            }
+        ],
+        "correct_answer": 1,
+        "explanation": "In questions of replacement where we initially have some quantity of pure element (like petrol), and we keep on replacing a fixed portion of this pure liquid every time with some other element (like water) thus making it a mixture, we apply the following formula for finding the quantity of pure element after \u2018n\u2019 replacements : P x [1 \u2013 (R / P)]n, where P is the initial quantity of pure element R is the quantity replaced every time n is the number of replacements 729(1-n/729)^6"
+    },
+    "7": {
+        "question": "Mixture of milk and water has been kept in two separate containers. ratio of milk to water in one of the containers is 5:1 and that in the other container is 7:2. in what ratio the mixtures of these two containers should be added together so that the quantity of the milk in the new mixture may become 80%?",
+        "answers": [
+            {
+                "answer": "2:3",
+                "percentage": "38.27%"
+            },
+            {
+                "answer": "1:2",
+                "percentage": "23.46%"
+            },
+            {
+                "answer": "14:19",
+                "percentage": "24.46%"
+            },
+            {
+                "answer": "3:7",
+                "percentage": "13.81%"
+            }
+        ],
+        "correct_answer": 1,
+        "explanation": "Percentage of milk in first mixture = [5/6] x 100 = 250/3 % Percentage of milk in second mixture = [7/9] x 100 = 700/9 Using Alligation method, So, required ratio = 20/ 9 : 10/ 3 = 2 : 3 Video solution:"
+    },
+    "8": {
+        "question": "A mixture of a certain quantity of milk with 16 litres of \nwater is worth 90p per litre. if pure milk be worth Rs.1.08 \nper litre, how much milk is there in the mixture?",
+        "answers": [
+            {
+                "answer": "75",
+                "percentage": "19.84%"
+            },
+            {
+                "answer": "80",
+                "percentage": "50.4%"
+            },
+            {
+                "answer": "65",
+                "percentage": "20.14%"
+            },
+            {
+                "answer": "60",
+                "percentage": "9.62%"
+            }
+        ],
+        "correct_answer": 2,
+        "explanation": "let the mixture contain 'x' lit of milk and already given 16lit of water as water don't cost (x+16) lit of mixture = x lit of pure milk (x+16)90=(x*1.08*100) /*since given in paise*/ x=80lit"
+    },
+    "9": {
+        "question": "A solution of 25 litres contain 20% sugar, if 10 litres of the \nsolution is evaporated, find the percentage of sugar in the \nfinal solution?",
+        "answers": [
+            {
+                "answer": "27.5%",
+                "percentage": "13.93%"
+            },
+            {
+                "answer": "20%",
+                "percentage": "33.37%"
+            },
+            {
+                "answer": "25%",
+                "percentage": "15.09%"
+            },
+            {
+                "answer": "33.33%",
+                "percentage": "37.61%"
+            }
+        ],
+        "correct_answer": 4,
+        "explanation": "it is 33.33% given 25 liters of sol has 20% sugar . qty of sugar =(20%/100%)*25 =5 lit of sugar (assume sugar qty in liter for easy calculation ). therefore 25 lit sol contain 20 lit of water and 5 liter of sugar . now the sol boils losing 10 liter of water . therefore the new 15 liter sol contains 10 liter water and 5 liter sugar . there new % of sugar is 5/15 * 100 =33.33%"
+    },
+    "10": {
+        "question": "A milk man mixed 1 : 4 solution of milk and water with another \n1 : 2 solution of milk and water in the volume of ratio 3 : 2. \nIf the profit earned by selling the first solution was 20% and \nthe mixture was sold at the same price, what is the profit or \nloss percentage? You have to assume that water comes free of cost.",
+        "answers": [
+            {
+                "answer": "5.26% profit",
+                "percentage": "31.85%"
+            },
+            {
+                "answer": "5.25% loss",
+                "percentage": "37.96%"
+            },
+            {
+                "answer": "6.25% loss",
+                "percentage": "21.05%"
+            },
+            {
+                "answer": "None of these",
+                "percentage": "9.15%"
+            }
+        ],
+        "correct_answer": 2,
+        "explanation": "Consider 90 litre of solution1 and 60 litre of solution2 90 litre of solution1 contains 90*1/5=18 litre of milk and (90-18)=72 litre of water 60 litre of solution2 contains 60*1/3=20 litre of milk and (60-20)=40 litre of water Mixture will have 18+20=38 litre of milk 72+40=112 litre of water i.e., Quantity of milk : Quantity of water = 38 : 112 = 19 : 56 Take 75 litre of solution1. Quantity of milk = 75*1/5=15 litre. Profit earned in selling solution is 20% assume cost price of 1 litre of milk = Rs.1 Cost price of 75 litre of solution1 = Rs.15. Selling price of 75 litre of solution1 = 15*120/100 = Rs.18 Take 75 litre of mixture. Quantity of milk = 75*19/75=19 litre. Cost price is Rs.19 Selling price will be same and is Rs.18 so there will be a loss Loss = Rs.1 in selling 75 litre of the mixture Percentage loss = 1*100/19 = 5.25% loss"
+    }
+}
