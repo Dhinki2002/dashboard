@@ -181,7 +181,7 @@
     border-radius: var(--br-7xs);
     background-color: var(--white);
     height: 67.59vw;
-    overflow: hidden;
+    overflow: auto;
     padding: 1.92vw var(--padding-base);
     box-sizing: border-box;
     gap: var(--gap-9xl)
@@ -238,7 +238,7 @@
     padding: 0;
     background-color: transparent;
     position: absolute;
-    top: 48.68vw;
+    top: 70.68vw;
     left: 2.38vw;
     align-items: flex-start;
     justify-content: flex-start;
@@ -252,7 +252,7 @@
     box-shadow: -0.07vw 0 0.13vw rgba(0, 0, 0, 0.15);
     width: 50.66vw;
     height: 53.7vw;
-    overflow: hidden;
+    overflow: auto;
     font-size: var(--font-size-9xl)
     }
 .q1-problem-statement1 {
