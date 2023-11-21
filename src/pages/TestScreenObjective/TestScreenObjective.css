@@ -48,7 +48,7 @@
 .multiple-choice-questions {
     position: relative;
     letter-spacing: -0.02em;
-    line-height: 2.78vw
+    line-height: 2.78vw;
 }
 
 .ellipse-input {
@@ -178,8 +178,8 @@
 
 .time-remaining-parent {
     position: absolute;
-    top: 2.38vw;
-    left: 29.96vw;
+    top: 0vw;
+    left: 75.96vw;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -388,5 +388,9 @@
   .progress-bar.active {
     background-color: blue;
   }
+.left-wrapper{
+    width:40vw;
+    margin-left:48vw;
+}
 
 

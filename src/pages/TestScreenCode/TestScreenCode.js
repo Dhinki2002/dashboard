@@ -1,4 +1,4 @@
-import { useCallback,useEffect ,useState} from "react";
+import { useCallback, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./TestScreenCode.css";
 import { Helmet } from "react-helmet";
@@ -7,6 +7,7 @@ import "ace-builds/src-noconflict/mode-c_cpp"; // Import the C++ mode
 import "ace-builds/src-noconflict/mode-java"; // Import the Java mode
 import "ace-builds/src-noconflict/mode-python"; // Import the Python mode
 import "ace-builds/src-noconflict/theme-monokai"; // Import the Monokai theme
+import Coding from "../../components/Coding/Coding";
 
 
 const TestScreenCode = () => {
@@ -15,6 +16,7 @@ const TestScreenCode = () => {
   const onFrameButton1Click = useCallback(() => {
     navigate("/test-screen-objective");
   }, [navigate]);
+  const [mode, setMode] = useState("c_cpp"); // Default mode is C++
 
   const onFrameButton2Click = useCallback(() => {
     navigate("/test-screen-objective");
@@ -36,61 +38,7 @@ const TestScreenCode = () => {
           <div className="code-snippet">Help</div>
         </div>
         <div className="frame-parent256">
-          <div className="frame-parent257">
-            <div className="code-snippet-parent">
-              <div className="code-snippet">Code Snippet</div>
-              <div className="time-spent-parent">
-                <div className="code-snippet">Time spent:</div>
-                <div className="div187">02:20:22</div>
-              </div>
-            </div>
-            <div className="frame-parent258">
-              <select className="frame-child189" />
-              <div className="icoutline-refresh-parent">
-                <button className="icoutline-refresh">
-                  <img className="vector-icon40" alt="" src="/vector26.svg" />
-                </button>
-                <button className="icoutline-refresh">
-                  <img className="vector-icon41" alt="" src="/vector26.svg" />
-                </button>
-              </div>
-            </div>
-            <AceEditor
-              mode="c_cpp" // Set the default mode to C++
-              theme="monokai" // Use the Monokai theme
-              value={code}
-              onChange={(newCode) => setCode(newCode)}
-              name="code-editor"
-              editorProps={{ $blockScrolling: true }}
-              style={{ width: "100%", maxWidth: "800px" }} 
-            />
-            <div className="test-cases-parent">
-              <div className="code-snippet">Test cases</div>
-              <div className="sub-task-parent">
-                <div className="sub-task">Sub-Task</div>
-                <div className="div188">
-                  <p className="p">1</p>
-                  <p className="p">2</p>
-                  <p className="p">3</p>
-                  <p className="p">4</p>
-                  <p className="p">5</p>
-                </div>
-                <div className="div189">
-                  <p className="p">1</p>
-                  <p className="p">2</p>
-                  <p className="p">3</p>
-                  <p className="p">4</p>
-                  <p className="p">5</p>
-                </div>
-                <div className="task">Task</div>
-                <div className="result">Result</div>
-                <div className="line-parent12">
-                  <div className="frame-child190" />
-                  <div className="frame-child190" />
-                </div>
-              </div>
-            </div>
-          </div>
+          <Coding/>
           <button className="frame-parent259">
             <div className="run-code-wrapper">
               <div className="run-code">Run code</div>

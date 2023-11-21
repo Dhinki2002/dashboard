@@ -1,7 +1,8 @@
-import { useCallback,useState ,useEffect} from "react";
+import { useCallback, useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./TestScreenObjective.css";
 import { Helmet } from "react-helmet";
+import Objective from "../../components/Objective/Objective";
 
 const TestScreenObjective = () => {
   const navigate = useNavigate();
@@ -78,70 +79,29 @@ const TestScreenObjective = () => {
             <div className="help">Help</div>
           </button>
           {activeTab === 'statement' && (
-        
-         <div className="q1-problem-statement">"The problem statement"</div>
-       
-      )}
-        {activeTab === 'help' && (
-         
-          <div className="q1-problem-statement">"I am here for tips to be given"</div>
-          
-        )}
+
+            <div className="q1-problem-statement">"The problem statement"</div>
+
+          )}
+          {activeTab === 'help' && (
+
+            <div className="q1-problem-statement">"I am here for tips to be given"</div>
+
+          )}
 
         </div>
-        
-        <div className="frame-parent248">
-          <div className="multiple-choice-questions-parent">
-            <div className="multiple-choice-questions">
-              Multiple choice questions
-            </div>
-            <div className="q1-select-one-of-the-options-parent">
-              <div className="multiple-choice-questions">
-                Q.1 Select one of the options from below.
-              </div>
-              <div className="frame-parent249">
-                <div className="frame-wrapper93">
-                  <div className="ellipse-parent5">
-                    <input className="ellipse-input" type="radio" name="option" />
-                    <div className="multiple-choice-questions">Option 1</div>
-                  </div>
-                </div>
-                <div className="frame-wrapper93">
-                  <div className="ellipse-parent5">
-                    <input className="ellipse-input" type="radio" name="option" />
-                    <div className="multiple-choice-questions">Option 2</div>
-                  </div>
-                </div>
-                <div className="frame-wrapper93">
-                  <div className="ellipse-parent5">
-                    <input className="ellipse-input" type="radio" name="option" />
-                    <div className="multiple-choice-questions">Option 3</div>
-                  </div>
-                </div>
-                <div className="frame-wrapper93">
-                  <div className="ellipse-parent5">
-                    <input className="ellipse-input" type="radio" name="option" />
-                    <div className="multiple-choice-questions">Option 4</div>
-                  </div>
-                </div>
-              </div>
 
-            </div>
-          </div>
-          <div className="frame-parent250">
-            <button className="submit-wrapper" onClick={onFrameButton1Click}>
-              <div className="submit">Submit</div>
-            </button>
-            <button className="next-wrapper" onClick={onFrameButton2Click}>
-              <div className="next">Next</div>
-            </button>
-          </div>
-          <div className="time-remaining-parent">
-      <div className="multiple-choice-questions">Time remaining:</div>
-      <div className="div186">{formatTime(timeRemaining)}</div>
-    </div>
+        <Objective/>
+        <div className="left-wrapper">
+        <div className="multiple-choice-questions">
+          Multiple choice questions
         </div>
-        
+        </div>
+        <div className="time-remaining-parent">
+          <div className="multiple-choice-questions">Time remaining:</div>
+          <div className="div186">{formatTime(timeRemaining)}</div>
+        </div>
+
       </div>
       {/* <img
         className="test-screen-objective-child"
@@ -156,26 +116,26 @@ const TestScreenObjective = () => {
           </div>
         </div>
         <div className="frame-parent252">
-        <div className="oouinext-ltr-group" onClick={onPrevClick}>
-        <img className="oouinext-ltr-icon2" alt="" src="/oouinextltr.svg" />
-        <div className="multiple-choice-questions">Prev problem</div>
-      </div>
-      <div className="frame-parent253">
-        {[...Array(10)].map((_, index) => (
-          <div
-            key={index}
-            className={`progress-bar ${index <= currentStep ? "active" : ""}`}
-          />
-        ))}
-      </div>
-      <button className="next-problem-parent" onClick={onNextClick}>
-        <div className="next-problem">Next problem</div>
-        <img
-          className="oouinext-ltr-icon2"
-          alt=""
-          src="/oouinextltr2.svg"
-        />
-      </button>
+          <div className="oouinext-ltr-group" onClick={onPrevClick}>
+            <img className="oouinext-ltr-icon2" alt="" src="/oouinextltr.svg" />
+            <div className="multiple-choice-questions">Prev problem</div>
+          </div>
+          <div className="frame-parent253">
+            {[...Array(10)].map((_, index) => (
+              <div
+                key={index}
+                className={`progress-bar ${index <= currentStep ? "active" : ""}`}
+              />
+            ))}
+          </div>
+          <button className="next-problem-parent" onClick={onNextClick}>
+            <div className="next-problem">Next problem</div>
+            <img
+              className="oouinext-ltr-icon2"
+              alt=""
+              src="/oouinextltr2.svg"
+            />
+          </button>
         </div>
       </div>
     </div>
