@@ -39,7 +39,7 @@
     width: 6.94vw;
     height:2.5vw;
     border-color: #605BFF;
-    background-color: #548EFF1A;
+    background-color: var(--color-dodgerblue);
     }
 .vector-icon40 {
     position: absolute;

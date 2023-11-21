@@ -5,7 +5,7 @@ import AceEditor from "react-ace";
 import "ace-builds/src-noconflict/mode-c_cpp"; // Import the C++ mode
 import "ace-builds/src-noconflict/mode-java"; // Import the Java mode
 import "ace-builds/src-noconflict/mode-python"; // Import the Python mode
-import "ace-builds/src-noconflict/theme-monokai"; // Import the Monokai theme
+import "ace-builds/src-noconflict/theme-github"; // Import the Monokai theme
 
 
 const Coding = () => {
@@ -40,12 +40,12 @@ const Coding = () => {
             </div>
             <AceEditor
               mode="c_cpp" // Set the default mode to C++
-              theme="monokai" // Use the Monokai theme
+              theme="github" // Use the Monokai theme
               value={code}
               onChange={(newCode) => setCode(newCode)}
               name="code-editor"
               editorProps={{ $blockScrolling: true }}
-              style={{ width: "100%", maxWidth: "800px", borderRadius:"0.5vw" }}
+              style={{ width: "100%", maxWidth: "800px", borderRadius:"0.5vw",}}
             />
             <div className="test-cases-parent">
               <div className="code-snippet">Test cases</div>
