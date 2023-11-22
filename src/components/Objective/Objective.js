@@ -8,7 +8,7 @@ import { useNavigate } from "react-router-dom";
 const Objective = ({ currentQuestion, currentStep, onNextClick, onPrevClick }) => {
   const navigate = useNavigate();
   const onFrameButton1Click = useCallback(() => {
-    navigate("/test-summary");
+    navigate("/dream-company-company");
   }, [navigate]);
 
   const onFrameButton2Click = useCallback(() => {
@@ -46,13 +46,13 @@ const Objective = ({ currentQuestion, currentStep, onNextClick, onPrevClick }) =
         </div>
       </div>
       <div className="frame-parent250">
-      <button className="next-wrapper" onClick={onPrevClick}>
+        <button className="next-wrapper" onClick={onPrevClick}>
           <div className="next">Prev</div>
         </button>
-        {currentStep<9&&<button className="next-wrapper" onClick={onNextClick}>
+        {currentStep < 9 && <button className="next-wrapper" onClick={onNextClick}>
           <div className="next">Next</div>
         </button>}
-        {currentStep==9&&<button className="submit-wrapper" onClick={onFrameButton1Click}>
+        {currentStep == 9 && <button className="submit-wrapper" onClick={onFrameButton1Click}>
           <div className="submit">Submit</div>
         </button>}
       </div>

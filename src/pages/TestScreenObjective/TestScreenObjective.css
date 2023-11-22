@@ -5,7 +5,8 @@
     line-height: 2.78vw;
     font-family: var(--font-avenir-lt-std);
     color: var(--black);
-    text-align: left
+    text-align: left;
+    width:4vw;
 }
 
 .help,
@@ -36,8 +37,8 @@
 
 .frame-parent247 {
     position: absolute;
-    top: 1.59vw;
-    left: 2.38vw;
+    top: 0vw;
+    left: 1.7vw;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -87,7 +88,7 @@
     background-color: var(--white);
     border: 0.07vw solid var(--color-darkgray-100);
     box-sizing: border-box;
-    width: 34.46vw;
+    width: 45.46vw;
     overflow: hidden;
     padding: var(--padding-mini) var(--padding-13xl)
 }
@@ -169,7 +170,7 @@
 
 .frame-parent250 {
     position: absolute;
-    top: 35.68vw;
+    top: 40.68vw;
     left: calc(50% - 23.02vw);
     display: flex;
     flex-direction: row;
@@ -202,7 +203,7 @@
     top: 0;
     left: 45.63vw;
     background-color: var(--white);
-    box-shadow: -0.07vw 0 0.13vw rgba(0, 0, 0, 0.15);
+    box-shadow: -2px 0 4px rgba(0, 0, 0, 0.15);
     width: 50.66vw;
     height: 53.7vw;
     overflow: hidden
@@ -210,8 +211,8 @@
 
 .q1-problem-statement {
     position: absolute;
-    top: 7.8vw;
-    left: -0.8vw;
+    top: 7vw;
+    left: 0vw;
     font-size: var(--font-size-5xl);
     letter-spacing: -0.02em;
     line-height: 2.78vw;
@@ -260,7 +261,8 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: flex-start
+    justify-content: flex-start;
+    margin-left: 0.7vw;    
 }
 
 .frame-wrapper97 {
@@ -275,7 +277,7 @@
     height: 1.06vw;
     overflow: hidden;
     flex-shrink: 0;
-   
+    cursor: pointer;
 }
 
 .oouinext-ltr-group {
@@ -340,16 +342,17 @@
 
 .frame-parent251,
 .frame-parent252 {
-    gap: var(--gap-xl);
+    gap: 3.33vw;
     font-size: var(--font-size-xl);
     color: var(--icon-grey)
+    ma
 }
 
 .frame-parent251 {
     position: absolute;
     top: 2.91vw;
     left: calc(50% - 47.69vw);
-    gap: var(--gap-307xl);
+    gap: 23.6vw;
     font-size: var(--font-size-base);
     color: var(--color-darkslategray-200)
 }
@@ -368,10 +371,12 @@
 
 .tab-button {
     border: none;
+
 }
 
 .tab-button.active {
     border: none;
+    width:8.3vw;
 }
 
 .tab-button {
@@ -393,6 +398,7 @@
     height: 10px;
     background-color: grey;
     margin-right: 10px;
+    border-radius: 0.6vw;
   }
   
   .progress-bar.active {

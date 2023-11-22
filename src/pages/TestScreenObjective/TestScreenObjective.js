@@ -35,7 +35,7 @@ const TestScreenObjective = () => {
       setCurrentStep(currentStep + 1);
     }
   };
-  const [timeRemaining, setTimeRemaining] = useState(10800); // 3 hours in seconds
+  const [timeRemaining, setTimeRemaining] = useState(3600); // 3 hours in seconds
 
   const currentQuestion = questions[currentStep]; // Assuming currentStep is the index of the current question
   // console.log(currentQuestion)
@@ -135,7 +135,7 @@ const TestScreenObjective = () => {
         <div className="frame-parent252">
           <div className="oouinext-ltr-group" onClick={onPrevClick}>
             <img className="oouinext-ltr-icon2" alt="" src="/oouinextltr.svg" />
-            <div className="multiple-choice-questions1">Prev problem</div>
+            <div className="multiple-choice-questions1">Prev</div>
           </div>
           <div className="frame-parent253">
             {[...Array(10)].map((_, index) => (
@@ -146,7 +146,7 @@ const TestScreenObjective = () => {
             ))}
           </div>
           <button className="next-problem-parent" onClick={onNextClick}>
-            <div className="next-problem">Next problem</div>
+            <div className="next-problem">Next</div>
             <img
               className="oouinext-ltr-icon2"
               alt=""

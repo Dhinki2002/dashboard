@@ -181,15 +181,16 @@
     }
 .frame-parent257 {
     position: absolute;
-    top: 2.98vw;
-    left: 45.39vw;
+    top: 1.2vw;
+    left: 45.66vw;
     border-radius: var(--br-7xs);
     background-color: var(--white);
-    height: 40.59vw;
+    height: 35.59vw;
     overflow: auto;
-    padding: 1.92vw var(--padding-base);
+    padding: 1.92vw 2.5vw;
     box-sizing: border-box;
-    gap: var(--gap-9xl)
+    gap: var(--gap-9xl);
+    box-shadow: -2px 0 4px rgba(0, 0, 0, 0.15);
     }
 .run-code {
     position: relative;
@@ -243,8 +244,8 @@
     padding: 0;
     background-color: transparent;
     position: absolute;
-    top: 44.68vw;
-    left: 46.38vw;
+    top: 40.66vw;
+    left: 47.97vw;
     align-items: flex-start;
     justify-content: flex-start;
     gap: var(--gap-base)

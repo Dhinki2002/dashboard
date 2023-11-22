@@ -170,7 +170,7 @@
         ],
         "correct_answer": 1,
         "explanation": "In questions of replacement where we initially have some quantity of pure element (like petrol), and we keep on replacing a fixed portion of this pure liquid every time with some other element (like water) thus making it a mixture, we apply the following formula for finding the quantity of pure element after \u2018n\u2019 replacements : P x [1 \u2013 (R / P)]n, where P is the initial quantity of pure element R is the quantity replaced every time n is the number of replacements 729(1-n/729)^6",
-        "isObjective": true
+        "isObjective": false
     },
     "7": {
         "question": "Mixture of milk and water has been kept in two separate containers. ratio of milk to water in one of the containers is 5:1 and that in the other container is 7:2. in what ratio the mixtures of these two containers should be added together so that the quantity of the milk in the new mixture may become 80%?",
@@ -218,7 +218,7 @@
         ],
         "correct_answer": 2,
         "explanation": "let the mixture contain 'x' lit of milk and already given 16lit of water as water don't cost (x+16) lit of mixture = x lit of pure milk (x+16)90=(x*1.08*100) /*since given in paise*/ x=80lit",
-        "isObjective": true
+        "isObjective": false
     },
     "9": {
         "question": "A milk man mixed 1 : 4 solution of milk and water with another \n1 : 2 solution of milk and water in the volume of ratio 3 : 2. \nIf the profit earned by selling the first solution was 20% and \nthe mixture was sold at the same price, what is the profit or \nloss percentage? You have to assume that water comes free of cost.",
