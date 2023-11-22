@@ -27,16 +27,20 @@ function DreamSearchBar({ progress, answer, setAnswer }) {
     } else if (progress === 2) {
       setOptions(jobList.map(job => ({ label: job, value: job })))
       setfillText('Choose a Job Profile')
-      console.log(selectedOptions.value)
+      if (selectedOptions.value != null){
+        console.log(selectedOptions.value)
       setAnswer(selectedOptions.value)
+      }
       setSelectedOptions(null)
     } else if (progress === 3) {
-      setAnswer(selectedOptions.value)
+      if (selectedOptions.value != null)
+      {setAnswer(selectedOptions.value)}
     }
   }, [progress])
 
   return (
     <div>
+      {progress}
       <form className='formBorder'>
         <div style={{ width: '40vw' }}>
           <Select
