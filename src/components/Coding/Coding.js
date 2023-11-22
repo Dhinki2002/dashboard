@@ -1,12 +1,15 @@
-import { useCallback, useEffect, useState } from "react";
+import {React , useCallback, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../../pages/TestScreenCode/TestScreenCode.css"
-import AceEditor from "react-ace";
-import "ace-builds/src-noconflict/mode-c_cpp"; // Import the C++ mode
-import "ace-builds/src-noconflict/mode-java"; // Import the Java mode
-import "ace-builds/src-noconflict/mode-python"; // Import the Python mode
-import "ace-builds/src-noconflict/theme-github"; // Import the Monokai theme
-import "ace-builds/src-noconflict/theme-ambiance"
+import CodeMirror from "@uiw/react-codemirror";
+import { vscodeDark } from "@uiw/codemirror-theme-vscode";
+
+// import AceEditor from "react-ace";
+// import "ace-builds/src-noconflict/mode-c_cpp"; // Import the C++ mode
+// import "ace-builds/src-noconflict/mode-java"; // Import the Java mode
+// import "ace-builds/src-noconflict/mode-python"; // Import the Python mode
+// import "ace-builds/src-noconflict/theme-github"; // Import the Monokai theme
+// import "ace-builds/src-noconflict/theme-ambiance"
 
 
 const Coding = () => {
@@ -40,14 +43,15 @@ const Coding = () => {
                 </button>
               </div>
             </div>
-            <AceEditor
+            <CodeMirror
               mode="c_cpp" // Set the default mode to C++
-              theme="github" // Use the Monokai theme
+              theme={vscodeDark} // Use the Monokai theme
               value={code}
               onChange={(newCode) => setCode(newCode)}
               name="code-editor"
               editorProps={{ $blockScrolling: true }}
-              style={{ width: "100%", maxWidth: "800px", borderRadius:"0.5vw",}}
+              options={{ viewportMargin: 10 }} 
+              style={{ height: "300 px",width: "100%", maxWidth: "800px", borderRadius:"0.5vw",}}
             />
             
           </div>
