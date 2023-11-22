@@ -87,7 +87,9 @@
     }
 .frame-parent258 {
     align-items: center;
-    gap: 34.33vw
+    gap: 34.33vw;
+    margin-top:2vw;
+    
     }
 .write-your-code {
     position: absolute;
@@ -181,16 +183,16 @@
     }
 .frame-parent257 {
     position: absolute;
-    top: 1.2vw;
+    top: 0vw;
     left: 45.66vw;
     border-radius: var(--br-7xs);
     background-color: var(--white);
-    height: 35.59vw;
+    height: 50.59vw;
     overflow: auto;
     padding: 1.92vw 2.5vw;
     box-sizing: border-box;
     gap: var(--gap-9xl);
-    box-shadow: -2px 0 4px rgba(0, 0, 0, 0.15);
+    box-shadow: -2px 0 rgba(0, 0, 0, 0.15);
     }
 .run-code {
     position: relative;
@@ -380,3 +382,8 @@
     color: var(--black);
     font-family: var(--font-avenir-lt-std)
     }
+    .test{
+        max-height:70vw;
+        overflow: auto;
+    }
+    

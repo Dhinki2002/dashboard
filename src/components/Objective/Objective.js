@@ -36,7 +36,7 @@ const Objective = ({ currentQuestion, currentStep, onNextClick, onPrevClick }) =
                     name="option"
                     value={obj['answer']}
                   />
-                  <div className="multiple-choice-questions">{obj['answer']}</div>
+                  <div className="questions1">{obj['answer']}</div>
                 </div>
               </div>
             ))}
