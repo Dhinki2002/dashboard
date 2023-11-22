@@ -22,7 +22,10 @@ const Coding = ({currentQuestion, currentStep, onNextClick, onPrevClick}) => {
       const onFrameButton2Click = useCallback(() => {
         navigate("/test-screen-objective");
       }, [navigate]);
-      const [code, setCode] = useState("#1 Write your code here");
+      const [code, setCode] = useState(
+        Array.from({ length: 25 }, () => "").join("\n")
+      );
+
   return (
     <>
     <div className="frame-parent257">
@@ -51,7 +54,7 @@ const Coding = ({currentQuestion, currentStep, onNextClick, onPrevClick}) => {
               name="code-editor"
               editorProps={{ $blockScrolling: true }}
               options={{ viewportMargin: 10 }} 
-              style={{ height: "300 px",width: "100%", maxWidth: "800px", borderRadius:"0.5vw",}}
+              style={{ height: "300 px",width: "100%", maxWidth: "1000px", borderRadius:"0.5vw",fontSize: "20px"}}
             />
             
           </div>

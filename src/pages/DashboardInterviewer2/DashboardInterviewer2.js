@@ -33,9 +33,6 @@ const DashboardInterviewer2 = () => {
       }
     ]
     
-
-
-  
   return (
     <div className="dashboard-interviewer2">
       <Helmet>
@@ -59,8 +56,6 @@ const DashboardInterviewer2 = () => {
               fontSize: "25px" }}
               views={views}
           />
-
-
         </div>
       </div>
     </div>
