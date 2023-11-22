@@ -385,5 +385,6 @@
     .test{
         max-height:70vw;
         overflow: auto;
+        border-radius: 0.5vw;
     }
-    
+   
