@@ -39,14 +39,7 @@ const TestScreenCode = () => {
         </div>
         <div className="frame-parent256">
           <Coding/>
-          <button className="frame-parent259">
-            <div className="run-code-wrapper">
-              <div className="run-code">Run code</div>
-            </div>
-            <button className="next-container" onClick={onFrameButton1Click}>
-              <div className="next1">Next</div>
-            </button>
-          </button>
+          
         </div>
         <div className="q1-problem-statement1">Q.1 Problem statement</div>
       </div>

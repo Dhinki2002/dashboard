@@ -6,6 +6,7 @@ import "ace-builds/src-noconflict/mode-c_cpp"; // Import the C++ mode
 import "ace-builds/src-noconflict/mode-java"; // Import the Java mode
 import "ace-builds/src-noconflict/mode-python"; // Import the Python mode
 import "ace-builds/src-noconflict/theme-github"; // Import the Monokai theme
+import "ace-builds/src-noconflict/theme-ambiance"
 
 
 const Coding = () => {
@@ -20,6 +21,7 @@ const Coding = () => {
       }, [navigate]);
       const [code, setCode] = useState("#1 Write your code here");
   return (
+    <>
     <div className="frame-parent257">
             
             <div className="frame-parent258">
@@ -47,33 +49,18 @@ const Coding = () => {
               editorProps={{ $blockScrolling: true }}
               style={{ width: "100%", maxWidth: "800px", borderRadius:"0.5vw",}}
             />
-            <div className="test-cases-parent">
-              <div className="code-snippet">Test cases</div>
-              <div className="sub-task-parent">
-                <div className="sub-task">Sub-Task</div>
-                <div className="div188">
-                  <p className="p">1</p>
-                  <p className="p">2</p>
-                  <p className="p">3</p>
-                  <p className="p">4</p>
-                  <p className="p">5</p>
-                </div>
-                <div className="div189">
-                  <p className="p">1</p>
-                  <p className="p">2</p>
-                  <p className="p">3</p>
-                  <p className="p">4</p>
-                  <p className="p">5</p>
-                </div>
-                <div className="task">Task</div>
-                <div className="result">Result</div>
-                <div className="line-parent12">
-                  <div className="frame-child190" />
-                  <div className="frame-child190" />
-                </div>
-              </div>
-            </div>
+            
           </div>
+          <button className="frame-parent259">
+            <div className="run-code-wrapper">
+              <div className="run-code">Run code</div>
+            </div>
+            <button className="next-container" onClick={onFrameButton1Click}>
+              <div className="next1">Next</div>
+            </button>
+          </button>
+          </>
+
   )
 }
 
