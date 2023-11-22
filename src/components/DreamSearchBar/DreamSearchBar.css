@@ -1,0 +1,7 @@
+.formBorder {
+  font-size: 3em;
+  display: flex;
+  width: 50vw;
+  align-items: center; /* Align items vertically */
+  justify-content: space-between;
+}
