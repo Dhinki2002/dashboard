@@ -3,6 +3,9 @@ import { useNavigate } from "react-router-dom";
 import "./TestScreenObjective.css";
 import { Helmet } from "react-helmet";
 import Objective from "../../components/Objective/Objective";
+import questions from '../../questions.json';
+import Coding from "../../components/Coding/Coding";
+
 
 const TestScreenObjective = () => {
   const navigate = useNavigate();
@@ -33,6 +36,9 @@ const TestScreenObjective = () => {
     }
   };
   const [timeRemaining, setTimeRemaining] = useState(10800); // 3 hours in seconds
+
+  const currentQuestion = questions[currentStep]; // Assuming currentStep is the index of the current question
+  // console.log(currentQuestion)
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -80,22 +86,33 @@ const TestScreenObjective = () => {
           </button>
           {activeTab === 'statement' && (
 
-            <div className="q1-problem-statement">"The problem statement"</div>
+            <div className="q1-problem-statement">Q{currentStep + 1}. {currentQuestion['question']}</div>
 
           )}
           {activeTab === 'help' && (
 
-            <div className="q1-problem-statement">"I am here for tips to be given"</div>
+            <div className="q1-problem-statement">{currentQuestion['explanation']}</div>
 
           )}
 
         </div>
 
-        <Objective/>
+        {currentQuestion['isObjective'] && <Objective
+          currentStep={currentStep}
+          currentQuestion={currentQuestion}
+          onNextClick={onNextClick}
+          onPrevClick={onPrevClick}
+        />}
+        {!currentQuestion['isObjective'] && <Coding
+          currentStep={currentStep}
+          currentQuestion={currentQuestion}
+          onNextClick={onNextClick}
+          onPrevClick={onPrevClick}
+        />}
         <div className="left-wrapper">
-        <div className="multiple-choice-questions">
-          Multiple choice questions
-        </div>
+          <div className="multiple-choice-questions">
+            Multiple choice questions
+          </div>
         </div>
         <div className="time-remaining-parent">
           <div className="multiple-choice-questions">Time remaining:</div>

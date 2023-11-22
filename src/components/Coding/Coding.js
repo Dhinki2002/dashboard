@@ -1,6 +1,6 @@
 import {React , useCallback, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "../../pages/TestScreenCode/TestScreenCode.css"
+import "./Coding.css"
 import CodeMirror from "@uiw/react-codemirror";
 import { vscodeDark } from "@uiw/codemirror-theme-vscode";
 
@@ -12,7 +12,7 @@ import { vscodeDark } from "@uiw/codemirror-theme-vscode";
 // import "ace-builds/src-noconflict/theme-ambiance"
 
 
-const Coding = () => {
+const Coding = ({currentQuestion, currentStep, onNextClick, onPrevClick}) => {
     const navigate = useNavigate();
     const onFrameButton1Click = useCallback(() => {
         navigate("/test-screen-objective");
@@ -55,14 +55,17 @@ const Coding = () => {
             />
             
           </div>
-          <button className="frame-parent259">
-            <div className="run-code-wrapper">
+          <div className="frame-parent259">
+            <button className="run-code-wrapper">
               <div className="run-code">Run code</div>
-            </div>
-            <button className="next-container" onClick={onFrameButton1Click}>
-              <div className="next1">Next</div>
             </button>
-          </button>
+            {currentStep<9&&<button className="next-container" onClick={onNextClick}>
+              <div className="next1">Next</div>
+            </button>}
+            {currentStep==9&&<button className="run-code-wrapper">
+              <div className="run-code">Submit</div>
+            </button>}
+          </div>
           </>
 
   )

@@ -182,7 +182,7 @@
 .frame-parent257 {
     position: absolute;
     top: 2.98vw;
-    left: 1.39vw;
+    left: 45.39vw;
     border-radius: var(--br-7xs);
     background-color: var(--white);
     height: 50.59vw;
@@ -243,8 +243,8 @@
     padding: 0;
     background-color: transparent;
     position: absolute;
-    top: 45.68vw;
-    left: 2.38vw;
+    top: 44.68vw;
+    left: 46.38vw;
     align-items: flex-start;
     justify-content: flex-start;
     gap: var(--gap-base)

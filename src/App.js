@@ -35,7 +35,6 @@ import AdminSettings1 from './pages/AdminSettings1/AdminSettings1.js'
 import AdminSettings2 from './pages/AdminSettings2/AdminSettings2.js'
 import GoScoreDashboardIndividual from './pages/GoScoreDashboardIndividual/GoScoreDashboardIndividual.js'
 import TestScreenObjective from './pages/TestScreenObjective/TestScreenObjective.js'
-import TestScreenCode from './pages/TestScreenCode/TestScreenCode.js'
 import AddDreamCompany from './pages/AddDreamCompany/AddDreamCompany.js'
 import { Helmet } from 'react-helmet'
 
@@ -141,7 +140,6 @@ function App() {
           path='/test-screen-objective'
           element={<TestScreenObjective />}
         />
-        <Route path='/test-screen-code' element={<TestScreenCode />} />
       </Routes>
     </div>
   )
