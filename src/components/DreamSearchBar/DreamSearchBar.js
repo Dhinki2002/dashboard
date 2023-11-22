@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react'
 import Select from 'react-select'
 import './DreamSearchBar.css'
 
-function DreamSearchBar({ onSearch }) {
-  const [fillText, setfillText] = useState('Choose a Company')
+function DreamSearchBar({ progress, answer, setAnswer }) {
+  const [fillText, setfillText] = useState('')
   const companyList = [
     'Amazon',
     'Atlassian',
@@ -12,34 +12,45 @@ function DreamSearchBar({ onSearch }) {
     'Flavasa',
     'Flip',
   ]
-  const [companies, setCompanies] = useState([])
+  const jobList = ['Product Manager', 'Software Engineer', 'Consultant']
+  const [options, setOptions] = useState([])
   const [selectedOptions, setSelectedOptions] = useState()
 
   useEffect(() => {
-    setCompanies(
-      companyList.map(company => ({ label: company, value: company })),
-    )
-  }, [])
-
-  const handleSubmit = e => {
-    e.preventDefault()
-    console.log(selectedOptions.value)
-    onSearch(selectedOptions.value)
-  }
+    if (progress === 1) {
+      console.log('progress = 1')
+      setOptions(
+        companyList.map(company => ({ label: company, value: company })),
+      )
+      setfillText('Choose a Company')
+      setSelectedOptions(null)
+    } else if (progress === 2) {
+      setOptions(jobList.map(job => ({ label: job, value: job })))
+      setfillText('Choose a Job Profile')
+      console.log(selectedOptions.value)
+      setAnswer(selectedOptions.value)
+      setSelectedOptions(null)
+    } else if (progress === 3) {
+      setAnswer(selectedOptions.value)
+    }
+  }, [progress])
 
   return (
-    <form onSubmit={handleSubmit} className='formBorder'>
-      <div style={{ width: '40vw' }}>
-        <Select
-          options={companies}
-          value={selectedOptions}
-          onChange={setSelectedOptions}
-          className='searchBar'
-          placeholder={fillText}
-        />
-      </div>
-      <button type='submit'>Submit</button>
-    </form>
+    <div>
+      <form className='formBorder'>
+        <div style={{ width: '40vw' }}>
+          <Select
+            options={options}
+            value={selectedOptions}
+            onChange={setSelectedOptions}
+            className='searchBar'
+            placeholder={fillText}
+          />
+        </div>
+      </form>
+      {fillText}
+      {progress}
+    </div>
   )
 }
 
