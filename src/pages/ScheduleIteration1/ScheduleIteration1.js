@@ -1,14 +1,7 @@
-<<<<<<< Updated upstream:src/pages/ScheduleIteration1/ScheduleIteration1.js
-import Navbar from '../../components/Navbar/Navbar.js';
-import Header from '../../components/Header/Header.js';
-import "./ScheduleIteration1.css";
-import { Helmet } from "react-helmet";
-=======
-import Navbar from '../components/Navbar'
-import Header from '../components/Header'
+import Navbar from '../../components/Navbar/Navbar.js'
+import Header from '../../components/Header/Header.js'
 import './ScheduleIteration1.css'
 import { Helmet } from 'react-helmet'
->>>>>>> Stashed changes:src/pages/ScheduleIteration1.js
 
 const ScheduleIteration1 = () => {
   const counter = 3

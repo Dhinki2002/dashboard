@@ -1,19 +1,9 @@
-import React, { useState, useEffect, useRef, useCallback } from 'react'
 import './AddDreamCompany.css'
-<<<<<<< Updated upstream:src/pages/AddDreamCompany/AddDreamCompany.js
-import ImgHero from '../../img/image1.jpg'
-import backArrow from '../../img/forward.png'
-import { useNavigate } from 'react-router-dom'
-import Footer from '../../components/Footer/Footer.js'
-
-const currentIm = './carbonsearch.svg'
-=======
-import Footer from '../components/Footer/Footer'
-import DreamSearchBar from '../components/DreamSearchBar/DreamSearchBar'
->>>>>>> Stashed changes:src/pages/AddDreamComapany.js
+import Footer from '../../components/Footer/Footer'
+import DreamSearchBar from '../../components/DreamSearchBar/DreamSearchBar'
 const AddDreamCompany = () => {
   const handleStartClick = query => {
-    console.log('hi')
+    console.log(query)
   }
 
   return (
