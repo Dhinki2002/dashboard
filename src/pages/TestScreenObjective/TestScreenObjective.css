@@ -244,7 +244,7 @@
     border-radius: var(--br-base);
     background-color: var(--white);
     width: 96.3vw;
-    height: 53.7vw;
+    height: 46.3vw;
     overflow: hidden
 }
 
@@ -275,13 +275,14 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    margin-left: 0.7vw;    
+    margin-left: 0.3vw;    
 }
 
 .frame-wrapper97 {
     width: 21.56vw;
     flex-direction: row;
-    align-items: center
+    align-items: center,
+    
 }
 
 .oouinext-ltr-icon2 {
@@ -343,6 +344,7 @@
 }
 .frame-parent252{
     left:-2vw;
+
 }
 
 .next-problem-parent {
@@ -365,7 +367,7 @@
     position: absolute;
     top: 2.91vw;
     left: calc(50% - 47.69vw);
-    gap: 23.6vw;
+    gap: 24.6vw;
     font-size: var(--font-size-base);
     color: var(--color-darkslategray-200)
 }
