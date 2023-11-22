@@ -118,7 +118,7 @@ const TestScreenObjective = () => {
         <div className="frame-parent252">
           <div className="oouinext-ltr-group" onClick={onPrevClick}>
             <img className="oouinext-ltr-icon2" alt="" src="/oouinextltr.svg" />
-            <div className="multiple-choice-questions">Prev problem</div>
+            <div className="multiple-choice-questions1">Prev problem</div>
           </div>
           <div className="frame-parent253">
             {[...Array(10)].map((_, index) => (
