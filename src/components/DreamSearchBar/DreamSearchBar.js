@@ -42,7 +42,7 @@ function DreamSearchBar({ progress, answer, setAnswer }) {
     <div>
       {/* {progress} */}
       <form className='formBorder'>
-        <div style={{ width: '40vw' }}>
+        <div style={{ width: '40vw' , marginLeft:"-4vw"}}>
           <Select
             options={options}
             value={selectedOptions}

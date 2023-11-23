@@ -59,7 +59,7 @@ const AddDreamCompany = () => {
         <div className="heading">What is your Dream Company?</div>
         <div className="searchBarContainer">
         
-          <button onClick={handleBackward} className="Backward">
+          <button onClick={handleBackward} className="forward">
             Backward
           </button>
         <div className="barContainer">
@@ -74,11 +74,11 @@ const AddDreamCompany = () => {
         </div>
         
         {progress === 3 && (
-          <DatePicker selected={selectedDate} onChange={handleDateChange} />
+          <DatePicker className="date-picker" selected={selectedDate} onChange={handleDateChange} />
         )}
         
         
-        <button onClick={handleForward} className="Forward">
+        <button onClick={handleForward} className="forward">
           Forward
         </button>
         </div>

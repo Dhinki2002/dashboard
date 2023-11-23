@@ -43,6 +43,38 @@
 }
 
 .barContainer{
-  margin-left: 280px;
+  margin-left: 20vw;
+}
+
+
+.forward {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: 2px solid var(--purple-login);
+  border-radius: 5px;
+  color: #fff;
+  background-color: var(--purple-login);
+  transition: background-color 0.3s, color 0.3s;
+  margin-left:4vw;
+  margin-right:4vw;
+
+}
+
+
+.forward:hover {
+  background-color: #2980b9;
+  border-color: #2980b9;
+}
+
+.date-picker{
+  width:25vw;
+  height:3vw;
+  border-radius: 0.5vw;
+  margin-left: -35vw;
 }
 
