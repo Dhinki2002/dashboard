@@ -5,6 +5,8 @@ import { useState } from "react";
 import "react-datepicker/dist/react-datepicker.css";
 import DatePicker from "react-datepicker";
 import { useNavigate } from "react-router-dom";
+import { DayPicker } from "react-day-picker";
+import "react-day-picker/dist/style.css";
 
 const AddDreamCompany = () => {
   const navigate=useNavigate()
@@ -74,7 +76,20 @@ const AddDreamCompany = () => {
         </div>
         
         {progress === 3 && (
-          <DatePicker className="date-picker" selected={selectedDate} onChange={handleDateChange} />
+          
+          <div className="job-profile-group">
+          <div className="select-interview-date">
+           
+          </div>
+          <input
+            className="frame-child167"
+            placeholder="Select date"
+            type="date"
+            selected={selectedDate}
+            onChange={handleDateChange}
+          />
+          </div>
+         
         )}
         
         
