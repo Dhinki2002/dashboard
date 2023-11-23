@@ -4,8 +4,10 @@ import DreamSearchBar from "../../components/DreamSearchBar/DreamSearchBar";
 import { useState } from "react";
 import "react-datepicker/dist/react-datepicker.css";
 import DatePicker from "react-datepicker";
+import { useNavigate } from "react-router-dom";
 
 const AddDreamCompany = () => {
+  const navigate=useNavigate()
   const [selectedDate, setSelectedDate] = useState(new Date());
   const [progress, setProgress] = useState(1);
   const [answer, setAnswer] = useState("");
@@ -26,6 +28,10 @@ const AddDreamCompany = () => {
     );
   };
   const handleForward = () => {
+    if (progress==3){
+      navigate('/test-screen-objective')
+    }
+    else{
     setProgress((prevProgress) => {
       if (prevProgress < 3) {
         return prevProgress + 1;
@@ -37,6 +43,7 @@ const AddDreamCompany = () => {
       "Updated progress (may not be the new value due to async nature):",
       progress
     );
+    }
   };
   const handleDateChange = (date) => {
     setSelectedDate(date);
@@ -45,7 +52,6 @@ const AddDreamCompany = () => {
 
   return (
     <div className="hero">
-      {answer}
       <div className="top-header">
         <img src="./1644088580619-cantileverlogoblack-2@2x.png" />
       </div>
