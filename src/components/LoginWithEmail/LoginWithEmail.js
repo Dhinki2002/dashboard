@@ -37,7 +37,8 @@ const LoginWithEmail = () => {
     
 
     
-    navigate('/go-score-dashboardindividual');
+    navigate('/add-dream-company');
+    // navigate('/go-score-dashboardindividual');
   }, [navigate]);
 
 
