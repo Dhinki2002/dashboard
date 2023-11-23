@@ -52,11 +52,11 @@ const AddDreamCompany = () => {
       <div className="content">
         <div className="heading">What is your Dream Company?</div>
         <div className="searchBarContainer">
-        {progress > 1 && (
+        
           <button onClick={handleBackward} className="Backward">
             Backward
           </button>
-        )}
+        
         {progress < 3 && (
           <DreamSearchBar
             progress={progress}

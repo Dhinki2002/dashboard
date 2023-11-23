@@ -40,7 +40,7 @@ function DreamSearchBar({ progress, answer, setAnswer }) {
 
   return (
     <div>
-      {progress}
+      {/* {progress} */}
       <form className='formBorder'>
         <div style={{ width: '40vw' }}>
           <Select
@@ -52,8 +52,8 @@ function DreamSearchBar({ progress, answer, setAnswer }) {
           />
         </div>
       </form>
-      {fillText}
-      {progress}
+      {/* {fillText}
+      {progress} */}
     </div>
   )
 }
