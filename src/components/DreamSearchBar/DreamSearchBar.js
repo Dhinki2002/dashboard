@@ -14,7 +14,7 @@ function DreamSearchBar({ progress, answer, setAnswer }) {
   ]
   const jobList = ['Product Manager', 'Software Engineer', 'Consultant']
   const [options, setOptions] = useState([])
-  const [selectedOptions, setSelectedOptions] = useState()
+  const [selectedOptions, setSelectedOptions] = useState();
 
   useEffect(() => {
     if (progress === 1) {
@@ -23,7 +23,7 @@ function DreamSearchBar({ progress, answer, setAnswer }) {
         companyList.map(company => ({ label: company, value: company })),
       )
       setfillText('Choose a Company')
-      setSelectedOptions(null)
+      setSelectedOptions('Amazon')
     } else if (progress === 2) {
       setOptions(jobList.map(job => ({ label: job, value: job })))
       setfillText('Choose a Job Profile')
@@ -31,7 +31,7 @@ function DreamSearchBar({ progress, answer, setAnswer }) {
         console.log(selectedOptions.value)
       setAnswer(selectedOptions.value)
       }
-      setSelectedOptions(null)
+      setSelectedOptions('Consultant')
     } else if (progress === 3) {
       if (selectedOptions.value != null)
       {setAnswer(selectedOptions.value)}
