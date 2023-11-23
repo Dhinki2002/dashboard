@@ -56,7 +56,7 @@ const AddDreamCompany = () => {
           <button onClick={handleBackward} className="Backward">
             Backward
           </button>
-        
+        <div className="barContainer">
         {progress < 3 && (
           <DreamSearchBar
             progress={progress}
@@ -65,10 +65,12 @@ const AddDreamCompany = () => {
             setAnswer={setAnswer}
           />
         )}
+        </div>
+        
         {progress === 3 && (
           <DatePicker selected={selectedDate} onChange={handleDateChange} />
         )}
-
+        
         
         <button onClick={handleForward} className="Forward">
           Forward
