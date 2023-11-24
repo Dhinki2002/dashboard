@@ -77,7 +77,7 @@ const AddDreamCompany = () => {
         
         {progress === 3 && (
           
-          <div className="job-profile-group">
+          <div className="job-profile-group1">
           <div className="select-interview-date">
            
           </div>
