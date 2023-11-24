@@ -5,8 +5,8 @@ import { useState } from "react";
 import "react-datepicker/dist/react-datepicker.css";
 import DatePicker from "react-datepicker";
 import { useNavigate } from "react-router-dom";
-import { DayPicker } from "react-day-picker";
-import "react-day-picker/dist/style.css";
+
+
 
 const AddDreamCompany = () => {
   const navigate=useNavigate()
