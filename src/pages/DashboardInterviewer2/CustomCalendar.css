@@ -1,0 +1,22 @@
+.react-calendar {
+    width: 1500px; /* Set the desired width */
+    max-width: 100%; /* Ensure it doesn't exceed the container width */
+    font-size: 30px; /* Adjust the font size as needed */
+    margin: 50px;/* Add any other custom styles for the calendar here */
+   
+  }
+
+  /* CustomCalendar.css */
+input[type="time"] {
+    padding: 8px; /* Adjust the padding as needed */
+    border: 1px solid #ccc; /* Add border styles */
+    border-radius: 4px; /* Add border radius for rounded corners */
+    font-size: 25px; /* Adjust the font size as needed */
+    margin: 10px; /* Add margin as needed */
+    margin-left: 50px;/* Add any other custom styles for the time input button here */
+  }
+
+  .react-calendar__tile {
+    height: 100px;
+}
+
