@@ -2,8 +2,7 @@ import "./AddDreamCompany.css";
 import Footer from "../../components/Footer/Footer";
 import DreamSearchBar from "../../components/DreamSearchBar/DreamSearchBar";
 import { useState } from "react";
-import "react-datepicker/dist/react-datepicker.css";
-import DatePicker from "react-datepicker";
+// import "react-datepicker/dist/react-datepicker.css";
 import { useNavigate } from "react-router-dom";
 
 
