@@ -1,9 +1,9 @@
 .react-calendar {
-    width: 1500px; /* Set the desired width */
-    max-width: 100%; /* Ensure it doesn't exceed the container width */
+    width: 75vw; /* Set the desired width */
+    max-width: 110vw; /* Ensure it doesn't exceed the container width */
     font-size: 30px; /* Adjust the font size as needed */
     margin: 50px;/* Add any other custom styles for the calendar here */
-   
+   overflow:auto;
   }
 
   /* CustomCalendar.css */
