@@ -57,7 +57,7 @@ function App() {
       </Helmet>
       <Routes>
         <Route path='/sign-up' element={<SignUpAs />} />
-        <Route path='/login' element={<Login />} />
+        <Route path='/' element={<Login />} />
 
         <Route path='/reset-password' element={<ResetPassword />} />
         <Route path='/forgot-reset' element={<ForgotReset />} />
@@ -135,7 +135,7 @@ function App() {
           path='/go-score-dashboardindividual'
           element={<GoScoreDashboardIndividual />}
         />
-        <Route path='/' element={<AddDreamCompany />} />
+        <Route path='/add-dream-company' element={<AddDreamCompany />} />
         <Route
           path='/test-screen-objective'
           element={<TestScreenObjective />}

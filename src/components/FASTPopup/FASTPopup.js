@@ -5,16 +5,12 @@ import "./FASTPopup.css";
 const FASTPopup = ({ onClose }) => {
   const navigate = useNavigate();
 
-  const onFASTPopupClick = useCallback(() => {
-    navigate("/go-score-dashboardindividual");
-  }, [navigate]);
-
   const onFrameButtonClick = useCallback(() => {
     navigate("/test-screen-objective");
   }, [navigate]);
 
   return (
-    <div className="fastpopup" onClick={onFASTPopupClick}>
+    <div className="fastpopup">
       <div className="fulcrum-assessment-test-parent">
         <div className="fulcrum-assessment-test">Fulcrum Assessment Test</div>
         <div className="frame-parent234">
