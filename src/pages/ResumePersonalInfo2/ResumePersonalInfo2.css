@@ -455,7 +455,7 @@
     .container{
         position:relative;
     }
-    .active{
+    .active-mic{
         border-radius: 1vw;
         position:relative;
         bottom: 4vw; /* Adjust top position */

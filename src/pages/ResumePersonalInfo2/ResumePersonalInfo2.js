@@ -274,7 +274,7 @@ const ResumePersonalInfo2 = () => {
               />
               <div>
                 <div>
-                  <button className={`${isListening ? 'active' : 'mic-img'}`}onClick={() => handleVoiceInput(0, 4)}>
+                  <button className={`${isListening ? 'active-mic' : 'mic-img'}`}onClick={() => handleVoiceInput(0, 4)}>
                     <img src="./microphone.svg" alt="joker" style={{ width: '20px', height: '20px' }} />
                   </button>
                 </div>
@@ -342,7 +342,7 @@ const ResumePersonalInfo2 = () => {
                         onChange={(e) => handleInputChange(e, index, 9)}
                       />
                       <div>
-                        <button className={`${isListening ? 'active' : 'mic-img'}`} onClick={() => handleVoiceInput(index, 9)}>
+                        <button className={`${isListening ? 'active-mic' : 'mic-img'}`} onClick={() => handleVoiceInput(index, 9)}>
                           <img src="./microphone.svg" alt="joker" style={{ width: '20px', height: '20px' }} />
                         </button>
 
@@ -424,7 +424,7 @@ const ResumePersonalInfo2 = () => {
                               onChange={(e) => handleInputChange(e, index, 14)}
                             />
                             <div>
-                              <button className={`${isListening ? 'active' : 'mic-img'}`} onClick={() => handleVoiceInput(index, 14)}>
+                              <button className={`${isListening ? 'active-mic' : 'mic-img'}`} onClick={() => handleVoiceInput(index, 14)}>
                                 <img src="./microphone.svg" alt="joker" style={{ width: '20px', height: '20px' }} />
                               </button>
                             </div>
