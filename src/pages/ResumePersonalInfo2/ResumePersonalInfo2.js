@@ -28,7 +28,7 @@ const ResumePersonalInfo2 = () => {
   const [noWork, setNoWork] = useState(1)
   const [noWebsites, setNoWebsites] = useState(1)
   const [noSkills, setNoSkills] = useState(1)
-  // const [percentage, setPercentage] = useState(0)
+  
 
 
 
@@ -37,10 +37,10 @@ const ResumePersonalInfo2 = () => {
     const updatedValues = [...inputValues];
     updatedValues[val][index] = value;
     setInputValues(updatedValues);
-    // console.log(updatedValues)
+    
   };
 
-  const handleVoiceInput = (id, index, val) => {
+  const handleVoiceInput = (index, val) => {
     const recognition = new window.webkitSpeechRecognition(); // Create a new SpeechRecognition instance
     recognition.lang = 'en-US'; // Set the language for recognition
 
@@ -59,6 +59,7 @@ const ResumePersonalInfo2 = () => {
     };
     recognition.start(); // Start speech recognition
   };
+  
 
   const handleEducationChange = () => {
     if (noEducation <= 3) {
@@ -110,7 +111,7 @@ const ResumePersonalInfo2 = () => {
 
 
   useEffect(() => {
-    // Update percentage every time i changes
+    
     setPercentage(Math.floor((filledFields / totalFields) * 100));
   }, [filledFields, totalFields]);
 
@@ -118,10 +119,10 @@ const ResumePersonalInfo2 = () => {
 
 
   const onDrop = useCallback((acceptedFiles) => {
-    // Assuming only one file is dropped, you can modify this based on your needs
+    
     const file = acceptedFiles[0];
 
-    // Read the dropped file and set the image source
+    
     const reader = new FileReader();
     reader.onload = () => {
       setImageSrc(reader.result);
@@ -246,7 +247,7 @@ const ResumePersonalInfo2 = () => {
                 onChange={(e) => handleInputChange(e, 0, 4)}
               />
               <div>
-                <button onClick={() => handleVoiceInput('0-4', 0, 4)}>Start</button>
+                <button onClick={() => handleVoiceInput(0, 4)}>Start</button>
                 <button>Reset</button>
               </div>
             </div>
