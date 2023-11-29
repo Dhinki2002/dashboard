@@ -28,7 +28,7 @@ const ResumePersonalInfo2 = () => {
   const [noWork, setNoWork] = useState(1)
   const [noWebsites, setNoWebsites] = useState(1)
   const [noSkills, setNoSkills] = useState(1)
-  
+
 
 
 
@@ -37,7 +37,7 @@ const ResumePersonalInfo2 = () => {
     const updatedValues = [...inputValues];
     updatedValues[val][index] = value;
     setInputValues(updatedValues);
-    
+
   };
 
   const handleVoiceInput = (index, val) => {
@@ -49,10 +49,10 @@ const ResumePersonalInfo2 = () => {
 
       const updatedValues = [...inputValues];
 
-      if(updatedValues[val][index]===undefined){
+      if (updatedValues[val][index] === undefined) {
         updatedValues[val][index] = voiceInput
       }
-      else{
+      else {
         updatedValues[val][index] += (' ' + voiceInput); // Append the voice input to the value at this index
       }
 
@@ -61,16 +61,16 @@ const ResumePersonalInfo2 = () => {
       let id = `${index}-${val}`
 
       const textArea = document.getElementById(id); // Replace 'yourTextAreaId' with the actual ID of your textarea
-      if(textArea===undefined){
+      if (textArea === undefined) {
         textArea.value = voiceInput
       }
-      else{
+      else {
         textArea.value += (' ' + voiceInput);
       }
     };
     recognition.start(); // Start speech recognition
   };
-  
+
 
   const handleEducationChange = () => {
     if (noEducation <= 3) {
@@ -122,7 +122,7 @@ const ResumePersonalInfo2 = () => {
 
 
   useEffect(() => {
-    
+
     setPercentage(Math.floor((filledFields / totalFields) * 100));
   }, [filledFields, totalFields]);
 
@@ -130,10 +130,10 @@ const ResumePersonalInfo2 = () => {
 
 
   const onDrop = useCallback((acceptedFiles) => {
-    
+
     const file = acceptedFiles[0];
 
-    
+
     const reader = new FileReader();
     reader.onload = () => {
       setImageSrc(reader.result);
@@ -251,6 +251,7 @@ const ResumePersonalInfo2 = () => {
                   A short description about yourself
                 </div>
               </div>
+             
               <textarea
                 id='0-4'
                 className="frame-child84"
@@ -258,8 +259,13 @@ const ResumePersonalInfo2 = () => {
                 onChange={(e) => handleInputChange(e, 0, 4)}
               />
               <div>
-                <button onClick={() => handleVoiceInput(0, 4)}>Start</button>
-                <button>Reset</button>
+                <div>
+                  <button className="mic-img" onClick={() => handleVoiceInput(0, 4)}>
+                    <img src="./microphone.svg" alt="joker" style={{ width: '20px', height: '20px' }} />
+                  </button>
+                </div>
+                
+
               </div>
             </div>
             <div className="personal-details-parent">
@@ -322,8 +328,10 @@ const ResumePersonalInfo2 = () => {
                         onChange={(e) => handleInputChange(e, index, 9)}
                       />
                       <div>
-                        <button onClick={() => handleVoiceInput(index, 9)}>Start</button>
-                        <button>Reset</button>
+                        <button className="mic-img" onClick={() => handleVoiceInput(index, 9)}>
+                          <img src="./microphone.svg" alt="joker" style={{ width: '20px', height: '20px' }} />
+                        </button>
+
                       </div>
                     </div>
 
@@ -392,15 +400,22 @@ const ResumePersonalInfo2 = () => {
                   <div className="frame-parent123">
                     <div className="first-name-parent">
                       <div className="first-name">Description</div>
-                      <textarea
-                        id={`${index}-14`}
-                        className="frame-child89"
-                        placeholder="e.g. Enter description"
-                        onChange={(e) => handleInputChange(e, index, 14)}
-                      />
                       <div>
-                        <button onClick={() => handleVoiceInput(index, 14)}>Start</button>
-                        <button>Reset</button>
+                        
+                          
+                            <textarea
+                              id={`${index}-14`}
+                              className="frame-child89"
+                              placeholder="e.g. Enter description"
+                              onChange={(e) => handleInputChange(e, index, 14)}
+                            />
+                            <div>
+                              <button className="mic-img" onClick={() => handleVoiceInput(index, 14)}>
+                                <img src="./microphone.svg" alt="joker" style={{ width: '20px', height: '20px' }} />
+                              </button>
+                            </div>
+                          
+                        
                       </div>
                     </div>
                   </div>

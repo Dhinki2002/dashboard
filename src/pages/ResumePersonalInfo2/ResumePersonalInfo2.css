@@ -441,6 +441,20 @@
     font-family: var(--font-avenir-lt-std)
     }
 
+    .mic-img {
+        border-radius: 1vw;
+        position:relative;
+        top: -13.4vw; /* Adjust top position */
+        left: 34vw; /* Adjust right position */
+        z-index: 1; /* Ensures the image button appears on top */
+  /* Other styles for your image button */
+        cursor: pointer;
+       
+    }
+    .container{
+        position:relative;
+    }
+
     
     
 
