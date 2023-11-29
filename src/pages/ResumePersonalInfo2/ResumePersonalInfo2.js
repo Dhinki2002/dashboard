@@ -44,6 +44,9 @@ const ResumePersonalInfo2 = () => {
   const handleVoiceInput = (index, val) => {
     const recognition = new window.webkitSpeechRecognition(); // Create a new SpeechRecognition instance
     recognition.lang = 'en-US'; // Set the language for recognition
+    
+   
+
     recognition.onstart = () => {
       setIsListening(true); // Set the state to indicate recognition is active
     };
@@ -74,7 +77,7 @@ const ResumePersonalInfo2 = () => {
       
   
     };
-    
+
     recognition.onend = () => {
       setIsListening(false); // Set the state back to indicate recognition has ended
     };
