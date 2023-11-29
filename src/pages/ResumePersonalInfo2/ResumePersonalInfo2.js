@@ -48,14 +48,25 @@ const ResumePersonalInfo2 = () => {
       const voiceInput = event.results[0][0].transcript; // Get the recognized transcript
 
       const updatedValues = [...inputValues];
-      updatedValues[val][index] += (' ' + voiceInput); // Append the voice input to the value at this index
+
+      if(updatedValues[val][index]===undefined){
+        updatedValues[val][index] = voiceInput
+      }
+      else{
+        updatedValues[val][index] += (' ' + voiceInput); // Append the voice input to the value at this index
+      }
 
       setInputValues(updatedValues);
 
       let id = `${index}-${val}`
 
       const textArea = document.getElementById(id); // Replace 'yourTextAreaId' with the actual ID of your textarea
-      textArea.value += ' ' + voiceInput;
+      if(textArea===undefined){
+        textArea.value = voiceInput
+      }
+      else{
+        textArea.value += (' ' + voiceInput);
+      }
     };
     recognition.start(); // Start speech recognition
   };
