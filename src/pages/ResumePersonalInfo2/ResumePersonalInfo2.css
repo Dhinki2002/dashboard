@@ -442,9 +442,10 @@
     }
 
     .mic-img {
+        border-color: black;
         border-radius: 1vw;
         position:relative;
-        top: -13.4vw; /* Adjust top position */
+        bottom: 4vw; /* Adjust top position */
         left: 34vw; /* Adjust right position */
         z-index: 1; /* Ensures the image button appears on top */
   /* Other styles for your image button */
@@ -453,6 +454,17 @@
     }
     .container{
         position:relative;
+    }
+    .active{
+        border-radius: 1vw;
+        position:relative;
+        bottom: 4vw; /* Adjust top position */
+        left: 34vw; /* Adjust right position */
+        z-index: 1; /* Ensures the image button appears on top */
+  /* Other styles for your image button */
+        cursor: pointer;
+        border-color:var(--purple) ;
+        border-width: 0.25vw;
     }
 
     

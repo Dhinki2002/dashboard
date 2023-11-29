@@ -28,6 +28,7 @@ const ResumePersonalInfo2 = () => {
   const [noWork, setNoWork] = useState(1)
   const [noWebsites, setNoWebsites] = useState(1)
   const [noSkills, setNoSkills] = useState(1)
+  const [isListening, setIsListening] = useState(false);
 
 
 
@@ -43,6 +44,9 @@ const ResumePersonalInfo2 = () => {
   const handleVoiceInput = (index, val) => {
     const recognition = new window.webkitSpeechRecognition(); // Create a new SpeechRecognition instance
     recognition.lang = 'en-US'; // Set the language for recognition
+    recognition.onstart = () => {
+      setIsListening(true); // Set the state to indicate recognition is active
+    };
 
     recognition.onresult = (event) => {
       const voiceInput = event.results[0][0].transcript; // Get the recognized transcript
@@ -67,7 +71,14 @@ const ResumePersonalInfo2 = () => {
       else {
         textArea.value += (' ' + voiceInput);
       }
+      
+  
     };
+    
+    recognition.onend = () => {
+      setIsListening(false); // Set the state back to indicate recognition has ended
+    };
+
     recognition.start(); // Start speech recognition
   };
 
@@ -260,7 +271,7 @@ const ResumePersonalInfo2 = () => {
               />
               <div>
                 <div>
-                  <button className="mic-img" onClick={() => handleVoiceInput(0, 4)}>
+                  <button className={`${isListening ? 'active' : 'mic-img'}`}onClick={() => handleVoiceInput(0, 4)}>
                     <img src="./microphone.svg" alt="joker" style={{ width: '20px', height: '20px' }} />
                   </button>
                 </div>
@@ -328,7 +339,7 @@ const ResumePersonalInfo2 = () => {
                         onChange={(e) => handleInputChange(e, index, 9)}
                       />
                       <div>
-                        <button className="mic-img" onClick={() => handleVoiceInput(index, 9)}>
+                        <button className={`${isListening ? 'active' : 'mic-img'}`} onClick={() => handleVoiceInput(index, 9)}>
                           <img src="./microphone.svg" alt="joker" style={{ width: '20px', height: '20px' }} />
                         </button>
 
@@ -410,7 +421,7 @@ const ResumePersonalInfo2 = () => {
                               onChange={(e) => handleInputChange(e, index, 14)}
                             />
                             <div>
-                              <button className="mic-img" onClick={() => handleVoiceInput(index, 14)}>
+                              <button className={`${isListening ? 'active' : 'mic-img'}`} onClick={() => handleVoiceInput(index, 14)}>
                                 <img src="./microphone.svg" alt="joker" style={{ width: '20px', height: '20px' }} />
                               </button>
                             </div>
