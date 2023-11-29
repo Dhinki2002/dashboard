@@ -40,6 +40,26 @@ const ResumePersonalInfo2 = () => {
     // console.log(updatedValues)
   };
 
+  const handleVoiceInput = (id, index, val) => {
+    const recognition = new window.webkitSpeechRecognition(); // Create a new SpeechRecognition instance
+    recognition.lang = 'en-US'; // Set the language for recognition
+
+    recognition.onresult = (event) => {
+      const voiceInput = event.results[0][0].transcript; // Get the recognized transcript
+
+      const updatedValues = [...inputValues];
+      updatedValues[val][index] += (' ' + voiceInput); // Append the voice input to the value at this index
+
+      setInputValues(updatedValues);
+
+      let id = `${index}-${val}`
+
+      const textArea = document.getElementById(id); // Replace 'yourTextAreaId' with the actual ID of your textarea
+      textArea.value += ' ' + voiceInput;
+    };
+    recognition.start(); // Start speech recognition
+  };
+
   const handleEducationChange = () => {
     if (noEducation <= 3) {
       setNoEducation((prev) => prev + 1);
@@ -81,8 +101,8 @@ const ResumePersonalInfo2 = () => {
       innerArray.forEach(value => {
         if (value.trim() !== "") {
           count++;
-      }
-      
+        }
+
       });
     });
     setFilledFields(count);
@@ -123,7 +143,7 @@ const ResumePersonalInfo2 = () => {
       <div className="resume-personal-info2-child" />
       <div className="image-102-parent">
         <div className="image-102-icon">
-          <Resume template={id} values={inputValues} img={imageSrc}/>
+          <Resume template={id} values={inputValues} img={imageSrc} />
         </div>
         <div className="frame-parent110">
           <button
@@ -220,10 +240,15 @@ const ResumePersonalInfo2 = () => {
                 </div>
               </div>
               <textarea
+                id='0-4'
                 className="frame-child84"
                 placeholder="e.g. Creative designer"
                 onChange={(e) => handleInputChange(e, 0, 4)}
               />
+              <div>
+                <button onClick={() => handleVoiceInput('0-4', 0, 4)}>Start</button>
+                <button>Reset</button>
+              </div>
             </div>
             <div className="personal-details-parent">
               <div className="profile-image-parent">
@@ -278,11 +303,16 @@ const ResumePersonalInfo2 = () => {
                     <div className="first-name-parent">
                       <div className="first-name">Description</div>
                       <textarea
+                        id={`${index}-9`}
                         className="frame-child89"
                         placeholder="e.g. Enter description"
-                        
+
                         onChange={(e) => handleInputChange(e, index, 9)}
                       />
+                      <div>
+                        <button onClick={() => handleVoiceInput(index, 9)}>Start</button>
+                        <button>Reset</button>
+                      </div>
                     </div>
 
                   </div>
@@ -351,10 +381,15 @@ const ResumePersonalInfo2 = () => {
                     <div className="first-name-parent">
                       <div className="first-name">Description</div>
                       <textarea
+                        id={`${index}-14`}
                         className="frame-child89"
                         placeholder="e.g. Enter description"
                         onChange={(e) => handleInputChange(e, index, 14)}
                       />
+                      <div>
+                        <button onClick={() => handleVoiceInput(index, 14)}>Start</button>
+                        <button>Reset</button>
+                      </div>
                     </div>
                   </div>
                 </div>
