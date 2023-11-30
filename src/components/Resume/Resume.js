@@ -72,7 +72,9 @@ const Resume = ({ values, img, template }) => {
                 <div class="rela-block separator"></div> */}
             <div class="rela-block caps greyed">Profile</div>
             <p class="long-margin">
-                {values[4][0]}
+                {values[4][0]&&values[4][0].split('.').map((sentence, index) => (
+                    <p key={index}>{sentence.trim() ? `• ${sentence.trim()}` : ''}</p>
+                ))}
             </p>
             <div class="rela-block caps greyed">Experience</div>
 

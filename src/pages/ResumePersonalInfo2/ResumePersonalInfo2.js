@@ -38,7 +38,6 @@ const ResumePersonalInfo2 = () => {
     const updatedValues = [...inputValues];
     updatedValues[val][index] = value;
     setInputValues(updatedValues);
-
   };
 
   const handleVoiceInput = (index, val) => {
@@ -57,10 +56,10 @@ const ResumePersonalInfo2 = () => {
       const updatedValues = [...inputValues];
 
       if (updatedValues[val][index] === undefined) {
-        updatedValues[val][index] = voiceInput
+        updatedValues[val][index] = ' '+voiceInput+'.'
       }
       else {
-        updatedValues[val][index] += (' ' + voiceInput); // Append the voice input to the value at this index
+        updatedValues[val][index] += (' ' + voiceInput+'.'); // Append the voice input to the value at this index
       }
 
       setInputValues(updatedValues);
@@ -72,14 +71,15 @@ const ResumePersonalInfo2 = () => {
         textArea.value = voiceInput
       }
       else {
-        textArea.value += (' ' + voiceInput);
+        textArea.value += (' ' + voiceInput+'.');
       }
       
   
     };
 
     recognition.onend = () => {
-      setIsListening(false); // Set the state back to indicate recognition has ended
+      setIsListening(false);
+       // Set the state back to indicate recognition has ended
     };
 
     recognition.start(); // Start speech recognition
