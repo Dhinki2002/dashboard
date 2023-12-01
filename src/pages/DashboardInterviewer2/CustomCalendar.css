@@ -20,3 +20,16 @@ input[type="time"] {
     height: 100px;
 }
 
+.submit-button{
+  
+    cursor: pointer;
+    padding: var(--padding-xs) var(--padding-5xl);
+    background-color: var(--purple);
+    border-radius: var(--br-5xs);
+    gap: var(--gap-7xs);
+    margin: 0em;
+    /* padding-block: 1px; */
+    /* padding-inline: 6px; */
+    color: white;
+
+}

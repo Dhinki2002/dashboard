@@ -55,13 +55,13 @@ const DashboardInterviewer2 = () => {
           {/* <div className="scheduled-interviews-wrapper">
             <div className="scheduled-interviews">Scheduled interviews</div>
           </div> */}
-<div >Select Date And Time</div>
+          <div>Select Date And Time</div>
           <Calendar
             onClickDay={handleSelectDate}
             value={selectedDateTime}
             minDate={today}
           />
-           
+          {selectedDateTime && (
             <input
               type="time"
               value={
@@ -79,8 +79,12 @@ const DashboardInterviewer2 = () => {
                 setSelectedDateTime(newDateTime);
               }}
             />
-          
-           <button type="submit" className="submit-button">Submit</button>
+          )}
+          {selectedDateTime && (
+            <button type="submit" className="submit-button">
+              Submit
+            </button>
+          )}
         </div>
       </div>
     </div>
