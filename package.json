@@ -18,6 +18,7 @@
     "ace-builds": "^1.31.2",
     "axios": "^1.6.0",
     "chart.js": "^2.9.4",
+    "html2pdf.js": "^0.10.1",
     "latest-version": "^7.0.0",
     "react": "^18.2.0",
     "react-ace": "^10.1.0",
