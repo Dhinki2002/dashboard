@@ -74,7 +74,6 @@
   color: var(--color-gray-300);
   font-family: var(--font-avenir-lt-std);
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%)
+  top: 20vw;
+  left: 30vw;
   }
