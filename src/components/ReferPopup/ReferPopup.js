@@ -50,10 +50,10 @@ const ReferPopup = ({ onClose }) => {
             </div>
             <div className="frame-parent213">
               <div className="line-parent11">
-                <div className="frame-child163" />
-                <div className="invite-linkdontknowhow">or</div>
+                {/* <div className="frame-child163" /> */}
+                {/* <div className="invite-linkdontknowhow">or</div> */}
               </div>
-              <div className="frame-child163" />
+              {/* <div className="frame-child163" /> */}
             </div>
             <div className="frame-wrapper84">
               <div className="frame-wrapper82">

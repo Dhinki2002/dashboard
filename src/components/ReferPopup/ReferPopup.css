@@ -1,169 +1,80 @@
+/*
+  Based on TailwindCSS recommendations,
+  consider using classes instead of the `@apply` directive
+  @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
+*/
 .vector-icon31 {
-  position: absolute;
-  height: 34%;
-  width: 34.01%;
-  top: 32.99%;
-  right: 32.99%;
-  bottom: 33%;
-  left: 33%;
-  max-width: 100%;
-  overflow: hidden;
-  max-height: 100%
-  }
+  @apply absolute h-[34%] w-[34.01%] max-w-full overflow-hidden max-h-full left-[33%] right-[32.99%] top-[32.99%] bottom-[33%];
+}
 .basilcross-outline9 {
-  cursor: pointer;
-  border: 0;
-  padding: 0;
-  background-color: transparent;
-  position: absolute;
-  top: 2.12vw;
-  left: 40.34vw;
-  width: 2.12vw;
-  height: 2.12vw;
-  overflow: hidden
-  }
-.invitation, .share-this-invite {
-  position: relative;
-  letter-spacing: -0.02em;
-  line-height: 2.78vw
-  }
+  @apply cursor-pointer bg-transparent absolute w-[2.12vw] h-[2.12vw] overflow-hidden p-0 border-0 left-[40.34vw] top-[2.12vw];
+}
+.invitation,
 .share-this-invite {
-  font-size: var(--font-size-lg);
-  color: var(--icon-grey);
-  margin-top: -0.53vw
-  }
+  @apply relative tracking-[-0.02em] leading-[2.78vw];
+}
+.share-this-invite {
+  @apply text-[length:var(--font-size-lg)] text-[color:var(--icon-grey)] mt-[-0.53vw];
+}
 .invitation-parent {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start
-  }
+  @apply flex flex-col items-start justify-start;
+}
 .invite-linkdontknowhow {
-  position: relative
-  }
+  @apply relative;
+}
 .invite-linkdontknowhow-wrapper {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  justify-content: center
-  }
+  @apply flex flex-row items-end justify-center;
+}
 .material-symbolsfile-copy-out-icon {
-  position: relative;
-  width: 1.59vw;
-  height: 1.59vw;
-  overflow: hidden;
-  flex-shrink: 0
-  }
+  @apply relative w-[1.59vw] h-[1.59vw] overflow-hidden shrink-0;
+}
 .frame-parent212 {
-  border-radius: var(--br-xs);
-  border: 0.07vw solid var(--color-gainsboro-400);
-  box-sizing: border-box;
-  width: 38.62vw;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  padding: var(--padding-base) var(--padding-5xl)
-  }
+  @apply rounded-[var(--br-xs)] border-[color:var(--color-gainsboro-400)] box-border w-[38.62vw] flex flex-row items-center justify-between pt-[var(--padding-base)] pr-[var(--padding-5xl)] pb-[var(--padding-base)] pl-[var(--padding-5xl)] border-[0.07vw] border-solid;
+}
 .frame-wrapper82 {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start
-  }
+  @apply flex flex-row items-start justify-start;
+}
 .frame-child163 {
-  position: relative;
-  border-top: 0.07vw solid var(--color-gainsboro-500);
-  box-sizing: border-box;
-  width: 17.2vw;
-  height: 0.07vw
-  }
-.frame-parent213, .line-parent11 {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  gap: var(--gap-7xs)
-  }
+  @apply relative border-t-[color:var(--color-gainsboro-500)] box-border w-[17.2vw] h-[0.07vw] border-t-[0.07vw] border-solid;
+}
+.frame-parent213,
+.line-parent11 {
+  @apply flex flex-row items-center justify-start gap-[var(--gap-7xs)];
+}
 .frame-parent213 {
-  align-items: flex-start;
-  justify-content: center;
-  font-size: var(--font-size-base);
-  color: #8f8f8f
-  }
+  @apply items-start justify-center text-[length:var(--font-size-base)] text-[#8f8f8f];
+}
 .ak {
-  position: relative;
-  color: var(--icon-grey)
-  }
+  @apply relative text-[color:var(--icon-grey)];
+}
 .coupon-code-parent {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  justify-content: center;
-  gap: var(--gap-mini)
-  }
+  @apply flex flex-row items-end justify-center gap-[var(--gap-mini)];
+}
 .frame-wrapper84 {
-  align-items: flex-start;
-  color: var(--black)
-  }
-.frame-parent210, .frame-parent211, .frame-wrapper84 {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start
-  }
+  @apply items-start text-[color:var(--black)];
+}
+.frame-parent210,
+.frame-parent211,
+.frame-wrapper84 {
+  @apply flex flex-col justify-start;
+}
 .frame-parent211 {
-  align-items: center;
-  gap: var(--gap-xl);
-  font-size: var(--font-size-xl);
-  color: var(--icon-grey)
-  }
+  @apply items-center gap-[var(--gap-xl)] text-[length:var(--font-size-xl)] text-[color:var(--icon-grey)];
+}
 .frame-parent210 {
-  align-items: flex-start;
-  gap: var(--gap-5xl)
-  }
+  @apply items-start gap-[var(--gap-5xl)];
+}
 .share-invite-link {
-  position: relative;
-  font-size: var(--font-size-xl);
+  @apply relative text-[length:var(--font-size-xl)] text-[color:var(--white)] text-left;
   font-family: var(--font-avenir-lt-std);
-  color: var(--white);
-  text-align: left
-  }
+}
 .share-invite-link-parent {
-  cursor: pointer;
-  border: 0;
-  padding: var(--padding-base) var(--padding-xl);
-  background-color: var(--purple);
-  border-radius: var(--br-5xs);
-  overflow: hidden;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: var(--gap-3xs)
-  }
+  @apply cursor-pointer pt-[var(--padding-base)] pr-[var(--padding-xl)] pb-[var(--padding-base)] pl-[var(--padding-xl)] bg-[color:var(--purple)] rounded-[var(--br-5xs)] overflow-hidden flex flex-row items-center justify-center gap-[var(--gap-3xs)] border-0;
+}
 .frame-parent209 {
-  position: absolute;
-  top: 2.38vw;
-  left: calc(50% - 19.31vw);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  gap: var(--gap-29xl)
-  }
+  @apply absolute left-[calc(50%_-_19.31vw)] flex flex-col items-center justify-start gap-[var(--gap-29xl)] top-[2.38vw];
+}
 .referpopup {
-  border-radius: var(--br-base);
-  background-color: var(--white);
-  width: 44.31vw;
-  height: 29.37vw;
-  overflow: hidden;
-  max-width: 100%;
-  max-height: 100%;
-  text-align: left;
-  font-size: 1.56vw;
-  color: var(--black);
+  @apply rounded-[var(--br-base)] bg-[color:var(--white)] w-[44.31vw] h-[29.37vw] overflow-hidden max-w-full max-h-full text-left text-[1.56vw] text-[color:var(--black)] absolute left-[30vw] top-[20vw];
   font-family: var(--font-avenir-lt-std);
-  position: absolute;
-  top: 20vw;
-  left: 30vw;
-  }
+}
