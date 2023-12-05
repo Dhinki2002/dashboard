@@ -1,124 +1,65 @@
-.just-a-few-login, .your-profile-is-login {
-    position: relative
-    }
+/*
+  Based on TailwindCSS recommendations,
+  consider using classes instead of the `@apply` directive
+  @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
+*/
+.just-a-few-login,
+.your-profile-is-login {
+  @apply relative;
+}
 .just-a-few-login {
-    font-size: var(--font-size-5xl-login)
-    }
+  @apply text-[length:var(--font-size-5xl-login)];
+}
 .your-profile-is-almost-ready-parent-login {
-    position: absolute;
-    top: 11.43vw;
-    left: 4.8vw;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: var(--gap-9xs-login);
-    color: var(--color-gray-400-login)
-    }
-.college-name-parent-login, .frame-child25-login, .your-profile-is-almost-ready-parent-login {
-    display: flex;
-    justify-content: flex-start
-    }
+  @apply absolute flex-col items-start gap-[var(--gap-9xs-login)] text-[color:var(--color-gray-400-login)] left-[4.8vw] top-[11.43vw];
+}
+.college-name-parent-login,
+.frame-child25-login,
+.your-profile-is-almost-ready-parent-login {
+  @apply flex justify-start;
+}
 .frame-child25-login {
-    border: 0.06vw solid var(--color-gainsboro-300-login);
-    font-family: var(--h1-heavy-login);
-    font-size: var(--body-heavy-size-login);
-    background-color: transparent;
-    border-radius: var(--br-xs-login);
-    box-sizing: border-box;
-    width: 31.2vw;
-    flex-direction: row;
-    align-items: center;
-    padding: var(--padding-base-login) var(--padding-5xl-login)
-    }
+  @apply border-[color:var(--color-gainsboro-300-login)] text-[length:var(--body-heavy-size-login)] bg-transparent rounded-[var(--br-xs-login)] box-border w-[31.2vw] flex-row items-center pt-[var(--padding-base-login)] pr-[var(--padding-5xl-login)] pb-[var(--padding-base-login)] pl-[var(--padding-5xl-login)] border-[0.06vw] border-solid;
+  font-family: var(--h1-heavy-login);
+}
 .college-name-parent-login {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: var(--gap-5xs-login)
-    }
+  @apply flex-col items-start gap-[var(--gap-5xs-login)];
+}
 .frame-child26-login {
-    border: 0.06vw solid var(--color-gainsboro-300-login);
-    font-family: var(--h1-heavy-login);
-    font-size: var(--body-heavy-size-login);
-    background-color: transparent;
-    border-radius: var(--br-xs-login);
-    box-sizing: border-box;
-    width: 31.2vw;
-    height: 3.2vw;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: var(--padding-base-login) var(--padding-5xl-login)
-    }
+  @apply border-[color:var(--color-gainsboro-300-login)] text-[length:var(--body-heavy-size-login)] bg-transparent rounded-[var(--br-xs-login)] box-border w-[31.2vw] h-[3.2vw] flex flex-row items-center justify-between pt-[var(--padding-base-login)] pr-[var(--padding-5xl-login)] pb-[var(--padding-base-login)] pl-[var(--padding-5xl-login)] border-[0.06vw] border-solid;
+  font-family: var(--h1-heavy-login);
+}
 .frame-wrapper31-login {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start
-    }
-.frame-parent46-login, .next-login {
-    font-size: var(--body-heavy-size-login)
-    }
-.frame-parent46-login {
-    position: absolute;
-    top: 18.91vw;
-    left: 4.8vw;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: var(--gap-7xl-login)
-    }
+  @apply flex flex-col items-start justify-start;
+}
+.frame-parent46-login,
 .next-login {
-    position: relative;
-    font-family: var(--h1-heavy-login);
-    color: var(--color-white-login);
-    text-align: left
-    }
-.frame-wrapper32-login, .next-wrapper-login {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    justify-content: center
-    }
+  @apply text-[length:var(--body-heavy-size-login)];
+}
+.frame-parent46-login {
+  @apply absolute flex flex-col items-start justify-start gap-[var(--gap-7xl-login)] left-[4.8vw] top-[18.91vw];
+}
+.next-login {
+  @apply relative text-[color:var(--color-white-login)] text-left;
+  font-family: var(--h1-heavy-login);
+}
+.frame-wrapper32-login,
+.next-wrapper-login {
+  @apply flex flex-row items-end justify-center;
+}
 .frame-wrapper32-login {
-    cursor: pointer;
-    border: 0;
-    padding: var(--padding-xl-login) var(--padding-5xl-login);
-    background-color: var(--purple-login);
-    border-radius: var(--br-xs-login);
-    width: 31.2vw;
-    align-items: center;
-    justify-content: space-between;
-    box-sizing: border-box
-    }
+  @apply cursor-pointer pt-[var(--padding-xl-login)] pr-[var(--padding-5xl-login)] pb-[var(--padding-xl-login)] pl-[var(--padding-5xl-login)] bg-[color:var(--purple-login)] rounded-[var(--br-xs-login)] w-[31.2vw] items-center justify-between box-border border-0;
+}
 .sign-in8-login {
-    color: var(--purple-login)
-    }
+  @apply text-[color:var(--purple-login)];
+}
 .already-have-an-container8-login {
-    cursor: pointer;
-    text-decoration: none;
-    position: relative;
-    color: inherit
-    }
+  @apply cursor-pointer no-underline relative text-inherit;
+}
 .frame-parent47-login {
-    position: absolute;
-    top: 43.26vw;
-    left: 4.8vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    gap: var(--gap-33xl-login);
-    font-size: var(--font-size-base-login)
-    }
+  @apply absolute flex flex-col items-center justify-start gap-[var(--gap-33xl-login)] text-[length:var(--font-size-base-login)] left-[4.8vw] top-[43.26vw];
+}
 .sign-up-as-individual2-login {
-    position: relative;
-    background-color: var(--color-white-login);
-    width: 100%;
-    height: 56.12vw;
-    overflow: hidden;
-    text-align: left;
-    font-size: var(--h1-heavy-size-login);
-    color: var(--black-login);
-    font-family: var(--h1-heavy-login)
-    }
+  @apply relative bg-[color:var(--color-white-login)] w-full h-[56.12vw] overflow-hidden text-left text-[length:var(--h1-heavy-size-login)] text-[color:var(--black-login)];
+  font-family: var(--h1-heavy-login);
+}

@@ -1,116 +1,52 @@
+/*
+  Based on TailwindCSS recommendations,
+  consider using classes instead of the `@apply` directive
+  @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
+*/
 .password {
-    position: relative
-    }
-.billing-wrapper {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start
-    }
-.billing-wrapper {
-    flex-direction: column
-    }
-.change-your-password {
-    position: absolute;
-    top: 2.12vw;
-    left: 19.18vw;
-    font-size: var(--font-size-5xl);
-    letter-spacing: -0.02em;
-    line-height: 2.78vw;
-    font-weight: bold
-    }
-.frame-child, .password-container {
-    width: 36.11vw;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start
-    }
-.frame-child {
-    border: 0.07vw solid var(--color-gainsboro-400);
-    background-color: transparent;
-    border-radius: var(--br-xs);
-    box-sizing: border-box;
-    height: 3.97vw;
-    justify-content: space-between;
-    padding: var(--padding-base) var(--padding-5xl)
-    }
-.frame-div {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: var(--gap-5xs)
-    }
-.change-password, .frame-item {
-    font-size: var(--font-size-xl);
-    font-family: var(--font-avenir-lt-std)
-    }
-.frame-item {
-    border: 0.07vw solid var(--color-gainsboro-400);
-    background-color: transparent;
-    border-radius: var(--br-xs);
-    box-sizing: border-box;
-    width: 36.11vw;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: var(--padding-base) var(--padding-5xl)
-    }
-.change-password {
-    position: relative;
-    color: var(--white);
-    text-align: left;
-    font-weight: bold
-    }
-.change-password-wrapper {
-    cursor: pointer;
-    border: 0;
-    padding: var(--padding-base) var(--padding-xl);
-    background-color: var(--purple);
-    border-radius: var(--br-5xs);
-    overflow: hidden;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center
-    }
-.frame-container {
-    position: absolute;
-    top: 7.01vw;
-    left: 19.18vw;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: var(--gap-9xl)
-    }
-.rectangle-parent {
-    position: absolute;
-    top: 14.29vw;
-    left: 21.03vw;
-    border-radius: var(--br-base);
-    background-color: var(--white);
-    width: 76.59vw;
-    height: 48.54vw;
-    overflow: hidden
-    }
-.settings {
-    position: absolute;
-    top: 10.45vw;
-    left: 21.03vw;
-    font-size: var(--font-size-9xl);
-    letter-spacing: -0.02em;
-    line-height: 2.78vw
-    }
-.settings1 {
-    position: relative;
-    background-color: var(--color-ghostwhite-100);
-    width: 100%;
-    height: 64.95vw;
-    overflow: hidden;
-    text-align: left;
-    font-size: var(--font-size-xl);
-    color: var(--black);
-    font-family: var(--font-avenir-lt-std)
-    }
+    @apply relative;
+  }
+  .billing-wrapper {
+    @apply flex items-start justify-start flex-col;
+  }
+  .change-your-password {
+    @apply absolute text-[length:var(--font-size-5xl)] tracking-[-0.02em] leading-[2.78vw] font-[bold] left-[19.18vw] top-[2.12vw];
+  }
+  .frame-child,
+  .password-container {
+    @apply w-[36.11vw] flex flex-row items-center justify-start;
+  }
+  .frame-child {
+    @apply border-[color:var(--color-gainsboro-400)] bg-transparent rounded-[var(--br-xs)] box-border h-[3.97vw] justify-between pt-[var(--padding-base)] pr-[var(--padding-5xl)] pb-[var(--padding-base)] pl-[var(--padding-5xl)] border-[0.07vw] border-solid;
+  }
+  .frame-div {
+    @apply flex flex-col items-start justify-start gap-[var(--gap-5xs)];
+  }
+  .change-password,
+  .frame-item {
+    @apply text-[length:var(--font-size-xl)];
+    font-family: var(--font-avenir-lt-std);
+  }
+  .frame-item {
+    @apply border-[color:var(--color-gainsboro-400)] bg-transparent rounded-[var(--br-xs)] box-border w-[36.11vw] flex flex-row items-center justify-between pt-[var(--padding-base)] pr-[var(--padding-5xl)] pb-[var(--padding-base)] pl-[var(--padding-5xl)] border-[0.07vw] border-solid;
+  }
+  .change-password {
+    @apply relative text-[color:var(--white)] text-left font-[bold];
+  }
+  .change-password-wrapper {
+    @apply cursor-pointer pt-[var(--padding-base)] pr-[var(--padding-xl)] pb-[var(--padding-base)] pl-[var(--padding-xl)] bg-[color:var(--purple)] rounded-[var(--br-5xs)] overflow-hidden flex flex-row items-center justify-center border-0;
+  }
+  .frame-container {
+    @apply absolute flex flex-col items-start justify-start gap-[var(--gap-9xl)] left-[19.18vw] top-[7.01vw];
+  }
+  .rectangle-parent {
+    @apply absolute rounded-[var(--br-base)] bg-[color:var(--white)] w-[76.59vw] h-[48.54vw] overflow-hidden left-[21.03vw] top-[14.29vw];
+  }
+  .settings {
+    @apply absolute text-[length:var(--font-size-9xl)] tracking-[-0.02em] leading-[2.78vw] left-[21.03vw] top-[10.45vw];
+  }
+  .settings1 {
+    @apply relative bg-[color:var(--color-ghostwhite-100)] w-full h-[64.95vw] overflow-hidden text-left text-[length:var(--font-size-xl)] text-[color:var(--black)];
+    font-family: var(--font-avenir-lt-std);
+  }
+  

@@ -1,142 +1,71 @@
+/*
+  Based on TailwindCSS recommendations,
+  consider using classes instead of the `@apply` directive
+  @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
+*/
 .upload-list-of-login {
-    position: relative;
-    font-size: var(--body-heavy-size-login);
-    text-decoration: underline;
+    @apply relative text-[length:var(--body-heavy-size-login)] underline text-[color:var(--black-login)] text-left;
     font-family: var(--h1-heavy-login);
-    color: var(--black-login);
-    text-align: left
-    }
-.biupload-icon-login {
-    position: relative;
-    width: 0.97vw;
-    height: 0.97vw;
-    overflow: hidden;
-    flex-shrink: 0
-    }
-.upload-list-of-students-parent-login {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: var(--gap-xs-login)
-    }
-.csv-xlsx-json-login {
-    position: relative;
-    font-size: 0.81vw;
+  }
+  .biupload-icon-login {
+    @apply relative w-[0.97vw] h-[0.97vw] overflow-hidden shrink-0;
+  }
+  .upload-list-of-students-parent-login {
+    @apply flex flex-row items-start justify-start gap-[var(--gap-xs-login)];
+  }
+  .csv-xlsx-json-login {
+    @apply relative text-[0.81vw] text-[color:var(--icon-grey-login)] text-left;
     font-family: var(--h1-heavy-login);
-    color: var(--icon-grey-login);
-    text-align: left
-    }
-.csv-xlsx-json-file-are-allow-wrapper-login {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start
-    }
-.frame-parent10-login {
-    flex-direction: column;
-    gap: var(--gap-5xs-login)
-    }
-.frame-parent10-login, .frame-wrapper4-login, .sign-up-as-institute3-inner-login {
-    display: flex;
-    align-items: center;
-    justify-content: center
-    }
-.frame-wrapper4-login {
-    cursor: pointer;
-    border: 0.06vw dashed rgba(33-login, 33-login, 33-login, 0.8);
-    padding: var(--padding-base-login) var(--padding-5xl-login);
-    background-color: transparent;
-    border-radius: var(--br-xs-login);
-    box-sizing: border-box;
-    width: 31.2vw;
-    height: 6.62vw;
-    flex-direction: row
-    }
-.sign-up-as-institute3-inner-login {
-    position: absolute;
-    top: 18.91vw;
-    left: 4.8vw;
-    flex-direction: column
-    }
-.skip-for-now-login {
-    position: relative;
-    font-size: var(--body-heavy-size-login);
+  }
+  .csv-xlsx-json-file-are-allow-wrapper-login {
+    @apply flex flex-col items-center justify-start;
+  }
+  .frame-parent10-login {
+    @apply flex-col gap-[var(--gap-5xs-login)];
+  }
+  .frame-parent10-login,
+  .frame-wrapper4-login,
+  .sign-up-as-institute3-inner-login {
+    @apply flex items-center justify-center;
+  }
+  .frame-wrapper4-login {
+    @apply cursor-pointer border-[rgba(33-login,33-login,33-login,0.8)] pt-[var(--padding-base-login)] pr-[var(--padding-5xl-login)] pb-[var(--padding-base-login)] pl-[var(--padding-5xl-login)] bg-transparent rounded-[var(--br-xs-login)] box-border w-[31.2vw] h-[6.62vw] flex-row border-[0.06vw] border-dashed;
+  }
+  .sign-up-as-institute3-inner-login {
+    @apply absolute flex-col left-[4.8vw] top-[18.91vw];
+  }
+  .skip-for-now-login {
+    @apply relative text-[length:var(--body-heavy-size-login)] text-[color:var(--purple-login)] text-left;
     font-family: var(--h1-heavy-login);
-    color: var(--purple-login);
-    text-align: left
-    }
-.frame-wrapper6-login, .skip-for-now-wrapper-login {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    justify-content: center
-    }
-.frame-wrapper6-login {
-    cursor: pointer;
-    border: 0.06vw solid var(--purple-login);
-    padding: var(--padding-xl-login) var(--padding-5xl-login);
-    background-color: transparent;
-    border-radius: var(--br-xs-login);
-    box-sizing: border-box;
-    width: 31.2vw;
-    align-items: center;
-    justify-content: space-between
-    }
-.continue-login {
-    position: relative;
-    font-size: var(--body-heavy-size-login);
+  }
+  .frame-wrapper6-login,
+  .skip-for-now-wrapper-login {
+    @apply flex flex-row items-end justify-center;
+  }
+  .frame-wrapper6-login {
+    @apply cursor-pointer border-[color:var(--purple-login)] pt-[var(--padding-xl-login)] pr-[var(--padding-5xl-login)] pb-[var(--padding-xl-login)] pl-[var(--padding-5xl-login)] bg-transparent rounded-[var(--br-xs-login)] box-border w-[31.2vw] items-center justify-between border-[0.06vw] border-solid;
+  }
+  .continue-login {
+    @apply relative text-[length:var(--body-heavy-size-login)] text-[color:var(--color-white-login)] text-left;
     font-family: var(--h1-heavy-login);
-    color: var(--color-white-login);
-    text-align: left
-    }
-.frame-wrapper7-login {
-    cursor: pointer;
-    border: 0;
-    padding: var(--padding-xl-login) var(--padding-5xl-login);
-    background-color: var(--purple-login);
-    border-radius: var(--br-xs-login);
-    width: 31.2vw;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    box-sizing: border-box
-    }
-.frame-parent12-login {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    gap: var(--gap-base-login)
-    }
-.sign-in1-login {
-    color: var(--purple-login)
-    }
-.already-have-an-container1-login {
-    cursor: pointer;
-    text-decoration: none;
-    position: relative;
-    color: inherit
-    }
-.frame-parent11-login {
-    position: absolute;
-    top: 38.69vw;
-    left: 4.8vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    gap: var(--gap-33xl-login)
-    }
-.sign-up-as-institute3-login {
-    position: relative;
-    background-color: var(--color-white-login);
-    width: 100%;
-    height: 56.12vw;
-    overflow: hidden;
-    text-align: left;
-    font-size: var(--font-size-base-login);
-    color: var(--black-login);
-    font-family: var(--h1-heavy-login)
-    }
+  }
+  .frame-wrapper7-login {
+    @apply cursor-pointer pt-[var(--padding-xl-login)] pr-[var(--padding-5xl-login)] pb-[var(--padding-xl-login)] pl-[var(--padding-5xl-login)] bg-[color:var(--purple-login)] rounded-[var(--br-xs-login)] w-[31.2vw] flex flex-row items-center justify-between box-border border-0;
+  }
+  .frame-parent12-login {
+    @apply flex flex-col items-center justify-start gap-[var(--gap-base-login)];
+  }
+  .sign-in1-login {
+    @apply text-[color:var(--purple-login)];
+  }
+  .already-have-an-container1-login {
+    @apply cursor-pointer no-underline relative text-inherit;
+  }
+  .frame-parent11-login {
+    @apply absolute flex flex-col items-center justify-start gap-[var(--gap-33xl-login)] left-[4.8vw] top-[38.69vw];
+  }
+  .sign-up-as-institute3-login {
+    @apply relative bg-[color:var(--color-white-login)] w-full h-[56.12vw] overflow-hidden text-left text-[length:var(--font-size-base-login)] text-[color:var(--black-login)];
+    font-family: var(--h1-heavy-login);
+  }
+  

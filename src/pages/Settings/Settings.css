@@ -1,231 +1,114 @@
+/*
+  Based on TailwindCSS recommendations,
+  consider using classes instead of the `@apply` directive
+  @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
+*/
 .my-profile7 {
-    position: absolute;
-    top: 2.12vw;
-    left: 19.18vw;
-    letter-spacing: -0.02em;
-    line-height: 2.78vw;
-    font-weight: bold
-    }
-.email-address-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start
-    }
-.change-password3 {
-    text-decoration: underline;
-    position: relative;
-    font-size: var(--font-size-sm);
-    letter-spacing: -0.02em;
-    line-height: 2.78vw;
-    color: var(--icon-grey)
-    }
-.password-parent1 {
-    width: 20.04vw;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between
-    }
-.div147 {
-    position: absolute;
-    top: -0.26vw;
-    left: 0;
-    letter-spacing: -0.02em;
-    line-height: 2.78vw
-    }
-.carbonview-off-icon2 {
-    position: absolute;
-    top: 0.73vw;
-    left: 18.19vw;
-    width: 1.32vw;
-    height: 1.32vw;
-    overflow: hidden
-    }
-.parent21 {
-    position: relative;
-    width: 20.04vw;
-    height: 2.78vw;
-    margin-top: -0.26vw;
-    font-size: var(--font-size-17xl);
-    color: var(--icon-grey)
-    }
-.frame-parent198 {
-    width: 20.04vw;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start
-    }
-.college-name, .indian-institute-of {
-    position: relative;
-    letter-spacing: -0.02em;
-    line-height: 2.78vw
-    }
-.college-name {
-    font-weight: bold
-    }
-.indian-institute-of {
-    color: var(--icon-grey);
-    border-radius: 0.8vw;
-    width: 12vw;
-    font-weight: light;
-    
-    }
-.frame-parent197 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: var(--gap-xl)
-    }
-.machine-learning5 {
-    position: relative;
-    display: inline-block;
-    width: 7.21vw;
-    height: 0.99vw;
-    flex-shrink: 0;
-    font-weight: light
-    }
-.machine-learning-wrapper1 {
-    border-radius: var(--br-5xl);
-    border: 0.07vw solid var(--purple);
-    overflow: hidden;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    justify-content: center;
-    padding: var(--padding-6xs) var(--padding-2xs)
-    }
-.frame-parent200, .skills-container {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start
-    }
-.frame-parent200 {
-    width: 20.24vw;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: var(--gap-xs);
-    font-size: var(--font-size-sm);
-    color: var(--purple)
-    }
-.skills-container {
-    flex-direction: column;
-    gap: var(--gap-9xs)
-    }
-.delete-account2, .this-will-permanently2 {
-    position: relative;
-    font-size: var(--font-size-base)
-    }
-.this-will-permanently2 {
-    letter-spacing: -0.02em;
-    line-height: 2.78vw;
-    color: var(--icon-grey);
-    margin-top: -0.26vw
-    }
-.delete-account2 {
+    @apply absolute tracking-[-0.02em] leading-[2.78vw] font-[bold] left-[19.18vw] top-[2.12vw];
+  }
+  .email-address-container {
+    @apply flex flex-col items-start justify-start;
+  }
+  .change-password3 {
+    @apply underline relative text-[length:var(--font-size-sm)] tracking-[-0.02em] leading-[2.78vw] text-[color:var(--icon-grey)];
+  }
+  .password-parent1 {
+    @apply w-[20.04vw] flex flex-row items-start justify-between;
+  }
+  .div147 {
+    @apply absolute top-[-0.26vw] tracking-[-0.02em] leading-[2.78vw] left-0;
+  }
+  .carbonview-off-icon2 {
+    @apply absolute w-[1.32vw] h-[1.32vw] overflow-hidden left-[18.19vw] top-[0.73vw];
+  }
+  .parent21 {
+    @apply relative w-[20.04vw] h-[2.78vw] mt-[-0.26vw] text-[length:var(--font-size-17xl)] text-[color:var(--icon-grey)];
+  }
+  .frame-parent198 {
+    @apply w-[20.04vw] flex flex-col items-start justify-start;
+  }
+  .college-name,
+  .indian-institute-of {
+    @apply relative tracking-[-0.02em] leading-[2.78vw];
+  }
+  .college-name {
+    @apply font-[bold];
+  }
+  .indian-institute-of {
+    @apply text-[color:var(--icon-grey)] w-[12vw] font-[light] rounded-[0.8vw];
+  }
+  .frame-parent197 {
+    @apply flex flex-col items-start justify-start gap-[var(--gap-xl)];
+  }
+  .machine-learning5 {
+    @apply relative inline-block w-[7.21vw] h-[0.99vw] shrink-0 font-[light];
+  }
+  .machine-learning-wrapper1 {
+    @apply rounded-[var(--br-5xl)] border-[color:var(--purple)] overflow-hidden flex flex-row items-end justify-center pt-[var(--padding-6xs)] pr-[var(--padding-2xs)] pb-[var(--padding-6xs)] pl-[var(--padding-2xs)] border-[0.07vw] border-solid;
+  }
+  .frame-parent200,
+  .skills-container {
+    @apply flex items-start justify-start;
+  }
+  .frame-parent200 {
+    @apply w-[20.24vw] flex-row flex-wrap gap-[var(--gap-xs)] text-[length:var(--font-size-sm)] text-[color:var(--purple)];
+  }
+  .skills-container {
+    @apply flex-col gap-[var(--gap-9xs)];
+  }
+  .delete-account2,
+  .this-will-permanently2 {
+    @apply relative text-[length:var(--font-size-base)];
+  }
+  .this-will-permanently2 {
+    @apply tracking-[-0.02em] leading-[2.78vw] text-[color:var(--icon-grey)] mt-[-0.26vw];
+  }
+  .delete-account2 {
+    @apply text-[color:var(--danger)] text-left;
     font-family: var(--font-avenir-lt-std);
-    color: var(--danger);
-    text-align: left
-    }
-.delete-account-frame {
-    cursor: pointer;
-    border: 0;
-    padding: var(--padding-4xs) var(--padding-xs);
-    background-color: var(--color-crimson-200);
-    border-radius: var(--br-5xs);
-    flex-direction: row
-    }
-.delete-account-frame, .frame-parent196, .frame-parent201 {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start
-    }
-.frame-parent201 {
-    width: 20.24vw;
-    flex-direction: column;
-    gap: var(--gap-5xs)
-    }
-.frame-parent196 {
-    position: absolute;
-    top: 7.01vw;
-    left: 19.71vw;
-    flex-direction: row;
-    gap: var(--gap-118xl);
-    font-size: var(--font-size-lg)
-    }
-.tableredit-icon2 {
-    position: relative;
-    width: 1.06vw;
-    height: 1.06vw;
-    overflow: hidden;
-    flex-shrink: 0
-    }
-.edit2 {
-    position: relative;
-    font-size: var(--font-size-base);
-    letter-spacing: -0.02em;
-    line-height: 2.78vw;
+  }
+  .delete-account-frame {
+    @apply cursor-pointer pt-[var(--padding-4xs)] pr-[var(--padding-xs)] pb-[var(--padding-4xs)] pl-[var(--padding-xs)] bg-[color:var(--color-crimson-200)] rounded-[var(--br-5xs)] flex-row border-0;
+  }
+  .delete-account-frame,
+  .frame-parent196,
+  .frame-parent201 {
+    @apply flex items-start justify-start;
+  }
+  .frame-parent201 {
+    @apply w-[20.24vw] flex-col gap-[var(--gap-5xs)];
+  }
+  .frame-parent196 {
+    @apply absolute flex-row gap-[var(--gap-118xl)] text-[length:var(--font-size-lg)] left-[19.71vw] top-[7.01vw];
+  }
+  .tableredit-icon2 {
+    @apply relative w-[1.06vw] h-[1.06vw] overflow-hidden shrink-0;
+  }
+  .edit2 {
+    @apply relative text-[length:var(--font-size-base)] tracking-[-0.02em] leading-[2.78vw] text-[color:var(--icon-grey)] text-left;
     font-family: var(--font-avenir-lt-std);
-    color: var(--icon-grey);
-    text-align: left
-    }
-.tableredit-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    gap: var(--gap-5xs)
-    }
-.frame-wrapper80, .rectangle-parent4 {
-    position: absolute;
-    background-color: var(--white)
-    }
-.frame-wrapper80 {
-    cursor: pointer;
-    border: 0;
-    padding: var(--padding-9xs) var(--padding-base);
-    top: 1.85vw;
-    left: 68.85vw;
-    border-radius: var(--br-xs);
-    box-shadow: -0.13vw -0.13vw 0.13vw rgba(0, 0, 0, 0.08), 0.13vw 0.13vw 0.13vw rgba(0, 0, 0, 0.08);
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start
-    }
-.rectangle-parent4 {
-    top: 14.29vw;
-    left: 21.03vw;
-    border-radius: var(--br-base);
-    width: 76.59vw;
-    height: 48.54vw;
-    overflow: hidden
-    }
-.settings6 {
-    position: absolute;
-    top: 10.45vw;
-    left: 21.03vw;
-    font-size: var(--font-size-9xl);
-    letter-spacing: -0.02em;
-    line-height: 2.78vw;
-    font-weight: bold
-    }
-.settings5 {
-    position: relative;
-    background-color: var(--color-ghostwhite-100);
-    width: 100%;
-    height: 64.95vw;
-    overflow: hidden;
-    text-align: left;
-    font-size: var(--font-size-5xl);
-    color: var(--black);
-    font-family: var(--font-avenir-lt-std)
-    }
-.close-button{
-   
-    margin-bottom:0.15vw;
-    margin-left: 0.2vw;
-   
-}
+  }
+  .tableredit-container {
+    @apply flex flex-row items-center justify-start gap-[var(--gap-5xs)];
+  }
+  .frame-wrapper80,
+  .rectangle-parent4 {
+    @apply absolute bg-[color:var(--white)];
+  }
+  .frame-wrapper80 {
+    @apply cursor-pointer pt-[var(--padding-9xs)] pr-[var(--padding-base)] pb-[var(--padding-9xs)] pl-[var(--padding-base)] rounded-[var(--br-xs)] shadow-[-0.13vw_-0.13vw_0.13vw_rgba(0,0,0,0.08),0.13vw_0.13vw_0.13vw_rgba(0,0,0,0.08)] flex flex-row items-start justify-start border-0 left-[68.85vw] top-[1.85vw];
+  }
+  .rectangle-parent4 {
+    @apply rounded-[var(--br-base)] w-[76.59vw] h-[48.54vw] overflow-hidden left-[21.03vw] top-[14.29vw];
+  }
+  .settings6 {
+    @apply absolute text-[length:var(--font-size-9xl)] tracking-[-0.02em] leading-[2.78vw] font-[bold] left-[21.03vw] top-[10.45vw];
+  }
+  .settings5 {
+    @apply relative bg-[color:var(--color-ghostwhite-100)] w-full h-[64.95vw] overflow-hidden text-left text-[length:var(--font-size-5xl)] text-[color:var(--black)];
+    font-family: var(--font-avenir-lt-std);
+  }
+  .close-button {
+    @apply ml-[0.2vw] mb-[0.15vw];
+  }
+  

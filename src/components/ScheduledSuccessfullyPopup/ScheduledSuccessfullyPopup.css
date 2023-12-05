@@ -1,80 +1,80 @@
 .vector-icon35 {
-    width: 5.95vw;
-    height: 5.95vw;
-    position: relative
-    }
+  width: 5.95vw;
+  height: 5.95vw;
+  position: relative
+  }
 .interview-scheduled-succesfull {
-    position: relative;
-    font-weight: bold
-    }
+  position: relative;
+  font-weight: bold
+  }
 .interview-scheduled-succesfull-wrapper {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start
-    }
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start
+  }
 .sit-back-and {
-    position: relative;
-    font-size: var(--font-size-5xl)
-    }
+  position: relative;
+  font-size: var(--font-size-5xl)
+  }
 .frame-parent233, .vector-parent6 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: var(--gap-9xs)
-    }
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-9xs)
+  }
 .vector-parent6 {
-    position: absolute;
-    gap: var(--gap-5xl)
-    }
+  position: absolute;
+  gap: var(--gap-5xl)
+  }
 .scheduledsuccessfullypopup-inner {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 31.68vw;
-    height: 12.24vw;
-    font-size: 1.56vw;
-    transform: translate(-50%, -50%)
-    }
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 31.68vw;
+  height: 12.24vw;
+  font-size: 1.56vw;
+  transform: translate(-50%, -50%)
+  }
 .vector-icon36 {
-    position: absolute;
-    height: 32.69%;
-    width: 32.7%;
-    top: 33.65%;
-    right: 33.65%;
-    bottom: 33.66%;
-    left: 33.65%;
-    max-width: 100%;
-    overflow: hidden;
-    max-height: 100%
-    }
+  position: absolute;
+  height: 32.69%;
+  width: 32.7%;
+  top: 33.65%;
+  right: 33.65%;
+  bottom: 33.66%;
+  left: 33.65%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%
+  }
 .basilcross-outline13 {
-    cursor: pointer;
-    border: 0;
-    padding: 0;
-    background-color: transparent;
-    position: absolute;
-    top: 1.59vw;
-    left: 30.82vw;
-    width: 2.98vw;
-    height: 2.98vw;
-    overflow: hidden
-    }
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 1.59vw;
+  left: 30.82vw;
+  width: 2.98vw;
+  height: 2.98vw;
+  overflow: hidden
+  }
 .scheduledsuccessfullypopup {
-    border-radius: var(--br-base);
-    background-color: var(--white);
-    width: 35.38vw;
-    height: 18.98vw;
-    overflow: hidden;
-    max-width: 100%;
-    max-height: 100%;
-    text-align: left;
-    font-size: 1.56vw;
-    color: var(--color-gray-300);
-    font-family: var(--font-avenir-lt-std);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%)
-    }
+  border-radius: var(--br-base);
+  background-color: var(--white);
+  width: 35.38vw;
+  height: 18.98vw;
+  overflow: hidden;
+  max-width: 100%;
+  max-height: 100%;
+  text-align: left;
+  font-size: 1.56vw;
+  color: var(--color-gray-300);
+  font-family: var(--font-avenir-lt-std);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+  }

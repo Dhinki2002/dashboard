@@ -1,158 +1,91 @@
+/*
+  Based on TailwindCSS recommendations,
+  consider using classes instead of the `@apply` directive
+  @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
+*/
 .flat-color-iconsgoogle-login {
-    position: relative;
-    width: 1.6vw;
-    height: 1.6vw;
-    overflow: hidden;
-    flex-shrink: 0
-    }
-.login-with-google-login {
-    position: relative;
-    font-size: var(--body-heavy-size-login);
+    @apply relative w-[1.6vw] h-[1.6vw] overflow-hidden shrink-0;
+  }
+  .login-with-google-login {
+    @apply relative text-[length:var(--body-heavy-size-login)] text-[color:var(--black-login)] text-left;
     font-family: var(--h1-heavy-login);
-    color: var(--black-login);
-    text-align: left
-    }
-.flat-color-iconsgoogle-parent-login {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    justify-content: center;
-    gap: var(--gap-mini-login)
-    }
-.frame-wrapper1-login, .frame-wrapper2-login {
-    cursor: pointer;
-    border: 0.06vw solid var(--color-gainsboro-300-login);
-    padding: var(--padding-base-login) var(--padding-5xl-login);
-    background-color: transparent;
-    border-radius: var(--br-xs-login);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center
-    }
-.frame-wrapper2-login {
-    box-sizing: border-box;
-    width: 14.8vw
-    }
-.frame-parent5-login {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: var(--gap-9xl-login)
-    }
-.frame-item-login {
-    border-top: 0.06vw solid var(--color-gainsboro-400-login);
-    box-sizing: border-box;
-    width: 14.86vw;
-    height: 0.06vw
-    }
-.frame-item-login, .or-login {
-    position: relative
-    }
-.line-parent-login {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    gap: var(--gap-7xs-login)
-    }
-.frame-input-login {
-    border: 0.06vw solid var(--color-silver-login);
-    background-color: transparent;
-    border-radius: var(--br-xs-login);
-    box-sizing: border-box;
-    width: 3.54vw;
-    height: 3.89vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center
-    }
-.enter-the-code-parent-login, .frame-parent8-login {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    gap: var(--gap-base-login)
-    }
-.enter-the-code-parent-login {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: var(--gap-xs-login)
-    }
-.login-login {
-    position: relative;
-    font-size: var(--body-heavy-size-login);
+  }
+  .flat-color-iconsgoogle-parent-login {
+    @apply flex flex-row items-end justify-center gap-[var(--gap-mini-login)];
+  }
+  .frame-wrapper1-login,
+  .frame-wrapper2-login {
+    @apply cursor-pointer border-[color:var(--color-gainsboro-300-login)] pt-[var(--padding-base-login)] pr-[var(--padding-5xl-login)] pb-[var(--padding-base-login)] pl-[var(--padding-5xl-login)] bg-transparent rounded-[var(--br-xs-login)] flex flex-row items-center justify-center border-[0.06vw] border-solid;
+  }
+  .frame-wrapper2-login {
+    @apply box-border w-[14.8vw];
+  }
+  .frame-parent5-login {
+    @apply flex flex-row items-start justify-start gap-[var(--gap-9xl-login)];
+  }
+  .frame-item-login {
+    @apply border-t-[color:var(--color-gainsboro-400-login)] box-border w-[14.86vw] h-[0.06vw] border-t-[0.06vw] border-solid;
+  }
+  .frame-item-login,
+  .or-login {
+    @apply relative;
+  }
+  .line-parent-login {
+    @apply flex flex-row items-center justify-start gap-[var(--gap-7xs-login)];
+  }
+  .frame-input-login {
+    @apply border-[color:var(--color-silver-login)] bg-transparent rounded-[var(--br-xs-login)] box-border w-[3.54vw] h-[3.89vw] flex items-center justify-center text-center border-[0.06vw] border-solid;
+  }
+  .enter-the-code-parent-login,
+  .frame-parent8-login {
+    @apply flex flex-row items-center justify-start gap-[var(--gap-base-login)];
+  }
+  .enter-the-code-parent-login {
+    @apply flex-col items-start gap-[var(--gap-xs-login)];
+  }
+  .login-login {
+    @apply relative text-[length:var(--body-heavy-size-login)] text-[color:var(--color-white-login)] text-left;
     font-family: var(--h1-heavy-login);
-    color: var(--color-white-login);
-    text-align: left
-    }
-.frame-wrapper3-login, .login-wrapper-login {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    justify-content: center
-    }
-.frame-wrapper3-login {
-    cursor: pointer;
-    border: 0;
-    padding: var(--padding-xl-login) var(--padding-5xl-login);
-    background-color: var(--purple-login);
-    border-radius: var(--br-xs-login);
-    width: 31.2vw;
-    align-items: center;
-    justify-content: space-between;
-    box-sizing: border-box
-    }
-.sign-up-for-login {
-    color: var(--purple-login)
-    }
-.new-to-fulcrum-container-login {
-    cursor: pointer;
-    text-decoration: none;
-    position: relative;
-    color: inherit
-    }
-.frame-parent9-login {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    gap: var(--gap-37xl-login);
-    font-size: var(--font-size-base-login)
-    }
-.cantileverlogoblack-2-group-login, .frame-parent2-login, .frame-parent3-login, .frame-parent7-login {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start
-    }
-.frame-parent7-login {
-    gap: 10.28vw;
-    font-size: var(--body-heavy-size-login);
-    color: var(--black-login)
-    }
-.cantileverlogoblack-2-group-login, .frame-parent2-login, .frame-parent3-login {
-    gap: var(--gap-13xl-login)
-    }
-.cantileverlogoblack-2-group-login, .frame-parent2-login {
-    gap: var(--gap-36xl-login)
-    }
-.cantileverlogoblack-2-group-login {
-    position: absolute;
-    top: 5.38vw;
-    left: 4.8vw;
-    gap: var(--gap-41xl-login)
-    }
-.login-with-code-login {
-    position: relative;
-    background-color: var(--color-white-login);
-    width: 100%;
-    height: 56.12vw;
-    overflow: hidden;
-    text-align: left;
-    font-size: var(--font-size-base-login);
-    color: var(--color-gray-100-login);
-    font-family: var(--h1-heavy-login)
-    }
+  }
+  .frame-wrapper3-login,
+  .login-wrapper-login {
+    @apply flex flex-row items-end justify-center;
+  }
+  .frame-wrapper3-login {
+    @apply cursor-pointer pt-[var(--padding-xl-login)] pr-[var(--padding-5xl-login)] pb-[var(--padding-xl-login)] pl-[var(--padding-5xl-login)] bg-[color:var(--purple-login)] rounded-[var(--br-xs-login)] w-[31.2vw] items-center justify-between box-border border-0;
+  }
+  .sign-up-for-login {
+    @apply text-[color:var(--purple-login)];
+  }
+  .new-to-fulcrum-container-login {
+    @apply cursor-pointer no-underline relative text-inherit;
+  }
+  .frame-parent9-login {
+    @apply flex flex-col items-center justify-start gap-[var(--gap-37xl-login)] text-[length:var(--font-size-base-login)];
+  }
+  .cantileverlogoblack-2-group-login,
+  .frame-parent2-login,
+  .frame-parent3-login,
+  .frame-parent7-login {
+    @apply flex flex-col items-start justify-start;
+  }
+  .frame-parent7-login {
+    @apply gap-[10.28vw] text-[length:var(--body-heavy-size-login)] text-[color:var(--black-login)];
+  }
+  .cantileverlogoblack-2-group-login,
+  .frame-parent2-login,
+  .frame-parent3-login {
+    @apply gap-[var(--gap-13xl-login)];
+  }
+  .cantileverlogoblack-2-group-login,
+  .frame-parent2-login {
+    @apply gap-[var(--gap-36xl-login)];
+  }
+  .cantileverlogoblack-2-group-login {
+    @apply absolute gap-[var(--gap-41xl-login)] left-[4.8vw] top-[5.38vw];
+  }
+  .login-with-code-login {
+    @apply relative bg-[color:var(--color-white-login)] w-full h-[56.12vw] overflow-hidden text-left text-[length:var(--font-size-base-login)] text-[color:var(--color-gray-100-login)];
+    font-family: var(--h1-heavy-login);
+  }
+  

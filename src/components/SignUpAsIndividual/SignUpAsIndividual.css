@@ -1,145 +1,82 @@
+/*
+  Based on TailwindCSS recommendations,
+  consider using classes instead of the `@apply` directive
+  @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
+*/
 .sign-up-with-login {
-    position: relative;
-    font-size: var(--body-heavy-size-login);
+    @apply relative text-[length:var(--body-heavy-size-login)] text-[color:var(--black-login)] text-left;
     font-family: var(--h1-heavy-login);
-    color: var(--black-login);
-    text-align: left
-    }
-.frame-wrapper12-login, .frame-wrapper13-login {
-    width: 31.2vw;
-    display: flex;
-    flex-direction: row
-    }
-.frame-wrapper13-login {
-    border-radius: var(--br-xs-login);
-    border: 0.06vw solid var(--color-gainsboro-300-login);
-    box-sizing: border-box;
-    align-items: center;
-    justify-content: center;
-    padding: var(--padding-base-login) var(--padding-5xl-login)
-    }
-.frame-wrapper12-login {
-    cursor: pointer;
-    border: 0;
-    padding: 0;
-    background-color: transparent;
-    align-items: flex-start;
-    justify-content: flex-start
-    }
-.line-div-login {
-    position: relative;
-    border-top: 0.06vw solid var(--color-gainsboro-400-login);
-    box-sizing: border-box;
-    width: 14.86vw;
-    height: 0.06vw
-    }
-.frame-parent20-login, .line-group-login {
-    display: flex;
-    justify-content: flex-start
-    }
-.line-group-login {
-    flex-direction: row;
-    align-items: center;
-    gap: var(--gap-7xs-login)
-    }
-.frame-parent20-login {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1.03vw
-    }
-.name-login {
-    position: relative
-    }
-.frame-child9-login, .name-parent-login {
-    display: flex;
-    justify-content: flex-start
-    }
-.frame-child9-login {
-    border: 0.06vw solid var(--color-gainsboro-300-login);
+  }
+  .frame-wrapper12-login,
+  .frame-wrapper13-login {
+    @apply w-[31.2vw] flex flex-row;
+  }
+  .frame-wrapper13-login {
+    @apply rounded-[var(--br-xs-login)] border-[color:var(--color-gainsboro-300-login)] box-border items-center justify-center pt-[var(--padding-base-login)] pr-[var(--padding-5xl-login)] pb-[var(--padding-base-login)] pl-[var(--padding-5xl-login)] border-[0.06vw] border-solid;
+  }
+  .frame-wrapper12-login {
+    @apply cursor-pointer bg-transparent items-start justify-start p-0 border-0;
+  }
+  .line-div-login {
+    @apply relative border-t-[color:var(--color-gainsboro-400-login)] box-border w-[14.86vw] h-[0.06vw] border-t-[0.06vw] border-solid;
+  }
+  .frame-parent20-login,
+  .line-group-login {
+    @apply flex justify-start;
+  }
+  .line-group-login {
+    @apply flex-row items-center gap-[var(--gap-7xs-login)];
+  }
+  .frame-parent20-login {
+    @apply flex-col items-start gap-[1.03vw];
+  }
+  .name-login {
+    @apply relative;
+  }
+  .frame-child9-login,
+  .name-parent-login {
+    @apply flex justify-start;
+  }
+  .frame-child9-login {
+    @apply border-[color:var(--color-gainsboro-300-login)] text-[length:var(--body-heavy-size-login)] bg-transparent rounded-[var(--br-xs-login)] box-border w-[31.2vw] flex-row items-center pt-[var(--padding-base-login)] pr-[var(--padding-5xl-login)] pb-[var(--padding-base-login)] pl-[var(--padding-5xl-login)] border-[0.06vw] border-solid;
     font-family: var(--h1-heavy-login);
-    font-size: var(--body-heavy-size-login);
-    background-color: transparent;
-    border-radius: var(--br-xs-login);
-    box-sizing: border-box;
-    width: 31.2vw;
-    flex-direction: row;
-    align-items: center;
-    padding: var(--padding-base-login) var(--padding-5xl-login)
-    }
-.name-parent-login {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: var(--gap-5xs-login)
-    }
-.frame-parent19-login, .frame-parent22-login, .frame-wrapper14-login {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start
-    }
-.frame-parent22-login {
-    gap: 1.37vw;
-    font-size: var(--body-heavy-size-login);
-    color: var(--black-login)
-    }
-.frame-parent19-login {
-    position: absolute;
-    top: 17.03vw;
-    left: 4.8vw;
-    gap: var(--gap-base-login)
-    }
-.continue2-login {
-    position: relative;
-    font-size: var(--body-heavy-size-login);
+  }
+  .name-parent-login {
+    @apply flex-col items-start gap-[var(--gap-5xs-login)];
+  }
+  .frame-parent19-login,
+  .frame-parent22-login,
+  .frame-wrapper14-login {
+    @apply flex flex-col items-start justify-start;
+  }
+  .frame-parent22-login {
+    @apply gap-[1.37vw] text-[length:var(--body-heavy-size-login)] text-[color:var(--black-login)];
+  }
+  .frame-parent19-login {
+    @apply absolute gap-[var(--gap-base-login)] left-[4.8vw] top-[17.03vw];
+  }
+  .continue2-login {
+    @apply relative text-[length:var(--body-heavy-size-login)] text-[color:var(--color-white-login)] text-left;
     font-family: var(--h1-heavy-login);
-    color: var(--color-white-login);
-    text-align: left
-    }
-.continue-frame-login, .frame-wrapper16-login {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    justify-content: center
-    }
-.frame-wrapper16-login {
-    cursor: pointer;
-    border: 0;
-    padding: var(--padding-xl-login) var(--padding-5xl-login);
-    background-color: var(--purple-login);
-    border-radius: var(--br-xs-login);
-    width: 31.2vw;
-    align-items: center;
-    justify-content: space-between;
-    box-sizing: border-box
-    }
-.sign-in3-login {
-    color: var(--purple-login)
-    }
-.already-have-an-container3-login {
-    cursor: pointer;
-    text-decoration: none;
-    position: relative;
-    color: inherit
-    }
-.frame-parent23-login {
-    position: absolute;
-    top: 43.26vw;
-    left: 4.8vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    gap: var(--gap-33xl-login);
-    color: var(--black-login)
-    }
-.sign-up-as-individual-login {
-    position: relative;
-    background-color: var(--color-white-login);
-    width: 100%;
-    height: 56.12vw;
-    overflow: hidden;
-    text-align: left;
-    font-size: var(--font-size-base-login);
-    color: var(--color-gray-100-login);
-    font-family: var(--h1-heavy-login)
-    }
+  }
+  .continue-frame-login,
+  .frame-wrapper16-login {
+    @apply flex flex-row items-end justify-center;
+  }
+  .frame-wrapper16-login {
+    @apply cursor-pointer pt-[var(--padding-xl-login)] pr-[var(--padding-5xl-login)] pb-[var(--padding-xl-login)] pl-[var(--padding-5xl-login)] bg-[color:var(--purple-login)] rounded-[var(--br-xs-login)] w-[31.2vw] items-center justify-between box-border border-0;
+  }
+  .sign-in3-login {
+    @apply text-[color:var(--purple-login)];
+  }
+  .already-have-an-container3-login {
+    @apply cursor-pointer no-underline relative text-inherit;
+  }
+  .frame-parent23-login {
+    @apply absolute flex flex-col items-center justify-start gap-[var(--gap-33xl-login)] text-[color:var(--black-login)] left-[4.8vw] top-[43.26vw];
+  }
+  .sign-up-as-individual-login {
+    @apply relative bg-[color:var(--color-white-login)] w-full h-[56.12vw] overflow-hidden text-left text-[length:var(--font-size-base-login)] text-[color:var(--color-gray-100-login)];
+    font-family: var(--h1-heavy-login);
+  }
+  

@@ -1,141 +1,72 @@
+/*
+  Based on TailwindCSS recommendations,
+  consider using classes instead of the `@apply` directive
+  @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
+*/
 .topic-wise-analysis3 {
-    position: relative;
-    letter-spacing: -0.02em;
-    line-height: 2.78vw
-}
-
-.topic-wise-analysis-wrapper1 {
-    position: absolute;
-    top: 1.32vw;
-    left: 1.32vw;
-    color: var(--color-darkslategray-200);
-    font-weight: bold
-}
-
-.parent22,
-.parent23,
-.topic-wise-analysis-wrapper1 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start
-}
-
-.parent23 {
-    gap: var(--gap-9xs);
-    color: var(--color-darkslategray-200)
-}
-
-.parent22 {
-    gap: var(--gap-12xs)
-}
-
-.frame-child147,
-.rectangle-wrapper30 {
-    border-radius: var(--br-9xs);
-    height: 0.40vw;
-}
-
-.frame-child147 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: var(--incomplete);
-}
-
-.rectangle-wrapper30 {
-    border-radius: var(--br-9xs);
-    height: 0.4vw
-}
-
-.rectangle-wrapper30 {
-    position: relative;
-    background-color: var(--color-gainsboro-300);
-    width: 10.85vw
-}
-
-.frame-child148,
-.frame-child149,
-.frame-child150,
-.frame-child151 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-radius: var(--br-9xs);
-    background-color: var(--danger);
-    width: 5.29vw;
-    height: 0.40vw;
-}
-
-.frame-child149,
-.frame-child150,
-.frame-child151 {
-    background-color: var(--color-mediumseagreen);
-    width: 9.33vw;
-}
-
-.frame-child150,
-.frame-child151 {
-    background-color: var(--incomplete);
-    width: 6.68vw;
-}
-
-.frame-child151 {
-    background-color: var(--color-mediumseagreen);
-    width: 8.99vw;
-}
-
-.frame-parent203,
-.frame-parent204,
-.proficiency-parent1 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: var(--gap-21xl)
-}
-
-.frame-parent203,
-.proficiency-parent1 {
-    gap: var(--gap-mini)
-}
-
-.frame-parent203 {
-    position: absolute;
-    top: 4.43vw;
-    left: 1.85vw;
-    flex-direction: row;
-    gap: var(--gap-92xl);
-    font-size: var(--font-size-base)
-}
-
-.frame-child153 {
-    position: relative;
-    border-top: 0.07vw solid var(--icon-grey);
-    box-sizing: border-box;
-    width: 47.82vw;
-    height: 0.07vw;
-    opacity: 0.18
-}
-
-.line-parent9 {
-    position: absolute;
-    top: 6.94vw;
-    left: 1.32vw;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: var(--gap-27xl)
-}
-
-.frame-parent202 {
-    position: relative;
-    border-radius: var(--br-base);
-    background-color: var(--white);
-    width: 50.93vw;
-    overflow: auto;
-    height: 29vw;
-    top:9.2vw;
-    left:21vw
-}
+    @apply relative tracking-[-0.02em] leading-[2.78vw];
+  }
+  .topic-wise-analysis-wrapper1 {
+    @apply absolute text-[color:var(--color-darkslategray-200)] font-[bold] left-[1.32vw] top-[1.32vw];
+  }
+  .parent22,
+  .parent23,
+  .topic-wise-analysis-wrapper1 {
+    @apply flex flex-col items-start justify-start;
+  }
+  .parent23 {
+    @apply gap-[var(--gap-9xs)] text-[color:var(--color-darkslategray-200)];
+  }
+  .parent22 {
+    @apply gap-[var(--gap-12xs)];
+  }
+  .frame-child147,
+  .rectangle-wrapper30 {
+    @apply rounded-[var(--br-9xs)] h-[0.40vw];
+  }
+  .frame-child147 {
+    @apply absolute bg-[color:var(--incomplete)] left-0 top-0;
+  }
+  .rectangle-wrapper30 {
+    @apply rounded-[var(--br-9xs)] h-[0.4vw] relative bg-[color:var(--color-gainsboro-300)] w-[10.85vw];
+  }
+  .frame-child148,
+  .frame-child149,
+  .frame-child150,
+  .frame-child151 {
+    @apply absolute rounded-[var(--br-9xs)] bg-[color:var(--danger)] w-[5.29vw] h-[0.40vw] left-0 top-0;
+  }
+  .frame-child149,
+  .frame-child150,
+  .frame-child151 {
+    @apply bg-[color:var(--color-mediumseagreen)] w-[9.33vw];
+  }
+  .frame-child150,
+  .frame-child151 {
+    @apply bg-[color:var(--incomplete)] w-[6.68vw];
+  }
+  .frame-child151 {
+    @apply bg-[color:var(--color-mediumseagreen)] w-[8.99vw];
+  }
+  .frame-parent203,
+  .frame-parent204,
+  .proficiency-parent1 {
+    @apply flex flex-col items-start justify-start gap-[var(--gap-21xl)];
+  }
+  .frame-parent203,
+  .proficiency-parent1 {
+    @apply gap-[var(--gap-mini)];
+  }
+  .frame-parent203 {
+    @apply absolute flex-row gap-[var(--gap-92xl)] text-[length:var(--font-size-base)] left-[1.85vw] top-[4.43vw];
+  }
+  .frame-child153 {
+    @apply relative border-t-[color:var(--icon-grey)] box-border w-[47.82vw] h-[0.07vw] opacity-[0.18] border-t-[0.07vw] border-solid;
+  }
+  .line-parent9 {
+    @apply absolute flex flex-col items-start justify-start gap-[var(--gap-27xl)] left-[1.32vw] top-[6.94vw];
+  }
+  .frame-parent202 {
+    @apply relative rounded-[var(--br-base)] bg-[color:var(--white)] w-[50.93vw] overflow-auto h-[29vw] left-[21vw] top-[9.2vw];
+  }
+  

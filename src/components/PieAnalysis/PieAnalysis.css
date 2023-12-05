@@ -1,72 +1,37 @@
+/*
+  Based on TailwindCSS recommendations,
+  consider using classes instead of the `@apply` directive
+  @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
+*/
 .students-average-growth {
-    position: absolute;
-    top: 1.32vw;
-    left: 1.32vw;
-    letter-spacing: -0.02em;
-    line-height: 2.78vw;
-    font-weight: bold;
-    }
-.legend-indicator-1 {
-    position: relative;
-    border-radius: var(--br-81xl);
-    background-color: var(--incomplete);
-    width: 0.86vw;
-    height: 0.86vw
-    }
-.legend-label-2 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    gap: var(--gap-5xs)
-    }
-.legend-indicator-11 {
-    position: relative;
-    border-radius: var(--br-81xl);
-    background-color: var(--color-mediumseagreen);
-    width: 0.86vw;
-    height: 0.86vw
-    }
-.product-design {
-    position: relative;
-    letter-spacing: 0.01vw;
-    line-height: 1.06vw
-    }
-.legend-indicator-12, .legend-indicator-13 {
-    position: relative;
-    border-radius: var(--br-81xl);
-    background-color: var(--yellow);
-    width: 0.86vw;
-    height: 0.86vw
-    }
-.legend-indicator-13 {
-    background-color: var(--purple)
-    }
-.legend-label-2-parent {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: var(--gap-xl)
-    }
-.chart-2-parent {
-    position: absolute;
-    top: 5.48vw;
-    left: calc(50% - 13.81vw);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 0.5vw;
-    font-size: var(--font-size-base);
-    color: var(--light-base-chart-title)
-    }
-.job-wise-analysis-parent {
-    position: relative;
-    border-radius: var(--br-base);
-    background-color: var(--white);
-    width: 34.33vw;
-    height: 21.63vw;
-    overflow: hidden;
-    flex-shrink: 0
-    }
+    @apply absolute tracking-[-0.02em] leading-[2.78vw] font-[bold] left-[1.32vw] top-[1.32vw];
+  }
+  .legend-indicator-1 {
+    @apply relative rounded-[var(--br-81xl)] bg-[color:var(--incomplete)] w-[0.86vw] h-[0.86vw];
+  }
+  .legend-label-2 {
+    @apply flex flex-row items-center justify-start gap-[var(--gap-5xs)];
+  }
+  .legend-indicator-11 {
+    @apply relative rounded-[var(--br-81xl)] bg-[color:var(--color-mediumseagreen)] w-[0.86vw] h-[0.86vw];
+  }
+  .product-design {
+    @apply relative tracking-[0.01vw] leading-[1.06vw];
+  }
+  .legend-indicator-12,
+  .legend-indicator-13 {
+    @apply relative rounded-[var(--br-81xl)] bg-[color:var(--yellow)] w-[0.86vw] h-[0.86vw];
+  }
+  .legend-indicator-13 {
+    @apply bg-[color:var(--purple)];
+  }
+  .legend-label-2-parent {
+    @apply flex flex-col items-start justify-start gap-[var(--gap-xl)];
+  }
+  .chart-2-parent {
+    @apply absolute left-[calc(50%_-_13.81vw)] flex flex-row items-center justify-start gap-[0.5vw] text-[length:var(--font-size-base)] text-[color:var(--light-base-chart-title)] top-[5.48vw];
+  }
+  .job-wise-analysis-parent {
+    @apply relative rounded-[var(--br-base)] bg-[color:var(--white)] w-[34.33vw] h-[21.63vw] overflow-hidden shrink-0;
+  }
+  

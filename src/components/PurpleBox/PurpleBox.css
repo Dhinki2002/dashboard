@@ -1,110 +1,69 @@
+/*
+  Based on TailwindCSS recommendations,
+  consider using classes instead of the `@apply` directive
+  @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
+*/
 .technical-login {
-    text-transform: lowercase
-    }
-.crack-any-technical-interview-login {
-    margin: 0
-    }
-.crack-any-technical-container-login {
-    position: relative
-    }
-.fulcrum-assignment-skill-login {
-    margin: 0;
-    padding-left: var(--padding-5xl-login)
-    }
-.crack-any-technical-interview-parent-login, .mock-interviews-parent-login {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start
-    }
-.mock-interviews-parent-login {
-    gap: var(--gap-xs-login);
-    font-size: var(--font-inherit-login);
-    font-family: var(--font-inherit-login)
-    }
-.crack-any-technical-interview-parent-login {
-    position: absolute;
-    top: 6.17vw;
-    left: 4.53vw;
-    gap: var(--gap-17xl-login);
-    font-size: var(--font-size-11xl-login);
-    color: var(--color-white-login)
-    }
-.company-logo-icon-login, .company-logo-icon1-login, .company-logo-icon2-login {
-    position: relative;
-    width: 6.44vw;
-    height: 2.4vw;
-    overflow: hidden;
-    flex-shrink: 0;
-    opacity: 0.2
-    }
-.company-logo-icon1-login, .company-logo-icon2-login {
-    width: 5.53vw
-    }
-.company-logo-icon2-login {
-    width: 7.73vw
-    }
-.company-logo-icon3-login, .company-logo-icon4-login, .company-logo-icon5-login {
-    position: relative;
-    width: 4.01vw;
-    height: 2.4vw;
-    overflow: hidden;
-    flex-shrink: 0;
-    opacity: 0.2
-    }
-.company-logo-icon4-login, .company-logo-icon5-login {
-    width: 7.19vw
-    }
-.company-logo-icon5-login {
-    width: 5.67vw
-    }
-.company-logo-parent-login {
-    position: absolute;
-    top: 46.9vw;
-    left: calc(50% - 31.25vw);
-    width: 178.82vw;
-    height: 2.49vw;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: flex-end;
-    justify-content: flex-start;
-    gap: var(--gap-37xl-login)
-    }
-.interviews-remarks-parent-login {
-    position: absolute;
-    top: calc(50% - 24.75vw);
-    right: 1.98vw;
-    border-radius: var(--br-17xl-login);
-    background-color: var(--purple-login);
-    border: 0.62vw solid var(--color-lightsteelblue-login);
-    box-sizing: border-box;
-    width: 45.5vw;
-    height: 49.98vw;
-    overflow: hidden;
-    text-align: left;
-    font-size: 0.32vw;
-    color: var(--color-gray-300-login);
-    font-family: var(--h1-heavy-login)
-    }
-.image-parent-login {
-    margin-top: 23.54vw;
-    margin-left: 4.76vw
-    }
-.image-1-login {
-    height: 19.34vw;
-    width: 29.52vw;
-    top: 23.54vw;
-    left: 4.76vw
-    }
-.image-2-login {
-    position: absolute;
-    height: 11.38vw;
-    width: 16.72vw;
-    top: 34.4vw;
-    left: 20.83vw
-    }
-.interviews-remarks-parent-login {
-    margin-top: -1.3vw;
-    height: 52.3vw
-    }
+    @apply lowercase;
+  }
+  .crack-any-technical-interview-login {
+    @apply m-0;
+  }
+  .crack-any-technical-container-login {
+    @apply relative;
+  }
+  .fulcrum-assignment-skill-login {
+    @apply pl-[var(--padding-5xl-login)] m-0;
+  }
+  .crack-any-technical-interview-parent-login,
+  .mock-interviews-parent-login {
+    @apply flex flex-col items-start justify-start;
+  }
+  .mock-interviews-parent-login {
+    @apply gap-[var(--gap-xs-login)] text-[length:var(--font-inherit-login)];
+    font-family: var(--font-inherit-login);
+  }
+  .crack-any-technical-interview-parent-login {
+    @apply absolute gap-[var(--gap-17xl-login)] text-[length:var(--font-size-11xl-login)] text-[color:var(--color-white-login)] left-[4.53vw] top-[6.17vw];
+  }
+  .company-logo-icon-login,
+  .company-logo-icon1-login,
+  .company-logo-icon2-login {
+    @apply relative w-[6.44vw] h-[2.4vw] overflow-hidden shrink-0 opacity-20;
+  }
+  .company-logo-icon1-login,
+  .company-logo-icon2-login {
+    @apply w-[5.53vw];
+  }
+  .company-logo-icon2-login {
+    @apply w-[7.73vw];
+  }
+  .company-logo-icon3-login,
+  .company-logo-icon4-login,
+  .company-logo-icon5-login {
+    @apply relative w-[4.01vw] h-[2.4vw] overflow-hidden shrink-0 opacity-20;
+  }
+  .company-logo-icon4-login,
+  .company-logo-icon5-login {
+    @apply w-[7.19vw];
+  }
+  .company-logo-icon5-login {
+    @apply w-[5.67vw];
+  }
+  .company-logo-parent-login {
+    @apply absolute left-[calc(50%_-_31.25vw)] w-[178.82vw] h-[2.49vw] flex flex-row flex-wrap items-end justify-start gap-[var(--gap-37xl-login)] top-[46.9vw];
+  }
+  .interviews-remarks-parent-login {
+    @apply absolute top-[calc(50%_-_24.75vw)] rounded-[var(--br-17xl-login)] bg-[color:var(--purple-login)] border-[color:var(--color-lightsteelblue-login)] box-border w-[45.5vw] h-[49.98vw] overflow-hidden text-left text-[0.32vw] text-[color:var(--color-gray-300-login)] border-[0.62vw] border-solid right-[1.98vw] mt-[-1.3vw] h-[52.3vw];
+    font-family: var(--h1-heavy-login);
+  }
+  .image-parent-login {
+    @apply ml-[4.76vw] mt-[23.54vw];
+  }
+  .image-1-login {
+    @apply h-[19.34vw] w-[29.52vw] left-[4.76vw] top-[23.54vw];
+  }
+  .image-2-login {
+    @apply absolute h-[11.38vw] w-[16.72vw] left-[20.83vw] top-[34.4vw];
+  }
+  

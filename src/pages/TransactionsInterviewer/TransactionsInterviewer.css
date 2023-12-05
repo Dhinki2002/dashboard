@@ -1,206 +1,115 @@
+/*
+  Based on TailwindCSS recommendations,
+  consider using classes instead of the `@apply` directive
+  @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
+*/
 .transactions {
-    position: relative;
-    letter-spacing: -0.02em;
-    line-height: 2.78vw
-    }
-.transactions-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start
-    }
-.report-a-problem {
-    position: relative;
-    font-size: var(--font-size-sm);
+    @apply relative tracking-[-0.02em] leading-[2.78vw];
+  }
+  .transactions-wrapper {
+    @apply flex flex-col items-start justify-start;
+  }
+  .report-a-problem {
+    @apply relative text-[length:var(--font-size-sm)] text-[color:var(--danger)] text-left;
     font-family: var(--font-avenir-lt-std);
-    color: var(--danger);
-    text-align: left
-    }
-.frame-parent57, .report-a-problem-wrapper {
-    display: flex;
-    flex-direction: row;
-    align-items: center
-    }
-.report-a-problem-wrapper {
-    cursor: pointer;
-    border: 0.07vw solid var(--danger);
-    padding: var(--padding-5xs) var(--padding-base);
-    background-color: var(--color-crimson-200);
-    border-radius: var(--br-9xs);
-    overflow: hidden;
-    justify-content: center
-    }
-.frame-parent57 {
-    justify-content: flex-start;
-    gap: 57.74vw
-    }
-.next-payment-date, .october-2023 {
-    position: relative;
-    opacity: 0.8
-    }
-.october-2023 {
-    font-size: var(--font-size-5xl)
-    }
-.next-payment-date-parent {
-    position: absolute;
-    top: 1.32vw;
-    left: 1.59vw;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: var(--gap-5xs)
-    }
-.frame-wrapper30 {
-    position: relative;
-    border-radius: var(--br-base);
-    background-color: var(--white);
-    width: 22.35vw;
-    height: 6.75vw;
-    overflow: hidden;
-    flex-shrink: 0
-    }
-.date-parent, .frame-parent59 {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: var(--gap-xl)
-    }
-.date-parent {
-    flex-direction: column;
-    gap: var(--gap-11xs)
-    }
-.legend-indicator-14 {
-    position: relative;
-    border-radius: var(--br-81xl);
-    background-color: var(--color-mediumseagreen);
-    width: 0.86vw;
-    height: 0.86vw
-    }
-.complete {
-    position: relative;
-    letter-spacing: 0.01vw;
-    line-height: 1.06vw
-    }
-.legend-label-31 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    gap: var(--gap-5xs)
-    }
-.legend-indicator-16, .legend-indicator-17 {
-    position: relative;
-    border-radius: var(--br-81xl);
-    background-color: var(--incomplete);
-    width: 0.86vw;
-    height: 0.86vw
-    }
-.legend-indicator-17 {
-    background-color: var(--danger)
-    }
-.legend-label-3-parent {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: var(--gap-15xl);
-    color: var(--light-base-chart-title)
-    }
-.invoice-wrapper, .legend-label-3-parent, .status-parent {
-    display: flex;
-    justify-content: flex-start
-    }
-.status-parent {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.86vw
-    }
-.invoice-wrapper {
-    flex-direction: row;
-    align-items: center
-    }
-.download {
-    position: relative;
-    text-decoration: underline;
-    letter-spacing: -0.02em;
-    line-height: 2.78vw
-    }
-.download-parent, .frame-parent61 {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start
-    }
-.download-parent {
-    flex-direction: column;
-    gap: var(--gap-5xs);
-    color: var(--color-darkslategray-200)
-    }
-.frame-parent61 {
-    position: absolute;
-    top: 0;
-    left: calc(50% - 36.21vw);
-    flex-direction: row;
-    gap: 14.88vw
-    }
-.frame-child37 {
-    position: relative;
-    border-top: 0.07vw solid var(--icon-grey);
-    box-sizing: border-box;
-    width: 74.01vw;
-    height: 0.07vw;
-    opacity: 0.18
-    }
-.line-parent2 {
-    position: absolute;
-    top: 2.51vw;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: var(--gap-31xl)
-    }
-.frame-parent60 {
-    position: absolute;
-    top: 1.06vw;
-    left: 1.32vw;
-    width: 73.94vw;
-    height: 28.84vw
-    }
-.frame-wrapper32 {
-    position: relative;
-    border-radius: var(--br-base);
-    background-color: var(--white);
-    width: 76.59vw;
-    height: 31.15vw;
-    font-size: var(--font-size-base);
-    color: var(--icon-grey)
-    }
-.frame-parent56, .frame-parent58 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start
-    }
-.frame-parent58 {
-    gap: var(--gap-5xl);
-    font-size: var(--font-size-lg);
-    color: var(--text)
-    }
-.frame-parent56 {
-    position: absolute;
-    top: 10.12vw;
-    left: 21.3vw;
-    gap: var(--gap-lgi)
-    }
-.transactions-interviewer {
-    position: relative;
-    background-color: var(--color-ghostwhite-100);
-    width: 100%;
-    height: 64.95vw;
-    overflow: hidden;
-    text-align: left;
-    font-size: var(--font-size-5xl);
-    color: var(--color-darkslategray-200);
-    font-family: var(--font-avenir-lt-std)
-    }
+  }
+  .frame-parent57,
+  .report-a-problem-wrapper {
+    @apply flex flex-row items-center;
+  }
+  .report-a-problem-wrapper {
+    @apply cursor-pointer border-[color:var(--danger)] pt-[var(--padding-5xs)] pr-[var(--padding-base)] pb-[var(--padding-5xs)] pl-[var(--padding-base)] bg-[color:var(--color-crimson-200)] rounded-[var(--br-9xs)] overflow-hidden justify-center border-[0.07vw] border-solid;
+  }
+  .frame-parent57 {
+    @apply justify-start gap-[57.74vw];
+  }
+  .next-payment-date,
+  .october-2023 {
+    @apply relative opacity-80;
+  }
+  .october-2023 {
+    @apply text-[length:var(--font-size-5xl)];
+  }
+  .next-payment-date-parent {
+    @apply absolute flex flex-col items-start justify-start gap-[var(--gap-5xs)] left-[1.59vw] top-[1.32vw];
+  }
+  .frame-wrapper30 {
+    @apply relative rounded-[var(--br-base)] bg-[color:var(--white)] w-[22.35vw] h-[6.75vw] overflow-hidden shrink-0;
+  }
+  .date-parent,
+  .frame-parent59 {
+    @apply flex flex-row items-start justify-start gap-[var(--gap-xl)];
+  }
+  .date-parent {
+    @apply flex-col gap-[var(--gap-11xs)];
+  }
+  .legend-indicator-14 {
+    @apply relative rounded-[var(--br-81xl)] bg-[color:var(--color-mediumseagreen)] w-[0.86vw] h-[0.86vw];
+  }
+  .complete {
+    @apply relative tracking-[0.01vw] leading-[1.06vw];
+  }
+  .legend-label-31 {
+    @apply flex flex-row items-center justify-start gap-[var(--gap-5xs)];
+  }
+  .legend-indicator-16,
+  .legend-indicator-17 {
+    @apply relative rounded-[var(--br-81xl)] bg-[color:var(--incomplete)] w-[0.86vw] h-[0.86vw];
+  }
+  .legend-indicator-17 {
+    @apply bg-[color:var(--danger)];
+  }
+  .legend-label-3-parent {
+    @apply flex-col items-start gap-[var(--gap-15xl)] text-[color:var(--light-base-chart-title)];
+  }
+  .invoice-wrapper,
+  .legend-label-3-parent,
+  .status-parent {
+    @apply flex justify-start;
+  }
+  .status-parent {
+    @apply flex-col items-start gap-[0.86vw];
+  }
+  .invoice-wrapper {
+    @apply flex-row items-center;
+  }
+  .download {
+    @apply relative underline tracking-[-0.02em] leading-[2.78vw];
+  }
+  .download-parent,
+  .frame-parent61 {
+    @apply flex items-start justify-start;
+  }
+  .download-parent {
+    @apply flex-col gap-[var(--gap-5xs)] text-[color:var(--color-darkslategray-200)];
+  }
+  .frame-parent61 {
+    @apply absolute left-[calc(50%_-_36.21vw)] flex-row gap-[14.88vw] top-0;
+  }
+  .frame-child37 {
+    @apply relative border-t-[color:var(--icon-grey)] box-border w-[74.01vw] h-[0.07vw] opacity-[0.18] border-t-[0.07vw] border-solid;
+  }
+  .line-parent2 {
+    @apply absolute flex flex-col items-start justify-start gap-[var(--gap-31xl)] left-0 top-[2.51vw];
+  }
+  .frame-parent60 {
+    @apply absolute w-[73.94vw] h-[28.84vw] left-[1.32vw] top-[1.06vw];
+  }
+  .frame-wrapper32 {
+    @apply relative rounded-[var(--br-base)] bg-[color:var(--white)] w-[76.59vw] h-[31.15vw] text-[length:var(--font-size-base)] text-[color:var(--icon-grey)];
+  }
+  .frame-parent56,
+  .frame-parent58 {
+    @apply flex flex-col items-start justify-start;
+  }
+  .frame-parent58 {
+    @apply gap-[var(--gap-5xl)] text-[length:var(--font-size-lg)] text-[color:var(--text)];
+  }
+  .frame-parent56 {
+    @apply absolute gap-[var(--gap-lgi)] left-[21.3vw] top-[10.12vw];
+  }
+  .transactions-interviewer {
+    @apply relative bg-[color:var(--color-ghostwhite-100)] w-full h-[64.95vw] overflow-hidden text-left text-[length:var(--font-size-5xl)] text-[color:var(--color-darkslategray-200)];
+    font-family: var(--font-avenir-lt-std);
+  }
+  

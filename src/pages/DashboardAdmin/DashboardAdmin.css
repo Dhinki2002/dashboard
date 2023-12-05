@@ -1,84 +1,33 @@
+/*
+  Based on TailwindCSS recommendations,
+  consider using classes instead of the `@apply` directive
+  @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
+*/
 .view-more {
-    position: relative;
-    font-size: var(--font-size-sm);
-    letter-spacing: -0.02em;
-    line-height: 2.78vw;
+    @apply relative text-[length:var(--font-size-sm)] tracking-[-0.02em] leading-[2.78vw] text-[color:var(--icon-grey)] text-left;
     font-family: var(--font-avenir-lt-std);
-    color: var(--icon-grey);
-    text-align: left
-    }
-.riarrow-drop-down-line-icon {
-    position: relative;
-    width: 1.32vw;
-    height: 1.32vw;
-    overflow: hidden;
-    flex-shrink: 0
-    }
-.view-more-parent {
-    cursor: pointer;
-    border: 0;
-    padding: 0;
-    background-color: transparent;
-    position: absolute;
-    top: 28.04vw;
-    left: calc(50% - 2.98vw);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    gap: var(--gap-9xs)
-    }
-.frame-parent45 {
-    position: absolute;
-    top: 31.54vw;
-    left: 0;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: var(--gap-xl)
-    }
-.add-students3 {
-    position: relative;
-    font-size: 1.05vw;
+  }
+  .riarrow-drop-down-line-icon {
+    @apply relative w-[1.32vw] h-[1.32vw] overflow-hidden shrink-0;
+  }
+  .view-more-parent {
+    @apply cursor-pointer bg-transparent absolute left-[calc(50%_-_2.98vw)] flex flex-row items-center justify-start gap-[var(--gap-9xs)] p-0 border-0 top-[28.04vw];
+  }
+  .frame-parent45 {
+    @apply absolute flex flex-row items-start justify-start gap-[var(--gap-xl)] left-0 top-[31.54vw];
+  }
+  .add-students3 {
+    @apply relative text-[1.05vw] text-[color:var(--white)] text-left font-[bold];
     font-family: var(--font-avenir-lt-std);
-    color: var(--white);
-    text-align: left;
-    font-weight: bold;
-    }
-.icbaseline-plus-container {
-    cursor: pointer;
-    border: 0;
-    padding: var(--padding-xs) var(--padding-5xl);
-    background-color: var(--purple);
-    position: absolute;
-    top: 1.32vw;
-    left: 62.37vw;
-    border-radius: var(--br-5xs);
-    overflow: hidden;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: var(--gap-7xs)
-    }
-.frame-parent38 {
-    position: absolute;
-    top: 9.13vw;
-    left: 21.03vw;
-    border-radius: var(--br-base);
-    background-color: var(--white);
-    width: 76.59vw;
-    height: 31.55vw
-    }
-.dashboard-admin {
-    position: relative;
-    background-color: var(--color-ghostwhite-100);
-    width: 100%;
-    height: 64.95vw;
-    overflow: hidden;
-    text-align: left;
-    font-size: var(--font-size-5xl);
-    color: var(--color-darkslategray-200);
-    font-family: var(--font-avenir-lt-std)
-    }
+  }
+  .icbaseline-plus-container {
+    @apply cursor-pointer pt-[var(--padding-xs)] pr-[var(--padding-5xl)] pb-[var(--padding-xs)] pl-[var(--padding-5xl)] bg-[color:var(--purple)] absolute rounded-[var(--br-5xs)] overflow-hidden flex flex-row items-center justify-center gap-[var(--gap-7xs)] border-0 left-[62.37vw] top-[1.32vw];
+  }
+  .frame-parent38 {
+    @apply absolute rounded-[var(--br-base)] bg-[color:var(--white)] w-[76.59vw] h-[31.55vw] left-[21.03vw] top-[9.13vw];
+  }
+  .dashboard-admin {
+    @apply relative bg-[color:var(--color-ghostwhite-100)] w-full h-[64.95vw] overflow-hidden text-left text-[length:var(--font-size-5xl)] text-[color:var(--color-darkslategray-200)];
+    font-family: var(--font-avenir-lt-std);
+  }
+  

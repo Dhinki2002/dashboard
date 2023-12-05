@@ -1,116 +1,49 @@
+/*
+  Based on TailwindCSS recommendations,
+  consider using classes instead of the `@apply` directive
+  @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
+*/
 .choose-your-resume {
-    position: relative;
-    letter-spacing: -0.02em;
-    line-height: 2.78vw;
-    font-weight: bold
-    }
-.choose-your-resume-template-wrapper {
-    position: absolute;
-    top: 1.59vw;
-    left: 1.59vw;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start
-    }
-
-.icbaseline-plus-icon3 {
-    position: relative;
-    width: 2.38vw;
-    height: 2.38vw;
-    overflow: hidden;
-    flex-shrink: 0
-    }
-.create-blank {
-    position: relative;
-    font-size: var(--font-size-xl);
-    letter-spacing: -0.02em;
-    line-height: 2.78vw;
+    @apply relative tracking-[-0.02em] leading-[2.78vw] font-[bold];
+  }
+  .choose-your-resume-template-wrapper {
+    @apply absolute flex flex-col items-start justify-start left-[1.59vw] top-[1.59vw];
+  }
+  .icbaseline-plus-icon3 {
+    @apply relative w-[2.38vw] h-[2.38vw] overflow-hidden shrink-0;
+  }
+  .create-blank {
+    @apply relative text-[length:var(--font-size-xl)] tracking-[-0.02em] leading-[2.78vw] text-[color:var(--icon-grey)] text-left font-[bold];
     font-family: var(--font-avenir-lt-std);
-    color: var(--icon-grey);
-    text-align: left;
-    font-weight: bold
-    }
-.icbaseline-plus-parent1 {
-    position: absolute;
-    top: calc(50% - 2.55vw);
-    left: 2.65vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start
-    }
-.frame-child72, .phdots-three-parent9 {
-    position: relative;
-    overflow: hidden;
-    flex-shrink: 0
-    }
-.phdots-three-parent9 {
-    cursor: pointer;
-    border: 0;
-    padding: 0;
-    background-color: #efefef;
-    border-radius: 0.54vw;
-    box-shadow: -0.07vw 0 0 rgba(0, 0, 0, 0.1), 0.07vw -0.07vw 0 rgba(0, 0, 0, 0.1), 0 0.1vw 0 #605bff;
-    width: 12.5vw;
-    height: 17.66vw
-    }
-.frame-child72, .phdots-three-wrapper {
-    cursor: pointer;
-    border: 0;
-    padding: 0;
-    background-color: transparent;
-    width: 12.5vw;
-    height: 17.66vw;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top
-    }
-.phdots-three-wrapper {
-    position: relative;
-    overflow: hidden;
-    flex-shrink: 0;
-    }
-
-.frame-child73{
-    position: relative;
-    overflow: hidden;
-    flex-shrink: 0
-    }
-.frame-child73 {
-    width: 12.64vw;
-    height: 17.83vw
-    }
-.frame-parent109 {
-    position: absolute;
-    top: 6.08vw;
-    left: 1.59vw;
-    width: 72.62vw;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: 2.51vw
-    }
-.frame-parent108 {
-    position: absolute;
-    top: 9.13vw;
-    left: 21.03vw;
-    border-radius: var(--br-base);
-    background-color: var(--white);
-    width: 76.59vw;
-    height: 53.7vw;
-    overflow: hidden
-    }
-.resume-personal-info {
-    position: relative;
-    background-color: var(--color-ghostwhite-100);
-    width: 100%;
-    height: 64.95vw;
-    overflow: hidden;
-    text-align: left;
-    font-size: var(--font-size-9xl);
-    color: var(--black);
-    font-family: var(--font-avenir-lt-std)
-    }
+  }
+  .icbaseline-plus-parent1 {
+    @apply absolute top-[calc(50%_-_2.55vw)] flex flex-col items-center justify-start left-[2.65vw];
+  }
+  .frame-child72,
+  .phdots-three-parent9 {
+    @apply relative overflow-hidden shrink-0;
+  }
+  .phdots-three-parent9 {
+    @apply cursor-pointer bg-[#efefef] shadow-[-0.07vw_0_0_rgba(0,0,0,0.1),0.07vw_-0.07vw_0_rgba(0,0,0,0.1),0_0.1vw_0_#605bff] w-[12.5vw] h-[17.66vw] p-0 rounded-[0.54vw] border-0;
+  }
+  .frame-child72,
+  .phdots-three-wrapper {
+    @apply cursor-pointer bg-transparent w-[12.5vw] h-[17.66vw] bg-cover bg-no-repeat bg-top p-0 border-0;
+  }
+  .phdots-three-wrapper {
+    @apply relative overflow-hidden shrink-0;
+  }
+  .frame-child73 {
+    @apply relative overflow-hidden shrink-0 w-[12.64vw] h-[17.83vw];
+  }
+  .frame-parent109 {
+    @apply absolute w-[72.62vw] flex flex-row flex-wrap items-start justify-start gap-[2.51vw] left-[1.59vw] top-[6.08vw];
+  }
+  .frame-parent108 {
+    @apply absolute rounded-[var(--br-base)] bg-[color:var(--white)] w-[76.59vw] h-[53.7vw] overflow-hidden left-[21.03vw] top-[9.13vw];
+  }
+  .resume-personal-info {
+    @apply relative bg-[color:var(--color-ghostwhite-100)] w-full h-[64.95vw] overflow-hidden text-left text-[length:var(--font-size-9xl)] text-[color:var(--black)];
+    font-family: var(--font-avenir-lt-std);
+  }
+  

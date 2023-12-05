@@ -5,81 +5,30 @@
 }
 
 .hero {
-  height: 100vh;
-  width: 100%;
-  position: relative;
+  @apply h-screen w-full relative;
 }
-
 .top-header {
-  position: absolute;
-  width: 100%;
-  background-color: var(--color-lavender);
-  height: 10%;
-  text-align: center;
+  @apply absolute w-full bg-[color:var(--color-lavender)] h-[10%] text-center;
 }
-
 .content {
-  display: flex;
-  height: 100vh;
-  flex-direction: column;
-  width: 100%;
+  @apply flex h-screen flex-col w-full text-center justify-center items-center;
   margin-inline: auto;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
 }
-
 .heading {
-  font-size: 4vw;
-  margin-bottom: 5vh;
-  color: rgb(49, 46, 46);
+  @apply text-[4vw] text-[rgb(49,46,46)] mb-[5vh];
 }
-
 .searchBarContainer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
+  @apply flex justify-between items-center w-full;
 }
-
-.barContainer{
-  margin-left: 20vw;
+.barContainer {
+  @apply ml-[20vw];
 }
-
-
 .forward {
-  display: inline-block;
-  padding: 10px 20px;
-  font-size: 16px;
-  font-weight: bold;
-  text-align: center;
-  text-decoration: none;
-  cursor: pointer;
-  border: 2px solid var(--purple-login);
-  border-radius: 5px;
-  color: #fff;
-  background-color: var(--purple-login);
-  transition: background-color 0.3s, color 0.3s;
-  margin-left:4vw;
-  margin-right:4vw;
-
+  @apply inline-block text-base font-[bold] text-center no-underline cursor-pointer border-[color:var(--purple-login)] text-white bg-[color:var(--purple-login)] transition-[background-color] duration-[0.3s,color] delay-[0.3s] mx-[4vw] px-5 py-2.5 rounded-[5px] border-2 border-solid hover:bg-[#2980b9] hover:border-[#2980b9];
 }
-
-
-.forward:hover {
-  background-color: #2980b9;
-  border-color: #2980b9;
+.date-picker {
+  @apply w-[25vw] h-[3vw] ml-[-35vw] rounded-[0.5vw];
 }
-
-.date-picker{
-  width:25vw;
-  height:3vw;
-  border-radius: 0.5vw;
-  margin-left: -35vw;
-}
-.job-profile-group1{
-  width:30vw;
-  height:4vw;
-  border-radius: 0.5vw;
-  margin-left: -30vw;
+.job-profile-group1 {
+  @apply w-[30vw] h-[4vw] ml-[-30vw] rounded-[0.5vw];
 }

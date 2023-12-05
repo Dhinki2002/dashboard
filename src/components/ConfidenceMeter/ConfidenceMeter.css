@@ -1,31 +1,15 @@
+/*
+  Based on TailwindCSS recommendations,
+  consider using classes instead of the `@apply` directive
+  @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
+*/
 .my-interview-score {
-    position: absolute;
-    top: 1.32vw;
-    left: 1.32vw;
-    letter-spacing: -0.02em;
-    line-height: 2.78vw;
-    font-weight: bold
-    }
-.mask-group {
-    position: absolute;
-    top: 5.29vw;
-    left: 2.58vw;
-    width: 20.09vw;
-    height: 10.71vw;
-    text-align: center;
-    font-size: 0.86vw;
-    color: #89a382
-    }
-.confidence-meter-parent {
-    position: relative;
-    border-radius: var(--br-base);
-    background-color: var(--white);
-    box-shadow: -0.07vw -0.07vw 0.26vw rgba(0, 0, 0, 0.1), 0.07vw 0.07vw 0.26vw rgba(0, 0, 0, 0.1);
-    border: 0.07vw solid var(--white);
-    box-sizing: border-box;
-    width: 25.26vw;
-    height: 17.5vw;
-    overflow: hidden;
-    flex-shrink: 0;
-    color: var(--color-darkslategray-200)
-    }
+    @apply absolute tracking-[-0.02em] leading-[2.78vw] font-[bold] left-[1.32vw] top-[1.32vw];
+  }
+  .mask-group {
+    @apply absolute w-[20.09vw] h-[10.71vw] text-center text-[0.86vw] text-[#89a382] left-[2.58vw] top-[5.29vw];
+  }
+  .confidence-meter-parent {
+    @apply relative rounded-[var(--br-base)] bg-[color:var(--white)] shadow-[-0.07vw_-0.07vw_0.26vw_rgba(0,0,0,0.1),0.07vw_0.07vw_0.26vw_rgba(0,0,0,0.1)] border-[color:var(--white)] box-border w-[25.26vw] h-[17.5vw] overflow-hidden shrink-0 text-[color:var(--color-darkslategray-200)] border-[0.07vw] border-solid;
+  }
+  

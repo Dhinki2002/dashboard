@@ -1,216 +1,79 @@
-.current-plan, .free {
-    letter-spacing: -0.02em;
-    line-height: 2.78vw
-    }
-.current-plan, .free {
-    position: relative
-    }
+/*
+  Based on TailwindCSS recommendations,
+  consider using classes instead of the `@apply` directive
+  @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
+*/
+.current-plan,
 .free {
-    color: var(--color-lightsalmon-100)
-    }
+  @apply tracking-[-0.02em] leading-[2.78vw] relative;
+}
+.free {
+  @apply text-[color:var(--color-lightsalmon-100)];
+}
 .current-plan-parent {
-    position: absolute;
-    top: 7.01vw;
-    left: 19.71vw;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: var(--gap-5xs);
-    font-size: var(--font-size-lg)
-    }
+  @apply absolute flex flex-row items-start justify-start gap-[var(--gap-5xs)] text-[length:var(--font-size-lg)] left-[19.71vw] top-[7.01vw];
+}
 .frame-child144 {
-    position: relative;
-    width: 1.59vw;
-    height: 1.59vw
-    }
+  @apply relative w-[1.59vw] h-[1.59vw];
+}
 .group-container {
-    position: absolute;
-    top: 1.32vw;
-    left: 1.32vw;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    gap: var(--gap-2xs)
-    }
+  @apply absolute flex flex-row items-center justify-start gap-[var(--gap-2xs)] left-[1.32vw] top-[1.32vw];
+}
 .div143 {
-    position: absolute;
-    top: 5.42vw;
-    left: 1.59vw;
-    font-size: var(--font-size-21xl);
-    letter-spacing: -0.02em;
-    line-height: 2.78vw;
-    color: var(--color-darkslategray-300)
-    }
+  @apply absolute text-[length:var(--font-size-21xl)] tracking-[-0.02em] leading-[2.78vw] text-[color:var(--color-darkslategray-300)] left-[1.59vw] top-[5.42vw];
+}
 .charmtick-icon {
-    position: relative;
-    width: 1.06vw;
-    height: 1.06vw;
-    overflow: hidden;
-    flex-shrink: 0
-    }
+  @apply relative w-[1.06vw] h-[1.06vw] overflow-hidden shrink-0;
+}
 .charmtick-parent {
-    flex-direction: row;
-    align-items: center;
-    gap: var(--gap-3xs)
-    }
-.charmtick-group, .charmtick-parent, .frame-parent188 {
-    display: flex;
-    justify-content: flex-start
-    }
-.charmtick-group {
-    flex-direction: row;
-    align-items: center;
-    gap: var(--gap-3xs);
-    margin-top: -0.53vw
-    }
+  @apply flex-row items-center gap-[var(--gap-3xs)];
+}
+.charmtick-group,
+.charmtick-parent,
 .frame-parent188 {
-    position: absolute;
-    top: 9.26vw;
-    left: 1.32vw;
-    flex-direction: column;
-    align-items: flex-start;
-    font-size: var(--font-size-lg);
-    color: var(--black)
-    }
+  @apply flex justify-start;
+}
+.charmtick-group {
+  @apply flex-row items-center gap-[var(--gap-3xs)] mt-[-0.53vw];
+}
+.frame-parent188 {
+  @apply absolute flex-col items-start text-[length:var(--font-size-lg)] text-[color:var(--black)] left-[1.32vw] top-[9.26vw];
+}
 .upgrade-to-basic {
-    position: relative;
-    font-size: var(--font-size-lg);
-    letter-spacing: -0.02em;
-    line-height: 2.78vw;
-    font-family: var(--font-avenir-lt-std);
-    color: var(--white);
-    text-align: left
-    }
+  @apply relative text-[length:var(--font-size-lg)] tracking-[-0.02em] leading-[2.78vw] text-[color:var(--white)] text-left;
+  font-family: var(--font-avenir-lt-std);
+}
 .upgrade-to-basic-wrapper {
-    cursor: pointer;
-    border: 0;
-    padding: var(--padding-11xs) var(--padding-29xl);
-    background-color: #3c7eff;
-    position: absolute;
-    top: 17.53vw;
-    left: calc(50% - 7.8vw);
-    border-radius: var(--br-7xs);
-    overflow: hidden;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center
-    }
+  @apply cursor-pointer pt-[var(--padding-11xs)] pr-[var(--padding-29xl)] pb-[var(--padding-11xs)] pl-[var(--padding-29xl)] bg-[#3c7eff] absolute left-[calc(50%_-_7.8vw)] rounded-[var(--br-7xs)] overflow-hidden flex flex-row items-center justify-center border-0 top-[17.53vw];
+}
 .frame-parent187 {
-    position: relative;
-    border-radius: var(--br-3xs);
-    background-color: var(--white);
-    box-shadow: 0 0.13vw 0.13vw rgba(0, 0, 0, 0.15), 0 -0.07vw 0.13vw rgba(0, 0, 0, 0.15);
-    width: 17.46vw;
-    height: 21.36vw;
-    overflow: hidden;
-    flex-shrink: 0
-    }
+  @apply relative rounded-[var(--br-3xs)] bg-[color:var(--white)] shadow-[0_0.13vw_0.13vw_rgba(0,0,0,0.15),0_-0.07vw_0.13vw_rgba(0,0,0,0.15)] w-[17.46vw] h-[21.36vw] overflow-hidden shrink-0;
+}
 .current-plan-wrapper {
-    cursor: pointer;
-    border: 0;
-    padding: var(--padding-11xs) var(--padding-29xl);
-    background-color: var(--color-lightsalmon-100);
-    position: absolute;
-    top: 17.53vw;
-    left: calc(50% - 7.8vw);
-    border-radius: var(--br-7xs);
-    width: 15.34vw;
-    overflow: hidden;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box
-    }
+  @apply cursor-pointer pt-[var(--padding-11xs)] pr-[var(--padding-29xl)] pb-[var(--padding-11xs)] pl-[var(--padding-29xl)] bg-[color:var(--color-lightsalmon-100)] absolute left-[calc(50%_-_7.8vw)] rounded-[var(--br-7xs)] w-[15.34vw] overflow-hidden flex flex-row items-center justify-center box-border border-0 top-[17.53vw];
+}
 .frame-parent189 {
-    position: relative;
-    border-radius: var(--br-3xs);
-    background-color: var(--white);
-    box-shadow: 0 0.13vw 0.13vw rgba(0, 0, 0, 0.15), 0 -0.07vw 0.13vw rgba(0, 0, 0, 0.15);
-    border: 0.13vw solid var(--color-lightsalmon-100);
-    box-sizing: border-box;
-    width: 17.72vw;
-    height: 21.63vw;
-    overflow: hidden;
-    flex-shrink: 0;
-    color: var(--color-lightsalmon-100)
-    }
+  @apply relative rounded-[var(--br-3xs)] bg-[color:var(--white)] shadow-[0_0.13vw_0.13vw_rgba(0,0,0,0.15),0_-0.07vw_0.13vw_rgba(0,0,0,0.15)] border-[color:var(--color-lightsalmon-100)] box-border w-[17.72vw] h-[21.63vw] overflow-hidden shrink-0 text-[color:var(--color-lightsalmon-100)] border-[0.13vw] border-solid;
+}
 .upgrade-to-pro-wrapper {
-    cursor: pointer;
-    border: 0;
-    padding: var(--padding-11xs) var(--padding-29xl);
-    background-color: var(--color-orange);
-    position: absolute;
-    top: 17.53vw;
-    left: calc(50% - 7.67vw);
-    border-radius: var(--br-7xs);
-    width: 15.34vw;
-    overflow: hidden;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box
-    }
+  @apply cursor-pointer pt-[var(--padding-11xs)] pr-[var(--padding-29xl)] pb-[var(--padding-11xs)] pl-[var(--padding-29xl)] bg-[color:var(--color-orange)] absolute left-[calc(50%_-_7.67vw)] rounded-[var(--br-7xs)] w-[15.34vw] overflow-hidden flex flex-row items-center justify-center box-border border-0 top-[17.53vw];
+}
 .frame-parent191 {
-    position: relative;
-    border-radius: var(--br-3xs);
-    background-color: var(--white);
-    box-shadow: 0 0.13vw 0.13vw rgba(0, 0, 0, 0.15), 0 -0.07vw 0.13vw rgba(0, 0, 0, 0.15);
-    width: 17.46vw;
-    height: 21.36vw;
-    overflow: hidden;
-    flex-shrink: 0;
-    color: var(--color-orange)
-    }
+  @apply relative rounded-[var(--br-3xs)] bg-[color:var(--white)] shadow-[0_0.13vw_0.13vw_rgba(0,0,0,0.15),0_-0.07vw_0.13vw_rgba(0,0,0,0.15)] w-[17.46vw] h-[21.36vw] overflow-hidden shrink-0 text-[color:var(--color-orange)];
+}
 .frame-parent186 {
-    position: absolute;
-    top: 11.9vw;
-    left: 19.44vw;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: var(--gap-xl);
-    color: var(--purple)
-    }
+  @apply absolute flex flex-row items-start justify-start gap-[var(--gap-xl)] text-[color:var(--purple)] left-[19.44vw] top-[11.9vw];
+}
 .rectangle-parent3 {
-    position: absolute;
-    top: 14.29vw;
-    left: 21.03vw;
-    border-radius: var(--br-base);
-    background-color: var(--white);
-    width: 76.59vw;
-    height: 48.54vw;
-    overflow: hidden
-    }
+  @apply absolute rounded-[var(--br-base)] bg-[color:var(--white)] w-[76.59vw] h-[48.54vw] overflow-hidden left-[21.03vw] top-[14.29vw];
+}
 .settings4 {
-    position: absolute;
-    top: 10.45vw;
-    left: 21.03vw;
-    font-size: var(--font-size-9xl);
-    letter-spacing: -0.02em;
-    line-height: 2.78vw
-    }
+  @apply absolute text-[length:var(--font-size-9xl)] tracking-[-0.02em] leading-[2.78vw] left-[21.03vw] top-[10.45vw];
+}
 .settings21 {
-    position: relative;
-    background-color: var(--color-ghostwhite-100);
-    width: 100%;
-    height: 64.95vw;
-    overflow: hidden;
-    text-align: left;
-    font-size: var(--font-size-xl);
-    color: var(--black);
-    font-family: var(--font-avenir-lt-std)
-    }
+  @apply relative bg-[color:var(--color-ghostwhite-100)] w-full h-[64.95vw] overflow-hidden text-left text-[length:var(--font-size-xl)] text-[color:var(--black)];
+  font-family: var(--font-avenir-lt-std);
+}
 .change-your-password {
-    position: absolute;
-    top: 2.12vw;
-    left: 19.18vw;
-    font-size: var(--font-size-5xl);
-    letter-spacing: -0.02em;
-    line-height: 2.78vw
-    }
+  @apply absolute text-[length:var(--font-size-5xl)] tracking-[-0.02em] leading-[2.78vw] left-[19.18vw] top-[2.12vw];
+}

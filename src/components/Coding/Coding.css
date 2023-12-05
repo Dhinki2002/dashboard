@@ -1,390 +1,190 @@
-.frame-parent255, .statement-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start
-    }
+/*
+  Based on TailwindCSS recommendations,
+  consider using classes instead of the `@apply` directive
+  @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
+*/
+.frame-parent255,
+.statement-container {
+  @apply flex flex-col items-start justify-start;
+}
 .frame-parent255 {
-    position: absolute;
-    top: 1.59vw;
-    left: 2.38vw;
-    flex-direction: row;
-    gap: var(--gap-20xl)
-    }
-.code-snippet, .div187 {
-    position: relative;
-    letter-spacing: -0.02em;
-    line-height: 2.78vw
-    }
+  @apply absolute flex-row gap-[var(--gap-20xl)] left-[2.38vw] top-[1.59vw];
+}
+.code-snippet,
 .div187 {
-    color: var(--color-tomato)
-    }
+  @apply relative tracking-[-0.02em] leading-[2.78vw];
+}
+.div187 {
+  @apply text-[color:var(--color-tomato)];
+}
 .time-spent-parent {
-    justify-content: flex-start;
-    gap: var(--gap-xs);
-    font-size: var(--font-size-5xl)
-    }
-.code-snippet-parent, .frame-child189, .time-spent-parent {
-    display: flex;
-    flex-direction: row;
-    align-items: center
-    }
+  @apply justify-start gap-[var(--gap-xs)] text-[length:var(--font-size-5xl)];
+}
+.code-snippet-parent,
+.frame-child189,
+.time-spent-parent {
+  @apply flex flex-row items-center;
+}
 .code-snippet-parent {
-    width: 45.9vw;
-    justify-content: space-between
-    }
+  @apply w-[45.9vw] justify-between;
+}
 .frame-child189 {
-    justify-content: flex-start;
-    border-radius: 0.5vw;
-    width: 6.94vw;
-    height:2.5vw;
-    border-color: #605BFF;
-    background-color: var(--color-dodgerblue);
-    }
+  @apply justify-start w-[6.94vw] h-[2.5vw] bg-[color:var(--color-dodgerblue)] rounded-[0.5vw] border-[#605BFF];
+}
 .vector-icon40 {
-    position: absolute;
-    height: 66.67%;
-    width: 66.63%;
-    top: 16.67%;
-    right: 16.67%;
-    bottom: 16.67%;
-    left: 16.71%;
-    max-width: 100%;
-    overflow: hidden;
-    max-height: 100%
-    }
+  @apply absolute h-[66.67%] w-[66.63%] max-w-full overflow-hidden max-h-full left-[16.71%] right-[16.67%] inset-y-[16.67%];
+}
 .icoutline-refresh {
-    cursor: pointer;
-    border: 0;
-    padding: 0;
-    background-color: transparent;
-    position: relative;
-    width: 1.59vw;
-    height: 1.59vw;
-    overflow: hidden;
-    flex-shrink: 0
-    }
+  @apply cursor-pointer bg-transparent relative w-[1.59vw] h-[1.59vw] overflow-hidden shrink-0 p-0 border-0;
+}
 .vector-icon41 {
-    position: absolute;
-    height: 87.49%;
-    width: 82.83%;
-    top: -93.73%;
-    right: 8.59%;
-    bottom: 106.23%;
-    left: 8.57%;
-    max-width: 100%;
-    overflow: hidden;
-    max-height: 100%
-    }
-.frame-parent258, .icoutline-refresh-parent {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start
-    }
+  @apply absolute h-[87.49%] w-[82.83%] top-[-93.73%] max-w-full overflow-hidden max-h-full left-[8.57%] right-[8.59%] bottom-[106.23%];
+}
+.frame-parent258,
 .icoutline-refresh-parent {
-    align-items: flex-start;
-    gap: var(--gap-xl)
-    }
+  @apply flex flex-row justify-start;
+}
+.icoutline-refresh-parent {
+  @apply items-start gap-[var(--gap-xl)];
+}
 .frame-parent258 {
-    align-items: center;
-    gap: 34.33vw;
-    margin-top:2vw;
-    
-    }
+  @apply items-center gap-[34.33vw] mt-[2vw];
+}
 .write-your-code {
-    position: absolute;
-    top: 1.59vw;
-    left: 1.59vw
-    }
+  @apply absolute left-[1.59vw] top-[1.59vw];
+}
 .write-your-code-here-wrapper {
-    position: relative;
-    border-radius: var(--br-5xs);
-    background-color: var(--color-aliceblue);
-    border: 0.03vw solid var(--color-darkgray-300);
-    box-sizing: border-box;
-    width: 45.77vw;
-    height: 27.25vw;
-    overflow: hidden;
-    flex-shrink: 0;
-    font-size: var(--font-size-lg);
-    color: var(--light-base-chart-title)
-    }
+  @apply relative rounded-[var(--br-5xs)] bg-[color:var(--color-aliceblue)] border-[color:var(--color-darkgray-300)] box-border w-[45.77vw] h-[27.25vw] overflow-hidden shrink-0 text-[length:var(--font-size-lg)] text-[color:var(--light-base-chart-title)] border-[0.03vw] border-solid;
+}
 .sub-task {
-    position: absolute;
-    top: 1.06vw;
-    left: 4.89vw;
-    letter-spacing: -0.02em;
-    line-height: 2.78vw
-    }
+  @apply absolute tracking-[-0.02em] leading-[2.78vw] left-[4.89vw] top-[1.06vw];
+}
 .p {
-    margin: 0
-    }
+  @apply m-0;
+}
 .div188 {
-    top: 5.16vw;
-    left: 6.68vw
-    }
-.div188, .div189, .result, .task {
-    position: absolute;
-    letter-spacing: -0.02em;
-    line-height: 2.78vw
-    }
-.div189 {
-    top: 5.16vw;
-    left: calc(50% - 0.33vw)
-    }
-.result, .task {
-    top: 1.06vw
-    }
+  @apply left-[6.68vw] top-[5.16vw];
+}
+.div188,
+.div189,
+.result,
 .task {
-    left: calc(50% - 0.99vw)
-    }
+  @apply absolute tracking-[-0.02em] leading-[2.78vw];
+}
+.div189 {
+  @apply left-[calc(50%_-_0.33vw)] top-[5.16vw];
+}
+.result,
+.task {
+  @apply top-[1.06vw];
+}
+.task {
+  @apply left-[calc(50%_-_0.99vw)];
+}
 .result {
-    left: 37.4vw
-    }
+  @apply left-[37.4vw];
+}
 .frame-child190 {
-    position: relative;
-    border-right: 0.07vw solid var(--color-lightgray-100);
-    box-sizing: border-box;
-    width: 0.07vw;
-    height: 19.84vw
-    }
+  @apply relative border-r-[color:var(--color-lightgray-100)] box-border w-[0.07vw] h-[19.84vw] border-r-[0.07vw] border-solid;
+}
 .line-parent12 {
-    position: absolute;
-    top: calc(50% - 10.12vw);
-    left: calc(50% - 8.93vw);
-    height: 20.3vw;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: 17.92vw
-    }
+  @apply absolute top-[calc(50%_-_10.12vw)] left-[calc(50%_-_8.93vw)] h-[20.3vw] flex flex-row items-start justify-start gap-[17.92vw];
+}
 .sub-task-parent {
-    position: relative;
-    border-radius: var(--br-5xs);
-    background-color: var(--color-aliceblue);
-    border: 0.03vw solid var(--color-darkgray-300);
-    box-sizing: border-box;
-    width: 45.77vw;
-    height: 22.22vw;
-    overflow: hidden;
-    flex-shrink: 0;
-    font-size: var(--font-size-base)
-    }
-.frame-parent257, .test-cases-parent {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start
-    }
+  @apply relative rounded-[var(--br-5xs)] bg-[color:var(--color-aliceblue)] border-[color:var(--color-darkgray-300)] box-border w-[45.77vw] h-[22.22vw] overflow-hidden shrink-0 text-[length:var(--font-size-base)] border-[0.03vw] border-solid;
+}
+.frame-parent257,
 .test-cases-parent {
-    gap: var(--gap-base);
-    font-size: var(--font-size-5xl)
-    }
+  @apply flex flex-col items-start justify-start;
+}
+.test-cases-parent {
+  @apply gap-[var(--gap-base)] text-[length:var(--font-size-5xl)];
+}
 .frame-parent257 {
-    position: absolute;
-    top: 0vw;
-    left: 45.66vw;
-    border-radius: var(--br-7xs);
-    background-color: var(--white);
-    height: 50.59vw;
-    overflow: auto;
-    padding: 1.92vw 2.5vw;
-    box-sizing: border-box;
-    gap: var(--gap-9xl);
-    box-shadow: -2px 0 rgba(0, 0, 0, 0.15);
-    }
+  @apply absolute rounded-[var(--br-7xs)] bg-[color:var(--white)] h-[50.59vw] overflow-auto box-border gap-[var(--gap-9xl)] shadow-[-2px_0_rgba(0,0,0,0.15)] px-[2.5vw] py-[1.92vw] left-[45.66vw] top-[0vw];
+}
 .run-code {
-    position: relative;
-    font-size: var(--font-size-lg);
-    font-family: var(--font-avenir-lt-std);
-    color: var(--white);
-    text-align: left
-    }
+  @apply relative text-[length:var(--font-size-lg)] text-[color:var(--white)] text-left;
+  font-family: var(--font-avenir-lt-std);
+}
 .run-code-wrapper {
-    border-radius: var(--br-5xs);
-    background-color: var(--purple);
-    border: 0.07vw solid var(--purple);
-    box-sizing: border-box;
-    width: 22.49vw;
-    height: 3.57vw;
-    overflow: hidden;
-    flex-shrink: 0;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: var(--padding-xl) var(--padding-101xl)
-    }
+  @apply rounded-[var(--br-5xs)] bg-[color:var(--purple)] border-[color:var(--purple)] box-border w-[22.49vw] h-[3.57vw] overflow-hidden shrink-0 flex flex-row items-center justify-center pt-[var(--padding-xl)] pr-[var(--padding-101xl)] pb-[var(--padding-xl)] pl-[var(--padding-101xl)] border-[0.07vw] border-solid;
+}
 .next1 {
-    position: relative;
-    font-size: var(--font-size-lg);
-    font-family: var(--font-avenir-lt-std);
-    color: var(--purple);
-    text-align: left
-    }
-.frame-parent259, .next-container {
-    cursor: pointer;
-    display: flex;
-    flex-direction: row
-    }
+  @apply relative text-[length:var(--font-size-lg)] text-[color:var(--purple)] text-left;
+  font-family: var(--font-avenir-lt-std);
+}
+.frame-parent259,
 .next-container {
-    border: 0.07vw solid var(--purple);
-    padding: var(--padding-xl) var(--padding-101xl);
-    background-color: var(--color-dodgerblue);
-    border-radius: var(--br-5xs);
-    box-sizing: border-box;
-    width: 22.49vw;
-    height: 3.57vw;
-    overflow: hidden;
-    flex-shrink: 0;
-    align-items: center;
-    justify-content: center
-    }
+  @apply cursor-pointer flex flex-row;
+}
+.next-container {
+  @apply border-[color:var(--purple)] pt-[var(--padding-xl)] pr-[var(--padding-101xl)] pb-[var(--padding-xl)] pl-[var(--padding-101xl)] bg-[color:var(--color-dodgerblue)] rounded-[var(--br-5xs)] box-border w-[22.49vw] h-[3.57vw] overflow-hidden shrink-0 items-center justify-center border-[0.07vw] border-solid;
+}
 .frame-parent259 {
-    border: 0;
-    padding: 0;
-    background-color: transparent;
-    position: absolute;
-    top: 40.66vw;
-    left: 47.97vw;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: var(--gap-base)
-    }
+  @apply bg-transparent absolute items-start justify-start gap-[var(--gap-base)] p-0 border-0 left-[47.97vw] top-[40.66vw];
+}
 .frame-parent256 {
-    position: absolute;
-    top: 0;
-    left: 45.63vw;
-    background-color: var(--white);
-    box-shadow: -0.07vw 0 0.13vw rgba(0, 0, 0, 0.15);
-    width: 50.66vw;
-    height: 53.7vw;
-    overflow: auto;
-    font-size: var(--font-size-9xl)
-    }
+  @apply absolute bg-[color:var(--white)] shadow-[-0.07vw_0_0.13vw_rgba(0,0,0,0.15)] w-[50.66vw] h-[53.7vw] overflow-auto text-[length:var(--font-size-9xl)] left-[45.63vw] top-0;
+}
 .q1-problem-statement1 {
-    position: absolute;
-    top: 7.8vw;
-    left: 2.38vw;
-    letter-spacing: -0.02em;
-    line-height: 2.78vw
-    }
+  @apply absolute tracking-[-0.02em] leading-[2.78vw] left-[2.38vw] top-[7.8vw];
+}
 .frame-parent254 {
-    position: absolute;
-    top: 9.39vw;
-    left: calc(50% - 48.15vw);
-    border-radius: var(--br-base);
-    background-color: var(--white);
-    width: 96.3vw;
-    height: 50.7vw;
-    overflow: hidden
-    }
+  @apply absolute left-[calc(50%_-_48.15vw)] rounded-[var(--br-base)] bg-[color:var(--white)] w-[96.3vw] h-[50.7vw] overflow-hidden top-[9.39vw];
+}
 .test-screen-code-child {
-    position: absolute;
-    top: 14.62vw;
-    left: 1.79vw;
-    width: 45.7vw;
-    height: 0.2vw
-    }
-.hi-priyanshu1, .welcome-to-fulcrum1 {
-    position: relative;
-    letter-spacing: -0.02em;
-    line-height: 1.59vw
-    }
+  @apply absolute w-[45.7vw] h-[0.2vw] left-[1.79vw] top-[14.62vw];
+}
+.hi-priyanshu1,
 .welcome-to-fulcrum1 {
-    font-size: var(--font-size-15xl);
-    line-height: 2.78vw;
-    color: var(--black)
-    }
+  @apply relative tracking-[-0.02em] leading-[1.59vw];
+}
+.welcome-to-fulcrum1 {
+  @apply text-[length:var(--font-size-15xl)] leading-[2.78vw] text-[color:var(--black)];
+}
 .frame-wrapper98 {
-    width: 21.56vw;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start
-    }
+  @apply w-[21.56vw] flex flex-row items-center justify-start;
+}
 .oouinext-ltr-icon4 {
-    position: relative;
-    width: 1.06vw;
-    height: 1.06vw;
-    overflow: hidden;
-    flex-shrink: 0
-    }
+  @apply relative w-[1.06vw] h-[1.06vw] overflow-hidden shrink-0;
+}
 .oouinext-ltr-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    gap: var(--gap-5xs)
-    }
-.frame-child192, .frame-child193 {
-    position: relative;
-    background-color: var(--color-slateblue);
-    width: 4.63vw;
-    height: 0.53vw;
-    overflow: hidden;
-    flex-shrink: 0
-    }
+  @apply flex flex-row items-center justify-start gap-[var(--gap-5xs)];
+}
+.frame-child192,
 .frame-child193 {
-    background-color: var(--color-gainsboro-100)
-    }
+  @apply relative bg-[color:var(--color-slateblue)] w-[4.63vw] h-[0.53vw] overflow-hidden shrink-0;
+}
+.frame-child193 {
+  @apply bg-[color:var(--color-gainsboro-100)];
+}
 .frame-parent262 {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: var(--gap-5xs)
-    }
+  @apply flex flex-row items-start justify-start gap-[var(--gap-5xs)];
+}
 .next-problem1 {
-    position: relative;
-    font-size: var(--font-size-xl);
-    letter-spacing: -0.02em;
-    line-height: 2.78vw;
-    font-family: var(--font-avenir-lt-std);
-    color: var(--purple);
-    text-align: left
-    }
-.frame-parent260, .frame-parent261, .next-problem-group {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start
-    }
+  @apply relative text-[length:var(--font-size-xl)] tracking-[-0.02em] leading-[2.78vw] text-[color:var(--purple)] text-left;
+  font-family: var(--font-avenir-lt-std);
+}
+.frame-parent260,
+.frame-parent261,
 .next-problem-group {
-    cursor: pointer;
-    border: 0;
-    padding: 0;
-    background-color: transparent;
-    gap: var(--gap-5xs)
-    }
-.frame-parent260, .frame-parent261 {
-    gap: var(--gap-xl);
-    font-size: var(--font-size-xl);
-    color: var(--icon-grey)
-    }
+  @apply flex flex-row items-center justify-start;
+}
+.next-problem-group {
+  @apply cursor-pointer bg-transparent gap-[var(--gap-5xs)] p-0 border-0;
+}
+.frame-parent260,
+.frame-parent261 {
+  @apply gap-[var(--gap-xl)] text-[length:var(--font-size-xl)] text-[color:var(--icon-grey)];
+}
 .frame-parent260 {
-    position: absolute;
-    top: 2.91vw;
-    left: calc(50% - 47.62vw);
-    gap: var(--gap-307xl);
-    font-size: var(--font-size-base);
-    color: var(--color-darkslategray-200)
-    }
+  @apply absolute left-[calc(50%_-_47.62vw)] gap-[var(--gap-307xl)] text-[length:var(--font-size-base)] text-[color:var(--color-darkslategray-200)] top-[2.91vw];
+}
 .test-screen-code {
-    position: relative;
-    background-color: var(--color-ghostwhite-100);
-    width: 100%;
-    height: 64.95vw;
-    overflow: hidden;
-    text-align: left;
-    font-size: var(--font-size-5xl);
-    color: var(--black);
-    font-family: var(--font-avenir-lt-std)
-    }
-    .test{
-        max-height:70vw;
-        overflow: auto;
-        border-radius: 0.5vw;
-    }
-   
+  @apply relative bg-[color:var(--color-ghostwhite-100)] w-full h-[64.95vw] overflow-hidden text-left text-[length:var(--font-size-5xl)] text-[color:var(--black)];
+  font-family: var(--font-avenir-lt-std);
+}
+.test {
+  @apply max-h-[70vw] overflow-auto rounded-[0.5vw];
+}

@@ -1,61 +1,33 @@
+/*
+  Based on TailwindCSS recommendations,
+  consider using classes instead of the `@apply` directive
+  @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
+*/
 .frame-child250 {
-    position: absolute;
-    top: calc(50% - 24.34vw);
-    left: 0;
-    background-color: var(--white);
-    box-shadow: 0.07vw 0 0.26vw rgba(0, 0, 0, 0.15);
-    width: 17.33vw;
-    height: 48.68vw
-    }
-.my-profile6 {
-    position: relative;
-    font-size: var(--font-size-xl);
+    @apply absolute top-[calc(50%_-_24.34vw)] bg-[color:var(--white)] shadow-[0.07vw_0_0.26vw_rgba(0,0,0,0.15)] w-[17.33vw] h-[48.68vw] left-0;
+  }
+  .my-profile6 {
+    @apply relative text-[length:var(--font-size-xl)] text-[color:var(--purple)] text-left font-[bold];
     font-family: var(--font-avenir-lt-std);
-    color: var(--purple);
-    text-align: left;
-    font-weight: bold
-    }
-.my-profile-wrapper1 {
-    cursor: pointer;
-    border: 0;
-    padding: var(--padding-xs) var(--padding-base);
-    background-color: var(--color-mediumslateblue-200);
-    top: 0;
-    left: 0;
-    border-radius: var(--br-16xl);
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start
-    }
-.password5 {
-    position: relative;
-    font-size: var(--font-size-xl);
+  }
+  .my-profile-wrapper1 {
+    @apply cursor-pointer pt-[var(--padding-xs)] pr-[var(--padding-base)] pb-[var(--padding-xs)] pl-[var(--padding-base)] bg-[color:var(--color-mediumslateblue-200)] rounded-[var(--br-16xl)] flex flex-row items-start justify-start border-0 left-0 top-0;
+  }
+  .password5 {
+    @apply relative text-[length:var(--font-size-xl)] text-[color:var(--icon-grey)] text-left left-[1.2vw];
     font-family: var(--font-avenir-lt-std);
-    color: var(--icon-grey);
-    text-align: left;
-    left: 1.2vw
-    }
-.frame-parent195, .password-wrapper1 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start
-    }
-.password-wrapper1 {
-    cursor: pointer;
-    border: 0;
-    padding: 0;
-    background-color: transparent
-    }
-.frame-parent195 {
-    position: absolute;
-    gap: var(--gap-xl)
-    }
-.frame-parent194 {
-    position: absolute;
-    top: 3.17vw;
-    left: 2.65vw;
-    width: 8.47vw;
-    height: 8.99vw
-    }
+  }
+  .frame-parent195,
+  .password-wrapper1 {
+    @apply flex flex-col items-start justify-start;
+  }
+  .password-wrapper1 {
+    @apply cursor-pointer bg-transparent p-0 border-0;
+  }
+  .frame-parent195 {
+    @apply absolute gap-[var(--gap-xl)];
+  }
+  .frame-parent194 {
+    @apply absolute w-[8.47vw] h-[8.99vw] left-[2.65vw] top-[3.17vw];
+  }
+  

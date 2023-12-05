@@ -1,20 +1,15 @@
+/*
+  Based on TailwindCSS recommendations,
+  consider using classes instead of the `@apply` directive
+  @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
+*/
 footer {
-  display: flex;
-  justify-content: space-between;
-  padding: 2vw;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  height: 10%;
-  background-color: var(--color-lavender); /* Your preferred color */
+  @apply flex justify-between fixed w-full h-[10%] bg-[color:var(--color-lavender)] p-[2vw] bottom-0;
+  /* Your preferred color */
 }
-
 footer a,
 footer .Link {
-  font-size: 3em;
-  flex: 1;
-  text-align: center;
-  margin: 0 2vw; /* Adjust as needed */
-  text-decoration: none;
-  color: #000000; /* Your preferred color */
+  @apply text-[3em] flex-1 text-center no-underline text-black mx-[2vw] my-0;
+  /* Adjust as needed */
+  /* Your preferred color */
 }

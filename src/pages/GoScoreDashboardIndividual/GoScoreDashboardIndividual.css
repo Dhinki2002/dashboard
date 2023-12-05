@@ -1,81 +1,34 @@
+/*
+  Based on TailwindCSS recommendations,
+  consider using classes instead of the `@apply` directive
+  @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
+*/
 .attempt-now1 {
-    font-weight: bold
-    }
-.frame-parent205 {
-    position: absolute;
-    top: 39.55vw;
-    left: 21.03vw;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: var(--gap-xl);
-    text-align: right;
-    font-size: var(--en-regular-size);
-    color: var(--black)
-    }
-.attempt-now1 {
-    position: relative;
-    font-size: 1.05vw;
+    @apply font-[bold] relative text-[1.05vw] text-[color:var(--purple)] text-left;
+  }
+  .frame-parent205 {
+    @apply absolute flex flex-row items-start justify-start gap-[var(--gap-xl)] text-right text-[length:var(--en-regular-size)] text-[color:var(--black)] left-[21.03vw] top-[39.55vw];
+  }
+  .attempt-now1 {
     font-family: var(--font-avenir-lt-std);
-    color: var(--purple);
-    text-align: left
-    }
-.attempt-now-container {
-    cursor: pointer;
-    border: 0.07vw solid var(--purple);
-    padding: var(--padding-sm) var(--padding-98xl);
-    background-color: var(--color-mediumslateblue-100);
-    position: absolute;
-    top: 6.15vw;
-    left: calc(50% - 10.98vw);
-    border-radius: var(--br-5xs);
-    overflow: hidden;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center
-    }
-.students-took {
-    margin: 0
-    }
-.students-took-fulcrum-container {
-    position: absolute;
-    top: 1.59vw;
-    left: 1.59vw;
-    display: inline-block;
-    width: 16.07vw;
-    opacity: 0.8
-    }
-.frame-parent207 {
-    position: relative;
-    border-radius: var(--br-base);
-    background-color: var(--white);
-    width: 24.34vw;
-    height: 10.32vw;
-    overflow: hidden;
-    flex-shrink: 0
-    }
-.frame-parent206 {
-    position: absolute;
-    top: 9.13vw;
-    left: 73.28vw;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: var(--gap-xl);
-    font-size: var(--font-size-lg);
-    color: var(--text)
-    }
-.go-score-dashboard-individual {
-    position: relative;
-    background-color: var(--color-ghostwhite-100);
-    width: 100%;
-    height: 64.95vw;
-    overflow: hidden;
-    text-align: left;
-    font-size: var(--font-size-5xl);
-    color: var(--icon-grey);
-    font-family: var(--font-avenir-lt-std)
-    }
+  }
+  .attempt-now-container {
+    @apply cursor-pointer border-[color:var(--purple)] pt-[var(--padding-sm)] pr-[var(--padding-98xl)] pb-[var(--padding-sm)] pl-[var(--padding-98xl)] bg-[color:var(--color-mediumslateblue-100)] absolute left-[calc(50%_-_10.98vw)] rounded-[var(--br-5xs)] overflow-hidden flex flex-row items-center justify-center border-[0.07vw] border-solid top-[6.15vw];
+  }
+  .students-took {
+    @apply m-0;
+  }
+  .students-took-fulcrum-container {
+    @apply absolute inline-block w-[16.07vw] opacity-80 left-[1.59vw] top-[1.59vw];
+  }
+  .frame-parent207 {
+    @apply relative rounded-[var(--br-base)] bg-[color:var(--white)] w-[24.34vw] h-[10.32vw] overflow-hidden shrink-0;
+  }
+  .frame-parent206 {
+    @apply absolute flex flex-col items-start justify-start gap-[var(--gap-xl)] text-[length:var(--font-size-lg)] text-[color:var(--text)] left-[73.28vw] top-[9.13vw];
+  }
+  .go-score-dashboard-individual {
+    @apply relative bg-[color:var(--color-ghostwhite-100)] w-full h-[64.95vw] overflow-hidden text-left text-[length:var(--font-size-5xl)] text-[color:var(--icon-grey)];
+    font-family: var(--font-avenir-lt-std);
+  }
+  

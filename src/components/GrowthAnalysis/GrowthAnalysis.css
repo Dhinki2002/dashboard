@@ -1,26 +1,15 @@
+/*
+  Based on TailwindCSS recommendations,
+  consider using classes instead of the `@apply` directive
+  @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
+*/
 .growth-analysis {
-    position: absolute;
-    left: 1.32vw
-    }
-.growth-analysis {
-    top: 1.32vw;
-    font-size: var(--font-size-5xl);
-    letter-spacing: -0.02em;
-    line-height: 2.78vw;
-    color: var(--color-darkslategray-200);
-    text-align: left;
-    font-weight: bold
-    }
-.graph-chart-container {
-    width: 40.32vw;
-    height: 22.88vw;
-    align-items: center;
-    margin-top: 5vw;
-    margin-bottom: 2vw;
-    }
-.root-div {
-    background-color: var(--white);
-    height: 24.8vw;
-    border-radius: 20px
-    }
-    
+    @apply absolute left-[1.32vw] text-[length:var(--font-size-5xl)] tracking-[-0.02em] leading-[2.78vw] text-[color:var(--color-darkslategray-200)] text-left font-[bold] top-[1.32vw];
+  }
+  .graph-chart-container {
+    @apply w-[40.32vw] h-[22.88vw] items-center mt-[5vw] mb-[2vw];
+  }
+  .root-div {
+    @apply bg-[color:var(--white)] h-[24.8vw] rounded-[20px];
+  }
+  

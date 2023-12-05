@@ -1,152 +1,101 @@
+/*
+  Based on TailwindCSS recommendations,
+  consider using classes instead of the `@apply` directive
+  @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
+*/
 .students-performance {
-    position: relative;
-    letter-spacing: -0.02em;
-    line-height: 2.78vw
-    }
-.students-performance1 {
-        position: relative;
-        letter-spacing: -0.02em;
-        line-height: 2.78vw;
-        font-weight: bold;
-        }    
-.container, .priyanshu-gupta-parent, .students-performance-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start
-    }
-.students-performance-wrapper {
-    position: absolute;
-    top: 1.32vw;
-    left: 1.32vw
-    }
-.container, .priyanshu-gupta-parent {
-    gap: var(--gap-11xs)
-    }
-.priyanshu-gupta-parent {
-    gap: var(--gap-5xs);
-    color: var(--color-darkslategray-200)
-    }
-.performance {
-    position: relative;
-    letter-spacing: -0.02em;
-    line-height: 2.78vw;
-    z-index: 0
-    }
-.bxsort-icon {
-    position: absolute;
-    margin: 0 !important;
-    top: 0.79vw;
-    left: 6.15vw;
-    width: 1.06vw;
-    height: 1.06vw;
-    overflow: hidden;
-    flex-shrink: 0;
-    z-index: 1
-    }
-.performance-parent {
-    width: 7.14vw;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
-    position: relative;
-    gap: var(--gap-3xs)
-    }
-.rectangle-div, .rectangle-wrapper {
-    border-radius: var(--br-9xs);
-    height: 0.4vw
-    }
-.rectangle-div {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: var(--color-mediumseagreen);
-    width: 9.33vw
-    }
-.rectangle-wrapper {
-    position: relative;
-    background-color: var(--color-gainsboro-300);
-    width: 10.85vw
-    }
-.frame-child13, .frame-child14, .frame-child16, .frame-child17 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-radius: var(--br-9xs);
-    background-color: var(--color-mediumseagreen);
-    width: 8.99vw;
-    height: 0.4vw
-    }
-.frame-child14, .frame-child16, .frame-child17 {
-    background-color: var(--incomplete);
-    width: 7.14vw
-    }
-.frame-child16, .frame-child17 {
-    width: 6.68vw
-    }
-.frame-child17 {
-    background-color: var(--danger);
-    width: 5.29vw
-    }
-.frame-parent40, .frame-parent41 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start
-    }
-.frame-parent41 {
-    gap: 2.98vw
-    }
-.frame-parent40 {
-    gap: var(--gap-mini)
-    }
-.bxsort-icon1 {
-    position: relative;
-    width: 1.06vw;
-    height: 1.06vw;
-    overflow: hidden;
-    flex-shrink: 0
-    }
-.last-score-parent {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    gap: var(--gap-11xs)
-    }
-.frame-child18 {
-    width: 4.7vw;
-    height: 2.78vw
-    }
-.frame-child18, .remove {
-    position: relative
-    }
-.remove-wrapper {
-    border-radius: var(--br-5xs);
-    background-color: var(--color-crimson-200);
-    flex-direction: row;
-    padding: var(--padding-4xs) var(--padding-xs)
-    }
-.frame-parent39, .frame-parent43, .remove-wrapper {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start
-    }
-.frame-parent43 {
-    flex-direction: column;
-    gap: var(--gap-11xs);
-    font-size: var(--font-size-sm);
-    color: var(--danger)
-    }
-.frame-parent39 {
-    position: absolute;
-    top: 5.03vw;
-    left: calc(50% - 36.18vw);
-    flex-direction: row;
-    gap: 6.94vw;
-    font-size: var(--font-size-base);
-    color: var(--icon-grey);
-    max-height: 320px;
-    overflow: auto
-    }
+    @apply relative tracking-[-0.02em] leading-[2.78vw];
+  }
+  .students-performance1 {
+    @apply relative tracking-[-0.02em] leading-[2.78vw] font-[bold];
+  }
+  .container,
+  .priyanshu-gupta-parent,
+  .students-performance-wrapper {
+    @apply flex flex-col items-start justify-start;
+  }
+  .students-performance-wrapper {
+    @apply absolute left-[1.32vw] top-[1.32vw];
+  }
+  .container,
+  .priyanshu-gupta-parent {
+    @apply gap-[var(--gap-11xs)];
+  }
+  .priyanshu-gupta-parent {
+    @apply gap-[var(--gap-5xs)] text-[color:var(--color-darkslategray-200)];
+  }
+  .performance {
+    @apply relative tracking-[-0.02em] leading-[2.78vw] z-0;
+  }
+  .bxsort-icon {
+    @apply absolute w-[1.06vw] h-[1.06vw] overflow-hidden shrink-0 z-[1] m-0 left-[6.15vw] top-[0.79vw];
+  }
+  .performance-parent {
+    @apply w-[7.14vw] flex flex-row items-start justify-start relative gap-[var(--gap-3xs)];
+  }
+  .rectangle-div,
+  .rectangle-wrapper {
+    @apply rounded-[var(--br-9xs)] h-[0.4vw];
+  }
+  .rectangle-div {
+    @apply absolute bg-[color:var(--color-mediumseagreen)] w-[9.33vw] left-0 top-0;
+  }
+  .rectangle-wrapper {
+    @apply relative bg-[color:var(--color-gainsboro-300)] w-[10.85vw];
+  }
+  .frame-child13,
+  .frame-child14,
+  .frame-child16,
+  .frame-child17 {
+    @apply absolute rounded-[var(--br-9xs)] bg-[color:var(--color-mediumseagreen)] w-[8.99vw] h-[0.4vw] left-0 top-0;
+  }
+  .frame-child14,
+  .frame-child16,
+  .frame-child17 {
+    @apply bg-[color:var(--incomplete)] w-[7.14vw];
+  }
+  .frame-child16,
+  .frame-child17 {
+    @apply w-[6.68vw];
+  }
+  .frame-child17 {
+    @apply bg-[color:var(--danger)] w-[5.29vw];
+  }
+  .frame-parent40,
+  .frame-parent41 {
+    @apply flex flex-col items-start justify-start;
+  }
+  .frame-parent41 {
+    @apply gap-[2.98vw];
+  }
+  .frame-parent40 {
+    @apply gap-[var(--gap-mini)];
+  }
+  .bxsort-icon1 {
+    @apply relative w-[1.06vw] h-[1.06vw] overflow-hidden shrink-0;
+  }
+  .last-score-parent {
+    @apply flex flex-row items-center justify-start gap-[var(--gap-11xs)];
+  }
+  .frame-child18 {
+    @apply w-[4.7vw] h-[2.78vw];
+  }
+  .frame-child18,
+  .remove {
+    @apply relative;
+  }
+  .remove-wrapper {
+    @apply rounded-[var(--br-5xs)] bg-[color:var(--color-crimson-200)] flex-row pt-[var(--padding-4xs)] pr-[var(--padding-xs)] pb-[var(--padding-4xs)] pl-[var(--padding-xs)];
+  }
+  .frame-parent39,
+  .frame-parent43,
+  .remove-wrapper {
+    @apply flex items-start justify-start;
+  }
+  .frame-parent43 {
+    @apply flex-col gap-[var(--gap-11xs)] text-[length:var(--font-size-sm)] text-[color:var(--danger)];
+  }
+  .frame-parent39 {
+    @apply absolute left-[calc(50%_-_36.18vw)] flex-row gap-[6.94vw] text-[length:var(--font-size-base)] text-[color:var(--icon-grey)] max-h-80 overflow-auto top-[5.03vw];
+  }
+  

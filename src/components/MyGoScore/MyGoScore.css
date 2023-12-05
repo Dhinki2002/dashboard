@@ -1,51 +1,29 @@
+/*
+  Based on TailwindCSS recommendations,
+  consider using classes instead of the `@apply` directive
+  @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
+*/
 .my-go-score1 {
-    position: absolute;
-    top: 1.32vw;
-    left: 1.32vw;
-    letter-spacing: -0.02em;
-    line-height: 2.78vw
-    }
-.ellipse-group {
-    position: absolute;
-    top: 5.69vw;
-    left: 2.38vw;
-    width: 9.45vw;
-    height: 9.39vw
-    }
-.accuracy {
-    position: relative;
-    letter-spacing: -0.02em;
-    line-height: 2.78vw
-    }
-.accuracy-parent, .frame-parent17 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: 0.07vw;
-    font-weight: bold
-    }
-.frame-parent17 {
-    position: absolute;
-    top: 6.15vw;
-    left: 13.36vw;
-    flex-direction: row;
-    gap: 0.53vw;
-    font-size: 1.06vw
-    }
-.my-go-score-parent {
-    position: relative;
-    border-radius: 1.06vw;
-    background-color: #605bff;
-    width: 24.34vw;
-    height: 17.46vw;
-    overflow: hidden;
-    flex-shrink: 0;
-    text-align: left;
-    font-size: 1.59vw;
-    color: #fff;
-    font-family: "Avenir LT Std"
-    }
-.accuracy-parent1 {
-    font-weight: normal
-    }
+    @apply absolute tracking-[-0.02em] leading-[2.78vw] left-[1.32vw] top-[1.32vw];
+  }
+  .ellipse-group {
+    @apply absolute w-[9.45vw] h-[9.39vw] left-[2.38vw] top-[5.69vw];
+  }
+  .accuracy {
+    @apply relative tracking-[-0.02em] leading-[2.78vw];
+  }
+  .accuracy-parent,
+  .frame-parent17 {
+    @apply flex flex-col items-start justify-start gap-[0.07vw] font-[bold];
+  }
+  .frame-parent17 {
+    @apply absolute flex-row gap-[0.53vw] text-[1.06vw] left-[13.36vw] top-[6.15vw];
+  }
+  .my-go-score-parent {
+    @apply relative bg-[#605bff] w-[24.34vw] h-[17.46vw] overflow-hidden shrink-0 text-left text-[1.59vw] text-white rounded-[1.06vw];
+    font-family: "Avenir LT Std";
+  }
+  .accuracy-parent1 {
+    @apply font-[normal];
+  }
+  

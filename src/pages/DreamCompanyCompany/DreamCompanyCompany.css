@@ -1,307 +1,131 @@
+/*
+  Based on TailwindCSS recommendations,
+  consider using classes instead of the `@apply` directive
+  @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
+*/
 .div104 {
-    position: relative;
-    letter-spacing: -0.02em;
-    line-height: 2.78vw;
-    font-size: var(--font-size-9xl)
-    }
-.dream-company {
-    position: relative;
-    letter-spacing: -0.02em;
-    line-height: 2.78vw;
-    }
-.dream-company1 {
-    position: relative;
-    letter-spacing: -0.02em;
-    line-height: 2.78vw;
-    font-weight: bold
-    }
-.dream-company-parent {
-    width: 19.31vw;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between
-    }
-.uiwdate-icon {
-    position: relative;
-    width: 1.59vw;
-    height: 1.59vw;
-    overflow: hidden;
-    flex-shrink: 0;
-    }
-    .uiwdate-icon1 {
-        position: relative;
-        width: 1.59vw;
-        height: 1.59vw;
-        overflow: hidden;
-        flex-shrink: 0;
-        margin-left:-6.8vw;
-        }
-.frame-parent144 {
-    position: absolute;
-    top: 9.39vw;
-    left: 21.03vw;
-    width: 76.59vw;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between
-    }
-.riarrow-drop-down-line-icon5 {
-    position: relative;
-    width: 1.32vw;
-    height: 1.32vw;
-    overflow: hidden;
-    flex-shrink: 0
-    }
-.frame-parent145 {
-    position: relative;
-    border-radius: var(--br-base);
-    background-color: var(--white);
-    color: var(--icon-grey);
-    top: 4.8vw;
-    left: -0.2vw;
-    width: 2vw
-    }
-.attempt-now {
-    position: relative;
-    font-size: 1.05vw;
+    @apply relative tracking-[-0.02em] leading-[2.78vw] text-[length:var(--font-size-9xl)];
+  }
+  .dream-company {
+    @apply relative tracking-[-0.02em] leading-[2.78vw];
+  }
+  .dream-company1 {
+    @apply relative tracking-[-0.02em] leading-[2.78vw] font-[bold];
+  }
+  .dream-company-parent {
+    @apply w-[19.31vw] flex flex-row items-start justify-between;
+  }
+  .uiwdate-icon {
+    @apply relative w-[1.59vw] h-[1.59vw] overflow-hidden shrink-0;
+  }
+  .uiwdate-icon1 {
+    @apply relative w-[1.59vw] h-[1.59vw] overflow-hidden shrink-0 ml-[-6.8vw];
+  }
+  .frame-parent144 {
+    @apply absolute w-[76.59vw] flex flex-row items-center justify-between left-[21.03vw] top-[9.39vw];
+  }
+  .riarrow-drop-down-line-icon5 {
+    @apply relative w-[1.32vw] h-[1.32vw] overflow-hidden shrink-0;
+  }
+  .frame-parent145 {
+    @apply relative rounded-[var(--br-base)] bg-[color:var(--white)] text-[color:var(--icon-grey)] left-[-0.2vw] w-[2vw] top-[4.8vw];
+  }
+  .attempt-now {
+    @apply relative text-[1.05vw] text-[color:var(--purple)] text-left font-[bold];
     font-family: var(--font-avenir-lt-std);
-    color: var(--purple);
-    text-align: left;
-    font-weight: bold
-    }
-.attempt-now-wrapper {
-    cursor: pointer;
-    border: 0.07vw solid var(--purple);
-    padding: var(--padding-sm) var(--padding-98xl);
-    background-color: var(--color-dodgerblue);
-    position: absolute;
-    top: 6.15vw;
-    left: calc(50% - 10.98vw);
-    border-radius: var(--br-5xs);
-    overflow: hidden;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center
-    }
-.students-took-test {
-    position: absolute;
-    top: 1.59vw;
-    left: 1.59vw;
-    display: inline-block;
-    width: 11.44vw;
-    opacity: 0.8
-    }
-.frame-parent149 {
-    position: relative;
-    border-radius: var(--br-base);
-    background-color: var(--white);
-    width: 24.34vw;
-    height: 10.32vw;
-    overflow: hidden;
-    flex-shrink: 0
-    }
-.frame-parent148 {
-    position: absolute;
-    top: 13.82vw;
-    left: 73.28vw;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: var(--gap-xl);
-    font-size: var(--font-size-lg);
-    color: var(--text)
-    }
-.div128 {
-    position: relative;
-    letter-spacing: -0.02em;
-    line-height: 2.78vw;
-    margin-top: -1.19vw
-    }
-.wed-parent {
-    margin-top: -0.13vw
-    }
-.frame-parent154, .wed-parent {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start
-    }
-.test-1 {
-    position: absolute;
-    top: calc(50% - 1.32vw);
-    left: 1.72vw;
-    letter-spacing: -0.02em;
-    line-height: 2.78vw
-    }
-.interview-1-wrapper, .test-1-wrapper {
-    position: relative;
-    border-radius: var(--br-3xs);
-    width: 18.32vw;
-    height: 2.58vw;
-    overflow: hidden;
-    flex-shrink: 0
-    }
-.test-1-wrapper {
-    background-color: rgba(96, 91, 255, 0.3);
-    color: var(--purple)
-    }
-.interview-1-wrapper {
-    background-color: var(--color-sandybrown-100)
-    }
-.frame-parent153, .frame-parent155 {
-    display: flex;
-    justify-content: flex-start
-    }
-.frame-parent155 {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: var(--gap-5xl);
-    color: var(--white)
-    }
-.frame-parent153 {
-    position: absolute;
-    top: 4.37vw;
-    left: 1.32vw;
-    flex-direction: row;
-    align-items: center;
-    gap: var(--gap-lgi)
-    }
-.view-schedule {
-    cursor: pointer;
-    text-decoration: underline;
-    position: relative;
-    font-size: var(--font-size-base);
-    letter-spacing: -0.02em;
-    line-height: 2.78vw;
-    color: var(--icon-grey)
-    }
-.schedule-parent {
-    position: absolute;
-    top: 1.32vw;
-    left: 1.32vw;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: 8.93vw;
-    font-size: var(--font-size-5xl);
-    color: var(--color-darkslategray-200)
-    }
-.frame-parent152 {
-    position: relative;
-    border-radius: var(--br-base);
-    background-color: var(--white);
-    width: 24.74vw;
-    height: 18.12vw;
-    overflow: hidden;
-    flex-shrink: 0;
-    color: var(--color-gray-200)
-    }
-.upcoming-interview {
-    position: relative;
-    font-size: var(--font-size-5xl);
-    letter-spacing: -0.02em;
-    line-height: 2.78vw;
-    color: var(--color-darkslategray-200);
-    font-weight: bold;
-   
-    }
-.phclock-parent, .upcoming-interview-parent {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    gap: var(--gap-xs);
-    
-
-    }
-    .phclock-parent1{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    gap: var(--gap-xs);}
-.upcoming-interview-parent {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: var(--gap-9xs)
-    }
-.schedule-interview {
-    position: relative;
-    font-size: 1.05vw;
+  }
+  .attempt-now-wrapper {
+    @apply cursor-pointer border-[color:var(--purple)] pt-[var(--padding-sm)] pr-[var(--padding-98xl)] pb-[var(--padding-sm)] pl-[var(--padding-98xl)] bg-[color:var(--color-dodgerblue)] absolute left-[calc(50%_-_10.98vw)] rounded-[var(--br-5xs)] overflow-hidden flex flex-row items-center justify-center border-[0.07vw] border-solid top-[6.15vw];
+  }
+  .students-took-test {
+    @apply absolute inline-block w-[11.44vw] opacity-80 left-[1.59vw] top-[1.59vw];
+  }
+  .frame-parent149 {
+    @apply relative rounded-[var(--br-base)] bg-[color:var(--white)] w-[24.34vw] h-[10.32vw] overflow-hidden shrink-0;
+  }
+  .frame-parent148 {
+    @apply absolute flex flex-col items-start justify-start gap-[var(--gap-xl)] text-[length:var(--font-size-lg)] text-[color:var(--text)] left-[73.28vw] top-[13.82vw];
+  }
+  .div128 {
+    @apply relative tracking-[-0.02em] leading-[2.78vw] mt-[-1.19vw];
+  }
+  .wed-parent {
+    @apply mt-[-0.13vw];
+  }
+  .frame-parent154,
+  .wed-parent {
+    @apply flex flex-col items-center justify-start;
+  }
+  .test-1 {
+    @apply absolute top-[calc(50%_-_1.32vw)] tracking-[-0.02em] leading-[2.78vw] left-[1.72vw];
+  }
+  .interview-1-wrapper,
+  .test-1-wrapper {
+    @apply relative rounded-[var(--br-3xs)] w-[18.32vw] h-[2.58vw] overflow-hidden shrink-0;
+  }
+  .test-1-wrapper {
+    @apply bg-[rgba(96,91,255,0.3)] text-[color:var(--purple)];
+  }
+  .interview-1-wrapper {
+    @apply bg-[color:var(--color-sandybrown-100)];
+  }
+  .frame-parent153,
+  .frame-parent155 {
+    @apply flex justify-start;
+  }
+  .frame-parent155 {
+    @apply flex-col items-start gap-[var(--gap-5xl)] text-[color:var(--white)];
+  }
+  .frame-parent153 {
+    @apply absolute flex-row items-center gap-[var(--gap-lgi)] left-[1.32vw] top-[4.37vw];
+  }
+  .view-schedule {
+    @apply cursor-pointer underline relative text-[length:var(--font-size-base)] tracking-[-0.02em] leading-[2.78vw] text-[color:var(--icon-grey)];
+  }
+  .schedule-parent {
+    @apply absolute flex flex-row items-start justify-start gap-[8.93vw] text-[length:var(--font-size-5xl)] text-[color:var(--color-darkslategray-200)] left-[1.32vw] top-[1.32vw];
+  }
+  .frame-parent152 {
+    @apply relative rounded-[var(--br-base)] bg-[color:var(--white)] w-[24.74vw] h-[18.12vw] overflow-hidden shrink-0 text-[color:var(--color-gray-200)];
+  }
+  .upcoming-interview {
+    @apply relative text-[length:var(--font-size-5xl)] tracking-[-0.02em] leading-[2.78vw] text-[color:var(--color-darkslategray-200)] font-[bold];
+  }
+  .phclock-parent,
+  .upcoming-interview-parent {
+    @apply flex flex-row items-center justify-start gap-[var(--gap-xs)];
+  }
+  .phclock-parent1 {
+    @apply flex flex-col items-center justify-start gap-[var(--gap-xs)];
+  }
+  .upcoming-interview-parent {
+    @apply flex-col items-start gap-[var(--gap-9xs)];
+  }
+  .schedule-interview {
+    @apply relative text-[1.05vw] text-[color:var(--white)] text-left font-[bold];
     font-family: var(--font-avenir-lt-std);
-    color: var(--white);
-    text-align: left;
-    font-weight: bold
-    }
-.icbaseline-plus-parent12 {
-    cursor: pointer;
-    border: 0;
-    padding: var(--padding-xs) var(--padding-5xl);
-    background-color: var(--purple);
-    border-radius: var(--br-5xs);
-    width: 21.96vw;
-    overflow: hidden;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-    gap: var(--gap-7xs)
-    }
-.frame-parent156 {
-    position: absolute;
-    top: 1.32vw;
-    left: 1.32vw;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: var(--gap-13xl)
-    }
-.frame-wrapper66 {
-    position: relative;
-    border-radius: var(--br-base);
-    background-color: var(--white);
-    width: 24.6vw;
-    height: 18.19vw;
-    overflow: hidden;
-    flex-shrink: 0;
-    
-    }
-.frame-parent151, .frame-wrapper65 {
-    display: flex;
-    justify-content: flex-start
-    }
-.frame-wrapper65 {
-    height: 18.19vw;
-    flex-direction: column;
-    align-items: flex-start;
-    color: var(--icon-grey)
-    }
-.frame-parent151 {
-    position: absolute;
-    top: 44.18vw;
-    left: 21.03vw;
-    flex-direction: row;
-    align-items: center;
-    gap: var(--gap-xl);
-    font-size: var(--font-size-xl);
-    color: var(--color-darkslategray-200)
-    }
-.dream-company-company {
-    position: relative;
-    background-color: var(--color-ghostwhite-100);
-    width: 100%;
-    height: 64.95vw;
-    overflow: hidden;
-    text-align: left;
-    font-size: var(--font-size-5xl);
-    color: var(--icon-grey);
-    font-family: var(--font-avenir-lt-std)
-    }
-    
+  }
+  .icbaseline-plus-parent12 {
+    @apply cursor-pointer pt-[var(--padding-xs)] pr-[var(--padding-5xl)] pb-[var(--padding-xs)] pl-[var(--padding-5xl)] bg-[color:var(--purple)] rounded-[var(--br-5xs)] w-[21.96vw] overflow-hidden flex flex-row items-center justify-center box-border gap-[var(--gap-7xs)] border-0;
+  }
+  .frame-parent156 {
+    @apply absolute flex flex-col items-start justify-start gap-[var(--gap-13xl)] left-[1.32vw] top-[1.32vw];
+  }
+  .frame-wrapper66 {
+    @apply relative rounded-[var(--br-base)] bg-[color:var(--white)] w-[24.6vw] h-[18.19vw] overflow-hidden shrink-0;
+  }
+  .frame-parent151,
+  .frame-wrapper65 {
+    @apply flex justify-start;
+  }
+  .frame-wrapper65 {
+    @apply h-[18.19vw] flex-col items-start text-[color:var(--icon-grey)];
+  }
+  .frame-parent151 {
+    @apply absolute flex-row items-center gap-[var(--gap-xl)] text-[length:var(--font-size-xl)] text-[color:var(--color-darkslategray-200)] left-[21.03vw] top-[44.18vw];
+  }
+  .dream-company-company {
+    @apply relative bg-[color:var(--color-ghostwhite-100)] w-full h-[64.95vw] overflow-hidden text-left text-[length:var(--font-size-5xl)] text-[color:var(--icon-grey)];
+    font-family: var(--font-avenir-lt-std);
+  }
+  

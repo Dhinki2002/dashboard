@@ -1,216 +1,93 @@
+/*
+  Based on TailwindCSS recommendations,
+  consider using classes instead of the `@apply` directive
+  @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
+*/
 .company-logo-icon1 {
-    position: relative;
-    width: 6.22vw;
-    height: 2.71vw;
-    overflow: hidden;
-    flex-shrink: 0
-    }
-.sde-1-interview {
-    position: relative;
-    letter-spacing: -0.02em;
-    line-height: 2.78vw;
-    font-weight: bold;
-    }
-.sde-2-interview {
-        position: relative;
-        letter-spacing: -0.02em;
-        line-height: 2.78vw;
-        }    
-.saturday-august-29-parent {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: var(--gap-xl);
-    font-size: var(--font-size-lg)
-    }
-.company-logo-parent, .sde-1-interview-parent {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start
-    }
-.company-logo-parent {
-    gap: var(--gap-xs)
-    }
-.dos {
-    cursor: pointer;
-    border: 0;
-    padding: 0;
-    background-color: transparent;
-    position: relative;
-    font-size: var(--font-size-lg);
-    letter-spacing: -0.02em;
-    line-height: 2.78vw;
+    @apply relative w-[6.22vw] h-[2.71vw] overflow-hidden shrink-0;
+  }
+  .sde-1-interview {
+    @apply relative tracking-[-0.02em] leading-[2.78vw] font-[bold];
+  }
+  .sde-2-interview {
+    @apply relative tracking-[-0.02em] leading-[2.78vw];
+  }
+  .saturday-august-29-parent {
+    @apply flex flex-row items-start justify-start gap-[var(--gap-xl)] text-[length:var(--font-size-lg)];
+  }
+  .company-logo-parent,
+  .sde-1-interview-parent {
+    @apply flex flex-col items-start justify-start;
+  }
+  .company-logo-parent {
+    @apply gap-[var(--gap-xs)];
+  }
+  .dos {
+    @apply cursor-pointer bg-transparent relative text-[length:var(--font-size-lg)] tracking-[-0.02em] leading-[2.78vw] text-[color:var(--black)] text-left inline-block p-0 border-0;
     font-family: var(--font-avenir-lt-std);
-    color: var(--black);
-    text-align: left;
-    display: inline-block
-    }
-.dos-parent {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: var(--gap-37xl)
-    }
-.group-icon {
-    position: relative;
-    width: 34.19vw;
-    height: 0.2vw
-    }
-.dress-professionally-to {
-    margin-bottom: 0
-    }
-.dress-professionally-to-make-a {
-    margin: 0;
-    padding-left: var(--padding-5xl)
-    }
-.dress-professionally-to-container {
-    position: relative;
-    letter-spacing: -0.02em;
-    line-height: 2.38vw
-    }
-.dress-professionally-to-make-a-wrapper, .frame-parent53 {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start
-    }
-.frame-parent53 {
-    flex-direction: column;
-    gap: var(--gap-xs);
-    font-size: var(--font-inherit);
-    color: var(--icon-grey);
-    font-family: var(--font-inherit)
-    }
-.start-now {
-    position: relative;
-    font-size: var(--font-size-xl);
+  }
+  .dos-parent {
+    @apply flex flex-row items-start justify-start gap-[var(--gap-37xl)];
+  }
+  .group-icon {
+    @apply relative w-[34.19vw] h-[0.2vw];
+  }
+  .dress-professionally-to {
+    @apply mb-0;
+  }
+  .dress-professionally-to-make-a {
+    @apply pl-[var(--padding-5xl)] m-0;
+  }
+  .dress-professionally-to-container {
+    @apply relative tracking-[-0.02em] leading-[2.38vw];
+  }
+  .dress-professionally-to-make-a-wrapper,
+  .frame-parent53 {
+    @apply flex flex-row items-start justify-start;
+  }
+  .frame-parent53 {
+    @apply flex-col gap-[var(--gap-xs)] text-[length:var(--font-inherit)] text-[color:var(--icon-grey)];
+    font-family: var(--font-inherit);
+  }
+  .start-now {
+    @apply relative text-[length:var(--font-size-xl)] text-[color:var(--white)] text-left font-[bold];
     font-family: var(--font-avenir-lt-std);
-    color: var(--white);
-    text-align: left;
-    font-weight: bold;
-    }
-.solarplay-bold-icon {
-    position: relative;
-    width: 1.06vw;
-    height: 1.06vw;
-    overflow: hidden;
-    flex-shrink: 0
-    }
-.start-now-parent {
-    cursor: pointer;
-    border: 0;
-    padding: var(--padding-base) var(--padding-xl);
-    background-color: var(--color-mediumseagreen);
-    border-radius: var(--br-5xs);
-    width: 10.52vw;
-    overflow: hidden;
-    flex-shrink: 0;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-    gap: var(--gap-3xs)
-    }
-.reschedule {
-    position: relative;
-    font-size: var(--font-size-xl);
+  }
+  .solarplay-bold-icon {
+    @apply relative w-[1.06vw] h-[1.06vw] overflow-hidden shrink-0;
+  }
+  .start-now-parent {
+    @apply cursor-pointer pt-[var(--padding-base)] pr-[var(--padding-xl)] pb-[var(--padding-base)] pl-[var(--padding-xl)] bg-[color:var(--color-mediumseagreen)] rounded-[var(--br-5xs)] w-[10.52vw] overflow-hidden shrink-0 flex flex-row items-center justify-center box-border gap-[var(--gap-3xs)] border-0;
+  }
+  .reschedule {
+    @apply relative text-[length:var(--font-size-xl)] text-[color:var(--incomplete)] text-left;
     font-family: var(--font-avenir-lt-std);
-    color: var(--incomplete);
-    text-align: left
-    }
-.reschedule-wrapper {
-    cursor: pointer;
-    border: 0.07vw solid var(--incomplete);
-    padding: var(--padding-base) var(--padding-xl);
-    background-color: var(--color-sandybrown-200);
-    border-radius: var(--br-5xs);
-    box-sizing: border-box;
-    width: 10.52vw;
-    overflow: hidden;
-    flex-shrink: 0;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center
-    }
-.cancel1 {
-    position: relative;
-    font-size: var(--font-size-xl);
+  }
+  .reschedule-wrapper {
+    @apply cursor-pointer border-[color:var(--incomplete)] pt-[var(--padding-base)] pr-[var(--padding-xl)] pb-[var(--padding-base)] pl-[var(--padding-xl)] bg-[color:var(--color-sandybrown-200)] rounded-[var(--br-5xs)] box-border w-[10.52vw] overflow-hidden shrink-0 flex flex-row items-center justify-center border-[0.07vw] border-solid;
+  }
+  .cancel1 {
+    @apply relative text-[length:var(--font-size-xl)] text-[color:var(--danger)] text-left;
     font-family: var(--font-avenir-lt-std);
-    color: var(--danger);
-    text-align: left
-    }
-.cancel-container {
-    cursor: pointer;
-    border: 0.07vw solid var(--danger);
-    padding: var(--padding-base) var(--padding-xl);
-    background-color: var(--color-crimson-100);
-    border-radius: var(--br-5xs);
-    box-sizing: border-box;
-    width: 10.52vw;
-    overflow: hidden;
-    flex-shrink: 0;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center
-    }
-.frame-parent51, .frame-parent55 {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: var(--gap-xl)
-    }
-.frame-parent51 {
-    position: absolute;
-    top: calc(50% - 13.72vw);
-    left: 2.12vw;
-    flex-direction: column;
-    gap: var(--gap-29xl)
-    }
-.vector-icon16 {
-    position: absolute;
-    height: 34%;
-    width: 34.01%;
-    top: 32.99%;
-    right: 32.99%;
-    bottom: 33%;
-    left: 32.99%;
-    max-width: 100%;
-    overflow: hidden;
-    max-height: 100%
-    }
-.basilcross-outline8 {
-    cursor: pointer;
-    border: 0;
-    padding: 0;
-    background-color: transparent;
-    position: absolute;
-    top: 1.59vw;
-    left: 34.72vw;
-    width: 2.12vw;
-    height: 2.12vw;
-    overflow: hidden
-    }
-.dashboardinterviewercardpopup {
-    border-radius: var(--br-base);
-    background-color: var(--white);
-    width: 38.43vw;
-    height: 31.55vw;
-    overflow: hidden;
-    max-width: 100%;
-    max-height: 100%;
-    text-align: left;
-    font-size: 1.56vw;
-    color: var(--black);
+  }
+  .cancel-container {
+    @apply cursor-pointer border-[color:var(--danger)] pt-[var(--padding-base)] pr-[var(--padding-xl)] pb-[var(--padding-base)] pl-[var(--padding-xl)] bg-[color:var(--color-crimson-100)] rounded-[var(--br-5xs)] box-border w-[10.52vw] overflow-hidden shrink-0 flex flex-row items-center justify-center border-[0.07vw] border-solid;
+  }
+  .frame-parent51,
+  .frame-parent55 {
+    @apply flex flex-row items-start justify-start gap-[var(--gap-xl)];
+  }
+  .frame-parent51 {
+    @apply absolute top-[calc(50%_-_13.72vw)] flex-col gap-[var(--gap-29xl)] left-[2.12vw];
+  }
+  .vector-icon16 {
+    @apply absolute h-[34%] w-[34.01%] max-w-full overflow-hidden max-h-full top-[32.99%] bottom-[33%] inset-x-[32.99%];
+  }
+  .basilcross-outline8 {
+    @apply cursor-pointer bg-transparent absolute w-[2.12vw] h-[2.12vw] overflow-hidden p-0 border-0 left-[34.72vw] top-[1.59vw];
+  }
+  .dashboardinterviewercardpopup {
+    @apply rounded-[var(--br-base)] bg-[color:var(--white)] w-[38.43vw] h-[31.55vw] overflow-hidden max-w-full max-h-full text-left text-[1.56vw] text-[color:var(--black)] absolute -translate-x-2/4 -translate-y-2/4 left-2/4 top-2/4;
     font-family: var(--font-avenir-lt-std);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%)
-    }
+  }
+  

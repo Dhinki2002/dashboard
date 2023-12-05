@@ -1,156 +1,66 @@
+/*
+  Based on TailwindCSS recommendations,
+  consider using classes instead of the `@apply` directive
+  @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
+*/
 .resume1 {
-    position: relative;
-    letter-spacing: -0.02em;
-    line-height: 2.78vw;
-    font-weight: bold
-    }
-.resume-container {
-    position: absolute;
-    top: 1.59vw;
-    left: 1.59vw;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start
-    }
-.icbaseline-plus-icon16 {
-    position: relative;
-    width: 1.32vw;
-    height: 1.32vw;
-    overflow: hidden;
-    flex-shrink: 0
-    }
-.create-new-resume {
-    position: relative;
-    font-size: 1.05vw;
+    @apply relative tracking-[-0.02em] leading-[2.78vw] font-[bold];
+  }
+  .resume-container {
+    @apply absolute flex flex-col items-start justify-start left-[1.59vw] top-[1.59vw];
+  }
+  .icbaseline-plus-icon16 {
+    @apply relative w-[1.32vw] h-[1.32vw] overflow-hidden shrink-0;
+  }
+  .create-new-resume {
+    @apply relative text-[1.05vw] text-[color:var(--white)] text-left font-[bold];
     font-family: var(--font-avenir-lt-std);
-    color: var(--white);
-    text-align: left;
-    font-weight: bold
-    }
-.icbaseline-plus-parent14 {
-    cursor: pointer;
-    border: 0;
-    padding: var(--padding-xs) var(--padding-5xl);
-    background-color: var(--purple);
-    position: absolute;
-    top: 1.32vw;
-    left: 59.79vw;
-    border-radius: var(--br-5xs);
-    overflow: hidden;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: var(--gap-7xs)
-    }
-.created-on-23-04-23 {
-    position: relative;
-    font-size: var(--font-size-sm);
-    letter-spacing: -0.02em;
-    line-height: 2.78vw;
+  }
+  .icbaseline-plus-parent14 {
+    @apply cursor-pointer pt-[var(--padding-xs)] pr-[var(--padding-5xl)] pb-[var(--padding-xs)] pl-[var(--padding-5xl)] bg-[color:var(--purple)] absolute rounded-[var(--br-5xs)] overflow-hidden flex flex-row items-center justify-center gap-[var(--gap-7xs)] border-0 left-[59.79vw] top-[1.32vw];
+  }
+  .created-on-23-04-23 {
+    @apply relative text-[length:var(--font-size-sm)] tracking-[-0.02em] leading-[2.78vw] text-[color:var(--icon-grey)] text-left mt-[-1.06vw];
     font-family: var(--font-avenir-lt-std);
-    color: var(--icon-grey);
-    text-align: left;
-    margin-top: -1.06vw
-    }
-.resume-sde1 {
-    position: relative;
-    font-size: var(--font-size-5xl);
-    letter-spacing: -0.02em;
-    line-height: 2.78vw;
+  }
+  .resume-sde1 {
+    @apply relative text-[length:var(--font-size-5xl)] tracking-[-0.02em] leading-[2.78vw] text-[color:var(--black)] text-left font-[bold];
     font-family: var(--font-avenir-lt-std);
-    color: var(--black);
-    text-align: left;
-    font-weight: bold
-    }
-.resume-sde1-parent {
-    position: absolute;
-    top: 9.72vw;
-    left: 1.32vw;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start
-    }
-.image-82-icon, .image-82-wrapper {
-    position: absolute;
-    top: 0;
-    left: calc(50% - 11.54vw)
-    }
-.image-82-icon {
-    width: 24.8vw;
-    height: 20.37vw;
-    object-fit: cover
-    }
-.image-82-wrapper {
-    border-radius: var(--br-base) var(--br-base) 0 0;
-    box-shadow: 0 0.13vw 0.13vw rgba(0, 0, 0, 0.1);
-    width: 23.08vw;
-    height: 8.53vw;
-    overflow: hidden
-    }
-.phdots-three-icon14 {
-    position: absolute;
-    top: 11.04vw;
-    left: 19.91vw;
-    width: 1.85vw;
-    height: 1.85vw;
-    overflow: hidden
-    }
-.frame-parent161 {
-    cursor: pointer;
-    border: 0;
-    padding: 0;
-    background-color: var(--white);
-    position: relative;
-    border-radius: var(--br-base);
-    box-shadow: -0.13vw 0 0 rgba(0, 0, 0, 0.1), 0.13vw -0.13vw 0 rgba(0, 0, 0, 0.1), 0 0.2vw 0 #605bff;
-    width: 23.08vw;
-    height: 15.01vw;
-    overflow: hidden;
-    flex-shrink: 0
-    }
-.image-85-icon, .image-87-icon {
-    position: absolute;
-    top: 0;
-    left: calc(50% - 11.54vw);
-    width: 23.08vw;
-    height: 28.84vw;
-    object-fit: cover
-    }
-.image-87-icon {
-    height: 32.54vw
-    }
-.frame-parent160 {
-    position: absolute;
-    top: 6.08vw;
-    left: 1.59vw;
-    width: 72.62vw;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: var(--gap-5xl)
-    }
-.frame-parent159 {
-    position: absolute;
-    top: 9.13vw;
-    left: 21.03vw;
-    border-radius: var(--br-base);
-    background-color: var(--white);
-    width: 76.59vw;
-    height: 53.7vw
-    }
-.resume-dashboard-individual {
-    position: relative;
-    background-color: var(--color-ghostwhite-100);
-    width: 100%;
-    height: 64.95vw;
-    overflow: hidden;
-    text-align: left;
-    font-size: var(--font-size-9xl);
-    color: var(--black);
-    font-family: var(--font-avenir-lt-std)
-    }
+  }
+  .resume-sde1-parent {
+    @apply absolute flex flex-col items-start justify-start left-[1.32vw] top-[9.72vw];
+  }
+  .image-82-icon,
+  .image-82-wrapper {
+    @apply absolute left-[calc(50%_-_11.54vw)] top-0;
+  }
+  .image-82-icon {
+    @apply w-[24.8vw] h-[20.37vw] object-cover;
+  }
+  .image-82-wrapper {
+    @apply rounded-[var(--br-base)_var(--br-base)_0_0] shadow-[0_0.13vw_0.13vw_rgba(0,0,0,0.1)] w-[23.08vw] h-[8.53vw] overflow-hidden;
+  }
+  .phdots-three-icon14 {
+    @apply absolute w-[1.85vw] h-[1.85vw] overflow-hidden left-[19.91vw] top-[11.04vw];
+  }
+  .frame-parent161 {
+    @apply cursor-pointer bg-[color:var(--white)] relative rounded-[var(--br-base)] shadow-[-0.13vw_0_0_rgba(0,0,0,0.1),0.13vw_-0.13vw_0_rgba(0,0,0,0.1),0_0.2vw_0_#605bff] w-[23.08vw] h-[15.01vw] overflow-hidden shrink-0 p-0 border-0;
+  }
+  .image-85-icon,
+  .image-87-icon {
+    @apply absolute left-[calc(50%_-_11.54vw)] w-[23.08vw] h-[28.84vw] object-cover top-0;
+  }
+  .image-87-icon {
+    @apply h-[32.54vw];
+  }
+  .frame-parent160 {
+    @apply absolute w-[72.62vw] flex flex-row flex-wrap items-start justify-start gap-[var(--gap-5xl)] left-[1.59vw] top-[6.08vw];
+  }
+  .frame-parent159 {
+    @apply absolute rounded-[var(--br-base)] bg-[color:var(--white)] w-[76.59vw] h-[53.7vw] left-[21.03vw] top-[9.13vw];
+  }
+  .resume-dashboard-individual {
+    @apply relative bg-[color:var(--color-ghostwhite-100)] w-full h-[64.95vw] overflow-hidden text-left text-[length:var(--font-size-9xl)] text-[color:var(--black)];
+    font-family: var(--font-avenir-lt-std);
+  }
+  

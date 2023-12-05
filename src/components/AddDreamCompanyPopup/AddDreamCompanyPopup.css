@@ -1,136 +1,68 @@
+/*
+  Based on TailwindCSS recommendations,
+  consider using classes instead of the `@apply` directive
+  @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
+*/
 .basilcross-outline-icon {
-    position: absolute;
-    top: 1.3vw;
-    left: 41.5vw;
-    width: 2.12vw;
-    height: 2.12vw;
-    overflow: hidden;
-    cursor: pointer
-    }
-.add-your-dream {
-    position: relative;
-    letter-spacing: -0.02em;
-    line-height: 2.78vw;
-    font-weight: bold
-    }
-.fill-in-the2 {
-    position: relative;
-    letter-spacing: -0.02em;
-    line-height: 2.78vw;
-    font-size: var(--font-size-lg);
-    color: var(--icon-grey);
-    margin-top: -0.53vw
-    }
-.add-your-dream-company-parent, .frame-child170 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start
-    }
-.frame-child170 {
-    border: 0.07vw solid var(--color-gainsboro-400);
+    @apply absolute w-[2.12vw] h-[2.12vw] overflow-hidden cursor-pointer left-[41.5vw] top-[1.3vw];
+  }
+  .add-your-dream {
+    @apply relative tracking-[-0.02em] leading-[2.78vw] font-[bold];
+  }
+  .fill-in-the2 {
+    @apply relative tracking-[-0.02em] leading-[2.78vw] text-[length:var(--font-size-lg)] text-[color:var(--icon-grey)] mt-[-0.53vw];
+  }
+  .add-your-dream-company-parent,
+  .frame-child170 {
+    @apply flex flex-col items-start justify-start;
+  }
+  .frame-child170 {
+    @apply border-[color:var(--color-gainsboro-400)] text-[length:var(--font-size-xl)] bg-transparent rounded-[var(--br-xs)] box-border w-[20.11vw] flex-row items-center pt-[var(--padding-base)] pr-[var(--padding-5xl)] pb-[var(--padding-base)] pl-[var(--padding-5xl)] border-[0.07vw] border-solid;
     font-family: var(--font-avenir-lt-std);
-    font-size: var(--font-size-xl);
-    background-color: transparent;
-    border-radius: var(--br-xs);
-    box-sizing: border-box;
-    width: 20.11vw;
-    flex-direction: row;
-    align-items: center;
-    padding: var(--padding-base) var(--padding-5xl)
-    }
-.dream-company-container, .frame-parent228 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: var(--gap-xs)
-    }
-.frame-parent228 {
-    flex-direction: row
-    }
-.frame-child172 {
-    border: 0.07vw solid var(--color-gainsboro-400);
+  }
+  .dream-company-container,
+  .frame-parent228 {
+    @apply flex flex-col items-start justify-start gap-[var(--gap-xs)];
+  }
+  .frame-parent228 {
+    @apply flex-row;
+  }
+  .frame-child172 {
+    @apply border-[color:var(--color-gainsboro-400)] text-[length:var(--font-size-xl)] bg-transparent rounded-[var(--br-xs)] box-border w-[20.11vw] flex flex-row items-center justify-between pt-[var(--padding-base)] pr-[var(--padding-5xl)] pb-[var(--padding-base)] pl-[var(--padding-5xl)] border-[0.07vw] border-solid;
     font-family: var(--font-avenir-lt-std);
-    font-size: var(--font-size-xl);
-    background-color: transparent;
-    border-radius: var(--br-xs);
-    box-sizing: border-box;
-    width: 20.11vw;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: var(--padding-base) var(--padding-5xl)
-    }
-.preparation-status {
-    position: relative
-    }
-.frame-parent226, .frame-parent227 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start
-    }
-.frame-parent227 {
-    gap: var(--gap-17xl);
-    font-size: var(--font-size-lg)
-    }
-.frame-parent226 {
-    gap: var(--gap-5xl)
-    }
-.pay-for-company {
-    position: relative;
-    font-size: var(--font-size-xl);
+  }
+  .preparation-status {
+    @apply relative;
+  }
+  .frame-parent226,
+  .frame-parent227 {
+    @apply flex flex-col items-start justify-start;
+  }
+  .frame-parent227 {
+    @apply gap-[var(--gap-17xl)] text-[length:var(--font-size-lg)];
+  }
+  .frame-parent226 {
+    @apply gap-[var(--gap-5xl)];
+  }
+  .pay-for-company {
+    @apply relative text-[length:var(--font-size-xl)] text-[color:var(--white)] text-left font-[bold];
     font-family: var(--font-avenir-lt-std);
-    color: var(--white);
-    text-align: left;
-    font-weight: bold
-    }
-.pay-for-company-wrapper {
-    border-radius: var(--br-5xs);
-    background-color: var(--purple);
-    overflow: hidden;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: var(--padding-base) var(--padding-xl);
-    cursor: pointer
-    }
-.frame-parent225, .frame-wrapper89 {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start
-    }
-.frame-wrapper89 {
-    cursor: pointer;
-    border: 0;
-    padding: 0;
-    background-color: transparent;
-    flex-direction: row
-    }
-.frame-parent225 {
-    position: absolute;
-    top: 2.38vw;
-    left: calc(50% - 20.5vw);
-    flex-direction: column;
-    gap: var(--gap-29xl)
-    }
-.adddreamcompanypopup {
-    border-radius: var(--br-base);
-    background-color: var(--white);
-    width: 44.31vw;
-    height: 32.21vw;
-    overflow: hidden;
-    max-width: 100%;
-    max-height: 100%;
-    text-align: left;
-    font-size: 1.56vw;
-    color: var(--black);
+  }
+  .pay-for-company-wrapper {
+    @apply rounded-[var(--br-5xs)] bg-[color:var(--purple)] overflow-hidden flex flex-row items-center justify-center pt-[var(--padding-base)] pr-[var(--padding-xl)] pb-[var(--padding-base)] pl-[var(--padding-xl)] cursor-pointer;
+  }
+  .frame-parent225,
+  .frame-wrapper89 {
+    @apply flex items-start justify-start;
+  }
+  .frame-wrapper89 {
+    @apply cursor-pointer bg-transparent flex-row p-0 border-0;
+  }
+  .frame-parent225 {
+    @apply absolute left-[calc(50%_-_20.5vw)] flex-col gap-[var(--gap-29xl)] top-[2.38vw];
+  }
+  .adddreamcompanypopup {
+    @apply rounded-[var(--br-base)] bg-[color:var(--white)] w-[44.31vw] h-[32.21vw] overflow-hidden max-w-full max-h-full text-left text-[1.56vw] text-[color:var(--black)] absolute -translate-x-2/4 -translate-y-2/4 left-2/4 top-2/4;
     font-family: var(--font-avenir-lt-std);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%)
-    }
+  }
+  

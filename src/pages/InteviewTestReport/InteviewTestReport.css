@@ -1,115 +1,58 @@
+/*
+  Based on TailwindCSS recommendations,
+  consider using classes instead of the `@apply` directive
+  @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
+*/
 .div85 {
-    position: relative;
-    letter-spacing: -0.02em;
-    line-height: 2.78vw;
-    font-size: var(--font-size-9xl)
-    }
-.interviews {
-    position: relative;
-    letter-spacing: -0.02em;
-    line-height: 2.78vw;
-    font-weight: bold
-    }
-.interviews-parent, .inteview-test-report-inner {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start
-    }
-.interviews-parent {
-    gap: var(--gap-5xs)
-    }
-.inteview-test-report-inner {
-    position: absolute;
-    top: 9.39vw;
-    left: 21.03vw;
-    width: 76.59vw
-    }
-.they-were-able4 {
-    position: relative;
-    font-size: var(--font-size-base);
-    letter-spacing: -0.02em;
-    line-height: 1.59vw;
-    color: var(--icon-grey);
-    display: inline-block;
-    width: 21.1vw
-    }
-.frame-wrapper61 {
-    border-radius: var(--br-xs);
-    background-color: var(--color-ghostwhite-200);
-    overflow: hidden;
-    padding: var(--padding-xl) var(--padding-sm)
-    }
-.frame-parent135, .frame-wrapper61, .technical-proficiency-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start
-    }
-.technical-proficiency-container {
-    width: 20.11vw;
-    height: 8vw
-    }
-.frame-parent135 {
-    position: absolute;
-    top: 4.89vw;
-    left: 1.39vw;
-    gap: var(--gap-base);
-    font-size: var(--font-size-xl)
-    }
-.remarks-group {
-    position: absolute;
-    top: 14.02vw;
-    left: 73.28vw;
-    border-radius: var(--br-base);
-    background-color: var(--white);
-    width: 24.74vw;
-    height: 48.28vw;
-    overflow: hidden;
-    color: var(--color-darkslategray-200)
-    }
-.my-interview-score {
-    position: absolute;
-    top: 1.32vw;
-    left: 1.32vw;
-    letter-spacing: -0.02em;
-    line-height: 2.78vw
-    }
-.frame-parent137 {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    justify-content: flex-start;
-    gap: var(--gap-xl)
-    }
-.frame-parent141 {
-    position: relative;
-    border-radius: var(--br-base);
-    background-color: var(--white);
-    color: var(--icon-grey);
-    top: -9vw;
-    left: -21vw;
-    width: 2vw
-    }
-.frame-parent136 {
-    position: absolute;
-    top: 14.02vw;
-    left: 21.03vw;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: var(--gap-xl);
-    color: var(--white)
-    }
-.inteview-test-report {
-    position: relative;
-    background-color: var(--color-ghostwhite-100);
-    width: 100%;
-    height: 64.95vw;
-    overflow: hidden;
-    text-align: left;
-    font-size: var(--font-size-5xl);
-    color: var(--icon-grey);
-    font-family: var(--font-avenir-lt-std)
-    }
+    @apply relative tracking-[-0.02em] leading-[2.78vw] text-[length:var(--font-size-9xl)];
+  }
+  .interviews {
+    @apply relative tracking-[-0.02em] leading-[2.78vw] font-[bold];
+  }
+  .interviews-parent,
+  .inteview-test-report-inner {
+    @apply flex flex-row items-start justify-start;
+  }
+  .interviews-parent {
+    @apply gap-[var(--gap-5xs)];
+  }
+  .inteview-test-report-inner {
+    @apply absolute w-[76.59vw] left-[21.03vw] top-[9.39vw];
+  }
+  .they-were-able4 {
+    @apply relative text-[length:var(--font-size-base)] tracking-[-0.02em] leading-[1.59vw] text-[color:var(--icon-grey)] inline-block w-[21.1vw];
+  }
+  .frame-wrapper61 {
+    @apply rounded-[var(--br-xs)] bg-[color:var(--color-ghostwhite-200)] overflow-hidden pt-[var(--padding-xl)] pr-[var(--padding-sm)] pb-[var(--padding-xl)] pl-[var(--padding-sm)];
+  }
+  .frame-parent135,
+  .frame-wrapper61,
+  .technical-proficiency-container {
+    @apply flex flex-col items-start justify-start;
+  }
+  .technical-proficiency-container {
+    @apply w-[20.11vw] h-[8vw];
+  }
+  .frame-parent135 {
+    @apply absolute gap-[var(--gap-base)] text-[length:var(--font-size-xl)] left-[1.39vw] top-[4.89vw];
+  }
+  .remarks-group {
+    @apply absolute rounded-[var(--br-base)] bg-[color:var(--white)] w-[24.74vw] h-[48.28vw] overflow-hidden text-[color:var(--color-darkslategray-200)] left-[73.28vw] top-[14.02vw];
+  }
+  .my-interview-score {
+    @apply absolute tracking-[-0.02em] leading-[2.78vw] left-[1.32vw] top-[1.32vw];
+  }
+  .frame-parent137 {
+    @apply flex flex-row items-end justify-start gap-[var(--gap-xl)];
+  }
+  .frame-parent141 {
+    @apply relative rounded-[var(--br-base)] bg-[color:var(--white)] text-[color:var(--icon-grey)] top-[-9vw] left-[-21vw] w-[2vw];
+  }
+  .frame-parent136 {
+    @apply absolute flex flex-col items-start justify-start gap-[var(--gap-xl)] text-[color:var(--white)] left-[21.03vw] top-[14.02vw];
+  }
+  .inteview-test-report {
+    @apply relative bg-[color:var(--color-ghostwhite-100)] w-full h-[64.95vw] overflow-hidden text-left text-[length:var(--font-size-5xl)] text-[color:var(--icon-grey)];
+    font-family: var(--font-avenir-lt-std);
+  }
+  

@@ -1,187 +1,71 @@
+/*
+  Based on TailwindCSS recommendations,
+  consider using classes instead of the `@apply` directive
+  @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
+*/
 .dream-companies {
-    position: relative;
-    letter-spacing: -0.02em;
-    line-height: 2.78vw;
-    font-weight: bold
-    }
-.dream-companies-wrapper {
-    position: absolute;
-    top: 1.59vw;
-    left: 1.59vw;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start
-    }
-.vector-icon23 {
-    position: absolute;
-    height: 1.44%;
-    width: 5.5%;
-    top: 20.16%;
-    right: 7.94%;
-    bottom: 78.4%;
-    left: 86.56%;
-    max-width: 100%;
-    overflow: hidden;
-    max-height: 100%
-    }
-.company-logo-icon15 {
-    position: absolute;
-    top: 3.97vw;
-    left: calc(50% - 3.9vw);
-    width: 7.8vw;
-    height: 3.44vw;
-    overflow: hidden
-    }
-.interview-ready {
-    position: relative;
-    font-size: var(--font-size-sm);
-    letter-spacing: -0.02em;
-    line-height: 2.78vw;
+    @apply relative tracking-[-0.02em] leading-[2.78vw] font-[bold];
+  }
+  .dream-companies-wrapper {
+    @apply absolute flex flex-col items-start justify-start left-[1.59vw] top-[1.59vw];
+  }
+  .vector-icon23 {
+    @apply absolute h-[1.44%] w-[5.5%] max-w-full overflow-hidden max-h-full left-[86.56%] right-[7.94%] top-[20.16%] bottom-[78.4%];
+  }
+  .company-logo-icon15 {
+    @apply absolute left-[calc(50%_-_3.9vw)] w-[7.8vw] h-[3.44vw] overflow-hidden top-[3.97vw];
+  }
+  .interview-ready {
+    @apply relative text-[length:var(--font-size-sm)] tracking-[-0.02em] leading-[2.78vw] text-[color:var(--black)] text-left;
     font-family: var(--font-avenir-lt-std);
-    color: var(--black);
-    text-align: left
-    }
-.frame-child128, .rectangle-wrapper24 {
-    border-radius: var(--br-9xs);
-    height: 0.4vw
-    }
-.frame-child128 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: var(--color-mediumseagreen);
-    width: 7.34vw
-    }
-.rectangle-wrapper24 {
-    position: relative;
-    background-color: var(--color-gainsboro-300);
-    width: 10.19vw
-    }
-.interview-ready-parent {
-    position: absolute;
-    top: 8.47vw;
-    left: calc(50% - 8.73vw);
-    width: 17.46vw;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    gap: var(--gap-5xs)
-    }
-.vector-container {
-    cursor: pointer;
-    border: 0;
-    padding: 0;
-    background-color: var(--white);
-    position: relative;
-    border-radius: var(--br-base);
-    box-shadow: -0.13vw 0 0 rgba(0, 0, 0, 0.1), 0.13vw -0.1vw 0 rgba(0, 0, 0, 0.1), 0 0.2vw 0 #605bff;
-    width: 23.02vw;
-    height: 12.04vw;
-    overflow: hidden;
-    flex-shrink: 0
-    }
-.company-logo-icon16 {
-    position: absolute;
-    top: calc(50% - 2.05vw);
-    left: calc(50% - 5.29vw);
-    width: 10.52vw;
-    height: 2.98vw;
-    overflow: hidden
-    }
-.vector-parent1 {
-    cursor: pointer;
-    border: 0;
-    padding: 0;
-    background-color: var(--white);
-    position: relative;
-    border-radius: var(--br-base);
-    box-shadow: -0.13vw 0 0 rgba(0, 0, 0, 0.1), 0.13vw -0.13vw 0 rgba(0, 0, 0, 0.1), 0 0.2vw 0 #605bff;
-    width: 22.2vw;
-    height: 12.04vw;
-    overflow: hidden;
-    flex-shrink: 0;
-    top: 0.08vw;
-    margin-bottom: 0.49vw;
-    margin-left: 0.08vw;
-    }
-.company-logo-icon17, .company-logo-icon19 {
-    position: absolute;
-    top: calc(50% - 2.05vw);
-    left: calc(50% - 3.84vw);
-    width: 7.61vw;
-    height: 2.98vw;
-    overflow: hidden
-    }
-.company-logo-icon19 {
-    top: calc(50% - 2.18vw);
-    left: calc(50% - 5.29vw);
-    width: 10.58vw;
-    height: 3.17vw
-    }
-.frame-parent158 {
-    position: absolute;
-    top: 6.08vw;
-    left: 1.59vw;
-    width: 73.41vw;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: var(--gap-13xl);
-   max-height:50vw;
-    overflow:auto;
-    }
-.icbaseline-plus-icon15 {
-    position: relative;
-    width: 1.32vw;
-    height: 1.32vw;
-    overflow: hidden;
-    flex-shrink: 0
-    }
-.add-dream-company {
-    position: relative;
-    font-size: 1.05vw;
+  }
+  .frame-child128,
+  .rectangle-wrapper24 {
+    @apply rounded-[var(--br-9xs)] h-[0.4vw];
+  }
+  .frame-child128 {
+    @apply absolute bg-[color:var(--color-mediumseagreen)] w-[7.34vw] left-0 top-0;
+  }
+  .rectangle-wrapper24 {
+    @apply relative bg-[color:var(--color-gainsboro-300)] w-[10.19vw];
+  }
+  .interview-ready-parent {
+    @apply absolute left-[calc(50%_-_8.73vw)] w-[17.46vw] flex flex-row items-center justify-start gap-[var(--gap-5xs)] top-[8.47vw];
+  }
+  .vector-container {
+    @apply cursor-pointer bg-[color:var(--white)] relative rounded-[var(--br-base)] shadow-[-0.13vw_0_0_rgba(0,0,0,0.1),0.13vw_-0.1vw_0_rgba(0,0,0,0.1),0_0.2vw_0_#605bff] w-[23.02vw] h-[12.04vw] overflow-hidden shrink-0 p-0 border-0;
+  }
+  .company-logo-icon16 {
+    @apply absolute top-[calc(50%_-_2.05vw)] left-[calc(50%_-_5.29vw)] w-[10.52vw] h-[2.98vw] overflow-hidden;
+  }
+  .vector-parent1 {
+    @apply cursor-pointer bg-[color:var(--white)] relative rounded-[var(--br-base)] shadow-[-0.13vw_0_0_rgba(0,0,0,0.1),0.13vw_-0.13vw_0_rgba(0,0,0,0.1),0_0.2vw_0_#605bff] w-[22.2vw] h-[12.04vw] overflow-hidden shrink-0 ml-[0.08vw] mb-[0.49vw] p-0 border-0 top-[0.08vw];
+  }
+  .company-logo-icon17,
+  .company-logo-icon19 {
+    @apply absolute top-[calc(50%_-_2.05vw)] left-[calc(50%_-_3.84vw)] w-[7.61vw] h-[2.98vw] overflow-hidden;
+  }
+  .company-logo-icon19 {
+    @apply top-[calc(50%_-_2.18vw)] left-[calc(50%_-_5.29vw)] w-[10.58vw] h-[3.17vw];
+  }
+  .frame-parent158 {
+    @apply absolute w-[73.41vw] flex flex-row flex-wrap items-start justify-start gap-[var(--gap-13xl)] max-h-[50vw] overflow-auto left-[1.59vw] top-[6.08vw];
+  }
+  .icbaseline-plus-icon15 {
+    @apply relative w-[1.32vw] h-[1.32vw] overflow-hidden shrink-0;
+  }
+  .add-dream-company {
+    @apply relative text-[1.05vw] text-[color:var(--white)] text-left font-[bold];
     font-family: var(--font-avenir-lt-std);
-    color: var(--white);
-    text-align: left;
-    font-weight: bold
-    }
-.icbaseline-plus-parent13 {
-    cursor: pointer;
-    border: 0;
-    padding: var(--padding-xs) var(--padding-5xl);
-    background-color: var(--purple);
-    position: absolute;
-    top: 1.32vw;
-    left: 59.79vw;
-    border-radius: var(--br-5xs);
-    overflow: hidden;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: var(--gap-7xs)
-    }
-.frame-parent157 {
-    position: absolute;
-    top: 9.13vw;
-    left: 21.03vw;
-    border-radius: var(--br-base);
-    background-color: var(--white);
-    width: 76.59vw;
-    height: 53.7vw
-    }
-.dream-company-dashboard-indivi {
-    position: relative;
-    background-color: var(--color-ghostwhite-100);
-    width: 100%;
-    height: 64.95vw;
-    overflow: hidden;
-    text-align: left;
-    font-size: var(--font-size-9xl);
-    color: var(--black);
-    font-family: var(--font-avenir-lt-std)
-    }
+  }
+  .icbaseline-plus-parent13 {
+    @apply cursor-pointer pt-[var(--padding-xs)] pr-[var(--padding-5xl)] pb-[var(--padding-xs)] pl-[var(--padding-5xl)] bg-[color:var(--purple)] absolute rounded-[var(--br-5xs)] overflow-hidden flex flex-row items-center justify-center gap-[var(--gap-7xs)] border-0 left-[59.79vw] top-[1.32vw];
+  }
+  .frame-parent157 {
+    @apply absolute rounded-[var(--br-base)] bg-[color:var(--white)] w-[76.59vw] h-[53.7vw] left-[21.03vw] top-[9.13vw];
+  }
+  .dream-company-dashboard-indivi {
+    @apply relative bg-[color:var(--color-ghostwhite-100)] w-full h-[64.95vw] overflow-hidden text-left text-[length:var(--font-size-9xl)] text-[color:var(--black)];
+    font-family: var(--font-avenir-lt-std);
+  }
+  

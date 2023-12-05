@@ -1,235 +1,113 @@
+/*
+  Based on TailwindCSS recommendations,
+  consider using classes instead of the `@apply` directive
+  @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
+*/
 .my-profile3 {
-    position: relative;
-    font-size: var(--font-size-xl);
+    @apply relative text-[length:var(--font-size-xl)] text-[color:var(--purple)] text-left;
     font-family: var(--font-avenir-lt-std);
-    color: var(--purple);
-    text-align: left
-    }
-.my-profile-container {
-    cursor: pointer;
-    border: 0;
-    padding: var(--padding-xs) var(--padding-base);
-    background-color: var(--color-mediumslateblue-200);
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-radius: var(--br-16xl);
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start
-    }
-.billing1 {
-    position: relative;
-    font-size: var(--font-size-xl);
+  }
+  .my-profile-container {
+    @apply cursor-pointer pt-[var(--padding-xs)] pr-[var(--padding-base)] pb-[var(--padding-xs)] pl-[var(--padding-base)] bg-[color:var(--color-mediumslateblue-200)] absolute rounded-[var(--br-16xl)] flex flex-row items-start justify-start border-0 left-0 top-0;
+  }
+  .billing1 {
+    @apply relative text-[length:var(--font-size-xl)] text-[color:var(--icon-grey)] text-left;
     font-family: var(--font-avenir-lt-std);
-    color: var(--icon-grey);
-    text-align: left
-    }
-.billing-container {
-    cursor: pointer;
-    border: 0;
-    padding: 0;
-    background-color: transparent;
-    position: absolute;
-    top: 4.5vw;
-    left: 1.06vw;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start
-    }
-.frame-parent12 {
-    position: absolute;
-    top: 3.17vw;
-    left: 2.65vw;
-    width: 8.47vw;
-    height: 6.08vw
-    }
-.my-profile4 {
-    position: absolute;
-    top: 2.12vw;
-    left: 19.18vw;
-    letter-spacing: -0.02em;
-    line-height: 2.78vw
-    }
-.iit-roorkee, .name-of-insititute {
-    position: relative;
-    letter-spacing: -0.02em;
-    line-height: 2.78vw
-    }
-.iit-roorkee {
-    color: var(--icon-grey)
-    }
-.frame-parent14, .name-of-insititute-parent {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start
-    }
-.frame-parent14 {
-    gap: var(--gap-xl)
-    }
-.change-password2 {
-    position: relative;
-    font-size: var(--font-size-sm);
-    text-decoration: underline;
-    letter-spacing: -0.02em;
-    line-height: 2.78vw;
-    color: var(--icon-grey)
-    }
-.password-group {
-    width: 20.04vw;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between
-    }
-.div4 {
-    position: absolute;
-    top: -0.26vw;
-    left: 0;
-    letter-spacing: -0.02em;
-    line-height: 2.78vw
-    }
-.carbonview-off-icon1 {
-    position: absolute;
-    top: 0.73vw;
-    left: 18.19vw;
-    width: 1.32vw;
-    height: 1.32vw;
-    overflow: hidden
-    }
-.group {
-    position: relative;
-    width: 20.04vw;
-    height: 2.78vw;
-    margin-top: -0.26vw;
-    font-size: var(--font-size-17xl);
-    color: var(--icon-grey)
-    }
-.frame-parent16 {
-    width: 20.04vw;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start
-    }
-.delete-account1, .this-will-permanently1 {
-    position: relative;
-    font-size: var(--font-size-base)
-    }
-.this-will-permanently1 {
-    letter-spacing: -0.02em;
-    line-height: 2.78vw;
-    color: var(--icon-grey);
-    margin-top: -0.26vw
-    }
-.delete-account1 {
+  }
+  .billing-container {
+    @apply cursor-pointer bg-transparent absolute flex flex-col items-start justify-start p-0 border-0 left-[1.06vw] top-[4.5vw];
+  }
+  .frame-parent12 {
+    @apply absolute w-[8.47vw] h-[6.08vw] left-[2.65vw] top-[3.17vw];
+  }
+  .my-profile4 {
+    @apply absolute tracking-[-0.02em] leading-[2.78vw] left-[19.18vw] top-[2.12vw];
+  }
+  .iit-roorkee,
+  .name-of-insititute {
+    @apply relative tracking-[-0.02em] leading-[2.78vw];
+  }
+  .iit-roorkee {
+    @apply text-[color:var(--icon-grey)];
+  }
+  .frame-parent14,
+  .name-of-insititute-parent {
+    @apply flex flex-col items-start justify-start;
+  }
+  .frame-parent14 {
+    @apply gap-[var(--gap-xl)];
+  }
+  .change-password2 {
+    @apply relative text-[length:var(--font-size-sm)] underline tracking-[-0.02em] leading-[2.78vw] text-[color:var(--icon-grey)];
+  }
+  .password-group {
+    @apply w-[20.04vw] flex flex-row items-start justify-between;
+  }
+  .div4 {
+    @apply absolute top-[-0.26vw] tracking-[-0.02em] leading-[2.78vw] left-0;
+  }
+  .carbonview-off-icon1 {
+    @apply absolute w-[1.32vw] h-[1.32vw] overflow-hidden left-[18.19vw] top-[0.73vw];
+  }
+  .group {
+    @apply relative w-[20.04vw] h-[2.78vw] mt-[-0.26vw] text-[length:var(--font-size-17xl)] text-[color:var(--icon-grey)];
+  }
+  .frame-parent16 {
+    @apply w-[20.04vw] flex flex-col items-start justify-start;
+  }
+  .delete-account1,
+  .this-will-permanently1 {
+    @apply relative text-[length:var(--font-size-base)];
+  }
+  .this-will-permanently1 {
+    @apply tracking-[-0.02em] leading-[2.78vw] text-[color:var(--icon-grey)] mt-[-0.26vw];
+  }
+  .delete-account1 {
+    @apply text-[color:var(--danger)] text-left;
     font-family: var(--font-avenir-lt-std);
-    color: var(--danger);
-    text-align: left
-    }
-.delete-account-container {
-    cursor: pointer;
-    border: 0;
-    padding: var(--padding-4xs) var(--padding-xs);
-    background-color: var(--color-crimson-200);
-    border-radius: var(--br-5xs);
-    flex-direction: row
-    }
-.delete-account-container, .frame-parent13, .frame-parent17 {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start
-    }
-.frame-parent17 {
-    width: 20.24vw;
-    flex-direction: column;
-    gap: var(--gap-5xs)
-    }
-.frame-parent13 {
-    position: absolute;
-    top: 7.01vw;
-    left: 19.71vw;
-    flex-direction: row;
-    gap: var(--gap-118xl);
-    font-size: var(--font-size-lg)
-    }
-.tableredit-icon1 {
-    position: relative;
-    width: 1.06vw;
-    height: 1.06vw;
-    overflow: hidden;
-    flex-shrink: 0
-    }
-.edit1 {
-    position: relative;
-    font-size: var(--font-size-base);
-    letter-spacing: -0.02em;
-    line-height: 2.78vw;
+  }
+  .delete-account-container {
+    @apply cursor-pointer pt-[var(--padding-4xs)] pr-[var(--padding-xs)] pb-[var(--padding-4xs)] pl-[var(--padding-xs)] bg-[color:var(--color-crimson-200)] rounded-[var(--br-5xs)] flex-row border-0;
+  }
+  .delete-account-container,
+  .frame-parent13,
+  .frame-parent17 {
+    @apply flex items-start justify-start;
+  }
+  .frame-parent17 {
+    @apply w-[20.24vw] flex-col gap-[var(--gap-5xs)];
+  }
+  .frame-parent13 {
+    @apply absolute flex-row gap-[var(--gap-118xl)] text-[length:var(--font-size-lg)] left-[19.71vw] top-[7.01vw];
+  }
+  .tableredit-icon1 {
+    @apply relative w-[1.06vw] h-[1.06vw] overflow-hidden shrink-0;
+  }
+  .edit1 {
+    @apply relative text-[length:var(--font-size-base)] tracking-[-0.02em] leading-[2.78vw] text-[color:var(--icon-grey)] text-left;
     font-family: var(--font-avenir-lt-std);
-    color: var(--icon-grey);
-    text-align: left
-    }
-.frame-wrapper8, .tableredit-group {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start
-    }
-.tableredit-group {
-    align-items: center;
-    gap: var(--gap-5xs)
-    }
-.frame-wrapper8 {
-    cursor: pointer;
-    border: 0;
-    padding: var(--padding-9xs) var(--padding-base);
-    background-color: var(--white);
-    position: absolute;
-    top: 1.85vw;
-    left: 68.85vw;
-    border-radius: var(--br-xs);
-    box-shadow: -0.13vw -0.13vw 0.13vw rgba(0, 0, 0, 0.08), 0.13vw 0.13vw 0.13vw rgba(0, 0, 0, 0.08);
-    align-items: flex-start
-    }
-.rectangle-container {
-    position: relative;
-    border-radius: var(--br-base);
-    background-color: var(--white);
-    width: 76.59vw;
-    height: 48.54vw;
-    overflow: hidden;
-    flex-shrink: 0;
-    font-size: var(--font-size-5xl)
-    }
-.settings-parent {
-    position: absolute;
-    top: 10.45vw;
-    left: 21.03vw;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: var(--gap-base)
-    }
-.adminsettings {
-    position: relative;
-    background-color: var(--color-ghostwhite-100);
-    width: 100%;
-    height: 64.95vw;
-    overflow: hidden;
-    text-align: left;
-    font-size: var(--font-size-9xl);
-    color: var(--black);
-    font-family: var(--font-avenir-lt-std)
-    }
-
-.forgot-password-admin{
-        text-decoration: underline;
-        position: relative;
-        font-size: var(--font-size-sm);
-        letter-spacing: -0.02em;
-        line-height: 2.78vw;
-        color: var(--icon-grey)
-}    
+  }
+  .frame-wrapper8,
+  .tableredit-group {
+    @apply flex flex-row justify-start;
+  }
+  .tableredit-group {
+    @apply items-center gap-[var(--gap-5xs)];
+  }
+  .frame-wrapper8 {
+    @apply cursor-pointer pt-[var(--padding-9xs)] pr-[var(--padding-base)] pb-[var(--padding-9xs)] pl-[var(--padding-base)] bg-[color:var(--white)] absolute rounded-[var(--br-xs)] shadow-[-0.13vw_-0.13vw_0.13vw_rgba(0,0,0,0.08),0.13vw_0.13vw_0.13vw_rgba(0,0,0,0.08)] items-start border-0 left-[68.85vw] top-[1.85vw];
+  }
+  .rectangle-container {
+    @apply relative rounded-[var(--br-base)] bg-[color:var(--white)] w-[76.59vw] h-[48.54vw] overflow-hidden shrink-0 text-[length:var(--font-size-5xl)];
+  }
+  .settings-parent {
+    @apply absolute flex flex-col items-start justify-start gap-[var(--gap-base)] left-[21.03vw] top-[10.45vw];
+  }
+  .adminsettings {
+    @apply relative bg-[color:var(--color-ghostwhite-100)] w-full h-[64.95vw] overflow-hidden text-left text-[length:var(--font-size-9xl)] text-[color:var(--black)];
+    font-family: var(--font-avenir-lt-std);
+  }
+  .forgot-password-admin {
+    @apply underline relative text-[length:var(--font-size-sm)] tracking-[-0.02em] leading-[2.78vw] text-[color:var(--icon-grey)];
+  }
+  
