@@ -20,6 +20,7 @@
     "chart.js": "^2.9.4",
     "html2pdf.js": "^0.10.1",
     "latest-version": "^7.0.0",
+    "postcss-cli": "^10.1.0",
     "react": "^18.2.0",
     "react-ace": "^10.1.0",
     "react-autosuggest": "^10.1.0",
@@ -47,8 +48,10 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "concurrently npm:start:*",
+    "start:dev": "react-scripts start",
     "build": "react-scripts build",
+    "start:postcss": "postcss src/index.css -o src/tailwind.css -w",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -69,6 +72,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.16",
+    "concurrently": "^8.2.2",
     "postcss": "^8.4.32",
     "tailwindcss": "^3.3.6"
   }
