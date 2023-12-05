@@ -19,7 +19,7 @@
     font-family: var(--font-avenir-lt-std);
   }
   .frame-parent247 {
-    @apply absolute flex flex-row items-start justify-start gap-[var(--gap-20xl)] left-[1.7vw] top-[1vw];
+    @apply absolute flex flex-row items-start justify-start gap-[4vw] left-[1.7vw] top-[1vw];
   }
   .multiple-choice-questions {
     @apply relative tracking-[-0.02em] leading-[2.78vw] top-[1vw];
@@ -151,7 +151,7 @@
     font-family: var(--font-avenir-lt-std);
   }
   .tab-button {
-    @apply border-[none] w-[7vw] bg-transparent mr-2.5 pb-[5px] border-[none];
+    @apply border-[none] w-[8.3vw] bg-transparent mr-2.5 pb-[5px] border-[none];
   }
   .tab-button.active {
     @apply w-[8.3vw] border-[none] border-b-2 border-b-[blue] border-solid;
