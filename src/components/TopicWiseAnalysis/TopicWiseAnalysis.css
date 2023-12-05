@@ -61,10 +61,10 @@
     @apply absolute flex-row gap-[var(--gap-92xl)] text-[length:var(--font-size-base)] left-[1.85vw] top-[4.43vw];
   }
   .frame-child153 {
-    @apply relative border-t-[color:var(--icon-grey)] box-border w-[47.82vw] h-[0.07vw] opacity-[0.18] border-t-[0.07vw] border-solid;
+    @apply relative border-t-[color:black] box-border w-[47.82vw] h-[0.07vw] opacity-[0.18] border-t-[0.07vw] border-solid;
   }
   .line-parent9 {
-    @apply absolute flex flex-col items-start justify-start gap-[var(--gap-27xl)] left-[1.32vw] top-[6.94vw];
+    @apply absolute flex flex-col items-start justify-start gap-[2.8vw] left-[1.32vw] top-[6.94vw];
   }
   .frame-parent202 {
     @apply relative rounded-[var(--br-base)] bg-[color:var(--white)] w-[50.93vw] overflow-auto h-[29vw] left-[21vw] top-[9.2vw];
