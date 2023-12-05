@@ -72,7 +72,8 @@ const TransactionsInterviewer = () => {
   };
 
   return (
-    <div className="transactions-interviewer">
+    <div className="relative bg-[color:var(--color-ghostwhite-100)] w-full h-[64.95vw] overflow-hidden text-left text-[length:var(--font-size-5xl)] text-[color:var(--color-darkslategray-200)];
+    font-family: var(--font-avenir-lt-std)">
       <Helmet>
         <title>Transaction Interviewer</title>
         <meta name="desc"
@@ -80,36 +81,37 @@ const TransactionsInterviewer = () => {
       </Helmet>
       <InterviewerNavbar counter={counter} />
       <InterviewerHeader />
-      <div className="frame-parent56">
-        <div className="frame-parent57">
-          <div className="transactions-wrapper">
-            <div className="transactions">Transactions</div>
+      <div className="flex flex-col items-start justify-start absolute gap-[var(--gap-lgi)] left-[21.3vw] top-[10.12vw]">
+        <div className="flex flex-row items-center justify-start gap-[57.74vw] ">
+          <div className="flex flex-col items-start justify-start">
+            <div className="relative tracking-[-0.02em] leading-[2.78vw] ">Transactions</div>
           </div>
-          <button className="report-a-problem-wrapper">
-            <div className="report-a-problem">Report a problem</div>
+          <button className="flex flex-row items-center  cursor-pointer border-[color:var(--danger)] pt-[var(--padding-5xs)] pr-[var(--padding-base)] pb-[var(--padding-5xs)] pl-[var(--padding-base)] bg-[color:var(--color-crimson-200)] rounded-[var(--br-9xs)] overflow-hidden justify-center border-[0.07vw] border-solid;">
+            <div className="relative text-[length:var(--font-size-sm)] text-[color:var(--danger)] text-left;
+    font-family: var(--font-avenir-lt-std)">Report a problem</div>
           </button>
         </div>
-        <div className="frame-parent58">
-          <div className="frame-parent59">
-            <div className="frame-wrapper30">
-              <div className="next-payment-date-parent">
-                <div className="next-payment-date">Next Payment date:</div>
-                <div className="october-2023">27 October 2023</div>
+        <div className="flex-col items-start justify-start gap-[var(--gap-5xl)] text-[length:var(--font-size-lg)] text-[color:var(--text)]">
+          <div className="flex flex-row items-start justify-start gap-[var(--gap-xl)]">
+            <div className="relative rounded-[var(--br-base)] bg-[color:var(--white)] w-[22.35vw] h-[6.75vw] overflow-hidden shrink-0">
+              <div className="absolute flex flex-col items-start justify-start gap-[var(--gap-5xs)] left-[1.59vw] top-[1.32vw]">
+                <div className="relative opacity-80">Next Payment date:</div>
+                <div className="relative opacity-80 text-[length:var(--font-size-5xl)] ">27 October 2023</div>
               </div>
             </div>
-            <div className="frame-wrapper30">
-              <div className="next-payment-date-parent">
-                <div className="next-payment-date">Last Payment date:</div>
-                <div className="october-2023">27 July 2023</div>
+            <div className="relative rounded-[var(--br-base)] bg-[color:var(--white)] w-[22.35vw] h-[6.75vw] overflow-hidden shrink-0">
+              <div className="absolute flex flex-col items-start justify-start gap-[var(--gap-5xs)] left-[1.59vw] top-[1.32vw]">
+                <div className="relative opacity-80">Last Payment date:</div>
+                <div className="relative opacity-80 text-[length:var(--font-size-5xl)]">27 July 2023</div>
               </div>
             </div>
           </div>
-          <div className="frame-wrapper32">
-            <div className="frame-parent60">
-              <div className="frame-parent61">
-                <div className="date-parent">
-                  <div className="transactions">Date</div>
-                  <div className="download-parent">
+          <div className="relative rounded-[var(--br-base)] bg-[color:var(--white)] w-[76.59vw] h-[31.15vw] text-[length:var(--font-size-base)] text-[color:var(--icon-grey)]">
+            <div className="absolute w-[73.94vw] h-[28.84vw] left-[1.32vw] top-[1.06vw]">
+              <div className="flex items-start justify-start absolute left-[calc(50%_-_36.21vw)] flex-row gap-[14.88vw] top-0">
+                <div className="flex flex-row items-start justify-start gap-[var(--gap-xl)] flex-col gap-[var(--gap-11xs)] ">
+                  <div className="relative tracking-[-0.02em] leading-[2.78vw]">Date</div>
+                  <div className="flex items-start justify-start flex-col gap-[var(--gap-5xs)] text-[color:var(--color-darkslategray-200)]">
                     {transactions.map((transaction) => (
                       <div className="transactions" key={transaction.id}>
                         {transaction.Date}
@@ -117,43 +119,43 @@ const TransactionsInterviewer = () => {
                     ))}
                   </div>
                 </div>
-                <div className="date-parent">
-                  <div className="transactions">Transaction Id</div>
-                  <div className="download-parent">
+                <div className="flex flex-row items-start justify-start gap-[var(--gap-xl)] flex-col gap-[var(--gap-11xs)]">
+                  <div className="relative tracking-[-0.02em] leading-[2.78vw]">Transaction Id</div>
+                  <div className="flex items-start justify-start flex-col gap-[var(--gap-5xs)] text-[color:var(--color-darkslategray-200)]">
                     {transactions.map((transaction) => (
-                      <div className="transactions" key={transaction.id}>
+                      <div className="relative tracking-[-0.02em] leading-[2.78vw]" key={transaction.id}>
                         {transaction.TransactionNumber}
                       </div>
                     ))}
                   </div>
                 </div>
-                <div className="status-parent">
-                  <div className="transactions">Status</div>
-                  <div className="legend-label-3-parent">
+                <div className="flex justify-start flex-col items-start gap-[0.86vw]">
+                  <div className="relative tracking-[-0.02em] leading-[2.78vw]">Status</div>
+                  <div className="flex-col items-start gap-[var(--gap-15xl)] text-[color:var(--light-base-chart-title)] flex justify-start">
                     {transactions.map((text) => (
-                      <div className="legend-label-31" key={text.id}>
+                      <div className="flex flex-row items-center justify-start gap-[var(--gap-5xs)]" key={text.id}>
                         <div className={`${getTextClass(text.Status)}`} />
-                        <div className="complete">{text.Status}</div>
+                        <div className="relative tracking-[0.01vw] leading-[1.06vw]">{text.Status}</div>
                       </div>
                     ))}
                   </div>
                 </div>
-                <div className="date-parent">
-                  <div className="invoice-wrapper">
-                    <div className="transactions">Invoice</div>
+                <div className="flex flex-row items-start justify-start gap-[var(--gap-xl)] flex-col gap-[var(--gap-11xs)]">
+                  <div className="flex justify-start flex-row items-center">
+                    <div className="relative tracking-[-0.02em] leading-[2.78vw]">Invoice</div>
                   </div>
-                  <div className="download-parent">
+                  <div className="flex items-start justify-start flex-col gap-[var(--gap-5xs)] text-[color:var(--color-darkslategray-200)]">
                     {transactions.map((transaction) => (
-                      <div className="download" key={transaction.id}>
+                      <div className="relative underline tracking-[-0.02em] leading-[2.78vw]" key={transaction.id}>
                         Download
                       </div>
                     ))}
                   </div>
                 </div>
               </div>
-              <div className="line-parent2">
+              <div className="absolute flex flex-col items-start justify-start gap-[var(--gap-31xl)] left-0 top-[2.51vw]">
                 {transactions.map((transaction) => (
-                  <div className="frame-child37" key={transaction.id} />
+                  <div className="relative border-t-[color:var(--icon-grey)] box-border w-[74.01vw] h-[0.07vw] opacity-[0.18] border-t-[0.07vw] border-solid" key={transaction.id} />
                 ))}
               </div>
             </div>
