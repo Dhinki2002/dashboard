@@ -1,6 +1,6 @@
 import InterviewerNavbar from '../../components/InterviewerNavbar/InterviewerNavbar.js';
 import InterviewerHeader from '../../components/InterviewerHeader/InterviewerHeader.js';
-import "./TransactionsInterviewer.css";
+// import "./TransactionsInterviewer.css";
 import { Helmet } from "react-helmet";
 
 const TransactionsInterviewer = () => {
@@ -61,18 +61,18 @@ const TransactionsInterviewer = () => {
   const getTextClass = (text) => {
     switch (text) {
       case "Complete":
-        return "legend-indicator-14";
+        return "relative rounded-[var(--br-81xl)] bg-[color:var(--color-mediumseagreen)] w-[0.86vw] h-[0.86vw]";
       case "Processing":
-        return "legend-indicator-16";
+        return "relative rounded-[var(--br-81xl)] bg-[color:var(--incomplete)] w-[0.86vw] h-[0.86vw]";
       case "Failed":
-        return "legend-indicator-17";
+        return "relative rounded-[var(--br-81xl)] bg-[color:var(--danger)] w-[0.86vw] h-[0.86vw]";
       default:
         return ""; // default class if needed
     }
   };
 
   return (
-    <div className="relative bg-[color:var(--color-ghostwhite-100)] w-full h-[64.95vw] overflow-hidden text-left text-[length:var(--font-size-5xl)] text-[color:var(--color-darkslategray-200)];
+    <div className="relative bg-[color:var(--color-ghostwhite-100)] w-full h-[64.95vw] overflow-hidden text-left text-[length:var(--font-size-5xl)] text-[color:var(--color-darkslategray-200)]
     font-family: var(--font-avenir-lt-std)">
       <Helmet>
         <title>Transaction Interviewer</title>
@@ -86,8 +86,8 @@ const TransactionsInterviewer = () => {
           <div className="flex flex-col items-start justify-start">
             <div className="relative tracking-[-0.02em] leading-[2.78vw] ">Transactions</div>
           </div>
-          <button className="flex flex-row items-center  cursor-pointer border-[color:var(--danger)] pt-[var(--padding-5xs)] pr-[var(--padding-base)] pb-[var(--padding-5xs)] pl-[var(--padding-base)] bg-[color:var(--color-crimson-200)] rounded-[var(--br-9xs)] overflow-hidden justify-center border-[0.07vw] border-solid;">
-            <div className="relative text-[length:var(--font-size-sm)] text-[color:var(--danger)] text-left;
+          <button className="flex flex-row items-center  cursor-pointer border-[color:var(--danger)] pt-[var(--padding-5xs)] pr-[var(--padding-base)] pb-[var(--padding-5xs)] pl-[var(--padding-base)] bg-[color:var(--color-crimson-200)] rounded-[var(--br-9xs)] overflow-hidden justify-center border-[0.07vw] border-solid">
+            <div className="relative text-[length:var(--font-size-sm)] text-[color:var(--danger)] text-left
     font-family: var(--font-avenir-lt-std)">Report a problem</div>
           </button>
         </div>
@@ -113,7 +113,7 @@ const TransactionsInterviewer = () => {
                   <div className="relative tracking-[-0.02em] leading-[2.78vw]">Date</div>
                   <div className="flex items-start justify-start flex-col gap-[var(--gap-5xs)] text-[color:var(--color-darkslategray-200)]">
                     {transactions.map((transaction) => (
-                      <div className="transactions" key={transaction.id}>
+                      <div className="relative tracking-[-0.02em] leading-[2.78vw]" key={transaction.id}>
                         {transaction.Date}
                       </div>
                     ))}

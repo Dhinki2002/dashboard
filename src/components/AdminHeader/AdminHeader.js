@@ -23,16 +23,14 @@ const AdminHeader = () => {
 
   return (
     <>
-      <div className="frame-parent284">
+      <div className="flex flex-row items-center justify-start gap-[var(--gap-xl)] gap-[var(--gap-13xl)] text-[color:var(--icon-grey)] absolute gap-[var(--gap-227xl)] text-left text-[length:var(--font-size-base)] text-[color:var(--color-darkslategray-200)] left-[21.03vw] top-[2.91vw]
+  font-family: var(--font-avenir-lt-std)">
         <div className="hi-admin-container">
           <div className="hi-admin2">Hi Admin,</div>
           <div className="welcome-to-fulcrum6">Welcome to Fulcrum!</div>
         </div>
         <div className="frame-parent285">
-          <div className="frame-wrapper121">
-            <div className="frame-wrapper122">
-            </div>
-          </div>
+
           <div className="claritynotification-line-parent2">
             <button
               className="claritynotification-line"
