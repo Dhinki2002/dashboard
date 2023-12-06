@@ -22,7 +22,7 @@ const CantileverLogo = memo(
 
     return (
       <img
-        className="cantileverlogoblack-2-icon-login"
+        className="absolute w-[12.51vw] h-[2.63vw] object-cover left-[4.8vw] top-[5.38vw]"
         alt=""
         src={cantileverlogoblack2}
         style={cantileverlogoblack2IconStyle}

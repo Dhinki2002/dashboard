@@ -23,35 +23,35 @@ const InterviewerHeader = () => {
 
   return (
     <>
-      <div className="frame-parent297">
-        <div className="hi-interviewer-parent2">
-          <div className="hi-interviewer4">Hi Interviewer,</div>
-          <div className="welcome-to-fulcrum10">Welcome to Fulcrum!</div>
+      <div className="flex flex-row items-center justify-start gap-[var(--gap-base)] text-[color:var(--black)] gap-[var(--gap-13xl)] text-[color:var(--icon-grey)] absolute gap-[var(--gap-215xl)] text-left text-[length:var(--font-size-base)] text-[color:var(--color-darkslategray-200)] left-[21.03vw] top-[2.91vw]; font-family: var(--font-avenir-lt-std)">
+        <div className="flex flex-col items-start justify-start font-[bold]">
+          <div className="relative tracking-[-0.02em] leading-[1.59vw]">Hi Interviewer,</div>
+          <div className="relative tracking-[-0.02em] leading-[1.59vw] text-[length:var(--font-size-15xl)] leading-[2.78vw] text-[color:var(--black)]">Welcome to Fulcrum!</div>
         </div>
-        <div className="frame-parent298">
-          <div className="frame-wrapper141">
+        <div className="flex flex-row items-center justify-start gap-[var(--gap-base)] text-[color:var(--black)] gap-[var(--gap-13xl)] text-[color:var(--icon-grey)]">
+          <div className="flex justify-start flex-row items-center">
 
           </div>
-          <div className="claritynotification-line-parent6">
+          <div className="flex flex-row items-center justify-start gap-[var(--gap-base)] text-[color:var(--black)]">
             <button
-              className="claritynotification-line1"
+              className="cursor-pointer bg-transparent relative w-[2.12vw] h-[2.12vw] overflow-hidden shrink-0 p-0 border-0"
               ref={claritynotificationLineRef}
               onClick={openNotificationPopup}
             >
-              <img className="vector-icon45" alt="" src="/vector8.svg" />
-              <img className="vector-icon46" alt="" src="/vector9.svg" />
+              <img className="absolute h-[81.01%] w-[82.78%] max-w-full overflow-hidden max-h-full left-[8.47%] right-[8.75%] top-[4.93%] bottom-[14.05%]" alt="" src="/vector8.svg" />
+              <img className="absolute h-[81.01%] w-[82.78%] max-w-full overflow-hidden max-h-full left-[8.47%] right-[8.75%] top-[4.93%] bottom-[14.05%] h-[6.33%] w-[14.61%] left-[42.56%] right-[42.83%] top-[88.89%] bottom-[4.78%]" alt="" src="/vector9.svg" />
             </button>
-            <div className="icround-star-parent2">
+            <div className="flex flex-row items-center justify-start gap-[var(--gap-9xs)]">
               <img
-                className="icround-star-icon4"
+                className="relative w-[1.85vw] h-[1.85vw] overflow-hidden shrink-0"
                 alt=""
                 src="/icroundstar.svg"
               />
-              <div className="div194">4.9</div>
+              <div className="relative tracking-[-0.02em] leading-[2.78vw] font-[bold]">4.9</div>
             </div>
-            <button className="ellipse-parent17" onClick={onFrameButton4Click}>
-              <div className="frame-child218" />
-              <img className="images-5-icon9" alt="" src="/images-5@2x.png" />
+            <button className="cursor-pointer bg-transparent relative w-[2.38vw] h-[2.38vw] p-0 border-0" onClick={onFrameButton4Click}>
+              <div className="absolute bg-[color:var(--yellow)] border-[color:var(--color-gray-600)] box-border w-[2.38vw] h-[2.38vw] rounded-[50%] border-[0.19vw] border-solid left-0 top-0" />
+              <img className="absolute left-[calc(50%_-_0.79vw)] w-[1.59vw] h-[1.72vw] object-cover top-[0.33vw]" alt="" src="/images-5@2x.png" />
             </button>
           </div>
         </div>

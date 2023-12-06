@@ -45,9 +45,9 @@ const GrowthAnalysis2 = () => {
       };
   return (
    
-    <div className="practice-tests-parent">
-            <div className="my-go-score">Practice Tests</div>
-            <div className="number-container">
+    <div className="relative rounded-[var(--br-base)] bg-[color:var(--white)] w-[24.6vw] h-[18.12vw] overflow-hidden shrink-0 text-[length:var(--font-size-5xl)]">
+            <div className="absolute top-[-0.4vw] tracking-[-0.02em] leading-[2.78vw] font-[bold] mt-[1.7vw] left-[1.32vw]">Practice Tests</div>
+            <div className="absolute w-[22.16vw] h-[15.26vw] text-right text-[length:var(--font-size-3xs-1)] text-[color:var(--black)] mt-[2vw] left-[1.19vw] top-[3.54vw]">
               <Line data={data} options={options} />
               </div>
           </div>

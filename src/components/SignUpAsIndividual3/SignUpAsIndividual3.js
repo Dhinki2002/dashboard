@@ -100,28 +100,28 @@ const SignUpAsIndividual3 = () => {
     }),
   };
   return (
-    <div className="sign-up-as-individual3-login">
+    <div className="relative bg-[color:var(--color-white-login)] w-full h-[56.12vw] overflow-hidden text-left text-[length:var(--h1-heavy-size-login)] text-[color:var(--black-login)]; font-family: var(--h1-heavy-login)">
       <CantileverLogo
         cantileverlogoblack2="/1644088580619-cantileverlogoblack-2@2x.png"
         cantileverlogoblack2IconPosition="absolute"
         cantileverlogoblack2IconTop="94px"
         cantileverlogoblack2IconLeft="84px"
       />
-      <div className="your-profile-is-almost-ready-group-login">
-        <div className="enter-your-skills-login">
+      <div className="absolute flex flex-col items-start justify-start gap-[var(--gap-9xs-login)] text-[color:var(--color-gray-400-login)] left-[4.8vw] top-[11.43vw]">
+        <div className="relative mb-[0.2vw]">
           Your profile is almost ready!
         </div>
-        <div className="just-a-few1-login">
+        <div className="relative text-[length:var(--font-size-5xl-login)]">
           Just a few more questions, and we are good to go.
         </div>
       </div>
-      <div className="frame-parent48-login">
-        <div className="frame-wrapper33-login">
-          <div className="enter-your-skills-parent-login">
-            <div className="enter-your-skills-login">Enter your skills</div>
+      <div className="text-[length:var(--body-heavy-size-login)] absolute flex flex-col items-start justify-start gap-[var(--gap-7xl-login)] left-[4.8vw] top-[16.91vw]">
+        <div className="flex flex-col items-start justify-start">
+          <div className="gap-[var(--gap-5xs-login)] flex flex-col items-start justify-start">
+            <div className="relative mb-[0.2vw]">Enter your skills</div>
             <div>
               <Select
-                className="frame-select1-login"
+                className="rounded-[var(--br-xs-login)] border-[color:var(--color-gainsboro-300-login)] box-border w-[31.2vw] flex flex-row items-center justify-start pt-[var(--padding-base-login)] pr-[var(--padding-5xl-login)] pb-[var(--padding-base-login)] pl-[var(--padding-5xl-login)] border-[0.06vw] border-solid"
                 isMulti
                 options={skillOptions}
                 value={selectedSkill}
@@ -161,14 +161,14 @@ const SignUpAsIndividual3 = () => {
             </div>
           </div>
         </div>
-        <div className="frame-wrapper33-login">
-          <div className="enter-your-skills-parent-login">
-            <div className="enter-your-skills-login">
+        <div className="flex flex-col items-start justify-start">
+          <div className="gap-[var(--gap-5xs-login)] flex flex-col items-start justify-start">
+            <div className="relative mb-[0.2vw]">
               Choose your target role
             </div>
             <div>
               <Select
-                className="frame-select1-login"
+                className="rounded-[var(--br-xs-login)] border-[color:var(--color-gainsboro-300-login)] box-border w-[31.2vw] flex flex-row items-center justify-start pt-[var(--padding-base-login)] pr-[var(--padding-5xl-login)] pb-[var(--padding-base-login)] pl-[var(--padding-5xl-login)] border-[0.06vw] border-solid"
                 isMulti
                 options={roleOptions}
                 value={selectedRoles}
@@ -208,14 +208,14 @@ const SignUpAsIndividual3 = () => {
             </div>
           </div>
         </div>
-        <div className="frame-wrapper33-login">
-          <div className="enter-your-skills-parent-login">
-            <div className="enter-your-skills-login">
+        <div className="flex flex-col items-start justify-start">
+          <div className="gap-[var(--gap-5xs-login)] flex flex-col items-start justify-start">
+            <div className="relative mb-[0.2vw]">
               Choose your dream companies
             </div>
             <div>
               <Select
-                className="frame-select1-login"
+                className="rounded-[var(--br-xs-login)] border-[color:var(--color-gainsboro-300-login)] box-border w-[31.2vw] flex flex-row items-center justify-start pt-[var(--padding-base-login)] pr-[var(--padding-5xl-login)] pb-[var(--padding-base-login)] pl-[var(--padding-5xl-login)] border-[0.06vw] border-solid"
                 isMulti
                 options={dreamOptions}
                 value={selectedDream}
@@ -256,15 +256,15 @@ const SignUpAsIndividual3 = () => {
           </div>
         </div>
       </div>
-      <div className="frame-parent49-login">
-        <button className="frame-wrapper36-login" onClick={onFrameButtonClick}>
-          <div className="next-container-login">
-            <div className="next1-login">Next</div>
+      <div className="absolute flex flex-col items-center justify-start gap-[var(--gap-33xl-login)] text-[length:var(--font-size-base-login)] left-[4.8vw] top-[46.8vw]">
+        <button className="flex flex-row items-end justify-center cursor-pointer pt-[var(--padding-xl-login)] pr-[var(--padding-5xl-login)] pb-[var(--padding-xl-login)] pl-[var(--padding-5xl-login)] bg-[color:var(--purple-login)] rounded-[var(--br-xs-login)] w-[31.2vw] items-center justify-between box-border border-0" onClick={onFrameButtonClick}>
+          <div className="flex flex-row items-end justify-center">
+            <div className="text-[length:var(--body-heavy-size-login)] relative text-[color:var(--color-white-login)] text-left; font-family: var(--h1-heavy-login)">Next</div>
           </div>
         </button>
-        <Link className="already-have-an-container9-login" to="/login">
+        <Link className="cursor-pointer no-underline relative text-inherit mt-[-2vw]" to="/login">
           <span>{`Already have an account? `}</span>
-          <span className="sign-in9-login">Sign In</span>
+          <span className="text-[color:var(--purple-login)]">Sign In</span>
         </Link>
       </div>
     </div>
