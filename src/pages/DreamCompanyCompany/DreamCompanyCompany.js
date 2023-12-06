@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import ScheduleInterviewPopup from '../../components/ScheduleInterviewPopup/ScheduleInterviewPopup.js';
 import Navbar from '../../components/Navbar/Navbar.js';
 import Header from '../../components/Header/Header.js';
-import "./DreamCompanyCompany.css";
+// import "./DreamCompanyCompany.css";
 import MyGoScore from '../../components/MyGoScore/MyGoScore.js';
 import { TopicWiseAnalysis } from '../../components/TopicWiseAnalysis/TopicWiseAnalysis.js';
 import GrowthAnalysis2 from '../../components/GrowthAnalysis2/GrowthAnalysis2.js';
@@ -47,7 +47,7 @@ const DreamCompanyCompany = () => {
 
   return (
     <>
-      <div className="dream-company-company">
+      <div className="relative bg-[color:var(--color-ghostwhite-100)] w-full h-[64.95vw] overflow-hidden text-left text-[length:var(--font-size-5xl)] text-[color:var(--icon-grey)]">
         <Helmet>
           <title>Dream Company Companies</title>
           <meta name="desc"
@@ -55,96 +55,96 @@ const DreamCompanyCompany = () => {
         </Helmet>
         <Navbar counter={counter} />
         <Header />
-        <div className="frame-parent144">
-          <div className="dream-company-parent">
-            <div className="dream-company">Dream Company</div>
-            <div className="div104">/</div>
-            <div className="dream-company">Amazon</div>
+        <div className="absolute w-[76.59vw] flex flex-row items-center justify-between left-[21.03vw] top-[9.39vw]    ">
+          <div className="w-[19.31vw] flex flex-row items-start justify-between">
+            <div className="relative tracking-[-0.02em] leading-[2.78vw]">Dream Company</div>
+            <div className="relative w-[1.59vw] h-[1.59vw] overflow-hidden shrink-0">/</div>
+            <div className="relative tracking-[-0.02em] leading-[2.78vw]">Amazon</div>
           </div>
-          <img className="uiwdate-icon" alt="" src="/uiwdate.svg" />
+          <img className="relative w-[1.59vw] h-[1.59vw] overflow-hidden shrink-0" alt="" src="/uiwdate.svg" />
         </div>
-        <div className="frame-parent145">
+        <div className="relative rounded-[var(--br-base)] bg-[color:var(--white)] text-[color:var(--icon-grey)] left-[-0.2vw] w-[2vw] top-[4.8vw]">
 
           <TopicWiseAnalysis />
 
         </div>
-        <div className="frame-parent148">
-          <div className="frame-parent149">
+        <div className="absolute flex flex-col items-start justify-start gap-[var(--gap-xl)] text-[length:var(--font-size-lg)] text-[color:var(--text)] left-[73.28vw] top-[13.82vw]">
+          <div className="relative rounded-[var(--br-base)] bg-[color:var(--white)] w-[24.34vw] h-[10.32vw] overflow-hidden shrink-0">
             <button
-              className="attempt-now-wrapper"
+              className="cursor-pointer border-[color:var(--purple)] pt-[var(--padding-sm)] pr-[var(--padding-98xl)] pb-[var(--padding-sm)] pl-[var(--padding-98xl)] bg-[color:var(--color-dodgerblue)] absolute left-[calc(50%_-_10.98vw)] rounded-[var(--br-5xs)] overflow-hidden flex flex-row items-center justify-center border-[0.07vw] border-solid top-[6.15vw]"
               onClick={openDreamStartTestPopup}
             >
-              <div className="attempt-now">Attempt now</div>
+              <div className="relative text-[1.05vw] text-[color:var(--purple)] text-left font-[bold]">Attempt now</div>
             </button>
-            <div className="students-took-test">
+            <div className="absolute inline-block w-[11.44vw] opacity-80 left-[1.59vw] top-[1.59vw]">
               1387+ students took test for Amazon
             </div>
           </div>
           <MyGoScore />
         </div>
-        <div className="frame-parent151">
+        <div className="flex justify-start  absolute flex-row items-center gap-[var(--gap-xl)] text-[length:var(--font-size-xl)] text-[color:var(--color-darkslategray-200)] left-[21.03vw] top-[44.18vw]">
           <GrowthAnalysis2 />
-          <div className="frame-parent152">
-            <div className="frame-parent153">
-              <div className="frame-parent154">
+          <div className="relative rounded-[var(--br-base)] bg-[color:var(--white)] w-[24.74vw] h-[18.12vw] overflow-hidden shrink-0 text-[color:var(--color-gray-200)]">
+            <div className="flex justify-start  absolute flex-row items-center gap-[var(--gap-lgi)] left-[1.32vw] top-[4.37vw]">
+              <div className="flex flex-col items-center justify-start">
                 {scheduleItems.map((item, index) => (
-                  <div key={index} className="frame-parent154">
-                    <div className="dream-company">{item.day}</div>
-                    <div className="div128">{item.date}</div>
+                  <div key={index} className="flex flex-col items-center justify-start">
+                    <div className="relative tracking-[-0.02em] leading-[2.78vw]">{item.day}</div>
+                    <div className="relative tracking-[-0.02em] leading-[2.78vw] mt-[-1.19vw]">{item.date}</div>
                   </div>
                 ))}
               </div>
-              <div className="frame-parent155">
+              <div className="flex justify-start  flex-col items-start gap-[var(--gap-5xl)] text-[color:var(--white)]">
                 {scheduleItems.map((item, index) => (
-                  <div key={index} className={item.event.includes("Test") ? "test-1-wrapper" : "interview-1-wrapper"}>
-                    <div className="test-1">{item.event}</div>
+                  <div key={index} className={item.event.includes("Test") ? "relative rounded-[var(--br-3xs)] w-[18.32vw] h-[2.58vw] overflow-hidden shrink-0 bg-[rgba(96,91,255,0.3)] text-[color:var(--purple)] " : "relative rounded-[var(--br-3xs)] w-[18.32vw] h-[2.58vw] overflow-hidden shrink-0  bg-[color:var(--color-sandybrown-100)]"}>
+                    <div className="absolute top-[calc(50%_-_1.32vw)] tracking-[-0.02em] leading-[2.78vw] left-[1.72vw]">{item.event}</div>
                   </div>
                 ))}
               </div>
             </div>
-            <div className="schedule-parent">
-              <div className="dream-company1">Schedule</div>
-              <Link className="view-schedule" to="/schedule-iteration-1">
+            <div className="absolute flex flex-row items-start justify-start gap-[8.93vw] text-[length:var(--font-size-5xl)] text-[color:var(--color-darkslategray-200)] left-[1.32vw] top-[1.32vw]">
+              <div className="relative tracking-[-0.02em] leading-[2.78vw] font-[bold]">Schedule</div>
+              <Link className="cursor-pointer underline relative text-[length:var(--font-size-base)] tracking-[-0.02em] leading-[2.78vw] text-[color:var(--icon-grey)]" to="/schedule-iteration-1">
                 View schedule
               </Link>
             </div>
           </div>
-          <div className="frame-wrapper65">
-            <div className="frame-wrapper66">
-              <div className="frame-parent156">
-              <div className="upcoming-interview-parent">
-      <div className="upcoming-interview">Upcoming Interview:</div>
+          <div className="flex justify-start  h-[18.19vw] flex-col items-start text-[color:var(--icon-grey)]">
+            <div className="relative rounded-[var(--br-base)] bg-[color:var(--white)] w-[24.6vw] h-[18.19vw] overflow-hidden shrink-0">
+              <div className="absolute flex flex-col items-start justify-start gap-[var(--gap-13xl)] left-[1.32vw] top-[1.32vw]">
+              <div className="flex flex-row items-center justify-start gap-[var(--gap-xs)] flex-col items-start gap-[var(--gap-9xs)] ">
+      <div className="relative text-[length:var(--font-size-5xl)] tracking-[-0.02em] leading-[2.78vw] text-[color:var(--color-darkslategray-200)] font-[bold]">Upcoming Interview:</div>
       {upcomingInterviews.map((interview, index) => (
-        <div key={index} className="phclock-parent1">
+        <div key={index} className="flex flex-col items-center justify-start gap-[var(--gap-xs)]">
           <div className="interview-detail">
-            <div className="phclock-parent">
-              <img className="uiwdate-icon1" alt="" src="/phclock.svg" />
-              <div className="dream-company">{interview.time}</div>
+            <div className="flex flex-row items-center justify-start gap-[var(--gap-xs)]">
+              <img className="relative w-[1.59vw] h-[1.59vw] overflow-hidden shrink-0 ml-[-6.8vw]" alt="" src="/phclock.svg" />
+              <div className="relative tracking-[-0.02em] leading-[2.78vw]">{interview.time}</div>
             </div>
           </div>
           <div className="interview-detail">
-            <div className="phclock-parent">
+            <div className="flex flex-row items-center justify-start gap-[var(--gap-xs)]">
               <img
-                className="uiwdate-icon"
+                className="relative w-[1.59vw] h-[1.59vw] overflow-hidden shrink-0"
                 alt=""
                 src="/solarcalendarlineduotone.svg"
               />
-              <div className="dream-company">{interview.date}</div>
+              <div className="relative tracking-[-0.02em] leading-[2.78vw]">{interview.date}</div>
             </div>
           </div>
         </div>
       ))}
     </div>
                 <button
-                  className="icbaseline-plus-parent12"
+                  className="cursor-pointer pt-[var(--padding-xs)] pr-[var(--padding-5xl)] pb-[var(--padding-xs)] pl-[var(--padding-5xl)] bg-[color:var(--purple)] rounded-[var(--br-5xs)] w-[21.96vw] overflow-hidden flex flex-row items-center justify-center box-border gap-[var(--gap-7xs)] border-0"
                   onClick={openScheduleInterviewPopup}
                 >
                   <img
-                    className="riarrow-drop-down-line-icon5"
+                    className="relative w-[1.32vw] h-[1.32vw] overflow-hidden shrink-0"
                     alt=""
                     src="/icbaselineplus5.svg"
                   />
-                  <div className="schedule-interview">Schedule interview</div>
+                  <div className="relative text-[1.05vw] text-[color:var(--white)] text-left font-[bold]">Schedule interview</div>
                 </button>
               </div>
             </div>
