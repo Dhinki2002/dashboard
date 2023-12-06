@@ -4,7 +4,7 @@ import PurpleBox from '../../components/PurpleBox/PurpleBox.js';
 import CantileverLogo from '../../components/CantileverLogo/CantileverLogo.js';
 import WelcomeText from '../../components/WelcomeText/WelcomeText.js';
 
-import "../SignUpAs/SignUpAs.css";
+// import "../SignUpAs/SignUpAs.css";
 
 import React from 'react'
 import SignUpAsInstitute from '../../components/SignUpAsInstitute/SignUpAsInstitute.js';
@@ -17,7 +17,7 @@ import { useSelector } from "react-redux";
 const SignUpInstitute = () => {
   const counter3 = useSelector((state)=>state.counter3);
   return (
-    <div className="sign-up-as-login">
+    <div className="relative bg-[color:var(--color-white-login)] w-full h-[56.12vw] overflow-hidden text-left text-[length:var(--font-size-5xl-login)] text-[color:var(--black-login)]">
       {counter3==0&&<SignUpAsInstitute/>}
       {counter3==1&&<SignUpAsInstitute1/>}
       {counter3==2&&<SignUpAsInstitute2/>}
