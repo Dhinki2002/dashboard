@@ -37,7 +37,7 @@ const LoginWithEmail = () => {
     
 
     
-    navigate('/dashboard');
+    navigate('/go-score-dashboardindividual');
   }, [navigate]);
 
 
