@@ -49,9 +49,11 @@
 .frame-parent187 {
   @apply relative rounded-[var(--br-3xs)] bg-[color:var(--white)] shadow-[0_0.13vw_0.13vw_rgba(0,0,0,0.15),0_-0.07vw_0.13vw_rgba(0,0,0,0.15)] w-[17.46vw] h-[21.36vw] overflow-hidden shrink-0;
 }
+
 .current-plan-wrapper {
   @apply cursor-pointer pt-[var(--padding-11xs)] pr-[var(--padding-29xl)] pb-[var(--padding-11xs)] pl-[var(--padding-29xl)] bg-[color:var(--color-lightsalmon-100)] absolute left-[calc(50%_-_7.8vw)] rounded-[var(--br-7xs)] w-[15.34vw] overflow-hidden flex flex-row items-center justify-center box-border border-0 top-[17.53vw];
 }
+
 .frame-parent189 {
   @apply relative rounded-[var(--br-3xs)] bg-[color:var(--white)] shadow-[0_0.13vw_0.13vw_rgba(0,0,0,0.15),0_-0.07vw_0.13vw_rgba(0,0,0,0.15)] border-[color:var(--color-lightsalmon-100)] box-border w-[17.72vw] h-[21.63vw] overflow-hidden shrink-0 text-[color:var(--color-lightsalmon-100)] border-[0.13vw] border-solid;
 }

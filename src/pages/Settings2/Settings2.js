@@ -26,7 +26,7 @@ const Settings2 = () => {
         <div className="absolute flex flex-row items-start justify-start gap-[var(--gap-xl)] text-[color:var(--purple)] left-[19.44vw] top-[11.9vw]">
           <div className="relative rounded-[var(--br-3xs)] bg-[color:var(--white)] shadow-[0_0.13vw_0.13vw_rgba(0,0,0,0.15),0_-0.07vw_0.13vw_rgba(0,0,0,0.15)] w-[17.46vw] h-[21.36vw] overflow-hidden shrink-0">
             <div className="absolute flex flex-row items-center justify-start gap-[var(--gap-2xs)] left-[1.32vw] top-[1.32vw]">
-              <img className="frame-child144" alt="" src="/group-589.svg" />
+              <img className="relative w-[1.59vw] h-[1.59vw]" alt="" src="/group-589.svg" />
               <div className="tracking-[-0.02em] leading-[2.78vw] relative">Basic Plan</div>
             </div>
             <div className="absolute text-[length:var(--font-size-21xl)] tracking-[-0.02em] leading-[2.78vw] text-[color:var(--color-darkslategray-300)] left-[1.59vw] top-[5.42vw]">$50</div>
@@ -35,62 +35,62 @@ const Settings2 = () => {
                 <img className="relative w-[1.06vw] h-[1.06vw] overflow-hidden shrink-0" alt="" src="/charmtick.svg" />
                 <div className="tracking-[-0.02em] leading-[2.78vw] relative">Features</div>
               </div>
-              <div className="charmtick-group">
+              <div className="flex justify-start  flex-row items-center gap-[var(--gap-3xs)] mt-[-0.53vw]">
                 <img className="relative w-[1.06vw] h-[1.06vw] overflow-hidden shrink-0" alt="" src="/charmtick.svg" />
                 <div className="tracking-[-0.02em] leading-[2.78vw] relative">Features</div>
               </div>
-              <div className="charmtick-group">
+              <div className="flex justify-start  flex-row items-center gap-[var(--gap-3xs)] mt-[-0.53vw]">
                 <img className="relative w-[1.06vw] h-[1.06vw] overflow-hidden shrink-0" alt="" src="/charmtick.svg" />
                 <div className="tracking-[-0.02em] leading-[2.78vw] relative">Features</div>
               </div>
             </div>
-            <button className="upgrade-to-basic-wrapper">
-              <div className="upgrade-to-basic">Upgrade to Basic</div>
+            <button className="cursor-pointer pt-[var(--padding-11xs)] pr-[var(--padding-29xl)] pb-[var(--padding-11xs)] pl-[var(--padding-29xl)] bg-[#3c7eff] absolute left-[calc(50%_-_7.8vw)] rounded-[var(--br-7xs)] overflow-hidden flex flex-row items-center justify-center border-0 top-[17.53vw]">
+              <div className="relative text-[length:var(--font-size-lg)] tracking-[-0.02em] leading-[2.78vw] text-[color:var(--white)] text-left">Upgrade to Basic</div>
             </button>
           </div>
-          <div className="frame-parent189">
+          <div className="relative rounded-[var(--br-3xs)] bg-[color:var(--white)] shadow-[0_0.13vw_0.13vw_rgba(0,0,0,0.15),0_-0.07vw_0.13vw_rgba(0,0,0,0.15)] border-[color:var(--color-lightsalmon-100)] box-border w-[17.72vw] h-[21.63vw] overflow-hidden shrink-0 text-[color:var(--color-lightsalmon-100)] border-[0.13vw] border-solid">
             <div className="absolute flex flex-row items-center justify-start gap-[var(--gap-2xs)] left-[1.32vw] top-[1.32vw]">
-              <img className="frame-child144" alt="" src="/group-5891.svg" />
+              <img className="relative w-[1.59vw] h-[1.59vw]" alt="" src="/group-5891.svg" />
               <div className="tracking-[-0.02em] leading-[2.78vw] relative">Free Plan</div>
             </div>
             <div className="absolute text-[length:var(--font-size-21xl)] tracking-[-0.02em] leading-[2.78vw] text-[color:var(--color-darkslategray-300)] left-[1.59vw] top-[5.42vw]">$0</div>
-            <button className="tracking-[-0.02em] leading-[2.78vw] relative-wrapper">
-              <div className="upgrade-to-basic">Current Plan</div>
+            <button className="cursor-pointer pt-[var(--padding-11xs)] pr-[var(--padding-29xl)] pb-[var(--padding-11xs)] pl-[var(--padding-29xl)] bg-[color:var(--color-lightsalmon-100)] absolute left-[calc(50%_-_7.8vw)] rounded-[var(--br-7xs)] w-[15.34vw] overflow-hidden flex flex-row items-center justify-center box-border border-0 top-[17.53vw]">
+              <div className="relative text-[length:var(--font-size-lg)] tracking-[-0.02em] leading-[2.78vw] text-[color:var(--white)] text-left">Current Plan</div>
             </button>
             <div className="flex justify-start absolute flex-col items-start text-[length:var(--font-size-lg)] text-[color:var(--black)] left-[1.32vw] top-[9.26vw]">
               <div className="flex-row items-center gap-[var(--gap-3xs)] flex justify-start ">
                 <img className="relative w-[1.06vw] h-[1.06vw] overflow-hidden shrink-0" alt="" src="/charmtick.svg" />
                 <div className="tracking-[-0.02em] leading-[2.78vw] relative">Features</div>
               </div>
-              <div className="charmtick-group">
+              <div className="flex justify-start  flex-row items-center gap-[var(--gap-3xs)] mt-[-0.53vw]">
                 <img className="relative w-[1.06vw] h-[1.06vw] overflow-hidden shrink-0" alt="" src="/charmtick.svg" />
                 <div className="tracking-[-0.02em] leading-[2.78vw] relative">Features</div>
               </div>
-              <div className="charmtick-group">
+              <div className="flex justify-start  flex-row items-center gap-[var(--gap-3xs)] mt-[-0.53vw]">
                 <img className="relative w-[1.06vw] h-[1.06vw] overflow-hidden shrink-0" alt="" src="/charmtick.svg" />
                 <div className="tracking-[-0.02em] leading-[2.78vw] relative">Features</div>
               </div>
             </div>
           </div>
-          <div className="frame-parent191">
+          <div className="relative rounded-[var(--br-3xs)] bg-[color:var(--white)] shadow-[0_0.13vw_0.13vw_rgba(0,0,0,0.15),0_-0.07vw_0.13vw_rgba(0,0,0,0.15)] w-[17.46vw] h-[21.36vw] overflow-hidden shrink-0 text-[color:var(--color-orange)]">
             <div className="absolute flex flex-row items-center justify-start gap-[var(--gap-2xs)] left-[1.32vw] top-[1.32vw]">
-              <img className="frame-child144" alt="" src="/group-5892.svg" />
+              <img className="relative w-[1.59vw] h-[1.59vw]" alt="" src="/group-5892.svg" />
               <div className="tracking-[-0.02em] leading-[2.78vw] relative">Pro Plan</div>
             </div>
             <div className="absolute text-[length:var(--font-size-21xl)] tracking-[-0.02em] leading-[2.78vw] text-[color:var(--color-darkslategray-300)] left-[1.59vw] top-[5.42vw]">$70</div>
-            <button className="upgrade-to-pro-wrapper">
-              <div className="upgrade-to-basic">Upgrade to Pro</div>
+            <button className="cursor-pointer pt-[var(--padding-11xs)] pr-[var(--padding-29xl)] pb-[var(--padding-11xs)] pl-[var(--padding-29xl)] bg-[color:var(--color-orange)] absolute left-[calc(50%_-_7.67vw)] rounded-[var(--br-7xs)] w-[15.34vw] overflow-hidden flex flex-row items-center justify-center box-border border-0 top-[17.53vw]">
+              <div className="relative text-[length:var(--font-size-lg)] tracking-[-0.02em] leading-[2.78vw] text-[color:var(--white)] text-left">Upgrade to Pro</div>
             </button>
             <div className="flex justify-start absolute flex-col items-start text-[length:var(--font-size-lg)] text-[color:var(--black)] left-[1.32vw] top-[9.26vw]">
               <div className="flex-row items-center gap-[var(--gap-3xs)] flex justify-start ">
                 <img className="relative w-[1.06vw] h-[1.06vw] overflow-hidden shrink-0" alt="" src="/charmtick.svg" />
                 <div className="tracking-[-0.02em] leading-[2.78vw] relative">Features</div>
               </div>
-              <div className="charmtick-group">
+              <div className="flex justify-start  flex-row items-center gap-[var(--gap-3xs)] mt-[-0.53vw]">
                 <img className="relative w-[1.06vw] h-[1.06vw] overflow-hidden shrink-0" alt="" src="/charmtick.svg" />
                 <div className="tracking-[-0.02em] leading-[2.78vw] relative">Features</div>
               </div>
-              <div className="charmtick-group">
+              <div className="flex justify-start  flex-row items-center gap-[var(--gap-3xs)] mt-[-0.53vw]">
                 <img className="relative w-[1.06vw] h-[1.06vw] overflow-hidden shrink-0" alt="" src="/charmtick.svg" />
                 <div className="tracking-[-0.02em] leading-[2.78vw] relative">Features</div>
               </div>
