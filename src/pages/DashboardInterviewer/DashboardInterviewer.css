@@ -3,7 +3,7 @@
   consider using classes instead of the `@apply` directive
   @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
 */
-.scheduled-interviews2 {
+/* .scheduled-interviews2 {
     @apply relative tracking-[-0.02em] leading-[2.78vw];
   }
   .scheduled-interviews-frame {
@@ -102,13 +102,19 @@
   }
   .frame-wrapper42 {
     @apply relative rounded-[var(--br-base)] bg-[color:var(--white)] shadow-[-0.13vw_0_0_rgba(0,0,0,0.1),0.13vw_-0.13vw_0_rgba(0,0,0,0.1),0_0.2vw_0_#605bff] w-[23.21vw] h-[10.85vw] overflow-hidden shrink-0;
-  }
-  .frame-parent74,
-  .frame-parent76,
+  } */
+  /* .frame-parent74,
+  .frame-parent76, */
   .frame-wrapper40 {
     @apply flex items-start justify-start;
   }
-  .frame-parent74 {
+  .frame-wrapper40 {
+    @apply flex-col;
+  }
+  .frame-wrapper40 {
+    @apply absolute text-[length:var(--font-size-5xl)] text-[color:var(--black)] left-[1.65vw] top-[6.22vw];
+  }
+  /* .frame-parent74 {
     @apply max-h-[46vw] gap-[var(--gap-xl)];
   }
   .frame-parent76 {
@@ -137,4 +143,4 @@
     @apply relative bg-[color:var(--color-ghostwhite-100)] w-full h-[64.95vw] overflow-hidden text-left text-[length:var(--font-size-6xl)] text-[color:var(--color-darkslategray-200)];
     font-family: var(--font-avenir-lt-std);
   }
-  
+   */
