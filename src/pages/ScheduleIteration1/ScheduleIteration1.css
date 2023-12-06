@@ -6,7 +6,11 @@
 .schedule {
   @apply relative tracking-[-0.02em] leading-[2.78vw] font-[bold];
 }
-.schedule-wrapper {
+.amazons-interview {
+  @apply absolute top-[calc(50%_-_1.32vw)] tracking-[-0.02em] leading-[2.78vw] left-[1.72vw];
+}
+
+/* .schedule-wrapper {
   @apply absolute flex flex-col items-start justify-start left-[1.59vw] top-[1.59vw];
 }
 .frame-child61 {
@@ -61,21 +65,16 @@
 }
 .test-2-wrapper {
   @apply relative rounded-[var(--br-3xs)] bg-[color:var(--color-darkorange)] w-[24.47vw] h-[2.58vw] overflow-hidden shrink-0 text-[color:var(--white)];
-}
-.frame-parent98 {
+} */
+/* .frame-parent98 {
   @apply flex flex-row items-center justify-start gap-[px] grid grid-cols-[repeat(2,1fr)];
-  /* gap: var(--gap-9xl); */
+
 }
 .frame-parent97 {
   @apply flex-col items-start grid grid-cols-[1fr] gap-[15px];
-  /* gap: var(--gap-base); */
+
 }
-.frame-parent97 {
-  /* As each frame-parent98 is a row */
-}
-.frame-parent98 {
-  /* Three columns for each child */
-}
+
 .view-more2 {
   @apply relative text-[length:var(--font-size-sm)] tracking-[-0.02em] leading-[2.78vw] text-[color:var(--icon-grey)] text-left;
   font-family: var(--font-avenir-lt-std);
@@ -93,9 +92,7 @@
 .frame-parent101 {
   @apply left-[2.84vw] top-[21.3vw];
 }
-.amazons-interview {
-  @apply absolute top-[calc(50%_-_1.32vw)] tracking-[-0.02em] leading-[2.78vw] left-[1.72vw];
-}
+
 .amazons-interview-wrapper {
   @apply relative rounded-[var(--br-3xs)] bg-[color:var(--color-mediumseagreen)] w-[24.47vw] h-[2.58vw] overflow-hidden shrink-0 text-[color:var(--white)];
 }
@@ -167,4 +164,4 @@
 .schedule-iteration-1 {
   @apply relative bg-[color:var(--color-ghostwhite-100)] w-full h-[64.95vw] overflow-hidden text-left text-[length:var(--font-size-9xl)] text-[color:var(--black)];
   font-family: var(--font-avenir-lt-std);
-}
+} */
