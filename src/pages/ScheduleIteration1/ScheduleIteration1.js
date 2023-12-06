@@ -44,155 +44,156 @@ const ScheduleIteration1 = () => {
   ]
 
   return (
-    <div className='relative bg-[color:var(--color-ghostwhite-100)] w-full h-[64.95vw] overflow-hidden text-left text-[length:var(--font-size-9xl)] text-[color:var(--black)]'>
-      <Helmet>
-        <title>Schedule Individual</title>
-        <meta name='desc' content='Schedule Individual' />
-      </Helmet>
-      <Navbar counter={counter} />
-      <Header />
-      <div className='absolute rounded-[var(--br-base)] bg-[color:var(--white)] w-[39.75vw] h-[53.7vw] left-[21.03vw] top-[9.39vw]'>
-        <div className='absolute flex flex-col items-start justify-start left-[1.59vw] top-[1.59vw]'>
-          <div className='schedule'>Schedule</div>
+    <div className="schedule-iteration-1">
+    <Helmet>
+      <title>Schedule Individual</title>
+      <meta name="desc"
+        content="Schedule Individual" />
+    </Helmet>
+    <Navbar counter={counter} />
+    <Header />
+    <div className="frame-parent93">
+      <div className="schedule-wrapper">
+        <div className="schedule">Schedule</div>
+      </div>
+      <div className="frame-parent94">
+        <div className="frame-parent95">
+          <div className="group-parent">
+            <img className="frame-child61" alt="" src="/group-592.svg" />
+            <img className="frame-child61" alt="" src="/group-592.svg" />
+            <img className="frame-child61" alt="" src="/group-592.svg" />
+          </div>
+          <div className="line-parent5">
+            <div className="frame-child64" />
+            <div className="frame-child65" />
+          </div>
         </div>
-        <div className='absolute w-[32.94vw] h-[43.12vw] text-[length:var(--font-size-xl)] text-[color:var(--color-gray-200)] left-[2.98vw] top-[6.28vw]'>
-          <div className='rotate-90 origin-[0_0]  absolute flex flex-col items-start justify-start gap-[var(--gap-3xs)] left-[1.85vw] top-[0.4vw]'>
-            <div className='flex flex-row items-start justify-start gap-[16.2vw] z-0'>
-              <img className='relative w-[1.85vw] h-[1.85vw]' alt='' src='/group-592.svg' />
-              <img className='relative w-[1.85vw] h-[1.85vw]' alt='' src='/group-592.svg' />
-              <img className='relative w-[1.85vw] h-[1.85vw]' alt='' src='/group-592.svg' />
-            </div>
-            <div className='absolute z-[1] m-0  flex flex-row items-start justify-start pt-[var(--padding-3xs)] pr-[var(--padding-3xs)] pb-[var(--padding-3xs)] pl-[var(--padding-3xs)] gap-[var(--gap-3xs)] left-[2.12vw] top-[0.93vw]'>
-              <div className='absolute top-[-0.03vw] left-[-0.03vw] border-t-[color:var(--icon-grey)] box-border w-[15.28vw] h-[0.07vw] opacity-50 z-0 m-0 border-t-[0.07vw] border-dashed' />
-              <div className='absolute z-[1] m-0  top-[-0.03vw] border-t-[color:var(--icon-grey)] box-border w-[15.28vw] h-[0.07vw] opacity-50 border-t-[0.07vw] border-dashed left-[18.29vw]' />
-            </div>
-          </div>
-          <div className='absolute flex-col justify-start gap-[var(--gap-32xl)]  flex items-start left-[0.79vw] top-[4.7vw]  '>
-            <div className='rotate-90 origin-[0_0]  relative bg-[color:var(--incomplete)] w-[0.4vw] h-[0.4vw] rounded-[50%]' />
-            <div className='rotate-90 origin-[0_0]  relative bg-[color:var(--incomplete)] w-[0.4vw] h-[0.4vw] rounded-[50%]' />
-            <div className='rotate-90 origin-[0_0]  relative bg-[color:var(--incomplete)] w-[0.4vw] h-[0.4vw] rounded-[50%]' />
-          </div>
-          <div className='absolute flex-col justify-start gap-[var(--gap-32xl)] left-[0.73vw] top-[22.49vw] flex items-start  '>
-            <div className='rotate-90 origin-[0_0]  relative bg-[color:var(--incomplete)] w-[0.4vw] h-[0.4vw] rounded-[50%]' />
-            <div className='rotate-90 origin-[0_0]  relative bg-[color:var(--incomplete)] w-[0.4vw] h-[0.4vw] rounded-[50%]' />
-            <div className='rotate-90 origin-[0_0]  relative bg-[color:var(--incomplete)] w-[0.4vw] h-[0.4vw] rounded-[50%]' />
-          </div>
-          <div className='flex items-start  absolute flex-col justify-start gap-[15.34vw] left-[2.78vw] top-0'>
-            <div className='schedule'>Practice Tests</div>
-            <div className='schedule'>Practice Interviews</div>
-            <div className='schedule'>Final Mock Interview</div>
-          </div>
-          <div className='absolute flex flex-col items-center justify-start gap-[var(--gap-base)] left-[2.78vw] top-[3.44vw]'>
-            <div className='flex-col items-start grid grid-cols-[1fr] gap-[15px] '>
-              {test2Items.map((item, index) => (
-                <div key={index} className='flex flex-row items-center justify-start gap-[px] grid grid-cols-[repeat(2,1fr)]'>
-                  <div className=' flex items-start  flex-row justify-center gap-[var(--gap-9xs)]'>
-                    <div className='schedule1'>{item.day}</div>
-                    <div className='schedule1'>{item.date}</div>
-                  </div>
-                  <div className='relative rounded-[var(--br-3xs)] bg-[color:var(--color-darkorange)] w-[24.47vw] h-[2.58vw] overflow-hidden shrink-0 text-[color:var(--white)]'>
-                    <div className='amazons-interview'>{item.test}</div>
-                  </div>
+        <div className="ellipse-group">
+          <div className="frame-child66" />
+          <div className="frame-child66" />
+          <div className="frame-child66" />
+        </div>
+        <div className="ellipse-container">
+          <div className="frame-child66" />
+          <div className="frame-child66" />
+          <div className="frame-child66" />
+        </div>
+        <div className="tests-parent">
+          <div className="schedule">Tests</div>
+          <div className="schedule">Interview</div>
+          <div className="schedule">Final Interview</div>
+        </div>
+        <div className="frame-parent96">
+          <div className="frame-parent97">
+            {test2Items.map((item, index) => (
+              <div key={index} className="frame-parent98">
+                <div className="tue-parent">
+                  <div className="schedule1">{item.day}</div>
+                  <div className="schedule1">{item.date}</div>
                 </div>
-              ))}
-            </div>
-            <button className='cursor-pointer bg-transparent w-[23.88vw] flex flex-row items-center justify-center gap-[var(--gap-9xs)] p-0 border-0;'>
-              <div className='relative text-[length:var(--font-size-sm)] tracking-[-0.02em] leading-[2.78vw] text-[color:var(--icon-grey)] text-left'>View more</div>
-              <img
-                className='relative w-[1.32vw] h-[1.32vw] overflow-hidden shrink-0'
-                alt=''
-                src='/riarrowdropdownline1.svg'
-              />
-            </button>
-          </div>
-          <div className='absolute flex flex-col items-center justify-start gap-[var(--gap-base)] left-[2.78vw] top-[3.44vw] left-[2.84vw] top-[21.3vw] '>
-            <div className='flex-col items-start grid grid-cols-[1fr] gap-[15px] '>
-              {test3Items.map((item, index) => (
-                <div key={index} className='flex flex-row items-center justify-start gap-[px] grid grid-cols-[repeat(2,1fr)]'>
-                  <div className=' flex items-start  flex-row justify-center gap-[var(--gap-9xs)]'>
-                    <div className='schedule1'>{item.day}</div>
-                    <div className='schedule1'>{item.date}</div>
-                  </div>
-                  <div className='relative rounded-[var(--br-3xs)] bg-[color:var(--color-darkorange)] w-[24.47vw] h-[2.58vw] overflow-hidden shrink-0 text-[color:var(--white)]'>
-                    <div className='amazons-interview'>{item.test}</div>
-                  </div>
+                <div className="test-2-wrapper">
+                  <div className="amazons-interview">Test-2</div>
                 </div>
-              ))}
-            </div>
-            <button className='cursor-pointer bg-transparent w-[23.88vw] flex flex-row items-center justify-center gap-[var(--gap-9xs)] p-0 border-0'>
-              <div className='relative text-[length:var(--font-size-sm)] tracking-[-0.02em] leading-[2.78vw] text-[color:var(--icon-grey)] text-left'>View more</div>
-              <img
-                className='relative w-[1.32vw] h-[1.32vw] overflow-hidden shrink-0'
-                alt=''
-                src='/riarrowdropdownline1.svg'
-              />
-            </button>
+              </div>
+            ))}
           </div>
-          {interviewItems.map((item, index) => (
-            <div key={index} className='absolute flex flex-row items-center justify-start gap-[var(--gap-9xl)] overflow-hidden left-[2.84vw] top-[40.34vw]'>
-              <div className=' flex items-start  flex-row justify-center gap-[var(--gap-9xs)]'>
-                <div className='schedule1'>{item.day}</div>
-                <div className='schedule1'>{item.date}</div>
+          <button className="view-more-container">
+            <div className="view-more2">View more</div>
+            <img
+              className="riarrow-drop-down-line-icon2"
+              alt=""
+              src="/riarrowdropdownline1.svg"
+            />
+          </button>
+        </div>
+        <div className="frame-parent101">
+          <div className="frame-parent97">
+            {test3Items.map((item, index) => (
+              <div key={index} className="frame-parent98">
+                <div className="tue-parent">
+                  <div className="schedule1">{item.day}</div>
+                  <div className="schedule1">{item.date}</div>
+                </div>
+                <div className="test-2-wrapper">
+                  <div className="amazons-interview">Test-2</div>
+                </div>
               </div>
-              <div className='relative rounded-[var(--br-3xs)] bg-[color:var(--color-mediumseagreen)] w-[24.47vw] h-[2.58vw] overflow-hidden shrink-0 text-[color:var(--white)]'>
-                <div className='amazons-interview'>{item.interview}</div>
-              </div>
+            ))}
+          </div>
+          <button className="view-more-container">
+            <div className="view-more2">View more</div>
+            <img
+              className="riarrow-drop-down-line-icon2"
+              alt=""
+              src="/riarrowdropdownline1.svg"
+            />
+          </button>
+        </div>
+        {interviewItems.map((item, index) => (
+          <div key={index} className="frame-parent106">
+            <div className="tue-parent">
+              <div className="schedule1">{item.day}</div>
+              <div className="schedule1">{item.date}</div>
+            </div>
+            <div className="amazons-interview-wrapper">
+              <div className="amazons-interview">{item.interview}</div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+    <div className="schedule-iteration-1-inner">
+      <div className="days-remaining-5-wrapper">
+        <div className="days-remaining-5">Days remaining: 5</div>
+      </div>
+    </div>
+    <div className="tips-parent">
+      <div className="tips">Tips:</div>
+      <div className="frame-parent107">
+        <div className="frame-wrapper48">
+          {mentorRemarks.map((item, index) => (
+            <div key={index} className="mentor-remarks-parent">
+              <div className="schedule">{item.title}</div>
+              <div className="they-were-able1">{item.content}</div>
             </div>
           ))}
         </div>
-      </div>
-      <div className='absolute rounded-[var(--br-xs)] flex flex-row items-start justify-start text-[length:var(--font-size-base)] text-[color:var(--danger)] border-[0.1vw] border-solid border-[#e94664] left-[48.21vw] top-[10.58vw]'>
-        <div className='rounded-[var(--br-5xs)] bg-[color:var(--color-crimson-100)] overflow-hidden flex flex-row items-center justify-center pt-[var(--padding-base)] pr-[var(--padding-xl)] pb-[var(--padding-base)] pl-[var(--padding-xl)]'>
-          <div className='relative'>Days remaining: 5</div>
+        <div className="frame-wrapper48">
+          {mentorRemarks.map((item, index) => (
+            <div key={index} className="mentor-remarks-parent">
+              <div className="schedule">{item.title}</div>
+              <div className="they-were-able1">{item.content}</div>
+            </div>
+          ))}
         </div>
-      </div>
-      <div className='absolute rounded-[var(--br-base)] bg-[color:var(--white)] w-[35.25vw] h-[53.64vw] overflow-hidden text-[length:var(--font-size-5xl)] text-[color:var(--color-darkslategray-200)] left-[62.37vw] top-[9.46vw]'>
-        <div className='absolute tracking-[-0.02em] leading-[2.78vw] font-[bold] left-[1.32vw] top-[1.32vw]'>Tips:</div>
-        <div className='flex flex-col items-start justify-start absolute gap-[var(--gap-base)] text-[length:var(--font-size-xl)] left-[1.32vw] top-[4.89vw]'>
-          <div className='flex flex-col items-start justify-start  rounded-[var(--br-xs)] bg-[color:var(--color-ghostwhite-200)] w-[32.28vw] overflow-hidden pt-[var(--padding-xl)] pr-[var(--padding-sm)] pb-[var(--padding-xl)] pl-[var(--padding-sm)] box-border'>
-            {mentorRemarks.map((item, index) => (
-              <div key={index} className='w-[30.03vw] h-[9.66vw]  flex flex-col items-start justify-start'>
-                <div className='schedule'>{item.title}</div>
-                <div className='relative text-[length:var(--font-size-base)] tracking-[-0.02em] leading-[1.59vw] text-[color:var(--icon-grey)] inline-block w-[30.22vw]'>{item.content}</div>
-              </div>
-            ))}
-          </div>
-          <div className='flex flex-col items-start justify-start  rounded-[var(--br-xs)] bg-[color:var(--color-ghostwhite-200)] w-[32.28vw] overflow-hidden pt-[var(--padding-xl)] pr-[var(--padding-sm)] pb-[var(--padding-xl)] pl-[var(--padding-sm)] box-border'>
-            {algorithmRemarks.map((item, index) => (
-              <div key={index} className='w-[30.03vw] h-[9.66vw]  flex flex-col items-start justify-start'>
-                <div className='schedule'>{item.title}</div>
-                <div className='relative text-[length:var(--font-size-base)] tracking-[-0.02em] leading-[1.59vw] text-[color:var(--icon-grey)] inline-block w-[30.22vw]'>{item.content}</div>
-              </div>
-            ))}
-          </div>
-          <div className='flex flex-col items-start justify-start  rounded-[var(--br-xs)] bg-[color:var(--color-ghostwhite-200)] w-[32.28vw] overflow-hidden pt-[var(--padding-xl)] pr-[var(--padding-sm)] pb-[var(--padding-xl)] pl-[var(--padding-sm)] box-border'>
-            <div className='technical-proficiency-group'>
-              <div className='schedule'>Technical Proficiency:</div>
-              <div className='relative text-[length:var(--font-size-base)] tracking-[-0.02em] leading-[1.59vw] text-[color:var(--icon-grey)] inline-block w-[30.22vw]'>
-                They were able to choose appropriate data structures for various
-                problems and implemented algorithms efficiently.They were able
-                to choose appropriate data structures.
-              </div>
+        <div className="frame-wrapper48">
+          <div className="technical-proficiency-group">
+            <div className="schedule">Technical Proficiency:</div>
+            <div className="they-were-able1">
+              They were able to choose appropriate data structures for various
+              problems and implemented algorithms efficiently.They were able
+              to choose appropriate data structures.
             </div>
           </div>
-          <div className='flex flex-col items-start justify-start   rounded-[var(--br-base)] bg-[color:var(--color-ghostwhite-200)] w-[32.28vw] h-[8.86vw] overflow-hidden shrink-0 pt-[var(--padding-base)] pb-[var(--padding-base)] box-border px-[1.39vw]'>
-            <div className='w-[29.76vw] h-[6.15vw] gap-[var(--gap-xs)] flex flex-col items-start justify-start '>
-              <div className='schedule'>Companies with similar benchmarks:</div>
-              <div className='flex flex-row items-center justify-start gap-[var(--gap-13xl)]'>
-                {companyLogos.map(logo => (
-                  <img
-                    key={logo.id}
-                    className='relative w-[4.96vw] h-[1.92vw] overflow-hidden shrink-0' // Keep the original class name
-                    alt=''
-                    src={logo.src}
-                  />
-                ))}
-              </div>
+        </div>
+        <div className="frame-wrapper51">
+          <div className="companies-with-similar-benchma-parent">
+            <div className="schedule">Companies with similar benchmarks:</div>
+            <div className="company-logo-parent10">
+              {companyLogos.map((logo) => (
+                <img
+                  key={logo.id}
+                  className="company-logo-icon13" // Keep the original class name
+                  alt=""
+                  src={logo.src}
+                />
+              ))}
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
   )
 }
 

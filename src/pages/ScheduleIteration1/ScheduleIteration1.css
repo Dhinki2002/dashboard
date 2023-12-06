@@ -10,7 +10,7 @@
   @apply absolute top-[calc(50%_-_1.32vw)] tracking-[-0.02em] leading-[2.78vw] left-[1.72vw];
 }
 
-/* .schedule-wrapper {
+.schedule-wrapper {
   @apply absolute flex flex-col items-start justify-start left-[1.59vw] top-[1.59vw];
 }
 .frame-child61 {
@@ -65,8 +65,8 @@
 }
 .test-2-wrapper {
   @apply relative rounded-[var(--br-3xs)] bg-[color:var(--color-darkorange)] w-[24.47vw] h-[2.58vw] overflow-hidden shrink-0 text-[color:var(--white)];
-} */
-/* .frame-parent98 {
+}
+.frame-parent98 {
   @apply flex flex-row items-center justify-start gap-[px] grid grid-cols-[repeat(2,1fr)];
 
 }
@@ -164,4 +164,4 @@
 .schedule-iteration-1 {
   @apply relative bg-[color:var(--color-ghostwhite-100)] w-full h-[64.95vw] overflow-hidden text-left text-[length:var(--font-size-9xl)] text-[color:var(--black)];
   font-family: var(--font-avenir-lt-std);
-} */
+}
