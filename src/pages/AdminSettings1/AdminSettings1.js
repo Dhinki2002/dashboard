@@ -8,49 +8,49 @@ const AdminSettings1 = () => {
   const counter=1;
   const settingsCounter=1;
   return (
-    <div className="settings1">
-      <Helmet>
-      <title>Settings Individual1</title>
-      <meta name="desc"
-        content="Settings Individual1"/>
-      </Helmet>
-      <AdminNavbar counter={counter}/>
-      <Header />
-      <div className="rectangle-parent">
-        <AdminSettingsPane settingsCounter={settingsCounter}/>
-        <div className="change-your-password">Change your password</div>
-        <div className="frame-container">
-          <div className="billing-wrapper">
-            <div className="frame-div">
-              <div className="password-container">
-                <div className="password">Password</div>
-              </div>
-              <input className="frame-child" type="password" />
+    <div className="relative bg-[color:var(--color-ghostwhite-100)] w-full h-[64.95vw] overflow-hidden text-left text-[length:var(--font-size-xl)] text-[color:var(--black)]">
+    <Helmet>
+    <title>Settings Individual1</title>
+    <meta name="desc"
+      content="Settings Individual1"/>
+    </Helmet>
+    <AdminNavbar counter={counter}/>
+    <Header />
+    <div className="absolute rounded-[var(--br-base)] bg-[color:var(--white)] w-[76.59vw] h-[48.54vw] overflow-hidden left-[21.03vw] top-[14.29vw]">
+      <AdminSettingsPane settingsCounter={settingsCounter}/>
+      <div className="absolute text-[length:var(--font-size-5xl)] tracking-[-0.02em] leading-[2.78vw] font-[bold] left-[19.18vw] top-[2.12vw]">Change your password</div>
+      <div className="absolute flex flex-col items-start justify-start gap-[var(--gap-9xl)] left-[19.18vw] top-[7.01vw]">
+        <div className="flex items-start justify-start flex-col">
+          <div className="flex flex-col items-start justify-start gap-[var(--gap-5xs)]">
+            <div className="w-[36.11vw] flex flex-row items-center justify-start">
+              <div className="relative">Password</div>
             </div>
+            <input className="frame-child" type="password" />
           </div>
-          <div className="frame-div">
-            <div className="password">New Password</div>
-            <input
-              className="frame-item"
-              placeholder="Confirm your password"
-              type="password"
-            />
-          </div>
-          <div className="frame-div">
-            <div className="password">Confirm New Password</div>
-            <input
-              className="frame-item"
-              placeholder="Confirm your password"
-              type="password"
-            />
-          </div>
-          <button className="change-password-wrapper">
-            <div className="change-password">Change password</div>
-          </button>
         </div>
+        <div className="flex flex-col items-start justify-start gap-[var(--gap-5xs)]">
+          <div className="relative">New Password</div>
+          <input
+            className="text-[length:var(--font-size-xl)]  border-[color:var(--color-gainsboro-400)] bg-transparent rounded-[var(--br-xs)] box-border w-[36.11vw] flex flex-row items-center justify-between pt-[var(--padding-base)] pr-[var(--padding-5xl)] pb-[var(--padding-base)] pl-[var(--padding-5xl)] border-[0.07vw] border-solid "
+            placeholder="Confirm your password"
+            type="password"
+          />
+        </div>
+        <div className="flex flex-col items-start justify-start gap-[var(--gap-5xs)]">
+          <div className="relative">Confirm New Password</div>
+          <input
+            className="text-[length:var(--font-size-xl)]  border-[color:var(--color-gainsboro-400)] bg-transparent rounded-[var(--br-xs)] box-border w-[36.11vw] flex flex-row items-center justify-between pt-[var(--padding-base)] pr-[var(--padding-5xl)] pb-[var(--padding-base)] pl-[var(--padding-5xl)] border-[0.07vw] border-solid "
+            placeholder="Confirm your password"
+            type="password"
+          />
+        </div>
+        <button className="cursor-pointer pt-[var(--padding-base)] pr-[var(--padding-xl)] pb-[var(--padding-base)] pl-[var(--padding-xl)] bg-[color:var(--purple)] rounded-[var(--br-5xs)] overflow-hidden flex flex-row items-center justify-center border-0;">
+          <div className="text-[length:var(--font-size-xl)] relative text-[color:var(--white)] text-left font-[bold] ">Change password</div>
+        </button>
       </div>
-      <div className="settings">Settings</div>
     </div>
+    <div className="absolute text-[length:var(--font-size-9xl)] tracking-[-0.02em] leading-[2.78vw] left-[21.03vw] top-[10.45vw]">Settings</div>
+  </div>
   );
 };
 
