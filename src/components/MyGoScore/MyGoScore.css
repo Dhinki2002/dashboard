@@ -3,7 +3,7 @@
   consider using classes instead of the `@apply` directive
   @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
 */
-.my-go-score1 {
+/* .my-go-score1 {
     @apply absolute tracking-[-0.02em] leading-[2.78vw] left-[1.32vw] top-[1.32vw];
   }
   .ellipse-group {
@@ -11,19 +11,24 @@
   }
   .accuracy {
     @apply relative tracking-[-0.02em] leading-[2.78vw];
-  }
-  .accuracy-parent,
-  .frame-parent17 {
+  } */
+  /* .accuracy-parent, */
+
+  /* .frame-parent17 {
     @apply flex flex-col items-start justify-start gap-[0.07vw] font-[bold];
   }
   .frame-parent17 {
     @apply absolute flex-row gap-[0.53vw] text-[1.06vw] left-[13.36vw] top-[6.15vw];
+  } */
+  .frame-parent17 {
+    @apply flex items-start justify-start gap-[0.07vw] font-[bold] absolute flex-row gap-[0.53vw] text-[1.06vw] left-[13.36vw] top-[6.15vw]
+      /* flex-direction: column; */;
   }
-  .my-go-score-parent {
+  /* .my-go-score-parent {
     @apply relative bg-[#605bff] w-[24.34vw] h-[17.46vw] overflow-hidden shrink-0 text-left text-[1.59vw] text-white rounded-[1.06vw];
     font-family: "Avenir LT Std";
   }
   .accuracy-parent1 {
     @apply font-[normal];
-  }
+  } */
   

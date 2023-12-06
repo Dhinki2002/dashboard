@@ -2,7 +2,7 @@ import { useState, useRef, useCallback } from "react";
 import NotificationPopup from "../NotificationPopup/NotificationPopup.js";
 import PortalPopup from "../PortalPopup/PortalPopup.js";
 import { useNavigate } from "react-router-dom";
-import "./Header.css";
+// import "./Header.css";
 
 const Header = () => {
   const claritynotificationLineRef = useRef(null);
@@ -23,39 +23,30 @@ const Header = () => {
 
   return (
     <>
-      <div className="frame-parent363">
-        <div className="hi-priyanshu-parent12">
-          <div className="hi-priyanshu14">Hi Priyanshu,</div>
-          <div className="welcome-to-fulcrum19">Welcome to Fulcrum!</div>
+      <div className="flex flex-row items-center justify-start absolute gap-[var(--gap-227xl)] text-left text-[length:var(--font-size-base)] text-[color:var(--color-darkslategray-200)] left-[21.03vw] top-[2.91vw]">
+        <div className="flex flex-col items-start justify-start font-[bold]">
+          <div className="relative tracking-[-0.02em] leading-[1.59vw]">Hi Priyanshu,</div>
+          <div className="relative tracking-[-0.02em] leading-[1.59vw] text-[length:var(--font-size-15xl)] leading-[2.78vw] text-[color:var(--black)] ">Welcome to Fulcrum!</div>
         </div>
-        <div className="frame-parent364">
-          <div className="frame-wrapper219">
-            {/* <div className="frame-wrapper220"> */}
-              {/* <div className="carbonsearch-parent18">
-                <img
-                  className="carbonsearch-icon20"
-                  alt=""
-                  src="/carbonsearch.svg"
-                />
-                <div className="search-by-anything20">Search by anything</div>
-              </div> */}
-            {/* </div> */}
+        <div className="flex flex-row items-center justify-start gap-[var(--gap-xl)]  gap-[var(--gap-13xl)] text-[color:var(--icon-grey)] ">
+          <div className="flex justify-start  flex-row items-center">
+            
           </div>
-          <div className="claritynotification-line-parent18">
+          <div className="flex flex-row items-center justify-start gap-[var(--gap-xl)]">
             <button
-              className="fluentinfo-24-regular"
+              className="cursor-pointer bg-transparent relative w-[2.12vw] h-[2.12vw] overflow-hidden shrink-0 p-0 border-0 left-[20vw]"
               ref={claritynotificationLineRef}
               onClick={openNotificationPopup}
             >
-              <img className="vector-icon48" alt="" src="/vector8.svg" />
-              <img className="vector-icon49" alt="" src="/vector20.svg" />
+              <img className=" absolute h-[81.01%] w-[82.78%] max-w-full overflow-hidden max-h-full left-[8.47%] right-[8.75%] top-[4.93%] bottom-[14.05%]" alt="" src="/vector8.svg" />
+              <img className="absolute h-[81.01%] w-[82.78%] max-w-full overflow-hidden max-h-full left-[8.47%] right-[8.75%] top-[4.93%] bottom-[14.05%] h-[6.33%] w-[14.61%] left-[42.56%] right-[42.83%] top-[88.89%] bottom-[4.78%] " alt="" src="/vector20.svg" />
             </button>
-            <button className="fluentinfo-24-regular">
-              <img className="vector-icon51" alt="" src="/vector21.svg" />
+            <button className="cursor-pointer bg-transparent relative w-[2.12vw] h-[2.12vw] overflow-hidden shrink-0 p-0 border-0 left-[20vw]">
+              <img className="absolute top-[calc(50%_-_0.94vw)] left-[calc(50%_-_0.94vw)] w-[1.88vw] h-[1.88vw]" alt="" src="/vector21.svg" />
             </button>
-            <button className="ellipse-parent29" onClick={onFrameButtonClick}>
-              <div className="frame-child249" />
-              <img className="images-5-icon21" alt="" src="/images-5@2x.png" />
+            <button className="cursor-pointer bg-transparent relative w-[2.38vw] h-[2.38vw] p-0 border-0 left-[20vw]" onClick={onFrameButtonClick}>
+              <div className="absolute bg-[color:var(--yellow)] border-[color:var(--color-gray-600)] box-border w-[2.38vw] h-[2.38vw] rounded-[50%] border-[0.19vw] border-solid left-0 top-0" />
+              <img className="absolute left-[calc(50%_-_0.79vw)] w-[1.59vw] h-[1.72vw] object-cover top-[0.33vw]" alt="" src="/images-5@2x.png" />
             </button>
           </div>
         </div>

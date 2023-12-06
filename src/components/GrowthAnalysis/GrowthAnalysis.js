@@ -67,9 +67,9 @@ const GrowthAnalysis = () => {
 
   return (
    
-    <div className='root-div'>
-    <div className="graph-chart-container">
-          <div className="growth-analysis">Growth Analysis</div>
+    <div className='bg-[color:var(--white)] h-[24.8vw] rounded-[20px]'>
+    <div className="w-[40.32vw] h-[22.88vw] items-center mt-[5vw] mb-[2vw]">
+          <div className="absolute left-[1.32vw] text-[length:var(--font-size-5xl)] tracking-[-0.02em] leading-[2.78vw] text-[color:var(--color-darkslategray-200)] text-left font-[bold] top-[1.32vw]">Growth Analysis</div>
           
             <Line data={data} options={options} />
           

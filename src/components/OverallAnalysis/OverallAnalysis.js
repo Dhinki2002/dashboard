@@ -1,4 +1,4 @@
-import "./OverallAnalysis.css";
+// import "./OverallAnalysis.css";
 import { Radar } from 'react-chartjs-2';
 
 const OverallAnalysis = () => {
@@ -54,9 +54,9 @@ const OverallAnalysis = () => {
     
   };
   return (
-    <div className="parent2">
-      <div className="pentagon-chart-container">
-        <div className="overall-analysis ">Overall Analysis</div>
+    <div className="relative bg-white w-[34.5vw] h-[24.88vw] overflow-hidden shrink-0 text-left text-[0.66vw] text-[#1d2129] ml-[0.4vw] rounded-[1.06vw]">
+      <div className="w-[40.32vw] h-[25.88vw] items-center ml-[-2vw] mt-[5vw] mb-[2vw]">
+        <div className="absolute text-[1.59vw] tracking-[-0.02em] leading-[2.78vw] text-[#353535] font-[bold] mt-[0.5vw] left-[1.32vw] top-[1.32vw] ">Overall Analysis</div>
       
       <Radar data={data} options={options}/>
     
