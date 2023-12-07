@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import CantileverLogo from "../CantileverLogo/CantileverLogo.js";
 import WelcomeText from "../WelcomeText/WelcomeText.js";
-import "./SignUpAsInstitute.css";
+// import "./SignUpAsInstitute.css";
 import { useSelector, useDispatch } from "react-redux";
 
 const SignUpAsInstitute = () => {
