@@ -1,5 +1,5 @@
 import React from 'react'
-import "./PieAnalysis.css"
+// import "./PieAnalysis.css"
 import { Doughnut } from 'react-chartjs-2';
 const PieAnalysis = () => {
     const data = {

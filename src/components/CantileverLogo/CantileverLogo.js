@@ -1,5 +1,5 @@
 import { memo, useMemo } from "react";
-import "./CantileverLogo.css";
+// import "./CantileverLogo.css";
 
 const CantileverLogo = memo(
   ({

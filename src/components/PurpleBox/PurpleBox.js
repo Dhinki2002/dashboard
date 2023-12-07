@@ -1,5 +1,5 @@
 import { memo } from "react";
-import "./PurpleBox.css";
+// import "./PurpleBox.css";
 
 
 

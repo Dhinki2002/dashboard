@@ -1,5 +1,5 @@
 import React from 'react'
-import "./GrowthAnalysis2.css"
+// import "./GrowthAnalysis2.css"
 import { Line } from 'react-chartjs-2';
 
 const GrowthAnalysis2 = () => {

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Line } from 'react-chartjs-2';
-import "./GrowthAnalysis.css"
+// import "./GrowthAnalysis.css"
 const GrowthAnalysis = () => {
   const data = {
     labels: ['Jan', 'Feb', 'May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],

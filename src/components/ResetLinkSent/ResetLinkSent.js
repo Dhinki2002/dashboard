@@ -1,7 +1,7 @@
 import { useCallback } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import CantileverLogo from "../CantileverLogo/CantileverLogo.js";
-import "./ResetLinkSent.css";
+// import "./ResetLinkSent.css";
 import { useSelector, useDispatch } from "react-redux";
 
 const ResetLinkSent = () => {

@@ -1,5 +1,5 @@
 import React from 'react'
-import "./ConfidenceMeter.css"
+// import "./ConfidenceMeter.css"
 import GaugeChart from 'react-gauge-chart'
 
 const ConfidenceMeter = () => {
