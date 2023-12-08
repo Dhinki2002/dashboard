@@ -2,7 +2,7 @@ import { useState, useCallback } from "react";
 import LogoutPopup from "../LogoutPopup/LogoutPopup.js";
 import PortalPopup from "../PortalPopup/PortalPopup.js";
 import { useNavigate } from "react-router-dom";
-import "./AdminNavbar.css";
+
 
 const AdminNavbar = ({counter}) => {
   const [isLogoutPopupOpen, setLogoutPopupOpen] = useState(false);

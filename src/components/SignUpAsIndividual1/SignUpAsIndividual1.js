@@ -2,7 +2,7 @@ import { useCallback ,useState,useEffect} from "react";
 import { Link, useNavigate } from "react-router-dom";
 import CantileverLogo from "../CantileverLogo/CantileverLogo.js";
 import WelcomeText from "../WelcomeText/WelcomeText.js";
-import "./SignUpAsIndividual1.css";
+// import "./SignUpAsIndividual1.css";
 import { useLocation } from 'react-router-dom';
 import { useSelector, useDispatch } from "react-redux";
 

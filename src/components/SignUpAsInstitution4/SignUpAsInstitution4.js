@@ -1,7 +1,7 @@
 import { useCallback } from "react";
 import PurpleBox from '../../components/PurpleBox/PurpleBox.js';
 import CantileverLogo from '../../components/CantileverLogo/CantileverLogo.js';
-import "./SignUpAsInstitution4.css";
+// import "./SignUpAsInstitution4.css";
 
 import { useNavigate } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";

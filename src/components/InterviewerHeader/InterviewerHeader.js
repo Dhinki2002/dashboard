@@ -2,7 +2,7 @@ import { useState, useRef, useCallback } from "react";
 import NotificationPopup from "../NotificationPopup/NotificationPopup.js";
 import PortalPopup from "../PortalPopup/PortalPopup.js";
 import { useNavigate } from "react-router-dom";
-import "./InterviewerHeader.css";
+// import "./InterviewerHeader.css";
 
 const InterviewerHeader = () => {
   const claritynotificationLineRef = useRef(null);

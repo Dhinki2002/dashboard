@@ -2,7 +2,7 @@ import { useState, useCallback } from "react";
 import LogoutPopup from "../LogoutPopup/LogoutPopup.js";
 import PortalPopup from "../PortalPopup/PortalPopup.js";
 import { useNavigate } from "react-router-dom";
-import "./InterviewerNavbar.css";
+// import "./InterviewerNavbar.css";
 
 const InterviewerNavbar = ({ counter }) => {
   const [isLogoutPopupOpen, setLogoutPopupOpen] = useState(false);

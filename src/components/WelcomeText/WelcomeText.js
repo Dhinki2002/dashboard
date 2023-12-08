@@ -1,5 +1,5 @@
 import { memo, useMemo } from "react";
-import "./WelcomeText.css";
+// import "./WelcomeText.css";
 
 const WelcomeText = memo(
   ({
