@@ -7,6 +7,7 @@ import { Helmet } from "react-helmet";
 import { useDropzone } from "react-dropzone";
 import Resume from "../../components/Resume/Resume.js";
 import html2pdf from "html2pdf.js";
+import { AiTextBox } from "../../components/AiTextBox/AiTextBox.js";
 
 const ResumePersonalInfo2 = () => {
     const recognition = useRef(null)
@@ -76,41 +77,13 @@ const ResumePersonalInfo2 = () => {
         updatedValues[val][index] = value;
         setInputValues(updatedValues);
     };
+    const handleCustomInputChange = (value, index, val) => {
+        const updatedValues = [...inputValues];
+        updatedValues[val][index] = value;
+        setInputValues(updatedValues);
+    };
 
     const handleVoiceInput = (index, val) => {
-        // recognition.lang = "en-US"; // Set the language for recognition
-
-        // recognition.onstart = () => {
-        //     setIsListening(true); // Set the state to indicate recognition is active
-        // };
-
-        // recognition.onresult = (event) => {
-        //     const voiceInput = event.results[0][0].transcript; // Get the recognized transcript
-        //     const updatedValues = [...inputValues];
-
-        //     if (updatedValues[val][index] === undefined) {
-        //         updatedValues[val][index] = " " + voiceInput + ".";
-        //     } else {
-        //         updatedValues[val][index] += " " + voiceInput + "."; // Append the voice input to the value at this index
-        //     }
-        //     console.log(updatedValues)
-
-        //     setInputValues(updatedValues);
-
-        //     let id = `${index}-${val}`;
-
-        //     const textArea = document.getElementById(id); // Replace 'yourTextAreaId' with the actual ID of your textarea
-        //     if (textArea === undefined) {
-        //         textArea.value = voiceInput;
-        //     } else {
-        //         textArea.value += " " + voiceInput + ".";
-        //     }
-        // };
-
-        // recognition.onend = () => {
-        //     setIsListening(false);
-        //     // Set the state back to indicate recognition has ended
-        // };
         if (!recognition.current) return
         setVoiceVal(val)
         setVoiceIndex(index)
@@ -272,15 +245,15 @@ const ResumePersonalInfo2 = () => {
                                 <div className="resume">Professional Summary</div>
                                 <div className="a-short-description">A short description about yourself</div>
                             </div>
-
-                            <textarea id="0-4" className="frame-child84" placeholder="e.g. Creative designer" onChange={(e) => handleInputChange(e, 0, 4)} />
-                            <div>
+                            <AiTextBox containerStyle={{width: "210%"}} placeholder="E.g. Creative designer" tag="professional-summary" afterAction={{type: "questions", tag: "professional-questions"}} onTextChanged={(val) => handleCustomInputChange(val, 0, 4)}/>
+                            {/* <textarea id="0-4" className="frame-child84" placeholder="e.g. Creative designer" onChange={(e) => handleInputChange(e, 0, 4)} /> */}
+                            {/* <div>
                                 <div>
                                     <button className={`${isListening ? "active-mic" : "mic-img"}`} onClick={() => handleVoiceInput(0, 4)}>
                                         <img src="./microphone.svg" alt="joker" style={{ width: "20px", height: "20px" }} />
                                     </button>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                         <div className="personal-details-parent">
                             <div className="profile-image-parent">
@@ -312,12 +285,13 @@ const ResumePersonalInfo2 = () => {
                                     <div className="frame-parent123">
                                         <div className="first-name-parent">
                                             <div className="first-name">Description</div>
-                                            <textarea id={`${index}-9`} className="frame-child89" placeholder="e.g. Enter description" onChange={(e) => handleInputChange(e, index, 9)} />
+                                            <AiTextBox containerStyle={{width: "240%", backgroundColor: "#EFF2F9", borderRadius: "4px"}} placeholder="Mention your academic accomplishments here..." tag="educational-summary" afterAction={{type: "questions", tag: "educational-questions"}} onTextChanged={(val) => handleCustomInputChange(val, index, 9)}/>
+                                            {/* <textarea id={`${index}-9`} className="frame-child89" placeholder="e.g. Enter description" onChange={(e) => handleInputChange(e, index, 9)} />
                                             <div>
                                                 <button className={`${isListening ? "active-mic" : "mic-img"}`} onClick={() => handleVoiceInput(index, 9)}>
                                                     <img src="./microphone.svg" alt="joker" style={{ width: "20px", height: "20px" }} />
                                                 </button>
-                                            </div>
+                                            </div> */}
                                         </div>
                                     </div>
                                 </div>
@@ -360,12 +334,13 @@ const ResumePersonalInfo2 = () => {
                                         <div className="first-name-parent">
                                             <div className="first-name">Description</div>
                                             <div>
-                                                <textarea id={`${index}-14`} className="frame-child89" placeholder="e.g. Enter description" onChange={(e) => handleInputChange(e, index, 14)} />
+                                                <AiTextBox containerStyle={{width: "240%", backgroundColor: "#EFF2F9", borderRadius: "4px"}} placeholder="Mention your achievements here..." tag="work-summary" afterAction={{type: "questions", tag: "work-questions"}} onTextChanged={(val) => handleCustomInputChange(val, index, 14)}/>
+                                                {/* <textarea id={`${index}-14`} className="frame-child89" placeholder="e.g. Enter description" onChange={(e) => handleInputChange(e, index, 14)} />
                                                 <div>
                                                     <button className={`${isListening ? "active-mic" : "mic-img"}`} onClick={() => handleVoiceInput(index, 14)}>
                                                         <img src="./microphone.svg" alt="joker" style={{ width: "20px", height: "20px" }} />
                                                     </button>
-                                                </div>
+                                                </div> */}
                                             </div>
                                         </div>
                                     </div>

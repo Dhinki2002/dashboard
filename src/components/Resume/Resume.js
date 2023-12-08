@@ -92,7 +92,7 @@ const Resume = ({ values, img, template }) => {
                         }
 
                     </b>
-                    <p class="justified">{values[14][0]&&values[14][0].split('.').map((sentence, index) => (
+                    <p class="justified">{values[14][index]&&values[14][index].split('.').map((sentence, index) => (
                     <p key={index}>{sentence.trim() ? `• ${sentence.trim()}` : ''}</p>
                 ))}</p>
                 </div>
