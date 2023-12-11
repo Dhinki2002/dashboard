@@ -61,11 +61,11 @@ const TransactionsInterviewer = () => {
   const getTextClass = (text) => {
     switch (text) {
       case "Complete":
-        return "relative rounded-[var(--br-81xl)] bg-[color:var(--color-mediumseagreen)] w-[0.86vw] h-[0.86vw]";
+        return "relative rounded-[var(--br-81xl)] bg-[color:var(--color-mediumseagreen)] w-[0.86vw] h-[0.86vw] top-[1.1vw]";
       case "Processing":
-        return "relative rounded-[var(--br-81xl)] bg-[color:var(--incomplete)] w-[0.86vw] h-[0.86vw]";
+        return "relative rounded-[var(--br-81xl)] bg-[color:var(--incomplete)] w-[0.86vw] h-[0.86vw]  top-[1.1vw]";
       case "Failed":
-        return "relative rounded-[var(--br-81xl)] bg-[color:var(--danger)] w-[0.86vw] h-[0.86vw]";
+        return "relative rounded-[var(--br-81xl)] bg-[color:var(--danger)] w-[0.86vw] h-[0.86vw]  top-[1.1vw]";
       default:
         return ""; // default class if needed
     }
@@ -106,24 +106,24 @@ const TransactionsInterviewer = () => {
               </div>
             </div>
           </div>
-          <div className="relative rounded-[var(--br-base)] bg-[color:var(--white)] w-[76.59vw] h-[31.15vw] text-[length:var(--font-size-base)] text-[color:var(--icon-grey)]">
+          <div className="relative rounded-[var(--br-base)] bg-[color:var(--white)] w-[76.59vw] h-[31.15vw] text-[length:var(--font-size-base)] text-[color:var(--icon-grey)] top-[2vw]">
             <div className="absolute w-[73.94vw] h-[28.84vw] left-[1.32vw] top-[1.06vw]">
-              <div className="flex items-start justify-start absolute left-[calc(50%_-_36.21vw)] flex-row gap-[14.88vw] top-0">
+              <div className="flex items-start justify-start absolute left-[calc(50%_-_36.21vw)] flex-row gap-[14.88vw] top-[0vw]">
                 <div className="flex flex-row items-start justify-start gap-[var(--gap-xl)] flex-col gap-[var(--gap-11xs)] ">
                   <div className="relative tracking-[-0.02em] leading-[2.78vw]">Date</div>
                   <div className="flex items-start justify-start flex-col gap-[var(--gap-5xs)] text-[color:var(--color-darkslategray-200)]">
                     {transactions.map((transaction) => (
-                      <div className="relative tracking-[-0.02em] leading-[2.78vw]" key={transaction.id}>
+                      <div className="relative tracking-[-0.02em] leading-[2.78vw] top-[-0.4vw]" key={transaction.id}>
                         {transaction.Date}
                       </div>
                     ))}
                   </div>
                 </div>
                 <div className="flex flex-row items-start justify-start gap-[var(--gap-xl)] flex-col gap-[var(--gap-11xs)]">
-                  <div className="relative tracking-[-0.02em] leading-[2.78vw]">Transaction Id</div>
+                  <div className="relative tracking-[-0.02em] leading-[2.78vw] ">Transaction Id</div>
                   <div className="flex items-start justify-start flex-col gap-[var(--gap-5xs)] text-[color:var(--color-darkslategray-200)]">
                     {transactions.map((transaction) => (
-                      <div className="relative tracking-[-0.02em] leading-[2.78vw]" key={transaction.id}>
+                      <div className="relative tracking-[-0.02em] leading-[2.78vw] top-[-0.3vw]" key={transaction.id}>
                         {transaction.TransactionNumber}
                       </div>
                     ))}
@@ -135,7 +135,7 @@ const TransactionsInterviewer = () => {
                     {transactions.map((text) => (
                       <div className="flex flex-row items-center justify-start gap-[var(--gap-5xs)]" key={text.id}>
                         <div className={`${getTextClass(text.Status)}`} />
-                        <div className="relative tracking-[0.01vw] leading-[1.06vw]">{text.Status}</div>
+                        <div className="relative tracking-[0.01vw] leading-[1.06vw] top-[1vw]">{text.Status}</div>
                       </div>
                     ))}
                   </div>
@@ -146,7 +146,7 @@ const TransactionsInterviewer = () => {
                   </div>
                   <div className="flex items-start justify-start flex-col gap-[var(--gap-5xs)] text-[color:var(--color-darkslategray-200)]">
                     {transactions.map((transaction) => (
-                      <div className="relative underline tracking-[-0.02em] leading-[2.78vw]" key={transaction.id}>
+                      <div className="relative underline tracking-[-0.02em] leading-[2.78vw] top-[-0.4vw]" key={transaction.id}>
                         Download
                       </div>
                     ))}

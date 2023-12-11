@@ -1,4 +1,4 @@
-import "./AddDreamCompany.css";
+// import "./AddDreamCompany.css";
 import Footer from "../../components/Footer/Footer";
 import DreamSearchBar from "../../components/DreamSearchBar/DreamSearchBar";
 import { useState } from "react";
@@ -52,18 +52,18 @@ const AddDreamCompany = () => {
   };
 
   return (
-    <div className="hero">
-      <div className="top-header">
+    <div className="h-screen w-full relative">
+      <div className=" absolute w-full bg-[color:var(--color-lavender)] h-[10%] text-center">
         <img src="./1644088580619-cantileverlogoblack-2@2x.png" />
       </div>
-      <div className="content">
-        <div className="heading">What is your Dream Company?</div>
-        <div className="searchBarContainer">
+      <div className="flex h-screen flex-col w-full text-center justify-center items-center">
+        <div className="text-[4vw] text-[rgb(49,46,46)] mb-[5vh] ">What is your Dream Company?</div>
+        <div className="flex justify-between items-center w-full">
         
-          <button onClick={handleBackward} className="forward">
+          <button onClick={handleBackward} className="inline-block text-base font-[bold] text-center no-underline cursor-pointer border-[color:var(--purple-login)] text-white bg-[color:var(--purple-login)] transition-[background-color] duration-[0.3s,color] delay-[0.3s] mx-[4vw] px-5 py-2.5 rounded-[5px] border-2 border-solid hover:bg-[#2980b9] hover:border-[#2980b9]">
             Backward
           </button>
-        <div className="barContainer">
+        <div className="ml-[20vw]">
         {progress < 3 && (
           <DreamSearchBar
             progress={progress}
@@ -76,7 +76,7 @@ const AddDreamCompany = () => {
         
         {progress === 3 && (
           
-          <div className="job-profile-group1">
+          <div className="w-[30vw] h-[4vw] ml-[-30vw] rounded-[0.5vw]">
           <div className="select-interview-date">
            
           </div>
@@ -92,7 +92,7 @@ const AddDreamCompany = () => {
         )}
         
         
-        <button onClick={handleForward} className="forward">
+        <button onClick={handleForward} className="inline-block text-base font-[bold] text-center no-underline cursor-pointer border-[color:var(--purple-login)] text-white bg-[color:var(--purple-login)] transition-[background-color] duration-[0.3s,color] delay-[0.3s] mx-[4vw] px-5 py-2.5 rounded-[5px] border-2 border-solid hover:bg-[#2980b9] hover:border-[#2980b9]">
           Forward
         </button>
         </div>
