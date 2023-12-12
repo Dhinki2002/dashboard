@@ -515,9 +515,6 @@ video {
     max-width: 1536px;
   }
 }
-.fixed {
-  position: fixed;
-}
 .absolute {
   position: absolute;
 }
@@ -1076,9 +1073,6 @@ video {
 }
 .box-border {
   box-sizing: border-box;
-}
-.block {
-  display: block;
 }
 .inline-block {
   display: inline-block;
@@ -2360,9 +2354,6 @@ video {
 }
 .text-\[length\:var\(--h1-heavy-size-login\)\] {
   font-size: var(--h1-heavy-size-login);
-}
-.uppercase {
-  text-transform: uppercase;
 }
 .lowercase {
   text-transform: lowercase;

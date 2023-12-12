@@ -1,0 +1,77 @@
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+  --bg-color: #f8f9fa;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--bg-color);
+  padding: 20px;
+  font-size: .7vw;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.col-md-10, .col-md-offset-1, .col-md-3, .col-md-9, .col-sm-3 {
+  flex: 1;
+}
+
+.title {
+  text-align: center;
+  color: var(--primary-color);
+  margin-left: 3vw;
+}
+
+.summary, .work-experience {
+  margin-top: 20px;
+  
+}
+
+.list-inline {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.list-inline li {
+  margin: 0 10px;
+}
+
+/* Add this CSS to Temp.css */
+.circle-image-container {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  border-radius: 70%;
+}
+
+.circle-image {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+/* Add this CSS to Temp.css */
+
+
+/* .page {
+  width: 90%;
+  max-width: 31.74vw;
+  margin: 2.12vw auto;
+  background-color: #fff;
+  box-shadow: 0.16vw 0.26vw 0.74vw 0vw rgba(0,0,0,0.4);
+  height: 40vw;
+} */
+
+
+  /* Add additional print styles as needed */
+

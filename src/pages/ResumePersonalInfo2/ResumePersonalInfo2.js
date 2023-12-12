@@ -8,6 +8,8 @@ import { useDropzone } from "react-dropzone";
 import Resume from "../../components/Resume/Resume.js";
 import html2pdf from "html2pdf.js";
 import { AiTextBox } from "../../components/AiTextBox/AiTextBox.js";
+import Temp from "../../components/Resume/Temp.js";
+import Temp2 from "../../components/Resume/Temp2.js";
 
 const ResumePersonalInfo2 = () => {
     const recognition = useRef(null)
@@ -168,251 +170,426 @@ const ResumePersonalInfo2 = () => {
         html2pdf().from(htmlWithStyles).save(); // Generate the PDF with the included styling and save it
     };
     return (
-        <div className="resume-personal-info2">
-            <Helmet>
-                <title>Resume Personal Info2</title>
-                <meta name="desc" content="Resume Personal Info2" />
-            </Helmet>
-            <Navbar counter={counter} />
-            <Header />
-            <div className="resume-personal-info2-child" />
-            <div className="image-102-parent">
-                <div className="image-102-icon">
-                    <Resume template={id} values={inputValues} img={imageSrc} />
+      <div className="resume-personal-info2">
+        <Helmet>
+          <title>Resume Personal Info2</title>
+          <meta name="desc" content="Resume Personal Info2" />
+        </Helmet>
+        <Navbar counter={counter} />
+        <Header />
+        <div className="resume-personal-info2-child" />
+        <div className="image-102-parent">
+          <div className="image-102-icon">
+            {/* <Resume template={id} values={inputValues} img={imageSrc} /> */}
+            {/* <Temp template={id} values={inputValues} img={imageSrc} /> */}
+            <Temp2  template={id} values={inputValues} img={imageSrc} />
+          </div>
+          <div className="frame-parent110">
+            <button
+              className="lucidelayout-template-parent"
+              onClick={onFrameButtonClick}
+            >
+              <img
+                className="lucidelayout-template-icon"
+                alt=""
+                src="/lucidelayouttemplate.svg"
+              />
+              <div className="select-template">Select template</div>
+            </button>
+            <button
+              className="download-now-wrapper"
+              onClick={handleDownloadPDF}
+            >
+              <div className="download-now">Add</div>
+            </button>
+          </div>
+        </div>
+        <div className="resumeinfocompo">
+          <div className="resume-wrapper">
+            <div className="resume">Resume</div>
+          </div>
+          <div className="frame-parent111">
+            <div className="frame-parent112">
+              <div className="frame-parent113">
+                <div className="wrapper">
+                  <div className="resume">{percentage}%</div>
                 </div>
-                <div className="frame-parent110">
-                    <button className="lucidelayout-template-parent" onClick={onFrameButtonClick}>
-                        <img className="lucidelayout-template-icon" alt="" src="/lucidelayouttemplate.svg" />
-                        <div className="select-template">Select template</div>
-                    </button>
-                    <button className="download-now-wrapper" onClick={handleDownloadPDF}>
-                        <div className="download-now">Add</div>
-                    </button>
-                </div>
+                <div className="resume-score">Resume score</div>
+              </div>
+              <div
+                className="rectangle-wrapper11"
+                style={{ width: `${0.3757 * percentage}vw` }}
+              >
+                <div className="frame-child78" />
+              </div>
             </div>
-            <div className="resumeinfocompo">
-                <div className="resume-wrapper">
-                    <div className="resume">Resume</div>
-                </div>
-                <div className="frame-parent111">
-                    <div className="frame-parent112">
-                        <div className="frame-parent113">
-                            <div className="wrapper">
-                                <div className="resume">{percentage}%</div>
-                            </div>
-                            <div className="resume-score">Resume score</div>
-                        </div>
-                        <div className="rectangle-wrapper11" style={{ width: `${0.3757 * percentage}vw` }}>
-                            <div className="frame-child78" />
-                        </div>
+            <div
+              className="frame-parent114"
+              style={{ overflow: "auto", height: "40vw" }}
+            >
+              <div className="personal-details-parent">
+                <div className="resume">Personal details</div>
+                <div className="frame-parent115">
+                  <div className="frame-parent116" {...getRootProps()}>
+                    <div className="profile-image-parent">
+                      <div className="profile-image">Profile Image</div>
+                      <input {...getInputProps()} />
+                      <div className="add-your-image">Add your image</div>
                     </div>
-                    <div className="frame-parent114" style={{ overflow: "auto", height: "40vw" }}>
-                        <div className="personal-details-parent">
-                            <div className="resume">Personal details</div>
-                            <div className="frame-parent115">
-                                <div className="frame-parent116" {...getRootProps()}>
-                                    <div className="profile-image-parent">
-                                        <div className="profile-image">Profile Image</div>
-                                        <input {...getInputProps()} />
-                                        <div className="add-your-image">Add your image</div>
-                                    </div>
-                                    <div className="frame-wrapper52">
-                                        <img className="ellipse-parent1" alt="" src={imageSrc} />
-                                    </div>
-                                </div>
-                                <div className="frame-parent117">
-                                    <div className="first-name-parent">
-                                        <div className="first-name">First Name</div>
-                                        <input className="frame-child80" placeholder="Enter your first name" type="text" onChange={(e) => handleInputChange(e, 0, 0)} />
-                                    </div>
-                                    <div className="first-name-parent">
-                                        <div className="first-name">Last Name</div>
-                                        <input className="frame-child80" placeholder="Enter your last name" type="text" onChange={(e) => handleInputChange(e, 0, 1)} />
-                                    </div>
-                                </div>
-                                <div className="first-name-parent">
-                                    <div className="first-name">Email id</div>
-                                    <input className="frame-child82" placeholder="Enter Institute’s email id" type="email" onChange={(e) => handleInputChange(e, 0, 2)} />
-                                </div>
-                                <div className="first-name-parent">
-                                    <div className="first-name">Contact no.</div>
-                                    <input className="frame-child83" placeholder="Enter your contact no." type="tel" onChange={(e) => handleInputChange(e, 0, 3)} />
-                                </div>
-                            </div>
-                        </div>
-                        <div className="personal-details-parent">
-                            <div className="profile-image-parent">
-                                <div className="resume">Professional Summary</div>
-                                <div className="a-short-description">A short description about yourself</div>
-                            </div>
-                            <AiTextBox containerStyle={{width: "210%"}} placeholder="E.g. Creative designer" tag="professional-summary" afterAction={{type: "questions", tag: "professional-questions"}} onTextChanged={(val) => handleCustomInputChange(val, 0, 4)}/>
-                            {/* <textarea id="0-4" className="frame-child84" placeholder="e.g. Creative designer" onChange={(e) => handleInputChange(e, 0, 4)} /> */}
-                            {/* <div>
+                    <div className="frame-wrapper52">
+                      <img className="ellipse-parent1" alt="" src={imageSrc} />
+                    </div>
+                  </div>
+                  <div className="frame-parent117">
+                    <div className="first-name-parent">
+                      <div className="first-name">First Name</div>
+                      <input
+                        className="frame-child80"
+                        placeholder="Enter your first name"
+                        type="text"
+                        onChange={(e) => handleInputChange(e, 0, 0)}
+                      />
+                    </div>
+                    <div className="first-name-parent">
+                      <div className="first-name">Last Name</div>
+                      <input
+                        className="frame-child80"
+                        placeholder="Enter your last name"
+                        type="text"
+                        onChange={(e) => handleInputChange(e, 0, 1)}
+                      />
+                    </div>
+                  </div>
+                  <div className="first-name-parent">
+                    <div className="first-name">Email id</div>
+                    <input
+                      className="frame-child82"
+                      placeholder="Enter Institute’s email id"
+                      type="email"
+                      onChange={(e) => handleInputChange(e, 0, 2)}
+                    />
+                  </div>
+                  <div className="first-name-parent">
+                    <div className="first-name">Contact no.</div>
+                    <input
+                      className="frame-child83"
+                      placeholder="Enter your contact no."
+                      type="tel"
+                      onChange={(e) => handleInputChange(e, 0, 3)}
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className="personal-details-parent">
+                <div className="profile-image-parent">
+                  <div className="resume">Professional Summary</div>
+                  <div className="a-short-description">
+                    A short description about yourself
+                  </div>
+                </div>
+                <AiTextBox
+                  containerStyle={{ width: "210%" }}
+                  placeholder="E.g. Creative designer"
+                  tag="professional-summary"
+                  afterAction={{
+                    type: "questions",
+                    tag: "professional-questions",
+                  }}
+                  onTextChanged={(val) => handleCustomInputChange(val, 0, 4)}
+                />
+                {/* <textarea id="0-4" className="frame-child84" placeholder="e.g. Creative designer" onChange={(e) => handleInputChange(e, 0, 4)} /> */}
+                {/* <div>
                                 <div>
                                     <button className={`${isListening ? "active-mic" : "mic-img"}`} onClick={() => handleVoiceInput(0, 4)}>
                                         <img src="./microphone.svg" alt="joker" style={{ width: "20px", height: "20px" }} />
                                     </button>
                                 </div>
                             </div> */}
-                        </div>
-                        <div className="personal-details-parent">
-                            <div className="profile-image-parent">
-                                <div className="resume">Education</div>
-                                <div className="a-short-description">Mention your work experience</div>
-                            </div>
-                            {Array.from({ length: noEducation }).map((_, index) => (
-                                <div className="frame-parent115" key={index}>
-                                    <div className="frame-parent121">
-                                        <div className="first-name-parent">
-                                            <div className="first-name">Degree</div>
-                                            <input className="frame-child85" placeholder="Enter your degree" type="text" onChange={(e) => handleInputChange(e, index, 6)} />
-                                        </div>
-                                        <div className="first-name-parent">
-                                            <div className="first-name">School</div>
-                                            <input className="frame-child85" placeholder="Enter your school" type="text" onChange={(e) => handleInputChange(e, index, 5)} />
-                                        </div>
-                                    </div>
-                                    <div className="frame-parent121">
-                                        <div className="first-name-parent">
-                                            <div className="first-name">Start date*</div>
-                                            <input className="frame-child85" placeholder="Enter your school" type="date" onChange={(e) => handleInputChange(e, index, 7)} />
-                                        </div>
-                                        <div className="first-name-parent">
-                                            <div className="first-name">End date</div>
-                                            <input className="frame-child85" placeholder="Enter your school" type="date" onChange={(e) => handleInputChange(e, index, 8)} />
-                                        </div>
-                                    </div>
-                                    <div className="frame-parent123">
-                                        <div className="first-name-parent">
-                                            <div className="first-name">Description</div>
-                                            <AiTextBox containerStyle={{width: "240%", backgroundColor: "#EFF2F9", borderRadius: "4px"}} placeholder="Mention your academic accomplishments here..." tag="educational-summary" afterAction={{type: "questions", tag: "educational-questions"}} onTextChanged={(val) => handleCustomInputChange(val, index, 9)}/>
-                                            {/* <textarea id={`${index}-9`} className="frame-child89" placeholder="e.g. Enter description" onChange={(e) => handleInputChange(e, index, 9)} />
+              </div>
+              <div className="personal-details-parent">
+                <div className="profile-image-parent">
+                  <div className="resume">Education</div>
+                  <div className="a-short-description">
+                    Mention your work experience
+                  </div>
+                </div>
+                {Array.from({ length: noEducation }).map((_, index) => (
+                  <div className="frame-parent115" key={index}>
+                    <div className="frame-parent121">
+                      <div className="first-name-parent">
+                        <div className="first-name">Degree</div>
+                        <input
+                          className="frame-child85"
+                          placeholder="Enter your degree"
+                          type="text"
+                          onChange={(e) => handleInputChange(e, index, 6)}
+                        />
+                      </div>
+                      <div className="first-name-parent">
+                        <div className="first-name">School</div>
+                        <input
+                          className="frame-child85"
+                          placeholder="Enter your school"
+                          type="text"
+                          onChange={(e) => handleInputChange(e, index, 5)}
+                        />
+                      </div>
+                    </div>
+                    <div className="frame-parent121">
+                      <div className="first-name-parent">
+                        <div className="first-name">Start date*</div>
+                        <input
+                          className="frame-child85"
+                          placeholder="Enter your school"
+                          type="date"
+                          onChange={(e) => handleInputChange(e, index, 7)}
+                        />
+                      </div>
+                      <div className="first-name-parent">
+                        <div className="first-name">End date</div>
+                        <input
+                          className="frame-child85"
+                          placeholder="Enter your school"
+                          type="date"
+                          onChange={(e) => handleInputChange(e, index, 8)}
+                        />
+                      </div>
+                    </div>
+                    <div className="frame-parent123">
+                      <div className="first-name-parent">
+                        <div className="first-name">Description</div>
+                        <AiTextBox
+                          containerStyle={{
+                            width: "240%",
+                            backgroundColor: "#EFF2F9",
+                            borderRadius: "4px",
+                          }}
+                          placeholder="Mention your academic accomplishments here..."
+                          tag="educational-summary"
+                          afterAction={{
+                            type: "questions",
+                            tag: "educational-questions",
+                          }}
+                          onTextChanged={(val) =>
+                            handleCustomInputChange(val, index, 9)
+                          }
+                        />
+                        {/* <textarea id={`${index}-9`} className="frame-child89" placeholder="e.g. Enter description" onChange={(e) => handleInputChange(e, index, 9)} />
                                             <div>
                                                 <button className={`${isListening ? "active-mic" : "mic-img"}`} onClick={() => handleVoiceInput(index, 9)}>
                                                     <img src="./microphone.svg" alt="joker" style={{ width: "20px", height: "20px" }} />
                                                 </button>
                                             </div> */}
-                                        </div>
-                                    </div>
-                                </div>
-                            ))}
-                            {noEducation <= 3 && (
-                                <button className="icbaseline-plus-parent2" onClick={handleEducationChange}>
-                                    <img className="lucidelayout-template-icon" alt="" src="/icbaselineplus3.svg" />
-                                    <div className="add-education">Add education</div>
-                                </button>
-                            )}
-                        </div>
-                        <div className="personal-details-parent">
-                            <div className="profile-image-parent">
-                                <div className="resume">Work Experience</div>
-                                <div className="a-short-description">Mention your work experience</div>
-                            </div>
-                            {Array.from({ length: noWork }).map((_, index) => (
-                                <div className="frame-parent115 " key={index}>
-                                    <div className="frame-parent121">
-                                        <div className="first-name-parent">
-                                            <div className="first-name">Company</div>
-                                            <input className="frame-child85" placeholder="Enter company" type="text" onChange={(e) => handleInputChange(e, index, 11)} />
-                                        </div>
-                                        <div className="first-name-parent">
-                                            <div className="first-name">Job Profile</div>
-                                            <input className="frame-child85" placeholder="Enter job profile" type="text" onChange={(e) => handleInputChange(e, index, 10)} />
-                                        </div>
-                                    </div>
-                                    <div className="frame-parent121">
-                                        <div className="first-name-parent">
-                                            <div className="first-name">Start date*</div>
-                                            <input className="frame-child85" placeholder="Enter your school" type="date" onChange={(e) => handleInputChange(e, index, 12)} />
-                                        </div>
-                                        <div className="first-name-parent">
-                                            <div className="first-name">End date</div>
-                                            <input className="frame-child85" placeholder="Enter your school" type="date" onChange={(e) => handleInputChange(e, index, 13)} />
-                                        </div>
-                                    </div>
-                                    <div className="frame-parent123">
-                                        <div className="first-name-parent">
-                                            <div className="first-name">Description</div>
-                                            <div>
-                                                <AiTextBox containerStyle={{width: "240%", backgroundColor: "#EFF2F9", borderRadius: "4px"}} placeholder="Mention your achievements here..." tag="work-summary" afterAction={{type: "questions", tag: "work-questions"}} onTextChanged={(val) => handleCustomInputChange(val, index, 14)}/>
-                                                {/* <textarea id={`${index}-14`} className="frame-child89" placeholder="e.g. Enter description" onChange={(e) => handleInputChange(e, index, 14)} />
+                      </div>
+                    </div>
+                  </div>
+                ))}
+                {noEducation <= 3 && (
+                  <button
+                    className="icbaseline-plus-parent2"
+                    onClick={handleEducationChange}
+                  >
+                    <img
+                      className="lucidelayout-template-icon"
+                      alt=""
+                      src="/icbaselineplus3.svg"
+                    />
+                    <div className="add-education">Add education</div>
+                  </button>
+                )}
+              </div>
+              <div className="personal-details-parent">
+                <div className="profile-image-parent">
+                  <div className="resume">Work Experience</div>
+                  <div className="a-short-description">
+                    Mention your work experience
+                  </div>
+                </div>
+                {Array.from({ length: noWork }).map((_, index) => (
+                  <div className="frame-parent115 " key={index}>
+                    <div className="frame-parent121">
+                      <div className="first-name-parent">
+                        <div className="first-name">Company</div>
+                        <input
+                          className="frame-child85"
+                          placeholder="Enter company"
+                          type="text"
+                          onChange={(e) => handleInputChange(e, index, 11)}
+                        />
+                      </div>
+                      <div className="first-name-parent">
+                        <div className="first-name">Job Profile</div>
+                        <input
+                          className="frame-child85"
+                          placeholder="Enter job profile"
+                          type="text"
+                          onChange={(e) => handleInputChange(e, index, 10)}
+                        />
+                      </div>
+                    </div>
+                    <div className="frame-parent121">
+                      <div className="first-name-parent">
+                        <div className="first-name">Start date*</div>
+                        <input
+                          className="frame-child85"
+                          placeholder="Enter your school"
+                          type="date"
+                          onChange={(e) => handleInputChange(e, index, 12)}
+                        />
+                      </div>
+                      <div className="first-name-parent">
+                        <div className="first-name">End date</div>
+                        <input
+                          className="frame-child85"
+                          placeholder="Enter your school"
+                          type="date"
+                          onChange={(e) => handleInputChange(e, index, 13)}
+                        />
+                      </div>
+                    </div>
+                    <div className="frame-parent123">
+                      <div className="first-name-parent">
+                        <div className="first-name">Description</div>
+                        <div>
+                          <AiTextBox
+                            containerStyle={{
+                              width: "240%",
+                              backgroundColor: "#EFF2F9",
+                              borderRadius: "4px",
+                            }}
+                            placeholder="Mention your achievements here..."
+                            tag="work-summary"
+                            afterAction={{
+                              type: "questions",
+                              tag: "work-questions",
+                            }}
+                            onTextChanged={(val) =>
+                              handleCustomInputChange(val, index, 14)
+                            }
+                          />
+                          {/* <textarea id={`${index}-14`} className="frame-child89" placeholder="e.g. Enter description" onChange={(e) => handleInputChange(e, index, 14)} />
                                                 <div>
                                                     <button className={`${isListening ? "active-mic" : "mic-img"}`} onClick={() => handleVoiceInput(index, 14)}>
                                                         <img src="./microphone.svg" alt="joker" style={{ width: "20px", height: "20px" }} />
                                                     </button>
                                                 </div> */}
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            ))}
-                            {noWork <= 3 && (
-                                <button className="icbaseline-plus-parent2" onClick={handleWorkChange}>
-                                    <img className="lucidelayout-template-icon" alt="" src="/icbaselineplus3.svg" />
-                                    <div className="add-education">Add Experience</div>
-                                </button>
-                            )}
                         </div>
-                        <div className="personal-details-parent">
-                            <div className="profile-image-parent">
-                                <div className="resume">{`Website & Social links`}</div>
-                                <div className="a-short-description">You can add your portfolio links</div>
-                            </div>
-                            {Array.from({ length: noWebsites }).map((_, index) => (
-                                <div className="frame-wrapper53" key={index}>
-                                    <div className="frame-parent123">
-                                        <div className="frame-parent121">
-                                            <div className="first-name-parent">
-                                                <div className="first-name">Label</div>
-                                                <input className="frame-child85" placeholder="Enter label" type="text" onChange={(e) => handleInputChange(e, index, 15)} />
-                                            </div>
-                                            <div className="first-name-parent">
-                                                <div className="first-name">Link</div>
-                                                <input className="frame-child85" placeholder="Enter link" type="text" onChange={(e) => handleInputChange(e, index, 16)} />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
-                        {noWebsites <= 3 && (
-                            <button className="icbaseline-plus-parent2" onClick={handleWebsiteChange}>
-                                <img className="lucidelayout-template-icon" alt="" src="/icbaselineplus3.svg" />
-                                <div className="add-education">Add link</div>
-                            </button>
-                        )}
-                        <div className="personal-details-parent">
-                            <div className="profile-image-parent">
-                                <div className="resume">{`Skills`}</div>
-                                <div className="a-short-description">You can add your skills here</div>
-                            </div>
-                            {Array.from({ length: noSkills }).map((_, index) => (
-                                <div className="frame-wrapper53" key={index}>
-                                    <div className="frame-parent123">
-                                        <div className="frame-parent121">
-                                            <div className="first-name-parent">
-                                                <div className="first-name">Skill</div>
-                                                <input className="frame-child85" placeholder="Enter your skill" type="text" onChange={(e) => handleInputChange(e, index, 17)} />
-                                            </div>
-                                            <div className="first-name-parent">
-                                                <div className="first-name">Skill</div>
-                                                <input className="frame-child85" placeholder="Enter your skill" type="text" onChange={(e) => handleInputChange(e, index, 18)} />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
-                        {noSkills <= 4 && (
-                            <button className="icbaseline-plus-parent2" onClick={handleSkillsChange}>
-                                <img className="lucidelayout-template-icon" alt="" src="/icbaselineplus3.svg" />
-                                <div className="add-education">Add Skill</div>
-                            </button>
-                        )}
+                      </div>
                     </div>
+                  </div>
+                ))}
+                {noWork <= 3 && (
+                  <button
+                    className="icbaseline-plus-parent2"
+                    onClick={handleWorkChange}
+                  >
+                    <img
+                      className="lucidelayout-template-icon"
+                      alt=""
+                      src="/icbaselineplus3.svg"
+                    />
+                    <div className="add-education">Add Experience</div>
+                  </button>
+                )}
+              </div>
+              <div className="personal-details-parent">
+                <div className="profile-image-parent">
+                  <div className="resume">{`Website & Social links`}</div>
+                  <div className="a-short-description">
+                    You can add your portfolio links
+                  </div>
                 </div>
+                {Array.from({ length: noWebsites }).map((_, index) => (
+                  <div className="frame-wrapper53" key={index}>
+                    <div className="frame-parent123">
+                      <div className="frame-parent121">
+                        <div className="first-name-parent">
+                          <div className="first-name">Label</div>
+                          <input
+                            className="frame-child85"
+                            placeholder="Enter label"
+                            type="text"
+                            onChange={(e) => handleInputChange(e, index, 15)}
+                          />
+                        </div>
+                        <div className="first-name-parent">
+                          <div className="first-name">Link</div>
+                          <input
+                            className="frame-child85"
+                            placeholder="Enter link"
+                            type="text"
+                            onChange={(e) => handleInputChange(e, index, 16)}
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+              {noWebsites <= 3 && (
+                <button
+                  className="icbaseline-plus-parent2"
+                  onClick={handleWebsiteChange}
+                >
+                  <img
+                    className="lucidelayout-template-icon"
+                    alt=""
+                    src="/icbaselineplus3.svg"
+                  />
+                  <div className="add-education">Add link</div>
+                </button>
+              )}
+              <div className="personal-details-parent">
+                <div className="profile-image-parent">
+                  <div className="resume">{`Skills`}</div>
+                  <div className="a-short-description">
+                    You can add your skills here
+                  </div>
+                </div>
+                {Array.from({ length: noSkills }).map((_, index) => (
+                  <div className="frame-wrapper53" key={index}>
+                    <div className="frame-parent123">
+                      <div className="frame-parent121">
+                        <div className="first-name-parent">
+                          <div className="first-name">Skill</div>
+                          <input
+                            className="frame-child85"
+                            placeholder="Enter your skill"
+                            type="text"
+                            onChange={(e) => handleInputChange(e, index, 17)}
+                          />
+                        </div>
+                        <div className="first-name-parent">
+                          <div className="first-name">Skill</div>
+                          <input
+                            className="frame-child85"
+                            placeholder="Enter your skill"
+                            type="text"
+                            onChange={(e) => handleInputChange(e, index, 18)}
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+              {noSkills <= 4 && (
+                <button
+                  className="icbaseline-plus-parent2"
+                  onClick={handleSkillsChange}
+                >
+                  <img
+                    className="lucidelayout-template-icon"
+                    alt=""
+                    src="/icbaselineplus3.svg"
+                  />
+                  <div className="add-education">Add Skill</div>
+                </button>
+              )}
             </div>
+          </div>
         </div>
+      </div>
     );
 };
 
