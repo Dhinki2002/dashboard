@@ -1,119 +1,45 @@
+/*
+  Based on TailwindCSS recommendations,
+  consider using classes instead of the `@apply` directive
+  @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
+*/
 .vector-icon {
-  position: absolute;
-  height: 34%;
-  width: 34.01%;
-  top: 32.99%;
-  right: 33%;
-  bottom: 33%;
-  left: 32.99%;
-  max-width: 100%;
-  overflow: hidden;
-  max-height: 100%
-  }
+  @apply absolute h-[34%] w-[34.01%] max-w-full overflow-hidden max-h-full left-[32.99%] right-[33%] top-[32.99%] bottom-[33%];
+}
 .basilcross-outline {
-  cursor: pointer;
-  border: 0;
-  padding: 0;
-  background-color: transparent;
-  position: absolute;
-  top: 1.85vw;
-  left: 28.04vw;
-  width: 2.12vw;
-  height: 2.12vw;
-  overflow: hidden
-  }
+  @apply cursor-pointer bg-transparent absolute w-[2.12vw] h-[2.12vw] overflow-hidden p-0 border-0 left-[28.04vw] top-[1.85vw];
+}
 .are-you-sure {
-  position: relative;
-  letter-spacing: -0.02em;
-  line-height: 2.78vw
-  }
+  @apply relative tracking-[-0.02em] leading-[2.78vw];
+}
 .are-you-sure-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start
-  }
+  @apply flex flex-col items-start justify-start;
+}
 .log-out {
-  position: relative;
-  font-size: var(--font-size-xl);
+  @apply relative text-[length:var(--font-size-xl)] text-[color:var(--white)] text-left font-[bold];
   font-family: var(--font-avenir-lt-std);
-  color: var(--white);
-  text-align: left;
-  font-weight: bold
-  }
+}
 .log-out-wrapper {
-  border-radius: var(--br-5xs);
-  background-color: var(--purple);
-  width: 10.78vw;
-  overflow: hidden;
-  flex-shrink: 0;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  padding: var(--padding-base) var(--padding-xl);
-  box-sizing: border-box
-  }
+  @apply rounded-[var(--br-5xs)] bg-[color:var(--purple)] w-[10.78vw] overflow-hidden shrink-0 flex flex-row items-center justify-center pt-[var(--padding-base)] pr-[var(--padding-xl)] pb-[var(--padding-base)] pl-[var(--padding-xl)] box-border;
+}
 .frame-button {
-  cursor: pointer;
-  border: 0;
-  padding: 0;
-  background-color: transparent;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start
-  }
+  @apply cursor-pointer bg-transparent flex flex-row items-start justify-start p-0 border-0;
+}
 .cancel {
-  position: relative;
-  font-size: var(--font-size-xl);
+  @apply relative text-[length:var(--font-size-xl)] text-[color:var(--purple)] text-left font-[bold];
   font-family: var(--font-avenir-lt-std);
-  color: var(--purple);
-  text-align: left;
-  font-weight: bold
-  }
+}
 .cancel-wrapper {
-  cursor: pointer;
-  border: 0.07vw solid var(--purple);
-  padding: var(--padding-base) var(--padding-xl);
-  background-color: var(--white);
-  border-radius: var(--br-5xs);
-  box-sizing: border-box;
-  width: 10.78vw;
-  overflow: hidden;
-  flex-shrink: 0;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center
-  }
-.frame-parent1, .frame-parent2 {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: var(--gap-13xl)
-  }
+  @apply cursor-pointer border-[color:var(--purple)] pt-[var(--padding-base)] pr-[var(--padding-xl)] pb-[var(--padding-base)] pl-[var(--padding-xl)] bg-[color:var(--white)] rounded-[var(--br-5xs)] box-border w-[10.78vw] overflow-hidden shrink-0 flex flex-row items-center justify-center border-[0.07vw] border-solid;
+}
+.frame-parent1,
+.frame-parent2 {
+  @apply flex flex-row items-start justify-start gap-[var(--gap-13xl)];
+}
 .frame-parent1 {
-  position: absolute;
-  top: calc(50% - 4.3vw);
-  left: calc(50% - 12.83vw);
-  flex-direction: column
-  }
+  @apply absolute top-[calc(50%_-_4.3vw)] left-[calc(50%_-_12.83vw)] flex-col;
+}
 .logoutpopup {
-  border-radius: var(--br-base);
-  background-color: var(--white);
-  width: 32.01vw;
-  height: 13.89vw;
-  overflow: hidden;
-  max-width: 100%;
-  max-height: 100%;
-  text-align: left;
-  font-size: var(--font-size-9xl);
-  color: var(--black);
+  @apply rounded-[var(--br-base)] bg-[color:var(--white)] w-[32.01vw] h-[13.89vw] overflow-hidden max-w-full max-h-full text-left text-[length:var(--font-size-9xl)] text-[color:var(--black)] font-[bold] absolute left-[30vw] top-[20vw];
   font-family: var(--font-avenir-lt-std);
-  font-weight: bold;
-  position: absolute;
-  top: 20vw;
-  left: 30vw;
-  }
+}
