@@ -1,116 +1,54 @@
-.test-scheduled-at, .text {
-  position: relative;
-  letter-spacing: -0.02em;
-  line-height: 1.16vw
-  }
+/*
+  Based on TailwindCSS recommendations,
+  consider using classes instead of the `@apply` directive
+  @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
+*/
+.test-scheduled-at,
+.text {
+  @apply relative tracking-[-0.02em] leading-[1.16vw];
+}
 .test-scheduled-at {
-  color: var(--icon-grey)
-  }
+  @apply text-[color:var(--icon-grey)];
+}
 .text-parent {
-  position: absolute;
-  top: calc(50% - 0.6vw);
-  left: 1.06vw;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: var(--gap-9xs)
-  }
+  @apply absolute top-[calc(50%_-_0.6vw)] flex flex-row items-start justify-start gap-[var(--gap-9xs)] left-[1.06vw];
+}
 .frame-wrapper2 {
-  position: relative;
-  background-color: var(--color-gray-100);
-  box-shadow: 0 0.07vw 0.07vw rgba(0, 0, 0, 0.03);
-  width: 16.87vw;
-  height: 2.51vw;
-  overflow: hidden;
-  flex-shrink: 0
-  }
-.frame-parent3, .test-scheduled-at-12-pm-today-wrapper {
-  position: absolute;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start
-  }
-.frame-parent3 {
-  top: 2.91vw;
-  left: 0;
-  flex-direction: column;
-  gap: var(--gap-12xs);
-  color: var(--purple)
-  }
+  @apply relative bg-[color:var(--color-gray-100)] shadow-[0_0.07vw_0.07vw_rgba(0,0,0,0.03)] w-[16.87vw] h-[2.51vw] overflow-hidden shrink-0;
+}
+.frame-parent3,
 .test-scheduled-at-12-pm-today-wrapper {
-  top: calc(50% - 0.6vw);
-  left: 1.06vw;
-  flex-direction: row
-  }
+  @apply absolute flex items-start justify-start;
+}
+.frame-parent3 {
+  @apply flex-col gap-[var(--gap-12xs)] text-[color:var(--purple)] left-0 top-[2.91vw];
+}
+.test-scheduled-at-12-pm-today-wrapper {
+  @apply top-[calc(50%_-_0.6vw)] flex-row left-[1.06vw];
+}
 .frame-wrapper4 {
-  position: relative;
-  background-color: var(--white);
-  box-shadow: 0 0.07vw 0.07vw rgba(0, 0, 0, 0.03);
-  width: 16.87vw;
-  height: 2.51vw;
-  overflow: hidden;
-  flex-shrink: 0
-  }
+  @apply relative bg-[color:var(--white)] shadow-[0_0.07vw_0.07vw_rgba(0,0,0,0.03)] w-[16.87vw] h-[2.51vw] overflow-hidden shrink-0;
+}
 .frame-parent4 {
-  position: absolute;
-  top: 10.71vw;
-  left: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: var(--gap-12xs);
-  color: var(--icon-grey)
-  }
+  @apply absolute flex flex-col items-start justify-start gap-[var(--gap-12xs)] text-[color:var(--icon-grey)] left-0 top-[10.71vw];
+}
 .vector-icon1 {
-  position: absolute;
-  height: 34%;
-  width: 34.01%;
-  top: 32.99%;
-  right: 33%;
-  bottom: 33.01%;
-  left: 32.99%;
-  max-width: 100%;
-  overflow: hidden;
-  max-height: 100%
-  }
+  @apply absolute h-[34%] w-[34.01%] max-w-full overflow-hidden max-h-full left-[32.99%] right-[33%] top-[32.99%] bottom-[33.01%];
+}
 .basilcross-outline1 {
-  cursor: pointer;
-  border: 0;
-  padding: 0;
-  background-color: transparent;
-  position: absolute;
-  top: 0.79vw;
-  left: 14.75vw;
-  width: 1.32vw;
-  height: 1.32vw;
-  overflow: hidden
-  }
-.notifications, .older-notifications {
-  position: absolute;
-  left: 1.06vw;
-  letter-spacing: -0.02em;
-  line-height: 1.16vw
-  }
-.notifications {
-  top: 1.19vw;
-  font-size: var(--font-size-sm)
-  }
+  @apply cursor-pointer bg-transparent absolute w-[1.32vw] h-[1.32vw] overflow-hidden p-0 border-0 left-[14.75vw] top-[0.79vw];
+}
+.notifications,
 .older-notifications {
-  top: 9.06vw
-  }
+  @apply absolute tracking-[-0.02em] leading-[1.16vw] left-[1.06vw];
+}
+.notifications {
+  @apply text-[length:var(--font-size-sm)] top-[1.19vw];
+}
+.older-notifications {
+  @apply top-[9.06vw];
+}
 .notificationpopup {
-  border-radius: var(--br-5xs);
-  background-color: var(--white);
-  box-shadow: -0.07vw 0.13vw 0.26vw rgba(0, 0, 0, 0.15);
-  width: 16.87vw;
-  height: 19.44vw;
-  overflow: hidden;
-  max-width: 100%;
-  max-height: 100%;
-  text-align: left;
-  font-size: var(--cn-regular-size);
-  color: var(--black);
-  font-family: var(--font-avenir-lt-std)
-  }
+  @apply rounded-[var(--br-5xs)] bg-[color:var(--white)] shadow-[-0.07vw_0.13vw_0.26vw_rgba(0,0,0,0.15)] w-[16.87vw] h-[19.44vw] overflow-hidden max-w-full max-h-full text-left text-[length:var(--cn-regular-size)] text-[color:var(--black)];
+  font-family: var(--font-avenir-lt-std);
+}
