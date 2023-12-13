@@ -1,129 +1,64 @@
-.kindly-give-remarks, .remarks {
-  position: relative;
-  letter-spacing: -0.02em;
-  line-height: 2.78vw
-  }
+/*
+  Based on TailwindCSS recommendations,
+  consider using classes instead of the `@apply` directive
+  @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
+*/
+.kindly-give-remarks,
 .remarks {
-  position: relative;
-  letter-spacing: -0.02em;
-  line-height: 2.78vw;
-  font-weight: bold;
-  }    
+  @apply relative tracking-[-0.02em] leading-[2.78vw];
+}
+.remarks {
+  @apply relative tracking-[-0.02em] leading-[2.78vw] font-[bold];
+}
 .kindly-give-remarks {
-  font-size: var(--font-size-lg);
-  color: var(--icon-grey);
-  margin-top: -0.53vw
-  }
+  @apply text-[length:var(--font-size-lg)] text-[color:var(--icon-grey)] mt-[-0.53vw];
+}
 .remarks-parent {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  font-size: var(--font-size-5xl)
-  }
+  @apply flex flex-col items-start justify-start text-[length:var(--font-size-5xl)];
+}
 .overall-impression {
-  position: relative
-  }
-.frame-textarea, .overall-impression-parent {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start
-  }
-.frame-textarea {
-  border: 0.07vw solid var(--color-gainsboro-400);
-  background-color: transparent;
-  font-family: var(--font-avenir-lt-std);
-  font-size: var(--font-size-xl);
-  border-radius: var(--br-xs);
-  box-sizing: border-box;
-  width: 41.01vw;
-  height: 5.75vw;
-  flex-direction: row;
-  padding: var(--padding-base) var(--padding-5xl)
-  }
+  @apply relative;
+}
+.frame-textarea,
 .overall-impression-parent {
-  flex-direction: column;
-  gap: var(--gap-xs)
-  }
-.frame-parent50, .frame-wrapper23, .frame-wrapper24 {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start
-  }
-.frame-parent50, .frame-wrapper23 {
-  flex-direction: column
-  }
+  @apply flex items-start justify-start;
+}
+.frame-textarea {
+  @apply border-[color:var(--color-gainsboro-400)] bg-transparent text-[length:var(--font-size-xl)] rounded-[var(--br-xs)] box-border w-[41.01vw] h-[5.75vw] flex-row pt-[var(--padding-base)] pr-[var(--padding-5xl)] pb-[var(--padding-base)] pl-[var(--padding-5xl)] border-[0.07vw] border-solid;
+  font-family: var(--font-avenir-lt-std);
+}
+.overall-impression-parent {
+  @apply flex-col gap-[var(--gap-xs)];
+}
+.frame-parent50,
+.frame-wrapper23,
+.frame-wrapper24 {
+  @apply flex flex-row items-start justify-start;
+}
+.frame-parent50,
+.frame-wrapper23 {
+  @apply flex-col;
+}
 .frame-parent50 {
-  gap: var(--gap-5xl)
-  }
+  @apply gap-[var(--gap-5xl)];
+}
 .submit-remarks {
-  position: relative;
-  font-size: var(--font-size-xl);
+  @apply relative text-[length:var(--font-size-xl)] text-[color:var(--white)] text-left font-[bold];
   font-family: var(--font-avenir-lt-std);
-  color: var(--white);
-  text-align: left;
-  font-weight: bold;
-  }
+}
 .submit-remarks-wrapper {
-  cursor: pointer;
-  border: 0;
-  padding: var(--padding-base) var(--padding-xl);
-  background-color: var(--color-mediumseagreen);
-  border-radius: var(--br-5xs);
-  overflow: hidden;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center
-  }
+  @apply cursor-pointer pt-[var(--padding-base)] pr-[var(--padding-xl)] pb-[var(--padding-base)] pl-[var(--padding-xl)] bg-[color:var(--color-mediumseagreen)] rounded-[var(--br-5xs)] overflow-hidden flex flex-row items-center justify-center border-0;
+}
 .frame-parent49 {
-  position: absolute;
-  top: 2.38vw;
-  left: calc(50% - 20.5vw);
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: var(--gap-21xl)
-  }
+  @apply absolute left-[calc(50%_-_20.5vw)] flex flex-col items-start justify-start gap-[var(--gap-21xl)] top-[2.38vw];
+}
 .vector-icon15 {
-  position: absolute;
-  height: 34%;
-  width: 34.01%;
-  top: 32.99%;
-  right: 32.99%;
-  bottom: 33%;
-  left: 32.99%;
-  max-width: 100%;
-  overflow: hidden;
-  max-height: 100%
-  }
+  @apply absolute h-[34%] w-[34.01%] max-w-full overflow-hidden max-h-full top-[32.99%] bottom-[33%] inset-x-[32.99%];
+}
 .basilcross-outline7 {
-  cursor: pointer;
-  border: 0;
-  padding: 0;
-  background-color: transparent;
-  position: absolute;
-  top: 2.12vw;
-  left: 40.34vw;
-  width: 2.12vw;
-  height: 2.12vw;
-  overflow: hidden
-  }
+  @apply cursor-pointer bg-transparent absolute w-[2.12vw] h-[2.12vw] overflow-hidden p-0 border-0 left-[40.34vw] top-[2.12vw];
+}
 .testremarkspopup {
-  border-radius: var(--br-base);
-  background-color: var(--white);
-  width: 44.31vw;
-  height: 44.71vw;
-  overflow: hidden;
-  max-width: 100%;
-  max-height: 100%;
-  text-align: left;
-  font-size: 1.56vw;
-  color: var(--black);
+  @apply rounded-[var(--br-base)] bg-[color:var(--white)] w-[44.31vw] h-[44.71vw] overflow-hidden max-w-full max-h-full text-left text-[1.56vw] text-[color:var(--black)] absolute left-[30vw] top-[20vw];
   font-family: var(--font-avenir-lt-std);
-  position: absolute;
-  top: 20vw;
-  left: 30vw;
-  }
+}
