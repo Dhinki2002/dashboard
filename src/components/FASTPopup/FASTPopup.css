@@ -66,7 +66,7 @@
   font-family: var(--font-inherit);
 }
 .fulcrum-assessment-test-parent {
-  @apply absolute text-[1.56vw] -translate-x-2/4 -translate-y-2/4 left-[2.5vw] top-[2.5vw];
+  @apply absolute text-[1.56vw] -translate-x-2/4 -translate-y-2/4 left-2/4 top-2/4;
 }
 .vector-icon37 {
   @apply absolute h-[34%] w-[34.01%] max-w-full overflow-hidden max-h-full left-[33%] right-[32.99%] top-[32.99%] bottom-[33.01%];
@@ -75,7 +75,6 @@
   @apply cursor-pointer bg-transparent absolute w-[2.65vw] h-[2.65vw] overflow-hidden p-0 border-0 left-[36.18vw] top-[1.85vw];
 }
 .fastpopup {
-  @apply rounded-[var(--br-base)] bg-[color:var(--white)] w-[40.67vw] h-[27.25vw] overflow-hidden max-w-full max-h-full text-left text-[1.56vw] text-[color:var(--black)] absolute left-[30vw] top-[20vw];
+  @apply rounded-[var(--br-base)] bg-[color:var(--white)] w-[40.67vw] h-[27.25vw] overflow-hidden max-w-full max-h-full text-left text-[1.56vw] text-[color:var(--black)] absolute -translate-x-2/4 -translate-y-2/4 left-2/4 top-2/4;
   font-family: var(--font-avenir-lt-std);
-  /* transform: translate(-50%, -50%) */
 }
