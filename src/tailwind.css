@@ -1304,6 +1304,54 @@ video {
 .top-\[30px\] {
   top: 30px;
 }
+.top-\[10vw\] {
+  top: 10vw;
+}
+.left-\[calc\(50\%_-_20\.54vw\)\] {
+  left: calc(50% - 20.54vw);
+}
+.top-\[calc\(50\%_-_18\.75vw\)\] {
+  top: calc(50% - 18.75vw);
+}
+.bottom-\[22\.61\%\] {
+  bottom: 22.61%;
+}
+.left-\[22\.62\%\] {
+  left: 22.62%;
+}
+.right-\[22\.61\%\] {
+  right: 22.61%;
+}
+.top-\[22\.62\%\] {
+  top: 22.62%;
+}
+.left-\[calc\(50\%_-_263px\)\] {
+  left: calc(50% - 263px);
+}
+.top-\[128px\] {
+  top: 128px;
+}
+.top-\[calc\(50\%_-_240px\)\] {
+  top: calc(50% - 240px);
+}
+.top-\[120px\] {
+  top: 120px;
+}
+.top-\[110px\] {
+  top: 110px;
+}
+.top-\[100px\] {
+  top: 100px;
+}
+.top-\[90px\] {
+  top: 90px;
+}
+.left-\[calc\(50\%_-_250px\)\] {
+  left: calc(50% - 250px);
+}
+.top-\[calc\(50\%_-_230px\)\] {
+  top: calc(50% - 230px);
+}
 .z-0 {
   z-index: 0;
 }
@@ -1421,6 +1469,9 @@ video {
 }
 .mt-\[-10px\] {
   margin-top: -10px;
+}
+.mt-\[-6\.8px\] {
+  margin-top: -6.8px;
 }
 .box-border {
   box-sizing: border-box;
@@ -1835,6 +1886,48 @@ video {
 }
 .h-\[330\.888px\] {
   height: 330.888px;
+}
+.h-\[45\.79vw\] {
+  height: 45.79vw;
+}
+.h-\[0\.93vw\] {
+  height: 0.93vw;
+}
+.h-\[54\.76\%\] {
+  height: 54.76%;
+}
+.h-\[34\.01\%\] {
+  height: 34.01%;
+}
+.h-\[586\.112px\] {
+  height: 586.112px;
+}
+.h-\[12\.72px\] {
+  height: 12.72px;
+}
+.h-\[12px\] {
+  height: 12px;
+}
+.h-\[12\.72\] {
+  height: 12.72;
+}
+.h-\[600\.112px\] {
+  height: 600.112px;
+}
+.h-\[630\.112px\] {
+  height: 630.112px;
+}
+.h-\[650\.112px\] {
+  height: 650.112px;
+}
+.h-\[700\.112px\] {
+  height: 700.112px;
+}
+.h-\[709\.112px\] {
+  height: 709.112px;
+}
+.h-\[720\.112px\] {
+  height: 720.112px;
 }
 .max-h-80 {
   max-height: 20rem;
@@ -2355,6 +2448,27 @@ video {
 .w-\[567\.168px\] {
   width: 567.168px;
 }
+.w-\[41\.07vw\] {
+  width: 41.07vw;
+}
+.w-\[0\.93vw\] {
+  width: 0.93vw;
+}
+.w-\[54\.76\%\] {
+  width: 54.76%;
+}
+.w-\[12px\] {
+  width: 12px;
+}
+.w-\[525\.6px\] {
+  width: 525.6px;
+}
+.w-\[92\.2px\] {
+  width: 92.2px;
+}
+.w-\[580\.168px\] {
+  width: 580.168px;
+}
 .max-w-full {
   max-width: 100%;
 }
@@ -2653,6 +2767,12 @@ video {
 }
 .gap-\[var\(--gap-29xl\)\] {
   gap: var(--gap-29xl);
+}
+.gap-\[2\.91vw\] {
+  gap: 2.91vw;
+}
+.gap-\[38px\] {
+  gap: 38px;
 }
 .overflow-auto {
   overflow: auto;

@@ -1,220 +1,104 @@
-.add-new-test{
-  position: relative;
-  letter-spacing: -0.02em;
-  line-height: 2.78vw;
-  font-weight: bold;
-  }
-
+/*
+  Based on TailwindCSS recommendations,
+  consider using classes instead of the `@apply` directive
+  @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
+*/
+.add-new-test {
+  @apply relative tracking-[-0.02em] leading-[2.78vw] font-[bold];
+}
 .fill-in-the {
-      position: relative;
-      letter-spacing: -0.02em;
-      line-height: 2.78vw
-      }    
-.fill-in-the {
-  font-size: var(--font-size-lg);
-  color: var(--icon-grey);
-  margin-top: -0.53vw
-  }
+  @apply relative tracking-[-0.02em] leading-[2.78vw] text-[length:var(--font-size-lg)] text-[color:var(--icon-grey)] mt-[-0.53vw];
+}
 .add-new-test-parent {
-  flex-direction: column;
-  align-items: flex-start
-  }
-.add-new-test-parent, .company-group, .frame-child4 {
-  display: flex;
-  justify-content: flex-start
-  }
+  @apply flex-col items-start;
+}
+.add-new-test-parent,
+.company-group,
 .frame-child4 {
-  border: 0.07vw solid var(--color-gainsboro-400);
+  @apply flex justify-start;
+}
+.frame-child4 {
+  @apply border-[color:var(--color-gainsboro-400)] text-[length:var(--font-size-xl)] bg-transparent rounded-[var(--br-xs)] box-border w-[20.11vw] flex-row items-center pt-[var(--padding-base)] pr-[var(--padding-5xl)] pb-[var(--padding-base)] pl-[var(--padding-5xl)] border-[0.07vw] border-solid;
   font-family: var(--font-avenir-lt-std);
-  font-size: var(--font-size-xl);
-  background-color: transparent;
-  border-radius: var(--br-xs);
-  box-sizing: border-box;
-  width: 20.11vw;
-  flex-direction: row;
-  align-items: center;
-  padding: var(--padding-base) var(--padding-5xl)
-  }
+}
 .company-group {
-  flex-direction: column;
-  align-items: flex-start;
-  gap: var(--gap-xs)
-  }
+  @apply flex-col items-start gap-[var(--gap-xs)];
+}
 .level {
-  position: relative
-  }
+  @apply relative;
+}
 .frame-parent32 {
-  flex-direction: row;
-  align-items: flex-start;
-  gap: var(--gap-xs)
-  }
-.frame-child8, .frame-parent31, .frame-parent32 {
-  display: flex;
-  justify-content: flex-start
-  }
+  @apply flex-row items-start gap-[var(--gap-xs)];
+}
+.frame-child8,
+.frame-parent31,
+.frame-parent32 {
+  @apply flex justify-start;
+}
 .frame-parent31 {
-  flex-direction: column;
-  align-items: flex-start;
-  gap: var(--gap-17xl);
-  font-size: var(--font-size-lg)
-  }
+  @apply flex-col items-start gap-[var(--gap-17xl)] text-[length:var(--font-size-lg)];
+}
 .frame-child8 {
-  border: 0.07vw solid var(--color-gainsboro-400);
+  @apply border-[color:var(--color-gainsboro-400)] text-[length:var(--font-size-xl)] bg-transparent rounded-[var(--br-xs)] box-border w-[41.07vw] flex-row items-center pt-[var(--padding-base)] pr-[var(--padding-5xl)] pb-[var(--padding-base)] pl-[var(--padding-5xl)] border-[0.07vw] border-solid;
   font-family: var(--font-avenir-lt-std);
-  font-size: var(--font-size-xl);
-  background-color: transparent;
-  border-radius: var(--br-xs);
-  box-sizing: border-box;
-  width: 41.07vw;
-  flex-direction: row;
-  align-items: center;
-  padding: var(--padding-base) var(--padding-5xl)
-  }
+}
 .enter-topic-tags-parent {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: var(--gap-5xs)
-  }
+  @apply flex flex-col items-start justify-start gap-[var(--gap-5xs)];
+}
 .machine-learning3 {
-  position: relative;
-  display: inline-block;
-  width: 7.21vw;
-  height: 0.99vw;
-  flex-shrink: 0;
-  font-weight: light;
-  }
+  @apply relative inline-block w-[7.21vw] h-[0.99vw] shrink-0 font-[light];
+}
 .vector-icon8 {
-  position: absolute;
-  height: 54.76%;
-  width: 54.76%;
-  top: 22.62%;
-  right: 22.61%;
-  bottom: 22.61%;
-  left: 22.62%;
-  max-width: 100%;
-  overflow: hidden;
-  max-height: 100%
-  }
+  @apply absolute h-[54.76%] w-[54.76%] max-w-full overflow-hidden max-h-full left-[22.62%] right-[22.61%] top-[22.62%] bottom-[22.61%];
+}
 .system-uiconscross {
-  cursor: pointer;
-  border: 0;
-  padding: 0;
-  background-color: transparent;
-  position: relative;
-  width: 0.93vw;
-  height: 0.93vw;
-  overflow: hidden;
-  flex-shrink: 0
-  }
+  @apply cursor-pointer bg-transparent relative w-[0.93vw] h-[0.93vw] overflow-hidden shrink-0 p-0 border-0;
+}
 .machine-learning-parent {
-  border-radius: var(--br-5xl);
-  border: 0.07vw solid var(--purple);
-  overflow: hidden;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  justify-content: center;
-  padding: var(--padding-6xs) var(--padding-2xs);
-  gap: var(--gap-11xs)
-  }
-.frame-parent30, .frame-parent34, .frame-parent35 {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start
-  }
+  @apply rounded-[var(--br-5xl)] border-[color:var(--purple)] overflow-hidden flex flex-row items-end justify-center pt-[var(--padding-6xs)] pr-[var(--padding-2xs)] pb-[var(--padding-6xs)] pl-[var(--padding-2xs)] gap-[var(--gap-11xs)] border-[0.07vw] border-solid;
+}
+.frame-parent30,
+.frame-parent34,
 .frame-parent35 {
-  flex-direction: row;
-  gap: var(--gap-xs);
-  font-size: var(--font-size-sm);
-  color: var(--purple)
-  }
-.frame-parent30, .frame-parent34 {
-  flex-direction: column
-  }
+  @apply flex items-start justify-start;
+}
+.frame-parent35 {
+  @apply flex-row gap-[var(--gap-xs)] text-[length:var(--font-size-sm)] text-[color:var(--purple)];
+}
+.frame-parent30,
 .frame-parent34 {
-  gap: var(--gap-base);
-  font-size: var(--font-size-xl)
-  }
+  @apply flex-col;
+}
+.frame-parent34 {
+  @apply gap-[var(--gap-base)] text-[length:var(--font-size-xl)];
+}
 .frame-parent30 {
-  gap: var(--gap-5xl)
-  }
+  @apply gap-[var(--gap-5xl)];
+}
 .add-test {
-  position: relative;
-  font-size: var(--font-size-xl);
+  @apply relative text-[length:var(--font-size-xl)] text-[color:var(--white)] text-left font-[bold];
   font-family: var(--font-avenir-lt-std);
-  color: var(--white);
-  text-align: left;
-  font-weight: bold;
-  }
+}
 .add-test-wrapper {
-  border-radius: var(--br-5xs);
-  background-color: var(--purple);
-  overflow: hidden;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  padding: var(--padding-base) var(--padding-xl);
-  cursor: pointer
-  }
-.frame-parent29, .frame-wrapper22 {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start
-  }
+  @apply rounded-[var(--br-5xs)] bg-[color:var(--purple)] overflow-hidden flex flex-row items-center justify-center pt-[var(--padding-base)] pr-[var(--padding-xl)] pb-[var(--padding-base)] pl-[var(--padding-xl)] cursor-pointer;
+}
+.frame-parent29,
 .frame-wrapper22 {
-  cursor: pointer;
-  border: 0;
-  padding: 0;
-  background-color: transparent;
-  flex-direction: row
-  }
+  @apply flex items-start justify-start;
+}
+.frame-wrapper22 {
+  @apply cursor-pointer bg-transparent flex-row p-0 border-0;
+}
 .frame-parent29 {
-  position: absolute;
-  top: calc(50% - 18.75vw);
-  left: calc(50% - 20.54vw);
-  flex-direction: column;
-  gap: 2.91vw
-  }
+  @apply absolute top-[calc(50%_-_18.75vw)] left-[calc(50%_-_20.54vw)] flex-col gap-[2.91vw];
+}
 .vector-icon10 {
-  position: absolute;
-  height: 34.01%;
-  width: 34.01%;
-  top: 32.99%;
-  right: 33%;
-  bottom: 33%;
-  left: 32.99%;
-  max-width: 100%;
-  overflow: hidden;
-  max-height: 100%
-  }
+  @apply absolute h-[34.01%] w-[34.01%] max-w-full overflow-hidden max-h-full left-[32.99%] right-[33%] top-[32.99%] bottom-[33%];
+}
 .basilcross-outline6 {
-  cursor: pointer;
-  border: 0;
-  padding: 0;
-  background-color: transparent;
-  position: absolute;
-  top: 2.12vw;
-  left: 40.34vw;
-  width: 2.12vw;
-  height: 2.12vw;
-  overflow: hidden
-  }
+  @apply cursor-pointer bg-transparent absolute w-[2.12vw] h-[2.12vw] overflow-hidden p-0 border-0 left-[40.34vw] top-[2.12vw];
+}
 .scheduletestpopup {
-  border-radius: var(--br-base);
-  background-color: var(--white);
-  width: 44.31vw;
-  height: 42.79vw;
-  overflow: hidden;
-  max-width: 100%;
-  max-height: 100%;
-  text-align: left;
-  font-size: 1.56vw;
-  color: var(--black);
+  @apply rounded-[var(--br-base)] bg-[color:var(--white)] w-[44.31vw] h-[45.79vw] overflow-hidden max-w-full max-h-full text-left text-[1.56vw] text-[color:var(--black)] absolute left-[30vw] top-[10vw];
   font-family: var(--font-avenir-lt-std);
-  position: absolute;
-  top: 20vw;
-  left: 30vw;
-  }
+}
