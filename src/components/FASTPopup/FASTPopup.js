@@ -1,6 +1,5 @@
 import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
-// import "./FASTPopup.css";
 
 const FASTPopup = ({ onClose }) => {
   const navigate = useNavigate();
@@ -10,7 +9,7 @@ const FASTPopup = ({ onClose }) => {
   }, [navigate]);
 
   return (
-    <div className="rounded-[var(--br-base)] bg-[color:var(--white)] w-[512px] h-[348.8px] overflow-hidden max-w-full max-h-full text-left text-[20px] text-[color:var(--black)] absolute -translate-x-2/4 -translate-y-2/4 left-2/4 top-2/4">
+    <div className="rounded-[var(--br-base)] bg-[color:var(--white)] w-[512px] h-[348.8px] overflow-hidden max-w-full max-h-full text-left text-[20px] text-[color:var(--black)]  left-2/4 top-2/4">
       <div className="flex flex-col items-start justify-start absolute text-[20px] -translate-x-2/4 -translate-y-2/4 left-2/4 top-2/4  ">
         <div className="font-[bold] relative tracking-[-0.02em] leading-[35.58px] text-[length:var(--font-size-9xl)]">Fulcrum Assessment Test</div>
         <div className="flex flex-col items-start justify-start gap-[var(--gap-17xl)] text-[length:var(--font-inherit)] text-[color:var(--icon-grey)] ">
@@ -60,7 +59,7 @@ const FASTPopup = ({ onClose }) => {
           </div>
         </div>
       </div>
-      <button className="cursor-pointer bg-transparent absolute w-[33.92px] h-[23.92px] overflow-hidden p-0 border-0 left-[463.104px] top-[23.68px]" onClick={onClose}>
+      <button className="cursor-pointer bg-transparent absolute w-[33.92px] h-[23.92px] overflow-hidden p-0 border-0 left-[930.104px] " onClick={onClose}>
         <img className=" absolute h-[34%] w-[34.01%] max-w-full overflow-hidden max-h-full left-[33%] right-[32.99%] top-[32.99%] bottom-[33.01%]" alt="" src="/vector25.svg" />
       </button>
     </div>

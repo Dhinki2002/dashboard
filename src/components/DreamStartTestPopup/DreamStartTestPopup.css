@@ -1,158 +1,80 @@
-.answer-the-following, .some-more-questions {
-  position: relative;
-  letter-spacing: -0.02em;
-  line-height: 2.78vw;
-  font-weight: bold
-  }
+/*
+  Based on TailwindCSS recommendations,
+  consider using classes instead of the `@apply` directive
+  @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
+*/
+.answer-the-following,
+.some-more-questions {
+  @apply relative tracking-[-0.02em] leading-[2.78vw] font-[bold];
+}
 .answer-the-following {
-  font-size: var(--font-size-lg);
-  color: var(--icon-grey);
-  margin-top: -0.53vw;
-  font-weight: normal
-  }
+  @apply text-[length:var(--font-size-lg)] text-[color:var(--icon-grey)] mt-[-0.53vw] font-[normal];
+}
 .some-more-questions-parent {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start
-  }
+  @apply flex flex-col items-start justify-start;
+}
 .language {
-  position: relative
-  }
+  @apply relative;
+}
 .frame-select {
-  border-radius: var(--br-xs);
-  border: 0.07vw solid var(--color-gainsboro-400);
-  box-sizing: border-box;
-  width: 20.11vw;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  padding: var(--padding-base) var(--padding-5xl)
-  }
-.frame-child177, .language-parent {
-  display: flex;
-  justify-content: flex-start
-  }
+  @apply rounded-[var(--br-xs)] border-[color:var(--color-gainsboro-400)] box-border w-[20.11vw] flex flex-row items-center justify-between pt-[var(--padding-base)] pr-[var(--padding-5xl)] pb-[var(--padding-base)] pl-[var(--padding-5xl)] border-[0.07vw] border-solid;
+}
+.frame-child177,
 .language-parent {
-  flex-direction: column;
-  align-items: flex-start;
-  gap: var(--gap-xs)
-  }
+  @apply flex justify-start;
+}
+.language-parent {
+  @apply flex-col items-start gap-[var(--gap-xs)];
+}
 .frame-child177 {
-  border: 0.07vw solid var(--color-gainsboro-400);
+  @apply border-[color:var(--color-gainsboro-400)] text-[length:var(--font-size-xl)] bg-transparent rounded-[var(--br-xs)] box-border w-[20.11vw] flex-row items-center pt-[var(--padding-base)] pr-[var(--padding-5xl)] pb-[var(--padding-base)] pl-[var(--padding-5xl)] border-[0.07vw] border-solid;
   font-family: var(--font-avenir-lt-std);
-  font-size: var(--font-size-xl);
-  background-color: transparent;
-  border-radius: var(--br-xs);
-  box-sizing: border-box;
-  width: 20.11vw;
-  flex-direction: row;
-  align-items: center;
-  padding: var(--padding-base) var(--padding-5xl)
-  }
-.frame-parent242, .frame-parent243, .frame-parent244 {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start
-  }
+}
+.frame-parent242,
+.frame-parent243,
 .frame-parent244 {
-  flex-direction: row;
-  gap: var(--gap-xs)
-  }
-.frame-parent242, .frame-parent243 {
-  flex-direction: column
-  }
+  @apply flex items-start justify-start;
+}
+.frame-parent244 {
+  @apply flex-row gap-[var(--gap-xs)];
+}
+.frame-parent242,
 .frame-parent243 {
-  gap: var(--gap-17xl);
-  font-size: var(--font-size-lg)
-  }
+  @apply flex-col;
+}
+.frame-parent243 {
+  @apply gap-[var(--gap-17xl)] text-[length:var(--font-size-lg)];
+}
 .frame-parent242 {
-  gap: var(--gap-5xl)
-  }
+  @apply gap-[var(--gap-5xl)];
+}
 .start-test {
-  position: relative;
-  font-size: var(--font-size-xl);
+  @apply relative text-[length:var(--font-size-xl)] text-[color:var(--white)] text-left font-[bold];
   font-family: var(--font-avenir-lt-std);
-  color: var(--white);
-  text-align: left;
-  font-weight: bold
-  }
+}
 .solarplay-bold-icon5 {
-  position: relative;
-  width: 1.06vw;
-  height: 1.06vw;
-  overflow: hidden;
-  flex-shrink: 0
-  }
+  @apply relative w-[1.06vw] h-[1.06vw] overflow-hidden shrink-0;
+}
 .start-test-parent {
-  border-radius: var(--br-5xs);
-  background-color: var(--color-mediumseagreen);
-  overflow: hidden;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  padding: var(--padding-base) var(--padding-xl);
-  gap: var(--gap-3xs)
-  }
-.frame-parent241, .frame-wrapper92 {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start
-  }
+  @apply rounded-[var(--br-5xs)] bg-[color:var(--color-mediumseagreen)] overflow-hidden flex flex-row items-center justify-center pt-[var(--padding-base)] pr-[var(--padding-xl)] pb-[var(--padding-base)] pl-[var(--padding-xl)] gap-[var(--gap-3xs)];
+}
+.frame-parent241,
 .frame-wrapper92 {
-  cursor: pointer;
-  border: 0;
-  padding: 0;
-  background-color: transparent;
-  flex-direction: row
-  }
+  @apply flex items-start justify-start;
+}
+.frame-wrapper92 {
+  @apply cursor-pointer bg-transparent flex-row p-0 border-0;
+}
 .frame-parent241 {
-  position: absolute;
-  top: 2.38vw;
-  left: calc(50% - 20.5vw);
-  flex-direction: column;
-  gap: var(--gap-5xl)
-  }
+  @apply absolute left-[calc(50%_-_20.5vw)] flex-col gap-[var(--gap-5xl)] top-[2.38vw];
+}
 .vector-icon39 {
-  position: absolute;
-  height: 34%;
-  width: 34.01%;
-  top: 32.99%;
-  right: 33%;
-  bottom: 33%;
-  left: 32.99%;
-  max-width: 100%;
-  overflow: hidden;
-  max-height: 100%
-  }
+  @apply absolute h-[34%] w-[34.01%] max-w-full overflow-hidden max-h-full left-[32.99%] right-[33%] top-[32.99%] bottom-[33%];
+}
 .basilcross-outline16 {
-  cursor: pointer;
-  border: 0;
-  padding: 0;
-  background-color: transparent;
-  position: absolute;
-  top: 2.12vw;
-  left: 40.34vw;
-  width: 2.12vw;
-  height: 2.12vw;
-  overflow: hidden
-  }
+  @apply cursor-pointer bg-transparent absolute w-[2.12vw] h-[2.12vw] overflow-hidden p-0 border-0 left-[40.34vw] top-[2.12vw];
+}
 .dreamstarttest2popup {
-  border-radius: var(--br-base);
-  background-color: var(--white);
-  width: 44.31vw;
-  height: 33.47vw;
-  overflow: hidden;
-  max-width: 100%;
-  max-height: 100%;
-  text-align: left;
-  font-size: 1.56vw;
-  color: var(--black);
+  @apply rounded-[var(--br-base)] bg-[color:var(--white)] w-[44.31vw] h-[33.47vw] overflow-hidden max-w-full max-h-full text-left text-[1.56vw] text-[color:var(--black)] absolute -translate-x-2/4 -translate-y-2/4 left-2/4 top-2/4;
   font-family: var(--font-avenir-lt-std);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%)
-  }
+}
