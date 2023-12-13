@@ -1,144 +1,73 @@
+/*
+  Based on TailwindCSS recommendations,
+  consider using classes instead of the `@apply` directive
+  @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
+*/
 .fill-in-the3 {
-  position: relative;
-  letter-spacing: -0.02em;
-  line-height: 2.78vw;
-  font-size: var(--font-size-lg);
-  color: var(--icon-grey);
-  margin-top: -0.53vw
-  }
+  @apply relative tracking-[-0.02em] leading-[2.78vw] text-[length:var(--font-size-lg)] text-[color:var(--icon-grey)] mt-[-0.53vw];
+}
 .schedule-an-interview1 {
-  position: relative;
-  letter-spacing: -0.02em;
-  line-height: 2.78vw;
-  font-weight: bold
-  }
+  @apply relative tracking-[-0.02em] leading-[2.78vw] font-[bold];
+}
 .schedule-an-interview-group {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start
-  }
+  @apply flex flex-col items-start justify-start;
+}
 .select-interview-date2 {
-  position: relative
-  }
+  @apply relative;
+}
 .frame-child174 {
-  border: 0.07vw solid var(--color-gainsboro-400);
+  @apply border-[color:var(--color-gainsboro-400)] text-[length:var(--font-size-xl)] bg-transparent rounded-[var(--br-xs)] box-border w-[20.11vw] flex flex-row items-center justify-between pt-[var(--padding-base)] pr-[var(--padding-5xl)] pb-[var(--padding-base)] pl-[var(--padding-5xl)] border-[0.07vw] border-solid;
   font-family: var(--font-avenir-lt-std);
-  font-size: var(--font-size-xl);
-  background-color: transparent;
-  border-radius: var(--br-xs);
-  box-sizing: border-box;
-  width: 20.11vw;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  padding: var(--padding-base) var(--padding-5xl)
-  }
+}
 .select-interview-date-container {
-  flex-direction: column;
-  gap: var(--gap-xs)
-  }
-.frame-parent231, .frame-parent232, .frame-wrapper90, .select-interview-date-container {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start
-  }
+  @apply flex-col gap-[var(--gap-xs)];
+}
+.frame-parent231,
+.frame-parent232,
+.frame-wrapper90,
+.select-interview-date-container {
+  @apply flex items-start justify-start;
+}
 .frame-parent232 {
-  flex-direction: row;
-  gap: var(--gap-xs)
-  }
-.frame-parent231, .frame-wrapper90 {
-  flex-direction: column
-  }
+  @apply flex-row gap-[var(--gap-xs)];
+}
+.frame-parent231,
 .frame-wrapper90 {
-  font-size: var(--font-size-lg)
-  }
+  @apply flex-col;
+}
+.frame-wrapper90 {
+  @apply text-[length:var(--font-size-lg)];
+}
 .frame-parent231 {
-  gap: var(--gap-5xl)
-  }
+  @apply gap-[var(--gap-5xl)];
+}
 .schedule-interview4 {
-  position: relative;
-  font-size: var(--font-size-xl);
+  @apply relative text-[length:var(--font-size-xl)] text-[color:var(--white)] text-left font-[bold];
   font-family: var(--font-avenir-lt-std);
-  color: var(--white);
-  text-align: left;
-  font-weight: bold
-  }
+}
 .solarplay-bold-icon3 {
-  position: relative;
-  width: 1.06vw;
-  height: 1.06vw;
-  overflow: hidden;
-  flex-shrink: 0
-  }
+  @apply relative w-[1.06vw] h-[1.06vw] overflow-hidden shrink-0;
+}
 .schedule-interview-group {
-  border-radius: var(--br-5xs);
-  background-color: var(--color-mediumseagreen);
-  overflow: hidden;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  padding: var(--padding-base) var(--padding-xl);
-  gap: var(--gap-3xs)
-  }
-.frame-parent230, .frame-wrapper91 {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start
-  }
+  @apply rounded-[var(--br-5xs)] bg-[color:var(--color-mediumseagreen)] overflow-hidden flex flex-row items-center justify-center pt-[var(--padding-base)] pr-[var(--padding-xl)] pb-[var(--padding-base)] pl-[var(--padding-xl)] gap-[var(--gap-3xs)];
+}
+.frame-parent230,
 .frame-wrapper91 {
-  cursor: pointer;
-  border: 0;
-  padding: 0;
-  background-color: transparent;
-  flex-direction: row
-  }
+  @apply flex items-start justify-start;
+}
+.frame-wrapper91 {
+  @apply cursor-pointer bg-transparent flex-row p-0 border-0;
+}
 .frame-parent230 {
-  position: absolute;
-  top: 2.38vw;
-  left: calc(50% - 20.5vw);
-  flex-direction: column;
-  gap: var(--gap-29xl)
-  }
+  @apply absolute left-[calc(50%_-_20.5vw)] flex-col gap-[var(--gap-29xl)] top-[2.38vw];
+}
 .vector-icon34 {
-  position: absolute;
-  height: 34%;
-  width: 34.01%;
-  top: 32.99%;
-  right: 32.99%;
-  bottom: 33%;
-  left: 32.99%;
-  max-width: 100%;
-  overflow: hidden;
-  max-height: 100%
-  }
+  @apply absolute h-[34%] w-[34.01%] max-w-full overflow-hidden max-h-full top-[32.99%] bottom-[33%] inset-x-[32.99%];
+}
 .basilcross-outline12 {
-  cursor: pointer;
-  border: 0;
-  padding: 0;
-  background-color: transparent;
-  position: absolute;
-  top: 2.12vw;
-  left: 40.34vw;
-  width: 2.12vw;
-  height: 2.12vw;
-  overflow: hidden
-  }
+  @apply cursor-pointer bg-transparent absolute w-[2.12vw] h-[2.12vw] overflow-hidden p-0 border-0 left-[40.34vw] top-[2.12vw];
+}
 .scheduleinterviewpopup {
-  border-radius: var(--br-base);
-  background-color: var(--white);
-  width: 44.31vw;
-  height: 24.21vw;
-  overflow: hidden;
-  max-width: 100%;
-  max-height: 100%;
-  text-align: left;
-  font-size: 1.56vw;
-  color: var(--black);
+  @apply rounded-[var(--br-base)] bg-[color:var(--white)] w-[44.31vw] h-[24.21vw] overflow-hidden max-w-full max-h-full text-left text-[1.56vw] text-[color:var(--black)] absolute left-[30vw] top-[20vw];
   font-family: var(--font-avenir-lt-std);
-  position: absolute;
-  top: 20vw;
-  left: 30vw;
-  }
+}
