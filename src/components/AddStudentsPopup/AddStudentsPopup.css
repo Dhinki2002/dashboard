@@ -1,170 +1,87 @@
+/*
+  Based on TailwindCSS recommendations,
+  consider using classes instead of the `@apply` directive
+  @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
+*/
 .add-students {
-  position: relative;
-  letter-spacing: -0.02em;
-  line-height: 2.78vw;
-  font-weight: bold;
-  }
-
+  @apply relative tracking-[-0.02em] leading-[2.78vw] font-[bold];
+}
 .upload-list-of {
-      position: relative;
-      letter-spacing: -0.02em;
-      line-height: 2.78vw
-      }    
-.upload-list-of {
-  font-size: var(--font-size-lg);
-  color: var(--icon-grey);
-  margin-top: -0.53vw
-  }
+  @apply relative tracking-[-0.02em] leading-[2.78vw] text-[length:var(--font-size-lg)] text-[color:var(--icon-grey)] mt-[-0.53vw];
+}
 .add-students-parent {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start
-  }
+  @apply flex flex-col items-start justify-start;
+}
 .phfile-csv-duotone-icon {
-  position: relative;
-  width: 1.32vw;
-  height: 1.26vw;
-  overflow: hidden;
-  flex-shrink: 0
-  }
+  @apply relative w-[1.32vw] h-[1.26vw] overflow-hidden shrink-0;
+}
 .studentcsv {
-  position: relative;
-  text-decoration: underline
-  }
+  @apply relative underline;
+}
 .studentcsv-wrapper {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start
-  }
+  @apply flex flex-row items-start justify-start;
+}
 .vector-icon2 {
-  position: relative;
-  width: 1.32vw;
-  height: 1.32vw
-  }
-.frame-parent21, .phfile-csv-duotone-parent {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: var(--gap-5xs)
-  }
+  @apply relative w-[1.32vw] h-[1.32vw];
+}
+.frame-parent21,
 .phfile-csv-duotone-parent {
-  gap: var(--gap-9xs)
-  }
+  @apply flex flex-row items-center justify-center gap-[var(--gap-5xs)];
+}
+.phfile-csv-duotone-parent {
+  @apply gap-[var(--gap-9xs)];
+}
 .students-detected {
-  position: relative;
-  font-size: var(--font-size-sm);
-  color: var(--color-dimgray-100)
-  }
-.frame-parent20, .frame-wrapper12 {
-  display: flex;
-  align-items: center;
-  justify-content: center
-  }
-.frame-parent20 {
-  flex-direction: column;
-  gap: var(--gap-base)
-  }
+  @apply relative text-[length:var(--font-size-sm)] text-[color:var(--color-dimgray-100)];
+}
+.frame-parent20,
 .frame-wrapper12 {
-  border-radius: var(--br-xs);
-  border: 0.07vw dashed var(--color-dimgray-100);
-  box-sizing: border-box;
-  width: 41.01vw;
-  height: 7.67vw;
-  flex-direction: row;
-  padding: var(--padding-base) var(--padding-5xl)
-  }
-.frame-wrapper10, .frame-wrapper11 {
-  display: flex;
-  flex-direction: column;
-  align-items: center
-  }
+  @apply flex items-center justify-center;
+}
+.frame-parent20 {
+  @apply flex-col gap-[var(--gap-base)];
+}
+.frame-wrapper12 {
+  @apply rounded-[var(--br-xs)] border-[color:var(--color-dimgray-100)] box-border w-[41.01vw] h-[7.67vw] flex-row pt-[var(--padding-base)] pr-[var(--padding-5xl)] pb-[var(--padding-base)] pl-[var(--padding-5xl)] border-[0.07vw] border-dashed;
+}
+.frame-wrapper10,
 .frame-wrapper11 {
-  width: 41.01vw;
-  justify-content: center
-  }
+  @apply flex flex-col items-center;
+}
+.frame-wrapper11 {
+  @apply w-[41.01vw] justify-center;
+}
 .frame-wrapper10 {
-  justify-content: flex-start
-  }
+  @apply justify-start;
+}
 .pay-for1200-students {
-  position: relative;
-  font-size: var(--font-size-xl);
+  @apply relative text-[length:var(--font-size-xl)] text-[color:var(--white)] text-left font-[bold];
   font-family: var(--font-avenir-lt-std);
-  color: var(--white);
-  text-align: left;
-  font-weight: bold;
-  }
+}
 .pay-for1200-students-wrapper {
-  cursor: pointer;
-  border: 0;
-  padding: var(--padding-base) var(--padding-xl);
-  background-color: var(--purple);
-  border-radius: var(--br-5xs);
-  width: 41.01vw;
-  overflow: hidden;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  box-sizing: border-box
-  }
+  @apply cursor-pointer pt-[var(--padding-base)] pr-[var(--padding-xl)] pb-[var(--padding-base)] pl-[var(--padding-xl)] bg-[color:var(--purple)] rounded-[var(--br-5xs)] w-[41.01vw] overflow-hidden flex flex-row items-center justify-center box-border border-0;
+}
 .frame-parent19 {
-  gap: var(--gap-xl);
-  font-size: var(--font-size-xl)
-  }
-.addstudents2popup-inner, .frame-parent18, .frame-parent19 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start
-  }
+  @apply gap-[var(--gap-xl)] text-[length:var(--font-size-xl)];
+}
+.addstudents2popup-inner,
+.frame-parent18,
+.frame-parent19 {
+  @apply flex flex-col items-start justify-start;
+}
 .frame-parent18 {
-  gap: var(--gap-lg)
-  }
+  @apply gap-[var(--gap-lg)];
+}
 .addstudents2popup-inner {
-  position: absolute;
-  top: 2.25vw;
-  left: calc(50% - 20.5vw)
-  }
+  @apply absolute left-[calc(50%_-_20.5vw)] top-[2.25vw];
+}
 .vector-icon3 {
-  position: absolute;
-  height: 34%;
-  width: 34.01%;
-  top: 32.99%;
-  right: 32.99%;
-  bottom: 33%;
-  left: 33%;
-  max-width: 100%;
-  overflow: hidden;
-  max-height: 100%
-  }
+  @apply absolute h-[34%] w-[34.01%] max-w-full overflow-hidden max-h-full left-[33%] right-[32.99%] top-[32.99%] bottom-[33%];
+}
 .basilcross-outline2 {
-  cursor: pointer;
-  border: 0;
-  padding: 0;
-  background-color: transparent;
-  position: absolute;
-  top: 2.12vw;
-  left: 40.34vw;
-  width: 2.12vw;
-  height: 2.12vw;
-  overflow: hidden
-  }
+  @apply cursor-pointer bg-transparent absolute w-[2.12vw] h-[2.12vw] overflow-hidden p-0 border-0 left-[40.34vw] top-[2.12vw];
+}
 .addstudents2popup {
-  border-radius: var(--br-base);
-  background-color: var(--white);
-  width: 44.31vw;
-  height: 23.21vw;
-  overflow: hidden;
-  max-width: 100%;
-  max-height: 100%;
-  text-align: left;
-  font-size: 1.56vw;
-  color: var(--black);
+  @apply rounded-[var(--br-base)] bg-[color:var(--white)] w-[44.31vw] h-[23.21vw] overflow-hidden max-w-full max-h-full text-left text-[1.56vw] text-[color:var(--black)] absolute left-[30vw] top-[20vw];
   font-family: var(--font-avenir-lt-std);
-  position: absolute;
-  top: 20vw;
-  left: 30vw;
-  }
+}
