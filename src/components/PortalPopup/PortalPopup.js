@@ -1,7 +1,7 @@
 import { useMemo, useCallback, useState, useRef, useEffect } from "react";
 
 import { createPortal } from "react-dom";
-import "./PortalPopup.css";
+// import "./PortalPopup.css";
 
 const PortalPopup = ({
   children,
@@ -132,7 +132,7 @@ const PortalPopup = ({
   return (
     <Portal>
       <div
-        className="portalPopupOverlay"
+        className="flex flex-col fixed inset-0"
         style={popupStyle}
         onClick={onOverlayClick}
       >

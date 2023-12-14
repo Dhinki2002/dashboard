@@ -2,7 +2,7 @@ import { useState, useCallback } from "react";
 import InterviewPopup from "../InterviewPopup/InterviewPopup.js";
 import PortalPopup from "../PortalPopup/PortalPopup.js";
 import { useNavigate } from "react-router-dom";
-import "./StartInterviewPopup.css";
+
 
 const StartInterviewPopup = ({ onClose }) => {
   const [isInterviewPopupOpen, setInterviewPopupOpen] = useState(false);
