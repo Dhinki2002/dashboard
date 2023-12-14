@@ -1,78 +1,38 @@
+/*
+  Based on TailwindCSS recommendations,
+  consider using classes instead of the `@apply` directive
+  @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
+*/
 .vector-icon4 {
-  width: 5.95vw;
-  height: 5.95vw
-  }
-.students-added-succesfully, .vector-icon4 {
-  position: relative
-  }
+  @apply w-[5.95vw] h-[5.95vw];
+}
+.students-added-succesfully,
+.vector-icon4 {
+  @apply relative;
+}
 .students-added-succesfully-wrapper {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  font-weight: bold;
-  }
+  @apply flex flex-row items-start justify-start font-[bold];
+}
 .monitor-their-progress {
-  position: relative;
-  font-size: var(--font-size-5xl)
-  }
-.frame-parent22, .vector-parent {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: var(--gap-9xs)
-  }
+  @apply relative text-[length:var(--font-size-5xl)];
+}
+.frame-parent22,
 .vector-parent {
-  position: absolute;
-  top: 0;
-  left: 0;
-  gap: var(--gap-5xl)
-  }
+  @apply flex flex-col items-start justify-start gap-[var(--gap-9xs)];
+}
+.vector-parent {
+  @apply absolute gap-[var(--gap-5xl)] left-0 top-0;
+}
 .studentsaddedsuccessfullypopup-inner {
-  position: absolute;
-  top: 3.37vw;
-  left: calc(50% - 15.71vw);
-  width: 31.68vw;
-  height: 12.24vw
-  }
+  @apply absolute left-[calc(50%_-_15.71vw)] w-[31.68vw] h-[12.24vw] top-[3.37vw];
+}
 .vector-icon5 {
-  position: absolute;
-  height: 32.69%;
-  width: 32.7%;
-  top: 33.65%;
-  right: 33.65%;
-  bottom: 33.66%;
-  left: 33.65%;
-  max-width: 100%;
-  overflow: hidden;
-  max-height: 100%
-  }
+  @apply absolute h-[32.69%] w-[32.7%] max-w-full overflow-hidden max-h-full top-[33.65%] bottom-[33.66%] inset-x-[33.65%];
+}
 .basilcross-outline3 {
-  cursor: pointer;
-  border: 0;
-  padding: 0;
-  background-color: transparent;
-  position: absolute;
-  top: 1.59vw;
-  left: 30.82vw;
-  width: 2.98vw;
-  height: 2.98vw;
-  overflow: hidden
-  }
+  @apply cursor-pointer bg-transparent absolute w-[2.98vw] h-[2.98vw] overflow-hidden p-0 border-0 left-[30.82vw] top-[1.59vw];
+}
 .studentsaddedsuccessfullypopup {
-  border-radius: var(--br-base);
-  background-color: var(--white);
-  width: 35.38vw;
-  height: 18.98vw;
-  overflow: hidden;
-  max-width: 100%;
-  max-height: 100%;
-  text-align: left;
-  font-size: 1.56vw;
-  color: var(--color-gray-300);
+  @apply rounded-[var(--br-base)] bg-[color:var(--white)] w-[35.38vw] h-[18.98vw] overflow-hidden max-w-full max-h-full text-left text-[1.56vw] text-[color:var(--color-gray-300)] absolute left-[30vw] top-[20vw];
   font-family: var(--font-avenir-lt-std);
-  position: absolute;
-  top: 20vw;
-  left: 30vw;
-  }
+}
