@@ -1,4 +1,4 @@
-import "./AddStudentsManualPopup.css";
+
 
 const AddStudentsManualPopup = ({ onClose }) => {
   return (

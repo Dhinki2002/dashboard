@@ -1,155 +1,74 @@
-.fill-in-the1, .schedule-an-interview {
-  position: relative;
-  letter-spacing: -0.02em;
-  line-height: 2.78vw;
-  font-weight: bold
-  }
+/*
+  Based on TailwindCSS recommendations,
+  consider using classes instead of the `@apply` directive
+  @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
+*/
+.fill-in-the1,
+.schedule-an-interview {
+  @apply relative tracking-[-0.02em] leading-[2.78vw] font-[bold];
+}
 .fill-in-the1 {
-  font-size: var(--font-size-lg);
-  color: var(--icon-grey);
-  margin-top: -0.53vw
-  }
-.frame-child165, .schedule-an-interview-parent {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start
-  }
+  @apply text-[length:var(--font-size-lg)] text-[color:var(--icon-grey)] mt-[-0.53vw];
+}
+.frame-child165,
+.schedule-an-interview-parent {
+  @apply flex flex-col items-start justify-start;
+}
 .frame-child165 {
-  border: 0.07vw solid var(--color-gainsboro-400);
+  @apply border-[color:var(--color-gainsboro-400)] text-[length:var(--font-size-xl)] bg-transparent rounded-[var(--br-xs)] box-border w-[20.11vw] flex-row items-center pt-[var(--padding-base)] pr-[var(--padding-5xl)] pb-[var(--padding-base)] pl-[var(--padding-5xl)] border-[0.07vw] border-solid;
   font-family: var(--font-avenir-lt-std);
-  font-size: var(--font-size-xl);
-  background-color: transparent;
-  border-radius: var(--br-xs);
-  box-sizing: border-box;
-  width: 20.11vw;
-  flex-direction: row;
-  align-items: center;
-  padding: var(--padding-base) var(--padding-5xl)
-  }
-.frame-parent218, .job-profile-group {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: var(--gap-xs)
-  }
+}
+.frame-parent218,
+.job-profile-group {
+  @apply flex flex-col items-start justify-start gap-[var(--gap-xs)];
+}
 .frame-parent218 {
-  flex-direction: row
-  }
+  @apply flex-row;
+}
 .select-interview-date {
-  position: relative
-  }
+  @apply relative;
+}
 .frame-child167 {
-  border: 0.07vw solid var(--color-gainsboro-400);
+  @apply border-[color:var(--color-gainsboro-400)] text-[length:var(--font-size-xl)] bg-transparent rounded-[var(--br-xs)] box-border w-[20.11vw] flex flex-row items-center justify-between pt-[var(--padding-base)] pr-[var(--padding-5xl)] pb-[var(--padding-base)] pl-[var(--padding-5xl)] border-[0.07vw] border-solid;
   font-family: var(--font-avenir-lt-std);
-  font-size: var(--font-size-xl);
-  background-color: transparent;
-  border-radius: var(--br-xs);
-  box-sizing: border-box;
-  width: 20.11vw;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  padding: var(--padding-base) var(--padding-5xl)
-  }
-.frame-parent216, .frame-parent217 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start
-  }
+}
+.frame-parent216,
 .frame-parent217 {
-  gap: var(--gap-17xl);
-  font-size: var(--font-size-lg)
-  }
+  @apply flex flex-col items-start justify-start;
+}
+.frame-parent217 {
+  @apply gap-[var(--gap-17xl)] text-[length:var(--font-size-lg)];
+}
 .frame-parent216 {
-  gap: var(--gap-5xl)
-  }
+  @apply gap-[var(--gap-5xl)];
+}
 .schedule-interview3 {
-  position: relative;
-  font-size: var(--font-size-xl);
+  @apply relative text-[length:var(--font-size-xl)] text-[color:var(--white)] text-left font-[bold];
   font-family: var(--font-avenir-lt-std);
-  color: var(--white);
-  text-align: left;
-  font-weight: bold
-  }
+}
 .solarplay-bold-icon1 {
-  position: relative;
-  width: 1.06vw;
-  height: 1.06vw;
-  overflow: hidden;
-  flex-shrink: 0
-  }
+  @apply relative w-[1.06vw] h-[1.06vw] overflow-hidden shrink-0;
+}
 .schedule-interview-parent {
-  border-radius: var(--br-5xs);
-  background-color: var(--color-mediumseagreen);
-  overflow: hidden;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  padding: var(--padding-base) var(--padding-xl);
-  gap: var(--gap-3xs);
-  cursor: pointer
-  }
-.frame-parent215, .frame-wrapper88 {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start
-  }
+  @apply rounded-[var(--br-5xs)] bg-[color:var(--color-mediumseagreen)] overflow-hidden flex flex-row items-center justify-center pt-[var(--padding-base)] pr-[var(--padding-xl)] pb-[var(--padding-base)] pl-[var(--padding-xl)] gap-[var(--gap-3xs)] cursor-pointer;
+}
+.frame-parent215,
 .frame-wrapper88 {
-  cursor: pointer;
-  border: 0;
-  padding: 0;
-  background-color: transparent;
-  flex-direction: row
-  }
+  @apply flex items-start justify-start;
+}
+.frame-wrapper88 {
+  @apply cursor-pointer bg-transparent flex-row p-0 border-0;
+}
 .frame-parent215 {
-  position: absolute;
-  top: 2.38vw;
-  left: calc(50% - 20.5vw);
-  flex-direction: column;
-  gap: var(--gap-29xl)
-  }
+  @apply absolute left-[calc(50%_-_20.5vw)] flex-col gap-[var(--gap-29xl)] top-[2.38vw];
+}
 .vector-icon32 {
-  position: absolute;
-  height: 34%;
-  width: 34.01%;
-  top: 32.99%;
-  right: 32.99%;
-  bottom: 33%;
-  left: 33%;
-  max-width: 100%;
-  overflow: hidden;
-  max-height: 100%
-  }
+  @apply absolute h-[34%] w-[34.01%] max-w-full overflow-hidden max-h-full left-[33%] right-[32.99%] top-[32.99%] bottom-[33%];
+}
 .basilcross-outline10 {
-  cursor: pointer;
-  border: 0;
-  padding: 0;
-  background-color: transparent;
-  position: absolute;
-  top: 2.12vw;
-  left: 40.34vw;
-  width: 2.12vw;
-  height: 2.12vw;
-  overflow: hidden
-  }
+  @apply cursor-pointer bg-transparent absolute w-[2.12vw] h-[2.12vw] overflow-hidden p-0 border-0 left-[40.34vw] top-[2.12vw];
+}
 .interviewpopup {
-  border-radius: var(--br-base);
-  background-color: var(--white);
-  width: 44.31vw;
-  height: 32.21vw;
-  overflow: hidden;
-  max-width: 100%;
-  max-height: 100%;
-  text-align: left;
-  font-size: 1.56vw;
-  color: var(--black);
+  @apply rounded-[var(--br-base)] bg-[color:var(--white)] w-[44.31vw] h-[32.21vw] overflow-hidden max-w-full max-h-full text-left text-[1.56vw] text-[color:var(--black)] absolute left-[30vw] top-[20vw];
   font-family: var(--font-avenir-lt-std);
-  position: absolute;
-  top: 20vw;
-  left: 30vw;
-  }
+}

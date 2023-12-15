@@ -2,7 +2,7 @@ import { useState, useCallback } from "react";
 import AddStudents2Popup from "../AddStudents2Popup/AddStudents2Popup.js";
 import PortalPopup from "../PortalPopup/PortalPopup.js";
 import AddStudentsManualPopup from "../AddStudentsManualPopup/AddStudentsManualPopup.js";
-import "./AddStudentsPopup.css";
+
 
 const AddStudentsPopup = ({ onClose }) => {
   const [isAddStudents2PopupOpen, setAddStudents2PopupOpen] = useState(false);

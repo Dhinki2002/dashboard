@@ -1,4 +1,4 @@
-import "./DashboardInterviewerCardPopup.css";
+// import "./DashboardInterviewerCardPopup.css";
 
 const DashboardInterviewerCardPopup = ({ onClose }) => {
   return (
